@@ -507,18 +507,15 @@ body.light .bottom-bar button {
 .tts-control input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 18px;
-  height: 18px;
+  transform: translateY(-6px);
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: #e5e7eb;
   box-shadow: 0 0 0 4px rgba(59,130,246,.4);
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
-.tts-control input[type="range"]:active::-webkit-slider-thumb {
-  transform: scale(1.15);
-  box-shadow: 0 0 0 7px rgba(59,130,246,.4);
-}
 
 /* ===== Firefox ===== */
 
@@ -541,6 +538,18 @@ body.light .bottom-bar button {
   background: #e5e7eb;
   border: none;
   box-shadow: 0 0 0 4px rgba(59,130,246,.4);
+}
+
+.tts-control input[type="range"]::-webkit-slider-runnable-track {
+  height: 12px;
+  background: #374151;
+  border-radius: 999px;
+}
+
+.tts-control input[type="range"]::-moz-range-track {
+  height: 36px;
+  background: transparent;
+  border-radius: 999px;
 }
 
 /* ===== Mobile touch target ===== */
