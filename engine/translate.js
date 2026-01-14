@@ -65,6 +65,13 @@ function isOptional(word) {
   return OPTIONAL_TOKENS.has(word);
 }
 
+// Expand Indonesian object enclitics
+function expandEncliticsID(text) {
+  return text
+    .replace(/\b(\w+?)ku\b/g, "$1 ku")
+    .replace(/\b(\w+?)mu\b/g, "$1 kamu")
+    .replace(/\b(\w+?)nya\b/g, "$1 dia");
+}
 
 /* ===============================
    LANGUAGE HEURISTIC
@@ -160,11 +167,16 @@ export function normalise(text, lang, expand = false) {
     t = t.replace(/"[^"]*"/g, "");
     t = t.replace(/'[^']*'/g, "");
 
-    if (lang === "EN") {
-      for (const [p, r] of EN_EQUIVALENTS) t = t.replace(p, r);
-    } else {
+    if (lang === "ID") {
+      t = expandEncliticsID(t);
       for (const [p, r] of ID_EQUIVALENTS) t = t.replace(p, r);
     }
+
+    if (lang === "EN") {
+      for (const [p, r] of EN_EQUIVALENTS) t = t.replace(p, r);
+    }
+
+
 
     return t
       .replace(/[-–—]/g, " ")
@@ -182,11 +194,16 @@ export function normalise(text, lang, expand = false) {
 export function splitExpectedVariants(expected) {
   if (typeof expected !== "string") return [];
 
-  return expected
-    .split("/")
+  // First expand (he/she) style brackets
+  const expanded = processBrackets(expected);
+
+  // THEN split top-level slashes
+  return expanded
+    .flatMap(s => s.split("/"))
     .map(s => s.trim())
     .filter(Boolean);
 }
+
 
 /* ===============================
    CORRECTNESS CHECK (FIXED)
