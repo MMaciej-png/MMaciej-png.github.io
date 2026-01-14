@@ -56,6 +56,16 @@ const ID_EQUIVALENTS = [
   [/\b(kok|nih+h?)\b/g, ""]
 ];
 
+// Words that add NO semantic information (tone only)
+const OPTIONAL_TOKENS = new Set([
+  "kok", "nih", "dong", "sih", "deh"
+]);
+
+function isOptional(word) {
+  return OPTIONAL_TOKENS.has(word);
+}
+
+
 /* ===============================
    LANGUAGE HEURISTIC
    (USED ELSEWHERE — NOT FOR GRADING)
@@ -122,6 +132,15 @@ function processBrackets(text) {
   return variants;
 }
 
+function containsAllRequiredTokens(userNorm, expectedNorm) {
+  const expectedWords = expectedNorm.split(" ");
+  const userWords = new Set(userNorm.split(" "));
+
+  return expectedWords.every(w =>
+    isOptional(w) || userWords.has(w)
+  );
+}
+
 
 
 /* ===============================
@@ -135,27 +154,26 @@ export function normalise(text, lang, expand = false) {
     ? processBrackets(text)
     : [text];
 
+  return inputs.map(input => {
+    let t = input.toLowerCase();
 
-  let t = text.toLowerCase();
+    t = t.replace(/"[^"]*"/g, "");
+    t = t.replace(/'[^']*'/g, "");
 
-  // remove parentheses + quoted segments
-  t = t.replace(/"[^"]*"/g, "");
-  t = t.replace(/'[^']*'/g, "");
+    if (lang === "EN") {
+      for (const [p, r] of EN_EQUIVALENTS) t = t.replace(p, r);
+    } else {
+      for (const [p, r] of ID_EQUIVALENTS) t = t.replace(p, r);
+    }
 
-  // apply equivalences
-  if (lang === "EN") {
-    for (const [p, r] of EN_EQUIVALENTS) t = t.replace(p, r);
-  } else {
-    for (const [p, r] of ID_EQUIVALENTS) t = t.replace(p, r);
-  }
-
-  // punctuation + whitespace
-  return t
-    .replace(/[-–—]/g, " ")     // ← added: handle baik-baik etc.
-    .replace(/[?.!,]/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
+    return t
+      .replace(/[-–—]/g, " ")
+      .replace(/[?.!,]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  });
 }
+
 
 /* ===============================
    SPLIT VARIANTS
@@ -193,9 +211,20 @@ export function isCorrect(user, expected) {
     const vENs = normalise(v, "EN", true);
     const vIDs = normalise(v, "ID", true);
 
-    return (
-      vENs.includes(uEN) ||
-      vIDs.includes(uID)
-    );
+    // EN check
+    for (const vEN of vENs) {
+      if (containsAllRequiredTokens(uEN, vEN)) {
+        return true;
+      }
+    }
+
+    // ID check
+    for (const vID of vIDs) {
+      if (containsAllRequiredTokens(uID, vID)) {
+        return true;
+      }
+    }
+
+    return false;
   });
 }
