@@ -393,15 +393,15 @@ body.light .bottom-bar button {
   /* Main app comes first */
   .app {
     order: 1;
-    width: 100%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 80%;
     padding: 16px;
   }
 
   /* Casual panel moves BELOW the game */
   .casual-panel {
     order: 2;
-    width: 100%;
+    width: 80%;
     margin-top: 16px;
     border-radius: 14px;
   }
