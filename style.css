@@ -1,0 +1,475 @@
+/* ======================================================
+   RESET & BASE
+====================================================== */
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0f1117;
+  color: #e6e6e6;
+}
+
+
+/* ======================================================
+   TOP BAR
+====================================================== */
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: #161a22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+
+/* ======================================================
+   MAIN LAYOUT
+====================================================== */
+
+.layout {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 84px 20px 110px;
+  height: 100%;
+}
+
+.app {
+  width: 420px;
+  background: #161a22;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+/* ======================================================
+   PLAY AREA
+====================================================== */
+
+#play-area {
+  margin: 12px 0;
+}
+
+#play-area input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1e2333;
+  color: #fff;
+  margin-top: 12px;
+}
+
+#play-area input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+
+/* ======================================================
+   MODE TITLE
+====================================================== */
+
+.mode-title {
+  margin: 4px 0 14px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #cbd5f5;
+}
+
+
+/* ======================================================
+   SESSION STATS ROW
+====================================================== */
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #1e2333;
+  font-size: 0.9em;
+  color: #c7c7c7;
+}
+
+.stats-row strong {
+  color: #e5e7eb;
+}
+
+
+/* ======================================================
+   CARD (NO HEIGHT CLAMPS)
+====================================================== */
+
+.card {
+  width: 100%;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  height: 300px;
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform .6s ease;
+}
+
+#casual-root .card,
+#ranked-root .card {
+  display: block;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* ======================================================
+   CARD FACE (THIS DEFINES HEIGHT)
+====================================================== */
+
+#casual-root .card-face,
+#ranked-root .card-face {
+  min-height: 300px;
+  max-height: 300px;            /* 🔧 CHANGE THIS VALUE */
+  padding: 36px;
+  font-size: 1.6em;
+}
+
+.card-face {
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: pre-line;
+  backface-visibility: hidden;
+  background: #0f1320;
+  transition: background-color .35s ease, box-shadow .35s ease;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-text {
+  max-width: 100%;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+
+/* ======================================================
+   CARD META (POINTS)
+====================================================== */
+
+.card-meta {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  font-size: .75em;
+  color: #9ca3af;
+  user-select: none;
+}
+
+#c-points,
+#c-points-back {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  white-space: nowrap;
+}
+
+
+
+/* ======================================================
+   CARD FEEDBACK
+====================================================== */
+
+.card.correct .card-face {
+  background: #064e3b;
+  box-shadow: 0 0 25px rgba(16,185,129,.7);
+}
+
+.card.wrong .card-face {
+  background: #7f1d1d;
+  box-shadow: 0 0 25px rgba(239,68,68,.7);
+}
+
+.card.wrong:not(.flipped) .card-face {
+  animation: soft-flash .35s;
+}
+
+@keyframes soft-flash {
+  from { background-color: #7f1d1d; }
+  to   { background-color: #0f1320; }
+}
+
+
+/* ======================================================
+   TTS BUTTON
+====================================================== */
+
+.tts-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.1em;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.tts-btn:hover {
+  color: #e5e7eb;
+}
+
+
+/* ======================================================
+   TTS CONTROL (SPEECH RATE)
+====================================================== */
+
+.tts-control {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85em;
+  color: #c7c7c7;
+}
+
+.tts-control input[type="range"] {
+  flex: 1;
+}
+
+
+/* ======================================================
+   SIDE PANELS
+====================================================== */
+
+.casual-panel,
+.ranked-panel {
+  top: 84px;
+  width: 240px;
+  height: calc(100vh - 80px - 20px);
+  background: #161a22;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,.6);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 50;
+}
+
+.casual-panel { left: 20px; }
+.ranked-panel { right: 20px; }
+
+.casual-panel h2,
+.ranked-panel h2 {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #cbd5f5;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: .9em;
+  color: #c7c7c7;
+}
+
+.casual-panel hr,
+.ranked-panel hr {
+  border: none;
+  border-top: 1px solid #2a2f3f;
+  margin: 6px 0;
+}
+
+.casual-rank .rank-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.casual-rank {
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  margin-top: -60px
+}
+
+.casual-rank .sr-label {
+  display: none; /* SR is self-evident */
+}
+
+.casual-rank .rank-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.casual-rank img {
+  width: 200px;          /* 🔼 bigger emblem */
+  height: 200px;
+  image-rendering: crisp-edges;
+  
+}
+
+.casual-rank strong {
+  font-size: 1.6em;     /* 🔥 SR is dominant */
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #e5e7eb;
+  margin-top: -25px;
+  margin-bottom: -20px
+}
+
+.ranked-panel {
+  visibility: hidden;
+}
+
+
+/* ======================================================
+   BOTTOM BAR
+====================================================== */
+
+.bottom-bar {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #161a22;
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  height: 75px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.6);
+}
+
+.bottom-bar button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.bottom-bar button:hover {
+  color: #e5e7eb;
+}
+
+#nav-ranked:disabled {
+  visibility: hidden;
+  cursor: not-allowed;
+  pointer-events: none;
+  display: none;
+}
+
+.bottom-bar {
+  width: 420px;
+  display: flex;
+  align-self: center;
+}
+
+/* ======================================================
+   LIGHT MODE
+====================================================== */
+
+body.light {
+  background: #f5f5f5;
+  color: #111827;
+}
+
+body.light .top-bar,
+body.light .bottom-bar,
+body.light .app,
+body.light .casual-panel,
+body.light .ranked-panel {
+  background: #ffffff;
+}
+
+body.light .card-face {
+  background: #f1f5f9;
+  color: #111827;
+}
+
+body.light input {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+body.light .bottom-bar button {
+  color: #111827;
+}
+
+/* --- CLICK FIX: allow card + speaker clicks --- */
+
+/* Ensure the card surface can receive clicks */
+#casual-card,
+#casual-card .card-inner,
+#casual-card .card-face {
+  pointer-events: auto;
+}
+
+/* Let the speaker always be clickable and above everything */
+#casual-card .tts-btn {
+  pointer-events: auto;
+  position: absolute;
+  z-index: 10;
+}
+
+/* (Optional) Prevent the text span itself from eating clicks */
+#casual-card .card-text {
+  pointer-events: none;
+}
+
+#casual-root,
+#casual-card,
+#casual-card * {
+  pointer-events: auto;
+}
+
