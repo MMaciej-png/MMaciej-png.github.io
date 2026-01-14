@@ -7,7 +7,7 @@ export const RANKS = [
   "MASTER"
 ];
 
-export const RANK_STEP = 200;
+export const RANK_STEP = 500;
 
 export function calculateRank({ totalPoints, totalItems }) {
   const basePoints = totalItems * 100;
