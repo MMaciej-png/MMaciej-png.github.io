@@ -381,7 +381,7 @@ body.light .bottom-bar button {
    MOBILE STACKED LAYOUT
 ====================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   /* Stack everything vertically */
   .layout {
@@ -554,7 +554,7 @@ body.light .bottom-bar button {
 
 /* ===== Mobile touch target ===== */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .tts-control {
     padding: 14px 16px;
   }
