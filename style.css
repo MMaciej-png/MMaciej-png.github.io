@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: #0f1117;
   color: #e6e6e6;
 }
@@ -48,11 +48,11 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 84px 20px 110px;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .app {
-  width: 420px;
+  width: min(420px, 100%);
   background: #161a22;
   border-radius: 16px;
   padding: 20px;
@@ -127,7 +127,7 @@ body {
 
 
 /* ======================================================
-   CARD (NO HEIGHT CLAMPS)
+   CARD
 ====================================================== */
 
 .card {
@@ -137,16 +137,11 @@ body {
 }
 
 .card-inner {
-  height: 300px;
   position: relative;
   width: 100%;
+  height: clamp(220px, 40vh, 360px);
   transform-style: preserve-3d;
   transition: transform .6s ease;
-}
-
-#casual-root .card,
-#ranked-root .card {
-  display: block;
 }
 
 .card.flipped .card-inner {
@@ -155,20 +150,11 @@ body {
 
 
 /* ======================================================
-   CARD FACE (THIS DEFINES HEIGHT)
+   CARD FACE
 ====================================================== */
-
-#casual-root .card-face,
-#ranked-root .card-face {
-  min-height: 300px;
-  max-height: 300px;            /* 🔧 CHANGE THIS VALUE */
-  padding: 36px;
-  font-size: 1.6em;
-}
 
 .card-face {
   position: absolute;
-  pointer-events: none;
   inset: 0;
   border-radius: 12px;
   display: flex;
@@ -179,6 +165,9 @@ body {
   backface-visibility: hidden;
   background: #0f1320;
   transition: background-color .35s ease, box-shadow .35s ease;
+
+  padding: clamp(20px, 4vw, 36px);
+  font-size: clamp(1.2em, 2.5vw, 1.6em);
 }
 
 .card-back {
@@ -193,7 +182,7 @@ body {
 
 
 /* ======================================================
-   CARD META (POINTS)
+   CARD META
 ====================================================== */
 
 .card-meta {
@@ -206,16 +195,6 @@ body {
   color: #9ca3af;
   user-select: none;
 }
-
-#c-points,
-#c-points-back {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  white-space: nowrap;
-}
-
 
 
 /* ======================================================
@@ -255,29 +234,14 @@ body {
   font-size: 1.1em;
   color: #9ca3af;
   cursor: pointer;
+  z-index: 10;
+  margin-top: 20px;
 }
 
 .tts-btn:hover {
   color: #e5e7eb;
 }
 
-
-/* ======================================================
-   TTS CONTROL (SPEECH RATE)
-====================================================== */
-
-.tts-control {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.85em;
-  color: #c7c7c7;
-}
-
-.tts-control input[type="range"] {
-  flex: 1;
-}
 
 
 /* ======================================================
@@ -286,9 +250,7 @@ body {
 
 .casual-panel,
 .ranked-panel {
-  top: 84px;
   width: 240px;
-  height: calc(100vh - 80px - 20px);
   background: #161a22;
   border-radius: 16px;
   padding: 20px;
@@ -296,11 +258,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 50;
 }
 
-.casual-panel { left: 20px; }
-.ranked-panel { right: 20px; }
+.ranked-panel {
+  visibility: hidden;
+}
 
 .casual-panel h2,
 .ranked-panel h2 {
@@ -324,50 +286,25 @@ body {
   margin: 6px 0;
 }
 
-.casual-rank .rank-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
 .casual-rank {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
   margin-bottom: 16px;
-  margin-top: -60px
-}
-
-.casual-rank .sr-label {
-  display: none; /* SR is self-evident */
-}
-
-.casual-rank .rank-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
 }
 
 .casual-rank img {
-  width: 200px;          /* 🔼 bigger emblem */
-  height: 200px;
-  image-rendering: crisp-edges;
-  
+  width: min(200px, 60vw);
+  margin-top: -30%;
+  height: auto;
 }
 
 .casual-rank strong {
-  font-size: 1.6em;     /* 🔥 SR is dominant */
+  font-size: clamp(1.2em, 3vw, 1.6em);
   font-weight: 800;
-  letter-spacing: 0.5px;
   color: #e5e7eb;
-  margin-top: -25px;
-  margin-bottom: -20px
-}
-
-.ranked-panel {
-  visibility: hidden;
+  margin-top: -20%;
 }
 
 
@@ -387,7 +324,9 @@ body {
   justify-content: center;
   gap: 14px;
   height: 75px;
+  width: min(420px, 100%);
   box-shadow: 0 10px 30px rgba(0,0,0,.6);
+  visibility: hidden;
 }
 
 .bottom-bar button {
@@ -403,17 +342,9 @@ body {
 }
 
 #nav-ranked:disabled {
-  visibility: hidden;
-  cursor: not-allowed;
-  pointer-events: none;
   display: none;
 }
 
-.bottom-bar {
-  width: 420px;
-  display: flex;
-  align-self: center;
-}
 
 /* ======================================================
    LIGHT MODE
@@ -446,30 +377,190 @@ body.light .bottom-bar button {
   color: #111827;
 }
 
-/* --- CLICK FIX: allow card + speaker clicks --- */
+/* ======================================================
+   MOBILE STACKED LAYOUT
+====================================================== */
 
-/* Ensure the card surface can receive clicks */
-#casual-card,
-#casual-card .card-inner,
-#casual-card .card-face {
-  pointer-events: auto;
+@media (max-width: 768px) {
+
+  /* Stack everything vertically */
+  .layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 76px 12px 120px;
+  }
+
+  /* Main app comes first */
+  .app {
+    order: 1;
+    width: 100%;
+    max-width: 400px;
+    padding: 16px;
+  }
+
+  /* Casual panel moves BELOW the game */
+  .casual-panel {
+    order: 2;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 14px;
+  }
+
+  /* Ranked panel hidden on mobile */
+  .ranked-panel {
+    display: none;
+  }
+
+  /* Card adapts for mobile reading */
+  .card-inner {
+    height: clamp(240px, 55vh, 300px);
+  }
+
+  .card-face {
+    font-size: clamp(1.2em, 5vw, 1.6em);
+    padding: clamp(16px, 5vw, 28px);
+  }
+
+  /* Bottom bar stays thumb-friendly */
+  .bottom-bar {
+    width: min(420px, 95%);
+    height: 72px;
+  }
+
+  .bottom-bar button {
+    font-size: 1.6em;
+  }
+  
+   /* Stack SR under the rank image */
+  .casual-rank {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .casual-rank .rank-display {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .casual-rank img {
+    margin-bottom: 8px;
+  }
+
+  .casual-panel {
+    max-width: 400px;
+    max-height: 800px;
+    min-height: 800px;
+  }
+
+  .casual-rank strong {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
-/* Let the speaker always be clickable and above everything */
-#casual-card .tts-btn {
-  pointer-events: auto;
-  position: absolute;
-  z-index: 10;
+/* ======================================================
+   TTS CONTROL – LABEL + SLIDER REDESIGN
+====================================================== */
+
+.tts-control {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #1e2333;
 }
 
-/* (Optional) Prevent the text span itself from eating clicks */
-#casual-card .card-text {
-  pointer-events: none;
+/* Label styling */
+.tts-control label {
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  font-weight: 600;
+  user-select: none;
 }
 
-#casual-root,
-#casual-card,
-#casual-card * {
-  pointer-events: auto;
+/* ===== Range base ===== */
+
+.tts-control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    #3b82f6 0%,
+    #3b82f6 60%,
+    #374151 60%,
+    #374151 100%
+  );
+  outline: none;
+  cursor: pointer;
 }
 
+/* ===== WebKit (Chrome, Safari, Mobile) ===== */
+
+.tts-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  box-shadow: 0 0 0 4px rgba(59,130,246,.4);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.tts-control input[type="range"]:active::-webkit-slider-thumb {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 7px rgba(59,130,246,.4);
+}
+
+/* ===== Firefox ===== */
+
+.tts-control input[type="range"]::-moz-range-track {
+  height: 8px;
+  border-radius: 999px;
+  background: #374151;
+}
+
+.tts-control input[type="range"]::-moz-range-progress {
+  height: 8px;
+  border-radius: 999px;
+  background: #3b82f6;
+}
+
+.tts-control input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  border: none;
+  box-shadow: 0 0 0 4px rgba(59,130,246,.4);
+}
+
+/* ===== Mobile touch target ===== */
+
+@media (max-width: 768px) {
+  .tts-control {
+    padding: 14px 16px;
+  }
+
+  .tts-control input[type="range"] {
+    height: 10px;
+  }
+
+  .tts-control input[type="range"]::-webkit-slider-thumb {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tts-control input[type="range"]::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+  }
+}
