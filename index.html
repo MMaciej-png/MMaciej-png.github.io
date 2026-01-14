@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Indonesian Trainer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- TOP BAR -->
+    <header class="top-bar">
+        <h1>Maciej's Indonesian</h1>
+    </header>
+
+    <div class="layout">
+
+        <!-- LEFT PANEL (unchanged UI) -->
+        <aside class="casual-panel">
+            <h2>Stats</h2>
+
+            <hr />
+
+            <div class="stat casual-rank">
+                <span class="rank-display">
+                    <img id="casual-rank-img" src="" alt="rank" />
+                    <strong id="casual-rank-sr"></strong>
+                </span>
+            </div>
+            
+            <hr />
+
+            <div class="stat">
+                <span>Total cards</span>
+                <strong id="casual-total">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Completed</span>
+                <strong id="casual-complete">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Failed</span>
+                <strong id="casual-failed">0</strong>
+            </div>
+
+            <hr />
+
+            <div class="stat">
+                <span>Overall accuracy</span>
+                <strong id="casual-accuracy">0%</strong>
+            </div>
+
+            <div class="stat">
+                <span>Word accuracy</span>
+                <strong id="casual-word-accuracy">—</strong>
+            </div>
+
+            <div class="stat">
+                <span>Sentence accuracy</span>
+                <strong id="casual-sentence-accuracy">—</strong>
+            </div>
+
+            <hr />
+
+            <div class="stat">
+                <span>Best streak</span>
+                <strong id="casual-best-streak">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Avg streak</span>
+                <strong id="casual-avg-streak">—</strong>
+            </div>
+        </aside>
+
+        <!-- MAIN APP -->
+        <div class="app">
+
+            <div id="play-area">
+
+                <!-- CASUAL MODE -->
+                <section id="casual-root">
+
+                    <!-- MODE TITLE -->
+
+
+                    <!-- SESSION STATS -->
+                    <div class="stats-row">
+                        <div><strong id="c-ok">0</strong> ✔</div>
+                        <div><strong id="c-bad">0</strong> ❌</div>
+                        <div><strong id="c-acc">0%</strong></div>
+                        <div><strong id="c-streak">🔥 0</strong></div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="card" id="casual-card">
+                        <div class="card-inner">
+
+                            <!-- FRONT -->
+                            <div class="card-face" id="casual-front">
+                                <div class="card-meta">
+                                    <span id="c-points">PTS 100</span>
+                                </div>
+
+                                <button class="tts-btn">🔊</button>
+                                <span class="card-text"></span>
+                            </div>
+
+                            <!-- BACK -->
+                            <div class="card-face card-back" id="casual-back">
+                                <div class="card-meta">
+                                    <span id="c-points-back">PTS 100</span>
+                                </div>
+
+                                <button class="tts-btn">🔊</button>
+                                <span class="card-text"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- INPUT -->
+                    <input id="casual-input" placeholder="Type the answer and press Enter" autocomplete="off" />
+
+                    <!-- SPEECH RATE -->
+                    <div class="tts-control">
+                        <label>Speech speed</label>
+                        <input id="c-tts-rate" type="range" min="0.35" max="1" step="0.05" value="0.6" />
+                    </div>
+
+                </section>
+
+                <!-- RANKED MODE (hidden for now) -->
+                <section id="ranked-root" hidden></section>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- RIGHT PANEL (unchanged UI) -->
+        <aside class="ranked-panel">
+            <h2>Ranked</h2>
+            <div class="stat"><span>Status</span><strong id="ranked-status">Idle</strong></div>
+        </aside>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <nav class="bottom-bar">
+        <button id="nav-casual">🌿</button>
+        <button id="nav-ranked" disabled>🏆</button>
+    </nav>
+
+    <!-- SCRIPTS -->
+    <script type="module">
+        import { casualEngine } from "./modes/casual.js";
+        import { rankedEngine } from "./modes/ranked.js";
+
+        document.getElementById("nav-casual").onclick = () => {
+            rankedEngine.stop();
+            casualEngine.start();
+        };
+
+        document.getElementById("nav-ranked").onclick = () => {
+            casualEngine.stop();
+            rankedEngine.start();
+        };
+
+        // default
+        casualEngine.start();
+    </script>
+</body>
+
+</html>
