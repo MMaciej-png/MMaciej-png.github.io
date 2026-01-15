@@ -1,0 +1,171 @@
+Apel	(An)Apple/Apples
+Jeruk	(An)Orange/Oranges
+Susu	Milk
+Air (ai-r)	Water
+Kucing	Cats/Cat
+Makan	Eat/Am Eating/Ate
+minum	Drink/To Drink/Have A Drink
+Hitam	Black
+Merah	Red
+Putih	White
+Kuat	Strong/Powerful
+Saya	I/Me/My
+Kamu	You/Your
+Dia	He/She/Her
+Itu	It/That
+Dan	And
+Mau	Want/Wants/Intends To
+Suka	Like/Liked/Love
+punya	Have/Own/Posses
+Rumah	House
+Buku	Book
+Teman	Friend
+Tas	Bag
+Film	Movie
+Anak	Child
+Uang	Money
+Bahaya	Danger
+Pakaian	Wear
+Sepatu	Shoes
+Kacamata	Glasses
+Pelukan	Hug
+Jalan (Noun)	Road/Street
+Nama	Name
+Cinta	Love
+Meja	Table
+Mobil	Car
+Makanan	Food
+Kopi	Coffee
+Barang	Item/Object/Goods/Thing
+Alam	Nature
+Bilang	Said
+Buka	Open
+Ambil	Take
+Lari	Run
+Bicara	Talk
+Pegang	To Hold
+Jalan (Verb)	Walk
+Ada	Is/Exists/There Is
+Pakai	Use/Wear
+Kirim	Send
+Sapu	Sweep
+Lihat	See
+Tutup	Close
+Kunci	Lock
+Jatuh	Fall
+Tumpah	Spill
+Dengar	Hear
+Baca	Read
+Tulis	Write
+Beli	Buy
+Cuci	Clean
+Potong	Cut
+Ukur	Measure
+Isi	Fill
+Sentuh	Touch
+Mati	Die/Be Off
+Bersih	Clean
+Beda	Different
+Pelan	Slow
+Cepat	Fast
+Cantik (women)	Beautiful
+Baik	Good/Nice
+Enak	Good/Tasty
+Lemah	Weak
+Lemah	Weak
+Indah (Scenery)	Beautiful
+Dingin	Cold
+Panas	Hot
+Besar	Big/Large
+Banget	Very/Really
+Baru	New
+Rusak	Broken
+Saja	Just/Simply
+Mudah	Easy
+Lama	Long (Duration)
+Aku	I/Me
+Di	At/On/In
+Ini	This
+Oleh	By
+Pelan-Pelan	Slowly
+Sekali	Very
+Tadi	Earlier
+Lagi	Again
+Tinggalkan	Left (Something)
+Apa	What
+Kabar	News/Condition
+Pagi	Morning
+Siang	Afternoon/Daytime
+Malam	Night/Evening
+Tidur	Sleep
+Hari	Day
+Dulu	Earlier/First/Before/For Now
+Kerja	Work/Working
+Kabarin	Update / Message / Let you know
+Lapar	Hungry
+Baik-Baik	Okay/Fine
+Capek	Tired
+Sibuk	Busy
+Gapapa	Alright
+Selamat	Good/Well/Safe
+Lancar	Smooth/Going Well
+Oke	Okay
+Iya	Yes
+Kita	We/Us (including Listener)
+Halo	Hello
+Hai	Hi
+Semua	Everyone
+Gimana	How (Spoken)
+Aja	Just/Alright
+Lagi	Currently/In Progress
+Nih	Right Now/ Casual Softener
+Ga	Not? Soft Question
+Ya	Yeah/Okay/Right?/Softener
+Kenapa	Why
+ Ngapain	Doing What
+Banget	Really/Very
+Kok	Really/Actually
+Dikit	A little
+Agak	A bit/Somewhat
+Ini	This
+Sih	Soft Emphasis
+Masih	Still
+Tapi	But
+Yang	“The one...” That/Which/Who “...is”
+Nanti	Later
+Menit	Minute / Minutes
+Motor	Motorbike
+Jumpa	Meet / Encounter
+Ketemu	Meet/run into/See
+Tinggal	 Stay/Remain/Be Left
+Pergi	Go / Leave
+Pamit	Take Leave / Say Goodbye
+Duluan	First / Earlier
+Sudah	Already / Done
+Gue	I / Me ( Jakarata Slang)
+Kalau	If / When (set condition)
+Hati/Hati	Take Care / Be Careful
+Balik	Return / Come Back.
+Telat	Late
+Datang	Come / Arrive
+Bisa	Can / Able To
+Nggak / Ga	Not / No
+Sendiri	Alone
+Kosong	Free/Available
+Selesai	Finished / Done / Completed
+Dadah/Bye	Bye
+Sampai	Until / Arrive
+Permisi	Excuse Me
+Harus	Must / Have To
+Cabut	Leave abruptly  / Head Off (Slang)
+Aman	Safe / All Good
+Dalam	In ( time until )
+Sama	With (Informal)
+Dengen	With / By ( means to, instrument)
+Kapan	When ( question )
+Sekarang	Now ( this moment )
+Ngobrol	Chat / Talk
+Lain	Other / Another
+Kali	Time/ Occasion
+Atau	Or
+Bakal	Will / going to

@@ -176,16 +176,13 @@ export function normalise(text, lang, expand = false) {
       for (const [p, r] of EN_EQUIVALENTS) t = t.replace(p, r);
     }
 
-
-
     return t
       .replace(/[-–—]/g, " ")
-      .replace(/[?.!,]/g, "")
+      .replace(/[?.!,]/g, " ")
       .replace(/\s+/g, " ")
       .trim();
   });
 }
-
 
 /* ===============================
    SPLIT VARIANTS
