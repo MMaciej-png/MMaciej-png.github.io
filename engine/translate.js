@@ -43,6 +43,12 @@ const EN_EQUIVALENTS = [
   [/\blet['’]?s\b/g, "let us"],
   [/\blets\b/g, "let us"],
 
+  // ---- future equivalence ----
+  [/\b(am|are|is)\s+going\s+to\b/g, "will"],
+
+  [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
+
+
   // ---- filler words (forgiving) ----
   [/\b(really|just|actually|very)\b/g, ""]
 ];
@@ -58,7 +64,8 @@ const ID_EQUIVALENTS = [
 
 // Words that add NO semantic information (tone only)
 const OPTIONAL_TOKENS = new Set([
-  "kok", "nih", "dong", "sih", "deh"
+  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah","bakal"
+  
 ]);
 
 function isOptional(word) {
@@ -140,8 +147,12 @@ function processBrackets(text) {
 }
 
 function containsAllRequiredTokens(userNorm, expectedNorm) {
-  const expectedWords = expectedNorm.split(" ");
+  const expectedWords = new Set(expectedNorm.split(" "));
   const userWords = new Set(userNorm.split(" "));
+
+
+
+  
 
   return expectedWords.every(w =>
     isOptional(w) || userWords.has(w)
