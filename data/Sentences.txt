@@ -1,0 +1,254 @@
+Halo
+Hello
+
+Hai
+Hi
+
+Halo, apa kabar?
+Hello, how are you?
+
+Apa kabar?
+How are you?
+
+Gimana kabarnya?
+How’s it going?
+
+Selamat pagi
+Good morning
+
+Selamat siang
+Good afternoon
+
+Selamat malam
+Good evening
+
+Selamat tidur
+Good night
+
+Baik-baik aja kok.
+I’m fine, really.
+
+Baik kok.
+I’m good.
+
+Oke aja.
+It’s okay.
+
+Lancar kok.
+All good / going smoothly.
+
+Lagi kerja nih.
+Working right now.
+
+Lagi sibuk dikit.
+A bit busy.
+
+Lagi di jalan.
+On the way.
+
+Capek sih.
+Kind of tired.
+
+Hari ini capek banget.
+Really tired today.
+
+Masih oke kok.
+Still okay.
+
+Masih oke, tapi capek.
+Still okay, but tired.
+
+Halo, apa kabarnya?
+Hello, how are you?
+
+Baik-baik aja kok. Kamu?
+I’m fine. You?
+
+Baik kok.
+I’m good.
+
+Halo sayang, lagi kerja nih?
+Hey love, working right now?
+
+Iya, lagi kerja. Agak sibuk.
+Yeah, working. A bit busy.
+
+Gapapa kok, sayang.
+It’s okay, love.
+
+Lagi di jalan?
+Are you on the way?
+
+Iya, lagi di jalan. Lancar kok.
+Yeah, on the way. Smooth so far.
+
+Oke, nanti kabarin aku ya.
+Okay, update me later.
+
+Halo sayang, mau ngapain?
+Hey love, what do you want to do?
+
+Mau makan dulu nanti? Aku lapar banget.
+Want to eat first later? I’m really hungry.
+
+Oke, nanti kita makan yang enak ya.
+Okay, let’s eat something nice later.
+
+Dadah.
+Bye.
+
+Sampai jumpa.
+See you.
+
+Sampai ketemu.
+See you again.
+
+Aku dulu ya, dadah.
+I’m heading off now, bye.
+
+Permisi, saya pergi dulu.
+Excuse me, I’ll go first.
+
+Saya pamit dulu.
+I’ll take my leave.
+
+Aku cabut dulu.
+I’m heading off.
+
+Gue dulu ya.
+I’m off.
+
+Iya, hati-hati ya.
+Okay, take care.
+
+Sampai nanti.
+See you later.
+
+Aku sampai.
+I’ve arrived.
+
+Aku balik.
+I’m back.
+
+Aku sudah sampai.
+I’ve already arrived.
+
+Aku balik, aku aman.
+I’m back, I’m safe.
+
+Aku bakal sampai.
+I’ll arrive.
+
+Aku telat.
+I’m late.
+
+Aku datang lebih cepat.
+I’ll arrive early.
+
+Aku sampai dalam 10 menit.
+I’ll arrive in 10 minutes.
+
+Aku bakal telat hari ini, datang lebih cepat besok.
+I’ll be late today, come earlier tomorrow.
+
+Aku datang dengan mobil.
+I’ll arrive by car.
+
+Aku datang dengan motor.
+I’ll arrive by motorbike.
+
+Aku datang sendiri.
+I’ll arrive alone.
+
+Aku datang sama teman.
+I’ll arrive with a friend.
+
+Aku datang sama teman besok siang.
+I’ll arrive with a friend tomorrow afternoon.
+
+Aku sibuk.
+I’m busy.
+
+Aku kosong.
+I’m free.
+
+Sekarang aku sibuk, nanti kabarin ya.
+I’m busy right now, I’ll message you later.
+
+Aku nggak bisa sekarang.
+I can’t right now.
+
+Aku nggak bisa ngobrol sekarang.
+I can’t talk right now.
+
+Aku nggak bisa ngobrol sekarang, nanti aku kabarin.
+I can’t talk right now, I’ll message you later.
+
+Aku nanti chat.
+I’ll message later.
+
+Aku nanti kabarin.
+I’ll let you know later.
+
+Nanti aja.
+Later is fine.
+
+Lain kali.
+Another time.
+
+Nanti aku chat ya.
+I’ll message later, okay.
+
+Aku menulis pesan.
+I’m writing a message.
+
+Barang itu terambil.
+That item was taken accidentally.
+
+Tulisan ini terbaca.
+This writing can be read.
+
+Buku itu dibaca oleh saya.
+That book was read by me.
+
+Film itu dilihat oleh dia.
+That movie was seen by him/her.
+
+Aku meninggalkan tas saja.
+I just left the bag.
+
+Aku mencintai kamu banget.
+I love you very much.
+
+Aku mau memperbesar mobil lagi.
+I want to make the car bigger again.
+
+Dia beruang.
+He/She has money.
+
+Jalan ini berbahaya.
+This road is dangerous.
+
+Kami berjalan pelan-pelan.
+We are walking slowly.
+
+Dia bersepatu hitam.
+He/She is wearing black shoes.
+
+Mereka berpelukan.
+They hugged each other.
+
+Keindahan alam.
+The beauty of nature.
+
+Aku kedinginan.
+I’m too cold.
+
+Pembeli itu baru.
+That buyer is new.
+
+Pengunci tas itu rusak.
+That bag lock is broken.
+
+Tas itu ku-tinggalkan di rumah.
+I left the bag at home.
