@@ -23,6 +23,7 @@ const EN_EQUIVALENTS = [
   [/\bshe['’]?ll\b/g, "she will"],
   [/\bwe['’]?ll\b/g, "we will"],
   [/\bthey['’]?ll\b/g, "they will"],
+  
 
   // ---- would / had (ambiguous but safe) ----
   [/\bi['’]?d\b/g, "i would"],
@@ -46,11 +47,14 @@ const EN_EQUIVALENTS = [
   // ---- future equivalence ----
   [/\b(am|are|is)\s+going\s+to\b/g, "will"],
 
-  [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
+  [/\b(yes|yeah)\b/g, "yes"],
 
+  [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
+  [/\b(|little|bit|)\b/g, ""],
 
   // ---- filler words (forgiving) ----
   [/\b(really|just|actually|very)\b/g, ""]
+  
 ];
 
 
@@ -59,7 +63,8 @@ const ID_EQUIVALENTS = [
   [/\b(udah|sudah)\b/g, "sudah"],
   [/\b(lagi|sedang)\b/g, "sedang"],
   [/\baja\b/g, "saja"],
-  [/\b(kok|nih+h?)\b/g, ""]
+  [/\b(kok|nih+h?)\b/g, ""],
+  [/\b(sedikit|dikit)\b/g, "dikit"]
 ];
 
 // Words that add NO semantic information (tone only)

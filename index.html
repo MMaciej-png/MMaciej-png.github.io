@@ -28,7 +28,7 @@
 
                 <strong id="casual-rank-sr"></strong>
             </div>
-            
+
             <hr />
 
             <div class="stat">
@@ -143,10 +143,30 @@
         </div>
 
         <!-- RIGHT PANEL (unchanged UI) -->
-        <aside class="ranked-panel">
-            <h2>Ranked</h2>
-            <div class="stat"><span>Status</span><strong id="ranked-status">Idle</strong></div>
+        <aside class="ranked-panel" id="modules-panel">
+            <h2>Modules</h2>
+            <div class="modules-list">
+                <!-- buttons will be injected here later -->
+                <button class="module-btn active">
+                    <div class="module-title">All Modules</div>
+                    <div class="module-meta">
+                        <span>— items</span>
+                        <span>—%</span>
+                    </div>
+                </button>
+
+                <button class="module-btn">
+                    <div class="module-title">Greetings</div>
+                    <div class="module-meta">
+                        <span>— items</span>
+                        <span>—%</span>
+                    </div>
+                </button>
+
+
+            </div>
         </aside>
+
 
     </div>
 
