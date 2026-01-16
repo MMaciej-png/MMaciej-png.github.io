@@ -390,13 +390,6 @@ body {
   font-size: x-large;
 }
 
-.module-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: large;
-  color: #9ca3af;
-}
-
 .modules-list {
   flex: 1;
   overflow-y: auto;
@@ -421,6 +414,77 @@ body {
 .modules-list::-webkit-scrollbar-thumb:hover {
   background-color: #4b5563;      /* slate-500 */
 }
+
+/* Group wrapper */
+.module-group {
+  margin-top: 10px;
+}
+
+/* Folder header */
+.module-group-header {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-weight: 600;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Arrow */
+.module-group-header::after {
+  content: "▸";
+  transition: transform 0.2s ease;
+}
+
+.module-group-header.open::after {
+  transform: rotate(90deg);
+}
+
+/* Body */
+.module-group-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: large;
+  padding-left: 6px;
+  margin-top: 4px;
+}
+
+.module-group-body.collapsed {
+  display: none;
+  font-size: large;
+}
+
+.module-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  font-size: x-large;
+  border-radius: 8px;
+  background: #1e2333;
+  border: none;
+  cursor: pointer;
+  color: #e5e7eb;
+}
+
+.module-main {
+  font-weight: 600;
+}
+
+.module-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  color: #9ca3af;
+}
+
 
 
 

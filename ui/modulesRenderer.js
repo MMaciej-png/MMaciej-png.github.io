@@ -1,64 +1,102 @@
 /* ui/modulesRenderer.js */
 
-export function createModulesRenderer({ containerEl, onSelect }) {
-  if (!containerEl) {
-    throw new Error("modulesRenderer: containerEl is required");
-  }
+/* ui/modulesRenderer.js */
 
-  let activeModule = null;
+export function createModulesRenderer({ containerEl, onSelect }) {
 
   function render(modules) {
     containerEl.innerHTML = "";
 
-    for (const module of modules) {
-      const isAll = module.name === "__ALL__";
-      const isActive =
-        (isAll && activeModule === null) ||
-        (!isAll && module.name === activeModule);
+    /* ---------- Always-visible ---------- */
+    modules
+      .filter(m => m.type === "all" || m.type === "weakest")
+      .forEach(m => {
+        containerEl.appendChild(makeModuleButton(m));
+      });
 
-      const btn = document.createElement("button");
-      btn.className = "module-btn";
+    /* ---------- Group real modules ---------- */
+    const grouped = {};
+    for (const m of modules) {
+      if (m.type !== "module") continue;
+      (grouped[m.category] ??= []).push(m);
+    }
 
-      if (isActive) btn.classList.add("active");
-
-      const title = document.createElement("div");
-      title.className = "module-title";
-      title.textContent = isAll ? "All Modules" : module.name;
-
-      const meta = document.createElement("div");
-      meta.className = "module-meta";
-
-      const count = document.createElement("span");
-      count.textContent = `${module.total ?? 0} items`;
-
-      const accuracy = document.createElement("span");
-      accuracy.textContent =
-        module.accuracy == null ? "—" : `${module.accuracy}%`;
-
-      meta.appendChild(count);
-      meta.appendChild(accuracy);
-
-      if (module.bestStreak && module.bestStreak > 0) {
-        const streak = document.createElement("span");
-        streak.className = "module-streak";
-        streak.textContent = `🔥 ${module.bestStreak}`;
-        meta.appendChild(streak);
-      }
-
-      btn.appendChild(title);
-      btn.appendChild(meta);
-
-      btn.onclick = () => {
-        activeModule = isAll ? null : module.name;
-        onSelect?.(activeModule);
-        render(modules);
-      };
-
-      containerEl.appendChild(btn);
+    for (const [category, mods] of Object.entries(grouped)) {
+      containerEl.appendChild(makeGroup(category, mods));
     }
   }
 
-  return {
-    render
-  };
+  /* ===============================
+     GROUP (FOLDER)
+  =============================== */
+
+  function makeGroup(category, modules) {
+    const wrap = document.createElement("div");
+    wrap.className = "module-group";
+
+    const header = document.createElement("button");
+    header.className = "module-group-header";
+    header.textContent = category;
+
+    const body = document.createElement("div");
+    body.className = "module-group-body collapsed";
+
+    modules.forEach(m => body.appendChild(makeModuleButton(m)));
+
+    header.onclick = () => {
+      body.classList.toggle("collapsed");
+      header.classList.toggle("open");
+    };
+
+    wrap.append(header, body);
+    return wrap;
+  }
+
+  /* ===============================
+     MODULE BUTTON (WITH STATS)
+  =============================== */
+
+  function makeModuleButton(m) {
+    const btn = document.createElement("button");
+    btn.className = `module-btn ${m.type ?? ""}`;
+
+    btn.innerHTML = `
+      <div class="module-main">
+        <span class="module-name">${m.name}</span>
+      </div>
+
+      <div class="module-meta">
+        ${renderCounts(m)}
+        ${renderAccuracy(m)}
+        ${renderStreak(m)}
+      </div>
+    `;
+
+    btn.onclick = () => onSelect(m.name);
+    return btn;
+  }
+
+  function renderCounts(m) {
+    if (m.words == null && m.sentences == null) {
+      return `<span>${m.total ?? ""} Items</span>`;
+    }
+
+    return `
+      <span>${m.total ?? ""} Items</span>
+    `;
+  }
+
+  function renderAccuracy(m) {
+    if (m.accuracy == null) {
+      return `<span class="muted">—</span>`;
+    }
+    return `<span>${m.accuracy}%</span>`;
+  }
+
+  function renderStreak(m) {
+    if (!m.bestStreak) return `<span></span>`;
+    return `<span>🔥 ${m.bestStreak}</span>`;
+  }
+
+  return { render };
 }
