@@ -64,7 +64,7 @@ const ID_EQUIVALENTS = [
 
 // Words that add NO semantic information (tone only)
 const OPTIONAL_TOKENS = new Set([
-  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah","bakal","sekarang"
+  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah"
 ]);
 
 function isOptional(word) {
