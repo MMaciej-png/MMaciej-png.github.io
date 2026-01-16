@@ -10,24 +10,26 @@ export function createModulesRenderer({ containerEl, onSelect }) {
     function render(modules) {
         containerEl.innerHTML = "";
 
-        /* ---------- Always-visible ---------- */
-        modules
-            .filter(m => m.type === "all" || m.type === "weakest")
-            .forEach(m => {
-                containerEl.appendChild(makeModuleButton(m));
-            });
-
-        /* ---------- Group real modules ---------- */
+        /* ---------- Build groups ---------- */
         const grouped = {};
+
+        // Smart Modes group
+        grouped["Smart Modes"] = modules.filter(
+            m => m.type === "all" || m.type === "weakest"
+        );
+
+        // Real module groups
         for (const m of modules) {
             if (m.type !== "module") continue;
             (grouped[m.category] ??= []).push(m);
         }
 
         for (const [category, mods] of Object.entries(grouped)) {
+            if (!mods.length) continue;
             containerEl.appendChild(makeGroup(category, mods));
         }
     }
+
 
     /* ===============================
        GROUP (FOLDER)
