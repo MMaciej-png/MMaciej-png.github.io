@@ -433,7 +433,7 @@ body {
   padding: 6px 4px;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* Arrow */
