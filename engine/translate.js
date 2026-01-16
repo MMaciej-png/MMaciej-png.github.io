@@ -149,14 +149,14 @@ function containsAllRequiredTokens(userNorm, expectedNorm) {
   const expectedWords = new Set(expectedNorm.split(" "));
   const userWords = new Set(userNorm.split(" "));
 
-
-
-  
-
-  return expectedWords.every(w =>
-    isOptional(w) || userWords.has(w)
-  );
+  for (const w of expectedWords) {
+    if (!isOptional(w) && !userWords.has(w)) {
+      return false;
+    }
+  }
+  return true;
 }
+
 
 
 
