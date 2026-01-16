@@ -427,12 +427,13 @@ body {
   border: none;
   color: #9ca3af;
   font-weight: 600;
-  font-size: x-large;
+  font-size: large;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 6px 4px;
   cursor: pointer;
   display: flex;
+  text-align: left;
   justify-content: flex-start;
 }
 
