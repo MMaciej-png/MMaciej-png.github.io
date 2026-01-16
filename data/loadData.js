@@ -2,13 +2,13 @@ import { makeId } from "../engine/selection.js";
 import { getItemStats } from "../engine/itemStats.js";
 
 export async function loadItems() {
-  const w = await fetch("../data/words.json").then(r => r.json());
-  const s = await fetch("../data/sentences.json").then(r => r.json());
+  const content = await fetch("../data/NewContent.json")
+    .then(r => r.json());
 
   const getIndo = x => (x.indo ?? x.indonesian ?? "").trim();
   const getEng  = x => (x.english ?? x.eng ?? "").trim();
 
-  const mapItem = (x, type) => {
+  const mapItem = (x, type, module) => {
     const indo = getIndo(x);
     const eng = getEng(x);
     if (!indo || !eng) return null;
@@ -19,14 +19,29 @@ export async function loadItems() {
     return {
       id,
       type,
+      module,
       indo,
       eng,
       ...stats
     };
   };
 
-  return [
-    ...w.map(x => mapItem(x, "word")),
-    ...s.map(x => mapItem(x, "sentence"))
-  ].filter(Boolean);
+  const items = [];
+
+  for (const [moduleName, moduleData] of Object.entries(content)) {
+
+    /* ---------- WORDS ---------- */
+    for (const w of moduleData.words ?? []) {
+      const item = mapItem(w, "word", moduleName);
+      if (item) items.push(item);
+    }
+
+    /* ---------- SENTENCES ---------- */
+    for (const s of moduleData.sentences ?? []) {
+      const item = mapItem(s, "sentence", moduleName);
+      if (item) items.push(item);
+    }
+  }
+
+  return items;
 }

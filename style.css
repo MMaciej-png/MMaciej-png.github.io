@@ -289,7 +289,7 @@ body {
 }
 
 .ranked-panel {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .casual-panel h2,
@@ -338,6 +338,62 @@ body {
   color: #e5e7eb;
   transform: translateY(-0%);
   font-size: 50px;
+}
+
+/* ======================================================
+   MODULES PANEL
+====================================================== */
+
+#modules-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: calc(100vh - 200px);
+}
+
+.modules-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 4px;
+}
+
+/* ======================================================
+   MODULE BUTTONS
+====================================================== */
+
+.module-btn {
+  background: #1e2333;
+  border: 1px solid #2a2f3f;
+  border-radius: 12px;
+  padding: 12px;
+  color: #e6e6e6;
+  cursor: pointer;
+  text-align: left;
+  transition: background .15s ease, border .15s ease;
+}
+
+.module-btn:hover {
+  background: #232a40;
+}
+
+.module-btn.active {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px rgba(59,130,246,.6);
+}
+
+.module-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.module-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: .85em;
+  color: #9ca3af;
 }
 
 
