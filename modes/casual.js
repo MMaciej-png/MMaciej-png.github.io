@@ -41,19 +41,24 @@ let modulesRenderer = null;
 let allItems = [];
 let items = [];
 
+/* GLOBAL CONTENT FILTER */
+let contentFilter = "all"; // "all" | "words" | "sentences"
+
+/* MODULE FILTERS */
+let activeModules = new Set(); // empty = all modules
+let activeMode = "modules";    // "modules" | "weakest"
+
+/* CURRENT CARD */
 let current = null;
 let currentRender = null;
 let nextItem = null;
 let nextRender = null;
 
+/* ATTEMPTS */
 let attemptsLeft = 3;
 let locked = false;
 
-/* 🔑 ACTIVE FILTER */
-let activeModules = new Set();
-let activeMode = "modules"; // "modules" | "weakest"
-
-/* Session stats */
+/* SESSION STATS */
 let sessionCorrect = 0;
 let sessionFailed = 0;
 let sessionStreak = 0;
@@ -73,15 +78,42 @@ async function refreshModulesPanel() {
 
   const groups = await loadModulesMeta();
 
-  // Inject runtime-only streak for All Modules
+  // Inject runtime-only current streak into All Modules
   if (groups["Smart Modes"]) {
     const all = groups["Smart Modes"].find(m => m.name === "All Modules");
-    if (all) {
-      all.currentStreak = sessionStreak;
-    }
+    if (all) all.currentStreak = sessionStreak;
   }
 
-  modulesRenderer.render(groups, activeModules, activeMode);
+  modulesRenderer.render(groups, activeModules, activeMode, contentFilter);
+}
+
+/* ===============================
+   FILTER PIPELINE
+=============================== */
+
+function applyAllFilters() {
+  let pool = [...allItems];
+
+  // Content filter
+  if (contentFilter === "words") {
+    pool = pool.filter(i => i.type === "word");
+  } else if (contentFilter === "sentences") {
+    pool = pool.filter(i => i.type === "sentence");
+  }
+
+  // Module filter
+  if (activeMode === "modules" && activeModules.size > 0) {
+    pool = pool.filter(i => activeModules.has(i.module));
+  }
+
+  // Weakest override
+  if (activeMode === "weakest") {
+    pool = pool
+      .sort((a, b) => a.points - b.points)
+      .slice(0, 25);
+  }
+
+  items = pool;
 }
 
 function pickNewCard({ resetRecency = false } = {}) {
@@ -98,46 +130,6 @@ function pickNewCard({ resetRecency = false } = {}) {
   renderer.renderFront(currentRender);
   renderer.renderBack(currentRender);
 }
-
-/* ===============================
-   MODULE FILTERING
-=============================== */
-
-function applyModuleFilter() {
-  // 🛑 Prevent redundant rebuild in All Modules
-  if (
-    activeMode === "modules" &&
-    activeModules.size === 0 &&
-    items === allItems
-  ) {
-    return;
-  }
-
-  if (activeMode === "weakest") {
-    items = [...allItems]
-      .sort((a, b) => a.points - b.points)
-      .slice(0, 25);
-  }
-  else if (activeModules.size === 0) {
-    items = [...allItems];
-  }
-  else {
-    items = allItems.filter(i => activeModules.has(i.module));
-  }
-
-  attemptsLeft = 3;
-  locked = false;
-  nextItem = null;
-  nextRender = null;
-
-  card.classList.remove("flipped", "correct", "wrong");
-
-  pickNewCard({ resetRecency: true });
-
-  input.value = "";
-  input.focus();
-}
-
 
 /* ===============================
    ENGINE
@@ -163,22 +155,42 @@ export const casualEngine = (() => {
       containerEl: document.querySelector(".modules-list"),
       onSelect: async (name, type) => {
 
+        /* CONTENT TOGGLE */
+        if (name === "__CONTENT_TOGGLE__") {
+          contentFilter =
+            contentFilter === "all" ? "words" :
+            contentFilter === "words" ? "sentences" :
+            "all";
+
+          applyAllFilters();
+          pickNewCard({ resetRecency: true });
+          refreshModulesPanel();
+          return;
+        }
+
+        /* WEAKEST MODE */
         if (type === "weakest") {
           activeMode = "weakest";
           activeModules.clear();
-          applyModuleFilter();
+
+          applyAllFilters();
+          pickNewCard({ resetRecency: true });
           refreshModulesPanel();
           return;
         }
 
+        /* ALL MODULES */
         if (type === "all") {
           activeMode = "modules";
           activeModules.clear();
-          applyModuleFilter();
+
+          applyAllFilters();
+          pickNewCard({ resetRecency: true });
           refreshModulesPanel();
           return;
         }
 
+        /* NORMAL MODULE TOGGLE */
         activeMode = "modules";
 
         if (activeModules.has(name)) {
@@ -187,7 +199,8 @@ export const casualEngine = (() => {
           activeModules.add(name);
         }
 
-        applyModuleFilter();
+        applyAllFilters();
+        pickNewCard({ resetRecency: true });
         refreshModulesPanel();
       }
     });
@@ -241,7 +254,7 @@ export const casualEngine = (() => {
       fail();
     });
 
-    // 🔓 UNLOCK AFTER FAIL
+    // Unlock after wrong
     inputController.setOnUnlockAttempt(value => {
       if (locked && isCorrect(value, currentRender.answer, current.type)) {
         locked = false;
@@ -259,8 +272,11 @@ export const casualEngine = (() => {
         const isAnswer = card.classList.contains("flipped");
         speak(
           isAnswer ? current.indo : currentRender.question,
-          isAnswer ? "id-ID" :
-            currentRender.direction === "IE" ? "id-ID" : "en-GB"
+          isAnswer
+            ? "id-ID"
+            : currentRender.direction === "IE"
+              ? "id-ID"
+              : "en-GB"
         );
       });
     });
@@ -283,13 +299,11 @@ export const casualEngine = (() => {
       };
     });
 
-    items = [...allItems];
-
+    applyAllFilters();
     pickNewCard({ resetRecency: true });
 
     updateCasualLifetimeUI();
     refreshCasualRank();
-
     input.focus();
   }
 
@@ -357,7 +371,7 @@ export const casualEngine = (() => {
   }
 
   function fail() {
-    locked = true; // 🔑 IMPORTANT: do NOT lock input
+    locked = true;
     playWrong();
 
     const before = current.points;
