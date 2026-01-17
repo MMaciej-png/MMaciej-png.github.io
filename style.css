@@ -214,6 +214,7 @@ body {
 
 
 .card-meta {
+
   display: flex;
   align-items: center;
   gap: 8px;
@@ -719,34 +720,24 @@ body.light .bottom-bar button {
    MOBILE: WIDTH ANCHORED TO GAME
 =============================== */
 @media (max-width: 1080px) {
-
-  /* STACK ONLY – NO RESIZING */
   .layout {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
 
-    /* scaling happens via transform, not layout */
-    transform-origin: top center;
+    width: 520px;
+    max-width: 100%;
   }
 
-  /* KEEP DESKTOP WIDTHS */
   .app,
   .casual-panel,
   .ranked-panel {
-    width: 420px;          /* your desktop design width */
-    max-width: none;
+    width: 100%;
   }
 
-  /* FORCE VISIBILITY */
-  .ranked-panel {
-    visibility: visible;
-    display: flex;
-  }
-
-  /* ORDER */
   .app { order: 1; }
   .ranked-panel { order: 2; }
   .casual-panel { order: 3; }
 }
+
+
