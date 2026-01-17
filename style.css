@@ -602,91 +602,6 @@ body.light .bottom-bar button {
    MOBILE STACKED LAYOUT
 ====================================================== */
 
-@media (max-width: 1330px) {
-
-  /* Stack everything vertically */
-  .layout {
-    flex-direction: column;
-    min-height: 100%;
-    max-height: 200%;
-    align-items: center;
-    vertical-align: top;
-    padding: 76px 12px 0px;
-  }
-
-  /* Main app comes first */
-  .app {
-    order: 1;
-    width: 90%;
-    min-height: 100%;
-    max-height: 200%;
-    max-width: 90%;
-    padding: 16px;
-  }
-
-  /* Casual panel moves BELOW the game */
-  .casual-panel {
-    order: 2;
-    width: 90%;
-    min-height: 100%;
-    margin-top: 16px;
-    border-radius: 14px;
-  }
-
-  /* Ranked panel hidden on mobile */
-  .ranked-panel {
-    display: none;
-  }
-
-  /* Card adapts for mobile reading */
-  .card-inner {
-    height: clamp(240px, 55vh, 300px);
-  }
-
-  .card-face {
-    font-size: clamp(1.2em, 5vw, 1.6em);
-    padding: clamp(16px, 5vw, 28px);
-  }
-
-  /* Bottom bar stays thumb-friendly */
-  .bottom-bar {
-    width: min(420px, 95%);
-    height: 72px;
-  }
-
-  .bottom-bar button {
-    font-size: 1.6em;
-  }
-
-  /* Stack SR under the rank image */
-  .casual-rank {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .casual-rank .rank-display {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .casual-rank img {
-    margin-bottom: -20%;
-  }
-
-  .casual-rank strong {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-  }
-
-  #casual-input {
-    min-height: 100px;
-    text-align: center;
-    font-size: x-large;
-    margin-bottom: 50%;
-  }
-}
-
 .card-meta {
   display: flex;
   align-items: center;
@@ -787,33 +702,51 @@ body.light .bottom-bar button {
 
 /* ===== Mobile touch target ===== */
 
-@media (max-width: 1330px) {
-  .casual-panel {
-    padding-right: 10%;
-    padding-left: 10%;
+/* ===============================
+   VIEWPORT SCALING (MOBILE ONLY)
+=============================== */
+
+#viewport-scale {
+  width: 100%;
+  height: auto;
+}
+
+/* Only apply scaling on small screens */
+/* ===============================
+   MOBILE STACKED LAYOUT
+=============================== */
+/* ===============================
+   MOBILE: WIDTH ANCHORED TO GAME
+=============================== */
+@media (max-width: 1080px) {
+
+  /* STACK ONLY – NO RESIZING */
+  .layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    /* scaling happens via transform, not layout */
+    transform-origin: top center;
   }
 
-  #play-area {
-    margin: 20px 0;
-    padding-right: 5%;
-    padding-left: 5%;
+  /* KEEP DESKTOP WIDTHS */
+  .app,
+  .casual-panel,
+  .ranked-panel {
+    width: 420px;          /* your desktop design width */
+    max-width: none;
   }
 
-  .tts-control {
-    padding: 14px 16px;
+  /* FORCE VISIBILITY */
+  .ranked-panel {
+    visibility: visible;
+    display: flex;
   }
 
-  .tts-control input[type="range"] {
-    height: 10px;
-  }
-
-  .tts-control input[type="range"]::-webkit-slider-thumb {
-    width: 22px;
-    height: 22px;
-  }
-
-  .tts-control input[type="range"]::-moz-range-thumb {
-    width: 22px;
-    height: 22px;
-  }
+  /* ORDER */
+  .app { order: 1; }
+  .ranked-panel { order: 2; }
+  .casual-panel { order: 3; }
 }
