@@ -79,9 +79,8 @@ function makeGroup(category, modules, activeModules, activeMode, onSelect) {
   );
 
   const isOpen =
-    category === "Smart Modes" ||
-    containsActive ||
-    openFolders.has(category);
+  openFolders.has(category) ||
+  containsActive;
 
   body.classList.toggle("collapsed", !isOpen);
   header.classList.toggle("open", isOpen);
