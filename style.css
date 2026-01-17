@@ -482,11 +482,13 @@ body {
 
 .module-meta {
   display: flex;
-  justify-content: space-between;
-  font-size: large;
-  color: #9ca3af;
-  
+  flex-wrap: wrap;       /* ✅ */
+  gap: 6px;
+  justify-content: flex-start; /* ✅ */
+  min-width: 0;          /* ✅ VERY IMPORTANT */
 }
+
+
 
 .module-btn.active {
   background: #064e3b;            /* emerald-900 */
@@ -520,6 +522,17 @@ body {
   font-weight: 400;
   color: #9ca3af;
 }
+
+.module-btn,
+.module-main,
+.module-meta {
+  min-width: 0;
+}
+
+.modules-list {
+  overflow-x: hidden; /* ✅ */
+}
+
 
 
 
@@ -598,16 +611,6 @@ body.light .bottom-bar button {
   font-size: x-large;
 }
 
-
-/* ======================================================
-   MOBILE STACKED LAYOUT
-====================================================== */
-
-.card-meta {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 /* ======================================================
    TTS CONTROL – LABEL + SLIDER REDESIGN
 ====================================================== */
