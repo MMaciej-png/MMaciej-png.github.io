@@ -50,7 +50,7 @@ const EN_EQUIVALENTS = [
   [/\b(yes|yeah)\b/g, "yes"],
 
   [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
-  [/\b(|little|bit|)\b/g, ""],
+  [/\b(little|a little|a bit|bit)\b/g, ""],
 
   // ---- filler words (forgiving) ----
   [/\b(really|just|actually|very)\b/g, ""]

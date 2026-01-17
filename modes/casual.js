@@ -49,11 +49,11 @@ let nextRender = null;
 let attemptsLeft = 3;
 let locked = false;
 
-/* 🔑 FILTER STATE */
-let activeMode = "modules";      // "modules" | "weakest"
-let activeModules = new Set();   // empty = all modules
+/* 🔑 ACTIVE FILTER */
+let activeModules = new Set();
+let activeMode = "modules"; // "modules" | "weakest"
 
-/* SESSION STATS */
+/* Session stats */
 let sessionCorrect = 0;
 let sessionFailed = 0;
 let sessionStreak = 0;
@@ -73,10 +73,12 @@ async function refreshModulesPanel() {
 
   const groups = await loadModulesMeta();
 
-  // Inject session streak into "All Modules"
+  // Inject runtime-only streak for All Modules
   if (groups["Smart Modes"]) {
     const all = groups["Smart Modes"].find(m => m.name === "All Modules");
-    if (all) all.currentStreak = sessionStreak;
+    if (all) {
+      all.currentStreak = sessionStreak;
+    }
   }
 
   modulesRenderer.render(groups, activeModules, activeMode);
@@ -98,25 +100,26 @@ function pickNewCard({ resetRecency = false } = {}) {
 }
 
 /* ===============================
-   FILTERING
+   MODULE FILTERING
 =============================== */
 
 function applyModuleFilter() {
-
   if (activeMode === "weakest") {
     items = [...allItems]
       .sort((a, b) => a.points - b.points)
       .slice(0, 25);
   }
+  else if (activeModules.size === 0) {
+    items = [...allItems];
+  }
   else {
-    if (activeModules.size === 0) {
-      items = [...allItems]; // All Modules
-    } else {
-      items = allItems.filter(i => activeModules.has(i.module));
-    }
+    items = allItems.filter(i => activeModules.has(i.module));
   }
 
-  if (!items.length) return;
+  if (!items.length) {
+    console.warn("No items for current filter");
+    return;
+  }
 
   attemptsLeft = 3;
   locked = false;
@@ -138,7 +141,6 @@ function applyModuleFilter() {
 export const casualEngine = (() => {
 
   async function start() {
-
     card = document.getElementById("casual-card");
     cardInner = card.querySelector(".card-inner");
     input = document.getElementById("casual-input");
@@ -154,24 +156,30 @@ export const casualEngine = (() => {
 
     modulesRenderer = createModulesRenderer({
       containerEl: document.querySelector(".modules-list"),
-      onSelect: async (moduleName, type) => {
+      onSelect: async (name, type) => {
 
         if (type === "weakest") {
           activeMode = "weakest";
           activeModules.clear();
+          applyModuleFilter();
+          refreshModulesPanel();
+          return;
         }
-        else if (type === "all") {
+
+        if (type === "all") {
           activeMode = "modules";
           activeModules.clear();
+          applyModuleFilter();
+          refreshModulesPanel();
+          return;
         }
-        else {
-          activeMode = "modules";
 
-          if (activeModules.has(moduleName)) {
-            activeModules.delete(moduleName);
-          } else {
-            activeModules.add(moduleName);
-          }
+        activeMode = "modules";
+
+        if (activeModules.has(name)) {
+          activeModules.delete(name);
+        } else {
+          activeModules.add(name);
         }
 
         applyModuleFilter();
@@ -228,6 +236,14 @@ export const casualEngine = (() => {
       fail();
     });
 
+    // 🔓 UNLOCK AFTER FAIL
+    inputController.setOnUnlockAttempt(value => {
+      if (locked && isCorrect(value, currentRender.answer, current.type)) {
+        locked = false;
+        flip.beginAdvance();
+      }
+    });
+
     inputController.bind();
 
     /* ---------- TTS ---------- */
@@ -277,6 +293,8 @@ export const casualEngine = (() => {
   =============================== */
 
   function checkAnswer(value) {
+    if (locked) return;
+
     if (isCorrect(value, currentRender.answer, current.type)) {
       success();
     } else {
@@ -299,9 +317,23 @@ export const casualEngine = (() => {
 
     sessionCorrect++;
     sessionStreak++;
+    sessionBestStreak = Math.max(sessionBestStreak, sessionStreak);
 
     casualLifetime.total++;
     casualLifetime.complete++;
+
+    if (current.type === "word") {
+      casualLifetime.word.total++;
+      casualLifetime.word.correct++;
+    } else {
+      casualLifetime.sentence.total++;
+      casualLifetime.sentence.correct++;
+    }
+
+    casualLifetime.bestStreak = Math.max(
+      casualLifetime.bestStreak,
+      sessionStreak
+    );
 
     const m = getModuleStats(current.module);
     m.attempted++;
@@ -320,15 +352,27 @@ export const casualEngine = (() => {
   }
 
   function fail() {
-    locked = true;
-    inputController.setLocked(true);
+    locked = true; // 🔑 IMPORTANT: do NOT lock input
     playWrong();
 
+    const before = current.points;
     applyFail({ item: current, attemptsLeft });
     saveItemStats("casual", current.id, current);
 
+    renderer.renderBack(
+      { ...currentRender, points: current.points },
+      current.points - before
+    );
+
     sessionFailed++;
+    casualLifetime.streaks.push(sessionStreak);
     sessionStreak = 0;
+
+    casualLifetime.total++;
+    casualLifetime.failed++;
+
+    if (current.type === "word") casualLifetime.word.total++;
+    else casualLifetime.sentence.total++;
 
     const m = getModuleStats(current.module);
     m.attempted++;
