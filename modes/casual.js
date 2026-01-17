@@ -104,6 +104,15 @@ function pickNewCard({ resetRecency = false } = {}) {
 =============================== */
 
 function applyModuleFilter() {
+  // 🛑 Prevent redundant rebuild in All Modules
+  if (
+    activeMode === "modules" &&
+    activeModules.size === 0 &&
+    items === allItems
+  ) {
+    return;
+  }
+
   if (activeMode === "weakest") {
     items = [...allItems]
       .sort((a, b) => a.points - b.points)
@@ -114,11 +123,6 @@ function applyModuleFilter() {
   }
   else {
     items = allItems.filter(i => activeModules.has(i.module));
-  }
-
-  if (!items.length) {
-    console.warn("No items for current filter");
-    return;
   }
 
   attemptsLeft = 3;
@@ -133,6 +137,7 @@ function applyModuleFilter() {
   input.value = "";
   input.focus();
 }
+
 
 /* ===============================
    ENGINE

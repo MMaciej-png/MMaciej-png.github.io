@@ -46,14 +46,13 @@ const EN_EQUIVALENTS = [
 
   // ---- future equivalence ----
   [/\b(am|are|is)\s+going\s+to\b/g, "will"],
-
+  [/\b(can not|cannot)\b/g, "can not"],
   [/\b(yes|yeah)\b/g, "yes"],
 
   [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
-  [/\b(little|a little|a bit|bit)\b/g, ""],
-
+  [/\b(little|a little|a bit|bit)\b/g, "a little"],
   // ---- filler words (forgiving) ----
-  [/\b(really|just|actually|very)\b/g, ""]
+  [/\b(really|just|actually|very|right)\b/g, ""]
   
 ];
 
