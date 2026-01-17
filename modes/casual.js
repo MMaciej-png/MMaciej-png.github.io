@@ -49,10 +49,11 @@ let nextRender = null;
 let attemptsLeft = 3;
 let locked = false;
 
-/* 🔑 ACTIVE FILTER */
-let activeModule = "All Modules";
+/* 🔑 FILTER STATE */
+let activeMode = "modules";      // "modules" | "weakest"
+let activeModules = new Set();   // empty = all modules
 
-/* Session stats */
+/* SESSION STATS */
 let sessionCorrect = 0;
 let sessionFailed = 0;
 let sessionStreak = 0;
@@ -72,17 +73,14 @@ async function refreshModulesPanel() {
 
   const groups = await loadModulesMeta();
 
-  // Inject runtime-only streak
+  // Inject session streak into "All Modules"
   if (groups["Smart Modes"]) {
     const all = groups["Smart Modes"].find(m => m.name === "All Modules");
-    if (all) {
-      all.currentStreak = sessionStreak;
-    }
+    if (all) all.currentStreak = sessionStreak;
   }
 
-  modulesRenderer.render(groups, activeModule);
+  modulesRenderer.render(groups, activeModules, activeMode);
 }
-
 
 function pickNewCard({ resetRecency = false } = {}) {
   if (!items.length) return;
@@ -100,28 +98,25 @@ function pickNewCard({ resetRecency = false } = {}) {
 }
 
 /* ===============================
-   MODULE FILTERING
+   FILTERING
 =============================== */
 
-function applyModuleFilter(moduleName) {
-  activeModule = moduleName || "All Modules";
+function applyModuleFilter() {
 
-  if (moduleName === "Weakest Cards") {
+  if (activeMode === "weakest") {
     items = [...allItems]
       .sort((a, b) => a.points - b.points)
       .slice(0, 25);
   }
-  else if (!moduleName || moduleName === "All Modules") {
-    items = [...allItems];
-  }
   else {
-    items = allItems.filter(i => i.module === moduleName);
+    if (activeModules.size === 0) {
+      items = [...allItems]; // All Modules
+    } else {
+      items = allItems.filter(i => activeModules.has(i.module));
+    }
   }
 
-  if (!items.length) {
-    console.warn("No items for filter:", moduleName);
-    return;
-  }
+  if (!items.length) return;
 
   attemptsLeft = 3;
   locked = false;
@@ -143,6 +138,7 @@ function applyModuleFilter(moduleName) {
 export const casualEngine = (() => {
 
   async function start() {
+
     card = document.getElementById("casual-card");
     cardInner = card.querySelector(".card-inner");
     input = document.getElementById("casual-input");
@@ -158,9 +154,28 @@ export const casualEngine = (() => {
 
     modulesRenderer = createModulesRenderer({
       containerEl: document.querySelector(".modules-list"),
-      onSelect: async (moduleName) => {
-        applyModuleFilter(moduleName === "All Modules" ? null : moduleName);
-        await refreshModulesPanel(); // 🔑 ensures green + open folder
+      onSelect: async (moduleName, type) => {
+
+        if (type === "weakest") {
+          activeMode = "weakest";
+          activeModules.clear();
+        }
+        else if (type === "all") {
+          activeMode = "modules";
+          activeModules.clear();
+        }
+        else {
+          activeMode = "modules";
+
+          if (activeModules.has(moduleName)) {
+            activeModules.delete(moduleName);
+          } else {
+            activeModules.add(moduleName);
+          }
+        }
+
+        applyModuleFilter();
+        refreshModulesPanel();
       }
     });
 
@@ -211,14 +226,6 @@ export const casualEngine = (() => {
     inputController.setOnGiveUp(() => {
       attemptsLeft = 0;
       fail();
-    });
-
-    inputController.setOnUnlockAttempt(value => {
-      if (isCorrect(value, currentRender.answer, current.type)) {
-        locked = false;
-        inputController.setLocked(false);
-        flip.beginAdvance();
-      }
     });
 
     inputController.bind();
@@ -292,22 +299,9 @@ export const casualEngine = (() => {
 
     sessionCorrect++;
     sessionStreak++;
-    sessionBestStreak = Math.max(sessionBestStreak, sessionStreak);
 
     casualLifetime.total++;
     casualLifetime.complete++;
-    if (current.type === "word") {
-      casualLifetime.word.total++;
-      casualLifetime.word.correct++;
-    } else {
-      casualLifetime.sentence.total++;
-      casualLifetime.sentence.correct++;
-    }
-
-    casualLifetime.bestStreak = Math.max(
-      casualLifetime.bestStreak,
-      sessionStreak
-    );
 
     const m = getModuleStats(current.module);
     m.attempted++;
@@ -330,23 +324,11 @@ export const casualEngine = (() => {
     inputController.setLocked(true);
     playWrong();
 
-    const before = current.points;
     applyFail({ item: current, attemptsLeft });
     saveItemStats("casual", current.id, current);
 
-    renderer.renderBack(
-      { ...currentRender, points: current.points },
-      current.points - before
-    );
-
     sessionFailed++;
-    casualLifetime.streaks.push(sessionStreak);
     sessionStreak = 0;
-
-    casualLifetime.total++;
-    casualLifetime.failed++;
-    if (current.type === "word") casualLifetime.word.total++;
-    else casualLifetime.sentence.total++;
 
     const m = getModuleStats(current.module);
     m.attempted++;

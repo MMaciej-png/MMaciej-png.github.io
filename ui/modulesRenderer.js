@@ -7,11 +7,17 @@ const openFolders = new Set(["Smart Modes"]);
  */
 export function createModulesRenderer({ containerEl, onSelect }) {
 
-  function render(groups, activeModule) {
+  function render(groups, activeModules, activeMode) {
     containerEl.innerHTML = "";
 
     for (const [category, modules] of Object.entries(groups)) {
-      const groupEl = makeGroup(category, modules, activeModule, onSelect);
+      const groupEl = makeGroup(
+        category,
+        modules,
+        activeModules,
+        activeMode,
+        onSelect
+      );
       containerEl.appendChild(groupEl);
     }
   }
@@ -23,7 +29,7 @@ export function createModulesRenderer({ containerEl, onSelect }) {
    GROUP (FOLDER)
 =============================== */
 
-function makeGroup(category, modules, activeModule, onSelect) {
+function makeGroup(category, modules, activeModules, activeMode, onSelect) {
   const wrap = document.createElement("div");
   wrap.className = "module-group";
 
@@ -34,14 +40,22 @@ function makeGroup(category, modules, activeModule, onSelect) {
   const body = document.createElement("div");
   body.className = "module-group-body";
 
-  const containsActive = modules.some(m => m.name === activeModule);
-  const isOpen = containsActive || openFolders.has(category);
+  const containsActive = modules.some(m =>
+    activeModules.has(m.name)
+  );
+
+  const isOpen =
+    category === "Smart Modes" ||
+    containsActive ||
+    openFolders.has(category);
 
   body.classList.toggle("collapsed", !isOpen);
   header.classList.toggle("open", isOpen);
 
   modules.forEach(m => {
-    body.appendChild(makeModuleButton(m, activeModule, onSelect));
+    body.appendChild(
+      makeModuleButton(m, activeModules, activeMode, onSelect)
+    );
   });
 
   header.onclick = () => {
@@ -62,11 +76,17 @@ function makeGroup(category, modules, activeModule, onSelect) {
    MODULE BUTTON
 =============================== */
 
-function makeModuleButton(m, activeModule, onSelect) {
+function makeModuleButton(m, activeModules, activeMode, onSelect) {
   const btn = document.createElement("button");
   btn.className = "module-btn";
 
-  if (m.name === activeModule) {
+  // ✅ ACTIVE STATE
+  const isActive =
+    (m.type === "all" && activeMode === "modules" && activeModules.size === 0) ||
+    (m.type === "weakest" && activeMode === "weakest") ||
+    (!m.type && activeModules.has(m.name));
+
+  if (isActive) {
     btn.classList.add("active");
   }
 
@@ -75,11 +95,10 @@ function makeModuleButton(m, activeModule, onSelect) {
       <span class="module-name">${m.name}</span>
       ${renderDescription(m)}
     </div>
-
     ${renderMeta(m)}
   `;
 
-  btn.onclick = () => onSelect(m.name);
+  btn.onclick = () => onSelect(m.name, m.type);
   return btn;
 }
 
@@ -122,13 +141,11 @@ function renderAccuracy(m) {
 }
 
 function renderCurrentStreak(m) {
-  // show even if 0
   if (m.currentStreak == null) return "";
   return `<span>🔥 ${m.currentStreak}</span>`;
 }
 
 function renderBestStreak(m) {
-  // show even if 0
   if (m.bestStreak == null) return "";
   return `<span>🏆 ${m.bestStreak}</span>`;
 }
