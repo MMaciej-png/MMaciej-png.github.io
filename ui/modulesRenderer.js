@@ -1,115 +1,134 @@
 /* ui/modulesRenderer.js */
 
-/* ui/modulesRenderer.js */
+const openFolders = new Set(["Smart Modes"]);
 
+/**
+ * Creates the Modules Renderer
+ */
 export function createModulesRenderer({ containerEl, onSelect }) {
 
-    const openFolders = new Set();
+  function render(groups, activeModule) {
+    containerEl.innerHTML = "";
 
-
-    function render(modules) {
-        containerEl.innerHTML = "";
-
-        /* ---------- Build groups ---------- */
-        const grouped = {};
-
-        // Smart Modes group
-        grouped["Smart Modes"] = modules.filter(
-            m => m.type === "all" || m.type === "weakest"
-        );
-
-        // Real module groups
-        for (const m of modules) {
-            if (m.type !== "module") continue;
-            (grouped[m.category] ??= []).push(m);
-        }
-
-        for (const [category, mods] of Object.entries(grouped)) {
-            if (!mods.length) continue;
-            containerEl.appendChild(makeGroup(category, mods));
-        }
+    for (const [category, modules] of Object.entries(groups)) {
+      const groupEl = makeGroup(category, modules, activeModule, onSelect);
+      containerEl.appendChild(groupEl);
     }
+  }
 
+  return { render };
+}
 
-    /* ===============================
-       GROUP (FOLDER)
-    =============================== */
+/* ===============================
+   GROUP (FOLDER)
+=============================== */
 
-    function makeGroup(category, modules) {
-        const wrap = document.createElement("div");
-        wrap.className = "module-group";
+function makeGroup(category, modules, activeModule, onSelect) {
+  const wrap = document.createElement("div");
+  wrap.className = "module-group";
 
-        const header = document.createElement("button");
-        header.className = "module-group-header";
-        header.textContent = category;
+  const header = document.createElement("button");
+  header.className = "module-group-header";
+  header.textContent = category;
 
-        const body = document.createElement("div");
-        body.className = "module-group-body";
+  const body = document.createElement("div");
+  body.className = "module-group-body";
 
-        const isOpen = openFolders.has(category);
-        body.classList.toggle("collapsed", !isOpen);
-        header.classList.toggle("open", isOpen);
+  const containsActive = modules.some(m => m.name === activeModule);
+  const isOpen = containsActive || openFolders.has(category);
 
-        modules.forEach(m => body.appendChild(makeModuleButton(m)));
+  body.classList.toggle("collapsed", !isOpen);
+  header.classList.toggle("open", isOpen);
 
-        header.onclick = () => {
-            const nowOpen = body.classList.toggle("collapsed") === false;
-            header.classList.toggle("open", nowOpen);
+  modules.forEach(m => {
+    body.appendChild(makeModuleButton(m, activeModule, onSelect));
+  });
 
-            if (nowOpen) openFolders.add(category);
-            else openFolders.delete(category);
-        };
+  header.onclick = () => {
+    const willOpen = body.classList.contains("collapsed");
 
-        wrap.append(header, body);
-        return wrap;
-    }
+    body.classList.toggle("collapsed", !willOpen);
+    header.classList.toggle("open", willOpen);
 
+    if (willOpen) openFolders.add(category);
+    else openFolders.delete(category);
+  };
 
-    /* ===============================
-       MODULE BUTTON (WITH STATS)
-    =============================== */
+  wrap.append(header, body);
+  return wrap;
+}
 
-    function makeModuleButton(m) {
-        const btn = document.createElement("button");
-        btn.className = `module-btn ${m.type ?? ""}`;
+/* ===============================
+   MODULE BUTTON
+=============================== */
 
-        btn.innerHTML = `
-      <div class="module-main">
-        <span class="module-name">${m.name}</span>
-      </div>
+function makeModuleButton(m, activeModule, onSelect) {
+  const btn = document.createElement("button");
+  btn.className = "module-btn";
 
-      <div class="module-meta">
-        ${renderCounts(m)}
-        ${renderAccuracy(m)}
-        ${renderStreak(m)}
-      </div>
-    `;
+  if (m.name === activeModule) {
+    btn.classList.add("active");
+  }
 
-        btn.onclick = () => onSelect(m.name);
-        return btn;
-    }
+  btn.innerHTML = `
+    <div class="module-main">
+      <span class="module-name">${m.name}</span>
+      ${renderDescription(m)}
+    </div>
 
-    function renderCounts(m) {
-        if (m.words == null && m.sentences == null) {
-            return `<span>${m.total ?? ""} Items</span>`;
-        }
+    ${renderMeta(m)}
+  `;
 
-        return `
-      <span>${m.total ?? ""} Items</span>
-    `;
-    }
+  btn.onclick = () => onSelect(m.name);
+  return btn;
+}
 
-    function renderAccuracy(m) {
-        if (m.accuracy == null) {
-            return `<span class="muted">—</span>`;
-        }
-        return `<span>${m.accuracy}%</span>`;
-    }
+/* ===============================
+   DESCRIPTION
+=============================== */
 
-    function renderStreak(m) {
-        if (!m.bestStreak) return `<span></span>`;
-        return `<span>🔥 ${m.bestStreak}</span>`;
-    }
+function renderDescription(m) {
+  if (m.type === "weakest") {
+    return `<div class="module-desc">25 weakest items based on past performance</div>`;
+  }
+  return "";
+}
 
-    return { render };
+/* ===============================
+   META (STATS)
+=============================== */
+
+function renderMeta(m) {
+  if (m.type === "weakest") return "";
+
+  return `
+    <div class="module-meta">
+      ${renderCounts(m)}
+      ${renderAccuracy(m)}
+      ${renderCurrentStreak(m)}
+      ${renderBestStreak(m)}
+    </div>
+  `;
+}
+
+function renderCounts(m) {
+  if (m.total == null) return "";
+  return `<span>${m.total} Items</span>`;
+}
+
+function renderAccuracy(m) {
+  if (m.accuracy == null) return `<span class="muted">—</span>`;
+  return `<span>${m.accuracy}%</span>`;
+}
+
+function renderCurrentStreak(m) {
+  // show even if 0
+  if (m.currentStreak == null) return "";
+  return `<span>🔥 ${m.currentStreak}</span>`;
+}
+
+function renderBestStreak(m) {
+  // show even if 0
+  if (m.bestStreak == null) return "";
+  return `<span>🏆 ${m.bestStreak}</span>`;
 }

@@ -49,7 +49,8 @@ let nextRender = null;
 let attemptsLeft = 3;
 let locked = false;
 
-let activeModule = null;
+/* 🔑 ACTIVE FILTER */
+let activeModule = "All Modules";
 
 /* Session stats */
 let sessionCorrect = 0;
@@ -68,9 +69,20 @@ async function refreshCasualRank() {
 
 async function refreshModulesPanel() {
   if (!modulesRenderer) return;
-  const meta = await loadModulesMeta();
-  modulesRenderer.render(meta);
+
+  const groups = await loadModulesMeta();
+
+  // Inject runtime-only streak
+  if (groups["Smart Modes"]) {
+    const all = groups["Smart Modes"].find(m => m.name === "All Modules");
+    if (all) {
+      all.currentStreak = sessionStreak;
+    }
+  }
+
+  modulesRenderer.render(groups, activeModule);
 }
+
 
 function pickNewCard({ resetRecency = false } = {}) {
   if (!items.length) return;
@@ -92,10 +104,9 @@ function pickNewCard({ resetRecency = false } = {}) {
 =============================== */
 
 function applyModuleFilter(moduleName) {
-  activeModule = moduleName;
+  activeModule = moduleName || "All Modules";
 
   if (moduleName === "Weakest Cards") {
-    // 🔥 bottom 25 by points (dynamic)
     items = [...allItems]
       .sort((a, b) => a.points - b.points)
       .slice(0, 25);
@@ -125,7 +136,6 @@ function applyModuleFilter(moduleName) {
   input.focus();
 }
 
-
 /* ===============================
    ENGINE
 =============================== */
@@ -144,13 +154,19 @@ export const casualEngine = (() => {
       backPointsEl: document.getElementById("c-points-back")
     });
 
+    /* ---------- MODULES ---------- */
+
     modulesRenderer = createModulesRenderer({
       containerEl: document.querySelector(".modules-list"),
-      onSelect: applyModuleFilter
+      onSelect: async (moduleName) => {
+        applyModuleFilter(moduleName === "All Modules" ? null : moduleName);
+        await refreshModulesPanel(); // 🔑 ensures green + open folder
+      }
     });
 
-    const modulesMeta = await loadModulesMeta();
-    modulesRenderer.render(modulesMeta);
+    await refreshModulesPanel();
+
+    /* ---------- FLIP ---------- */
 
     flip = createFlipController(card);
 
@@ -181,6 +197,8 @@ export const casualEngine = (() => {
       card.classList.remove("correct", "wrong");
     });
 
+    /* ---------- INPUT ---------- */
+
     inputController = createInputController({
       inputEl: input,
       cardEl: card,
@@ -205,6 +223,8 @@ export const casualEngine = (() => {
 
     inputController.bind();
 
+    /* ---------- TTS ---------- */
+
     card.querySelectorAll(".tts-btn").forEach(btn => {
       btn.addEventListener("click", e => {
         e.stopPropagation();
@@ -220,6 +240,8 @@ export const casualEngine = (() => {
     document
       .getElementById("c-tts-rate")
       ?.addEventListener("input", e => setRate(+e.target.value));
+
+    /* ---------- LOAD DATA ---------- */
 
     const rawItems = await loadItems();
 
