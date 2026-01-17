@@ -1,18 +1,6 @@
-/* data/loadModulesMeta.js */
-
 import { getModuleStats } from "./moduleStats.js";
 
-/**
- * Loads module metadata for UI:
- * - item counts
- * - accuracy (derived)
- * - best streak
- * Includes virtual entries:
- * - All Modules
- * - Weakest Cards
- */
-
-const CATEGORY_MAP = {
+const MODULE_CATEGORY_MAP = {
     "Greetings & Openings": "Daily Conversation",
     "How I’m Doing": "Daily Conversation",
     "What I’m Doing / Availability": "Daily Conversation",
@@ -25,20 +13,23 @@ const CATEGORY_MAP = {
 };
 
 
+/**
+ * Loads grouped module metadata for the UI
+ */
 export async function loadModulesMeta() {
     const content = await fetch("../data/NewContent.json")
         .then(r => r.json());
 
-    const modules = [];
-
+    let totalItems = 0;
     let allAttempted = 0;
     let allCorrect = 0;
     let allBestStreak = 0;
-    let allTotalItems = 0;
+
+    const grouped = {};
 
     for (const [moduleName, data] of Object.entries(content)) {
-        const wordCount = (data.words ?? []).length;
-        const sentenceCount = (data.sentences ?? []).length;
+        const wordCount = data.words?.length ?? 0;
+        const sentenceCount = data.sentences?.length ?? 0;
         const total = wordCount + sentenceCount;
 
         const stats = getModuleStats(moduleName);
@@ -48,48 +39,58 @@ export async function loadModulesMeta() {
                 ? Math.round((stats.correct / stats.attempted) * 100)
                 : null;
 
-        modules.push({
+        const meta = {
             name: moduleName,
-            type: "module",
-            category: CATEGORY_MAP[moduleName] ?? "Other",
             words: wordCount,
             sentences: sentenceCount,
             total,
             accuracy,
-            bestStreak: stats.bestStreak
-        });
+            bestStreak: stats.bestStreak ?? 0,
+            currentStreak: stats.currentStreak ?? 0
+        };
 
 
+
+        // ✅ FIX: correct map name
+        const category =
+            MODULE_CATEGORY_MAP[moduleName] ?? "Other";
+
+        if (!grouped[category]) {
+            grouped[category] = [];
+        }
+
+        grouped[category].push(meta);
+
+        // Aggregate for "All Modules"
+        totalItems += total;
         allAttempted += stats.attempted;
         allCorrect += stats.correct;
-        allBestStreak = Math.max(allBestStreak, stats.bestStreak);
-        allTotalItems += total;
+        allBestStreak = Math.max(allBestStreak, stats.bestStreak ?? 0);
     }
 
-    /* ---------- Virtual: All Modules ---------- */
-    modules.unshift({
-        name: "All Modules",
-        type: "all",
-        words: null,
-        sentences: null,
-        total: allTotalItems,
-        accuracy:
-            allAttempted > 0
-                ? Math.round((allCorrect / allAttempted) * 100)
-                : null,
-        bestStreak: allBestStreak
-    });
+    return {
+        "Smart Modes": [
+            {
+                name: "All Modules",
+                type: "all",
+                total: totalItems,
+                accuracy:
+                    allAttempted > 0
+                        ? Math.round((allCorrect / allAttempted) * 100)
+                        : null,
+                bestStreak: allBestStreak,
+                currentStreak: 0
+            },
+            {
+                name: "Weakest Cards",
+                type: "weakest",
+                total: null,
+                accuracy: null,
+                bestStreak: 0,
+                currentStreak: 0
+            }
+        ],
+        ...grouped
+    };
 
-    /* ---------- Virtual: Weakest Cards ---------- */
-    modules.splice(1, 0, {
-        name: "Weakest Cards",
-        type: "weakest",
-        words: null,
-        sentences: null,
-        total: 25,        // UI hint only
-        accuracy: null,   // derived dynamically
-        bestStreak: null
-    });
-
-    return modules;
 }

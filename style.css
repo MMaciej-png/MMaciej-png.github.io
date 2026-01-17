@@ -467,7 +467,7 @@ body {
   flex-direction: column;
   gap: 4px;
   padding: 8px;
-  font-size: x-large;
+  font-size: large;
   border-radius: 8px;
   background: #1e2333;
   border: none;
@@ -484,9 +484,41 @@ body {
   justify-content: space-between;
   font-size: large;
   color: #9ca3af;
+  
 }
 
+.module-btn.active {
+  background: #064e3b;            /* emerald-900 */
+  box-shadow: 0 0 0 1px #10b981;
+}
 
+.module-btn.active .module-name {
+  color: #d1fae5;
+}
+
+.module-btn.active .module-meta {
+  color: #a7f3d0;
+}
+
+.module-meta .streak.current {
+  color: #22c55e; /* green */
+  font-weight: 600;
+}
+
+.module-meta .streak.best {
+  color: #f59e0b; /* amber */
+}
+
+.module-btn.active .module-desc {
+  color: #86efac;
+}
+
+/* Description (Weakest Cards) */
+.module-desc {
+  font-size: large;
+  font-weight: 400;
+  color: #9ca3af;
+}
 
 
 
