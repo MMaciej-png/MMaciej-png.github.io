@@ -539,21 +539,20 @@ body {
   align-items: center;
   width: 100%;
   gap: 10px;
-  padding: 12px;
-  margin-bottom: 8px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 50px;
   background: #064e3b;
   border: 1px solid #5bb37b;
   color: #e5e7eb;
   font-size: 1em;
   font-weight: 600;
   cursor: pointer;
+  transition: background .15s ease, border .15s ease;
 }
 
 .content-toggle:hover {
-  background: #043125;
+  background: rgb(9, 121, 93);
 }
-
 
 .toggle-icon {
   font-size: 1.1em;
