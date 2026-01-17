@@ -7,9 +7,17 @@ const openFolders = new Set(["Smart Modes"]);
  */
 export function createModulesRenderer({ containerEl, onSelect }) {
 
-  function render(groups, activeModules, activeMode) {
+  function render(groups, activeModules, activeMode, contentFilter) {
     containerEl.innerHTML = "";
 
+    /* ===============================
+       GLOBAL CONTENT TOGGLE (TOP)
+    =============================== */
+    renderToggle(containerEl, contentFilter, onSelect);
+
+    /* ===============================
+       MODULE GROUPS
+    =============================== */
     for (const [category, modules] of Object.entries(groups)) {
       const groupEl = makeGroup(
         category,
@@ -24,6 +32,32 @@ export function createModulesRenderer({ containerEl, onSelect }) {
 
   return { render };
 }
+
+/* ===============================
+   CONTENT TOGGLE
+=============================== */
+
+function renderToggle(container, current, onSelect) {
+  const btn = document.createElement("button");
+  btn.className = "content-toggle";
+
+  const label =
+    current === "all" ? "Words & Sentences" :
+    current === "words" ? "Only Words" :
+    "Only Sentences";
+
+  btn.innerHTML = `
+    <span class="toggle-icon">🔄</span>
+    <span class="toggle-label">${label}</span>
+  `;
+
+  btn.onclick = () => {
+    onSelect("__CONTENT_TOGGLE__");
+  };
+
+  container.appendChild(btn);
+}
+
 
 /* ===============================
    GROUP (FOLDER)
@@ -80,15 +114,12 @@ function makeModuleButton(m, activeModules, activeMode, onSelect) {
   const btn = document.createElement("button");
   btn.className = "module-btn";
 
-  // ✅ ACTIVE STATE
   const isActive =
     (m.type === "all" && activeMode === "modules" && activeModules.size === 0) ||
     (m.type === "weakest" && activeMode === "weakest") ||
     (!m.type && activeModules.has(m.name));
 
-  if (isActive) {
-    btn.classList.add("active");
-  }
+  if (isActive) btn.classList.add("active");
 
   btn.innerHTML = `
     <div class="module-main">
@@ -108,7 +139,11 @@ function makeModuleButton(m, activeModules, activeMode, onSelect) {
 
 function renderDescription(m) {
   if (m.type === "weakest") {
-    return `<div class="module-desc">25 weakest items based on past performance</div>`;
+    return `
+      <div class="module-desc">
+        25 weakest items based on past performance
+      </div>
+    `;
   }
   return "";
 }
