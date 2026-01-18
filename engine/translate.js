@@ -48,12 +48,13 @@ const EN_EQUIVALENTS = [
   [/\b(am|are|is)\s+going\s+to\b/g, "will"],
   [/\b(can not|cannot)\b/g, "can not"],
   [/\b(yes|yeah)\b/g, "yes"],
+  [/\b(Kind of|Kinda)\b/g, "Kind of"]
 
   [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
   [/\b(little|a little|a bit|bit)\b/g, "a little"],
   // ---- filler words (forgiving) ----
   [/\b(really|just|actually|very|right)\b/g, ""]
-  
+    [/\b(ok|okay)\b/g, "okay"],
 ];
 
 
@@ -63,7 +64,9 @@ const ID_EQUIVALENTS = [
   [/\b(lagi|sedang)\b/g, "sedang"],
   [/\baja\b/g, "saja"],
   [/\b(kok|nih+h?)\b/g, ""],
+  [/\b(sekarang|nih)\b/g, "sekarang"]
   [/\b(sedikit|dikit)\b/g, "dikit"]
+  [/\b(datang|sampai)\b/g, "dikit"]
 ];
 
 // Words that add NO semantic information (tone only)

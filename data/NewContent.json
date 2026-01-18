@@ -11,7 +11,10 @@
       { "indo": "Apa", "english": "What" },
       { "indo": "Kabar", "english": "News / Condition" },
       { "indo": "Gimana", "english": "How (spoken)" },
-      { "indo": "Semua", "english": "Everyone / All (things)" }
+      { "indo": "Semua", "english": "Everyone / All (things)" },
+      { "indo": "Tidur", "english": "Sleep" },
+      { "indo": "Sayang", "english": "Love / Dear" }
+
     ],
     "sentences": [
       { "indo": "Halo/Hai", "english": "Hello/Hi" },
@@ -19,8 +22,8 @@
       { "indo": "Gimana kabarnya?", "english": "How’s it going?" },
       { "indo": "Selamat pagi", "english": "Good morning" },
       { "indo": "Selamat siang", "english": "Good afternoon" },
-      { "indo": "Selamat malam", "english": "Good evening" },
-      { "indo": "Selamat tidur", "english": "Good night" },
+      { "indo": "Selamat malam", "english": "Good night" },
+      { "indo": "Selamat tidur", "english": "Good sleep" },
       { "indo": "Halo sayang, lagi kerja nih?", "english": "Hey love, working right now?" }
     ]
   },
@@ -40,6 +43,14 @@
       { "indo": "Lemah", "english": "Weak" },
       { "indo": "Banget", "english": "Very / Really" },
       { "indo": "Masih", "english": "Still" }
+      { "indo": "Aja", "english": "Just / Simply" },
+      { "indo": "Hari", "english": "Day" },
+      { "indo": "Ini", "english": "This" },
+      { "indo": "Tapi", "english": "But" },
+      { "indo": "Kamu", "english": "You" },
+      { "indo": "Sekarang", "english": "Now" },
+      { "indo": "Aku", "english": "I / Me" }
+
     ],
     "sentences": [
       { "indo": "Baik-baik aja kok.", "english": "I’m fine, really." },
@@ -67,7 +78,12 @@
       { "indo": "Nih", "english": "Right now (casual softener)" },
       { "indo": "Ga/Nggak", "english": "Not / No" },
       { "indo": "Agak", "english": "A bit" },
-      { "indo": "Dikit", "english": "A little" }
+      { "indo": "Dikit", "english": "A little" },
+      { "indo": "Iya", "english": "Yes" },
+      { "indo": "Di", "english": "At / In" },
+      { "indo": "Tulis", "english": "Write" },
+      { "indo": "Pesan", "english": "Message" }
+
     ],
     "sentences": [
       { "indo": "Lagi kerja nih.", "english": "Working right now." },
@@ -88,12 +104,18 @@
       { "indo": "Lapar", "english": "Hungry" },
       { "indo": "Dulu", "english": "Earlier / For now" },
       { "indo": "Kalau", "english": "If / When" },
-      { "indo": "Bakal", "english": "Will / Going to" }
+      { "indo": "Bakal", "english": "Will / Going to" },
+      { "indo": "Ya", "english": "Okay? / Softener" },
+      { "indo": "Kita", "english": "We / Us" },
+      { "indo": "Makan", "english": "Eat" },
+      { "indo": "Yang", "english": "Which / That" },
+      { "indo": "Enak", "english": "Tasty / Good" }
+
     ],
     "sentences": [
       { "indo": "Oke, nanti kabarin aku ya.", "english": "Okay, update me later." },
-      { "indo": "Aku nanti kabarin.", "english": "I’ll message you later." },
-      { "indo": "Aku nanti chat.", "english": "I’ll message later." },
+      { "indo": "Nanti aku kabarin.", "english": "I’ll message you later." },
+      { "indo": "Nanti aku chat.", "english": "I’ll message later." },
       { "indo": "Nanti aku chat ya.", "english": "I’ll message later, okay." },
       { "indo": "Nanti aja.", "english": "Later is fine." },
       { "indo": "Lain kali.", "english": "Another time." },
@@ -112,9 +134,16 @@
       { "indo": "Menit", "english": "Minute" },
       { "indo": "Motor", "english": "Motorbike" },
       { "indo": "Sendiri", "english": "Alone" },
-      { "indo": "Sama", "english": "With (informal)" },
+      { "indo": "Sama (informal)", "english": "With (informal)" },
       { "indo": "Dengan", "english": "With / By" },
-      { "indo": "Dalam", "english": "In (time until)" }
+      { "indo": "Dalam", "english": "In (time until)" },
+      { "indo": "Sudah", "english": "Already" },
+      { "indo": "Lebih", "english": "More" },
+      { "indo": "Cepat", "english": "Fast / Early" },
+      { "indo": "Besok", "english": "Tomorrow" },
+      { "indo": "Mobil", "english": "Car" },
+      { "indo": "Teman", "english": "Friend" }
+
     ],
     "sentences": [
       { "indo": "Lagi di jalan?", "english": "Are you on the way?" },
@@ -142,8 +171,12 @@
       { "indo": "Sampai", "english": "Until / Arrive" },
       { "indo": "Permisi", "english": "Excuse me" },
       { "indo": "Pamit", "english": "Take leave / Say goodbye" },
-      { "indo": "Cabut", "english": "Head off (slang)" },
-      { "indo": "Hati-hati", "english": "Take care" }
+      { "indo": "Cabut (slang)", "english": "Head off (slang)" },
+      { "indo": "Hati-hati", "english": "Take care" },
+      { "indo": "Gue", "english": "I / Me (slang)" },
+      { "indo": "Saya", "english": "I / Me (formal)" },
+      { "indo": "Pergi", "english": "Go / Leave" }
+
     ],
     "sentences": [
       { "indo": "Dadah.", "english": "Bye." },
@@ -165,7 +198,22 @@
       { "indo": "Jalan (Verb)", "english": "Walk" },
       { "indo": "Indah", "english": "Beautiful (scenery)" },
       { "indo": "Cantik", "english": "Beautiful (women)" },
-      { "indo": "Rusak", "english": "Broken" }
+      { "indo": "Rusak", "english": "Broken" },
+      { "indo": "Itu", "english": "That" },
+      { "indo": "Oleh", "english": "By" },
+      { "indo": "Dia", "english": "He / She" },
+      { "indo": "Tas", "english": "Bag" },
+      { "indo": "Rumah", "english": "House" },
+      { "indo": "Mau", "english": "Want" },
+      { "indo": "Bahaya", "english": "Danger" },
+      { "indo": "Kami", "english": "We" },
+      { "indo": "Pelan", "english": "Slow" },
+      { "indo": "Hitam", "english": "Black" },
+      { "indo": "Alam", "english": "Nature" },
+      { "indo": "Baru", "english": "New" },
+      { "indo": "Kunci", "english": "Lock" },
+      { "indo": "Cinta", "english": "Love" }
+
     ],
     "sentences": [
       { "indo": "Barang itu terambil.", "english": "That item was taken accidentally." },
