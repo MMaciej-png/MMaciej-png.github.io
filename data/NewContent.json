@@ -49,7 +49,9 @@
       { "indo": "Tapi", "english": "But" },
       { "indo": "Kamu", "english": "You" },
       { "indo": "Sekarang", "english": "Now" },
-      { "indo": "Aku", "english": "I / Me" }
+      { "indo": "Aku", "english": "I / Me" },
+      { "indo": "Kok", "english": "Really / Actually" },
+      { "indo": "Sih", "english": "Soft emphasis particle" }
 
     ],
     "sentences": [
@@ -109,7 +111,9 @@
       { "indo": "Kita", "english": "We / Us" },
       { "indo": "Makan", "english": "Eat" },
       { "indo": "Yang", "english": "Which / That" },
-      { "indo": "Enak", "english": "Tasty / Good" }
+      { "indo": "Enak", "english": "Tasty / Good" },
+      { "indo": "Lain", "english": "Other / Another" },
+      { "indo": "Kali", "english": "Time / Occasion" }
 
     ],
     "sentences": [
@@ -175,7 +179,9 @@
       { "indo": "Hati-hati", "english": "Take care" },
       { "indo": "Gue", "english": "I / Me (slang)" },
       { "indo": "Saya", "english": "I / Me (formal)" },
-      { "indo": "Pergi", "english": "Go / Leave" }
+      { "indo": "Pergi", "english": "Go / Leave" },
+      { "indo": "Jumpa", "english": "Meet" },
+      { "indo": "Ketemu", "english": "Meet / Run into" }
 
     ],
     "sentences": [
@@ -212,7 +218,13 @@
       { "indo": "Alam", "english": "Nature" },
       { "indo": "Baru", "english": "New" },
       { "indo": "Kunci", "english": "Lock" },
-      { "indo": "Cinta", "english": "Love" }
+      { "indo": "Cinta", "english": "Love" },
+      { "indo": "Ambil", "english": "Take" },
+      { "indo": "Baca", "english": "Read" },
+      { "indo": "Lihat", "english": "See" },
+      { "indo": "Tinggal", "english": "Leave / Stay" },
+      { "indo": "Peluk", "english": "Hug" },
+      { "indo": "Beli", "english": "Buy" }
 
     ],
     "sentences": [
