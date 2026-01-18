@@ -64,8 +64,8 @@ const ID_EQUIVALENTS = [
   [/\b(lagi|sedang)\b/g, "sedang"],
   [/\baja\b/g, "saja"],
   [/\b(kok|nih+h?)\b/g, ""],
-  [/\b(sekarang|nih)\b/g, "sekarang"]
-  [/\b(sedikit|dikit)\b/g, "dikit"]
+  [/\b(sekarang|nih)\b/g, "sekarang"],
+  [/\b(sedikit|dikit)\b/g, "dikit"],
   [/\b(datang|sampai)\b/g, "dikit"]
 ];
 
