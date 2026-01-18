@@ -23,9 +23,8 @@ const EN_EQUIVALENTS = [
   [/\bshe['’]?ll\b/g, "she will"],
   [/\bwe['’]?ll\b/g, "we will"],
   [/\bthey['’]?ll\b/g, "they will"],
-  
 
-  // ---- would / had (ambiguous but safe) ----
+  // ---- would / had (ambiguous but acceptable for casual) ----
   [/\bi['’]?d\b/g, "i would"],
   [/\byou['’]?d\b/g, "you would"],
   [/\bhe['’]?d\b/g, "he would"],
@@ -44,31 +43,67 @@ const EN_EQUIVALENTS = [
   [/\blet['’]?s\b/g, "let us"],
   [/\blets\b/g, "let us"],
 
-  // ---- future equivalence ----
+  // ---- future / intent ----
   [/\b(am|are|is)\s+going\s+to\b/g, "will"],
+  [/\b(gonna|going to)\b/g, "will"],
+  [/\b(wanna|want to)\b/g, "want to"],
+
+  // ---- semantic grouping ----
   [/\b(can not|cannot)\b/g, "can not"],
   [/\b(yes|yeah)\b/g, "yes"],
-  [/\b(Kind of|Kinda)\b/g, "Kind of"],
   [/\b(come|arrive)\b/g, "come"],
+  [/\b(kind of|kinda|kindof)\b/g, "kind of"],
 
+  // ---- time inference ----
   [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
+
+  // ---- quantity ----
   [/\b(little|a little|a bit|bit)\b/g, "a little"],
-  // ---- filler words (forgiving) ----
-  [/\b(really|just|actually|very|right)\b/g, ""],
+
+  // ---- fillers (remove) ----
+  [/\b(really|just|actually|very|right|please|pls)\b/g, ""],
+
+  // ---- normalise ok ----
   [/\b(ok|okay)\b/g, "okay"],
 ];
 
 
+
 const ID_EQUIVALENTS = [
+  // ---- negation ----
   [/\b(ga|gak|nggak|enggak)\b/g, "tidak"],
+
+  // ---- tense / aspect ----
   [/\b(udah|sudah)\b/g, "sudah"],
   [/\b(lagi|sedang)\b/g, "sedang"],
+
+  // ---- particles / tone ----
   [/\baja\b/g, "saja"],
   [/\b(kok|nih+h?)\b/g, ""],
-  [/\b(sekarang|nih)\b/g, "sekarang"],
+  [/\b(ya|yah)\b/g, ""],
+
+  // ---- time ----
+  [/\b(sekarang)\b/g, "sekarang"],
+  [/\b(tadi|dulu)\b/g, "dulu"],
+
+  // ---- quantity ----
   [/\b(sedikit|dikit)\b/g, "dikit"],
-  [/\b(datang|sampai)\b/g, "sampai"]
+
+  // ---- motion ----
+  [/\b(datang|sampai)\b/g, "sampai"],
+
+  // ---- pronouns ----
+  [/\b(aku|saya|gue)\b/g, "aku"],
+  [/\b(kamu|kau)\b/g, "kamu"],
+
+  // ---- morphology (CASUAL ONLY) ----
+  [/\bber(\w+)\b/g, "$1"],
+  [/\b(di|ter)(\w+)\b/g, "$2"],
+
+  // ---- reduplication ----
+  [/\b(\w+)-\1\b/g, "$1"],
 ];
+
 
 // Words that add NO semantic information (tone only)
 const OPTIONAL_TOKENS = new Set([
