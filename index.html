@@ -196,39 +196,48 @@
         };
 
         // ---------- SCALE TO MATCH MAIN GAME WIDTH ----------
-        function scaleToGameWidth() {
+        function scaleToScreen() {
             const layout = document.querySelector(".layout");
-            const app = document.querySelector(".app");
-            if (!layout || !app) return;
+            if (!layout) return;
 
-            if (window.matchMedia("(max-width: 1080px)").matches) {
-                // Natural widths BEFORE scaling
-                const layoutWidth = layout.offsetWidth;
-                const gameWidth = app.offsetWidth;
+            // Reset first so measurement is correct
+            layout.style.transform = "none";
 
-                // Leave 10% horizontal breathing room
-                const availableWidth = window.innerWidth * 0.9;
+            const DESIGN_WIDTH = 1920;
+            const DESIGN_HEIGHT = 1080;
 
-                // Scale so GAME fits available width
-                const scale = availableWidth / gameWidth;
+            const vw = window.innerWidth;
+            const vh = window.innerHeight;
 
-                // Scaled layout width
-                const scaledLayoutWidth = layoutWidth * scale;
+            // Measure REAL layout size
+            const rect = layout.getBoundingClientRect();
+            const lw = rect.width;
+            const lh = rect.height;
 
-                // Center the scaled layout
-                const translateX = (window.innerWidth - scaledLayoutWidth) / 2;
+            // Scale down only
+            const scale = Math.min(
+                vw / lw,
+                vh / lh,
+                1
+            );
 
-                layout.style.transformOrigin = "top left";
-                layout.style.transform =
-                    `translateX(${translateX}px) scale(${scale})`;
-            } else {
-                layout.style.transform = "";
-            }
+            const scaledWidth = lw * scale;
+            const scaledHeight = lh * scale;
+
+            const translateX = (vw - scaledWidth) / 2;
+            const translateY = (vh - scaledHeight) / 2;
+
+            layout.style.transformOrigin = "top left";
+            layout.style.transform =
+                `translate(${translateX}px, ${translateY}px) scale(${scale})`;
         }
 
-        scaleToGameWidth();
-        window.addEventListener("resize", scaleToGameWidth);
-        window.addEventListener("orientationchange", scaleToGameWidth);
+
+
+
+        scaleToScreen();
+        window.addEventListener("resize", scaleToScreen);
+        window.addEventListener("orientationchange", scaleToScreen);
         // ----------------------------------------------------
 
         // ----------------------------------------------------
