@@ -102,7 +102,7 @@
         { "indo": "Bekerja", "english": "Work" },
         { "indo": "Berbicara", "english": "Talk" },
         { "indo": "Menulis", "english": "Write" },
-        { "indo": "Saya", "english": "I" }
+        { "indo": "Saya", "english": "I / Me" }
       ],
       "sentences": [
         { "indo": "Saya sedang bekerja.", "english": "I am working." },
@@ -116,7 +116,7 @@
         { "indo": "Kerja", "english": "Work" },
         { "indo": "Ngobrol", "english": "Chat" },
         { "indo": "Nulis", "english": "Write" },
-        { "indo": "Aku", "english": "I" },
+        { "indo": "Aku", "english": "I / Me" },
         { "indo": "Nggak", "english": "Not" }
       ],
       "sentences": [
@@ -141,7 +141,7 @@
     "formal": {
       "words": [
         { "indo": "Ingin", "english": "Want" },
-        { "indo": "Saya", "english": "I" },
+        { "indo": "Saya", "english": "I / Me" },
         { "indo": "Anda", "english": "You" }
       ],
       "sentences": [
@@ -154,7 +154,7 @@
       "words": [
         { "indo": "Mau", "english": "Want" },
         { "indo": "Pengin", "english": "Want (spoken)" },
-        { "indo": "Aku", "english": "I" },
+        { "indo": "Aku", "english": "I / Me" },
         { "indo": "Kamu", "english": "You" },
         { "indo": "Banget", "english": "Very" }
       ],
@@ -183,7 +183,7 @@
       "words": [
         { "indo": "Makanan", "english": "Food" },
         { "indo": "Minuman", "english": "Drink (noun)" },
-        { "indo": "Saya", "english": "I" },
+        { "indo": "Saya", "english": "I / Me" },
         { "indo": "Anda", "english": "You" },
         { "indo": "Ingin", "english": "Want" }
       ],
@@ -197,7 +197,7 @@
     },
     "informal": {
       "words": [
-        { "indo": "Aku", "english": "I" },
+        { "indo": "Aku", "english": "I / Me" },
         { "indo": "Kamu", "english": "You" },
         { "indo": "Mau", "english": "Want" },
         { "indo": "Banget", "english": "Very / Really" }
@@ -226,7 +226,7 @@
         { "indo": "Keluarga", "english": "Family" },
         { "indo": "Anak", "english": "Child" },
         { "indo": "Memiliki", "english": "Have / Own" },
-        { "indo": "Saya", "english": "I" }
+        { "indo": "Saya", "english": "I / Me" }
       ],
       "sentences": [
         { "indo": "Dia teman saya.", "english": "He/She is my friend." },
@@ -239,7 +239,7 @@
       "words": [
         { "indo": "Pacar", "english": "Partner" },
         { "indo": "Punya", "english": "Have / Own" },
-        { "indo": "Aku", "english": "I" }
+        { "indo": "Aku", "english": "I / Me" }
       ],
       "sentences": [
         { "indo": "Dia teman aku.", "english": "He/She is my friend." },
@@ -264,7 +264,7 @@
     },
     "formal": {
       "words": [
-        { "indo": "Saya", "english": "I" },
+        { "indo": "Saya", "english": "I / Me" },
         { "indo": "Anda", "english": "You" }
       ],
       "sentences": [
@@ -276,7 +276,7 @@
     "informal": {
       "words": [
         { "indo": "Aja", "english": "Just" },
-        { "indo": "Aku", "english": "I" }
+        { "indo": "Aku", "english": "I / Me" }
       ],
       "sentences": [
         { "indo": "Ini yang aku mau.", "english": "This is what I want." },
@@ -296,7 +296,7 @@
     "formal": {
       "words": [
         { "indo": "Milik", "english": "Belong to" },
-        { "indo": "Saya", "english": "I" }
+        { "indo": "Saya", "english": "I / Me" }
       ],
       "sentences": [
         { "indo": "Ini milik saya.", "english": "This is mine." },
@@ -307,7 +307,7 @@
     "informal": {
       "words": [
         { "indo": "Punya", "english": "Have / Own" },
-        { "indo": "Aku", "english": "I" }
+        { "indo": "Aku", "english": "I / Me" }
       ],
       "sentences": [
         { "indo": "Ini punya aku.", "english": "This is mine." },
