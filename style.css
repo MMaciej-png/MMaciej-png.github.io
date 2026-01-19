@@ -59,11 +59,15 @@ body {
 .layout {
   display: flex;
   gap: 20px;
-  min-height: 100vh;
-  padding-top: 84px;
-  padding-bottom: 110px;
   justify-content: center;
+  align-items: stretch;   /* ← IMPORTANT */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
 
 
 .layout {
@@ -100,6 +104,7 @@ body {
 
 #play-area {
   margin: 20px 0;
+  height: 820px;
 }
 
 #play-area input {
@@ -169,7 +174,7 @@ body {
 .card-inner {
   position: relative;
   width: 100%;
-  height: clamp(220px, 40vh, 360px);
+  height: clamp(220px, 360px, 360px);
   transform-style: preserve-3d;
   transition: transform .6s ease;
 }
@@ -308,6 +313,19 @@ body {
   font-size: larger;
 }
 
+.casual-panel,
+.app {
+  height: 900px;
+  align-self: flex-start;
+}
+
+.ranked-panel {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .ranked-panel {
   visibility: visible;
 }
@@ -367,18 +385,18 @@ body {
 #modules-panel {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  min-height: 100%;
-  max-height: 140%;
+  height: 900px;
 }
 
 .modules-list {
   flex: 1;
+  min-height: 0;     /* CRITICAL */
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-right: 4px;
+}
+
+
+.modules-list {
+  min-height: 0;
 }
 
 /* ======================================================
