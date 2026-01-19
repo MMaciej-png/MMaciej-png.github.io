@@ -7,6 +7,10 @@ const MODULE_CATEGORY_MAP = {
     "Needs, Wants & Preferences": "Daily Conversation",
     "Food & Drink": "Daily Conversation",
 
+    "People & Relationships": "Pronouns & Reference",
+    "This, That & things": "Pronouns & Reference",
+    "Possession": "Pronouns & Reference",
+
     "Movement & Arrival": "Movement & Plans",
     "Plans, Timing & Updates": "Movement & Plans",
     "Goodbyes & Polite Exits": "Movement & Plans",

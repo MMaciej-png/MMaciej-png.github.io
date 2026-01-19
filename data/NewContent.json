@@ -277,5 +277,73 @@
       { "indo": "Yang itu enak banget.", "english": "That one is really good." },
       { "indo": "Kamu mau yang mana?", "english": "Which one do you want?" }
     ]
+  },
+  "People & Relationships": {
+  "words": [
+    { "indo": "Dia", "english": "He / She" },
+    { "indo": "Mereka", "english": "They" },
+    { "indo": "Orang", "english": "Person / People" },
+    { "indo": "Teman", "english": "Friend" },
+    { "indo": "Pacar", "english": "Partner / Girlfriend / Boyfriend" },
+    { "indo": "Keluarga", "english": "Family" },
+    { "indo": "Anak", "english": "Child / Kid" },
+    { "indo": "Nama", "english": "Name" },
+    { "indo": "Punya", "english": "Have / Own" },
+    { "indo": "-nya", "english": "His / Her / Their / The (specific)" }
+    ],
+      "sentences": [
+      { "indo": "Dia baik.", "english": "He/She is nice." },
+      { "indo": "Dia lagi sibuk.", "english": "He/She is busy." },
+      { "indo": "Dia teman aku.", "english": "He/She is my friend." },
+      { "indo": "Itu teman aku.", "english": "That’s my friend." },
+      { "indo": "Ini pacar aku.", "english": "This is my partner." },
+      { "indo": "Namanya siapa?", "english": "What’s his/her name?" },
+      { "indo": "Nama aku (....).", "english": "My name is (....)." },
+      { "indo": "Dia punya mobil.", "english": "He/She has a car." },
+      { "indo": "Mobilnya bagus.", "english": "His/Her car is nice." },
+      { "indo": "Aku suka dia.", "english": "I like him/her." },
+      { "indo": "Mereka lagi di jalan.", "english": "They’re on the way." }
+    ]
+  },
+  "This, That & things": {
+    "words": [
+      { "indo": "Ini", "english": "This" },
+      { "indo": "Itu", "english": "That" },
+      { "indo": "Yang", "english": "Which / That / The one that" },
+      { "indo": "Sama", "english": "Same" },
+      { "indo": "Beda", "english": "Different" },
+      { "indo": "Aja", "english": "Just / Only" },
+      { "indo": "Pilih", "english": "Choose / Pick" }
+    ],
+
+    "sentences": [
+      { "indo": "Ini yang aku mau.", "english": "This is the one I want." },
+      { "indo": "Itu yang kamu suka.", "english": "That’s the one you like." },
+      { "indo": "Yang ini enak.", "english": "This one is good." },
+      { "indo": "Yang itu beda.", "english": "That one is different." },
+      { "indo": "Yang sama aja.", "english": "The same is fine." },
+      { "indo": "Aku pilih yang ini.", "english": "I choose this one." },
+      { "indo": "Ini aja.", "english": "Just this one." },
+      { "indo": "Itu aja.", "english": "Just that one." }
+    ]
+  },
+  "Possession": {
+    "words": [
+      { "indo": "Punya", "english": "Have / Own" },
+      { "indo": "-nya", "english": "His / Her / Their / The (specific)" },
+      { "indo": "Ini", "english": "This" },
+      { "indo": "Itu", "english": "That" },
+      { "indo": "Dia", "english": "He / She" },
+      { "indo": "Aku", "english": "I / Me" }
+    ],
+    "sentences": [
+      { "indo": "Ini punya aku.", "english": "This is mine." },
+      { "indo": "Itu punya dia.", "english": "That’s his/hers." },
+      { "indo": "Ini mobilnya.", "english": "This is his/her car." },
+      { "indo": "Itu rumahnya.", "english": "That’s his/her house." },
+      { "indo": "Ini punya siapa?", "english": "Whose is this?" },
+      { "indo": "Mobil itu punya dia.", "english": "That car belongs to him/her." }
+    ]
   }
+
 }
