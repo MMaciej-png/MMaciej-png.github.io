@@ -7,13 +7,24 @@ const openFolders = new Set(["Smart Modes"]);
  */
 export function createModulesRenderer({ containerEl, onSelect }) {
 
-  function render(groups, activeModules, activeMode, contentFilter) {
+  function render(
+    groups,
+    activeModules,
+    activeMode,
+    contentFilter,
+    registerFilter
+  ) {
     containerEl.innerHTML = "";
 
     /* ===============================
-       GLOBAL CONTENT TOGGLE (TOP)
+       GLOBAL CONTENT TOGGLE
     =============================== */
-    renderToggle(containerEl, contentFilter, onSelect);
+    renderContentToggle(containerEl, contentFilter, onSelect);
+
+    /* ===============================
+       REGISTER TOGGLE
+    =============================== */
+    renderRegisterToggle(containerEl, registerFilter, onSelect);
 
     /* ===============================
        MODULE GROUPS
@@ -37,7 +48,7 @@ export function createModulesRenderer({ containerEl, onSelect }) {
    CONTENT TOGGLE
 =============================== */
 
-function renderToggle(container, current, onSelect) {
+function renderContentToggle(container, current, onSelect) {
   const btn = document.createElement("button");
   btn.className = "content-toggle";
 
@@ -51,13 +62,31 @@ function renderToggle(container, current, onSelect) {
     <span class="toggle-label">${label}</span>
   `;
 
-  btn.onclick = () => {
-    onSelect("__CONTENT_TOGGLE__");
-  };
-
+  btn.onclick = () => onSelect("__CONTENT_TOGGLE__");
   container.appendChild(btn);
 }
 
+/* ===============================
+   REGISTER TOGGLE
+=============================== */
+
+function renderRegisterToggle(container, current, onSelect) {
+  const btn = document.createElement("button");
+  btn.className = "content-toggle register-toggle";
+
+  const label =
+    current === "all" ? "Formal & Informal" :
+    current === "informal" ? "Informal" :
+    "Formal";
+
+  btn.innerHTML = `
+    <span class="toggle-icon">🔁</span>
+    <span class="toggle-label">${label}</span>
+  `;
+
+  btn.onclick = () => onSelect("__REGISTER_TOGGLE__");
+  container.appendChild(btn);
+}
 
 /* ===============================
    GROUP (FOLDER)
@@ -75,12 +104,12 @@ function makeGroup(category, modules, activeModules, activeMode, onSelect) {
   body.className = "module-group-body";
 
   const containsActive = modules.some(m =>
-    activeModules.has(m.name)
+    !m.type && activeModules.has(m.name)
   );
 
   const isOpen =
-  openFolders.has(category) ||
-  containsActive;
+    openFolders.has(category) ||
+    containsActive;
 
   body.classList.toggle("collapsed", !isOpen);
   header.classList.toggle("open", isOpen);

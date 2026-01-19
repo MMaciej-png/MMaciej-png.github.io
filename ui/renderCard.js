@@ -2,8 +2,11 @@ export function createCardRenderer({
   frontTextEl,
   backTextEl,
   frontPointsEl,
-  backPointsEl
+  backPointsEl,
+  frontRegisterEl,
+  backRegisterEl
 }) {
+
   function buildRender(cardObj) {
     const direction = Math.random() < 0.5 ? "IE" : "EI";
 
@@ -11,19 +14,31 @@ export function createCardRenderer({
       direction,
       question: direction === "IE" ? cardObj.indo : cardObj.eng,
       answer: direction === "IE" ? cardObj.eng : cardObj.indo,
-      points: cardObj.points
+      points: cardObj.points,
+      register: cardObj.register // ✅ KEEP REGISTER
     };
   }
 
   function renderFront(render, delta = null) {
     frontTextEl.textContent = render.question;
+    renderRegister(frontRegisterEl, render.register);
     renderPoints(frontPointsEl, render.points, delta);
   }
 
   function renderBack(render, delta = null) {
     backTextEl.textContent =
       `${render.question}\n────────\n${render.answer}`;
+
+    renderRegister(backRegisterEl, render.register);
     renderPoints(backPointsEl, render.points, delta);
+  }
+
+  function renderRegister(el, register) {
+    if (!el) return;
+
+    el.style.display = "block";
+    el.textContent = register.toUpperCase();
+    el.dataset.register = register;
   }
 
   function renderPoints(el, points, delta) {

@@ -34,9 +34,28 @@ export async function loadModulesMeta() {
     const grouped = {};
 
     for (const [moduleName, data] of Object.entries(content)) {
-        const wordCount = data.words?.length ?? 0;
-        const sentenceCount = data.sentences?.length ?? 0;
+        let wordCount = 0;
+        let sentenceCount = 0;
+
+        // ===============================
+        // MODULE WITH REGISTERS
+        // ===============================
+        if (data.formal || data.informal) {
+            for (const block of Object.values(data)) {
+                wordCount += block.words?.length ?? 0;
+                sentenceCount += block.sentences?.length ?? 0;
+            }
+        }
+        // ===============================
+        // LEGACY / UNSPLIT MODULE
+        // ===============================
+        else {
+            wordCount = data.words?.length ?? 0;
+            sentenceCount = data.sentences?.length ?? 0;
+        }
+
         const total = wordCount + sentenceCount;
+
 
         const stats = getModuleStats(moduleName);
 
