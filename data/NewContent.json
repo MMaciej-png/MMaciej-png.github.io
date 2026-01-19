@@ -1,432 +1,235 @@
 {
   "Greetings & Openings": {
-    "informal": {
+    "neutral": {
       "words": [
-        { "indo": "Halo", "english": "Hello" },
-        { "indo": "Hai", "english": "Hi" },
-        { "indo": "Apa", "english": "What" },
-        { "indo": "Kabar", "english": "News / Condition" },
-        { "indo": "Gimana", "english": "How (spoken)" },
+        { "indo": "Selamat", "english": "Good / Well / Safe" },
         { "indo": "Pagi", "english": "Morning" },
         { "indo": "Siang", "english": "Afternoon / Daytime" },
         { "indo": "Malam", "english": "Night / Evening" },
         { "indo": "Tidur", "english": "Sleep" },
-        { "indo": "Selamat", "english": "Good / Well / Safe" },
+        { "indo": "Apa", "english": "What" },
+        { "indo": "Kabar", "english": "News / Condition" }
+      ],
+      "sentences": [
+        { "indo": "Selamat pagi.", "english": "Good morning." },
+        { "indo": "Selamat siang.", "english": "Good afternoon." },
+        { "indo": "Selamat malam.", "english": "Good evening / Good night." },
+        { "indo": "Selamat tidur.", "english": "Good night (before sleeping)." },
+        { "indo": "Apa kabar?", "english": "How are you?" }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Bagaimana", "english": "How" },
+        { "indo": "Anda", "english": "You (formal)" }
+      ],
+      "sentences": [
+        { "indo": "Bagaimana kabar Anda?", "english": "How are you?" }
+      ]
+    },
+    "informal": {
+      "words": [
+        { "indo": "Halo", "english": "Hello" },
+        { "indo": "Hai", "english": "Hi" },
+        { "indo": "Gimana", "english": "How (spoken)" },
         { "indo": "Sayang", "english": "Love / Dear" }
       ],
       "sentences": [
         { "indo": "Halo.", "english": "Hello." },
         { "indo": "Hai.", "english": "Hi." },
-        { "indo": "Apa kabar?", "english": "How are you?" },
         { "indo": "Gimana kabarnya?", "english": "How’s it going?" },
-        { "indo": "Selamat pagi.", "english": "Good morning." },
-        { "indo": "Selamat siang.", "english": "Good afternoon." },
-        { "indo": "Selamat malam.", "english": "Good evening / Good night." },
-        { "indo": "Selamat tidur.", "english": "Good night (before sleeping)." },
         { "indo": "Halo sayang.", "english": "Hey love." }
-      ]
-    },
-    "formal": {
-      "words": [
-        { "indo": "Selamat", "english": "Good / Well / Safe" },
-        { "indo": "Pagi", "english": "Morning" },
-        { "indo": "Siang", "english": "Afternoon / Daytime" },
-        { "indo": "Malam", "english": "Night / Evening" },
-        { "indo": "Tidur", "english": "Sleep" },
-        { "indo": "Apa", "english": "What" },
-        { "indo": "Kabar", "english": "News / Condition" },
-        { "indo": "Bagaimana", "english": "How" },
-        { "indo": "Anda", "english": "You (formal)" }
-      ],
-      "sentences": [
-        { "indo": "Selamat pagi.", "english": "Good morning." },
-        { "indo": "Selamat siang.", "english": "Good afternoon." },
-        { "indo": "Selamat malam.", "english": "Good evening / Good night." },
-        { "indo": "Apa kabar Anda?", "english": "How are you?" },
-        { "indo": "Bagaimana kabar Anda?", "english": "How’s it going?" },
-        { "indo": "Selamat tidur.", "english": "Good night (before sleeping)." }
       ]
     }
   },
+
   "How I’m Doing": {
-    "formal": {
+    "neutral": {
       "words": [
         { "indo": "Baik", "english": "Good / Fine" },
         { "indo": "Baik-baik", "english": "Fine / Okay" },
         { "indo": "Lancar", "english": "Smooth / Going well" },
-        { "indo": "Lelah", "english": "Tired" },
         { "indo": "Sibuk", "english": "Busy" },
-        { "indo": "Tersedia", "english": "Available" },
         { "indo": "Dingin", "english": "Cold" },
         { "indo": "Panas", "english": "Hot" },
-        { "indo": "Sekali", "english": "Very" },
         { "indo": "Masih", "english": "Still" },
         { "indo": "Hari", "english": "Day" },
         { "indo": "Ini", "english": "This" },
-        { "indo": "Tapi", "english": "But" },
         { "indo": "Sekarang", "english": "Now" },
+        { "indo": "Tapi", "english": "But" }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Lelah", "english": "Tired" },
+        { "indo": "Sekali", "english": "Very" },
         { "indo": "Saya", "english": "I / Me" },
         { "indo": "Anda", "english": "You" }
       ],
       "sentences": [
         { "indo": "Saya baik-baik saja.", "english": "I’m fine." },
-        { "indo": "Saya baik.", "english": "I’m good." },
-        { "indo": "Keadaan saya baik.", "english": "I’m doing well." },
-        { "indo": "Semuanya berjalan lancar.", "english": "Everything is going well." },
         { "indo": "Saya lelah.", "english": "I’m tired." },
-        { "indo": "Hari ini saya lelah sekali.", "english": "I’m very tired today." },
-        { "indo": "Saya masih baik.", "english": "I’m still fine." },
-        { "indo": "Saya masih baik, tapi lelah.", "english": "I’m still fine, but tired." },
-        { "indo": "Saya sibuk.", "english": "I’m busy." },
-        { "indo": "Sekarang saya sibuk.", "english": "I’m busy right now." },
-        { "indo": "Saya tersedia.", "english": "I’m available." },
-        { "indo": "Saya merasa dingin.", "english": "I feel cold." }
+        { "indo": "Hari ini saya lelah sekali.", "english": "I’m very tired today." }
       ]
     },
     "informal": {
       "words": [
-        { "indo": "Baik", "english": "Good / Fine" },
-        { "indo": "Baik-baik", "english": "Fine / Okay" },
-        { "indo": "Oke", "english": "Okay" },
-        { "indo": "Lancar", "english": "Smooth / Going well" },
         { "indo": "Capek", "english": "Tired" },
-        { "indo": "Sibuk", "english": "Busy" },
-        { "indo": "Kosong", "english": "Free / Available" },
-        { "indo": "Dingin", "english": "Cold" },
-        { "indo": "Panas", "english": "Hot" },
         { "indo": "Banget", "english": "Very / Really" },
-        { "indo": "Masih", "english": "Still" },
-        { "indo": "Hari", "english": "Day" },
-        { "indo": "Ini", "english": "This" },
-        { "indo": "Tapi", "english": "But" },
-        { "indo": "Sekarang", "english": "Now" },
         { "indo": "Aku", "english": "I / Me" },
         { "indo": "Kamu", "english": "You" }
       ],
       "sentences": [
-        { "indo": "Baik-baik aja.", "english": "I’m fine." },
-        { "indo": "Baik kok.", "english": "I’m good." },
-        { "indo": "Oke aja.", "english": "It’s okay." },
-        { "indo": "Lancar kok.", "english": "Everything’s going well." },
         { "indo": "Capek sih.", "english": "Kind of tired." },
         { "indo": "Hari ini capek banget.", "english": "Really tired today." },
-        { "indo": "Masih oke kok.", "english": "Still okay." },
-        { "indo": "Masih oke, tapi capek.", "english": "Still okay, but tired." },
-        { "indo": "Aku sibuk.", "english": "I’m busy." },
-        { "indo": "Sekarang aku sibuk.", "english": "I’m busy right now." },
-        { "indo": "Aku kosong.", "english": "I’m free." },
-        { "indo": "Aku kedinginan.", "english": "I’m cold." }
+        { "indo": "Masih oke kok.", "english": "Still okay." }
       ]
     }
   },
+
   "What I’m Doing / Availability": {
-    "formal": {
+    "neutral": {
       "words": [
-        { "indo": "Bekerja", "english": "Work" },
-        { "indo": "Berbicara", "english": "Talk" },
         { "indo": "Bisa", "english": "Can" },
-        { "indo": "Sedang", "english": "Currently" },
-        { "indo": "Agak", "english": "Rather" },
         { "indo": "Sibuk", "english": "Busy" },
         { "indo": "Sekarang", "english": "Now" },
+        { "indo": "Pesan", "english": "Message" }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Sedang", "english": "Currently" },
+        { "indo": "Bekerja", "english": "Work" },
+        { "indo": "Berbicara", "english": "Talk" },
         { "indo": "Menulis", "english": "Write" },
-        { "indo": "Pesan", "english": "Message" },
         { "indo": "Saya", "english": "I" }
       ],
       "sentences": [
         { "indo": "Saya sedang bekerja.", "english": "I am working." },
-        { "indo": "Saya sedang sibuk.", "english": "I am busy." },
         { "indo": "Saya tidak bisa sekarang.", "english": "I can’t right now." },
-        { "indo": "Saya tidak bisa berbicara sekarang.", "english": "I can’t talk right now." },
         { "indo": "Saya sedang menulis pesan.", "english": "I am writing a message." }
       ]
     },
     "informal": {
       "words": [
+        { "indo": "Lagi", "english": "Currently" },
         { "indo": "Kerja", "english": "Work" },
         { "indo": "Ngobrol", "english": "Chat" },
-        { "indo": "Bisa", "english": "Can" },
-        { "indo": "Lagi", "english": "Currently" },
-        { "indo": "Agak", "english": "A bit" },
-        { "indo": "Dikit", "english": "A little" },
-        { "indo": "Sibuk", "english": "Busy" },
-        { "indo": "Sekarang", "english": "Now" },
-        { "indo": "Tulis", "english": "Write" },
-        { "indo": "Pesan", "english": "Message" },
+        { "indo": "Nulis", "english": "Write" },
         { "indo": "Aku", "english": "I" },
         { "indo": "Nggak", "english": "Not" }
       ],
       "sentences": [
         { "indo": "Lagi kerja.", "english": "Working." },
-        { "indo": "Lagi sibuk dikit.", "english": "A bit busy." },
         { "indo": "Aku nggak bisa sekarang.", "english": "I can’t right now." },
-        { "indo": "Aku nggak bisa ngobrol sekarang.", "english": "I can’t talk right now." },
         { "indo": "Aku lagi nulis pesan.", "english": "I’m writing a message." }
       ]
     }
   },
 
-  "Plans, Timing & Updates": {
-    "formal": {
-      "words": [
-        { "indo": "Nanti", "english": "Later" },
-        { "indo": "Memberi", "english": "Give" },
-        { "indo": "Kabar", "english": "Update / News" },
-        { "indo": "Lapar", "english": "Hungry" },
-        { "indo": "Dulu", "english": "First / Earlier" },
-        { "indo": "Jika", "english": "If" },
-        { "indo": "Akan", "english": "Will" },
-        { "indo": "Kita", "english": "We" },
-        { "indo": "Makan", "english": "Eat" },
-        { "indo": "Yang", "english": "Which / That" },
-        { "indo": "Enak", "english": "Good / Tasty" },
-        { "indo": "Lain", "english": "Other" },
-        { "indo": "Kali", "english": "Time / Occasion" },
-        { "indo": "Saya", "english": "I" }
-      ],
-      "sentences": [
-        { "indo": "Saya akan memberi kabar nanti.", "english": "I will update you later." },
-        { "indo": "Nanti saya akan menghubungi Anda.", "english": "I will contact you later." },
-        { "indo": "Kita makan lain kali.", "english": "We’ll eat another time." },
-        { "indo": "Saya lapar.", "english": "I’m hungry." },
-        { "indo": "Jika ada waktu, kita makan nanti.", "english": "If there is time, we’ll eat later." }
-      ]
-    },
-    "informal": {
-      "words": [
-        { "indo": "Nanti", "english": "Later" },
-        { "indo": "Kabarin", "english": "Update" },
-        { "indo": "Lapar", "english": "Hungry" },
-        { "indo": "Dulu", "english": "First / For now" },
-        { "indo": "Kalau", "english": "If" },
-        { "indo": "Bakal", "english": "Will" },
-        { "indo": "Kita", "english": "We" },
-        { "indo": "Makan", "english": "Eat" },
-        { "indo": "Yang", "english": "Which / That" },
-        { "indo": "Enak", "english": "Tasty" },
-        { "indo": "Lain", "english": "Other" },
-        { "indo": "Kali", "english": "Time" },
-        { "indo": "Aku", "english": "I" },
-        { "indo": "Banget", "english": "Very" }
-      ],
-      "sentences": [
-        { "indo": "Nanti aku kabarin.", "english": "I’ll update you later." },
-        { "indo": "Nanti aku chat ya.", "english": "I’ll message you later." },
-        { "indo": "Lain kali aja.", "english": "Another time." },
-        { "indo": "Aku lapar banget.", "english": "I’m really hungry." },
-        { "indo": "Nanti kita makan yang enak.", "english": "We’ll eat something good later." }
-      ]
-    }
-  },
-
-
-  "Movement & Arrival": {
-    "formal": {
-      "words": [
-        { "indo": "Datang", "english": "Arrive" },
-        { "indo": "Kembali", "english": "Return" },
-        { "indo": "Terlambat", "english": "Late" },
-        { "indo": "Aman", "english": "Safe" },
-        { "indo": "Menit", "english": "Minute" },
-        { "indo": "Dengan", "english": "With / By" },
-        { "indo": "Sudah", "english": "Already" },
-        { "indo": "Lebih", "english": "More" },
-        { "indo": "Cepat", "english": "Early / Fast" },
-        { "indo": "Besok", "english": "Tomorrow" },
-        { "indo": "Mobil", "english": "Car" },
-        { "indo": "Teman", "english": "Friend" },
-        { "indo": "Saya", "english": "I" }
-      ],
-      "sentences": [
-        { "indo": "Saya sudah datang.", "english": "I’ve arrived." },
-        { "indo": "Saya akan datang besok.", "english": "I will arrive tomorrow." },
-        { "indo": "Saya terlambat.", "english": "I’m late." },
-        { "indo": "Saya datang lebih cepat.", "english": "I will arrive early." },
-        { "indo": "Saya datang dengan mobil.", "english": "I arrived by car." }
-      ]
-    },
-    "informal": {
-      "words": [
-        { "indo": "Datang", "english": "Arrive" },
-        { "indo": "Balik", "english": "Return" },
-        { "indo": "Telat", "english": "Late" },
-        { "indo": "Aman", "english": "Safe" },
-        { "indo": "Menit", "english": "Minute" },
-        { "indo": "Motor", "english": "Motorbike" },
-        { "indo": "Sama", "english": "With" },
-        { "indo": "Sudah", "english": "Already" },
-        { "indo": "Bakal", "english": "Will" },
-        { "indo": "Besok", "english": "Tomorrow" },
-        { "indo": "Teman", "english": "Friend" },
-        { "indo": "Aku", "english": "I" }
-      ],
-      "sentences": [
-        { "indo": "Aku sudah sampai.", "english": "I’ve arrived." },
-        { "indo": "Aku bakal telat.", "english": "I’ll be late." },
-        { "indo": "Aku aman.", "english": "I’m safe." },
-        { "indo": "Aku datang sama teman.", "english": "I arrived with a friend." },
-        { "indo": "Aku sampai dalam 10 menit.", "english": "I’ll arrive in 10 minutes." }
-      ]
-    }
-  },
-  "Goodbyes & Polite Exits": {
-    "formal": {
-      "words": [
-        { "indo": "Sampai", "english": "Until" },
-        { "indo": "Jumpa", "english": "Meet" },
-        { "indo": "Permisi", "english": "Excuse me" },
-        { "indo": "Pamit", "english": "Take leave" },
-        { "indo": "Pergi", "english": "Leave" },
-        { "indo": "Hati-hati", "english": "Take care" },
-        { "indo": "Saya", "english": "I" },
-        { "indo": "Nanti", "english": "Later" }
-      ],
-      "sentences": [
-        { "indo": "Permisi, saya pamit dulu.", "english": "Excuse me, I’ll take my leave." },
-        { "indo": "Saya pergi dulu.", "english": "I will leave now." },
-        { "indo": "Sampai jumpa.", "english": "See you." },
-        { "indo": "Sampai nanti.", "english": "See you later." },
-        { "indo": "Hati-hati.", "english": "Take care." }
-      ]
-    },
-    "informal": {
-      "words": [
-        { "indo": "Dadah", "english": "Bye" },
-        { "indo": "Sampai", "english": "Until" },
-        { "indo": "Cabut", "english": "Head off" },
-        { "indo": "Hati-hati", "english": "Take care" },
-        { "indo": "Gue", "english": "I (slang)" },
-        { "indo": "Aku", "english": "I" },
-        { "indo": "Dulu", "english": "First / Now" },
-        { "indo": "Nanti", "english": "Later" }
-      ],
-      "sentences": [
-        { "indo": "Dadah.", "english": "Bye." },
-        { "indo": "Aku cabut dulu.", "english": "I’m heading off." },
-        { "indo": "Gue dulu ya.", "english": "I’m off." },
-        { "indo": "Sampai nanti.", "english": "See you later." },
-        { "indo": "Hati-hati ya.", "english": "Take care." }
-      ]
-    }
-  },
   "Needs, Wants & Preferences": {
-    "formal": {
+    "neutral": {
       "words": [
-        { "indo": "Ingin", "english": "Want" },
         { "indo": "Suka", "english": "Like" },
         { "indo": "Perlu", "english": "Need" },
         { "indo": "Bisa", "english": "Can" },
         { "indo": "Ini", "english": "This" },
         { "indo": "Itu", "english": "That" },
-        { "indo": "Yang", "english": "Which / That" },
-        { "indo": "Saya", "english": "I / Me" },
-        { "indo": "Anda", "english": "You" },
-        { "indo": "Apa", "english": "What" }
+        { "indo": "Yang", "english": "Which / That" }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Ingin", "english": "Want" },
+        { "indo": "Saya", "english": "I" },
+        { "indo": "Anda", "english": "You" }
       ],
       "sentences": [
         { "indo": "Saya ingin makan.", "english": "I want to eat." },
         { "indo": "Saya perlu minum.", "english": "I need to drink." },
-        { "indo": "Saya suka ini.", "english": "I like this." },
-        { "indo": "Saya suka itu.", "english": "I like that." },
-        { "indo": "Saya suka yang ini.", "english": "I like this one." },
-        { "indo": "Anda ingin apa?", "english": "What do you want?" },
-        { "indo": "Saya ingin yang ini.", "english": "I want this one." }
+        { "indo": "Anda ingin apa?", "english": "What do you want?" }
       ]
     },
     "informal": {
       "words": [
         { "indo": "Mau", "english": "Want" },
-        { "indo": "Suka", "english": "Like" },
-        { "indo": "Perlu", "english": "Need" },
         { "indo": "Pengin", "english": "Want (spoken)" },
-        { "indo": "Bisa", "english": "Can" },
-        { "indo": "Ini", "english": "This" },
-        { "indo": "Itu", "english": "That" },
-        { "indo": "Yang", "english": "Which / That" },
-        { "indo": "Aku", "english": "I / Me" },
+        { "indo": "Aku", "english": "I" },
         { "indo": "Kamu", "english": "You" },
-        { "indo": "Apa", "english": "What" },
-        { "indo": "Nggak", "english": "Not / No" },
-        { "indo": "Banget", "english": "Very / Really" }
+        { "indo": "Banget", "english": "Very" }
       ],
       "sentences": [
         { "indo": "Aku mau makan.", "english": "I want to eat." },
-        { "indo": "Aku pengin minum.", "english": "I want to drink." },
-        { "indo": "Aku suka ini.", "english": "I like this." },
-        { "indo": "Aku suka itu.", "english": "I like that." },
-        { "indo": "Aku nggak mau.", "english": "I don’t want to." },
-        { "indo": "Kamu mau apa?", "english": "What do you want?" },
-        { "indo": "Aku suka banget ini.", "english": "I really like this." }
+        { "indo": "Aku suka banget ini.", "english": "I really like this." },
+        { "indo": "Kamu mau apa?", "english": "What do you want?" }
       ]
     }
   },
   "Food & Drink": {
-    "formal": {
+    "neutral": {
       "words": [
         { "indo": "Makan", "english": "Eat" },
         { "indo": "Minum", "english": "Drink" },
-        { "indo": "Makanan", "english": "Food" },
-        { "indo": "Minuman", "english": "Drink (noun)" },
         { "indo": "Lapar", "english": "Hungry" },
         { "indo": "Haus", "english": "Thirsty" },
         { "indo": "Enak", "english": "Tasty" },
         { "indo": "Ini", "english": "This" },
         { "indo": "Itu", "english": "That" },
         { "indo": "Yang", "english": "Which / That" },
-        { "indo": "Apa", "english": "What" },
+        { "indo": "Apa", "english": "What" }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Makanan", "english": "Food" },
+        { "indo": "Minuman", "english": "Drink (noun)" },
         { "indo": "Saya", "english": "I" },
-        { "indo": "Anda", "english": "You" }
+        { "indo": "Anda", "english": "You" },
+        { "indo": "Ingin", "english": "Want" }
       ],
       "sentences": [
         { "indo": "Saya lapar.", "english": "I’m hungry." },
         { "indo": "Saya haus.", "english": "I’m thirsty." },
         { "indo": "Saya ingin makan.", "english": "I want to eat." },
-        { "indo": "Saya ingin minum.", "english": "I want to drink." },
         { "indo": "Anda ingin makan apa?", "english": "What would you like to eat?" },
         { "indo": "Makanan ini enak.", "english": "This food is tasty." }
       ]
     },
     "informal": {
       "words": [
-        { "indo": "Makan", "english": "Eat" },
-        { "indo": "Minum", "english": "Drink" },
-        { "indo": "Lapar", "english": "Hungry" },
-        { "indo": "Haus", "english": "Thirsty" },
-        { "indo": "Enak", "english": "Tasty" },
-        { "indo": "Ini", "english": "This" },
-        { "indo": "Itu", "english": "That" },
-        { "indo": "Yang", "english": "Which / That" },
-        { "indo": "Apa", "english": "What" },
         { "indo": "Aku", "english": "I" },
         { "indo": "Kamu", "english": "You" },
-        { "indo": "Banget", "english": "Very" }
+        { "indo": "Mau", "english": "Want" },
+        { "indo": "Banget", "english": "Very / Really" }
       ],
       "sentences": [
         { "indo": "Aku lapar.", "english": "I’m hungry." },
         { "indo": "Aku haus.", "english": "I’m thirsty." },
         { "indo": "Aku mau makan.", "english": "I want to eat." },
         { "indo": "Mau makan apa?", "english": "What do you want to eat?" },
-        { "indo": "Yang ini enak.", "english": "This one is tasty." },
         { "indo": "Yang itu enak banget.", "english": "That one is really good." }
       ]
     }
   },
   "People & Relationships": {
-    "formal": {
+    "neutral": {
       "words": [
         { "indo": "Dia", "english": "He / She" },
         { "indo": "Mereka", "english": "They" },
-        { "indo": "Orang", "english": "Person" },
         { "indo": "Teman", "english": "Friend" },
+        { "indo": "Nama", "english": "Name" }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Orang", "english": "Person" },
         { "indo": "Keluarga", "english": "Family" },
         { "indo": "Anak", "english": "Child" },
-        { "indo": "Nama", "english": "Name" },
         { "indo": "Memiliki", "english": "Have / Own" },
         { "indo": "Saya", "english": "I" }
       ],
       "sentences": [
         { "indo": "Dia teman saya.", "english": "He/She is my friend." },
-        { "indo": "Dia sedang sibuk.", "english": "He/She is busy." },
         { "indo": "Nama saya (....).", "english": "My name is (....)." },
         { "indo": "Dia memiliki mobil.", "english": "He/She has a car." },
         { "indo": "Mereka sedang bekerja.", "english": "They are working." }
@@ -434,11 +237,7 @@
     },
     "informal": {
       "words": [
-        { "indo": "Dia", "english": "He / She" },
-        { "indo": "Mereka", "english": "They" },
-        { "indo": "Teman", "english": "Friend" },
         { "indo": "Pacar", "english": "Partner" },
-        { "indo": "Nama", "english": "Name" },
         { "indo": "Punya", "english": "Have / Own" },
         { "indo": "Aku", "english": "I" }
       ],
@@ -446,56 +245,57 @@
         { "indo": "Dia teman aku.", "english": "He/She is my friend." },
         { "indo": "Ini pacar aku.", "english": "This is my partner." },
         { "indo": "Namanya siapa?", "english": "What’s his/her name?" },
-        { "indo": "Dia punya mobil.", "english": "He/She has a car." },
-        { "indo": "Aku suka dia.", "english": "I like him/her." }
+        { "indo": "Dia punya mobil.", "english": "He/She has a car." }
       ]
     }
   },
 
+
   "This, That & things": {
-    "formal": {
+    "neutral": {
       "words": [
         { "indo": "Ini", "english": "This" },
         { "indo": "Itu", "english": "That" },
         { "indo": "Yang", "english": "Which / That" },
         { "indo": "Sama", "english": "Same" },
         { "indo": "Beda", "english": "Different" },
-        { "indo": "Pilih", "english": "Choose" },
-        { "indo": "Saya", "english": "I" }
+        { "indo": "Pilih", "english": "Choose" }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Saya", "english": "I" },
+        { "indo": "Anda", "english": "You" }
       ],
       "sentences": [
         { "indo": "Ini yang saya pilih.", "english": "This is what I choose." },
         { "indo": "Itu yang Anda suka.", "english": "That is what you like." },
-        { "indo": "Yang ini berbeda.", "english": "This one is different." },
         { "indo": "Saya pilih yang ini.", "english": "I choose this one." }
       ]
     },
     "informal": {
       "words": [
-        { "indo": "Ini", "english": "This" },
-        { "indo": "Itu", "english": "That" },
-        { "indo": "Yang", "english": "Which / That" },
-        { "indo": "Sama", "english": "Same" },
-        { "indo": "Beda", "english": "Different" },
         { "indo": "Aja", "english": "Just" },
-        { "indo": "Pilih", "english": "Choose" },
         { "indo": "Aku", "english": "I" }
       ],
       "sentences": [
         { "indo": "Ini yang aku mau.", "english": "This is what I want." },
-        { "indo": "Yang itu beda.", "english": "That one is different." },
         { "indo": "Yang sama aja.", "english": "The same is fine." },
         { "indo": "Aku pilih yang ini.", "english": "I choose this one." }
       ]
     }
   },
   "Possession": {
+    "neutral": {
+      "words": [
+        { "indo": "Ini", "english": "This" },
+        { "indo": "Itu", "english": "That" },
+        { "indo": "Dia", "english": "He / She" }
+      ]
+    },
     "formal": {
       "words": [
         { "indo": "Milik", "english": "Belong to" },
-        { "indo": "Ini", "english": "This" },
-        { "indo": "Itu", "english": "That" },
-        { "indo": "Dia", "english": "He / She" },
         { "indo": "Saya", "english": "I" }
       ],
       "sentences": [
@@ -507,9 +307,6 @@
     "informal": {
       "words": [
         { "indo": "Punya", "english": "Have / Own" },
-        { "indo": "Ini", "english": "This" },
-        { "indo": "Itu", "english": "That" },
-        { "indo": "Dia", "english": "He / She" },
         { "indo": "Aku", "english": "I" }
       ],
       "sentences": [
@@ -519,5 +316,6 @@
       ]
     }
   }
+
 
 }

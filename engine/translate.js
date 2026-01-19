@@ -171,6 +171,7 @@ const EN_EQUIVALENTS = [
      =============================== */
 
   [/\b(okay|ok)\b/g, "okay"],
+  [/\b(good|tasty)\b/g, "good"],
 ];
 
 
