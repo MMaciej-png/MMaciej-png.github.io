@@ -24,7 +24,7 @@ const EN_EQUIVALENTS = [
   [/\bwe['’]?ll\b/g, "we will"],
   [/\bthey['’]?ll\b/g, "they will"],
 
-  // ---- would / had (ambiguous but acceptable for casual) ----
+  // ---- would / had ----
   [/\bi['’]?d\b/g, "i would"],
   [/\byou['’]?d\b/g, "you would"],
   [/\bhe['’]?d\b/g, "he would"],
@@ -48,7 +48,7 @@ const EN_EQUIVALENTS = [
   [/\b(gonna|going to)\b/g, "will"],
   [/\b(wanna|want to)\b/g, "want to"],
 
-  // ---- semantic grouping ----
+  // ---- grouping ----
   [/\b(can not|cannot)\b/g, "can not"],
   [/\b(yes|yeah)\b/g, "yes"],
   [/\b(come|arrive)\b/g, "come"],
@@ -60,8 +60,8 @@ const EN_EQUIVALENTS = [
   // ---- quantity ----
   [/\b(little|a little|a bit|bit)\b/g, "a little"],
 
-  // ---- fillers (remove) ----
-  [/\b(really|just|actually|very|right|please|pls)\b/g, ""],
+  // ---- fillers ----
+  [/\b(really|just|actually|very|right|please|pls|are)\b/g, ""],
 
   // ---- normalise ok ----
   [/\b(ok|okay)\b/g, "okay"],
@@ -77,7 +77,7 @@ const ID_EQUIVALENTS = [
   [/\b(udah|sudah)\b/g, "sudah"],
   [/\b(lagi|sedang)\b/g, "sedang"],
 
-  // ---- particles / tone ----
+  // ---- particles ----
   [/\baja\b/g, "saja"],
   [/\b(kok|nih+h?)\b/g, ""],
   [/\b(ya|yah)\b/g, ""],
@@ -96,7 +96,7 @@ const ID_EQUIVALENTS = [
   [/\b(aku|saya|gue)\b/g, "aku"],
   [/\b(kamu|kau)\b/g, "kamu"],
 
-  // ---- morphology (CASUAL ONLY) ----
+  // ---- morphology (CASUAL) ----
   [/\bber(\w+)\b/g, "$1"],
   [/\b(di|ter)(\w+)\b/g, "$2"],
 
@@ -105,7 +105,7 @@ const ID_EQUIVALENTS = [
 ];
 
 
-// Words that add NO semantic information (tone only)
+// Tone-only tokens
 const OPTIONAL_TOKENS = new Set([
   "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah"
 ]);
@@ -114,17 +114,37 @@ function isOptional(word) {
   return OPTIONAL_TOKENS.has(word);
 }
 
-// Expand Indonesian object enclitics
+
+/* ===============================
+   ENCLITIC EXPANSION (VARIANT-BASED)
+=============================== */
+
 function expandEncliticsID(text) {
-  return text
-    .replace(/\b(\w+?)ku\b/g, "$1 ku")
-    .replace(/\b(\w+?)mu\b/g, "$1 kamu")
-    .replace(/\b(\w+?)nya\b/g, "$1 dia");
+  const variants = new Set([text]);
+
+  for (const v of [...variants]) {
+    v.replace(/\b(\w+?)ku\b/g, (m, base) => {
+      variants.add(`${base} ku`);
+      return m;
+    });
+
+    v.replace(/\b(\w+?)mu\b/g, (m, base) => {
+      variants.add(`${base} kamu`);
+      return m;
+    });
+
+    v.replace(/\b(\w+?)nya\b/g, (m, base) => {
+      variants.add(`${base} dia`);
+      return m;
+    });
+  }
+
+  return [...variants];
 }
+
 
 /* ===============================
    LANGUAGE HEURISTIC
-   (USED ELSEWHERE — NOT FOR GRADING)
 =============================== */
 
 export function inferLangFromExpected(expected) {
@@ -139,18 +159,15 @@ export function inferLangFromExpected(expected) {
     "aja", "saja", "kok", "nih"
   ];
 
-  for (const w of idHints) {
-    if (
-      t.includes(` ${w} `) ||
-      t.startsWith(`${w} `) ||
-      t.endsWith(` ${w}`)
-    ) {
-      return "ID";
-    }
-  }
-
-  return "EN";
+  return idHints.some(w =>
+    t.includes(` ${w} `) || t.startsWith(`${w} `) || t.endsWith(` ${w}`)
+  ) ? "ID" : "EN";
 }
+
+
+/* ===============================
+   BRACKET EXPANSION
+=============================== */
 
 function processBrackets(text) {
   if (!text.includes("(")) return [text];
@@ -170,14 +187,11 @@ function processBrackets(text) {
 
       const [full, inner] = match;
 
-      // semantic alternatives
       if (inner.includes("/")) {
         for (const opt of inner.split("/")) {
           next.push(v.replace(full, opt.trim()));
         }
-      }
-      // non-semantic comment → remove entirely
-      else {
+      } else {
         next.push(v.replace(full, ""));
       }
     }
@@ -187,6 +201,7 @@ function processBrackets(text) {
 
   return variants;
 }
+
 
 function containsAllRequiredTokens(userNorm, expectedNorm) {
   const expectedWords = new Set(expectedNorm.split(" "));
@@ -201,8 +216,6 @@ function containsAllRequiredTokens(userNorm, expectedNorm) {
 }
 
 
-
-
 /* ===============================
    NORMALISE
 =============================== */
@@ -210,24 +223,33 @@ function containsAllRequiredTokens(userNorm, expectedNorm) {
 export function normalise(text, lang, expand = false) {
   if (typeof text !== "string") return expand ? [] : "";
 
-  const inputs = expand
-    ? processBrackets(text)
-    : [text];
+  const inputs = expand ? processBrackets(text) : [text];
+
+  if (lang === "ID") {
+    return inputs.flatMap(input => {
+      let base = input.toLowerCase()
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+
+      const expanded = expandEncliticsID(base);
+
+      return expanded.map(t => {
+        for (const [p, r] of ID_EQUIVALENTS) t = t.replace(p, r);
+        return t
+          .replace(/[-–—]/g, " ")
+          .replace(/[?.!,]/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      });
+    });
+  }
 
   return inputs.map(input => {
-    let t = input.toLowerCase();
+    let t = input.toLowerCase()
+      .replace(/"[^"]*"/g, "")
+      .replace(/'[^']*'/g, "");
 
-    t = t.replace(/"[^"]*"/g, "");
-    t = t.replace(/'[^']*'/g, "");
-
-    if (lang === "ID") {
-      t = expandEncliticsID(t);
-      for (const [p, r] of ID_EQUIVALENTS) t = t.replace(p, r);
-    }
-
-    if (lang === "EN") {
-      for (const [p, r] of EN_EQUIVALENTS) t = t.replace(p, r);
-    }
+    for (const [p, r] of EN_EQUIVALENTS) t = t.replace(p, r);
 
     return t
       .replace(/[-–—]/g, " ")
@@ -237,6 +259,7 @@ export function normalise(text, lang, expand = false) {
   });
 }
 
+
 /* ===============================
    SPLIT VARIANTS
 =============================== */
@@ -244,11 +267,7 @@ export function normalise(text, lang, expand = false) {
 export function splitExpectedVariants(expected) {
   if (typeof expected !== "string") return [];
 
-  // First expand (he/she) style brackets
-  const expanded = processBrackets(expected);
-
-  // THEN split top-level slashes
-  return expanded
+  return processBrackets(expected)
     .flatMap(s => s.split("/"))
     .map(s => s.trim())
     .filter(Boolean);
@@ -256,16 +275,9 @@ export function splitExpectedVariants(expected) {
 
 
 /* ===============================
-   CORRECTNESS CHECK (FIXED)
+   CORRECTNESS CHECK
 =============================== */
 
-/**
- * Casual grading rule:
- * - forgiving
- * - language-agnostic
- * - accepts EN or ID normalisation
- * - supports slash variants
- */
 export function isCorrect(user, expected) {
   if (!user || !expected) return false;
 
@@ -278,20 +290,9 @@ export function isCorrect(user, expected) {
     const vENs = normalise(v, "EN", true);
     const vIDs = normalise(v, "ID", true);
 
-    // EN check
-    for (const vEN of vENs) {
-      if (containsAllRequiredTokens(uEN, vEN)) {
-        return true;
-      }
-    }
-
-    // ID check
-    for (const vID of vIDs) {
-      if (containsAllRequiredTokens(uID, vID)) {
-        return true;
-      }
-    }
-
-    return false;
+    return (
+      vENs.some(vEN => containsAllRequiredTokens(uEN, vEN)) ||
+      vIDs.some(vID => containsAllRequiredTokens(uID, vID))
+    );
   });
 }

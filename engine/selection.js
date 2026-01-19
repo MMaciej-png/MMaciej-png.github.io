@@ -39,7 +39,7 @@ function effectiveWeight(item) {
     const minutesSince = (Date.now() - item.lastSeen) / 60000;
 
     if (minutesSince < 5) {
-      w *= 0.2;     // almost never repeat
+      w *= 0.1;     // almost never repeat
     } else if (minutesSince < 15) {
       w *= 0.5;
     }

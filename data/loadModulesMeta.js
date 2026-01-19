@@ -4,12 +4,14 @@ const MODULE_CATEGORY_MAP = {
     "Greetings & Openings": "Daily Conversation",
     "How I’m Doing": "Daily Conversation",
     "What I’m Doing / Availability": "Daily Conversation",
+    "Needs, Wants & Preferences": "Daily Conversation",
+    "Food & Drink": "Daily Conversation",
 
     "Movement & Arrival": "Movement & Plans",
     "Plans, Timing & Updates": "Movement & Plans",
     "Goodbyes & Polite Exits": "Movement & Plans",
 
-    "Statements & Descriptions": "Statements & Grammar"
+    "Statements & Grammar": "Statements & Grammar"
 };
 
 
