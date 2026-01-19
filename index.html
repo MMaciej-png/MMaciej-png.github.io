@@ -198,39 +198,66 @@
         // ---------- SCALE TO MATCH MAIN GAME WIDTH ----------
         function scaleToScreen() {
             const layout = document.querySelector(".layout");
+            const topBar = document.querySelector(".top-bar");
             if (!layout) return;
-
-            // Reset first so measurement is correct
-            layout.style.transform = "none";
-
-            const DESIGN_WIDTH = 1920;
-            const DESIGN_HEIGHT = 1080;
 
             const vw = window.innerWidth;
             const vh = window.innerHeight;
 
-            // Measure REAL layout size
+            // Mobile: no scaling
+            if (vw <= 1080) {
+                layout.style.transform = "";
+                layout.style.transformOrigin = "";
+                layout.style.marginLeft = "";
+                layout.style.marginRight = "";
+                return;
+            }
+
+            // Reset to measure
+            layout.style.transform = "none";
+
+            const topBarHeight = topBar ? topBar.offsetHeight : 0;
+
             const rect = layout.getBoundingClientRect();
             const lw = rect.width;
             const lh = rect.height;
 
-            // Scale down only
+            const usableHeight = vh - topBarHeight;
+
             const scale = Math.min(
                 vw / lw,
-                vh / lh,
+                usableHeight / lh,
                 1
             );
+
+            /* -----------------------------
+               NO SCALING → CSS CENTERING
+            ----------------------------- */
+            if (scale === 1) {
+                layout.style.transform = "";
+                layout.style.marginLeft = "auto";
+                layout.style.marginRight = "auto";
+                return;
+            }
+
+            /* -----------------------------
+               SCALING → JS CENTERING
+            ----------------------------- */
+            layout.style.marginLeft = "0";
+            layout.style.marginRight = "0";
 
             const scaledWidth = lw * scale;
             const scaledHeight = lh * scale;
 
             const translateX = (vw - scaledWidth) / 2;
-            const translateY = (vh - scaledHeight) / 2;
+            const translateY =
+                topBarHeight + (usableHeight - scaledHeight) / 2;
 
             layout.style.transformOrigin = "top left";
             layout.style.transform =
                 `translate(${translateX}px, ${translateY}px) scale(${scale})`;
         }
+
 
 
 

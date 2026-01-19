@@ -22,6 +22,11 @@ body {
   color: #e6e6e6;
 }
 
+body {
+  overflow: hidden;
+}
+
+
 
 /* ======================================================
    TOP BAR
@@ -53,13 +58,25 @@ body {
 
 .layout {
   display: flex;
-  justify-content: center;
   gap: 20px;
-  padding: 84px 20px 110px;
   min-height: 100vh;
-  max-width: 1920px;
-  margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 110px;
+  justify-content: center;
 }
+
+
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app,
+.casual-panel,
+.ranked-panel {
+  padding: 20px;
+}
+
 
 .app {
   width: min(420px, 100%);
@@ -280,7 +297,7 @@ body {
 
 .casual-panel,
 .ranked-panel {
-  width: 20%;
+  width: 25%;
   background: #161a22;
   border-radius: 16px;
   padding: 20px;
