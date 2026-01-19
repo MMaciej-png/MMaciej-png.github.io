@@ -41,8 +41,11 @@ let modulesRenderer = null;
 let allItems = [];
 let items = [];
 
-/* GLOBAL CONTENT FILTER */
+/* CONTENT FILTER */
 let contentFilter = "all"; // "all" | "words" | "sentences"
+
+/* REGISTER FILTER */
+let registerFilter = "all"; // "all" | "informal" | "formal"
 
 /* MODULE FILTERS */
 let activeModules = new Set(); // empty = all modules
@@ -78,13 +81,18 @@ async function refreshModulesPanel() {
 
   const groups = await loadModulesMeta();
 
-  // Inject runtime-only current streak into All Modules
   if (groups["Smart Modes"]) {
     const all = groups["Smart Modes"].find(m => m.name === "All Modules");
     if (all) all.currentStreak = sessionStreak;
   }
 
-  modulesRenderer.render(groups, activeModules, activeMode, contentFilter);
+  modulesRenderer.render(
+    groups,
+    activeModules,
+    activeMode,
+    contentFilter,
+    registerFilter
+  );
 }
 
 /* ===============================
@@ -100,6 +108,15 @@ function applyAllFilters() {
   } else if (contentFilter === "sentences") {
     pool = pool.filter(i => i.type === "sentence");
   }
+
+  if (registerFilter !== "all") {
+    pool = pool.filter(i =>
+      i.register === registerFilter ||
+      i.register === "neutral"
+    );
+  }
+
+
 
   // Module filter
   if (activeMode === "modules" && activeModules.size > 0) {
@@ -146,7 +163,9 @@ export const casualEngine = (() => {
       frontTextEl: document.querySelector("#casual-front .card-text"),
       backTextEl: document.querySelector("#casual-back .card-text"),
       frontPointsEl: document.getElementById("c-points"),
-      backPointsEl: document.getElementById("c-points-back")
+      backPointsEl: document.getElementById("c-points-back"),
+      frontRegisterEl: document.querySelector("#casual-front .card-register"),
+      backRegisterEl: document.querySelector("#casual-back .card-register")
     });
 
     /* ---------- MODULES ---------- */
@@ -159,8 +178,21 @@ export const casualEngine = (() => {
         if (name === "__CONTENT_TOGGLE__") {
           contentFilter =
             contentFilter === "all" ? "words" :
-            contentFilter === "words" ? "sentences" :
-            "all";
+              contentFilter === "words" ? "sentences" :
+                "all";
+
+          applyAllFilters();
+          pickNewCard({ resetRecency: true });
+          refreshModulesPanel();
+          return;
+        }
+
+        /* REGISTER TOGGLE */
+        if (name === "__REGISTER_TOGGLE__") {
+          registerFilter =
+            registerFilter === "all" ? "informal" :
+              registerFilter === "informal" ? "formal" :
+                "all";
 
           applyAllFilters();
           pickNewCard({ resetRecency: true });
@@ -254,7 +286,6 @@ export const casualEngine = (() => {
       fail();
     });
 
-    // Unlock after wrong
     inputController.setOnUnlockAttempt(value => {
       if (locked && isCorrect(value, currentRender.answer, current.type)) {
         locked = false;

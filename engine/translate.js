@@ -3,7 +3,12 @@
 =============================== */
 
 const EN_EQUIVALENTS = [
-  // ---- core be / have / will ----
+
+  /* ===============================
+     CORE BE / HAVE / WILL
+     =============================== */
+
+  // be
   [/\bi['’]?m\b/g, "i am"],
   [/\byou['’]?re\b/g, "you are"],
   [/\bhe['’]?s\b/g, "he is"],
@@ -12,11 +17,13 @@ const EN_EQUIVALENTS = [
   [/\bwe['’]?re\b/g, "we are"],
   [/\bthey['’]?re\b/g, "they are"],
 
+  // have
   [/\bi['’]?ve\b/g, "i have"],
   [/\byou['’]?ve\b/g, "you have"],
   [/\bwe['’]?ve\b/g, "we have"],
   [/\bthey['’]?ve\b/g, "they have"],
 
+  // will
   [/\bi['’]?ll\b/g, "i will"],
   [/\byou['’]?ll\b/g, "you will"],
   [/\bhe['’]?ll\b/g, "he will"],
@@ -24,7 +31,11 @@ const EN_EQUIVALENTS = [
   [/\bwe['’]?ll\b/g, "we will"],
   [/\bthey['’]?ll\b/g, "they will"],
 
-  // ---- would / had ----
+
+  /* ===============================
+     WOULD / HAD
+     =============================== */
+
   [/\bi['’]?d\b/g, "i would"],
   [/\byou['’]?d\b/g, "you would"],
   [/\bhe['’]?d\b/g, "he would"],
@@ -32,75 +43,303 @@ const EN_EQUIVALENTS = [
   [/\bwe['’]?d\b/g, "we would"],
   [/\bthey['’]?d\b/g, "they would"],
 
-  // ---- negations ----
+
+  /* ===============================
+     NEGATION
+     =============================== */
+
   [/\bcan['’]?t\b/g, "cannot"],
   [/\bwon['’]?t\b/g, "will not"],
   [/\bdon['’]?t\b/g, "do not"],
   [/\bdoesn['’]?t\b/g, "does not"],
   [/\bdidn['’]?t\b/g, "did not"],
+  [/\bisn['’]?t\b/g, "is not"],
+  [/\baren['’]?t\b/g, "are not"],
+  [/\bwasn['’]?t\b/g, "was not"],
+  [/\bweren['’]?t\b/g, "were not"],
 
-  // ---- lets ----
-  [/\blet['’]?s\b/g, "let us"],
-  [/\blets\b/g, "let us"],
 
-  // ---- future / intent ----
+  /* ===============================
+     QUESTIONS / INTERROGATIVES
+     =============================== */
+
+  // how
+  [/\bhow\s+are\s+you\b/g, "how are you"],
+  [/\bhow['’]?s\s+it\s+going\b/g, "how are you"],
+  [/\bhow\s+is\s+it\s+going\b/g, "how are you"],
+
+  // what
+  [/\bwhat['’]?s\b/g, "what is"],
+
+  // why
+  [/\bwhy\b/g, "why"],
+
+  // where
+  [/\bwhere\b/g, "where"],
+
+  // when
+  [/\bwhen\b/g, "when"],
+
+
+  /* ===============================
+     FUTURE / INTENT
+     =============================== */
+
+  // going to → will
   [/\b(am|are|is)\s+going\s+to\b/g, "will"],
-  [/\b(gonna|going to)\b/g, "will"],
-  [/\b(wanna|want to)\b/g, "want to"],
+  [/\b(gonna)\b/g, "will"],
 
-  // ---- grouping ----
-  [/\b(can not|cannot)\b/g, "can not"],
-  [/\b(yes|yeah)\b/g, "yes"],
+  // want to
+  [/\b(wanna)\b/g, "want to"],
+
+
+  /* ===============================
+     AGREEMENT / RESPONSE STYLE
+     =============================== */
+
+  [/\b(yes|yeah|yep|yup|ya)\b/g, "yes"],
+  [/\b(no|nah|nope)\b/g, "no"],
+  [/\bok\b/g, "okay"],
+
+
+  /* ===============================
+     DEGREE / INTENSITY
+     =============================== */
+
+  [/\b(really|very|so|super)\b/g, "very"],
+  [/\b(kind\s+of|kinda|sort\s+of|sorta)\b/g, "kind of"],
+  [/\b(a\s+bit|bit|little)\b/g, "a little"],
+
+
+  /* ===============================
+     TIME EXPRESSIONS
+     =============================== */
+
+  // now
+  [/\b(right\s+now|now)\b/g, "now"],
+
+  // later
+  [/\b(later\s+on)\b/g, "later"],
+
+  // today / tomorrow
+  [/\b(today)\b/g, "today"],
+  [/\b(tomorrow)\b/g, "tomorrow"],
+
+  // tonight
+  [/\b(tonight|later\s+tonight)\b/g, "tonight"],
+
+
+  /* ===============================
+     EARLY / LATE (SAFE PHRASES)
+     =============================== */
+
+  // early
+  [/\b(early\s+on|quite\s+early)\b/g, "early"],
+  [/\b(earlier\s+than\s+expected)\b/g, "early"],
+
+  // late
+  [/\b(running\s+late)\b/g, "late"],
+
+
+  /* ===============================
+     MOVEMENT / ARRIVAL
+     =============================== */
+
   [/\b(come|arrive)\b/g, "come"],
-  [/\b(kind of|kinda|kindof)\b/g, "kind of"],
+  [/\b(go|leave|head\s+off)\b/g, "go"],
+  [/\b(get\s+back|return)\b/g, "return"],
+  [/\b(on\s+the\s+way)\b/g, "coming"],
 
-  // ---- time inference ----
-  [/\b(am|are|is)\b(?=.*\b(today|tomorrow|later)\b)/g, "will"],
 
-  // ---- quantity ----
-  [/\b(little|a little|a bit|bit)\b/g, "a little"],
+  /* ===============================
+     COMMUNICATION
+     =============================== */
 
-  // ---- fillers ----
-  [/\b(really|just|actually|very|right|please|pls|are)\b/g, ""],
+  [/\b(talk|chat)\b/g, "talk"],
+  [/\b(text|message|dm)\b/g, "message"],
 
-  // ---- normalise ok ----
-  [/\b(ok|okay)\b/g, "okay"],
+
+  /* ===============================
+     POLITENESS / FILLERS (IGNORE)
+     =============================== */
+
+  [/\b(please|pls|plz|actually|just|like|right)\b/g, ""],
+
+
+  /* ===============================
+     NORMALISE PUNCTUATION / STYLE
+     =============================== */
+
+  [/\b(okay|ok)\b/g, "okay"],
 ];
 
 
 
 const ID_EQUIVALENTS = [
-  // ---- negation ----
-  [/\b(ga|gak|nggak|enggak)\b/g, "tidak"],
 
-  // ---- tense / aspect ----
+  /* ===============================
+     INTERROGATIVES / QUESTION STYLE
+     =============================== */
+
+  // how
+  [/\b(gimana|bagaimana)\b/g, "bagaimana"],
+
+  // what
+  [/\b(apa)\b/g, "apa"],
+
+  // why
+  [/\b(kenapa|mengapa)\b/g, "kenapa"],
+
+  // where
+  [/\b(di\s+mana|dimana)\b/g, "dimana"],
+
+  // when
+  [/\b(kapan)\b/g, "kapan"],
+
+  // common "how are you" constructions
+  [/\b(apa\s+kabar(nya)?|gimana\s+kabar(nya)?|bagaimana\s+kabar(nya)?)\b/g, "kabar"],
+
+
+  /* ===============================
+     PRONOUNS (REGISTER + SLANG)
+     =============================== */
+
+  // I / me
+  [/\b(aku|saya|gue|gua)\b/g, "aku"],
+
+  // you
+  [/\b(kamu|kau|anda|loe|lu)\b/g, "kamu"],
+
+  // we
+  [/\b(kita|kami)\b/g, "kita"],
+
+  // they
+  [/\b(mereka)\b/g, "mereka"],
+
+
+  /* ===============================
+     NEGATION (VERY IMPORTANT)
+     =============================== */
+
+  [/\b(ga|gak|nggak|enggak|tak|ndak)\b/g, "tidak"],
+
+
+  /* ===============================
+     ASPECT / TENSE MARKERS
+     =============================== */
+
+  // already
   [/\b(udah|sudah)\b/g, "sudah"],
+
+  // currently
   [/\b(lagi|sedang)\b/g, "sedang"],
 
-  // ---- particles ----
-  [/\baja\b/g, "saja"],
-  [/\b(kok|nih+h?)\b/g, ""],
-  [/\b(ya|yah)\b/g, ""],
+  // not yet
+  [/\b(belum)\b/g, "belum"],
 
-  // ---- time ----
-  [/\b(sekarang)\b/g, "sekarang"],
+
+  /* ===============================
+     DEGREE / INTENSITY
+     =============================== */
+
+  [/\b(banget|sekali)\b/g, "banget"],
+  [/\b(dikit|sedikit)\b/g, "sedikit"],
+  [/\b(paling)\b/g, "paling"],
+
+
+  /* ===============================
+     TIME / TEMPORAL EXPRESSIONS
+     =============================== */
+
+  // now
+  [/\b(sekarang|skrng)\b/g, "sekarang"],
+
+  // later
+  [/\b(ntar|entar)\b/g, "nanti"],
+
+  // earlier / before
   [/\b(tadi|dulu)\b/g, "dulu"],
 
-  // ---- quantity ----
-  [/\b(sedikit|dikit)\b/g, "dikit"],
+  // tomorrow
+  [/\b(besok)\b/g, "besok"],
 
-  // ---- motion ----
+  // tonight / later tonight
+  [/\b(nanti\s+malam)\b/g, "malam"],
+
+  // afternoon regional
+  [/\b(petang)\b/g, "sore"],
+
+
+  /* ===============================
+     EARLY / TIME-OF-DAY (PHRASE SAFE)
+     =============================== */
+
+  // early morning expressions
+  [/\b(pagi\s+pagi)\b/g, "pagi"],
+  [/\b(pagi\s+sekali)\b/g, "pagi"],
+  [/\b(dini\s+hari)\b/g, "pagi"],
+
+  // dawn (optional but common)
+  [/\b(subuh)\b/g, "pagi"],
+
+  // earlier than expected
+  [/\b(lebih\s+awal)\b/g, "lebih cepat"],
+
+
+  /* ===============================
+     MOTION / MOVEMENT VERBS
+     =============================== */
+
+  // arrive / come
   [/\b(datang|sampai)\b/g, "sampai"],
 
-  // ---- pronouns ----
-  [/\b(aku|saya|gue)\b/g, "aku"],
-  [/\b(kamu|kau)\b/g, "kamu"],
+  // go / leave
+  [/\b(pergi|berangkat)\b/g, "pergi"],
 
-  // ---- morphology (CASUAL) ----
+  // return
+  [/\b(pulang|balik)\b/g, "pulang"],
+
+
+  /* ===============================
+     WANT / INTENT (BEGINNER FRIENDLY)
+     =============================== */
+
+  [/\b(mau|pengen|pengin|ingin)\b/g, "mau"],
+
+
+  /* ===============================
+     COMMUNICATION VERBS (LIGHT)
+     =============================== */
+
+  [/\b(ngobrol|bicara|omong)\b/g, "bicara"],
+  [/\b(chat|ngechat|ngirim\s+pesan)\b/g, "pesan"],
+
+
+  /* ===============================
+     PARTICLES / FILLERS (IGNORE)
+     =============================== */
+
+  [/\b(aja)\b/g, "saja"],
+  [/\b(kok|nih+h?|dong|sih|deh|lah)\b/g, ""],
+  [/\b(ya|yah|lho)\b/g, ""],
+
+
+  /* ===============================
+     VERY LIGHT MORPHOLOGY STRIP
+     (CASUAL-BEGINNER SAFE)
+     =============================== */
+
+  // ber- verbs → base
   [/\bber(\w+)\b/g, "$1"],
+
+  // di- / ter- passive → base
   [/\b(di|ter)(\w+)\b/g, "$2"],
 
-  // ---- reduplication ----
+
+  /* ===============================
+     REDUPLICATION
+     =============================== */
+
   [/\b(\w+)-\1\b/g, "$1"],
 ];
 
