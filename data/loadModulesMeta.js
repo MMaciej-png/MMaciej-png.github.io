@@ -14,8 +14,6 @@ const MODULE_CATEGORY_MAP = {
     "Movement & Arrival": "Movement & Plans",
     "Plans, Timing & Updates": "Movement & Plans",
     "Goodbyes & Polite Exits": "Movement & Plans",
-
-    "Statements & Grammar": "Statements & Grammar"
 };
 
 
