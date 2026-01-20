@@ -165,6 +165,64 @@
       ]
     }
   },
+  "Thanks & Politeness": {
+    "neutral": {
+      "words": [
+        { "indo": "Terima", "english": "Receive / Accept" },
+        { "indo": "kasih", "english": "Thanks" },
+        { "indo": "banyak", "english": "Very much" },
+        { "indo": "Sama-sama", "english": "You’re welcome" },
+        { "indo": "maaf", "english": "Sorry" },
+        { "indo": "tolong", "english": "Please / Help" },
+        { "indo": "permisi", "english": "Excuse me" },
+        { "indo": "bisa", "english": "Can" }
+      ],
+      "sentences": [
+        { "indo": "Terima kasih.", "english": "Thank you." },
+        { "indo": "Terima kasih banyak.", "english": "Thank you very much." },
+        { "indo": "Sama-sama.", "english": "You’re welcome." },
+        { "indo": "Maaf.", "english": "Sorry." },
+        { "indo": "Permisi, bisa bantu?", "english": "Excuse me, can you help?" },
+        { "indo": "Tolong bantu.", "english": "Please help." }
+      ]
+    },
+    "formal": {
+      "words": [
+        { "indo": "Saya", "english": "I / Me" },
+        { "indo": "Anda", "english": "You (formal)" },
+        { "indo": "ingin", "english": "Want" },
+        { "indo": "meminta", "english": "Ask / Request" },
+        { "indo": "membantu", "english": "Help" }
+      ],
+      "sentences": [
+        { "indo": "Saya meminta maaf.", "english": "I am sorry." },
+        { "indo": "Saya ingin meminta maaf.", "english": "I would like to apologize." },
+        { "indo": "Saya minta tolong.", "english": "I ask for help." },
+        { "indo": "Permisi, Anda bisa membantu saya?", "english": "Excuse me, can you help me?" },
+        { "indo": "Tolong membantu saya.", "english": "Please help me." }
+      ]
+    },
+    "informal": {
+      "words": [
+        { "indo": "Makasih", "english": "Thanks" },
+        { "indo": "ya", "english": "Softener" },
+        { "indo": "Aku", "english": "I / Me" },
+        { "indo": "kamu", "english": "You" },
+        { "indo": "minta", "english": "Ask" },
+        { "indo": "bantu", "english": "Help" }
+      ],
+      "sentences": [
+        { "indo": "Makasih ya.", "english": "Thanks." },
+        { "indo": "Aku minta maaf.", "english": "Sorry." },
+        { "indo": "Maaf ya.", "english": "Sorry." },
+        { "indo": "Aku minta tolong.", "english": "I’m asking for help." },
+        { "indo": "Permisi, kamu bisa bantu aku?", "english": "Excuse me, can you help me?" },
+        { "indo": "Tolong bantu aku.", "english": "Please help me." }
+      ]
+    }
+  },
+
+
   "Food & Drink": {
     "neutral": {
       "words": [
@@ -211,6 +269,7 @@
       ]
     }
   },
+  
   "People & Relationships": {
     "neutral": {
       "words": [
