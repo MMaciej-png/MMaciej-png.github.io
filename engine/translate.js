@@ -347,7 +347,7 @@ const ID_EQUIVALENTS = [
 
 // Tone-only tokens
 const OPTIONAL_TOKENS = new Set([
-  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah"
+  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah", "lagi"
 ]);
 
 function isOptional(word) {
