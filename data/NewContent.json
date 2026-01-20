@@ -180,8 +180,6 @@
       "sentences": [
         { "indo": "Terima kasih.", "english": "Thank you." },
         { "indo": "Terima kasih banyak.", "english": "Thank you very much." },
-        { "indo": "Sama-sama.", "english": "You’re welcome." },
-        { "indo": "Maaf.", "english": "Sorry." },
         { "indo": "Permisi, bisa bantu?", "english": "Excuse me, can you help?" },
         { "indo": "Tolong bantu.", "english": "Please help." }
       ]
@@ -212,9 +210,7 @@
         { "indo": "bantu", "english": "Help" }
       ],
       "sentences": [
-        { "indo": "Makasih ya.", "english": "Thanks." },
-        { "indo": "Aku minta maaf.", "english": "Sorry." },
-        { "indo": "Maaf ya.", "english": "Sorry." },
+        { "indo": "Aku minta maaf.", "english": "I'm Sorry." },
         { "indo": "Aku minta tolong.", "english": "I’m asking for help." },
         { "indo": "Permisi, kamu bisa bantu aku?", "english": "Excuse me, can you help me?" },
         { "indo": "Tolong bantu aku.", "english": "Please help me." }
