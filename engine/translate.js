@@ -149,6 +149,7 @@ const EN_EQUIVALENTS = [
   [/\b(go|leave|head\s+off)\b/g, "go"],
   [/\b(get\s+back|return)\b/g, "return"],
   [/\b(on\s+the\s+way)\b/g, "coming"],
+  [/\b(owns|own|has)\b/g, "has"],
 
 
   /* ===============================
@@ -157,7 +158,7 @@ const EN_EQUIVALENTS = [
 
   [/\b(talk|chat)\b/g, "talk"],
   [/\b(text|message|dm)\b/g, "message"],
-
+  [/\b(hello|hi|hey)\b/g, "hello"],
 
   /* ===============================
      POLITENESS / FILLERS (IGNORE)
@@ -314,7 +315,7 @@ const ID_EQUIVALENTS = [
 
   [/\b(ngobrol|bicara|omong)\b/g, "bicara"],
   [/\b(chat|ngechat|ngirim\s+pesan)\b/g, "pesan"],
-
+  [/\b(nulis|tulis|)\b/g, "tulis"],
 
   /* ===============================
      PARTICLES / FILLERS (IGNORE)
