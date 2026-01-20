@@ -159,7 +159,7 @@ const EN_EQUIVALENTS = [
   [/\b(talk|chat)\b/g, "talk"],
   [/\b(text|message|dm)\b/g, "message"],
   [/\b(hello|hi|hey)\b/g, "hello"],
-
+  [/\b(Choose|Pick)\b/g, "choose"],
   /* ===============================
      POLITENESS / FILLERS (IGNORE)
      =============================== */
