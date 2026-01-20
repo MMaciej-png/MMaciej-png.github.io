@@ -316,7 +316,7 @@ const ID_EQUIVALENTS = [
   [/\b(ngobrol|bicara|omong)\b/g, "bicara"],
   [/\b(chat|ngechat|ngirim\s+pesan)\b/g, "pesan"],
   [/\b(nulis|tulis|)\b/g, "tulis"],
-
+  [/\b(enak|lezat|nikmat)\b/g, "enak"],
   /* ===============================
      PARTICLES / FILLERS (IGNORE)
      =============================== */
