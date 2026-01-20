@@ -134,8 +134,7 @@
         { "indo": "Perlu", "english": "Need" },
         { "indo": "Bisa", "english": "Can" },
         { "indo": "Ini", "english": "This" },
-        { "indo": "Itu", "english": "That" },
-        { "indo": "Yang", "english": "Which / That" }
+        { "indo": "Itu", "english": "That" }
       ]
     },
     "formal": {
@@ -227,7 +226,6 @@
         { "indo": "Enak", "english": "Tasty" },
         { "indo": "Ini", "english": "This" },
         { "indo": "Itu", "english": "That" },
-        { "indo": "Yang", "english": "Which / That" },
         { "indo": "Apa", "english": "What" }
       ]
     },
@@ -309,7 +307,6 @@
       "words": [
         { "indo": "Ini", "english": "This" },
         { "indo": "Itu", "english": "That" },
-        { "indo": "Yang", "english": "Which / That" },
         { "indo": "Sama", "english": "Same" },
         { "indo": "Beda", "english": "Different" },
         { "indo": "Pilih", "english": "Choose" }
