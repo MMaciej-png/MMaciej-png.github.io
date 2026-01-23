@@ -451,6 +451,53 @@ body {
   min-height: 0;
 }
 
+.module-subgroup {
+  margin-left: 14px;
+  margin-top: 6px;
+}
+
+.module-subgroup-header {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-weight: 500;
+  font-size: medium;
+  padding: 4px 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.module-subgroup-header::after {
+  content: "▸";
+  margin-left: auto;
+  transition: transform 0.2s ease;
+  opacity: 0.7;
+}
+
+.module-subgroup-header.open::after {
+  transform: rotate(90deg);
+}
+
+.module-subgroup-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.module-subgroup-body.collapsed {
+  display: none;
+}
+
+.module-subgroup .module-btn {
+  margin-left: 6px;
+}
+
+
+
 /* ======================================================
    MODULE BUTTONS
 ====================================================== */
