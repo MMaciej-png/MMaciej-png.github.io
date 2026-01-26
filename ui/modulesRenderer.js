@@ -54,7 +54,6 @@ export function createModulesRenderer({ containerEl, onSelect }) {
       );
       containerEl.appendChild(groupEl);
     }
-
   }
 
   return { render };
@@ -105,7 +104,7 @@ function renderRegisterToggle(container, current, onSelect) {
 }
 
 /* ===============================
-   CATEGORY GROUP
+   FLAT GROUP (SMART MODES)
 =============================== */
 
 function makeFlatGroup(category, modules, activeModules, activeMode, onSelect) {
@@ -152,6 +151,9 @@ function makeFlatGroup(category, modules, activeModules, activeMode, onSelect) {
   return wrap;
 }
 
+/* ===============================
+   CATEGORY GROUP
+=============================== */
 
 function makeCategoryGroup(
   category,
@@ -192,12 +194,10 @@ function makeCategoryGroup(
         activeModules,
         activeMode,
         onSelect,
-        isOpen // ✅ PASS PARENT OPEN STATE
+        isOpen
       )
     );
   }
-
-
 
   header.onclick = () => {
     const willOpen = body.classList.contains("collapsed");
@@ -243,12 +243,16 @@ function makeSubcategoryGroup(
   );
 
   const isOpen =
-    parentOpen &&
-    (openFolders.has(key) || containsActive);
-
+    openFolders.has(key) || containsActive;
 
   body.classList.toggle("collapsed", !isOpen);
   header.classList.toggle("open", isOpen);
+
+  // Parent visibility gate (visual only)
+  if (!parentOpen) {
+    body.classList.add("collapsed");
+    header.classList.remove("open");
+  }
 
   modules.forEach(m => {
     body.appendChild(
