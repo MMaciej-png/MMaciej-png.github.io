@@ -27,6 +27,11 @@ const MODULE_CATEGORY_MAP = {
         subcategory: "Checking In"
     },
 
+    "Questions (Yes / No)": {
+        category: "Conversation Basics",
+        subcategory: "Checking In"
+    },
+
     // Responses
 
     "Yes / No / Maybe": {
@@ -149,6 +154,12 @@ const MODULE_CATEGORY_MAP = {
         category: "Basics",
         subcategory: "Location"
     },
+
+    "Existence & Availability": {
+        category: "Basics",
+        subcategory: "Existence"
+    }
+
 };
 
 

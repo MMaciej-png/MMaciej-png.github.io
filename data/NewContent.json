@@ -145,11 +145,15 @@
     "Knowing & Ability": {
         "neutral": {
             "words": [
+            { "indo": "Ini", "english": "This" },
             { "indo": "Tahu", "english": "Know" },
             { "indo": "Bisa", "english": "Can / Able" },
-            { "indo": "Sekarang", "english": "Now" }
+            { "indo": "Sekarang", "english": "Now" },
+            { "indo": "Bukan","english": "Not (for nouns)"}
+
             ],
             "sentences": [
+            { "indo": "Bukan ini.","english": "Not this." },
             { "indo": "Tidak tahu.", "english": "I don’t know." },
             { "indo": "Tidak bisa.", "english": "I can’t." },
             { "indo": "Bisa sekarang.", "english": "Can do it now." }
@@ -157,15 +161,22 @@
         },
         "formal": {
             "words": [
+            { "indo": "Saya", "english": "I / Me" },
+            { "indo": "Milik", "english": "Belong to" },
             { "indo": "Tidak", "english": "Not / No (alone)" }
             ],
-            "sentences": []
+            "sentences": [
+            { "indo": "Ini bukan milik saya.","english": "This is not mine." }
+            ]
         },
         "informal": {
             "words": [
+            { "indo": "Aku", "english": "I / Me" },
             { "indo": "Nggak", "english": "Not / No (alone)" }
             ],
-            "sentences": []
+            "sentences": [
+                { "indo": "Bukan aku.","english": "Not me." }
+            ]
         }
     },
     "Requests & Help": {
@@ -423,13 +434,19 @@
             { "indo": "Pilih", "english": "Choose" },
             { "indo": "Sama", "english": "Same" },
             { "indo": "Beda", "english": "Different" },
-            { "indo": "Yang", "english": "The (....) one / Which" }
+            { "indo": "Yang", "english": "The (....) one / Which" },
+            { "indo": "Dan", "english": "And" },
+            { "indo": "Atau", "english": "Or" },
+            { "indo": "Tapi", "english": "But" }
             ],
             "sentences": [
             { "indo": "Ini.", "english": "This." },
             { "indo": "Itu.", "english": "That." },
             { "indo": "Yang sama.", "english": "The same one." },
-            { "indo": "Yang beda.", "english": "The different one." }
+            { "indo": "Yang beda.", "english": "The different one." },
+            { "indo": "Ini dan itu.", "english": "This and that." },
+            { "indo": "Ini atau itu.", "english": "This or that." },
+            { "indo": "Ini, tapi itu.", "english": "This, but that." }
             ]
         },
 
@@ -614,7 +631,6 @@
             ]
         }
     },
-
     "Places & Location": {
         "neutral": {
             "words": [
@@ -646,6 +662,70 @@
             { "indo": "Aku mau yang ini.", "english": "I want this one." },
             { "indo": "Yang itu beda.", "english": "That one is different." },
             { "indo": "Aku pilih yang lain.", "english": "I choose the other one." }
+            ]
+        }
+    },
+    "Questions (Yes / No)": {
+        "neutral": {
+            "words": [
+            { "indo": "Bisa", "english": "Can / Able" },
+            { "indo": "Ini", "english": "This" },
+            { "indo": "Itu", "english": "That" },
+            { "indo": "Sudah", "english": "Already" },
+            { "indo": "Belum", "english": "Not yet" }
+            ],
+            "sentences": [
+            { "indo": "Ini bisa?", "english": "Can this?" },
+            { "indo": "Itu bisa?", "english": "Can that?" },
+            { "indo": "Sudah bisa?", "english": "Can already?" },
+            { "indo": "Belum bisa?", "english": "Not yet?" }
+            ]
+        },
+        "formal": {
+            "words": [
+            { "indo": "Apakah", "english": "Question marker" },
+            { "indo": "Anda", "english": "You" }
+            ],
+            "sentences": [
+            { "indo": "Apakah ini bisa?", "english": "Can this?" },
+            { "indo": "Apakah Anda sudah bisa?", "english": "Can you already?" }
+            ]
+        },
+        "informal": {
+            "sentences": [
+            { "indo": "Ini bisa?", "english": "Can this?" },
+            { "indo": "Sudah bisa?", "english": "Can already?" }
+            ]
+        }
+    },
+    "Existence & Availability": {
+        "neutral": {
+            "words": [
+                { "indo": "Ada", "english": "Exist / There is" },
+                { "indo": "Tidak ada", "english": "There is not / None" },
+                { "indo": "Di sini", "english": "Here" },
+                { "indo": "Di sana", "english": "There" }
+            ],
+            "sentences": [
+                { "indo": "Ada di sini.", "english": "There is here." },
+                { "indo": "Tidak ada.", "english": "There is none." },
+                { "indo": "Ada waktu.", "english": "There is time." }
+            ]
+        },
+        "formal": {
+            "words": [
+                { "indo": "Tidak", "english": "Not / No" }
+            ],
+            "sentences": [
+                { "indo": "Tidak ada sekarang.", "english": "There is none right now." }
+            ]
+        },
+        "informal": {
+            "words": [
+                { "indo": "Nggak", "english": "Not / No (spoken)" }
+            ],
+            "sentences": [
+                { "indo": "Nggak ada.", "english": "There isn’t any." }
             ]
         }
     }
