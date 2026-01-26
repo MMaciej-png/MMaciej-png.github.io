@@ -311,7 +311,7 @@ const ID_EQUIVALENTS = [
      =============================== */
 
   [/\b(mau|pengen|pengin|ingin)\b/g, "mau"],
-
+  [/\b(oke|ya|okey|oghey|iya)\b/g, "oke"],
 
   /* ===============================
      COMMUNICATION VERBS (LIGHT)
@@ -328,7 +328,6 @@ const ID_EQUIVALENTS = [
   [/\b(aja)\b/g, "saja"],
   [/\b(kok|nih+h?|dong|sih|deh|lah)\b/g, ""],
   [/\b(ya|yah|lho)\b/g, ""],
-  
 
 
   /* ===============================
