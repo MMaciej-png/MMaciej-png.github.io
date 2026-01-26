@@ -1,20 +1,154 @@
 import { getModuleStats } from "./moduleStats.js";
 
+/**
+ * Module → Category / Subcategory mapping
+ * You will maintain this manually
+ */
 const MODULE_CATEGORY_MAP = {
-    "Greetings & Openings": "Daily Conversation",
-    "How I’m Doing": "Daily Conversation",
-    "What I’m Doing / Availability": "Daily Conversation",
-    "Needs, Wants & Preferences": "Daily Conversation",
-    "Food & Drink": "Daily Conversation",
-    "Thanks & Politeness": "Daily Conversation",
+    // ─────────────────────────────
+    // Conversation Basics
+    // ─────────────────────────────
 
-    "People & Relationships": "Pronouns & Reference",
-    "This, That & things": "Pronouns & Reference",
-    "Possession": "Pronouns & Reference",
+    // Greetings
 
-    "Movement & Arrival": "Movement & Plans",
-    "Plans, Timing & Updates": "Movement & Plans",
-    "Goodbyes & Polite Exits": "Movement & Plans",
+    "Greetings (Basic)": {
+        category: "Conversation Basics",
+        subcategory: "Greetings"
+    },
+    "Greetings (Time-Based)": {
+        category: "Conversation Basics",
+        subcategory: "Greetings"
+    },
+
+    // Checking In
+
+    "Asking How Are You": {
+        category: "Conversation Basics",
+        subcategory: "Checking In"
+    },
+
+    // Responses
+
+    "Yes / No / Maybe": {
+        category: "Conversation Basics",
+        subcategory: "Responses"
+    },
+
+    "Thanks & Politeness": {
+        category: "Conversation Basics",
+        subcategory: "Responses"
+    },
+
+    // Goodbyes
+
+    "Goodbyes & Leaving": {
+        category: "Conversation Basics",
+        subcategory: "Goodbyes"
+    },
+
+    // ─────────────────────────────
+    // Talking About Yourself
+    // ─────────────────────────────
+
+    // Status & Feelings
+
+    "How I’m Doing (Positive)": {
+        category: "Talking About Yourself",
+        subcategory: "Status & Feelings"
+    },
+
+    "How I’m Doing (Negative)": {
+        category: "Talking About Yourself",
+        subcategory: "Status & Feelings"
+    },
+
+    // Ability & Knowledge
+
+    "Knowing & Ability": {
+        category: "Talking About Yourself",
+        subcategory: "Ability & Knowledge"
+    },
+    "Requests & Help": {
+        category: "Talking About Yourself",
+        subcategory: "Ability & Knowledge"
+    },
+    "Understanding": {
+        category: "Talking About Yourself",
+        subcategory: "Ability & Knowledge"
+    },
+
+    // Availability & Actions
+
+    "What I’m Doing": {
+        category: "Talking About Yourself",
+        subcategory: "Availability & Actions"
+    },
+
+    "Plans & Timing": {
+        category: "Talking About Yourself",
+        subcategory: "Availability & Actions"
+    },
+
+    // Preferences
+    "Preferences & Choices": {
+        category: "Talking About Yourself",
+        subcategory: "Preferences"
+    },
+
+
+    // ─────────────────────────────
+    // Daily Life
+    // ─────────────────────────────
+
+    // Activities
+
+    "Food & Drink": {
+        category: "Daily Life",
+        subcategory: "Activities"
+    },
+
+    "This / That (Choosing)": {
+        category: "Daily Life",
+        subcategory: "Activities"
+    },
+
+    // Movement
+
+    "Going & Arriving": {
+        category: "Daily Life",
+        subcategory: "Movement"
+    },
+    // Possession
+
+    "Mine & Yours": {
+        category: "Daily Life",
+        subcategory: "Possession"
+    },
+
+    // ─────────────────────────────
+    // Basics
+    // ─────────────────────────────
+
+    // Numbers
+
+    "Numbers (Basic)": {
+        category: "Basics",
+        subcategory: "Numbers"
+    },
+
+    // Time
+
+    "Time (Basic)": {
+        category: "Basics",
+        subcategory: "Time"
+    },
+
+    // Location
+
+    "Places & Location": {
+        category: "Basics",
+        subcategory: "Location"
+    },
 };
 
 
@@ -30,6 +164,7 @@ export async function loadModulesMeta() {
     let allCorrect = 0;
     let allBestStreak = 0;
 
+    // category → subcategory → [modules]
     const grouped = {};
 
     for (const [moduleName, data] of Object.entries(content)) {
@@ -39,8 +174,11 @@ export async function loadModulesMeta() {
         // ===============================
         // MODULE WITH REGISTERS
         // ===============================
-        if (data.formal || data.informal) {
-            for (const block of Object.values(data)) {
+        if (data.neutral || data.formal || data.informal) {
+            for (const key of ["neutral", "formal", "informal"]) {
+                const block = data[key];
+                if (!block) continue;
+
                 wordCount += block.words?.length ?? 0;
                 sentenceCount += block.sentences?.length ?? 0;
             }
@@ -54,7 +192,6 @@ export async function loadModulesMeta() {
         }
 
         const total = wordCount + sentenceCount;
-
 
         const stats = getModuleStats(moduleName);
 
@@ -73,19 +210,24 @@ export async function loadModulesMeta() {
             currentStreak: stats.currentStreak ?? 0
         };
 
+        // ===============================
+        // CATEGORY / SUBCATEGORY HANDLING
+        // ===============================
+        const mapping = MODULE_CATEGORY_MAP[moduleName] ?? {
+            category: "Other",
+            subcategory: "Uncategorised"
+        };
 
+        const { category, subcategory } = mapping;
 
-        // ✅ FIX: correct map name
-        const category =
-            MODULE_CATEGORY_MAP[moduleName] ?? "Other";
+        if (!grouped[category]) grouped[category] = {};
+        if (!grouped[category][subcategory]) grouped[category][subcategory] = [];
 
-        if (!grouped[category]) {
-            grouped[category] = [];
-        }
+        grouped[category][subcategory].push(meta);
 
-        grouped[category].push(meta);
-
-        // Aggregate for "All Modules"
+        // ===============================
+        // AGGREGATE FOR "ALL MODULES"
+        // ===============================
         totalItems += total;
         allAttempted += stats.attempted;
         allCorrect += stats.correct;
@@ -116,5 +258,4 @@ export async function loadModulesMeta() {
         ],
         ...grouped
     };
-
 }

@@ -182,6 +182,8 @@ const ID_EQUIVALENTS = [
   /* ===============================
      INTERROGATIVES / QUESTION STYLE
      =============================== */
+  // Hi
+  [/\b(hai|halo)\b/g, "Halo"],
 
   // how
   [/\b(gimana|bagaimana)\b/g, "bagaimana"],
@@ -206,6 +208,8 @@ const ID_EQUIVALENTS = [
      PRONOUNS (REGISTER + SLANG)
      =============================== */
 
+
+  
   // I / me
   [/\b(aku|saya|gue|gua)\b/g, "aku"],
 
@@ -324,6 +328,7 @@ const ID_EQUIVALENTS = [
   [/\b(aja)\b/g, "saja"],
   [/\b(kok|nih+h?|dong|sih|deh|lah)\b/g, ""],
   [/\b(ya|yah|lho)\b/g, ""],
+  
 
 
   /* ===============================

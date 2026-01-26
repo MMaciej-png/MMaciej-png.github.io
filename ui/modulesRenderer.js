@@ -27,12 +27,27 @@ export function createModulesRenderer({ containerEl, onSelect }) {
     renderRegisterToggle(containerEl, registerFilter, onSelect);
 
     /* ===============================
-       MODULE GROUPS
+       MODULE GROUPS (CATEGORIES)
     =============================== */
-    for (const [category, modules] of Object.entries(groups)) {
-      const groupEl = makeGroup(
+    for (const [category, data] of Object.entries(groups)) {
+
+      // SMART MODES (legacy flat list)
+      if (Array.isArray(data)) {
+        const groupEl = makeFlatGroup(
+          category,
+          data,
+          activeModules,
+          activeMode,
+          onSelect
+        );
+        containerEl.appendChild(groupEl);
+        continue;
+      }
+
+      // NORMAL CATEGORY → SUBCATEGORY → MODULES
+      const groupEl = makeCategoryGroup(
         category,
-        modules,
+        data,
         activeModules,
         activeMode,
         onSelect
@@ -54,8 +69,8 @@ function renderContentToggle(container, current, onSelect) {
 
   const label =
     current === "all" ? "Words & Sentences" :
-    current === "words" ? "Only Words" :
-    "Only Sentences";
+      current === "words" ? "Only Words" :
+        "Only Sentences";
 
   btn.innerHTML = `
     <span class="toggle-icon">🔄</span>
@@ -76,8 +91,8 @@ function renderRegisterToggle(container, current, onSelect) {
 
   const label =
     current === "all" ? "Formal & Informal" :
-    current === "informal" ? "Informal" :
-    "Formal";
+      current === "informal" ? "Informal" :
+        "Formal";
 
   btn.innerHTML = `
     <span class="toggle-icon">🔁</span>
@@ -89,10 +104,10 @@ function renderRegisterToggle(container, current, onSelect) {
 }
 
 /* ===============================
-   GROUP (FOLDER)
+   FLAT GROUP (SMART MODES)
 =============================== */
 
-function makeGroup(category, modules, activeModules, activeMode, onSelect) {
+function makeFlatGroup(category, modules, activeModules, activeMode, onSelect) {
   const wrap = document.createElement("div");
   wrap.className = "module-group";
 
@@ -104,7 +119,9 @@ function makeGroup(category, modules, activeModules, activeMode, onSelect) {
   body.className = "module-group-body";
 
   const containsActive = modules.some(m =>
-    !m.type && activeModules.has(m.name)
+    (m.type === "all" && activeMode === "modules" && activeModules.size === 0) ||
+    (m.type === "weakest" && activeMode === "weakest") ||
+    (!m.type && activeModules.has(m.name))
   );
 
   const isOpen =
@@ -128,6 +145,129 @@ function makeGroup(category, modules, activeModules, activeMode, onSelect) {
 
     if (willOpen) openFolders.add(category);
     else openFolders.delete(category);
+  };
+
+  wrap.append(header, body);
+  return wrap;
+}
+
+/* ===============================
+   CATEGORY GROUP
+=============================== */
+
+function makeCategoryGroup(
+  category,
+  subgroups,
+  activeModules,
+  activeMode,
+  onSelect
+) {
+  const wrap = document.createElement("div");
+  wrap.className = "module-group";
+
+  const header = document.createElement("button");
+  header.className = "module-group-header";
+  header.textContent = category;
+
+  const body = document.createElement("div");
+  body.className = "module-group-body";
+
+  const categoryKey = category;
+
+  const containsActive = Object.values(subgroups).some(modules =>
+    modules.some(m => !m.type && activeModules.has(m.name))
+  );
+
+  const isOpen =
+    openFolders.has(categoryKey) ||
+    containsActive;
+
+  body.classList.toggle("collapsed", !isOpen);
+  header.classList.toggle("open", isOpen);
+
+  for (const [subcategory, modules] of Object.entries(subgroups)) {
+    body.appendChild(
+      makeSubcategoryGroup(
+        category,
+        subcategory,
+        modules,
+        activeModules,
+        activeMode,
+        onSelect,
+        isOpen
+      )
+    );
+  }
+
+  header.onclick = () => {
+    const willOpen = body.classList.contains("collapsed");
+
+    body.classList.toggle("collapsed", !willOpen);
+    header.classList.toggle("open", willOpen);
+
+    if (willOpen) openFolders.add(categoryKey);
+    else openFolders.delete(categoryKey);
+  };
+
+  wrap.append(header, body);
+  return wrap;
+}
+
+/* ===============================
+   SUBCATEGORY GROUP
+=============================== */
+
+function makeSubcategoryGroup(
+  category,
+  subcategory,
+  modules,
+  activeModules,
+  activeMode,
+  onSelect,
+  parentOpen
+) {
+  const wrap = document.createElement("div");
+  wrap.className = "module-subgroup";
+
+  const header = document.createElement("button");
+  header.className = "module-subgroup-header";
+  header.textContent = subcategory;
+
+  const body = document.createElement("div");
+  body.className = "module-subgroup-body";
+
+  const key = `${category}::${subcategory}`;
+
+  const containsActive = modules.some(m =>
+    !m.type && activeModules.has(m.name)
+  );
+
+  const isOpen =
+    openFolders.has(key) || containsActive;
+
+  body.classList.toggle("collapsed", !isOpen);
+  header.classList.toggle("open", isOpen);
+
+  // Parent visibility gate (visual only)
+  if (!parentOpen) {
+    body.classList.add("collapsed");
+    header.classList.remove("open");
+  }
+
+  modules.forEach(m => {
+    body.appendChild(
+      makeModuleButton(m, activeModules, activeMode, onSelect)
+    );
+  });
+
+  header.onclick = () => {
+    const willOpen = body.classList.contains("collapsed");
+
+    body.classList.toggle("collapsed", !willOpen);
+    header.classList.toggle("open", willOpen);
+
+    if (willOpen) openFolders.add(key);
+    else openFolders.delete(key);
   };
 
   wrap.append(header, body);
