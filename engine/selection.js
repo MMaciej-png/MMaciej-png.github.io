@@ -1,16 +1,16 @@
 /* engine/selection.js */
 
-export function weightedRandom(items) {
-  if (!items.length) return null;
+export function weightedRandom(candidateItems) {
+  if (!candidateItems.length) return null;
 
   /* ===============================
      CONCEPT FREQUENCY MAP
-     (indo-based, shared concepts)
+     (only for current pool)
   =============================== */
 
   const conceptCount = new Map();
 
-  for (const item of items) {
+  for (const item of candidateItems) {
     const key = item.indo.toLowerCase();
     conceptCount.set(key, (conceptCount.get(key) || 0) + 1);
   }
@@ -21,19 +21,20 @@ export function weightedRandom(items) {
 
   let total = 0;
 
-  for (const item of items) {
+  for (const item of candidateItems) {
     total += effectiveWeight(item, conceptCount);
   }
 
   let r = Math.random() * total;
 
-  for (const item of items) {
+  for (const item of candidateItems) {
     r -= effectiveWeight(item, conceptCount);
     if (r <= 0) return item;
   }
 
-  return items[0];
+  return candidateItems[0];
 }
+
 
 
 /* ===============================

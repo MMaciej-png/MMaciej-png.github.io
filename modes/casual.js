@@ -142,7 +142,7 @@ function pickNewCard({ resetRecency = false } = {}) {
 
   current = weightedRandom(items);
   if (!current) return;
-
+  current.lastSeen = Date.now();
   currentRender = renderer.buildRender(current);
   renderer.renderFront(currentRender);
   renderer.renderBack(currentRender);
@@ -440,7 +440,13 @@ export const casualEngine = (() => {
 
   function softFail() {
     card.classList.add("wrong");
-    setTimeout(() => card.classList.remove("wrong"), 300);
+
+    // ✅ Only auto-remove if NOT the final attempt
+    if (attemptsLeft > 0) {
+      setTimeout(() => {
+        card.classList.remove("wrong");
+      }, 300);
+    }
   }
 
   function updateSessionUI() {
