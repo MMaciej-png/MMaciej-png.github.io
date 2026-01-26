@@ -446,7 +446,7 @@
             { "indo": "Yang beda.", "english": "The different one." },
             { "indo": "Ini dan itu.", "english": "This and that." },
             { "indo": "Ini atau itu.", "english": "This or that." },
-            { "indo": "Ini, tapi itu.", "english": "This, but that." }
+            { "indo": "Ini tapi itu.", "english": "This but that." }
             ]
         },
 
@@ -659,10 +659,13 @@
             { "indo": "Itu", "english": "That" }
             ],
             "sentences": [
-            { "indo": "Aku mau yang ini.", "english": "I want this one." },
             { "indo": "Yang itu beda.", "english": "That one is different." },
             { "indo": "Aku pilih yang lain.", "english": "I choose the other one." }
             ]
+        },
+        "informal": {
+            "words": [{ "indo": "Aku", "english": "I / Me" }],
+            "sentences": [{ "indo": "Aku mau yang ini.", "english": "I want this one." }]
         }
     },
     "Questions (Yes / No)": {
@@ -677,7 +680,7 @@
             "sentences": [
             { "indo": "Ini bisa?", "english": "Can this?" },
             { "indo": "Itu bisa?", "english": "Can that?" },
-            { "indo": "Sudah bisa?", "english": "Can already?" },
+            { "indo": "Sudah bisa?", "english": "Can you already?" },
             { "indo": "Belum bisa?", "english": "Not yet?" }
             ]
         },
@@ -694,20 +697,21 @@
         "informal": {
             "sentences": [
             { "indo": "Ini bisa?", "english": "Can this?" },
-            { "indo": "Sudah bisa?", "english": "Can already?" }
+            { "indo": "Sudah bisa?", "english": "Can you already?" }
             ]
         }
     },
     "Existence & Availability": {
         "neutral": {
             "words": [
+                { "indo": "Waktu", "english": "Time" },
                 { "indo": "Ada", "english": "Exist / There is" },
                 { "indo": "Tidak ada", "english": "There is not / None" },
                 { "indo": "Di sini", "english": "Here" },
                 { "indo": "Di sana", "english": "There" }
             ],
             "sentences": [
-                { "indo": "Ada di sini.", "english": "There is here." },
+                { "indo": "Ada di sini.", "english": "It's here." },
                 { "indo": "Tidak ada.", "english": "There is none." },
                 { "indo": "Ada waktu.", "english": "There is time." }
             ]
@@ -717,7 +721,7 @@
                 { "indo": "Tidak", "english": "Not / No" }
             ],
             "sentences": [
-                { "indo": "Tidak ada sekarang.", "english": "There is none right now." }
+                { "indo": "Tidak ada sekarang.", "english": "Not right now." }
             ]
         },
         "informal": {
@@ -728,5 +732,46 @@
                 { "indo": "Nggak ada.", "english": "There isn’t any." }
             ]
         }
+    },
+    "Reactions & Acknowledgement": {
+        "neutral": {
+            "words": [
+                { "indo": "Oh", "english": "Oh" },
+                { "indo": "Oke", "english": "Okay" },
+                { "indo": "Baik", "english": "Alright" },
+                { "indo": "Ya", "english": "Yes" },
+                { "indo": "Iya", "english": "Yes" }
+                ],
+            "sentences": [
+                { "indo": "Oh, oke.", "english": "Oh, okay." },
+                { "indo": "Baik.", "english": "Alright." }
+            ]
+        },
+
+        "formal": {
+            "words": [
+                { "indo": "Baik", "english": "Alright" }
+            ],
+            "sentences": [
+                { "indo": "Baik, saya mengerti.", "english": "Alright, I understand." }
+            ]
+        },
+
+        "informal": {
+            "words": [
+                { "indo": "Oh iya", "english": "Oh right" },
+                { "indo": "Iya", "english": "Yeah" },
+                { "indo": "Oke", "english": "Okay" },
+                { "indo": "Hehe", "english": "Haha" },
+                { "indo": "Hmm", "english": "Hmm" }
+            ],
+            "sentences": [
+                { "indo": "Oh iya.", "english": "Oh right." },
+                { "indo": "Iya, oke.", "english": "Yeah, okay." },
+                { "indo": "Hehe.", "english": "Haha." },
+                { "indo": "Hmm.", "english": "Hmm." }
+            ]
+        }
     }
+
 }
