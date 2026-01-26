@@ -47,7 +47,8 @@ const EN_EQUIVALENTS = [
   /* ===============================
      NEGATION
      =============================== */
-
+  [/\b(belum\s+sih)\b/g, "belum"],
+  [/\b(kayaknya|kayanya)\b/g, "mungkin"],
   [/\bcan['’]?t\b/g, "cannot"],
   [/\bwon['’]?t\b/g, "will not"],
   [/\bdon['’]?t\b/g, "do not"],
@@ -63,7 +64,11 @@ const EN_EQUIVALENTS = [
      QUESTIONS / INTERROGATIVES
      =============================== */
 
+  [/\b(could\s+you|would\s+you)\b/g, "can you"],
+  [/\b(can\s+u|could\s+u)\b/g, "can you"],
+
   // how
+
   [/\bhow\s+are\s+you\b/g, "how are you"],
   [/\bhow['’]?s\s+it\s+going\b/g, "how are you"],
   [/\bhow\s+is\s+it\s+going\b/g, "how are you"],
@@ -97,6 +102,11 @@ const EN_EQUIVALENTS = [
      AGREEMENT / RESPONSE STYLE
      =============================== */
 
+  [/\b(alright|alr|aight)\b/g, "okay"],
+  [/\b(sure|suree)\b/g, "yes"],
+  [/\b(yeah\s+okay|yeah\s+ok)\b/g, "okay"],
+  [/\b(ha+|he+|haha+|hehe+|lol+|lmao+)\b/g, "haha"],
+  [/\b(okay\s+then|alright\s+then|all\s+right\s+then)\b/g, "okay"],
   [/\b(yes|yeah|yep|yup|ya)\b/g, "yes"],
   [/\b(no|nah|nope)\b/g, "no"],
   [/\bok\b/g, "okay"],
@@ -109,6 +119,7 @@ const EN_EQUIVALENTS = [
   [/\b(really|very|so|super)\b/g, "very"],
   [/\b(kind\s+of|kinda|sort\s+of|sorta)\b/g, "kind of"],
   [/\b(a\s+bit|bit|little)\b/g, "a little"],
+  [/\b(it\s+is\s+fine|that\s+is\s+fine|fine)\b/g, "fine"],
 
 
   /* ===============================
@@ -155,7 +166,8 @@ const EN_EQUIVALENTS = [
   /* ===============================
      COMMUNICATION
      =============================== */
-
+  [/\b(i\s+see|got\s+it|gotcha|i\s+get\s+it)\b/g, "understand"],
+  [/\b(ok|oke|okay)\b/g, "oke"],
   [/\b(talk|chat)\b/g, "talk"],
   [/\b(text|message|dm)\b/g, "message"],
   [/\b(hello|hi|hey)\b/g, "hello"],
@@ -182,8 +194,6 @@ const ID_EQUIVALENTS = [
   /* ===============================
      INTERROGATIVES / QUESTION STYLE
      =============================== */
-  // Hi
-  [/\b(hai|halo)\b/g, "Halo"],
 
   // how
   [/\b(gimana|bagaimana)\b/g, "bagaimana"],
@@ -208,8 +218,6 @@ const ID_EQUIVALENTS = [
      PRONOUNS (REGISTER + SLANG)
      =============================== */
 
-
-  
   // I / me
   [/\b(aku|saya|gue|gua)\b/g, "aku"],
 
@@ -227,6 +235,7 @@ const ID_EQUIVALENTS = [
      NEGATION (VERY IMPORTANT)
      =============================== */
 
+  [/\b(gapapa|gak\s+apa\s+apa|nggak\s+apa\s+apa|tidak\s+apa\s+apa)\b/g, "tidak apa"],
   [/\b(ga|gak|nggak|enggak|tak|ndak)\b/g, "tidak"],
 
 
@@ -256,6 +265,9 @@ const ID_EQUIVALENTS = [
   /* ===============================
      TIME / TEMPORAL EXPRESSIONS
      =============================== */
+
+  [/\b(sk|skrg|skr)\b/g, "sekarang"],
+  [/\b(nt|ntr)\b/g, "nanti"],
 
   // now
   [/\b(sekarang|skrng)\b/g, "sekarang"],
@@ -311,12 +323,13 @@ const ID_EQUIVALENTS = [
      =============================== */
 
   [/\b(mau|pengen|pengin|ingin)\b/g, "mau"],
-  [/\b(oke|ya|okey|oghey|iya)\b/g, "oke"],
+
 
   /* ===============================
      COMMUNICATION VERBS (LIGHT)
      =============================== */
-
+  [/\b(oh\s+gitu|gitu\s+ya)\b/g, "mengerti"],
+  [/\b(ngerti\s+kok)\b/g, "mengerti"],
   [/\b(ngobrol|bicara|omong)\b/g, "bicara"],
   [/\b(chat|ngechat|ngirim\s+pesan)\b/g, "pesan"],
   [/\b(nulis|tulis|)\b/g, "tulis"],
@@ -324,10 +337,13 @@ const ID_EQUIVALENTS = [
   /* ===============================
      PARTICLES / FILLERS (IGNORE)
      =============================== */
-
+  [/\b(oh+|ohh+|ooh+)\b/g, "oh"],
+  [/\b(yaudah|ya\s+udah)\b/g, "sudah"],
+  [/\b(ha+|he+|haha+|hehe+|wkwk+|wk+)\b/g, "haha"],
   [/\b(aja)\b/g, "saja"],
   [/\b(kok|nih+h?|dong|sih|deh|lah)\b/g, ""],
   [/\b(ya|yah|lho)\b/g, ""],
+  [/\b(deh)\b/g, ""],
 
 
   /* ===============================
@@ -352,7 +368,7 @@ const ID_EQUIVALENTS = [
 
 // Tone-only tokens
 const OPTIONAL_TOKENS = new Set([
-  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah", "lagi"
+  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah", "lagi" , "haha"
 ]);
 
 function isOptional(word) {
