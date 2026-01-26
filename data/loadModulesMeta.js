@@ -39,6 +39,11 @@ const MODULE_CATEGORY_MAP = {
         subcategory: "Responses"
     },
 
+    "Reactions": {
+        category: "Conversation Basics",
+        subcategory: "Responses"
+    },
+
     "Thanks & Politeness": {
         category: "Conversation Basics",
         subcategory: "Responses"
