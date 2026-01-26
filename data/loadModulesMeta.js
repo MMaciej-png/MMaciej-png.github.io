@@ -6,7 +6,7 @@ import { getModuleStats } from "./moduleStats.js";
  */
 const MODULE_CATEGORY_MAP = {
     // ─────────────────────────────
-    // STARTING A CONVERSATION
+    // Conversation Basics
     // ─────────────────────────────
 
     // Greetings
@@ -27,6 +27,25 @@ const MODULE_CATEGORY_MAP = {
         subcategory: "Checking In"
     },
 
+    // Responses
+
+    "Yes / No / Maybe": {
+        category: "Conversation Basics",
+        subcategory: "Responses"
+    },
+
+    "Thanks & Politeness": {
+        category: "Conversation Basics",
+        subcategory: "Responses"
+    },
+
+    // Goodbyes
+
+    "Goodbyes & Leaving": {
+        category: "Conversation Basics",
+        subcategory: "Goodbyes"
+    },
+
     // ─────────────────────────────
     // Talking About Yourself
     // ─────────────────────────────
@@ -43,6 +62,8 @@ const MODULE_CATEGORY_MAP = {
         subcategory: "Status & Feelings"
     },
 
+    // Ability & Knowledge
+
     "Knowing & Ability": {
         category: "Talking About Yourself",
         subcategory: "Ability & Knowledge"
@@ -54,13 +75,80 @@ const MODULE_CATEGORY_MAP = {
     "Understanding": {
         category: "Talking About Yourself",
         subcategory: "Ability & Knowledge"
-    }
+    },
+
+    // Availability & Actions
+
+    "What I’m Doing": {
+        category: "Talking About Yourself",
+        subcategory: "Availability & Actions"
+    },
+
+    "Plans & Timing": {
+        category: "Talking About Yourself",
+        subcategory: "Availability & Actions"
+    },
+
+    // Preferences
+    "Preferences & Choices": {
+        category: "Talking About Yourself",
+        subcategory: "Preferences"
+    },
+
 
     // ─────────────────────────────
-    // Talking With Others
+    // Daily Life
     // ─────────────────────────────
 
-    // Requests
+    // Activities
+
+    "Food & Drink": {
+        category: "Daily Life",
+        subcategory: "Activities"
+    },
+
+    "This / That (Choosing)": {
+        category: "Daily Life",
+        subcategory: "Activities"
+    },
+
+    // Movement
+
+    "Going & Arriving": {
+        category: "Daily Life",
+        subcategory: "Movement"
+    },
+    // Possession
+
+    "Mine & Yours": {
+        category: "Daily Life",
+        subcategory: "Possession"
+    },
+
+    // ─────────────────────────────
+    // Basics
+    // ─────────────────────────────
+
+    // Numbers
+
+    "Numbers (Basic)": {
+        category: "Basics",
+        subcategory: "Numbers"
+    },
+
+    // Time
+
+    "Time (Basic)": {
+        category: "Basics",
+        subcategory: "Time"
+    },
+
+    // Location
+
+    "Places & Location": {
+        category: "Basics",
+        subcategory: "Location"
+    },
 };
 
 
