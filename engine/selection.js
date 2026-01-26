@@ -1,7 +1,25 @@
 /* engine/selection.js */
 
+let lastPickedId = null;
+
 export function weightedRandom(candidateItems) {
   if (!candidateItems.length) return null;
+
+  /* ===============================
+     HARD NO-REPEAT RULE
+     (unless only one candidate)
+  =============================== */
+
+  let pool = candidateItems;
+
+  if (lastPickedId && candidateItems.length > 1) {
+    pool = candidateItems.filter(i => i.id !== lastPickedId);
+
+    // Safety fallback (should never happen, but defensive)
+    if (!pool.length) {
+      pool = candidateItems;
+    }
+  }
 
   /* ===============================
      CONCEPT FREQUENCY MAP
@@ -10,7 +28,7 @@ export function weightedRandom(candidateItems) {
 
   const conceptCount = new Map();
 
-  for (const item of candidateItems) {
+  for (const item of pool) {
     const key = item.indo.toLowerCase();
     conceptCount.set(key, (conceptCount.get(key) || 0) + 1);
   }
@@ -21,20 +39,24 @@ export function weightedRandom(candidateItems) {
 
   let total = 0;
 
-  for (const item of candidateItems) {
+  for (const item of pool) {
     total += effectiveWeight(item, conceptCount);
   }
 
   let r = Math.random() * total;
 
-  for (const item of candidateItems) {
+  for (const item of pool) {
     r -= effectiveWeight(item, conceptCount);
-    if (r <= 0) return item;
+    if (r <= 0) {
+      lastPickedId = item.id;
+      return item;
+    }
   }
 
-  return candidateItems[0];
+  // Fallback
+  lastPickedId = pool[0].id;
+  return pool[0];
 }
-
 
 
 /* ===============================
@@ -68,11 +90,11 @@ function effectiveWeight(item, conceptCount) {
 
   /* -----------------------------
      3️⃣ Concept frequency dampening
-     (prevents aku/mau/yang spam)
+     (prevents aku / bisa / yang spam)
   ----------------------------- */
   const count = conceptCount.get(item.indo.toLowerCase()) || 1;
 
-  // Square-root dampening (balanced, beginner-friendly)
+  // Square-root dampening
   w /= Math.sqrt(count);
 
   return Math.max(w, 0.1);

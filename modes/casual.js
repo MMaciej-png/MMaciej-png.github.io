@@ -142,6 +142,7 @@ function pickNewCard({ resetRecency = false } = {}) {
 
   current = weightedRandom(items);
   if (!current) return;
+  current.seen = (current.seen ?? 0) + 1;
   current.lastSeen = Date.now();
   currentRender = renderer.buildRender(current);
   renderer.renderFront(currentRender);
