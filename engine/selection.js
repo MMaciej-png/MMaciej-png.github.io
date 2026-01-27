@@ -72,8 +72,8 @@ function effectiveWeight(item, conceptCount) {
   ----------------------------- */
   const seen = item.seen ?? 0;
 
-  if (seen === 0) w *= 4;
-  else if (seen === 1) w *= 2;
+  if (seen === 0) w *= 2;
+  else if (seen === 1) w *= 1;
 
   /* -----------------------------
      2️⃣ Recency suppression
