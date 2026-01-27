@@ -220,6 +220,7 @@ const ID_EQUIVALENTS = [
      =============================== */
 
   // I / me
+   [/\b(iya|ya)\b/g, "iya"],
   [/\b(aku|saya|gue|gua)\b/g, "aku"],
 
   // you
