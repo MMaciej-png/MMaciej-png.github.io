@@ -62,12 +62,6 @@ const EN_PITCH_BASE = 1.0;
 export function speak(text, lang = "en-GB") {
   if (!text) return;
 
-  speechSynthesis.cancel();
-  setTimeout(() => {
-    speechSynthesis.speak(u);
-  }, 30);
-
-
   const prefix = lang.toLowerCase().startsWith("id") ? "id" : "en";
 
   const u = new SpeechSynthesisUtterance(text);
@@ -86,5 +80,9 @@ export function speak(text, lang = "en-GB") {
   const v = voiceCache[prefix];
   if (v) u.voice = v;
 
-  speechSynthesis.speak(u);
+  speechSynthesis.cancel();
+  setTimeout(() => {
+    speechSynthesis.speak(u);
+  }, 30);
+
 }
