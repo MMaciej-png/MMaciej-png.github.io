@@ -57,6 +57,12 @@ const EN_EQUIVALENTS = [
   [/\bwasn['’]?t\b/g, "was not"],
   [/\bweren['’]?t\b/g, "were not"],
 
+  [/\b(i am|i'm)\s+not\s+well\b/g, "i do not feel well"],
+
+  // Optional: common variants
+  [/\b(i am|i'm)\s+unwell\b/g, "i do not feel well"],
+  [/\b(not\s+feeling\s+well)\b/g, "do not feel well"],
+
 
   /* ===============================
      QUESTIONS / INTERROGATIVES
@@ -385,7 +391,7 @@ const ID_EQUIVALENTS = [
 
 // Tone-only tokens
 const OPTIONAL_TOKENS = new Set([
-  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah", "lagi" , "haha"
+  "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah", "lagi" , "haha", "saja"
 ]);
 
 function isOptional(word) {
