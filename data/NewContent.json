@@ -250,7 +250,7 @@
             "words": [
             { "indo": "Mengerti", "english": "Understand" },
             { "indo": "Saya", "english": "I / Me" },
-            { "indo": "Tidak", "english": "Not / No" }
+            { "indo": "Tidak", "english": "Not / No (alone)" }
             ],
             "sentences": [
             { "indo": "Saya mengerti.", "english": "I understand." },
@@ -289,7 +289,7 @@
             { "indo": "Saya", "english": "I / Me" },
             { "indo": "Sedang", "english": "Currently" },
             { "indo": "Bekerja", "english": "Work" },
-            { "indo": "Tidak", "english": "Not / No" }
+            { "indo": "Tidak", "english": "Not / No (alone)" }
             ],
             "sentences": [
             { "indo": "Saya sedang bekerja.", "english": "I am working." },
@@ -302,7 +302,7 @@
             { "indo": "Aku", "english": "I / Me" },
             { "indo": "Lagi", "english": "Currently (spoken)" },
             { "indo": "Kerja", "english": "Work" },
-            { "indo": "Nggak", "english": "Not / No" }
+            { "indo": "Nggak", "english": "Not / No (alone)" }
             ],
             "sentences": [
             { "indo": "Lagi kerja.", "english": "Working." },
@@ -723,7 +723,7 @@
         },
         "formal": {
             "words": [
-                { "indo": "Tidak", "english": "Not / No" }
+                { "indo": "Tidak", "english": "Not / No (alone)" }
             ],
             "sentences": [
                 { "indo": "Tidak ada sekarang.", "english": "Not right now." }
