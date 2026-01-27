@@ -57,56 +57,62 @@ const MODULE_CATEGORY_MAP = {
     },
 
     // ─────────────────────────────
-    // Basic Interactions
+    // Basic Interaction
     // ─────────────────────────────
 
     // Status & Feelings
 
     "How I’m Doing (Positive)": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Status & Feelings"
     },
 
     "How I’m Doing (Negative)": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Status & Feelings"
     },
 
     // Ability & Knowledge
 
     "Knowing & Ability": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Ability & Knowledge"
     },
     "Requests & Help": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Ability & Knowledge"
     },
     "Understanding": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Ability & Knowledge"
     },
 
     "Meaning & Clarification": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
+        subcategory: "Ability & Knowledge"
+    },
+
+    
+    "Questions (Yes / No)": {
+        category: "Basic Interaction",
         subcategory: "Ability & Knowledge"
     },
 
     // Availability & Actions
 
     "What I’m Doing": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Availability & Actions"
     },
 
     "Plans & Timing": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Availability & Actions"
     },
 
     // Preferences
     "Preferences & Choices": {
-        category: "Basic Interactions",
+        category: "Basic Interaction",
         subcategory: "Preferences"
     },
 
