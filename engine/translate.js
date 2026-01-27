@@ -47,8 +47,6 @@ const EN_EQUIVALENTS = [
   /* ===============================
      NEGATION
      =============================== */
-  [/\b(belum\s+sih)\b/g, "belum"],
-  [/\b(kayaknya|kayanya)\b/g, "mungkin"],
   [/\bcan['’]?t\b/g, "cannot"],
   [/\bwon['’]?t\b/g, "will not"],
   [/\bdon['’]?t\b/g, "do not"],
@@ -144,12 +142,15 @@ const EN_EQUIVALENTS = [
      EARLY / LATE (SAFE PHRASES)
      =============================== */
 
+     
   // early
   [/\b(early\s+on|quite\s+early)\b/g, "early"],
   [/\b(earlier\s+than\s+expected)\b/g, "early"],
 
   // late
   [/\b(running\s+late)\b/g, "late"],
+
+
 
 
   /* ===============================
@@ -178,6 +179,11 @@ const EN_EQUIVALENTS = [
 
   [/\b(please|pls|plz|actually|just|like|right)\b/g, ""],
 
+  /* ===============================
+   MEANING / CLARIFICATION
+   =============================== */
+
+[/\b(mean|means|meaning)\b/g, "mean"],
 
   /* ===============================
      NORMALISE PUNCTUATION / STYLE
@@ -197,6 +203,8 @@ const ID_EQUIVALENTS = [
 
   // how
   [/\b(gimana|bagaimana)\b/g, "bagaimana"],
+  [/\b(belum\s+sih)\b/g, "belum"],
+  [/\b(kayaknya|kayanya)\b/g, "mungkin"],
 
   // what
   [/\b(apa)\b/g, "apa"],
@@ -220,7 +228,7 @@ const ID_EQUIVALENTS = [
      =============================== */
 
   // I / me
-   [/\b(iya|ya)\b/g, "iya"],
+   [/\b(iya|ya|oke)\b/g, "iya"],
   [/\b(aku|saya|gue|gua)\b/g, "aku"],
 
   // you
@@ -326,6 +334,12 @@ const ID_EQUIVALENTS = [
 
   [/\b(mau|pengen|pengin|ingin)\b/g, "mau"],
 
+  /* ===============================
+   MEANING / CLARIFICATION
+   =============================== */
+
+  [/\b(berarti|artinya)\b/g, "berarti"],
+
 
   /* ===============================
      COMMUNICATION VERBS (LIGHT)
@@ -334,8 +348,9 @@ const ID_EQUIVALENTS = [
   [/\b(ngerti\s+kok)\b/g, "mengerti"],
   [/\b(ngobrol|bicara|omong)\b/g, "bicara"],
   [/\b(chat|ngechat|ngirim\s+pesan)\b/g, "pesan"],
-  [/\b(nulis|tulis|)\b/g, "tulis"],
+  [/\b(nulis|tulis)\b/g, "tulis"],
   [/\b(enak|lezat|nikmat)\b/g, "enak"],
+  [/\b(maksudnya)\b/g, "maksud"],
   /* ===============================
      PARTICLES / FILLERS (IGNORE)
      =============================== */
