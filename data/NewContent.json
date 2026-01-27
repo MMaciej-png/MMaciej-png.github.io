@@ -15,6 +15,9 @@
         "formal": {
             "words": [
             { "indo": "Saya", "english": "I / Me" }
+            ],            
+            "sentences": [
+            { "indo": "Halo, saya (nama).", "english": "Hi, I’m (name)." }
             ]
         },
         "informal": {
@@ -22,7 +25,7 @@
             { "indo": "Aku", "english": "I / Me" }
             ],
             "sentences": [
-                { "indo": "Halo, aku (nama).", "english": "Hi, I’m (name)." }
+            { "indo": "Halo, aku (nama).", "english": "Hi, I’m (name)." }
             ]
         }   
     },
@@ -83,7 +86,10 @@
             { "indo": "Lumayan", "english": "Not bad" },
             { "indo": "Sibuk", "english": "Busy" }
             ],
-            "sentences": []
+            "sentences": [
+            { "indo": "(Aku/Saya) baik-baik saja.", "english": "I’m fine." },
+            { "indo": "(Aku/Saya) sibuk.", "english": "I’m busy." }
+            ]
         },
         "formal": {
             "words": [
@@ -91,9 +97,7 @@
             { "indo": "Lelah", "english": "Tired" }
             ],
             "sentences": [
-            { "indo": "Saya baik-baik saja.", "english": "I’m fine." },
-            { "indo": "Saya lelah.", "english": "I’m tired." },
-            { "indo": "Saya sibuk.", "english": "I’m busy." }
+            { "indo": "Saya lelah.", "english": "I’m tired." }
             ]
         },
         "informal": {
@@ -104,7 +108,7 @@
             ],
             "sentences": [
             { "indo": "Aku capek banget.", "english": "I’m really tired." },
-            { "indo": "Aku sibuk.", "english": "I’m busy." }
+            { "indo": "Aku capek.", "english": "I’m tired." }
             ]
         }
     },
@@ -175,6 +179,7 @@
             { "indo": "Nggak", "english": "Not / No (alone)" }
             ],
             "sentences": [
+                { "indo": "Ini bukan punya aku.", "english": "This is not mine." },
                 { "indo": "Bukan aku.","english": "Not me." }
             ]
         }
@@ -300,7 +305,7 @@
             ],
             "sentences": [
             { "indo": "Lagi kerja.", "english": "Working." },
-            { "indo": "Aku nggak bisa sekarang.", "english": "I can’t right now." }
+            { "indo": "Sekarang nggak bisa.", "english": "Can’t right now." }
             ]
         }
     },
@@ -342,7 +347,7 @@
             { "indo": "Pergi", "english": "Go" }
             ],
             "sentences": [
-            { "indo": "Aku mau pergi nanti.", "english": "I’m going later." },
+            { "indo": "Nanti mau pergi.", "english": "Going later." },
             { "indo": "Mau pergi besok.", "english": "Going tomorrow." }
             ]
         }
@@ -395,7 +400,8 @@
             "sentences": [
             { "indo": "Lapar.", "english": "Hungry." },
             { "indo": "Haus.", "english": "Thirsty." },
-            { "indo": "Ini enak.", "english": "This is good." }
+            { "indo": "Ini enak.", "english": "This is good." },
+            { "indo": "(Aku/Saya) lapar.", "english": "I’m hungry." }
             ]
         },
 
@@ -407,7 +413,6 @@
             { "indo": "Minuman", "english": "Drink (noun)" }
             ],
             "sentences": [
-            { "indo": "Saya lapar.", "english": "I’m hungry." },
             { "indo": "Saya ingin makan.", "english": "I want to eat." },
             { "indo": "Makanan ini enak.", "english": "This food is good." }
             ]
@@ -420,7 +425,6 @@
             { "indo": "Banget", "english": "Very / Really" }
             ],
             "sentences": [
-            { "indo": "Aku lapar.", "english": "I’m hungry." },
             { "indo": "Mau makan.", "english": "I want to eat." },
             { "indo": "Itu enak banget.", "english": "That’s really good." }
             ]
@@ -544,7 +548,7 @@
             ],
             "sentences": [
             { "indo": "Lagi pergi.", "english": "Heading out." },
-            { "indo": "Aku sudah sampai.", "english": "I’ve arrived." }
+            { "indo": "Sudah sampai.", "english": "Arrived." }
             ]
         }
     },
@@ -743,6 +747,7 @@
                 { "indo": "Iya", "english": "Yes" }
                 ],
             "sentences": [
+                { "indo": "Iya ya.", "english": "Yeah, true." },
                 { "indo": "Oh, oke.", "english": "Oh, okay." },
                 { "indo": "Baik.", "english": "Alright." }
             ]
