@@ -6,102 +6,107 @@ import { getModuleStats } from "./moduleStats.js";
  */
 const MODULE_CATEGORY_MAP = {
     // ─────────────────────────────
-    // Conversation Basics
+    // Basic Conversation
     // ─────────────────────────────
 
     // Greetings
 
     "Greetings (Basic)": {
-        category: "Conversation Basics",
+        category: "Basic Conversation",
         subcategory: "Greetings"
     },
     "Greetings (Time-Based)": {
-        category: "Conversation Basics",
+        category: "Basic Conversation",
         subcategory: "Greetings"
     },
 
     // Checking In
 
     "Asking How Are You": {
-        category: "Conversation Basics",
+        category: "Basic Conversation",
         subcategory: "Checking In"
     },
 
     "Questions (Yes / No)": {
-        category: "Conversation Basics",
+        category: "Basic Conversation",
         subcategory: "Checking In"
     },
 
     // Responses
 
     "Yes / No / Maybe": {
-        category: "Conversation Basics",
+        category: "Basic Conversation",
         subcategory: "Responses"
     },
 
     "Reactions": {
-        category: "Conversation Basics",
+        category: "Basic Conversation",
         subcategory: "Responses"
     },
 
-    "Thanks & Reactions": {
-        category: "Conversation Basics",
+    "Thanks & Politeness": {
+        category: "Basic Conversation",
         subcategory: "Responses"
     },
 
     // Goodbyes
 
     "Goodbyes & Leaving": {
-        category: "Conversation Basics",
+        category: "Basic Conversation",
         subcategory: "Goodbyes"
     },
 
     // ─────────────────────────────
-    // Talking About Yourself
+    // Basic Interactions
     // ─────────────────────────────
 
     // Status & Feelings
 
     "How I’m Doing (Positive)": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
         subcategory: "Status & Feelings"
     },
 
     "How I’m Doing (Negative)": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
         subcategory: "Status & Feelings"
     },
 
     // Ability & Knowledge
 
     "Knowing & Ability": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
         subcategory: "Ability & Knowledge"
     },
     "Requests & Help": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
         subcategory: "Ability & Knowledge"
     },
     "Understanding": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
+        subcategory: "Ability & Knowledge"
+    },
+
+    "Meaning & Clarification": {
+        category: "Basic Interactions",
         subcategory: "Ability & Knowledge"
     },
 
     // Availability & Actions
 
     "What I’m Doing": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
         subcategory: "Availability & Actions"
     },
 
     "Plans & Timing": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
         subcategory: "Availability & Actions"
     },
 
     // Preferences
     "Preferences & Choices": {
-        category: "Talking About Yourself",
+        category: "Basic Interactions",
         subcategory: "Preferences"
     },
 

@@ -119,7 +119,7 @@
             { "indo": "Baik", "english": "Good / Fine" },
             { "indo": "Begitu", "english": "Like that / So" },
             { "indo": "Saja", "english": "Just / Only" },
-            { "indo": "Enak", "english": "Comfortable / Good" },
+            { "indo": "Enak", "english": "Comfortable / Good / Tasty" },
             { "indo": "Badan", "english": "Body" }
             ],
             "sentences": [
@@ -226,6 +226,7 @@
             { "indo": "Bentar", "english": "A sec (spoken)" }
             ],
             "sentences": [
+                
             { "indo": "Bisa tolongin aku?", "english": "Can you help me?" },
             { "indo": "Tunggu bentar ya.", "english": "Wait a sec, okay?" }
             ]
@@ -393,7 +394,7 @@
             { "indo": "Minum", "english": "Drink" },
             { "indo": "Lapar", "english": "Hungry" },
             { "indo": "Haus", "english": "Thirsty" },
-            { "indo": "Enak", "english": "Tasty / Good" },
+            { "indo": "Enak", "english": "Comfortable / Good / Tasty" },
             { "indo": "Ini", "english": "This" },
             { "indo": "Itu", "english": "That" }
             ],
@@ -595,7 +596,7 @@
             { "indo": "Dadah", "english": "Bye (spoken)" }
             ],
             "sentences": [
-            { "indo": "Aku duluan.", "english": "I’m heading off." },
+            { "indo": "Aku duluan.", "english": "I’ll go first" },
             { "indo": "Dadah.", "english": "Bye." }
             ]
         }
@@ -664,7 +665,7 @@
             ],
             "sentences": [
             { "indo": "Yang itu beda.", "english": "That one is different." },
-            { "indo": "Aku pilih yang lain.", "english": "I choose the other one." }
+            { "indo": "(Aku/Saya) pilih yang lain.", "english": "I choose the other one." }
             ]
         },
         "informal": {
@@ -685,7 +686,7 @@
             { "indo": "Ini bisa?", "english": "Can this?" },
             { "indo": "Itu bisa?", "english": "Can that?" },
             { "indo": "Sudah bisa?", "english": "Can you already?" },
-            { "indo": "Belum bisa?", "english": "Not yet?" }
+            { "indo": "Belum bisa?", "english": "Can't yet?" }
             ]
         },
         "formal": {
@@ -748,8 +749,7 @@
                 ],
             "sentences": [
                 { "indo": "Iya ya.", "english": "Yeah, true." },
-                { "indo": "Oh, oke.", "english": "Oh, okay." },
-                { "indo": "Baik.", "english": "Alright." }
+                { "indo": "Oh, oke.", "english": "Oh, okay." }
             ]
         },
 
@@ -777,6 +777,43 @@
                 { "indo": "Hmm.", "english": "Hmm." }
             ]
         }
-    }
+    },
+    "Meaning & Clarification": {
+        "neutral": {
+            "words": [
+            { "indo": "Berarti", "english": "Means / So it means" },
+            { "indo": "Ini", "english": "This" },
+            { "indo": "Itu", "english": "That" },
+            { "indo": "Maksud", "english": "Meaning / Intention" }
+            ],
+            "sentences": [
+            { "indo": "Berarti ini?", "english": "So this means?" },
+            { "indo": "Berarti itu?", "english": "So that means?" },
+            { "indo": "Apa maksudnya?", "english": "What does it mean?" }
+            ]
+        },
 
+        "formal": {
+            "words": [
+            { "indo": "Berarti", "english": "Means" },
+            { "indo": "Maksud", "english": "Meaning" }
+            ],
+            "sentences": [
+            { "indo": "Apakah ini berarti demikian?", "english": "Does this mean so?" },
+            { "indo": "Apa maksudnya?", "english": "What does it mean?" }
+            ]
+        },
+
+        "informal": {
+            "words": [
+            { "indo": "Berarti", "english": "So / Means" },
+            { "indo": "Maksudnya", "english": "The meaning (spoken)" }
+            ],
+            "sentences": [
+            { "indo": "Berarti ini?", "english": "So this means?" },
+            { "indo": "Berarti itu?", "english": "So that means?" },
+            { "indo": "Maksudnya apa?", "english": "What do you mean?" }
+            ]
+        }
+    }
 }
