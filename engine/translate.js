@@ -103,7 +103,7 @@ const EN_EQUIVALENTS = [
      =============================== */
 
   [/\b(alright|alr|aight)\b/g, "okay"],
-  [/\b(sure|suree)\b/g, "yes"],
+  [/\b(sure|suree|yea|ye)\b/g, "yes"],
   [/\b(yeah\s+okay|yeah\s+ok)\b/g, "okay"],
   [/\b(ha+|he+|haha+|hehe+|lol+|lmao+)\b/g, "haha"],
   [/\b(okay\s+then|alright\s+then|all\s+right\s+then)\b/g, "okay"],
@@ -202,6 +202,7 @@ const ID_EQUIVALENTS = [
   [/\b(apa)\b/g, "apa"],
 
   // why
+  [/\b(halo|hai)\b/g, "halo"],
   [/\b(kenapa|mengapa)\b/g, "kenapa"],
 
   // where
