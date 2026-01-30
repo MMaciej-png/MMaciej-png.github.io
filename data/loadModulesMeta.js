@@ -172,6 +172,14 @@ const MODULE_CATEGORY_MAP = {
         category: "Daily Life",
         subcategory: "Movement"
     },
+
+    // places.
+
+    "Places (Everyday)": {
+        category: "Daily Life",
+        subcategory: "Places"
+    },
+    
     // Possession
 
     "Mine & Yours": {
