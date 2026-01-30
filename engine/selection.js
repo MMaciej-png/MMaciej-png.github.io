@@ -73,6 +73,7 @@ function effectiveWeight(item) {
    ID GENERATION
 =============================== */
 
-export function makeId(type, indo, english) {
-  return `${type}::${indo}::${english}`.toLowerCase();
+export function makeId(type, module, indo, english) {
+  return `${type}::${module}::${indo}::${english}`.toLowerCase();
 }
+
