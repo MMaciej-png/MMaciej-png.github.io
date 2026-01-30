@@ -27,11 +27,6 @@ const MODULE_CATEGORY_MAP = {
         subcategory: "Checking In"
     },
 
-    "Questions (Yes / No)": {
-        category: "Basic Conversation",
-        subcategory: "Checking In"
-    },
-
     // Responses
 
     "Yes / No / Maybe": {
@@ -54,7 +49,39 @@ const MODULE_CATEGORY_MAP = {
     "Goodbyes & Leaving": {
         category: "Basic Conversation",
         subcategory: "Goodbyes"
+    }, 
+
+    // ─────────────────────────────
+    // Sentence Structure
+    // ─────────────────────────────
+
+    // Time Reference
+
+    "When (Time Questions)": {
+        category: "Sentence Structure",
+        subcategory: "Time Reference"
     },
+
+    // Conditions
+
+    "Conditions (Kalau)": {
+        category: "Sentence Structure",
+        subcategory: "Conditions"
+    },
+
+    //Moments
+
+    "Moments (Pas)": {
+        category: "Sentence Structure",
+        subcategory: "Moments"
+    },
+
+    // Connections
+    "With (Sama)": {
+        category: "Sentence Structure",
+        subcategory: "Connections"
+    },
+
 
     // ─────────────────────────────
     // Basic Interaction
@@ -163,7 +190,6 @@ const MODULE_CATEGORY_MAP = {
         category: "Basics",
         subcategory: "Time"
     },
-
     // Location
 
     "Places & Location": {
