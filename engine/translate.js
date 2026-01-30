@@ -7,7 +7,6 @@ const EN_EQUIVALENTS = [
   /* ===============================
      CORE BE / HAVE / WILL
      =============================== */
-
   // be
   [/\bi['’]?m\b/g, "i am"],
   [/\byou['’]?re\b/g, "you are"],
@@ -105,7 +104,7 @@ const EN_EQUIVALENTS = [
   /* ===============================
      AGREEMENT / RESPONSE STYLE
      =============================== */
-
+  [/\b(a\s+sec|a\s+second|a\s+moment)\b/g, "a moment"],
   [/\b(alright|alr|aight)\b/g, "okay"],
   [/\b(sure|suree|yea|ye)\b/g, "yes"],
   [/\b(yeah\s+okay|yeah\s+ok)\b/g, "okay"],
@@ -168,7 +167,7 @@ const EN_EQUIVALENTS = [
   [/\b(get\s+back|return)\b/g, "return"],
   [/\b(on\s+the\s+way)\b/g, "coming"],
   [/\b(owns|own|has)\b/g, "has"],
-
+  [/\b(quite|so|soo)\b/g, "so"],
 
   /* ===============================
      COMMUNICATION
@@ -208,6 +207,7 @@ const ID_EQUIVALENTS = [
      =============================== */
 
   // how
+  [/\b(tolongin|bantu)\b/g, "bantu"],
   [/\b(gimana|bagaimana)\b/g, "bagaimana"],
   [/\b(belum\s+sih)\b/g, "belum"],
   [/\b(kayaknya|kayanya)\b/g, "mungkin"],

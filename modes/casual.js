@@ -140,7 +140,11 @@ function pickNewCard({ resetRecency = false } = {}) {
     for (const i of items) i.lastSeen = null;
   }
 
-  current = weightedRandom(items);
+  const picked = weightedRandom(items);
+  if (!picked) return;
+
+  current = allItems.find(i => i.id === picked.id);
+
   if (!current) return;
   current.seen = (current.seen ?? 0) + 1;
   current.lastSeen = Date.now();
@@ -245,7 +249,10 @@ export const casualEngine = (() => {
     flip = createFlipController(card);
 
     flip.setOnAnswerShown(() => {
-      nextItem = weightedRandom(items);
+      const picked = weightedRandom(items);
+      if (!picked) return;
+
+      nextItem = allItems.find(i => i.id === picked.id);
       if (!nextItem) return;
       nextRender = renderer.buildRender(nextItem);
       renderer.renderFront(nextRender);
