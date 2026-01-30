@@ -231,7 +231,8 @@
             { "indo": "Ada", "english": "Exist / There is" },
             { "indo": "Waktu", "english": "Time" },
             { "indo": "Bisa", "english": "Can / Able" },
-            { "indo": "Nanti", "english": "Later" }
+            { "indo": "Nanti", "english": "Later" },
+            { "indo": "Makan", "english": "Eat" }
             ],
             "sentences": [
             { "indo": "Kalau lapar, makan.", "english": "If you’re hungry, eat." },
@@ -247,7 +248,11 @@
             { "indo": "Pas", "english": "Right when / At the moment" },
             { "indo": "Sampai", "english": "Arrive" },
             { "indo": "Lapar", "english": "Hungry" },
-            { "indo": "Mulai", "english": "Start" }
+            { "indo": "Mulai", "english": "Start" },
+            { "indo": "Kabarin", "english": "Let me know (spoken)" },
+            { "indo": "Bilang", "english": "Tell / Say (spoken)" },
+            { "indo": "Ya", "english": "Okay / Yes" },
+            { "indo": "Makan", "english": "Eat" }
             ],
             "sentences": [
             { "indo": "Pas sampai, kabarin.", "english": "Let me know when you arrive." },
@@ -257,6 +262,7 @@
         }
     },
 
+
     "With (Sama)": {
         "neutral": {
             "words": [
@@ -264,7 +270,9 @@
             { "indo": "Aku", "english": "I / Me" },
             { "indo": "Kamu", "english": "You" },
             { "indo": "Dia", "english": "He / She" },
-            { "indo": "Teman", "english": "Friend" }
+            { "indo": "Teman", "english": "Friend" },
+            { "indo": "Pergi", "english": "Go" },
+            { "indo": "Datang", "english": "Come / Arrive" }
             ],
             "sentences": [
             { "indo": "Sama aku.", "english": "With me." },
@@ -274,6 +282,7 @@
             ]
         }
     },
+
 
     "Titles & Relationships": {
         "neutral": {
@@ -315,6 +324,26 @@
             ]
         }
     },
+
+    "For (Buat)": {
+        "neutral": {
+            "words": [
+            { "indo": "Buat", "english": "For" },
+            { "indo": "Aku", "english": "I / Me" },
+            { "indo": "Kamu", "english": "You" },
+            { "indo": "Ini", "english": "This" },
+            { "indo": "Itu", "english": "That" },
+            { "indo": "Lakuin", "english": "Do (spoken)" },
+            { "indo": "Pergi", "english": "Go" }
+            ],
+            "sentences": [
+            { "indo": "Ini buat kamu.", "english": "This is for you." },
+            { "indo": "Aku lakuin ini buat kamu.", "english": "I’m doing this for you." },
+            { "indo": "Pergi buat itu.", "english": "Going for that." }
+            ]
+        }
+    },
+
 
     "How I’m Doing (Positive)": {
         "neutral": {
@@ -830,6 +859,8 @@
             { "indo": "Toko", "english": "Shop / Store" },
             { "indo": "Sekolah", "english": "School" },
             { "indo": "Universitas", "english": "University" },
+            { "indo": "Di", "english": "At / In" },
+            { "indo": "Ke", "english": "To" },
             { "indo": "Di sini", "english": "Here" },
             { "indo": "Di sana", "english": "There" }
             ],
@@ -844,6 +875,7 @@
             ]
         }
     },
+
 
 
     "Mine & Yours": {
