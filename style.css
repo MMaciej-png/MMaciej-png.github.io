@@ -368,7 +368,7 @@ body {
 
 .casual-rank img {
   width: min(100%, 60vw);
-  margin-top: -30%;
+  margin-top: -10%;
   margin-bottom: -20%;
   height: auto;
 }
