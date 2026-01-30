@@ -71,6 +71,22 @@ let sessionBestStreak = 0;
    HELPERS
 =============================== */
 
+function syncMatchingItems(sourceItem) {
+  for (const item of allItems) {
+    if (
+      item !== sourceItem &&
+      item.type === sourceItem.type &&
+      item.indo === sourceItem.indo &&
+      item.eng === sourceItem.eng
+    ) {
+      item.points = sourceItem.points;
+      item.weight = sourceItem.weight;
+      item.fail_streak = sourceItem.fail_streak;
+    }
+  }
+}
+
+
 async function refreshCasualRank() {
   const sr = await getCasualSR();
   updateCasualRankUI(sr);
@@ -360,6 +376,7 @@ export const casualEngine = (() => {
 
     const before = current.points;
     applySuccess({ item: current, attemptsLeft });
+    syncMatchingItems(current);
     saveItemStats("casual", current.id, current);
 
     renderer.renderBack(
@@ -409,6 +426,7 @@ export const casualEngine = (() => {
 
     const before = current.points;
     applyFail({ item: current, attemptsLeft });
+    syncMatchingItems(current);
     saveItemStats("casual", current.id, current);
 
     renderer.renderBack(
