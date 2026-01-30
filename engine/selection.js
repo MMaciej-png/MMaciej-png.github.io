@@ -8,8 +8,9 @@ let lastPickedId = null;
 =============================== */
 
 function getConceptKey(item) {
-  return `${item.type}::${item.indo}::${item.eng}`.toLowerCase();
+  return `${item.type}::${item.indo}::${item.english}`.toLowerCase();
 }
+
 
 /* ===============================
    WEIGHTED RANDOM (CONCEPT-AWARE)
@@ -90,10 +91,10 @@ function effectiveWeight(item, conceptMap) {
   if (item.lastSeen) {
     const minutesSince = (Date.now() - item.lastSeen) / 60000;
 
-    if (minutesSince < 5) {
-      w *= 0.1;      // almost never repeat
+    if (minutesSince < 1) {
+      w *= 0.5;      // almost never repeat
     } else if (minutesSince < 15) {
-      w *= 0.5;
+      w *= 1;
     }
   }
 
