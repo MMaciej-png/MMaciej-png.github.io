@@ -275,6 +275,47 @@
         }
     },
 
+    "Titles & Relationships": {
+        "neutral": {
+            "words": [
+            { "indo": "Pacar", "english": "Girlfriend / Boyfriend" },
+            { "indo": "Teman", "english": "Friend" },
+            { "indo": "Istri", "english": "Wife" },
+            { "indo": "Suami", "english": "Husband" },
+            { "indo": "Bu", "english": "Mrs / Ma’am" },
+            { "indo": "Pak", "english": "Mr / Sir" }
+            ],
+            "sentences": [
+            { "indo": "Pacar aku.", "english": "My girlfriend / boyfriend." },
+            { "indo": "Dia teman aku.", "english": "They’re my friend." },
+            { "indo": "Bu ini.", "english": "This ma’am." },
+            { "indo": "Pak itu.", "english": "That sir." }
+            ]
+        },
+
+        "formal": {
+            "words": [
+            { "indo": "Nyonya", "english": "Mrs" },
+            { "indo": "Tuan", "english": "Mr" }
+            ],
+            "sentences": [
+            { "indo": "Tuan ini.", "english": "This gentleman." },
+            { "indo": "Nyonya itu.", "english": "That lady." }
+            ]
+        },
+
+        "informal": {
+            "words": [
+            { "indo": "Cewek", "english": "Girl / Girlfriend (spoken)" },
+            { "indo": "Cowok", "english": "Guy / Boyfriend (spoken)" }
+            ],
+            "sentences": [
+            { "indo": "Cewek aku.", "english": "My girlfriend." },
+            { "indo": "Cowok aku.", "english": "My boyfriend." }
+            ]
+        }
+    },
+
     "How I’m Doing (Positive)": {
         "neutral": {
             "words": [
