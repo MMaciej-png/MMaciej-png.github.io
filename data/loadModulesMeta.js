@@ -5,226 +5,202 @@ import { getModuleStats } from "./moduleStats.js";
  * You will maintain this manually
  */
 const MODULE_CATEGORY_MAP = {
-    // ─────────────────────────────
-    // Basic Conversation
-    // ─────────────────────────────
 
-    // Greetings
+  // ─────────────────────────────
+  // Social
+  // Openings, closings, polite flow
+  // ─────────────────────────────
 
-    "Greetings (Basic)": {
-        category: "Basic Conversation",
-        subcategory: "Greetings"
-    },
-    "Greetings (Time-Based)": {
-        category: "Basic Conversation",
-        subcategory: "Greetings"
-    },
+  "Greetings (Basic)": {
+    category: "Social",
+    subcategory: "Greetings"
+  },
+  "Greetings (Time-Based)": {
+    category: "Social",
+    subcategory: "Greetings"
+  },
 
-    // Checking In
+  "Asking How Are You": {
+    category: "Social",
+    subcategory: "Conversation"
+  },
 
-    "Asking How Are You": {
-        category: "Basic Conversation",
-        subcategory: "Checking In"
-    },
+  "Reactions": {
+    category: "Social",
+    subcategory: "Conversation"
+  },
 
-    // Responses
+  "Yes / No / Maybe": {
+    category: "Social",
+    subcategory: "Conversation"
+  },
 
-    "Yes / No / Maybe": {
-        category: "Basic Conversation",
-        subcategory: "Responses"
-    },
+  "Thanks & Politeness": {
+    category: "Social",
+    subcategory: "Politeness"
+  },
 
-    "Reactions": {
-        category: "Basic Conversation",
-        subcategory: "Responses"
-    },
-
-    "Thanks & Politeness": {
-        category: "Basic Conversation",
-        subcategory: "Responses"
-    },
-
-    // Goodbyes
-
-    "Goodbyes & Leaving": {
-        category: "Basic Conversation",
-        subcategory: "Goodbyes"
-    }, 
-
-    // ─────────────────────────────
-    // Sentence Structure
-    // ─────────────────────────────
-
-    // Time Reference
-
-    "When (Time Questions)": {
-        category: "Sentence Structure",
-        subcategory: "Time Reference"
-    },
-
-    // Conditions
-
-    "Conditions (Kalau)": {
-        category: "Sentence Structure",
-        subcategory: "Conditions"
-    },
-
-    //Moments
-
-    "Moments (Pas)": {
-        category: "Sentence Structure",
-        subcategory: "Moments"
-    },
-
-    // Connections
-    "With (Sama)": {
-        category: "Sentence Structure",
-        subcategory: "Connections"
-    },
-
-    // Titles
-    "Titles & Relationships": {
-        category: "Sentence Structure",
-        subcategory: "Titles"
-    },
-
-    // purpose
-
-    "For (Buat)": {
-        category: "Sentence Structure",
-        subcategory: "Purpose"
-    },
+  "Goodbyes & Leaving": {
+    category: "Social",
+    subcategory: "Goodbyes"
+  },
 
 
 
-    // ─────────────────────────────
-    // Basic Interaction
-    // ─────────────────────────────
+  // ─────────────────────────────
+  // Structure
+  // Sentence logic & connectors
+  // ─────────────────────────────
 
-    // Status & Feelings
+  "When (Time Questions)": {
+    category: "Structure",
+    subcategory: "Time"
+  },
 
-    "How I’m Doing (Positive)": {
-        category: "Basic Interaction",
-        subcategory: "Status & Feelings"
-    },
+  "Conditions (Kalau)": {
+    category: "Structure",
+    subcategory: "Logic"
+  },
 
-    "How I’m Doing (Negative)": {
-        category: "Basic Interaction",
-        subcategory: "Status & Feelings"
-    },
+  "Moments (Pas)": {
+    category: "Structure",
+    subcategory: "Logic"
+  },
 
-    // Ability & Knowledge
+  "With (Sama)": {
+    category: "Structure",
+    subcategory: "Relations"
+  },
 
-    "Knowing & Ability": {
-        category: "Basic Interaction",
-        subcategory: "Ability & Knowledge"
-    },
-    "Requests & Help": {
-        category: "Basic Interaction",
-        subcategory: "Ability & Knowledge"
-    },
-    "Understanding": {
-        category: "Basic Interaction",
-        subcategory: "Ability & Knowledge"
-    },
+  "For (Buat)": {
+    category: "Structure",
+    subcategory: "Relations"
+  },
 
-    "Meaning & Clarification": {
-        category: "Basic Interaction",
-        subcategory: "Ability & Knowledge"
-    },
-
-    
-    "Questions (Yes / No)": {
-        category: "Basic Interaction",
-        subcategory: "Ability & Knowledge"
-    },
-
-    // Availability & Actions
-
-    "What I’m Doing": {
-        category: "Basic Interaction",
-        subcategory: "Availability & Actions"
-    },
-
-    "Plans & Timing": {
-        category: "Basic Interaction",
-        subcategory: "Availability & Actions"
-    },
-
-    // Preferences
-    "Preferences & Choices": {
-        category: "Basic Interaction",
-        subcategory: "Preferences"
-    },
+  "Titles & Relationships": {
+    category: "Structure",
+    subcategory: "Reference"
+  },
 
 
-    // ─────────────────────────────
-    // Daily Life
-    // ─────────────────────────────
 
-    // Activities
+  // ─────────────────────────────
+  // Interaction
+  // What I feel, can do, ask, decide
+  // ─────────────────────────────
 
-    "Food & Drink": {
-        category: "Daily Life",
-        subcategory: "Activities"
-    },
+  "How I’m Doing (Positive)": {
+    category: "Interaction",
+    subcategory: "State"
+  },
 
-    "This / That (Choosing)": {
-        category: "Daily Life",
-        subcategory: "Activities"
-    },
+  "How I’m Doing (Negative)": {
+    category: "Interaction",
+    subcategory: "State"
+  },
 
-    // Movement
+  "Knowing & Ability": {
+    category: "Interaction",
+    subcategory: "Ability"
+  },
 
-    "Going & Arriving": {
-        category: "Daily Life",
-        subcategory: "Movement"
-    },
+  "Understanding": {
+    category: "Interaction",
+    subcategory: "Ability"
+  },
 
-    // places.
+  "Meaning & Clarification": {
+    category: "Interaction",
+    subcategory: "Ability"
+  },
 
-    "Places (Everyday)": {
-        category: "Daily Life",
-        subcategory: "Places"
-    },
+  "Questions (Yes / No)": {
+    category: "Interaction",
+    subcategory: "Patterns"
+  },
 
-    // Possession
+  "Requests & Help": {
+    category: "Interaction",
+    subcategory: "Requests"
+  },
 
-    "Mine & Yours": {
-        category: "Daily Life",
-        subcategory: "Possession"
-    },
+  "What I’m Doing": {
+    category: "Interaction",
+    subcategory: "Actions"
+  },
 
-    // ─────────────────────────────
-    // Basics
-    // ─────────────────────────────
+  "Plans & Timing": {
+    category: "Interaction",
+    subcategory: "Actions"
+  },
 
-    // Numbers
+  "Preferences & Choices": {
+    category: "Interaction",
+    subcategory: "Preferences"
+  },
 
-    "Numbers (Basic)": {
-        category: "Basics",
-        subcategory: "Numbers"
-    },
 
-    // Time
 
-    "Time (Basic)": {
-        category: "Basics",
-        subcategory: "Time"
-    },
-    // Location
+  // ─────────────────────────────
+  // Daily Life
+  // Concrete, real-world language
+  // ─────────────────────────────
 
-    "Places & Location": {
-        category: "Basics",
-        subcategory: "Location"
-    },
+  "Food & Drink": {
+    category: "Daily Life",
+    subcategory: "Everyday"
+  },
 
-    "Existence & Availability": {
-        category: "Basics",
-        subcategory: "Existence"
-    }
+  "This / That (Choosing)": {
+    category: "Daily Life",
+    subcategory: "Everyday"
+  },
+
+  "Going & Arriving": {
+    category: "Daily Life",
+    subcategory: "Movement"
+  },
+
+  "Places (Everyday)": {
+    category: "Daily Life",
+    subcategory: "Places"
+  },
+
+  "Mine & Yours": {
+    category: "Daily Life",
+    subcategory: "Everyday"
+  },
+
+
+
+  // ─────────────────────────────
+  // Foundations
+  // Core language primitives
+  // ─────────────────────────────
+
+  "Numbers (Basic)": {
+    category: "Foundations",
+    subcategory: "Core"
+  },
+
+  "Time (Basic)": {
+    category: "Foundations",
+    subcategory: "Core"
+  },
+
+  "Places & Location": {
+    category: "Foundations",
+    subcategory: "Core"
+  },
+
+  "Existence & Availability": {
+    category: "Foundations",
+    subcategory: "Core"
+  }
 
 };
+
+
 
 
 /**
