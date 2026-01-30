@@ -88,6 +88,14 @@ const MODULE_CATEGORY_MAP = {
         subcategory: "Titles"
     },
 
+    // purpose
+
+    "For (Buat)": {
+        category: "Sentence Structure",
+        subcategory: "Purpose"
+    },
+
+
 
     // ─────────────────────────────
     // Basic Interaction
@@ -179,7 +187,7 @@ const MODULE_CATEGORY_MAP = {
         category: "Daily Life",
         subcategory: "Places"
     },
-    
+
     // Possession
 
     "Mine & Yours": {
