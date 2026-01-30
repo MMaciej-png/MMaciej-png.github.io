@@ -29,7 +29,7 @@ export function weightedRandom(candidateItems) {
   const conceptCount = new Map();
 
   for (const item of pool) {
-    const key = `${item.type}:${item.indo.toLowerCase()}`;
+    const key = item.id;
     conceptCount.set(key, (conceptCount.get(key) || 0) + 1);
   }
 
