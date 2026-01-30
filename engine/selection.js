@@ -2,6 +2,19 @@
 
 let lastPickedId = null;
 
+/* ===============================
+   CONCEPT KEY
+   (shared across modules)
+=============================== */
+
+function getConceptKey(item) {
+  return `${item.type}::${item.indo}::${item.eng}`.toLowerCase();
+}
+
+/* ===============================
+   WEIGHTED RANDOM (CONCEPT-AWARE)
+=============================== */
+
 export function weightedRandom(candidateItems) {
   if (!candidateItems.length) return null;
 
@@ -14,23 +27,22 @@ export function weightedRandom(candidateItems) {
 
   if (lastPickedId && candidateItems.length > 1) {
     pool = candidateItems.filter(i => i.id !== lastPickedId);
-
-    // Safety fallback (should never happen, but defensive)
-    if (!pool.length) {
-      pool = candidateItems;
-    }
+    if (!pool.length) pool = candidateItems;
   }
 
   /* ===============================
-     CONCEPT FREQUENCY MAP
-     (only for current pool)
+     CONCEPT MAP
+     key → [items...]
   =============================== */
 
-  const conceptCount = new Map();
+  const conceptMap = new Map();
 
   for (const item of pool) {
-    const key = item.id;
-    conceptCount.set(key, (conceptCount.get(key) || 0) + 1);
+    const key = getConceptKey(item);
+    if (!conceptMap.has(key)) {
+      conceptMap.set(key, []);
+    }
+    conceptMap.get(key).push(item);
   }
 
   /* ===============================
@@ -40,40 +52,37 @@ export function weightedRandom(candidateItems) {
   let total = 0;
 
   for (const item of pool) {
-    total += effectiveWeight(item, conceptCount);
+    total += effectiveWeight(item, conceptMap);
   }
 
   let r = Math.random() * total;
 
   for (const item of pool) {
-    r -= effectiveWeight(item, conceptCount);
+    r -= effectiveWeight(item, conceptMap);
     if (r <= 0) {
       lastPickedId = item.id;
       return item;
     }
   }
 
-  // Fallback
+  // Fallback (defensive)
   lastPickedId = pool[0].id;
   return pool[0];
 }
-
 
 /* ===============================
    EFFECTIVE WEIGHT
 =============================== */
 
-function effectiveWeight(item, conceptCount) {
-  // Base difficulty (stored mastery)
+function effectiveWeight(item, conceptMap) {
+  // Base mastery weight (persistent)
   let w = Math.max(1, Number(item.weight) || 1);
 
   /* -----------------------------
      1️⃣ Novelty boost
   ----------------------------- */
   const seen = item.seen ?? 0;
-
   if (seen === 0) w *= 2;
-  else if (seen === 1) w *= 1;
 
   /* -----------------------------
      2️⃣ Recency suppression
@@ -89,17 +98,17 @@ function effectiveWeight(item, conceptCount) {
   }
 
   /* -----------------------------
-     3️⃣ Concept frequency dampening
-     (prevents aku / bisa / yang spam)
+     3️⃣ CONCEPT SPLIT (KEY FIX)
+     Same concept across modules
+     splits total probability evenly
   ----------------------------- */
-  const count = conceptCount.get(item.indo.toLowerCase()) || 1;
+  const key = getConceptKey(item);
+  const conceptSize = conceptMap.get(key)?.length ?? 1;
 
-  // Square-root dampening
-  w /= Math.sqrt(count);
+  w /= conceptSize;
 
   return Math.max(w, 0.1);
 }
-
 
 /* ===============================
    ID GENERATION (UNCHANGED)
