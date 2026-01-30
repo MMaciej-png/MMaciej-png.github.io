@@ -82,6 +82,12 @@ const MODULE_CATEGORY_MAP = {
         subcategory: "Connections"
     },
 
+    // Titles
+    "Titles & Relationships": {
+        category: "Sentence Structure",
+        subcategory: "Titles"
+    },
+
 
     // ─────────────────────────────
     // Basic Interaction
