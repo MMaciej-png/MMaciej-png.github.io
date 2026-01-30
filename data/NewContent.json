@@ -819,6 +819,33 @@
         }
     },
 
+    "Places (Everyday)": {
+        "neutral": {
+            "words": [
+            { "indo": "Rumah", "english": "House / Home" },
+            { "indo": "Toilet", "english": "Toilet / Bathroom" },
+            { "indo": "Kamar", "english": "Room / Bedroom" },
+            { "indo": "Dapur", "english": "Kitchen" },
+            { "indo": "Kamar mandi", "english": "Bathroom" },
+            { "indo": "Toko", "english": "Shop / Store" },
+            { "indo": "Sekolah", "english": "School" },
+            { "indo": "Universitas", "english": "University" },
+            { "indo": "Di sini", "english": "Here" },
+            { "indo": "Di sana", "english": "There" }
+            ],
+            "sentences": [
+            { "indo": "Di rumah.", "english": "At home." },
+            { "indo": "Ke toilet.", "english": "To the toilet." },
+            { "indo": "Di dapur.", "english": "In the kitchen." },
+            { "indo": "Di kamar.", "english": "In the room." },
+            { "indo": "Di toko.", "english": "At the shop." },
+            { "indo": "Di sekolah.", "english": "At school." },
+            { "indo": "Di universitas.", "english": "At the university." }
+            ]
+        }
+    },
+
+
     "Mine & Yours": {
         "neutral": {
             "words": [
