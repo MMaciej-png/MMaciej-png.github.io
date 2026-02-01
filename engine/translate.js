@@ -162,7 +162,8 @@ const EN_EQUIVALENTS = [
   /* ===============================
      MOVEMENT / ARRIVAL
      =============================== */
-
+  [/\b(mr|sir)\b/g, "mr"],
+  [/\b(mrs|ma'am|maam)\b/g, "mrs"],
   [/\b(come|arrive)\b/g, "come"],
   [/\b(go|leave|head\s+off)\b/g, "go"],
   [/\b(get\s+back|return)\b/g, "return"],
