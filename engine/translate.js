@@ -12,6 +12,7 @@ const EN_EQUIVALENTS = [
   [/\byou['’]?re\b/g, "you are"],
   [/\bhe['’]?s\b/g, "he is"],
   [/\bshe['’]?s\b/g, "she is"],
+  [/\bthere['’]?s\b/g, "there is"],
   [/\bit['’]?s\b/g, "it is"],
   [/\bwe['’]?re\b/g, "we are"],
   [/\bthey['’]?re\b/g, "they are"],
