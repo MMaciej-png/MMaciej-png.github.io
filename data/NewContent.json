@@ -261,7 +261,6 @@
             ],
             "sentences": [
             { "indo": "Kalau lapar makan.", "english": "If hungry, eat." },
-            { "indo": "Kalau bisa nanti ya.", "english": "If you can, later okay?" },
             { "indo": "Kalau capek nanti.", "english": "If tired, later." }
             ]
         },
@@ -281,7 +280,7 @@
     "Moments (Pas)": {
         "neutral": {
             "words": [
-            { "indo": "Pas", "english": "Right when / At the moment" },
+            { "indo": "Pas", "english": "(Right) when / At the moment" },
             { "indo": "Sampai", "english": "Arrive" },
             { "indo": "Lapar", "english": "Hungry" },
             { "indo": "Mulai", "english": "Start" },
@@ -379,26 +378,16 @@
             { "indo": "Aku", "english": "I / Me" },
             { "indo": "Kamu", "english": "You" },
             { "indo": "Ini", "english": "This" },
-            { "indo": "Itu", "english": "That" },
-            { "indo": "Lakuin", "english": "Do (spoken)" },
-            { "indo": "Pergi", "english": "Go" }
+            { "indo": "Itu", "english": "That" }
             ],
             "sentences": [
             { "indo": "Ini buat kamu.", "english": "This is for you." },
-            { "indo": "Pergi buat itu.", "english": "Going for that." }
-            ]
-        },
-        
-        "informal": {
-            "words": [
-            { "indo": "Lakuin", "english": "Do (spoken)" }
-            ],
-            "sentences": [
-            { "indo": "Aku lakuin ini buat kamu.", "english": "I’m doing this for you." }
+            { "indo": "Buat aku.", "english": "For me." },
+            { "indo": "Buat kamu.", "english": "For you." },
+            { "indo": "Buat itu.", "english": "For that." }
             ]
         }
     },
-
 
     "How I’m Doing (Positive)": {
         "neutral": {

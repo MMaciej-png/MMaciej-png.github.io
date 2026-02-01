@@ -235,7 +235,7 @@ const ID_EQUIVALENTS = [
      =============================== */
 
   // I / me
-   [/\b(iya|ya|oke)\b/g, "iya"],
+   [/\b(iya|oke)\b/g, "iya"],
   [/\b(aku|saya|gue|gua)\b/g, "aku"],
 
   // you
