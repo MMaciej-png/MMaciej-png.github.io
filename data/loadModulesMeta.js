@@ -35,6 +35,21 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Conversation"
   },
 
+  "Agreement / Disagreement (Setuju / Nggak setuju)": {
+    category: "Social",
+    subcategory: "Conversation"
+  },
+
+  "Inviting (Ayo / Yuk)": {
+    category: "Social",
+    subcategory: "Conversation"
+  },
+
+  "Accepting / Declining (Gak dulu / Lain kali)": {
+    category: "Social",
+    subcategory: "Conversation"
+  },
+
   "Thanks & Politeness": {
     category: "Social",
     subcategory: "Politeness"
@@ -63,6 +78,31 @@ const MODULE_CATEGORY_MAP = {
   },
 
   "Moments (Pas)": {
+    category: "Structure",
+    subcategory: "Logic"
+  },
+
+  "Because (Karena / Soalnya)": {
+    category: "Structure",
+    subcategory: "Logic"
+  },
+
+  "So / That’s why (Jadi / Makanya)": {
+    category: "Structure",
+    subcategory: "Logic"
+  },
+
+  "But / Contrast (Tapi / Padahal)": {
+    category: "Structure",
+    subcategory: "Logic"
+  },
+
+  "Then / And then (Terus / Trus)": {
+    category: "Structure",
+    subcategory: "Logic"
+  },
+
+  "Maybe / Probably (Mungkin / Kayaknya)": {
     category: "Structure",
     subcategory: "Logic"
   },
@@ -99,6 +139,11 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "State"
   },
 
+  "Softening (Agak / Kayak / Lumayan)": {
+    category: "Interaction",
+    subcategory: "Tone"
+  },
+
   "Knowing & Ability": {
     category: "Interaction",
     subcategory: "Ability"
@@ -119,9 +164,29 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Patterns"
   },
 
+  "Asking Opinions (Menurut kamu gimana?)": {
+    category: "Interaction",
+    subcategory: "Patterns"
+  },
+
   "Requests & Help": {
     category: "Interaction",
     subcategory: "Requests"
+  },
+
+  "Wait / Hold on (Bentar / Tunggu)": {
+    category: "Interaction",
+    subcategory: "Requests"
+  },
+
+  "I mean… / What I meant… (Maksudku…)": {
+    category: "Interaction",
+    subcategory: "Ability"
+  },
+
+  "Say it again / Slower (Ulangi / Pelan-pelan)": {
+    category: "Interaction",
+    subcategory: "Ability"
   },
 
   "What I’m Doing": {
@@ -167,6 +232,11 @@ const MODULE_CATEGORY_MAP = {
   },
 
   "Mine & Yours": {
+    category: "Daily Life",
+    subcategory: "Everyday"
+  },
+
+  "Messaging Basics (Lagi di mana? / OTW)": {
     category: "Daily Life",
     subcategory: "Everyday"
   },
