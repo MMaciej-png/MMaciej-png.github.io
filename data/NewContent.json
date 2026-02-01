@@ -9,7 +9,6 @@
             { "indo": "Datang", "english": "Come / Arrive" }
             ],
             "sentences": [
-            { "indo": "Halo, nama saya (nama).", "english": "Hello, my name is (name)." },
             { "indo": "Selamat datang.", "english": "Welcome." }
             ]
         },
@@ -18,7 +17,8 @@
             { "indo": "Saya", "english": "I / Me" }
             ],            
             "sentences": [
-            { "indo": "Halo, saya (nama).", "english": "Hi, I’m (name)." }
+            { "indo": "Halo, saya (nama).", "english": "Hi, I’m (name)." },
+            { "indo": "Halo, nama saya (nama).", "english": "Hello, my name is (name)." }
             ]
         },
         "informal": {
@@ -26,7 +26,8 @@
             { "indo": "Aku", "english": "I / Me" }
             ],
             "sentences": [
-            { "indo": "Halo, aku (nama).", "english": "Hi, I’m (name)." }
+            { "indo": "Halo, aku (nama).", "english": "Hi, I’m (name)." },
+            { "indo": "Halo, nama aku (nama).", "english": "Hello, my name is (name)." }
             ]
         }   
     },
@@ -85,10 +86,14 @@
             { "indo": "Ya", "english": "Yes" },
             { "indo": "Iya", "english": "Yes" },
             { "indo": "Tidak", "english": "No / Not" },
-            { "indo": "Nggak", "english": "No / Not (spoken)" },
             { "indo": "Mungkin", "english": "Maybe" },
             { "indo": "Oke", "english": "Okay" }
             ]
+
+
+        },
+        "informal": {
+            "words": [{ "indo": "Nggak", "english": "No / Not (spoken)" }]
         }
     },
 
@@ -102,7 +107,6 @@
                 { "indo": "Iya", "english": "Yes" }
                 ],
             "sentences": [
-                { "indo": "Iya ya.", "english": "Yeah, true." },
                 { "indo": "Oh, oke.", "english": "Oh, okay." }
             ]
         },
@@ -125,6 +129,7 @@
                 { "indo": "Hmm", "english": "Hmm" }
             ],
             "sentences": [
+                { "indo": "Iya ya.", "english": "Yeah, true." },
                 { "indo": "Oh iya.", "english": "Oh right." },
                 { "indo": "Iya, oke.", "english": "Yeah, okay." },
                 { "indo": "Hehe.", "english": "Haha." },
@@ -138,7 +143,8 @@
             "words": [
             { "indo": "Terima kasih", "english": "Thank you" },
             { "indo": "Sama-sama", "english": "You’re welcome" },
-            { "indo": "Maaf", "english": "Sorry / Excuse me" }
+            { "indo": "Maaf", "english": "Sorry / Excuse me" },
+            { "indo": "Ya", "english": "Yes" }
             ],
             "sentences": [
             { "indo": "Terima kasih.", "english": "Thank you." },
@@ -196,7 +202,8 @@
         "informal": {
             "words": [
             { "indo": "Duluan", "english": "First / Earlier" },
-            { "indo": "Dadah", "english": "Bye (spoken)" }
+            { "indo": "Dadah", "english": "Bye (spoken)" },
+            { "indo": "Aku", "english": "I / Me" }
             ],
             "sentences": [
             { "indo": "Aku duluan.", "english": "I’ll go first" },
@@ -226,18 +233,43 @@
     "Conditions (Kalau)": {
         "neutral": {
             "words": [
-            { "indo": "Kalau", "english": "If / When" },
+            { "indo": "Kalau", "english": "If" },
             { "indo": "Lapar", "english": "Hungry" },
+            { "indo": "Capek", "english": "Tired" },
             { "indo": "Ada", "english": "Exist / There is" },
             { "indo": "Waktu", "english": "Time" },
             { "indo": "Bisa", "english": "Can / Able" },
-            { "indo": "Nanti", "english": "Later" },
-            { "indo": "Makan", "english": "Eat" }
+            { "indo": "Nanti", "english": "Later" }
             ],
             "sentences": [
-            { "indo": "Kalau lapar, makan.", "english": "If you’re hungry, eat." },
-            { "indo": "Kalau ada waktu, nanti.", "english": "If there’s time, later." },
-            { "indo": "Kalau bisa, nanti.", "english": "If possible, later." }
+            { "indo": "Kalau lapar.", "english": "If hungry." },
+            { "indo": "Kalau capek.", "english": "If tired." },
+            { "indo": "Kalau ada waktu.", "english": "If there’s time." },
+            { "indo": "Kalau bisa.", "english": "If able." },
+            { "indo": "Kalau bisa nanti.", "english": "If able, later." }
+            ]
+        },
+
+        "informal": {
+            "words": [
+            { "indo": "Ya", "english": "Okay / Yeah" },
+            { "indo": "Aja", "english": "Just" }
+            ],
+            "sentences": [
+            { "indo": "Kalau lapar aja.", "english": "If hungry, just do it." },
+            { "indo": "Kalau bisa nanti ya.", "english": "If you can, later okay?" },
+            { "indo": "Kalau capek nanti.", "english": "If tired, later." }
+            ]
+        },
+        "formal": {
+            "words": [
+                { "indo": "Jika", "english": "If (formal)" },
+                { "indo": "Dapat", "english": "Can / Be able to (formal)" }
+            ],
+            "sentences": [
+                { "indo": "Jika ada waktu.", "english": "If there is time." },
+                { "indo": "Jika memungkinkan.", "english": "If possible." },
+                { "indo": "Jika dapat.", "english": "If able." }
             ]
         }
     },
