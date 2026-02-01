@@ -1,0 +1,17 @@
+# Environment variables (secrets)
+.env
+.env.*
+
+# Node (if applicable)
+node_modules/
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+
+# IndoTrainer generated reports / scans
+data/equivalence_scan*.json
+data/CLARITY_CHECK_FULL.md
+data/EQUIVALENCE_GAPS.md
