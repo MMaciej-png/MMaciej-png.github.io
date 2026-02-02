@@ -12,19 +12,20 @@ export function createModulesRenderer({ containerEl, onSelect }) {
     activeModules,
     activeMode,
     contentFilter,
-    registerFilter
+    registerFilter,
+    includeJakartaTokens,
+    showAffixHelp
   ) {
     containerEl.innerHTML = "";
 
-    /* ===============================
-       GLOBAL CONTENT TOGGLE
-    =============================== */
-    renderContentToggle(containerEl, contentFilter, onSelect);
-
-    /* ===============================
-       REGISTER TOGGLE
-    =============================== */
-    renderRegisterToggle(containerEl, registerFilter, onSelect);
+    renderTogglesGrid(
+      containerEl,
+      contentFilter,
+      registerFilter,
+      includeJakartaTokens,
+      showAffixHelp,
+      onSelect
+    );
 
     /* ===============================
        MODULE GROUPS (CATEGORIES)
@@ -57,6 +58,53 @@ export function createModulesRenderer({ containerEl, onSelect }) {
   }
 
   return { render };
+}
+
+function renderTogglesGrid(
+  container,
+  contentFilter,
+  registerFilter,
+  includeJakartaTokens,
+  showAffixHelp,
+  onSelect
+) {
+  const wrap = document.createElement("div");
+  wrap.className = "module-toggles-grid";
+
+  const btnContent = document.createElement("button");
+  btnContent.type = "button";
+  btnContent.className = "module-toggle-btn toggle-content";
+  btnContent.textContent =
+    contentFilter === "all" ? "Words + Sentences" :
+      contentFilter === "words" ? "Only Words" :
+        "Only Sentences";
+  btnContent.onclick = () => onSelect("__CONTENT_TOGGLE__");
+
+  const btnRegister = document.createElement("button");
+  btnRegister.type = "button";
+  btnRegister.className = "module-toggle-btn toggle-register";
+  btnRegister.textContent =
+    registerFilter === "all" ? "Formal + Informal" :
+      registerFilter === "informal" ? "Informal" :
+        "Formal";
+  btnRegister.onclick = () => onSelect("__REGISTER_TOGGLE__");
+
+  const btnParticles = document.createElement("button");
+  btnParticles.type = "button";
+  btnParticles.className = "module-toggle-btn toggle-particles";
+  btnParticles.dataset.state = includeJakartaTokens ? "on" : "off";
+  btnParticles.textContent = includeJakartaTokens ? "Particles: ON" : "Particles: OFF";
+  btnParticles.onclick = () => onSelect("__JAKARTA_TOGGLE__");
+
+  const btnAffix = document.createElement("button");
+  btnAffix.type = "button";
+  btnAffix.className = "module-toggle-btn toggle-affix";
+  btnAffix.dataset.state = showAffixHelp ? "on" : "off";
+  btnAffix.textContent = showAffixHelp ? "Affix Help: ON" : "Affix Help: OFF";
+  btnAffix.onclick = () => onSelect("__AFFIX_TOGGLE__");
+
+  wrap.append(btnContent, btnRegister, btnParticles, btnAffix);
+  container.appendChild(wrap);
 }
 
 /* ===============================

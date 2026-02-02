@@ -3,6 +3,7 @@
    =============================== */
 
 let rate = 1;
+let volume = 1;
 
 let voices = [];
 
@@ -40,6 +41,12 @@ export function setRate(r) {
   rate = r;
 }
 
+export function setVolume(v) {
+  // Clamp to [0,1]
+  const n = Number(v);
+  volume = Number.isFinite(n) ? Math.max(0, Math.min(1, n)) : 1;
+}
+
 /* -------------------------------
    VARIATION HELPERS
 -------------------------------- */
@@ -69,6 +76,9 @@ export function speak(text, lang = "en-GB") {
 
   /* rate variation */
   u.rate = jitter(rate, RATE_JITTER);
+
+  /* volume */
+  u.volume = volume;
 
   /* pitch variation */
   const basePitch =

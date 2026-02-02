@@ -87,7 +87,6 @@
 
                     <!-- CASUAL MODE -->
                     <section id="casual-root">
-
                         <!-- MODE TITLE -->
                         <div class="mode-title">
                             <span>Indonesian Trainer By Maciej</span>
@@ -114,6 +113,8 @@
                                     <span class="card-text"></span>
 
                                     <div class="card-register" id="c-register-front"></div>
+                                    <div class="card-badges" id="c-badges-front" aria-hidden="true"></div>
+                                    <div class="card-meta-badges" id="c-meta-badges-front" aria-hidden="true"></div>
                                 </div>
 
                                 <!-- BACK -->
@@ -126,14 +127,27 @@
                                     <span class="card-text"></span>
 
                                     <div class="card-register" id="c-register-back"></div>
+                                    <div class="card-badges" id="c-badges-back" aria-hidden="true"></div>
+                                    <div class="card-meta-badges" id="c-meta-badges-back" aria-hidden="true"></div>
 
                                 </div>
 
                             </div>
                         </div>
 
+                        <!-- TOKENS / TAGS PANEL (bottom-sheet overlay; still mounted here) -->
+                        <div id="c-tags-panel" class="tags-panel" aria-hidden="true"></div>
+                        <!-- AFFIX HELP PANEL (optional teaching; bottom-sheet overlay) -->
+                        <div id="c-affix-panel" class="tags-panel affix-panel" aria-hidden="true"></div>
+
                         <!-- INPUT -->
                         <input id="casual-input" placeholder="Type translation and press Enter" autocomplete="off" />
+
+                        <!-- SPEECH VOLUME -->
+                        <div class="tts-control">
+                            <label>Speech volume</label>
+                            <input id="c-tts-volume" type="range" min="0" max="1" step="0.05" value="1" />
+                        </div>
 
                         <!-- SPEECH RATE -->
                         <div class="tts-control">
@@ -185,6 +199,9 @@
         <button id="nav-casual">🌿</button>
         <button id="nav-ranked" disabled>🏆</button>
     </nav>
+
+    <!-- BOTTOM SHEET BACKDROP (for tag/affix popups) -->
+    <div id="sheet-backdrop" class="sheet-backdrop hidden" aria-hidden="true"></div>
 
     <!-- SCRIPTS -->
     <script type="module">
