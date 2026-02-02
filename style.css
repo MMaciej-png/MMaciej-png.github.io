@@ -386,14 +386,21 @@ body {
 }
 
 /* ===============================
-   CARD REGISTER TAG
+   CARD REGISTER ROW (REGISTER + SPOKEN)
 =============================== */
 
-.card-register {
+.card-register-row {
   position: absolute;
   bottom: 14px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none; /* enable per-button pointer events */
+}
+
+.card-register {
 
   padding: 10px 20px;
   border-radius: 999px;
@@ -411,6 +418,16 @@ body {
   color: #e5e7eb;
 
   backdrop-filter: blur(6px);
+}
+
+.card-register-meta {
+  display: flex;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.card-register-meta .card-badge {
+  pointer-events: auto;
 }
 
 .card-register:focus-visible {

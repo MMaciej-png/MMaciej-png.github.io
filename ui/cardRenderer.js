@@ -12,6 +12,8 @@ export function createCardRenderer({
   backPointsEl,
   frontRegisterEl,
   backRegisterEl,
+  frontRegisterMetaEl,
+  backRegisterMetaEl,
   frontBadgesEl,
   backBadgesEl,
   frontMetaBadgesEl,
@@ -257,6 +259,17 @@ export function createCardRenderer({
     }
   }
 
+  function splitLabels(labels) {
+    const src = Array.isArray(labels) ? labels : [];
+    const spoken = [];
+    const rest = [];
+    for (const l of src) {
+      if (String(l).toUpperCase() === "SPOKEN") spoken.push(l);
+      else rest.push(l);
+    }
+    return { spoken, rest };
+  }
+
   function renderAffixBadges(el, render, faceHasIndo) {
     if (!el) return;
 
@@ -300,8 +313,10 @@ export function createCardRenderer({
 
     frontTextEl.textContent = frontText;
     renderRegister(frontRegisterEl, render.register);
-    // Spoken/Casual meta labels show on both sides
-    renderMetaBadges(frontMetaBadgesEl, render.metaLabels);
+    // Show SPOKEN next to the register pill; keep other labels in the normal meta area
+    const frontLabels = splitLabels(render.metaLabels);
+    renderMetaBadges(frontRegisterMetaEl, frontLabels.spoken);
+    renderMetaBadges(frontMetaBadgesEl, frontLabels.rest);
     // Token badges only when Indonesian is visible on this face
     if (render.questionLang === "indo" && showParticles) renderBadges(frontBadgesEl, render.tokens, showParticles);
     else clearBadges(frontBadgesEl);
@@ -335,7 +350,9 @@ export function createCardRenderer({
       `${q}\n────────\n${a}`;
 
     renderRegister(backRegisterEl, render.register);
-    renderMetaBadges(backMetaBadgesEl, render.metaLabels);
+    const backLabels = splitLabels(render.metaLabels);
+    renderMetaBadges(backRegisterMetaEl, backLabels.spoken);
+    renderMetaBadges(backMetaBadgesEl, backLabels.rest);
 
     // Only show token badges when the particles are actually visible (or this is a dedicated module).
     if (showParticles) renderBadges(backBadgesEl, render.tokens, showParticles);

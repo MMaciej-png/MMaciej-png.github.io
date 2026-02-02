@@ -270,6 +270,8 @@ export const casualEngine = (() => {
       backPointsEl: document.getElementById("c-points-back"),
       frontRegisterEl: document.querySelector("#casual-front .card-register"),
       backRegisterEl: document.querySelector("#casual-back .card-register"),
+      frontRegisterMetaEl: document.getElementById("c-register-meta-front"),
+      backRegisterMetaEl: document.getElementById("c-register-meta-back"),
       frontBadgesEl: document.getElementById("c-badges-front"),
       backBadgesEl: document.getElementById("c-badges-back"),
       frontMetaBadgesEl: document.getElementById("c-meta-badges-front"),
