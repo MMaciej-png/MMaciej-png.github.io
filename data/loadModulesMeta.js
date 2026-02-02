@@ -1,4 +1,5 @@
 import { getModuleStats } from "./moduleStats.js";
+import { shouldExcludeWordFromPool } from "../core/textTags.js";
 
 /**
  * Module → Category / Subcategory mapping
@@ -7,135 +8,225 @@ import { getModuleStats } from "./moduleStats.js";
 const MODULE_CATEGORY_MAP = {
 
   // ─────────────────────────────
-  // Social
-  // Openings, closings, polite flow
+  // Conversation
+  // Openings, closings, small talk
   // ─────────────────────────────
 
   "Greetings (Basic)": {
-    category: "Social",
+    category: "Conversation",
     subcategory: "Greetings"
   },
   "Greetings (Time-Based)": {
-    category: "Social",
+    category: "Conversation",
     subcategory: "Greetings"
   },
 
   "Asking How Are You": {
-    category: "Social",
-    subcategory: "Conversation"
+    category: "Conversation",
+    subcategory: "Small Talk"
   },
 
   "Reactions": {
-    category: "Social",
-    subcategory: "Conversation"
+    category: "Conversation",
+    subcategory: "Small Talk"
   },
 
   "Yes / No / Maybe": {
-    category: "Social",
-    subcategory: "Conversation"
+    category: "Conversation",
+    subcategory: "Small Talk"
+  },
+
+  "Agreement / Disagreement (Setuju / Nggak setuju)": {
+    category: "Conversation",
+    subcategory: "Small Talk"
+  },
+
+  "Inviting (Ayo / Yuk)": {
+    category: "Conversation",
+    subcategory: "Planning"
+  },
+
+  "Accepting / Declining (Gak dulu / Lain kali)": {
+    category: "Conversation",
+    subcategory: "Planning"
   },
 
   "Thanks & Politeness": {
-    category: "Social",
+    category: "Conversation",
     subcategory: "Politeness"
   },
 
   "Goodbyes & Leaving": {
-    category: "Social",
+    category: "Conversation",
     subcategory: "Goodbyes"
+  },
+
+  "Jakarta Pronouns & Core Slang (Gue / Lu)": {
+    category: "Jakarta / Texting",
+    subcategory: "Pronouns & Slang"
+  },
+
+  "Daily Small Talk (Chat)": {
+    category: "Jakarta / Texting",
+    subcategory: "Chatting"
+  },
+
+  "Hangout Planning (Texting)": {
+    category: "Jakarta / Texting",
+    subcategory: "Chatting"
   },
 
 
 
   // ─────────────────────────────
-  // Structure
-  // Sentence logic & connectors
+  // Sentence Building
+  // Sentence logic & patterns
   // ─────────────────────────────
 
   "When (Time Questions)": {
-    category: "Structure",
+    category: "Sentence Building",
     subcategory: "Time"
   },
 
   "Conditions (Kalau)": {
-    category: "Structure",
-    subcategory: "Logic"
+    category: "Sentence Building",
+    subcategory: "Connectors"
   },
 
   "Moments (Pas)": {
-    category: "Structure",
-    subcategory: "Logic"
+    category: "Sentence Building",
+    subcategory: "Connectors"
+  },
+
+  "Chat Particles (Nih / Sih / Kok / Dong / Deh / Tuh)": {
+    category: "Jakarta / Texting",
+    subcategory: "Particles"
+  },
+
+  "Texting Shorteners (gpp / bgt / udh / blm / otw / wkwk)": {
+    category: "Jakarta / Texting",
+    subcategory: "Shorteners"
+  },
+
+  "Because (Karena / Soalnya)": {
+    category: "Sentence Building",
+    subcategory: "Connectors"
+  },
+
+  "So / That’s why (Jadi / Makanya)": {
+    category: "Sentence Building",
+    subcategory: "Connectors"
+  },
+
+  "But / Contrast (Tapi / Padahal)": {
+    category: "Sentence Building",
+    subcategory: "Connectors"
+  },
+
+  "Then / And then (Terus / Trus)": {
+    category: "Sentence Building",
+    subcategory: "Connectors"
+  },
+
+  "Maybe / Probably (Mungkin / Kayaknya)": {
+    category: "Sentence Building",
+    subcategory: "Connectors"
   },
 
   "With (Sama)": {
-    category: "Structure",
-    subcategory: "Relations"
+    category: "Sentence Building",
+    subcategory: "Reference"
   },
 
   "For (Buat)": {
-    category: "Structure",
-    subcategory: "Relations"
+    category: "Sentence Building",
+    subcategory: "Reference"
   },
 
   "Titles & Relationships": {
-    category: "Structure",
+    category: "Sentence Building",
     subcategory: "Reference"
   },
 
 
 
   // ─────────────────────────────
-  // Interaction
-  // What I feel, can do, ask, decide
+  // Doing & Needs
+  // State, ability, requests, choices
   // ─────────────────────────────
 
   "How I’m Doing (Positive)": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "State"
   },
 
   "How I’m Doing (Negative)": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "State"
   },
 
+  "Softening (Agak / Kayak / Lumayan)": {
+    category: "Doing & Needs",
+    subcategory: "Tone"
+  },
+
   "Knowing & Ability": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "Ability"
   },
 
   "Understanding": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "Ability"
   },
 
   "Meaning & Clarification": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "Ability"
   },
 
   "Questions (Yes / No)": {
-    category: "Interaction",
+    category: "Doing & Needs",
+    subcategory: "Patterns"
+  },
+
+  "Asking Opinions (Menurut kamu gimana?)": {
+    category: "Doing & Needs",
     subcategory: "Patterns"
   },
 
   "Requests & Help": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "Requests"
   },
 
+  "Wait / Hold on (Bentar / Tunggu)": {
+    category: "Doing & Needs",
+    subcategory: "Requests"
+  },
+
+  "I mean… / What I meant… (Maksudku…)": {
+    category: "Doing & Needs",
+    subcategory: "Ability"
+  },
+
+  "Say it again / Slower (Ulangi / Pelan-pelan)": {
+    category: "Doing & Needs",
+    subcategory: "Ability"
+  },
+
   "What I’m Doing": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "Actions"
   },
 
   "Plans & Timing": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "Actions"
   },
 
   "Preferences & Choices": {
-    category: "Interaction",
+    category: "Doing & Needs",
     subcategory: "Preferences"
   },
 
@@ -171,33 +262,59 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Everyday"
   },
 
+  "Messaging Basics (Lagi di mana? / OTW)": {
+    category: "Jakarta / Texting",
+    subcategory: "Chatting"
+  },
+
 
 
   // ─────────────────────────────
-  // Foundations
+  // Basics
   // Core language primitives
   // ─────────────────────────────
 
   "Numbers (Basic)": {
-    category: "Foundations",
+    category: "Basics",
     subcategory: "Core"
   },
 
   "Time (Basic)": {
-    category: "Foundations",
+    category: "Basics",
     subcategory: "Core"
   },
 
   "Places & Location": {
-    category: "Foundations",
+    category: "Basics",
     subcategory: "Core"
   },
 
   "Existence & Availability": {
-    category: "Foundations",
+    category: "Basics",
     subcategory: "Core"
   }
 
+};
+
+const CATEGORY_ORDER = [
+  "Smart Modes",
+  "Conversation",
+  "Jakarta / Texting",
+  "Doing & Needs",
+  "Sentence Building",
+  "Daily Life",
+  "Basics",
+  "Other"
+];
+
+const SUBCATEGORY_ORDER = {
+  "Conversation": ["Greetings", "Small Talk", "Planning", "Politeness", "Goodbyes"],
+  "Jakarta / Texting": ["Particles", "Shorteners", "Pronouns & Slang", "Chatting"],
+  "Doing & Needs": ["State", "Tone", "Ability", "Patterns", "Requests", "Actions", "Preferences"],
+  "Sentence Building": ["Connectors", "Reference", "Time"],
+  "Daily Life": ["Everyday", "Movement", "Places"],
+  "Basics": ["Core"],
+  "Other": ["Uncategorised"]
 };
 
 
@@ -206,9 +323,21 @@ const MODULE_CATEGORY_MAP = {
 /**
  * Loads grouped module metadata for the UI
  */
-export async function loadModulesMeta() {
+export async function loadModulesMeta(options = {}) {
     const content = await fetch("../data/NewContent.json")
         .then(r => r.json());
+
+    const contentFilter = options?.contentFilter ?? "all"; // all | words | sentences
+    const registerFilter = options?.registerFilter ?? "all"; // all | informal | formal
+
+    const allowWord = contentFilter !== "sentences";
+    const allowSentence = contentFilter !== "words";
+
+    const allowRegister = (reg) => {
+        if (registerFilter === "all") return true;
+        // Mirror casual mode: if filtering to a register, still include neutral.
+        return reg === "neutral" || reg === registerFilter;
+    };
 
     let totalItems = 0;
     let allAttempted = 0;
@@ -229,17 +358,45 @@ export async function loadModulesMeta() {
             for (const key of ["neutral", "formal", "informal"]) {
                 const block = data[key];
                 if (!block) continue;
+                if (!allowRegister(key)) continue;
 
-                wordCount += block.words?.length ?? 0;
-                sentenceCount += block.sentences?.length ?? 0;
+                if (allowWord) {
+                    for (const w of (block.words ?? [])) {
+                        const indo = (w?.indo ?? "").trim();
+                        if (!indo) continue;
+                        if (shouldExcludeWordFromPool(indo)) continue;
+                        wordCount++;
+                    }
+                }
+                if (allowSentence) {
+                    for (const s of (block.sentences ?? [])) {
+                        const indo = (s?.indo ?? "").trim();
+                        if (!indo) continue;
+                        sentenceCount++;
+                    }
+                }
             }
         }
         // ===============================
         // LEGACY / UNSPLIT MODULE
         // ===============================
         else {
-            wordCount = data.words?.length ?? 0;
-            sentenceCount = data.sentences?.length ?? 0;
+            // Legacy modules are implicitly neutral, and neutral is always allowed.
+            if (allowWord) {
+                for (const w of (data.words ?? [])) {
+                    const indo = (w?.indo ?? "").trim();
+                    if (!indo) continue;
+                    if (shouldExcludeWordFromPool(indo)) continue;
+                    wordCount++;
+                }
+            }
+            if (allowSentence) {
+                for (const s of (data.sentences ?? [])) {
+                    const indo = (s?.indo ?? "").trim();
+                    if (!indo) continue;
+                    sentenceCount++;
+                }
+            }
         }
 
         const total = wordCount + sentenceCount;
@@ -285,7 +442,7 @@ export async function loadModulesMeta() {
         allBestStreak = Math.max(allBestStreak, stats.bestStreak ?? 0);
     }
 
-    return {
+    const out = {
         "Smart Modes": [
             {
                 name: "All Modules",
@@ -306,7 +463,27 @@ export async function loadModulesMeta() {
                 bestStreak: 0,
                 currentStreak: 0
             }
-        ],
-        ...grouped
+        ]
     };
+
+    // Stable ordering (so UI grouping isn't dependent on JSON insertion order).
+    const remainingCats = Object.keys(grouped).filter(c => !CATEGORY_ORDER.includes(c)).sort();
+    const cats = [...CATEGORY_ORDER.filter(c => grouped[c]), ...remainingCats];
+
+    for (const cat of cats) {
+        const subgroups = grouped[cat];
+        if (!subgroups) continue;
+
+        const orderedSub = {};
+        const wanted = SUBCATEGORY_ORDER[cat] ?? [];
+        const remainingSubs = Object.keys(subgroups).filter(s => !wanted.includes(s)).sort();
+        const subs = [...wanted.filter(s => subgroups[s]), ...remainingSubs];
+
+        for (const sub of subs) {
+            orderedSub[sub] = subgroups[sub].slice().sort((a, b) => a.name.localeCompare(b.name));
+        }
+        out[cat] = orderedSub;
+    }
+
+    return out;
 }
