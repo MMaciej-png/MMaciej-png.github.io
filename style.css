@@ -107,6 +107,9 @@ body {
 #play-area {
   margin: 20px 0;
   height: 820px;
+  /* No internal scrolling here; sheets are overlays now */
+  overflow: visible;
+  position: relative;
 }
 
 #play-area input {
@@ -400,13 +403,19 @@ body {
   text-transform: uppercase;
 
   opacity: 0.85;
-  pointer-events: none;
+  pointer-events: auto;
   user-select: none;
+  cursor: pointer;
 
   background: rgba(255, 255, 255, 0.08);
   color: #e5e7eb;
 
   backdrop-filter: blur(6px);
+}
+
+.card-register:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
 }
 
 .card-register[data-register="formal"] {
@@ -425,6 +434,210 @@ body {
   background: rgba(148, 163, 184, 0.18);
   /* gray */
   color: #e5e7eb;
+}
+
+/* ===============================
+   CARD BADGES (TOKENS / META)
+=============================== */
+
+.card-badges,
+.card-meta-badges {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Token badges sit above the register pill */
+.card-badges {
+  bottom: 64px;
+}
+
+/* Meta badges (e.g. SPOKEN) can sit slightly higher */
+.card-meta-badges {
+  bottom: 98px;
+}
+
+/* If there are no token badges, drop meta badges down (no gap). */
+.card-badges:empty + .card-meta-badges {
+  bottom: 64px;
+}
+
+.card-badge {
+  pointer-events: auto; /* allow tooltip hover */
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.10);
+  color: #e5e7eb;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.card-badge {
+  appearance: none;
+}
+
+button.card-badge {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ===============================
+   TAGS PANEL (BOTTOM SHEET)
+   Fixed overlay: does NOT affect layout
+=============================== */
+
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  /* No dimming — keep page fully visible */
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+  transition: none;
+  z-index: 900;
+}
+
+.sheet-backdrop.is-open {
+  opacity: 0;
+  /* Keep the site usable while a sheet is open */
+  pointer-events: none;
+}
+
+.tags-panel {
+  /* Anchor to the main play area so it covers the speech controls region */
+  position: absolute;
+  left: 50%;
+  /* Match the gap between answer input and speech controls */
+  bottom: -20px;
+  transform: translate(-50%, 120%);
+
+  /* Match main app column width */
+  width: min(420px, 100%);
+  /* Ensure it covers BOTH speech controls even for short content */
+  min-height: 240px;
+  max-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* Match site spacing (body/app use 20px) */
+  padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 0px));
+  border-radius: 16px;
+  background: #1e2333;
+  border: 1px solid #2a2f3f;
+  color: #e5e7eb;
+  font-size: 0.95em;
+
+  box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.65);
+
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1000;
+
+  transition: transform 220ms ease, opacity 160ms ease;
+}
+
+.tags-panel.is-open {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Affix panel has distinct color so it feels separate */
+.affix-panel {
+  /* Opaque purple-tinted surface (no transparency) */
+  background: #1b1733;
+  border-color: rgba(124, 58, 237, 0.28);
+}
+
+.affix-panel .tags-panel-title {
+  color: #ddd6fe;
+}
+
+.tags-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tags-panel-title {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #cbd5f5;
+  font-size: 0.85em;
+}
+
+.tags-panel-close {
+  appearance: none;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.12);
+  color: #fecaca;
+  border-radius: 999px;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tags-panel-close:hover {
+  background: rgba(239, 68, 68, 0.20);
+}
+
+.tags-panel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: auto;
+  min-height: 0;
+  padding-right: 4px;
+}
+
+.tags-panel-item {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.tags-panel-token {
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fde68a;
+}
+
+.tags-panel-meaning {
+  color: #c7c7c7;
+}
+
+.card-badge[data-badge-type="meta"] {
+  background: rgba(245, 158, 11, 0.18); /* amber */
+  border-color: rgba(245, 158, 11, 0.28);
+  color: #fde68a;
+}
+
+.card-badge[data-badge-type="affix"] {
+  background: rgba(124, 58, 237, 0.18); /* purple */
+  border-color: rgba(124, 58, 237, 0.28);
+  color: #ddd6fe;
 }
 
 
@@ -809,6 +1022,58 @@ body.light .bottom-bar button {
   font-size: x-large;
 }
 
+/* ===============================
+   MODULE TOGGLES GRID (2x2)
+=============================== */
+
+.module-toggles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.module-toggle-btn {
+  appearance: none;
+  border: 1px solid #2a2f3f;
+  background: #1e2333;
+  color: #e5e7eb;
+  border-radius: 12px;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.85em;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.module-toggle-btn:hover {
+  background: #232a40;
+}
+
+.module-toggle-btn[data-state="on"] {
+  box-shadow: 0 0 0 1px rgba(16, 185, 129, .35);
+  border-color: rgba(16, 185, 129, 0.45);
+}
+
+/* Distinct colors per toggle */
+.module-toggle-btn.toggle-content {
+  background: rgba(59, 130, 246, 0.14);
+  border-color: rgba(59, 130, 246, 0.28);
+}
+.module-toggle-btn.toggle-register {
+  background: rgba(124, 58, 237, 0.12);
+  border-color: rgba(124, 58, 237, 0.26);
+}
+.module-toggle-btn.toggle-particles {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.26);
+}
+.module-toggle-btn.toggle-affix {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.26);
+}
+
 /* Label styling */
 .tts-control label {
   font-size: 0.75em;
@@ -948,6 +1213,8 @@ body.light .bottom-bar button {
     height: auto;
     max-height: none;
   }
+
+  /* Sheets are overlays; main area can behave normally */
 
   /* FRONT visible */
   #casual-card:not(.flipped) #casual-back .tts-btn {

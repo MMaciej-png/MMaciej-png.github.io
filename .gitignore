@@ -15,3 +15,10 @@ node_modules/
 data/equivalence_scan*.json
 data/CLARITY_CHECK_FULL.md
 data/EQUIVALENCE_GAPS.md
+data/_tmp_*.py
+
+# Cursor/IDE project metadata
+.cursor/
+
+# Ignore all Markdown files
+*.md
