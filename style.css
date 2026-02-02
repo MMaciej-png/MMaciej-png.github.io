@@ -428,6 +428,13 @@ body {
 
 .card-register-meta .card-badge {
   pointer-events: auto;
+  /* Match the register pill sizing */
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: large;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
 }
 
 .card-register:focus-visible {
