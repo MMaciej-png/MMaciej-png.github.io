@@ -2,6 +2,19 @@ const MAX_429_RETRIES = 2;
 const RETRY_DELAYS_MS = [12000, 24000];
 
 /**
+ * Base URL for the chat API. Set window.INDOTRAINER_CHAT_API when deploying:
+ * - Leave unset (or "") for same-origin /api/chat (e.g. npm start, or frontend and backend on same host).
+ * - Set to your backend origin (e.g. "https://your-app.railway.app") when the frontend is on another host (e.g. GitHub Pages).
+ * The backend must proxy to OpenAI and set OPENAI_API_KEY in its environment (never put the key in the client).
+ */
+function getChatApiBase() {
+  if (typeof window !== "undefined" && window.INDOTRAINER_CHAT_API != null) {
+    return String(window.INDOTRAINER_CHAT_API).replace(/\/$/, "");
+  }
+  return "";
+}
+
+/**
  * Chat LLM client. Calls the app's /api/chat proxy (server holds OPENAI_API_KEY in env).
  * No API key is sent from the client.
  * On 429, retries up to MAX_429_RETRIES times with backoff (12s, 24s).
@@ -12,10 +25,12 @@ const RETRY_DELAYS_MS = [12000, 24000];
  */
 export async function sendChatMessage(opts, retryCount = 0) {
   const { messages, systemPrompt, model = "gpt-4o-mini" } = opts;
+  const apiBase = getChatApiBase();
+  const chatUrl = apiBase + "/api/chat";
 
   let res;
   try {
-    res = await fetch("/api/chat", {
+    res = await fetch(chatUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ messages, systemPrompt, model }),
