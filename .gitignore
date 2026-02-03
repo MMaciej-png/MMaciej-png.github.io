@@ -1,24 +1,49 @@
 # Environment variables (secrets)
 .env
 .env.*
+!.env.example
 
-# Node (if applicable)
+# Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
 
 # Logs
 *.log
+logs/
 
 # OS junk
 .DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / editors
+.cursor/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-*
+
+# Build / output (if added later)
+dist/
+build/
+out/
+.cache/
+coverage/
 
 # IndoTrainer generated reports / scans
 data/equivalence_scan*.json
 data/CLARITY_CHECK_FULL.md
 data/EQUIVALENCE_GAPS.md
 data/_tmp_*.py
-
-# Cursor/IDE project metadata
-.cursor/
 
 # Ignore all Markdown files
 *.md

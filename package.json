@@ -1,0 +1,10 @@
+{
+  "name": "indotrainer",
+  "version": "2.1.0",
+  "description": "Indonesian vocabulary trainer with practice chat",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "private": true
+}

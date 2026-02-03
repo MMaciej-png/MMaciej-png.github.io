@@ -639,5 +639,19 @@ export const casualEngine = (() => {
     document.getElementById("c-streak").textContent = "🔥 " + sessionStreak;
   }
 
-  return { start };
+  function getSelectedModuleNames() {
+    if (activeModules.size > 0) return [...activeModules];
+    return [...new Set(allItems.map((i) => i.module))];
+  }
+
+  function getVocabForChat() {
+    return items.map((i) => ({
+      indo: i.indo,
+      english: i.eng,
+      module: i.module,
+      register: i.register
+    }));
+  }
+
+  return { start, getSelectedModuleNames, getVocabForChat };
 })();
