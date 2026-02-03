@@ -23,20 +23,27 @@ export async function sendChatMessage(opts, retryCount = 0) {
   } catch (err) {
     return {
       content: "",
-      error: "Network error. Use the app at http://localhost:3000 (run: npm start) so chat can reach the API.",
+      error: "Chat needs a backend server. Run the app locally: npm start, then open http://localhost:3000. On a static site (e.g. GitHub Pages) chat is not available.",
     };
   }
 
   const data = await res.json().catch(() => ({}));
+  const contentType = res.headers.get("content-type") || "";
+  const isStaticSite =
+    res.status === 404 ||
+    (contentType.includes("text/html") && !data.choices?.length);
+  const staticSiteMessage =
+    "Chat isn’t available on this page. It only works when you run the app locally (npm start) or deploy the Node server with OPENAI_API_KEY set. This site is static and has no backend.";
 
   const getErrorMsg = () => {
+    if (isStaticSite) return staticSiteMessage;
     const err = data.error;
     if (res.status === 429) {
       return "Too many requests. Please wait a minute and try again.";
     }
     if (typeof err === "string") return err;
     if (err && typeof err.message === "string") return err.message;
-    return "Could not reach the API. Check your connection and that OPENAI_API_KEY is set.";
+    return "Could not reach the API. Run the app locally (npm start) so chat can use the server, or check that OPENAI_API_KEY is set on your backend.";
   };
 
   if (!res.ok) {
@@ -53,6 +60,10 @@ export async function sendChatMessage(opts, retryCount = 0) {
 
   if (data.error) {
     return { content: "", error: typeof data.error === "string" ? data.error : (data.error.message || getErrorMsg()) };
+  }
+
+  if (isStaticSite) {
+    return { content: "", error: staticSiteMessage };
   }
 
   const content = data.choices?.[0]?.message?.content ?? "";
