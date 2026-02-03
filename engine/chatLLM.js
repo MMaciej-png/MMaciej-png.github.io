@@ -46,9 +46,10 @@ export async function sendChatMessage(opts, retryCount = 0) {
   const contentType = res.headers.get("content-type") || "";
   const isStaticSite =
     res.status === 404 ||
+    res.status === 405 ||
     (contentType.includes("text/html") && !data.choices?.length);
   const staticSiteMessage =
-    "Chat isn’t available on this page. It only works when you run the app locally (npm start) or deploy the Node server with OPENAI_API_KEY set. This site is static and has no backend.";
+    "Chat isn’t available on this page. This site is static (e.g. GitHub Pages) and has no backend. To use chat: run the app locally (npm start) or deploy the Node server elsewhere and set your backend URL.";
 
   const getErrorMsg = () => {
     if (isStaticSite) return staticSiteMessage;

@@ -1,0 +1,17 @@
+# Render Blueprint: IndoTrainer chat API (Node server)
+# Deploy from repo root; set OPENAI_API_KEY in the Render Dashboard (Environment).
+# After deploy, set window.INDOTRAINER_CHAT_API to this service URL in your GitHub Pages app.
+
+services:
+  - type: web
+    name: indotrainer-chat-api
+    runtime: node
+    plan: free
+
+    buildCommand: npm install
+    startCommand: npm start
+
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+        # Set the value in Render Dashboard → Service → Environment (never commit the key).
