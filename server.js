@@ -27,6 +27,30 @@ if (fs.existsSync(envPath)) {
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const PORT = Number(process.env.PORT) || 3000;
 
+const ALLOWED_ORIGINS = new Set(
+  (process.env.ALLOWED_ORIGINS || "https://mmaciej-png.github.io,http://localhost:3000,http://127.0.0.1:3000")
+    .split(",")
+    .map((o) => o.trim())
+    .filter(Boolean)
+);
+
+function corsOrigin(req) {
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_ORIGINS.has(origin)) return origin;
+  if (origin && (origin.startsWith("http://localhost:") || origin.startsWith("http://127.0.0.1:"))) return origin;
+  return "*";
+}
+
+function corsHeaders(req) {
+  const o = corsOrigin(req);
+  return {
+    "Access-Control-Allow-Origin": o,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Max-Age": "86400",
+  };
+}
+
 function serveStatic(req, res, filePath) {
   const ext = path.extname(filePath);
   const types = {
@@ -52,8 +76,10 @@ function serveStatic(req, res, filePath) {
 }
 
 function proxyChat(req, res, body) {
+  const headers = { "Content-Type": "application/json", ...corsHeaders(req) };
+
   if (!OPENAI_API_KEY) {
-    res.writeHead(500, { "Content-Type": "application/json" });
+    res.writeHead(500, headers);
     res.end(JSON.stringify({ error: "OPENAI_API_KEY not set. Set it in .env or in the environment." }));
     return;
   }
@@ -62,14 +88,14 @@ function proxyChat(req, res, body) {
   try {
     payload = JSON.parse(body);
   } catch (e) {
-    res.writeHead(400, { "Content-Type": "application/json" });
+    res.writeHead(400, headers);
     res.end(JSON.stringify({ error: "Invalid JSON body" }));
     return;
   }
 
   const { messages, systemPrompt, model = "gpt-4o-mini" } = payload;
   if (!Array.isArray(messages) || !systemPrompt) {
-    res.writeHead(400, { "Content-Type": "application/json" });
+    res.writeHead(400, headers);
     res.end(JSON.stringify({ error: "messages and systemPrompt required" }));
     return;
   }
@@ -99,13 +125,13 @@ function proxyChat(req, res, body) {
     let data = "";
     proxyRes.on("data", (ch) => (data += ch));
     proxyRes.on("end", () => {
-      res.writeHead(proxyRes.statusCode, { "Content-Type": "application/json" });
+      res.writeHead(proxyRes.statusCode, { "Content-Type": "application/json", ...corsHeaders(req) });
       res.end(data);
     });
   });
 
   proxyReq.on("error", (err) => {
-    res.writeHead(502, { "Content-Type": "application/json" });
+    res.writeHead(502, headers);
     res.end(JSON.stringify({ error: "Proxy error: " + err.message }));
   });
 
@@ -114,11 +140,18 @@ function proxyChat(req, res, body) {
 }
 
 const server = http.createServer((req, res) => {
-  if (req.method === "POST" && req.url === "/api/chat") {
-    let body = "";
-    req.on("data", (ch) => (body += ch));
-    req.on("end", () => proxyChat(req, res, body));
-    return;
+  if (req.url === "/api/chat") {
+    if (req.method === "OPTIONS") {
+      res.writeHead(204, corsHeaders(req));
+      res.end();
+      return;
+    }
+    if (req.method === "POST") {
+      let body = "";
+      req.on("data", (ch) => (body += ch));
+      req.on("end", () => proxyChat(req, res, body));
+      return;
+    }
   }
 
   if (req.method !== "GET") {
