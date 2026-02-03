@@ -48,6 +48,7 @@ function corsHeaders(req) {
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400",
+    "Vary": "Origin",
   };
 }
 
@@ -140,9 +141,13 @@ function proxyChat(req, res, body) {
 }
 
 const server = http.createServer((req, res) => {
-  if (req.url === "/api/chat") {
+  const rawPath = (req.url || "").split("?")[0];
+  const pathname = rawPath.replace(/\/+$/, "") || "";
+  const isApiChat = pathname === "/api/chat";
+
+  if (isApiChat) {
     if (req.method === "OPTIONS") {
-      res.writeHead(204, corsHeaders(req));
+      res.writeHead(200, { ...corsHeaders(req), "Content-Length": "0" });
       res.end();
       return;
     }
@@ -152,6 +157,9 @@ const server = http.createServer((req, res) => {
       req.on("end", () => proxyChat(req, res, body));
       return;
     }
+    res.writeHead(405, { "Content-Type": "application/json", ...corsHeaders(req) });
+    res.end(JSON.stringify({ error: "Method not allowed" }));
+    return;
   }
 
   if (req.method !== "GET") {
