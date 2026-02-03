@@ -23,10 +23,12 @@ export const rankedEngine = (() => {
   function stop() {
     listeners.forEach(off => off());
     listeners = [];
-    root.innerHTML = "";
-    root.hidden = true;
-
-    document.getElementById("ranked-status").textContent = "Idle";
+    if (root) {
+      root.innerHTML = "";
+      root.hidden = true;
+    }
+    const statusEl = document.getElementById("ranked-status");
+    if (statusEl) statusEl.textContent = "Idle";
   }
 
   function buildDOM() {

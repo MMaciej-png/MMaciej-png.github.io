@@ -90,6 +90,7 @@
                         <!-- MODE TITLE -->
                         <div class="mode-title">
                             <span>Indonesian Trainer By Maciej</span>
+                            <button id="nav-chat" type="button" class="main-chat-btn" aria-label="Open practice chat">💬 Chat</button>
                         </div>
                         <!-- SESSION STATS -->
                         <div class="stats-row">
@@ -168,7 +169,8 @@
 
                 </div>
 
-
+                <!-- CHAT OVERLAY (same space as .app; API key in server env) -->
+                <div id="chat-overlay" class="chat-overlay" aria-hidden="true"></div>
 
             </div>
 
@@ -200,12 +202,6 @@
         </div>
     </div>
 
-    <!-- BOTTOM BAR -->
-    <nav class="bottom-bar">
-        <button id="nav-casual">🌿</button>
-        <button id="nav-ranked" disabled>🏆</button>
-    </nav>
-
     <!-- BOTTOM SHEET BACKDROP (for tag/affix popups) -->
     <div id="sheet-backdrop" class="sheet-backdrop hidden" aria-hidden="true"></div>
 
@@ -213,16 +209,33 @@
     <script type="module">
         import { casualEngine } from "./modes/casual.js";
         import { rankedEngine } from "./modes/ranked.js";
+        import { createChatPanel } from "./ui/chatUI.js";
 
-        document.getElementById("nav-casual").onclick = () => {
-            rankedEngine.stop();
-            casualEngine.start();
+        const chatOverlay = document.getElementById("chat-overlay");
+        chatOverlay.inert = true;
+        const chatPanel = createChatPanel({
+            containerEl: chatOverlay,
+            getVocabForChat: () => casualEngine.getVocabForChat(),
+            getSelectedModuleNames: () => casualEngine.getSelectedModuleNames(),
+            onClose: () => {
+                const navChat = document.getElementById("nav-chat");
+                if (navChat) navChat.focus();
+                chatOverlay.classList.remove("is-open");
+                chatOverlay.setAttribute("aria-hidden", "true");
+                chatOverlay.inert = true;
+            },
+        });
+
+        document.getElementById("nav-chat").onclick = () => {
+            chatOverlay.classList.add("is-open");
+            chatOverlay.setAttribute("aria-hidden", "false");
+            chatOverlay.inert = false;
+            chatPanel.open();
         };
 
-        document.getElementById("nav-ranked").onclick = () => {
-            casualEngine.stop();
-            rankedEngine.start();
-        };
+        chatOverlay.addEventListener("click", (e) => {
+            if (e.target === chatOverlay) chatPanel.close();
+        });
 
         // ---------- SCALE TO MATCH MAIN GAME WIDTH ----------
         function scaleToScreen() {
