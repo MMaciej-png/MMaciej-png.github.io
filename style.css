@@ -1047,10 +1047,70 @@ body.light input {
   color: #111827;
 }
 
+.card-input-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
 #casual-input {
+  flex: 1;
+  min-width: 0;
   min-height: 100px;
+  max-height: 200px;
+  padding: 12px 14px;
+  line-height: 1.4;
   text-align: center;
   font-size: x-large;
+  box-sizing: border-box;
+  resize: none;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  /* Match #play-area input (textarea doesn't match that rule) */
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #1e2333;
+  color: #fff;
+}
+
+#casual-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.card-mic-btn {
+
+  min-height: 100px;
+  padding: 12px 14px;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  background: rgba(59, 130, 246, 0.15);
+  color: #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: x-large;
+  flex-shrink: 0;
+}
+
+.card-mic-btn:hover:not(:disabled):not(.is-listening),
+.card-mic-btn:focus-visible:not(:disabled):not(.is-listening) {
+  background: rgba(59, 130, 246, 0.25);
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+}
+
+.card-mic-btn.is-listening {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: rgba(239, 68, 68, 0.6);
+  color: #fca5a5;
+  animation: chat-mic-pulse 1s ease-in-out infinite;
+}
+
+.card-mic-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* ======================================================
@@ -1677,6 +1737,40 @@ body.light input {
 }
 
 .chat-send:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.chat-mic-btn {
+  padding: 10px 14px;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
+
+.chat-mic-btn:hover:not(:disabled):not(.is-listening),
+.chat-mic-btn:focus-visible:not(:disabled):not(.is-listening) {
+  background: rgba(59, 130, 246, 0.25);
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+}
+
+.chat-mic-btn.is-listening {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: rgba(239, 68, 68, 0.6);
+  color: #fca5a5;
+  animation: chat-mic-pulse 1s ease-in-out infinite;
+}
+
+@keyframes chat-mic-pulse {
+  50% { opacity: 0.8; }
+}
+
+.chat-mic-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }

@@ -5,6 +5,7 @@
 import { formatVocabForPrompt } from "../engine/chatVocab.js";
 import { sendChatMessage } from "../engine/chatLLM.js";
 import { speak } from "../core/tts.js";
+import { isSpeechRecognitionSupported, createSpeechRecognition } from "../core/speechRecognition.js";
 
 const MODEL = "gpt-4o-mini";
 
@@ -189,14 +190,27 @@ export function createChatPanel(opts) {
   const input = document.createElement("input");
   input.type = "text";
   input.className = "chat-input";
-  input.placeholder = "Type in Indonesian or ask for help…";
+  const INPUT_PLACEHOLDER = "Type in Indonesian or ask for help…";
+  input.placeholder = INPUT_PLACEHOLDER;
   input.setAttribute("aria-label", "Chat message");
   const sendBtn = document.createElement("button");
   sendBtn.type = "button";
   sendBtn.className = "chat-send";
   sendBtn.textContent = "Send";
   sendBtn.setAttribute("aria-label", "Send message");
+
+  let micBtn = null;
+  if (isSpeechRecognitionSupported()) {
+    micBtn = document.createElement("button");
+    micBtn.type = "button";
+    micBtn.className = "chat-mic-btn";
+    micBtn.innerHTML = "🎤";
+    micBtn.setAttribute("aria-label", "Speak message");
+    micBtn.setAttribute("aria-pressed", "false");
+  }
+
   inputWrap.appendChild(input);
+  if (micBtn) inputWrap.appendChild(micBtn);
   inputWrap.appendChild(sendBtn);
 
   suggestionsBar.appendChild(suggestionsBtn);
@@ -364,7 +378,16 @@ export function createChatPanel(opts) {
     input.disabled = on;
     suggestionsBtn.disabled = on;
     helpBtn.disabled = on;
+    if (micBtn) micBtn.disabled = on;
     if (on) render();
+  }
+
+  function setMicListening(on) {
+    if (!micBtn) return;
+    micBtn.classList.toggle("is-listening", on);
+    micBtn.setAttribute("aria-pressed", String(on));
+    micBtn.disabled = loading;
+    input.placeholder = on ? "Listening in Indonesian…" : INPUT_PLACEHOLDER;
   }
 
   async function doSend(overrideText) {
@@ -469,6 +492,43 @@ export function createChatPanel(opts) {
   sendBtn.onclick = () => doSend();
   suggestionsBtn.onclick = () => doSend("Give me suggestions.");
   helpBtn.onclick = () => doSend("I don't understand");
+
+  if (micBtn) {
+    let currentRec = null;
+
+    micBtn.onclick = () => {
+      if (loading) return;
+
+      if (micBtn.classList.contains("is-listening")) {
+        if (currentRec) currentRec.stop();
+        setMicListening(false);
+        return;
+      }
+
+      const rec = createSpeechRecognition({
+        lang: "id-ID",
+        onResult(transcript) {
+          const current = input.value.trim();
+          input.value = current ? `${current} ${transcript}` : transcript;
+          input.focus();
+        },
+        onError() {
+          currentRec = null;
+          setMicListening(false);
+        },
+        onEnd() {
+          currentRec = null;
+          setMicListening(false);
+        },
+      });
+      if (rec) {
+        currentRec = rec;
+        setMicListening(true);
+        rec.start();
+      }
+    };
+  }
+
   input.onkeydown = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();

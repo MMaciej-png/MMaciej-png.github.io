@@ -190,7 +190,7 @@ const EN_EQUIVALENTS = [
    MEANING / CLARIFICATION
    =============================== */
 
-[/\b(mean|means|meaning)\b/g, "mean"],
+  [/\b(mean|means|meaning)\b/g, "mean"],
 
   /* ===============================
      NORMALISE PUNCTUATION / STYLE

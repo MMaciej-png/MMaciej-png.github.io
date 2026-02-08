@@ -1,9 +1,6 @@
 /* engine/scoring.js */
 
-/**
- * Casual scoring rules (verbatim from casual.js)
- * Ranked will use different functions later.
- */
+/** Casual scoring rules. */
 
 export function applySuccess({ item, attemptsLeft }) {
   const delta =

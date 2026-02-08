@@ -27,6 +27,7 @@ export function createInputController({
     function handleKeyDown(e) {
         if (e.key !== "Enter") return;
         if (flip.isTransitioning) return;
+        e.preventDefault();
 
         // ANSWER SIDE
         if (cardEl.classList.contains("flipped")) {
