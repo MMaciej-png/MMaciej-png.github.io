@@ -37,7 +37,6 @@ A vocabulary and conversation trainer for Indonesian. Flip cards, practice with 
 - **Donate** – ☕ Donate button (e.g. Buy Me a Coffee) in the main title row; link is configurable in `index.html`.
 - **Responsive** – Layout scales for different viewport sizes; rescaling runs when the practice chat is opened or closed.
 - **Keyboard** – Enter to submit translation; Tab, Enter, and focus handling for accessibility.
-- **Ranked mode** – Placeholder section (hidden by default) for a future ranked mode.
 
 ---
 
@@ -113,7 +112,7 @@ A vocabulary and conversation trainer for Indonesian. Flip cards, practice with 
 | `core/` | TTS, audio, text/affix tags |
 | `data/` | Load/save logic, `NewContent.json`, module meta, lifetime stats |
 | `engine/` | Flip card, input, scoring, selection, rank, translate, chat LLM/vocab |
-| `modes/` | Casual (main) and ranked (stub) mode logic |
+| `modes/` | Casual (main) mode logic |
 | `ui/` | Card renderer, modules list, rank display, session stats, chat UI |
 | `images/` | Rank badges (e.g. BRONZE, SILVER) and flags |
 | `sounds/` | Correct/wrong sound files |

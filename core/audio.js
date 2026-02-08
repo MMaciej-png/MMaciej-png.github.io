@@ -15,8 +15,8 @@ export function playWrong() {
   wrong.currentTime = 0;
   wrong.play();
 }
-
 export function playClick() {
   click.currentTime = 0;
   click.play();
 }
+

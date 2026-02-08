@@ -16,6 +16,7 @@ import { applySuccess, applyFail } from "../engine/scoring.js";
 import { createFlipController } from "../engine/flipcard.js";
 import { createInputController } from "../engine/inputController.js";
 import { createCardRenderer } from "../ui/cardRenderer.js";
+import { isSpeechRecognitionSupported, createSpeechRecognition } from "../core/speechRecognition.js";
 
 import { getCasualSR } from "../data/casualSR.js";
 import { updateCasualRankUI } from "../ui/rankUI.js";
@@ -399,6 +400,13 @@ export const casualEngine = (() => {
 
     await refreshModulesPanel();
 
+    /* ---------- MIC (voice input) – set up before flip so we can update mic in callbacks ---------- */
+
+    const micBtn = document.getElementById("casual-mic-btn");
+    const INPUT_PLACEHOLDER = "Type translation and press Enter";
+    let currentRec = null;
+    let stopMicOnNewCard = () => {};
+
     /* ---------- FLIP ---------- */
 
     flip = createFlipController(card);
@@ -414,11 +422,11 @@ export const casualEngine = (() => {
     );
 
     flip.setOnAnswerShown(() => {
-
       nextItem = weightedRandom(getCandidatePoolForPick());
       if (!nextItem) return;
       nextRender = renderer.buildRender(nextItem);
       renderer.renderFront(nextRender);
+      if (micBtn) micBtn.disabled = true;
     });
 
     flip.setOnQuestionShown(() => {
@@ -436,9 +444,12 @@ export const casualEngine = (() => {
 
       renderer.renderBack(currentRender);
       input.value = "";
+      fitInputText();
       input.focus();
+      stopMicOnNewCard();
 
       card.classList.remove("correct", "wrong");
+      if (micBtn) micBtn.disabled = false;
     });
 
     /* ---------- INPUT ---------- */
@@ -465,6 +476,95 @@ export const casualEngine = (() => {
     });
 
     inputController.bind();
+
+    /* ---------- TRANSLATION INPUT – auto-fit font size ---------- */
+
+    const MIN_INPUT_FONT_SIZE = 14;
+    const MAX_INPUT_FONT_SIZE = 24;
+
+    function fitInputText() {
+      if (!input.value.trim()) {
+        input.style.fontSize = "";
+        input.style.height = "";
+        return;
+      }
+      let size = MAX_INPUT_FONT_SIZE;
+      input.style.fontSize = `${size}px`;
+      while (size > MIN_INPUT_FONT_SIZE && input.scrollWidth > input.clientWidth) {
+        size -= 2;
+        input.style.fontSize = `${size}px`;
+      }
+      input.style.height = "auto";
+      input.style.height = Math.min(input.scrollHeight, 200) + "px";
+    }
+
+    input.addEventListener("input", fitInputText);
+    input.addEventListener("paste", () => setTimeout(fitInputText, 0));
+
+    /* ---------- MIC (voice input) – wire up if supported ---------- */
+
+    if (micBtn && isSpeechRecognitionSupported()) {
+      micBtn.style.display = "";
+      micBtn.disabled = card.classList.contains("flipped");
+
+      function setMicListening(on) {
+        micBtn.classList.toggle("is-listening", on);
+        micBtn.setAttribute("aria-pressed", String(on));
+        if (!on) micBtn.disabled = locked || card.classList.contains("flipped");
+        input.placeholder = on
+          ? (currentRender?.answerLang === "indo" ? "Listening in Indonesian…" : "Listening in English…")
+          : INPUT_PLACEHOLDER;
+      }
+
+      stopMicOnNewCard = () => {
+        if (currentRec) {
+          currentRec.stop();
+        }
+        setMicListening(false);
+      };
+
+      micBtn.onclick = () => {
+        if (locked || card.classList.contains("flipped") || !current) return;
+
+        if (micBtn.classList.contains("is-listening")) {
+          stopMicOnNewCard();
+          return;
+        }
+
+        const lang = currentRender?.answerLang === "indo" ? "id-ID" : "en-US";
+
+        const rec = createSpeechRecognition({
+          lang,
+          onResult(transcript) {
+            input.value = transcript;
+            fitInputText();
+            input.focus();
+          },
+          onError() {
+            currentRec = null;
+            setMicListening(false);
+          },
+          onEnd() {
+            currentRec = null;
+            setMicListening(false);
+          },
+        });
+
+        if (rec) {
+          currentRec = rec;
+          setMicListening(true);
+          rec.start();
+        }
+      };
+
+      const origSetLocked = inputController.setLocked;
+      inputController.setLocked = (v) => {
+        origSetLocked(v);
+        if (!micBtn.classList.contains("is-listening")) {
+          micBtn.disabled = locked || card.classList.contains("flipped");
+        }
+      };
+    }
 
     /* ---------- TTS ---------- */
 

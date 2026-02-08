@@ -152,7 +152,10 @@
                         <div id="c-affix-panel" class="tags-panel affix-panel" aria-hidden="true"></div>
 
                         <!-- INPUT -->
-                        <input id="casual-input" placeholder="Type translation and press Enter" autocomplete="off" />
+                        <div class="card-input-wrap">
+                            <textarea id="casual-input" placeholder="Type translation and press Enter" autocomplete="off" rows="1"></textarea>
+                            <button id="casual-mic-btn" type="button" class="card-mic-btn" aria-label="Speak translation" aria-pressed="false" style="display:none">🎤</button>
+                        </div>
 
                         <!-- SPEECH VOLUME -->
                         <div class="tts-control">
@@ -167,9 +170,6 @@
                         </div>
 
                     </section>
-
-                    <!-- RANKED MODE (hidden for now) -->
-                    <section id="ranked-root" hidden></section>
 
                 </div>
 
@@ -213,7 +213,6 @@
     <script>window.INDOTRAINER_CHAT_API = "https://mmaciej-png-github-io.onrender.com";</script>
     <script type="module">
         import { casualEngine } from "./modes/casual.js";
-        import { rankedEngine } from "./modes/ranked.js";
         import { createChatPanel } from "./ui/chatUI.js";
 
         const chatOverlay = document.getElementById("chat-overlay");
