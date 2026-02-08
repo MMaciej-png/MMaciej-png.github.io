@@ -36,7 +36,7 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Small Talk"
   },
 
-  "Agreement / Disagreement (Setuju / Nggak setuju)": {
+  "Agreeing & Disagreeing": {
     category: "Conversation",
     subcategory: "Small Talk"
   },
@@ -46,7 +46,7 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Planning"
   },
 
-  "Accepting / Declining (Gak dulu / Lain kali)": {
+  "Accepting & Declining": {
     category: "Conversation",
     subcategory: "Planning"
   },
@@ -61,7 +61,7 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Goodbyes"
   },
 
-  "Jakarta Pronouns & Core Slang (Gue / Lu)": {
+  "Jakarta Pronouns (Gue / Lu)": {
     category: "Jakarta / Texting",
     subcategory: "Pronouns & Slang"
   },
@@ -98,12 +98,12 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Connectors"
   },
 
-  "Chat Particles (Nih / Sih / Kok / Dong / Deh / Tuh)": {
+  "Chat Softeners": {
     category: "Jakarta / Texting",
     subcategory: "Particles"
   },
 
-  "Texting Shorteners (gpp / bgt / udh / blm / otw / wkwk)": {
+  "Text Abbreviations": {
     category: "Jakarta / Texting",
     subcategory: "Shorteners"
   },
@@ -151,82 +151,82 @@ const MODULE_CATEGORY_MAP = {
 
 
   // ─────────────────────────────
-  // Doing & Needs
+  // Actions & Feelings
   // State, ability, requests, choices
   // ─────────────────────────────
 
-  "How I’m Doing (Positive)": {
-    category: "Doing & Needs",
+  "How I’m doing (positive)": {
+    category: "Actions & Feelings",
     subcategory: "State"
   },
 
-  "How I’m Doing (Negative)": {
-    category: "Doing & Needs",
+  "How I’m doing (negative)": {
+    category: "Actions & Feelings",
     subcategory: "State"
   },
 
   "Softening (Agak / Kayak / Lumayan)": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Tone"
   },
 
   "Knowing & Ability": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Ability"
   },
 
   "Understanding": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Ability"
   },
 
-  "Meaning & Clarification": {
-    category: "Doing & Needs",
+  "What do you mean?": {
+    category: "Actions & Feelings",
     subcategory: "Ability"
   },
 
   "Questions (Yes / No)": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Patterns"
   },
 
-  "Asking Opinions (Menurut kamu gimana?)": {
-    category: "Doing & Needs",
+  "Asking opinions": {
+    category: "Actions & Feelings",
     subcategory: "Patterns"
   },
 
   "Requests & Help": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Requests"
   },
 
   "Wait / Hold on (Bentar / Tunggu)": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Requests"
   },
 
-  "I mean… / What I meant… (Maksudku…)": {
-    category: "Doing & Needs",
+  "Clarifying (Maksudku…)": {
+    category: "Actions & Feelings",
     subcategory: "Ability"
   },
 
-  "Say it again / Slower (Ulangi / Pelan-pelan)": {
-    category: "Doing & Needs",
+  "Repeat / Slower": {
+    category: "Actions & Feelings",
     subcategory: "Ability"
   },
 
   "What I’m Doing": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Actions"
   },
 
   "Plans & Timing": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Actions"
   },
 
   "Preferences & Choices": {
-    category: "Doing & Needs",
+    category: "Actions & Feelings",
     subcategory: "Preferences"
   },
 
@@ -262,7 +262,7 @@ const MODULE_CATEGORY_MAP = {
     subcategory: "Everyday"
   },
 
-  "Messaging Basics (Lagi di mana? / OTW)": {
+  "Messaging Basics": {
     category: "Jakarta / Texting",
     subcategory: "Chatting"
   },
@@ -292,25 +292,65 @@ const MODULE_CATEGORY_MAP = {
   "Existence & Availability": {
     category: "Basics",
     subcategory: "Core"
+  },
+
+  "Emotions & Empathy": {
+    category: "Actions & Feelings",
+    subcategory: "State"
+  },
+
+  "Sharing News": {
+    category: "Conversation",
+    subcategory: "Small Talk"
+  },
+
+  "Compliments": {
+    category: "Conversation",
+    subcategory: "Small Talk"
+  },
+
+  "Frequency & Habits": {
+    category: "Sentence Building",
+    subcategory: "Time"
+  },
+
+  "Casual Venting": {
+    category: "Daily Life",
+    subcategory: "Everyday"
+  },
+
+  "Topic Shift": {
+    category: "Conversation",
+    subcategory: "Small Talk"
+  },
+
+  "Casual Pushback": {
+    category: "Conversation",
+    subcategory: "Small Talk"
+  },
+
+  "As / Like (Kayak / Seperti / Maksudnya)": {
+    category: "Sentence Building",
+    subcategory: "Connectors"
   }
 
 };
 
 const CATEGORY_ORDER = [
   "Smart Modes",
-  "Conversation",
-  "Jakarta / Texting",
-  "Doing & Needs",
-  "Sentence Building",
-  "Daily Life",
   "Basics",
+  "Conversation",
+  "Sentence Building",
+  "Actions & Feelings",
+  "Daily Life",
+  "Jakarta / Texting",
   "Other"
 ];
 
 const SUBCATEGORY_ORDER = {
   "Conversation": ["Greetings", "Small Talk", "Planning", "Politeness", "Goodbyes"],
   "Jakarta / Texting": ["Particles", "Shorteners", "Pronouns & Slang", "Chatting"],
-  "Doing & Needs": ["State", "Tone", "Ability", "Patterns", "Requests", "Actions", "Preferences"],
+  "Actions & Feelings": ["State", "Tone", "Ability", "Patterns", "Requests", "Actions", "Preferences"],
   "Sentence Building": ["Connectors", "Reference", "Time"],
   "Daily Life": ["Everyday", "Movement", "Places"],
   "Basics": ["Core"],

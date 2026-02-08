@@ -149,7 +149,15 @@ body {
   text-align: center;
 }
 
-.main-chat-btn {
+.mode-title-actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-chat-btn,
+.donate-btn {
   flex-shrink: 0;
   appearance: none;
   border: 1px solid rgba(148, 163, 184, 0.4);
@@ -161,14 +169,35 @@ body {
   cursor: pointer;
   min-width: 44px;
   min-height: 44px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 600;
 }
 
 .main-chat-btn:hover,
-.main-chat-btn:focus-visible {
+.main-chat-btn:focus-visible,
+.donate-btn:hover,
+.donate-btn:focus-visible {
   background: rgba(148, 163, 184, 0.2);
   color: #e5e7eb;
   outline: 2px solid rgba(148, 163, 184, 0.5);
   outline-offset: 2px;
+}
+
+.donate-btn {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: #fcd34d;
+}
+
+.donate-btn:hover,
+.donate-btn:focus-visible {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fde68a;
+  outline-color: rgba(245, 158, 11, 0.5);
 }
 
 

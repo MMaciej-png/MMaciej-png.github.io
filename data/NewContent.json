@@ -1104,7 +1104,7 @@
             ]
         }
     },
-    "How I’m Doing (Positive)": {
+    "How I’m doing (positive)": {
         "neutral": {
             "words": [
                 {
@@ -1228,7 +1228,7 @@
             ]
         }
     },
-    "How I’m Doing (Negative)": {
+    "How I’m doing (negative)": {
         "neutral": {
             "words": [
                 {
@@ -1680,7 +1680,7 @@
             ]
         }
     },
-    "Meaning & Clarification": {
+    "What do you mean?": {
         "neutral": {
             "words": [
                 {
@@ -3566,7 +3566,7 @@
             ]
         }
     },
-    "Agreement / Disagreement (Setuju / Nggak setuju)": {
+    "Agreeing & Disagreeing": {
         "neutral": {
             "words": [
                 {
@@ -3654,7 +3654,7 @@
             ]
         }
     },
-    "Asking Opinions (Menurut kamu gimana?)": {
+    "Asking opinions": {
         "neutral": {
             "words": [
                 {
@@ -3898,7 +3898,7 @@
             ]
         }
     },
-    "I mean… / What I meant… (Maksudku…)": {
+    "Clarifying (Maksudku…)": {
         "neutral": {
             "words": [
                 {
@@ -3974,7 +3974,7 @@
             ]
         }
     },
-    "Say it again / Slower (Ulangi / Pelan-pelan)": {
+    "Repeat / Slower": {
         "neutral": {
             "words": [
                 {
@@ -4122,7 +4122,7 @@
             ]
         }
     },
-    "Accepting / Declining (Gak dulu / Lain kali)": {
+    "Accepting & Declining": {
         "neutral": {
             "words": [
                 {
@@ -4230,7 +4230,7 @@
             ]
         }
     },
-    "Messaging Basics (Lagi di mana? / OTW)": {
+    "Messaging Basics": {
         "neutral": {
             "words": [
                 {
@@ -4346,7 +4346,7 @@
             ]
         }
     },
-    "Jakarta Pronouns & Core Slang (Gue / Lu)": {
+    "Jakarta Pronouns (Gue / Lu)": {
         "neutral": {
             "words": [
                 {
@@ -4474,7 +4474,7 @@
             ]
         }
     },
-    "Chat Particles (Nih / Sih / Kok / Dong / Deh / Tuh)": {
+    "Chat Softeners": {
         "neutral": {
             "words": [
                 {
@@ -4547,7 +4547,7 @@
             "sentences": []
         }
     },
-    "Texting Shorteners (gpp / bgt / udh / blm / otw / wkwk)": {
+    "Text Abbreviations": {
         "neutral": {
             "words": [],
             "sentences": []
@@ -4764,6 +4764,336 @@
                     "indo": "Mari kita bertemu.",
                     "english": "Let’s meet."
                 }
+            ]
+        }
+    },
+    "Emotions & Empathy": {
+        "neutral": {
+            "words": [
+                {"indo": "Seru", "english": "Fun / Exciting"},
+                {"indo": "Bosan", "english": "Bored"},
+                {"indo": "Kasihan", "english": "Pitiful / Poor thing"},
+                {"indo": "Waduh", "english": "Oh no / Wow"},
+                {"indo": "Duh", "english": "Oh dear"},
+                {"indo": "Astaga", "english": "Oh my"}
+            ],
+            "sentences": [
+                {"indo": "Seru banget.", "english": "So fun."},
+                {"indo": "Bosan banget.", "english": "So bored."},
+                {"indo": "Kasihan deh.", "english": "Poor thing."},
+                {"indo": "Waduh!", "english": "Oh no!"},
+                {"indo": "Duh.", "english": "Oh dear."},
+                {"indo": "Astaga.", "english": "Oh my."}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Aku", "english": "I / Me"},
+                {"indo": "Gugup", "english": "Nervous"},
+                {"indo": "Kangen", "english": "Miss"},
+                {"indo": "Kesal", "english": "Annoyed"},
+                {"indo": "Banget", "english": "Very / Really"},
+                {"indo": "Nih", "english": "Softener / emphasis"},
+                {"indo": "Deh", "english": "Softener / casual closure"},
+                {"indo": "Gimana", "english": "How (spoken)"}
+            ],
+            "sentences": [
+                {"indo": "Aku bosan nih.", "english": "I'm bored."},
+                {"indo": "Aku gugup.", "english": "I'm nervous."},
+                {"indo": "Aku gugup nih.", "english": "I'm nervous."},
+                {"indo": "Aku kangen.", "english": "I miss you."},
+                {"indo": "Aku kangen nih.", "english": "I miss you."},
+                {"indo": "Aku kesal nih.", "english": "I'm annoyed."},
+                {"indo": "Aku kesal deh.", "english": "I'm annoyed."},
+                {"indo": "Kasihan deh.", "english": "Poor thing."},
+                {"indo": "Gimana nih?", "english": "How about it?"}
+            ]
+        },
+        "formal": {
+            "words": [
+                {"indo": "Saya", "english": "I / Me"},
+                {"indo": "Gugup", "english": "Nervous"},
+                {"indo": "Rindu", "english": "Miss"}
+            ],
+            "sentences": [
+                {"indo": "Saya bosan.", "english": "I'm bored."},
+                {"indo": "Saya gugup.", "english": "I'm nervous."},
+                {"indo": "Saya rindu.", "english": "I miss you."}
+            ]
+        }
+    },
+    "Sharing News": {
+        "neutral": {
+            "words": [
+                {"indo": "Tau", "english": "Know (spoken)"},
+                {"indo": "Ga", "english": "Not (spoken)"},
+                {"indo": "Denger", "english": "Hear (spoken)"}
+            ],
+            "sentences": [
+                {"indo": "Tau ga?", "english": "You know what?"},
+                {"indo": "Denger ga?", "english": "Did you hear?"},
+                {"indo": "Eh tau ga?", "english": "Hey, you know what?"}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Tau", "english": "Know (spoken)"},
+                {"indo": "Gak", "english": "Not (spoken)"},
+                {"indo": "Denger", "english": "Hear (spoken)"},
+                {"indo": "Eh", "english": "Hey (spoken)"},
+                {"indo": "Sih", "english": "Softener / emphasis"}
+            ],
+            "sentences": [
+                {"indo": "Tau gak?", "english": "You know what?"},
+                {"indo": "Tau gak sih?", "english": "You know what?"},
+                {"indo": "Denger gak?", "english": "Did you hear?"},
+                {"indo": "Eh tau gak?", "english": "Hey, you know what?"}
+            ]
+        },
+        "formal": {"words": [], "sentences": []}
+    },
+    "Compliments": {
+        "neutral": {
+            "words": [
+                {"indo": "Keren", "english": "Cool / Awesome"},
+                {"indo": "Mantap", "english": "Awesome"},
+                {"indo": "Bagus", "english": "Good / Nice"},
+                {"indo": "Banget", "english": "Very / Really"},
+                {"indo": "Asik", "english": "Fun / Cool"},
+                {"indo": "Sekali", "english": "Very / Really"}
+            ],
+            "sentences": [
+                {"indo": "Keren banget.", "english": "So cool."},
+                {"indo": "Mantap!", "english": "Awesome!"},
+                {"indo": "Bagus banget.", "english": "Really good."},
+                {"indo": "Asik banget.", "english": "So fun."}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Keren", "english": "Cool / Awesome"},
+                {"indo": "Banget", "english": "Very / Really"},
+                {"indo": "Nih", "english": "Softener / emphasis"}
+            ],
+            "sentences": [
+                {"indo": "Keren banget nih.", "english": "So cool."},
+                {"indo": "Mantap banget.", "english": "Really awesome."},
+                {"indo": "Mantap banget nih.", "english": "Really awesome."}
+            ]
+        },
+        "formal": {
+            "words": [{"indo": "Bagus", "english": "Good / Nice"}],
+            "sentences": [{"indo": "Bagus sekali.", "english": "Very good."}]
+        }
+    },
+    "Frequency & Habits": {
+        "neutral": {
+            "words": [
+                {"indo": "Sering", "english": "Often"},
+                {"indo": "Jarang", "english": "Rarely"},
+                {"indo": "Kadang", "english": "Sometimes"},
+                {"indo": "Kadang-kadang", "english": "Sometimes"},
+                {"indo": "Biasanya", "english": "Usually"},
+                {"indo": "Begitu", "english": "Like that"}
+            ],
+            "sentences": [
+                {"indo": "Sering.", "english": "Often."},
+                {"indo": "Jarang.", "english": "Rarely."},
+                {"indo": "Kadang-kadang.", "english": "Sometimes."},
+                {"indo": "Biasanya begitu.", "english": "Usually like that."}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Aku", "english": "I / Me"},
+                {"indo": "Ke", "english": "To"},
+                {"indo": "Sini", "english": "Here"},
+                {"indo": "Banget", "english": "Very / Really"}
+            ],
+            "sentences": [
+                {"indo": "Aku sering ke sini.", "english": "I often come here."},
+                {"indo": "Jarang banget.", "english": "Really rarely."},
+                {"indo": "Kadang-kadang.", "english": "Sometimes."}
+            ]
+        },
+        "formal": {
+            "words": [
+                {"indo": "Saya", "english": "I / Me"},
+                {"indo": "Ke", "english": "To"},
+                {"indo": "Sini", "english": "Here"}
+            ],
+            "sentences": [{"indo": "Saya sering ke sini.", "english": "I often come here."}]
+        }
+    },
+    "Casual Venting": {
+        "neutral": {
+            "words": [
+                {"indo": "Macet", "english": "Traffic jam"},
+                {"indo": "Panas", "english": "Hot"},
+                {"indo": "Banget", "english": "Very / Really"},
+                {"indo": "Sekali", "english": "Very / Really"}
+            ],
+            "sentences": [
+                {"indo": "Macet banget.", "english": "Traffic is terrible."},
+                {"indo": "Panas banget.", "english": "So hot."}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Macet", "english": "Traffic jam"},
+                {"indo": "Panas", "english": "Hot"},
+                {"indo": "Banget", "english": "Very / Really"},
+                {"indo": "Capek", "english": "Tired"},
+                {"indo": "Kerja", "english": "Work"},
+                {"indo": "Nih", "english": "Softener / emphasis"}
+            ],
+            "sentences": [
+                {"indo": "Macet banget.", "english": "Traffic is terrible."},
+                {"indo": "Macet banget nih.", "english": "Traffic is terrible."},
+                {"indo": "Panas banget nih.", "english": "So hot."},
+                {"indo": "Capek kerja.", "english": "Tired from work."},
+                {"indo": "Capek kerja nih.", "english": "Tired from work."}
+            ]
+        },
+        "formal": {
+            "words": [
+                {"indo": "Macet", "english": "Traffic jam"},
+                {"indo": "Panas", "english": "Hot"},
+                {"indo": "Lelah", "english": "Tired"},
+                {"indo": "Bekerja", "english": "Work"}
+            ],
+            "sentences": [
+                {"indo": "Macet sekali.", "english": "Traffic is terrible."},
+                {"indo": "Lelah bekerja.", "english": "Tired from work."}
+            ]
+        }
+    },
+    "Topic Shift": {
+        "neutral": {
+            "words": [
+                {"indo": "Oh ya", "english": "Oh right / By the way"},
+                {"indo": "Ngomong-ngomong", "english": "By the way"}
+            ],
+            "sentences": [
+                {"indo": "Oh ya.", "english": "Oh right."},
+                {"indo": "Ngomong-ngomong.", "english": "By the way."}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Oh ya", "english": "Oh right / By the way"},
+                {"indo": "Ngomong-ngomong", "english": "By the way"},
+                {"indo": "Eh", "english": "Hey (spoken)"},
+                {"indo": "Nih", "english": "Softener / emphasis"}
+            ],
+            "sentences": [
+                {"indo": "Oh ya.", "english": "Oh right."},
+                {"indo": "Ngomong-ngomong.", "english": "By the way."},
+                {"indo": "Eh ngomong-ngomong.", "english": "Hey by the way."},
+                {"indo": "Eh ngomong-ngomong nih.", "english": "Hey by the way."}
+            ]
+        },
+        "formal": {
+            "words": [
+                {"indo": "Oh ya", "english": "Oh right"},
+                {"indo": "Ngomong-ngomong", "english": "By the way"}
+            ],
+            "sentences": [{"indo": "Ngomong-ngomong.", "english": "By the way."}]
+        }
+    },
+    "Casual Pushback": {
+        "neutral": {
+            "words": [
+                {"indo": "Nggak", "english": "Not / No (spoken)"},
+                {"indo": "Juga", "english": "Also / Either"},
+                {"indo": "Kok", "english": "How come"},
+                {"indo": "Bisa", "english": "Can / Able"},
+                {"indo": "Sih", "english": "Softener / emphasis"},
+                {"indo": "Masa", "english": "Really"}
+            ],
+            "sentences": [
+                {"indo": "Eh nggak juga.", "english": "Oh not really."},
+                {"indo": "Kok bisa sih?", "english": "How come?"},
+                {"indo": "Ah masa sih?", "english": "Really?"}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Eh", "english": "Hey (spoken)"},
+                {"indo": "Nggak", "english": "Not / No (spoken)"},
+                {"indo": "Juga", "english": "Also / Either"},
+                {"indo": "Kok", "english": "How come"},
+                {"indo": "Bisa", "english": "Can / Able"},
+                {"indo": "Sih", "english": "Softener / emphasis"},
+                {"indo": "Ah", "english": "Oh"},
+                {"indo": "Masa", "english": "Really"}
+            ],
+            "sentences": [
+                {"indo": "Eh nggak juga.", "english": "Oh not really."},
+                {"indo": "Kok bisa sih?", "english": "How come?"},
+                {"indo": "Ah masa sih?", "english": "Really?"}
+            ]
+        },
+        "formal": {
+            "words": [
+                {"indo": "Tidak", "english": "Not / No (alone)"},
+                {"indo": "Juga", "english": "Also / Either"}
+            ],
+            "sentences": [{"indo": "Tidak juga.", "english": "Not really."}]
+        }
+    },
+    "As / Like (Kayak / Seperti / Maksudnya)": {
+        "neutral": {
+            "words": [
+                {"indo": "Kayak", "english": "Like / As (spoken)"},
+                {"indo": "Tadi", "english": "Earlier / Before"},
+                {"indo": "Seperti", "english": "Like / As"},
+                {"indo": "Maksudnya", "english": "I mean / As in"},
+                {"indo": "Sebagai", "english": "As (a)"},
+                {"indo": "Teman", "english": "Friend"},
+                {"indo": "Gimana", "english": "How (spoken)"}
+            ],
+            "sentences": [
+                {"indo": "Kayak tadi.", "english": "As before."},
+                {"indo": "Seperti tadi.", "english": "Like before."},
+                {"indo": "Maksudnya gimana?", "english": "What do you mean?"},
+                {"indo": "Sebagai teman.", "english": "As a friend."}
+            ]
+        },
+        "informal": {
+            "words": [
+                {"indo": "Kayak", "english": "Like / As (spoken)"},
+                {"indo": "Kayaknya", "english": "Seems like"},
+                {"indo": "Yang", "english": "That / Which"},
+                {"indo": "Kamu", "english": "You"},
+                {"indo": "Bilang", "english": "Say"},
+                {"indo": "Tadi", "english": "Earlier / Before"},
+                {"indo": "Begitu", "english": "Like that"},
+                {"indo": "Nih", "english": "Softener / emphasis"}
+            ],
+            "sentences": [
+                {"indo": "Kayak tadi.", "english": "As before."},
+                {"indo": "Kayak yang kamu bilang.", "english": "As you said."},
+                {"indo": "Kayak yang kamu bilang nih.", "english": "As you said."},
+                {"indo": "Kayaknya begitu.", "english": "Seems like that."},
+                {"indo": "Kayaknya begitu nih.", "english": "Seems like that."}
+            ]
+        },
+        "formal": {
+            "words": [
+                {"indo": "Seperti", "english": "Like / As"},
+                {"indo": "Maksudnya", "english": "I mean / As in"},
+                {"indo": "Sebagai", "english": "As (a)"},
+                {"indo": "Yang", "english": "That / Which"},
+                {"indo": "Anda", "english": "You"},
+                {"indo": "Katakan", "english": "Say"},
+                {"indo": "Bagaimana", "english": "How"},
+                {"indo": "Teman", "english": "Friend"}
+            ],
+            "sentences": [
+                {"indo": "Seperti yang Anda katakan.", "english": "As you said."},
+                {"indo": "Maksudnya bagaimana?", "english": "What do you mean?"},
+                {"indo": "Sebagai teman.", "english": "As a friend."}
             ]
         }
     }
