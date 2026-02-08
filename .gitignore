@@ -45,5 +45,6 @@ data/CLARITY_CHECK_FULL.md
 data/EQUIVALENCE_GAPS.md
 data/_tmp_*.py
 
-# Ignore all Markdown files
+# Ignore Markdown except README
 *.md
+!README.md

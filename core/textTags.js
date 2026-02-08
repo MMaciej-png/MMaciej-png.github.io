@@ -71,12 +71,12 @@ export function hasJakartaTokens(text) {
 // Modules where Jakarta tokens are intentionally practiced.
 // Token-bearing sentences outside these modules are treated as duplicates/noise.
 const JAKARTA_FOCUSED_MODULES = new Set([
-  "Jakarta Pronouns & Core Slang (Gue / Lu)",
-  "Chat Particles (Nih / Sih / Kok / Dong / Deh / Tuh)",
-  "Texting Shorteners (gpp / bgt / udh / blm / otw / wkwk)",
+  "Jakarta Pronouns (Gue / Lu)",
+  "Chat Softeners",
+  "Text Abbreviations",
   "Daily Small Talk (Chat)",
   "Hangout Planning (Texting)",
-  "Messaging Basics (Lagi di mana? / OTW)"
+  "Messaging Basics"
 ]);
 
 export function isJakartaFocusedModule(moduleName) {
@@ -153,7 +153,7 @@ export function getJakartaTokenMeaning(labelOrToken) {
 
 // For “particles mode” rendering: strip ONLY particles/softeners (not pronouns/abbr),
 // so the sentence stays meaningful while becoming “clean”.
-const PARTICLE_TOKENS = ["nih", "sih", "kok", "dong", "deh", "tuh"];
+const PARTICLE_TOKENS = ["nih", "sih", "dong", "deh", "tuh"];
 
 export function stripParticlesForDisplay(indo) {
   let t = String(indo ?? "");

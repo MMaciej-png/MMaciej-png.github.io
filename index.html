@@ -90,7 +90,11 @@
                         <!-- MODE TITLE -->
                         <div class="mode-title">
                             <span>Indonesian Trainer By Maciej</span>
-                            <button id="nav-chat" type="button" class="main-chat-btn" aria-label="Open practice chat">💬 Chat</button>
+                            <div class="mode-title-actions">
+                                <!-- Replace yourusername with your Buy Me a Coffee / Ko-fi username or paste your full donation URL -->
+                                <a id="donate-btn" href="https://buymeacoffee.com/mmaciej" target="_blank" rel="noopener noreferrer" class="donate-btn" aria-label="Support the project (opens in new tab)">☕ Donate</a>
+                                <button id="nav-chat" type="button" class="main-chat-btn" aria-label="Open practice chat">💬 Chat</button>
+                            </div>
                         </div>
                         <!-- SESSION STATS -->
                         <div class="stats-row">
@@ -214,6 +218,8 @@
 
         const chatOverlay = document.getElementById("chat-overlay");
         chatOverlay.inert = true;
+        let scaleToScreenRef = null;
+
         const chatPanel = createChatPanel({
             containerEl: chatOverlay,
             getVocabForChat: () => casualEngine.getVocabForChat(),
@@ -224,6 +230,7 @@
                 chatOverlay.classList.remove("is-open");
                 chatOverlay.setAttribute("aria-hidden", "true");
                 chatOverlay.inert = true;
+                if (scaleToScreenRef) scaleToScreenRef();
             },
         });
 
@@ -232,6 +239,7 @@
             chatOverlay.setAttribute("aria-hidden", "false");
             chatOverlay.inert = false;
             chatPanel.open();
+            if (scaleToScreenRef) scaleToScreenRef();
         };
 
         chatOverlay.addEventListener("click", (e) => {
@@ -301,10 +309,7 @@
                 `translate(${translateX}px, ${translateY}px) scale(${scale})`;
         }
 
-
-
-
-
+        scaleToScreenRef = scaleToScreen;
         scaleToScreen();
         window.addEventListener("resize", scaleToScreen);
         window.addEventListener("orientationchange", scaleToScreen);
