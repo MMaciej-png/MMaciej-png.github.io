@@ -460,11 +460,12 @@ export function createChatPanel(opts) {
 
     const wasSuggestionsRequest = text === "Give me suggestions.";
     const parsed = parseStructuredResponse(content);
+    let botMsg;
     if (parsed) {
       userMsg.translation = parsed.translationOfLastUserMessage || "";
       userMsg.language = parsed.userMessageLanguage === "en" ? "en" : "id";
       const botContent = parsed.isHelp ? parsed.english : parsed.indonesian || parsed.english;
-      messages.push({
+      botMsg = {
         role: "assistant",
         content: botContent || "",
         translation: parsed.english || "",
@@ -472,11 +473,12 @@ export function createChatPanel(opts) {
         suggestedFix: (parsed.suggestedFix && String(parsed.suggestedFix).trim()) || "",
         isHelp: !!parsed.isHelp,
         showSuggestions: wasSuggestionsRequest,
-      });
+      };
+      messages.push(botMsg);
     } else {
       userMsg.translation = "";
       userMsg.language = "id";
-      messages.push({
+      botMsg = {
         role: "assistant",
         content: content || "(No response)",
         translation: "",
@@ -484,7 +486,8 @@ export function createChatPanel(opts) {
         suggestedFix: "",
         isHelp: false,
         showSuggestions: wasSuggestionsRequest,
-      });
+      };
+      messages.push(botMsg);
     }
     render();
   }
@@ -571,20 +574,24 @@ export function createChatPanel(opts) {
       });
     } else {
       const parsed = parseStructuredResponse(content);
+      let botContent = "";
+      let isHelp = false;
       if (parsed) {
-        const botContent = parsed.isHelp ? parsed.english : parsed.indonesian || parsed.english;
+        botContent = parsed.isHelp ? parsed.english : parsed.indonesian || parsed.english;
+        isHelp = !!parsed.isHelp;
         messages.push({
           role: "assistant",
           content: botContent || "",
           translation: parsed.english || "",
           suggestedReplies: Array.isArray(parsed.suggestedReplies) ? parsed.suggestedReplies : [],
           suggestedFix: (parsed.suggestedFix && String(parsed.suggestedFix).trim()) || "",
-          isHelp: !!parsed.isHelp,
+          isHelp,
         });
       } else {
+        botContent = content || "(No response)";
         messages.push({
           role: "assistant",
-          content: content || "(No response)",
+          content: botContent || "",
           translation: "",
           suggestedReplies: [],
           suggestedFix: "",

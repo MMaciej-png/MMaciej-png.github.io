@@ -2812,32 +2812,57 @@
                     "english": "Five"
                 },
                 {
-                    "indo": "Berapa",
-                    "english": "How many / How much"
+                    "indo": "Enam",
+                    "english": "Six"
                 },
                 {
-                    "indo": "Saja",
-                    "english": "Just / Only"
+                    "indo": "Tujuh",
+                    "english": "Seven"
                 },
                 {
-                    "indo": "Ya",
-                    "english": "Yes"
-                }
-            ],
-            "sentences": [
-                {
-                    "indo": "Berapa?",
-                    "english": "How much / How many?"
+                    "indo": "Delapan",
+                    "english": "Eight"
                 },
                 {
-                    "indo": "Satu saja.",
-                    "english": "Just one."
+                    "indo": "Sembilan",
+                    "english": "Nine"
                 },
                 {
-                    "indo": "Dua, ya.",
-                    "english": "Two, okay."
+                    "indo": "Sepuluh",
+                    "english": "Ten"
                 }
             ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Numbers (11–100)": {
+        "neutral": {
+            "words": [
+                {"indo": "Belas", "english": "‑teen"},
+                {"indo": "Puluh", "english": "‑ty / tens"},
+                {"indo": "Sebelas", "english": "Eleven"},
+                {"indo": "Dua belas", "english": "Twelve"},
+                {"indo": "Tiga belas", "english": "Thirteen"},
+                {"indo": "Empat belas", "english": "Fourteen"},
+                {"indo": "Lima belas", "english": "Fifteen"},
+                {"indo": "Enam belas", "english": "Sixteen"},
+                {"indo": "Tujuh belas", "english": "Seventeen"},
+                {"indo": "Delapan belas", "english": "Eighteen"},
+                {"indo": "Sembilan belas", "english": "Nineteen"},
+                {"indo": "Dua puluh", "english": "Twenty"},
+                {"indo": "Tiga puluh", "english": "Thirty"},
+                {"indo": "Empat puluh", "english": "Forty"},
+                {"indo": "Lima puluh", "english": "Fifty"},
+                {"indo": "Seratus", "english": "One hundred"}
+            ],
+            "sentences": []
         },
         "informal": {
             "words": [],
