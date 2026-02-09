@@ -3,357 +3,114 @@ import { shouldExcludeWordFromPool } from "../core/textTags.js";
 
 /**
  * Module → Category / Subcategory mapping
- * You will maintain this manually
+ * Categories = lesson plans; subcategories = what's being learned in that lesson
  */
 const MODULE_CATEGORY_MAP = {
 
-  // ─────────────────────────────
-  // Conversation
-  // Openings, closings, small talk
-  // ─────────────────────────────
-
-  "Greetings (Basic)": {
-    category: "Conversation",
-    subcategory: "Greetings"
-  },
-  "Greetings (Time-Based)": {
-    category: "Conversation",
-    subcategory: "Greetings"
-  },
-
-  "Asking How Are You": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "Reactions": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "Yes / No / Maybe": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "Agreeing & Disagreeing": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "Inviting (Ayo / Yuk)": {
-    category: "Conversation",
-    subcategory: "Planning"
-  },
-
-  "Accepting & Declining": {
-    category: "Conversation",
-    subcategory: "Planning"
-  },
-
-  "Thanks & Politeness": {
-    category: "Conversation",
-    subcategory: "Politeness"
-  },
-
-  "Goodbyes & Leaving": {
-    category: "Conversation",
-    subcategory: "Goodbyes"
-  },
-
-  "Jakarta Pronouns (Gue / Lu)": {
-    category: "Jakarta / Texting",
-    subcategory: "Pronouns & Slang"
-  },
-
-  "Daily Small Talk (Chat)": {
-    category: "Jakarta / Texting",
-    subcategory: "Chatting"
-  },
-
-  "Hangout Planning (Texting)": {
-    category: "Jakarta / Texting",
-    subcategory: "Chatting"
-  },
-
-
-
-  // ─────────────────────────────
-  // Sentence Building
-  // Sentence logic & patterns
-  // ─────────────────────────────
-
-  "When (Time Questions)": {
-    category: "Sentence Building",
-    subcategory: "Time"
-  },
-
-  "Conditions (Kalau)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  },
-
-  "Moments (Pas)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  },
-
-  "Chat Softeners": {
-    category: "Jakarta / Texting",
-    subcategory: "Particles"
-  },
-
-  "Text Abbreviations": {
-    category: "Jakarta / Texting",
-    subcategory: "Shorteners"
-  },
-
-  "Because (Karena / Soalnya)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  },
-
-  "So / That’s why (Jadi / Makanya)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  },
-
-  "But / Contrast (Tapi / Padahal)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  },
-
-  "Then / And then (Terus / Trus)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  },
-
-  "Maybe / Probably (Mungkin / Kayaknya)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  },
-
-  "With (Sama)": {
-    category: "Sentence Building",
-    subcategory: "Reference"
-  },
-
-  "For (Buat)": {
-    category: "Sentence Building",
-    subcategory: "Reference"
-  },
-
-  "Titles & Relationships": {
-    category: "Sentence Building",
-    subcategory: "Reference"
-  },
-
-
-
-  // ─────────────────────────────
-  // Actions & Feelings
-  // State, ability, requests, choices
-  // ─────────────────────────────
-
-  "How I’m doing (positive)": {
-    category: "Actions & Feelings",
-    subcategory: "State"
-  },
-
-  "How I’m doing (negative)": {
-    category: "Actions & Feelings",
-    subcategory: "State"
-  },
-
-  "Softening (Agak / Kayak / Lumayan)": {
-    category: "Actions & Feelings",
-    subcategory: "Tone"
-  },
-
-  "Knowing & Ability": {
-    category: "Actions & Feelings",
-    subcategory: "Ability"
-  },
-
-  "Understanding": {
-    category: "Actions & Feelings",
-    subcategory: "Ability"
-  },
-
-  "What do you mean?": {
-    category: "Actions & Feelings",
-    subcategory: "Ability"
-  },
-
-  "Questions (Yes / No)": {
-    category: "Actions & Feelings",
-    subcategory: "Patterns"
-  },
-
-  "Asking opinions": {
-    category: "Actions & Feelings",
-    subcategory: "Patterns"
-  },
-
-  "Requests & Help": {
-    category: "Actions & Feelings",
-    subcategory: "Requests"
-  },
-
-  "Wait / Hold on (Bentar / Tunggu)": {
-    category: "Actions & Feelings",
-    subcategory: "Requests"
-  },
-
-  "Clarifying (Maksudku…)": {
-    category: "Actions & Feelings",
-    subcategory: "Ability"
-  },
-
-  "Repeat / Slower": {
-    category: "Actions & Feelings",
-    subcategory: "Ability"
-  },
-
-  "What I’m Doing": {
-    category: "Actions & Feelings",
-    subcategory: "Actions"
-  },
-
-  "Plans & Timing": {
-    category: "Actions & Feelings",
-    subcategory: "Actions"
-  },
-
-  "Preferences & Choices": {
-    category: "Actions & Feelings",
-    subcategory: "Preferences"
-  },
-
-
-
-  // ─────────────────────────────
-  // Daily Life
-  // Concrete, real-world language
-  // ─────────────────────────────
-
-  "Food & Drink": {
-    category: "Daily Life",
-    subcategory: "Everyday"
-  },
-
-  "This / That (Choosing)": {
-    category: "Daily Life",
-    subcategory: "Everyday"
-  },
-
-  "Going & Arriving": {
-    category: "Daily Life",
-    subcategory: "Movement"
-  },
-
-  "Places (Everyday)": {
-    category: "Daily Life",
-    subcategory: "Places"
-  },
-
-  "Mine & Yours": {
-    category: "Daily Life",
-    subcategory: "Everyday"
-  },
-
-  "Messaging Basics": {
-    category: "Jakarta / Texting",
-    subcategory: "Chatting"
-  },
-
-
-
-  // ─────────────────────────────
-  // Basics
-  // Core language primitives
-  // ─────────────────────────────
-
-  "Numbers (Basic)": {
-    category: "Basics",
-    subcategory: "Core"
-  },
-
-  "Time (Basic)": {
-    category: "Basics",
-    subcategory: "Core"
-  },
-
-  "Places & Location": {
-    category: "Basics",
-    subcategory: "Core"
-  },
-
-  "Existence & Availability": {
-    category: "Basics",
-    subcategory: "Core"
-  },
-
-  "Emotions & Empathy": {
-    category: "Actions & Feelings",
-    subcategory: "State"
-  },
-
-  "Sharing News": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "Compliments": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "Frequency & Habits": {
-    category: "Sentence Building",
-    subcategory: "Time"
-  },
-
-  "Casual Venting": {
-    category: "Daily Life",
-    subcategory: "Everyday"
-  },
-
-  "Topic Shift": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "Casual Pushback": {
-    category: "Conversation",
-    subcategory: "Small Talk"
-  },
-
-  "As / Like (Kayak / Seperti / Maksudnya)": {
-    category: "Sentence Building",
-    subcategory: "Connectors"
-  }
+  "Greetings (Basic)": { category: "Getting started", subcategory: "Greetings" },
+  "Greetings (Time-Based)": { category: "Getting started", subcategory: "Greetings" },
+  "Thanks & Politeness": { category: "Getting started", subcategory: "Thanks & goodbyes" },
+  "Goodbyes & Leaving": { category: "Getting started", subcategory: "Thanks & goodbyes" },
+  "Numbers (Basic)": { category: "Getting started", subcategory: "Numbers, time & place" },
+  "Numbers (11–100)": { category: "Getting started", subcategory: "Numbers, time & place" },
+  "Time (Basic)": { category: "Getting started", subcategory: "Numbers, time & place" },
+  "Places & Location": { category: "Getting started", subcategory: "Numbers, time & place" },
+  "Existence & Availability": { category: "Getting started", subcategory: "Numbers, time & place" },
+
+  "Asking How Are You": { category: "How are you?", subcategory: "Ask & answer" },
+  "How I'm doing (positive)": { category: "How are you?", subcategory: "Ask & answer" },
+  "How I'm doing (negative)": { category: "How are you?", subcategory: "Ask & answer" },
+  "Reactions": { category: "How are you?", subcategory: "Reactions" },
+  "Yes / No / Maybe": { category: "How are you?", subcategory: "Reactions" },
+  "Emotions & Empathy": { category: "How are you?", subcategory: "Reactions" },
+
+  "Inviting (Ayo / Yuk)": { category: "Making plans", subcategory: "Invite & respond" },
+  "Accepting & Declining": { category: "Making plans", subcategory: "Invite & respond" },
+  "Plans & Timing": { category: "Making plans", subcategory: "When & how often" },
+  "When (Time Questions)": { category: "Making plans", subcategory: "When & how often" },
+  "Frequency & Habits": { category: "Making plans", subcategory: "When & how often" },
+
+  "Understanding": { category: "Clarifying & help", subcategory: "Clarifying" },
+  "What do you mean?": { category: "Clarifying & help", subcategory: "Clarifying" },
+  "Clarifying (Maksudku…)": { category: "Clarifying & help", subcategory: "Clarifying" },
+  "Repeat / Slower": { category: "Clarifying & help", subcategory: "Clarifying" },
+  "Requests & Help": { category: "Clarifying & help", subcategory: "Requests" },
+  "Wait / Hold on (Bentar / Tunggu)": { category: "Clarifying & help", subcategory: "Requests" },
+  "Knowing & Ability": { category: "Clarifying & help", subcategory: "Can & know" },
+
+  "Agreeing & Disagreeing": { category: "Opinions & agreement", subcategory: "Agree & disagree" },
+  "Asking opinions": { category: "Opinions & agreement", subcategory: "Agree & disagree" },
+  "Preferences & Choices": { category: "Opinions & agreement", subcategory: "Agree & disagree" },
+  "Topic Shift": { category: "Opinions & agreement", subcategory: "Change topic" },
+  "Casual Pushback": { category: "Opinions & agreement", subcategory: "Change topic" },
+
+  "Conditions (Kalau)": { category: "Connecting ideas", subcategory: "If & like" },
+  "Moments (Pas)": { category: "Connecting ideas", subcategory: "If & like" },
+
+  "Because (Karena / Soalnya)": { category: "Connecting ideas", subcategory: "Because & so" },
+
+  "So / That’s why (Jadi / Makanya)": { category: "Connecting ideas", subcategory: "Because & so" },
+
+  "But / Contrast (Tapi / Padahal)": { category: "Connecting ideas", subcategory: "But & then" },
+  "Then / And then (Terus / Trus)": { category: "Connecting ideas", subcategory: "But & then" },
+  "Maybe / Probably (Mungkin / Kayaknya)": { category: "Connecting ideas", subcategory: "If & like" },
+  "As / Like (Kayak / Seperti / Maksudnya)": { category: "Connecting ideas", subcategory: "If & like" },
+
+  "With (Sama)": { category: "People & things", subcategory: "With, for & whose" },
+  "For (Buat)": { category: "People & things", subcategory: "With, for & whose" },
+  "Mine & Yours": { category: "People & things", subcategory: "With, for & whose" },
+  "This / That (Choosing)": { category: "People & things", subcategory: "People & choice" },
+  "Titles & Relationships": { category: "People & things", subcategory: "People & choice" },
+  "What I'm Doing": { category: "Daily life", subcategory: "What I'm doing" },
+  "Food & Drink": { category: "Daily life", subcategory: "Food, places & going" },
+  "Going & Arriving": { category: "Daily life", subcategory: "Food, places & going" },
+  "Places (Everyday)": { category: "Daily life", subcategory: "Food, places & going" },
+  "Casual Venting": { category: "Daily life", subcategory: "Venting" },
+
+  "Questions (Yes / No)": { category: "Questions & tone", subcategory: "Yes or no" },
+  "Softening (Agak / Kayak / Lumayan)": { category: "Questions & tone", subcategory: "Softening" },
+
+  "Sharing News": { category: "Sharing & reacting", subcategory: "Sharing & compliments" },
+  "Compliments": { category: "Sharing & reacting", subcategory: "Sharing & compliments" },
+
+  "Jakarta Pronouns (Gue / Lu)": { category: "Chat & texting", subcategory: "Casual you & I" },
+  "Daily Small Talk (Chat)": { category: "Chat & texting", subcategory: "Chat phrases" },
+  "Messaging Basics": { category: "Chat & texting", subcategory: "Chat phrases" },
+  "Hangout Planning (Texting)": { category: "Chat & texting", subcategory: "Chat phrases" },
+  "Text Abbreviations": { category: "Chat & texting", subcategory: "Shorteners" },
+  "Chat Softeners": { category: "Chat & texting", subcategory: "Shorteners" }
 
 };
 
+
 const CATEGORY_ORDER = [
   "Smart Modes",
-  "Basics",
-  "Conversation",
-  "Sentence Building",
-  "Actions & Feelings",
-  "Daily Life",
-  "Jakarta / Texting",
+  "Getting started",
+  "How are you?",
+  "Making plans",
+  "Clarifying & help",
+  "Opinions & agreement",
+  "Connecting ideas",
+  "People & things",
+  "Daily life",
+  "Questions & tone",
+  "Sharing & reacting",
+  "Chat & texting",
   "Other"
 ];
 
 const SUBCATEGORY_ORDER = {
-  "Conversation": ["Greetings", "Small Talk", "Planning", "Politeness", "Goodbyes"],
-  "Jakarta / Texting": ["Particles", "Shorteners", "Pronouns & Slang", "Chatting"],
-  "Actions & Feelings": ["State", "Tone", "Ability", "Patterns", "Requests", "Actions", "Preferences"],
-  "Sentence Building": ["Connectors", "Reference", "Time"],
-  "Daily Life": ["Everyday", "Movement", "Places"],
-  "Basics": ["Core"],
+  "Getting started": ["Greetings", "Thanks & goodbyes", "Numbers, time & place"],
+  "How are you?": ["Ask & answer", "Reactions"],
+  "Making plans": ["Invite & respond", "When & how often"],
+  "Clarifying & help": ["Clarifying", "Requests", "Can & know"],
+  "Opinions & agreement": ["Agree & disagree", "Change topic"],
+  "Connecting ideas": ["Because & so", "But & then", "If & like"],
+  "People & things": ["With, for & whose", "People & choice"],
+  "Daily life": ["What I'm doing", "Food, places & going", "Venting"],
+  "Questions & tone": ["Yes or no", "Softening"],
+  "Sharing & reacting": ["Sharing & compliments"],
+  "Chat & texting": ["Casual you & I", "Chat phrases", "Shorteners"],
   "Other": ["Uncategorised"]
 };
 
