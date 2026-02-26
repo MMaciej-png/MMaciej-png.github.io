@@ -50,7 +50,8 @@ function collectStrings(obj, out) {
 }
 
 function main() {
-  const contentPath = path.join(__dirname, "content-ja.json");
+  const DATA_DIR = path.join(__dirname, "..");
+  const contentPath = path.join(DATA_DIR, "content-ja.json");
   const content = JSON.parse(fs.readFileSync(contentPath, "utf8"));
   const strings = [];
   collectStrings(content, strings);

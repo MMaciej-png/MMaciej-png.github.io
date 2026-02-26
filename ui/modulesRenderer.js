@@ -200,10 +200,11 @@ function makeFlatGroup(category, modules, activeModules, activeMode, onSelect) {
   const body = document.createElement("div");
   body.className = "module-group-body";
 
+  const moduleKey = (m) => m.id ?? m.name;
   const containsActive = modules.some(m =>
     (m.type === "all" && activeMode === "modules" && activeModules.size === 0) ||
     (m.type === "weakest" && activeMode === "weakest") ||
-    (!m.type && activeModules.has(m.name))
+    (!m.type && activeModules.has(moduleKey(m)))
   );
 
   const isOpen =
@@ -256,8 +257,9 @@ function makeCategoryGroup(
 
   const categoryKey = category;
 
+  const moduleKey = (m) => m.id ?? m.name;
   const containsActive = Object.values(subgroups).some(modules =>
-    modules.some(m => !m.type && activeModules.has(m.name))
+    modules.some(m => !m.type && activeModules.has(moduleKey(m)))
   );
 
   const isOpen =
@@ -321,7 +323,7 @@ function makeSubcategoryGroup(
   const key = `${category}::${subcategory}`;
 
   const containsActive = modules.some(m =>
-    !m.type && activeModules.has(m.name)
+    !m.type && activeModules.has(m.id ?? m.name)
   );
 
   const isOpen =
@@ -364,10 +366,11 @@ function makeModuleButton(m, activeModules, activeMode, onSelect) {
   const btn = document.createElement("button");
   btn.className = "module-btn";
 
+  const key = m.id ?? m.name;
   const isActive =
     (m.type === "all" && activeMode === "modules" && activeModules.size === 0) ||
     (m.type === "weakest" && activeMode === "weakest") ||
-    (!m.type && activeModules.has(m.name));
+    (!m.type && activeModules.has(key));
 
   if (isActive) btn.classList.add("active");
 
@@ -379,7 +382,7 @@ function makeModuleButton(m, activeModules, activeMode, onSelect) {
     ${renderMeta(m)}
   `;
 
-  btn.onclick = () => onSelect(m.name, m.type);
+  btn.onclick = () => onSelect(key, m.type);
   return btn;
 }
 

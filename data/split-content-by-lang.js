@@ -8,8 +8,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const LANG_CODES = ["en", "indo", "ja", "ko", "pl", "fr"];
-const srcPath = path.join(__dirname, "NewContent.json");
+const LANG_CODES = ["en", "indo", "ja", "ko", "pl", "fr", "mo", "ru"];
+const srcPath = path.join(__dirname, "archive", "NewContent.json");
 const content = JSON.parse(fs.readFileSync(srcPath, "utf8"));
 
 function cloneStructure(src, langCode) {

@@ -36,8 +36,9 @@ function isEntry(o) {
   return o && typeof o === "object" && !Array.isArray(o) && "en" in o;
 }
 
+const DATA_DIR = path.join(__dirname, "..");
 for (const code of LANG_CODES) {
-  const filePath = path.join(__dirname, `content-${code}.json`);
+  const filePath = path.join(DATA_DIR, `content-${code}.json`);
   if (!fs.existsSync(filePath)) continue;
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
   normalize(data);

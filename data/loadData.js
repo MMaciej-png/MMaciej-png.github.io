@@ -9,6 +9,7 @@ import {
   isEnglishSoftenerOnly,
 } from "../core/textTags.js";
 import { stripAffixMarkers } from "../core/affixTags.js";
+import { getModuleId } from "./moduleIds.js";
 import {
   getLanguagePair,
   parsePair,
@@ -162,7 +163,7 @@ export async function loadItems() {
     const indoRaw = getIndo(x);
     const indo = indoRaw ? stripAffixMarkers(indoRaw) : "";
 
-    const id = makeId(type, module, textA, textB, pair);
+    const id = makeId(type, module, reg, textA, textB, pair, langACode, langBCode);
     const stats = getItemStats("casual", id);
 
     const jakartaTokens = detectJakartaTokens(indo);
@@ -211,7 +212,12 @@ export async function loadItems() {
 
   const items = [];
 
+  const pairIncludesIndo = langACode === "indo" || langBCode === "indo";
+
   for (const [moduleName, moduleData] of Object.entries(content)) {
+    const moduleId = getModuleId(moduleName);
+    // Jakarta / Chat & texting modules: only include items when Indonesian is in the pair.
+    if (!pairIncludesIndo && isJakartaFocusedModule(moduleId)) continue;
 
     // ===============================
     // MODULE WITH REGISTERS
@@ -227,13 +233,13 @@ export async function loadItems() {
 
         /* ---------- WORDS ---------- */
         for (const w of block.words ?? []) {
-          const item = mapItem(w, "word", moduleName, register);
+          const item = mapItem(w, "word", moduleId, register);
           if (item) items.push(item);
         }
 
         /* ---------- SENTENCES ---------- */
         for (const s of block.sentences ?? []) {
-          const item = mapItem(s, "sentence", moduleName, register);
+          const item = mapItem(s, "sentence", moduleId, register);
           if (item) items.push(item);
         }
       }
@@ -247,13 +253,13 @@ export async function loadItems() {
 
     /* ---------- WORDS ---------- */
     for (const w of moduleData.words ?? []) {
-      const item = mapItem(w, "word", moduleName, "neutral");
+      const item = mapItem(w, "word", moduleId, "neutral");
       if (item) items.push(item);
     }
 
     /* ---------- SENTENCES ---------- */
     for (const s of moduleData.sentences ?? []) {
-      const item = mapItem(s, "sentence", moduleName, "neutral");
+      const item = mapItem(s, "sentence", moduleId, "neutral");
       if (item) items.push(item);
     }
   }

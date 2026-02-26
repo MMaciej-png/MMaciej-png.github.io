@@ -6,7 +6,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const jsonPath = path.join(__dirname, "NewContent.json");
+const DATA_DIR = path.join(__dirname, "..");
+const jsonPath = path.join(DATA_DIR, "archive", "NewContent.json");
 const content = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
 
 const n = (s) => String(s ?? "").trim().toLowerCase().replace(/\s+/g, " ").replace(/\u2019/g, "'");

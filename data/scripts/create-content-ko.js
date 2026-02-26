@@ -6,8 +6,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const enPath = path.join(__dirname, "content-en.json");
-const koPath = path.join(__dirname, "content-ko.json");
+const DATA_DIR = path.join(__dirname, "..");
+const enPath = path.join(DATA_DIR, "content-en.json");
+const koPath = path.join(DATA_DIR, "content-ko.json");
 const content = JSON.parse(fs.readFileSync(enPath, "utf8"));
 
 function addKoKey(obj) {

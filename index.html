@@ -234,6 +234,7 @@
                 if (scaleToScreenRef) scaleToScreenRef();
             },
         });
+        casualEngine.setOnLanguageChange(() => chatPanel.refreshForNewLanguage());
 
         document.getElementById("nav-chat").onclick = () => {
             chatOverlay.classList.add("is-open");

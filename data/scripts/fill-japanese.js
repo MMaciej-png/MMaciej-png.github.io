@@ -1,6 +1,6 @@
 /**
- * Fill content-ko.json with Korean translations from a map (normalized English → Korean).
- * Run from project root: node data/fill-korean.js
+ * Fill content-ja.json with Japanese translations from a map (normalized English → Japanese).
+ * Run from project root: node data/fill-japanese.js
  */
 const fs = require("fs");
 const path = require("path");
@@ -12,34 +12,35 @@ const n = (s) =>
     .replace(/\s+/g, " ")
     .replace(/\u2019/g, "'");
 
-const contentPath = path.join(__dirname, "content-ko.json");
-const mapPath = path.join(__dirname, "ko-translations.json");
+const DATA_DIR = path.join(__dirname, "..");
+const contentPath = path.join(DATA_DIR, "content-ja.json");
+const mapPath = path.join(DATA_DIR, "archive", "ja-translations.json");
 const content = JSON.parse(fs.readFileSync(contentPath, "utf8"));
 const map = JSON.parse(fs.readFileSync(mapPath, "utf8"));
 
 let filled = 0;
 let skipped = 0;
 
-function fillKo(obj) {
+function fillJa(obj) {
   if (obj === null || typeof obj !== "object") return;
   if (Array.isArray(obj)) {
-    obj.forEach(fillKo);
+    obj.forEach(fillJa);
     return;
   }
   if (obj.en !== undefined) {
     const key = n(obj.en);
-    const ko = map[key];
-    if (ko) {
-      obj.ko = ko;
+    const ja = map[key];
+    if (ja) {
+      obj.ja = ja;
       filled++;
     } else {
       skipped++;
     }
     return;
   }
-  for (const v of Object.values(obj)) fillKo(v);
+  for (const v of Object.values(obj)) fillJa(v);
 }
 
-fillKo(content);
+fillJa(content);
 fs.writeFileSync(contentPath, JSON.stringify(content, null, 4), "utf8");
-console.log("Filled", filled, "Korean entries. Skipped (no map):", skipped);
+console.log("Filled", filled, "Japanese entries. Skipped (no map):", skipped);

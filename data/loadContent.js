@@ -5,7 +5,7 @@
  * For pairs without English, loads two files and merges by path.
  */
 
-const LANG_CODES = ["en", "indo", "ja", "ko", "pl", "fr"];
+const LANG_CODES = ["en", "indo", "ja", "ko", "pl", "fr", "mo", "ro", "ru"];
 
 function isEntry(obj) {
   return obj && typeof obj === "object" && !Array.isArray(obj) && "en" in obj;

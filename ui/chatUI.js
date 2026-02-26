@@ -633,6 +633,34 @@ export function createChatPanel(opts) {
     render();
   }
 
+  /** Call when the language pair changes: clear conversation and update header for the new language. */
+  function refreshForNewLanguage() {
+    messages = [];
+    const [langA, langB] = parsePair(getLanguagePair());
+    const practiceLangName = getLanguageName(langB);
+    const helpLangName = getLanguageName(langA);
+    descriptionEl.textContent =
+      `Practice in ${practiceLangName} using your selected modules. Ask for help in ${helpLangName}. Tap suggestion chips to reply.`;
+    render();
+    if (wrap.classList.contains("is-open") && !loading) {
+      const vocab = getVocabForChat();
+      const vocabText = formatVocabForPrompt(vocab);
+      if (vocabText && !vocabText.includes("(No vocabulary")) {
+        fetchOpeningMessage();
+      } else {
+        messages.push({
+          role: "assistant",
+          content: "Select at least one module in the Modules panel to start chatting.",
+          translation: "",
+          suggestedReplies: [],
+          suggestedFix: "",
+          isHelp: true,
+        });
+        render();
+      }
+    }
+  }
+
   return {
     open() {
       wrap.classList.add("is-open");
@@ -664,5 +692,6 @@ export function createChatPanel(opts) {
     getWrap() {
       return wrap;
     },
+    refreshForNewLanguage,
   };
 }

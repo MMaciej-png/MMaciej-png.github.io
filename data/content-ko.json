@@ -137,7 +137,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Good night (before sleeping).",
+                    "en": "Good night",
                     "ko": ""
                 }
             ]
@@ -160,10 +160,6 @@
                 },
                 {
                     "en": "News",
-                    "ko": ""
-                },
-                {
-                    "en": "Condition",
                     "ko": ""
                 },
                 {
@@ -203,23 +199,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ko": ""
                 },
                 {
                     "en": "The news",
-                    "ko": ""
-                },
-                {
-                    "en": "condition",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
                     "ko": ""
                 }
             ],
@@ -272,7 +256,7 @@
                     "ko": "아니요"
                 },
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ko": ""
                 }
             ],
@@ -371,7 +355,7 @@
                     "ko": "괜찮아요"
                 },
                 {
-                    "en": "No problem (spoken)",
+                    "en": "No problem",
                     "ko": ""
                 },
                 {
@@ -383,11 +367,7 @@
                     "ko": "저"
                 },
                 {
-                    "en": "Understand (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Understand",
                     "ko": ""
                 },
                 {
@@ -396,14 +376,6 @@
                 },
                 {
                     "en": "Laughing",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
                     "ko": ""
                 }
             ],
@@ -473,7 +445,7 @@
                     "ko": "부탁해요"
                 },
                 {
-                    "en": "Kindly (formal)",
+                    "en": "Kindly",
                     "ko": ""
                 },
                 {
@@ -503,7 +475,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Thanks (spoken)",
+                    "en": "Thanks",
                     "ko": ""
                 },
                 {
@@ -523,7 +495,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "“come on”",
+                    "en": "come on",
                     "ko": ""
                 }
             ],
@@ -609,7 +581,7 @@
                     "ko": "저"
                 },
                 {
-                    "en": "Take leave (polite)",
+                    "en": "Take leave",
                     "ko": ""
                 }
             ],
@@ -635,7 +607,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Bye (spoken)",
+                    "en": "Bye",
                     "ko": ""
                 },
                 {
@@ -645,10 +617,6 @@
                 {
                     "en": "Me",
                     "ko": "저"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
                 },
                 {
                     "en": "casual closure",
@@ -753,327 +721,6 @@
         "formal": {
             "words": [],
             "sentences": []
-        }
-    },
-    "Conditions (Kalau)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "If",
-                    "ko": ""
-                },
-                {
-                    "en": "Hungry",
-                    "ko": "배고픈"
-                },
-                {
-                    "en": "Tired",
-                    "ko": "피곤한"
-                },
-                {
-                    "en": "Exist",
-                    "ko": ""
-                },
-                {
-                    "en": "There is",
-                    "ko": ""
-                },
-                {
-                    "en": "Time",
-                    "ko": ""
-                },
-                {
-                    "en": "Can",
-                    "ko": "할 수 있다"
-                },
-                {
-                    "en": "Able",
-                    "ko": ""
-                },
-                {
-                    "en": "Later",
-                    "ko": "나중에"
-                },
-                {
-                    "en": "Eat",
-                    "ko": "먹다"
-                },
-                {
-                    "en": "Possible",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "If hungry.",
-                    "ko": ""
-                },
-                {
-                    "en": "If tired.",
-                    "ko": ""
-                },
-                {
-                    "en": "If there is time.",
-                    "ko": ""
-                },
-                {
-                    "en": "If able.",
-                    "ko": ""
-                },
-                {
-                    "en": "If able, later.",
-                    "ko": ""
-                },
-                {
-                    "en": "If hungry, eat.",
-                    "ko": ""
-                },
-                {
-                    "en": "If tired, later.",
-                    "ko": ""
-                },
-                {
-                    "en": "If possible.",
-                    "ko": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Okay",
-                    "ko": "알겠어요"
-                },
-                {
-                    "en": "Yeah",
-                    "ko": ""
-                },
-                {
-                    "en": "Just",
-                    "ko": ""
-                }
-            ],
-            "sentences": []
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "If (formal)",
-                    "ko": ""
-                },
-                {
-                    "en": "Can",
-                    "ko": "할 수 있다"
-                },
-                {
-                    "en": "Be able to (formal)",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "If there is time.",
-                    "ko": ""
-                },
-                {
-                    "en": "If possible.",
-                    "ko": ""
-                },
-                {
-                    "en": "If able.",
-                    "ko": ""
-                }
-            ]
-        }
-    },
-    "Moments (Pas)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "(Right) when",
-                    "ko": ""
-                },
-                {
-                    "en": "At the moment",
-                    "ko": ""
-                },
-                {
-                    "en": "Arrive",
-                    "ko": "도착하다"
-                },
-                {
-                    "en": "Hungry",
-                    "ko": "배고픈"
-                },
-                {
-                    "en": "Start",
-                    "ko": "시작하다"
-                },
-                {
-                    "en": "Okay",
-                    "ko": "알겠어요"
-                },
-                {
-                    "en": "Yes",
-                    "ko": "네"
-                },
-                {
-                    "en": "Eat",
-                    "ko": "먹다"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Eat when you’re hungry.",
-                    "ko": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Let me know (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Tell",
-                    "ko": ""
-                },
-                {
-                    "en": "Say (spoken)",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let me know when you arrive.",
-                    "ko": ""
-                },
-                {
-                    "en": "Tell me when it starts.",
-                    "ko": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [],
-            "sentences": []
-        }
-    },
-    "With (Sama)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "With",
-                    "ko": ""
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                },
-                {
-                    "en": "He",
-                    "ko": "그"
-                },
-                {
-                    "en": "She",
-                    "ko": "그녀"
-                },
-                {
-                    "en": "Friend",
-                    "ko": "친구"
-                },
-                {
-                    "en": "Go",
-                    "ko": "가다"
-                },
-                {
-                    "en": "Come",
-                    "ko": "오다"
-                },
-                {
-                    "en": "Arrive",
-                    "ko": "도착하다"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "With you.",
-                    "ko": ""
-                },
-                {
-                    "en": "Come with a friend.",
-                    "ko": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me",
-                    "ko": "저"
-                },
-                {
-                    "en": "Just (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "casual closure",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "With me.",
-                    "ko": ""
-                },
-                {
-                    "en": "Go with me.",
-                    "ko": ""
-                },
-                {
-                    "en": "With me.",
-                    "ko": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "With",
-                    "ko": ""
-                },
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me",
-                    "ko": "저"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "With me.",
-                    "ko": ""
-                },
-                {
-                    "en": "Go with me.",
-                    "ko": ""
-                }
-            ]
         }
     },
     "Titles & Relationships": {
@@ -1192,7 +839,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Girlfriend (spoken)",
+                    "en": "Girlfriend",
                     "ko": ""
                 },
                 {
@@ -1200,7 +847,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Boyfriend (spoken)",
+                    "en": "Boyfriend",
                     "ko": ""
                 },
                 {
@@ -1212,7 +859,7 @@
                     "ko": "저"
                 },
                 {
-                    "en": "Friend (spoken)",
+                    "en": "Friend",
                     "ko": ""
                 },
                 {
@@ -1220,11 +867,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "“here”",
+                    "en": "here",
                     "ko": ""
                 },
                 {
-                    "en": "“this”",
+                    "en": "this",
                     "ko": ""
                 }
             ],
@@ -1255,114 +902,6 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "ko": ""
-                }
-            ]
-        }
-    },
-    "For (Buat)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "For",
-                    "ko": ""
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                },
-                {
-                    "en": "This",
-                    "ko": "이것"
-                },
-                {
-                    "en": "That",
-                    "ko": "저것"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "This is for you.",
-                    "ko": ""
-                },
-                {
-                    "en": "For you.",
-                    "ko": ""
-                },
-                {
-                    "en": "For that.",
-                    "ko": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me",
-                    "ko": "저"
-                },
-                {
-                    "en": "Just (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "casual closure",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "For me.",
-                    "ko": ""
-                },
-                {
-                    "en": "For me.",
-                    "ko": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "For",
-                    "ko": ""
-                },
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me",
-                    "ko": "저"
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "This is for you.",
-                    "ko": ""
-                },
-                {
-                    "en": "For me.",
                     "ko": ""
                 }
             ]
@@ -1482,14 +1021,6 @@
                 {
                     "en": "Really",
                     "ko": "정말"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -1598,7 +1129,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 }
             ],
@@ -1624,15 +1155,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "No",
                     "ko": ""
                 }
             ],
@@ -1714,7 +1237,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 }
             ],
@@ -1744,7 +1267,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
@@ -1858,7 +1381,7 @@
                     "ko": "당신"
                 },
                 {
-                    "en": "Please (formal)",
+                    "en": "Please",
                     "ko": ""
                 },
                 {
@@ -1916,11 +1439,11 @@
                     "ko": "당신"
                 },
                 {
-                    "en": "Help (spoken)",
+                    "en": "Help",
                     "ko": ""
                 },
                 {
-                    "en": "A sec (spoken)",
+                    "en": "A sec",
                     "ko": ""
                 },
                 {
@@ -1928,7 +1451,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "“come on”",
+                    "en": "come on",
                     "ko": ""
                 }
             ],
@@ -1988,7 +1511,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "The meaning (spoken)",
+                    "en": "The meaning",
                     "ko": ""
                 }
             ],
@@ -2022,11 +1545,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ko": ""
                 },
                 {
@@ -2064,11 +1587,11 @@
                     "ko": "저"
                 },
                 {
-                    "en": "Understand (spoken)",
+                    "en": "Understand",
                     "ko": ""
                 },
                 {
-                    "en": "Understand (spoken)",
+                    "en": "Understand",
                     "ko": ""
                 },
                 {
@@ -2076,7 +1599,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
@@ -2086,14 +1609,6 @@
                 {
                     "en": "You",
                     "ko": "당신"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -2148,7 +1663,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "The meaning (spoken)",
+                    "en": "The meaning",
                     "ko": ""
                 },
                 {
@@ -2190,7 +1705,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ko": ""
                 },
                 {
@@ -2214,16 +1729,7 @@
             ]
         },
         "informal": {
-            "words": [
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
-                }
-            ],
+            "words": [],
             "sentences": [
                 {
                     "en": "What do you mean?",
@@ -2282,7 +1788,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ko": ""
                 },
                 {
@@ -2312,7 +1818,7 @@
                     "ko": "아니요"
                 },
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ko": ""
                 }
             ],
@@ -2382,7 +1888,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 }
             ],
@@ -2408,7 +1914,7 @@
                     "ko": "저"
                 },
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ko": ""
                 },
                 {
@@ -2420,31 +1926,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "No",
                     "ko": ""
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
                     "ko": ""
                 }
             ],
@@ -2592,11 +2078,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Just (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Just",
                     "ko": ""
                 },
                 {
@@ -2641,10 +2123,6 @@
                 },
                 {
                     "en": "Choose",
-                    "ko": ""
-                },
-                {
-                    "en": "The one that",
                     "ko": ""
                 },
                 {
@@ -2706,14 +2184,6 @@
                 {
                     "en": "Me",
                     "ko": "저"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -2866,14 +2336,6 @@
                 {
                     "en": "Really",
                     "ko": "정말"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -2918,10 +2380,6 @@
                 {
                     "en": "Different",
                     "ko": "다른"
-                },
-                {
-                    "en": "The one that",
-                    "ko": ""
                 },
                 {
                     "en": "Which",
@@ -3022,14 +2480,6 @@
                 {
                     "en": "You",
                     "ko": "당신"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -3144,7 +2594,7 @@
                     "ko": "저"
                 },
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ko": ""
                 },
                 {
@@ -3156,7 +2606,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Already (spoken)",
+                    "en": "Already",
                     "ko": ""
                 },
                 {
@@ -3164,11 +2614,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "“here”",
+                    "en": "here",
                     "ko": ""
                 },
                 {
-                    "en": "“this”",
+                    "en": "this",
                     "ko": ""
                 }
             ],
@@ -3398,14 +2848,6 @@
                 {
                     "en": "You",
                     "ko": "당신"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -3494,14 +2936,6 @@
     "Numbers (11–100)": {
         "neutral": {
             "words": [
-                {
-                    "en": "‑teen",
-                    "ko": ""
-                },
-                {
-                    "en": "‑ty",
-                    "ko": ""
-                },
                 {
                     "en": "tens",
                     "ko": ""
@@ -3752,169 +3186,13 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ko": ""
                 }
             ],
             "sentences": [
                 {
                     "en": "There isn’t any.",
-                    "ko": ""
-                }
-            ]
-        }
-    },
-    "Because (Karena / Soalnya)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "Because",
-                    "ko": ""
-                },
-                {
-                    "en": "Not",
-                    "ko": ""
-                },
-                {
-                    "en": "No (alone)",
-                    "ko": ""
-                },
-                {
-                    "en": "Can",
-                    "ko": "할 수 있다"
-                },
-                {
-                    "en": "Able",
-                    "ko": ""
-                },
-                {
-                    "en": "Busy",
-                    "ko": "바쁜"
-                },
-                {
-                    "en": "Traffic jam",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Because I’m busy.",
-                    "ko": ""
-                },
-                {
-                    "en": "I can’t because I’m busy.",
-                    "ko": ""
-                },
-                {
-                    "en": "Because of traffic.",
-                    "ko": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Not",
-                    "ko": ""
-                },
-                {
-                    "en": "No (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Because (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me",
-                    "ko": "저"
-                },
-                {
-                    "en": "Currently (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Work",
-                    "ko": "일하다"
-                },
-                {
-                    "en": "Tired",
-                    "ko": "피곤한"
-                },
-                {
-                    "en": "Because of (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I can’t because I’m working.",
-                    "ko": ""
-                },
-                {
-                    "en": "I can’t because I’m working.",
-                    "ko": ""
-                },
-                {
-                    "en": "Because I’m tired.",
-                    "ko": ""
-                },
-                {
-                    "en": "Because I’m tired.",
-                    "ko": ""
-                },
-                {
-                    "en": "Because of traffic.",
-                    "ko": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me",
-                    "ko": "저"
-                },
-                {
-                    "en": "Currently",
-                    "ko": ""
-                },
-                {
-                    "en": "Work",
-                    "ko": "일하다"
-                },
-                {
-                    "en": "Because (formal)",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I can’t because I’m working.",
-                    "ko": ""
-                },
-                {
-                    "en": "I can’t because I’m busy.",
-                    "ko": ""
-                },
-                {
-                    "en": "Because of traffic.",
                     "ko": ""
                 }
             ]
@@ -3982,7 +3260,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "That’s why (spoken)",
+                    "en": "That’s why",
                     "ko": ""
                 },
                 {
@@ -3998,7 +3276,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Say (spoken)",
+                    "en": "Say",
                     "ko": ""
                 },
                 {
@@ -4010,15 +3288,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Like that (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "Like that",
                     "ko": ""
                 }
             ],
@@ -4162,11 +3432,7 @@
                     "ko": "피곤한"
                 },
                 {
-                    "en": "Already (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Already",
                     "ko": ""
                 },
                 {
@@ -4204,7 +3470,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
@@ -4266,11 +3532,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "Then (spoken)",
+                    "en": "Then",
                     "ko": ""
                 },
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ko": ""
                 }
             ],
@@ -4340,7 +3606,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
@@ -4370,7 +3636,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Probably (spoken)",
+                    "en": "Probably",
                     "ko": ""
                 },
                 {
@@ -4386,15 +3652,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
-                    "en": "Already (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Already",
                     "ko": ""
                 },
                 {
@@ -4486,11 +3748,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
-                    "en": "Disagree (spoken)",
+                    "en": "Disagree",
                     "ko": ""
                 },
                 {
@@ -4578,7 +3840,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ko": ""
                 }
             ],
@@ -4654,11 +3916,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "Like (spoken)",
+                    "en": "Like",
                     "ko": ""
                 },
                 {
-                    "en": "Like that (spoken)",
+                    "en": "Like that",
                     "ko": ""
                 },
                 {
@@ -4750,7 +4012,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "A sec (spoken)",
+                    "en": "A sec",
                     "ko": ""
                 },
                 {
@@ -4788,7 +4050,7 @@
                     "ko": "부탁해요"
                 },
                 {
-                    "en": "Kindly (formal)",
+                    "en": "Kindly",
                     "ko": ""
                 },
                 {
@@ -4816,7 +4078,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "I mean (spoken)",
+                    "en": "I mean",
                     "ko": ""
                 },
                 {
@@ -4846,11 +4108,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "I mean (spoken)",
+                    "en": "I mean",
                     "ko": ""
                 },
                 {
-                    "en": "Like this (spoken)",
+                    "en": "Like this",
                     "ko": ""
                 }
             ],
@@ -4938,7 +4200,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Please (spoken)",
+                    "en": "Please",
                     "ko": ""
                 }
             ],
@@ -4964,7 +4226,7 @@
                     "ko": "부탁해요"
                 },
                 {
-                    "en": "Kindly (formal)",
+                    "en": "Kindly",
                     "ko": ""
                 }
             ],
@@ -4976,82 +4238,6 @@
                 {
                     "en": "Slower, please.",
                     "ko": ""
-                }
-            ]
-        }
-    },
-    "Inviting (Ayo / Yuk)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "Let’s",
-                    "ko": ""
-                },
-                {
-                    "en": "Eat",
-                    "ko": "먹다"
-                },
-                {
-                    "en": "Go",
-                    "ko": "가다"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let’s eat.",
-                    "ko": ""
-                },
-                {
-                    "en": "Let’s go.",
-                    "ko": "가요."
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Let’s (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Together (spoken)",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let’s eat.",
-                    "ko": ""
-                },
-                {
-                    "en": "Let’s go together.",
-                    "ko": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "Let’s (formal)",
-                    "ko": ""
-                },
-                {
-                    "en": "We",
-                    "ko": "우리"
-                },
-                {
-                    "en": "Us",
-                    "ko": "우리를"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let’s eat.",
-                    "ko": ""
-                },
-                {
-                    "en": "Let’s go.",
-                    "ko": "가요."
                 }
             ]
         }
@@ -5114,15 +4300,15 @@
         "informal": {
             "words": [
                 {
-                    "en": "Not right now (spoken)",
+                    "en": "Not right now",
                     "ko": ""
                 },
                 {
-                    "en": "Later (spoken)",
+                    "en": "Later",
                     "ko": ""
                 },
                 {
-                    "en": "Just (spoken)",
+                    "en": "Just",
                     "ko": ""
                 }
             ],
@@ -5164,7 +4350,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
@@ -5208,7 +4394,7 @@
                     "ko": "지금"
                 },
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ko": ""
                 }
             ],
@@ -5248,22 +4434,6 @@
                 {
                     "en": "Yes",
                     "ko": "네"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -5328,162 +4498,6 @@
             ]
         }
     },
-    "Jakarta Pronouns (Gue / Lu)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "What",
-                    "ko": "무엇"
-                },
-                {
-                    "en": "At",
-                    "ko": ""
-                },
-                {
-                    "en": "In",
-                    "ko": ""
-                },
-                {
-                    "en": "Currently (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Eat",
-                    "ko": "먹다"
-                },
-                {
-                    "en": "House",
-                    "ko": "집"
-                },
-                {
-                    "en": "Home",
-                    "ko": "집"
-                },
-                {
-                    "en": "Not yet",
-                    "ko": "아직 아니에요"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "What are you doing?",
-                    "ko": ""
-                },
-                {
-                    "en": "Not yet.",
-                    "ko": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me (Jakarta slang)",
-                    "ko": ""
-                },
-                {
-                    "en": "You (Jakarta slang)",
-                    "ko": ""
-                },
-                {
-                    "en": "You (Jakarta slang)",
-                    "ko": ""
-                },
-                {
-                    "en": "Already (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Not yet (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Friend (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I’m at home.",
-                    "ko": ""
-                },
-                {
-                    "en": "I’m at home.",
-                    "ko": ""
-                },
-                {
-                    "en": "What are you doing?",
-                    "ko": ""
-                },
-                {
-                    "en": "Have you eaten yet?",
-                    "ko": ""
-                },
-                {
-                    "en": "Already or not yet?",
-                    "ko": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "Whether (yes-no question)",
-                    "ko": ""
-                },
-                {
-                    "en": "I",
-                    "ko": "저"
-                },
-                {
-                    "en": "Me",
-                    "ko": "저"
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                },
-                {
-                    "en": "You",
-                    "ko": "당신"
-                },
-                {
-                    "en": "Currently",
-                    "ko": ""
-                },
-                {
-                    "en": "Already",
-                    "ko": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I’m at home.",
-                    "ko": ""
-                },
-                {
-                    "en": "What are you doing?",
-                    "ko": ""
-                },
-                {
-                    "en": "Have you eaten yet?",
-                    "ko": ""
-                }
-            ]
-        }
-    },
     "Chat Softeners": {
         "neutral": {
             "words": [
@@ -5509,11 +4523,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "Hurry up (spoken)",
+                    "en": "Hurry up",
                     "ko": ""
                 },
                 {
-                    "en": "Like this (spoken)",
+                    "en": "Like this",
                     "ko": ""
                 },
                 {
@@ -5521,19 +4535,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "“here”",
+                    "en": "here",
                     "ko": ""
                 },
                 {
-                    "en": "“this”",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "this",
                     "ko": ""
                 },
                 {
@@ -5541,7 +4547,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "“how come?” tone",
+                    "en": "how come? tone",
                     "ko": ""
                 },
                 {
@@ -5549,11 +4555,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "“come on”",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "come on",
                     "ko": ""
                 },
                 {
@@ -5565,11 +4567,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "“there”",
+                    "en": "there",
                     "ko": ""
                 },
                 {
-                    "en": "“see?”",
+                    "en": "see?",
                     "ko": ""
                 }
             ],
@@ -5645,15 +4647,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "“how come?” tone",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "how come? tone",
                     "ko": ""
                 }
             ],
@@ -5685,7 +4679,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ko": ""
                 },
                 {
@@ -5693,7 +4687,7 @@
                     "ko": "무엇"
                 },
                 {
-                    "en": "Already (spoken)",
+                    "en": "Already",
                     "ko": ""
                 },
                 {
@@ -5727,7 +4721,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Not yet (spoken)",
+                    "en": "Not yet",
                     "ko": ""
                 }
             ],
@@ -5741,7 +4735,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ko": ""
                 },
                 {
@@ -5769,7 +4763,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s (spoken)",
+                    "en": "Let’s",
                     "ko": ""
                 },
                 {
@@ -5785,7 +4779,7 @@
                     "ko": "나중에"
                 },
                 {
-                    "en": "Just (spoken)",
+                    "en": "Just",
                     "ko": ""
                 }
             ],
@@ -5807,10 +4801,6 @@
         "informal": {
             "words": [
                 {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
                     "en": "casual closure",
                     "ko": ""
                 }
@@ -5825,7 +4815,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let’s (formal)",
+                    "en": "Let’s",
                     "ko": ""
                 },
                 {
@@ -5947,23 +4937,11 @@
                     "ko": "정말"
                 },
                 {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
                     "en": "casual closure",
                     "ko": ""
                 },
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ko": ""
                 }
             ],
@@ -6041,15 +5019,15 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Know (spoken)",
+                    "en": "Know",
                     "ko": ""
                 },
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ko": ""
                 },
                 {
-                    "en": "Hear (spoken)",
+                    "en": "Hear",
                     "ko": ""
                 }
             ],
@@ -6071,19 +5049,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ko": ""
                 },
                 {
-                    "en": "Hey (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "Hey",
                     "ko": ""
                 }
             ],
@@ -6179,16 +5149,7 @@
             ]
         },
         "informal": {
-            "words": [
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
-                }
-            ],
+            "words": [],
             "sentences": [
                 {
                     "en": "So cool.",
@@ -6374,14 +5335,6 @@
                 {
                     "en": "Work",
                     "ko": "일하다"
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ko": ""
                 }
             ],
             "sentences": [
@@ -6456,15 +5409,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Hey (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "Hey",
                     "ko": ""
                 }
             ],
@@ -6492,7 +5437,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ko": ""
                 },
                 {
@@ -6513,14 +5458,6 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
                     "ko": ""
                 },
                 {
@@ -6546,7 +5483,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Hey (spoken)",
+                    "en": "Hey",
                     "ko": ""
                 },
                 {
@@ -6563,7 +5500,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ko": ""
                 }
             ],
@@ -6583,7 +5520,7 @@
                     "ko": "좋아하다"
                 },
                 {
-                    "en": "As (spoken)",
+                    "en": "As",
                     "ko": ""
                 },
                 {
@@ -6619,7 +5556,7 @@
                     "ko": "친구"
                 },
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ko": ""
                 }
             ],
@@ -6670,14 +5607,6 @@
                 },
                 {
                     "en": "Like that",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
-                    "ko": ""
-                },
-                {
-                    "en": "emphasis",
                     "ko": ""
                 }
             ],
@@ -6903,23 +5832,23 @@
                     "ko": "저"
                 },
                 {
-                    "en": "I (casual)",
+                    "en": "I",
                     "ko": ""
                 },
                 {
-                    "en": "Mum (spoken)",
+                    "en": "Mum",
                     "ko": ""
                 },
                 {
-                    "en": "Close (spoken)",
+                    "en": "Close",
                     "ko": ""
                 },
                 {
-                    "en": "Friend (spoken)",
+                    "en": "Friend",
                     "ko": ""
                 },
                 {
-                    "en": "Be friends (casual)",
+                    "en": "Be friends",
                     "ko": ""
                 },
                 {
@@ -6927,11 +5856,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Already (spoken)",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Already",
                     "ko": ""
                 },
                 {
@@ -7247,7 +6172,7 @@
                     "ko": "저"
                 },
                 {
-                    "en": "I (casual)",
+                    "en": "I",
                     "ko": ""
                 },
                 {
@@ -7259,7 +6184,7 @@
                     "ko": "당신"
                 },
                 {
-                    "en": "You (casual)",
+                    "en": "You",
                     "ko": ""
                 },
                 {
@@ -7275,7 +6200,7 @@
                     "ko": "사랑하다"
                 },
                 {
-                    "en": "Babe (casual)",
+                    "en": "Babe",
                     "ko": ""
                 },
                 {
@@ -7287,7 +6212,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "Already (spoken)",
+                    "en": "Already",
                     "ko": ""
                 },
                 {
@@ -7303,11 +6228,11 @@
                     "ko": "무엇"
                 },
                 {
-                    "en": "Want (spoken)",
+                    "en": "Want",
                     "ko": ""
                 },
                 {
-                    "en": "Happy (spoken)",
+                    "en": "Happy",
                     "ko": ""
                 },
                 {
@@ -7344,10 +6269,6 @@
                 },
                 {
                     "en": "Yeah",
-                    "ko": ""
-                },
-                {
-                    "en": "Softener",
                     "ko": ""
                 },
                 {
@@ -7459,7 +6380,800 @@
             ]
         }
     },
-    "About (Tentang / Soal)": {
+    "Conditions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "If",
+                    "ko": ""
+                },
+                {
+                    "en": "Hungry",
+                    "ko": "배고픈"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Exist",
+                    "ko": ""
+                },
+                {
+                    "en": "There is",
+                    "ko": ""
+                },
+                {
+                    "en": "Time",
+                    "ko": ""
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": ""
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "Possible",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If hungry.",
+                    "ko": ""
+                },
+                {
+                    "en": "If tired.",
+                    "ko": ""
+                },
+                {
+                    "en": "If there is time.",
+                    "ko": ""
+                },
+                {
+                    "en": "If able.",
+                    "ko": ""
+                },
+                {
+                    "en": "If able, later.",
+                    "ko": ""
+                },
+                {
+                    "en": "If hungry, eat.",
+                    "ko": ""
+                },
+                {
+                    "en": "If tired, later.",
+                    "ko": ""
+                },
+                {
+                    "en": "If possible.",
+                    "ko": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Yeah",
+                    "ko": ""
+                },
+                {
+                    "en": "Just",
+                    "ko": ""
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "If",
+                    "ko": ""
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Be able to",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If there is time.",
+                    "ko": ""
+                },
+                {
+                    "en": "If possible.",
+                    "ko": ""
+                },
+                {
+                    "en": "If able.",
+                    "ko": ""
+                }
+            ]
+        }
+    },
+    "Moments": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "when",
+                    "ko": ""
+                },
+                {
+                    "en": "At the moment",
+                    "ko": ""
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "도착하다"
+                },
+                {
+                    "en": "Hungry",
+                    "ko": "배고픈"
+                },
+                {
+                    "en": "Start",
+                    "ko": "시작하다"
+                },
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Eat when you’re hungry.",
+                    "ko": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let me know",
+                    "ko": ""
+                },
+                {
+                    "en": "Tell",
+                    "ko": ""
+                },
+                {
+                    "en": "Say",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let me know when you arrive.",
+                    "ko": ""
+                },
+                {
+                    "en": "Tell me when it starts.",
+                    "ko": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "With": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "With",
+                    "ko": ""
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "He",
+                    "ko": "그"
+                },
+                {
+                    "en": "She",
+                    "ko": "그녀"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                },
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                },
+                {
+                    "en": "Come",
+                    "ko": "오다"
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "도착하다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With you.",
+                    "ko": ""
+                },
+                {
+                    "en": "Come with a friend.",
+                    "ko": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Just",
+                    "ko": ""
+                },
+                {
+                    "en": "casual closure",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ko": ""
+                },
+                {
+                    "en": "Go with me.",
+                    "ko": ""
+                },
+                {
+                    "en": "With me.",
+                    "ko": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "With",
+                    "ko": ""
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ko": ""
+                },
+                {
+                    "en": "Go with me.",
+                    "ko": ""
+                }
+            ]
+        }
+    },
+    "For": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "For",
+                    "ko": ""
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ko": ""
+                },
+                {
+                    "en": "For you.",
+                    "ko": ""
+                },
+                {
+                    "en": "For that.",
+                    "ko": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Just",
+                    "ko": ""
+                },
+                {
+                    "en": "casual closure",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "For me.",
+                    "ko": ""
+                },
+                {
+                    "en": "For me.",
+                    "ko": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "For",
+                    "ko": ""
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ko": ""
+                },
+                {
+                    "en": "For me.",
+                    "ko": ""
+                }
+            ]
+        }
+    },
+    "Because": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Because",
+                    "ko": ""
+                },
+                {
+                    "en": "Not",
+                    "ko": ""
+                },
+                {
+                    "en": "No",
+                    "ko": ""
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": ""
+                },
+                {
+                    "en": "Busy",
+                    "ko": "바쁜"
+                },
+                {
+                    "en": "Traffic jam",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Because I’m busy.",
+                    "ko": ""
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ko": ""
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ko": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ko": ""
+                },
+                {
+                    "en": "No",
+                    "ko": ""
+                },
+                {
+                    "en": "Because",
+                    "ko": ""
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": ""
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Because of",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ko": ""
+                },
+                {
+                    "en": "I can’t because I’m working.",
+                    "ko": ""
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ko": ""
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ko": ""
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ko": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": ""
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                },
+                {
+                    "en": "Because",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ko": ""
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ko": ""
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ko": ""
+                }
+            ]
+        }
+    },
+    "Inviting": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let’s",
+                    "ko": ""
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat.",
+                    "ko": ""
+                },
+                {
+                    "en": "Let’s go.",
+                    "ko": "가요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let’s",
+                    "ko": ""
+                },
+                {
+                    "en": "Together",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat.",
+                    "ko": ""
+                },
+                {
+                    "en": "Let’s go together.",
+                    "ko": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let’s",
+                    "ko": ""
+                },
+                {
+                    "en": "We",
+                    "ko": "우리"
+                },
+                {
+                    "en": "Us",
+                    "ko": "우리를"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat.",
+                    "ko": ""
+                },
+                {
+                    "en": "Let’s go.",
+                    "ko": "가요."
+                }
+            ]
+        }
+    },
+    "Informal pronouns": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "At",
+                    "ko": ""
+                },
+                {
+                    "en": "In",
+                    "ko": ""
+                },
+                {
+                    "en": "Currently",
+                    "ko": ""
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "House",
+                    "ko": "집"
+                },
+                {
+                    "en": "Home",
+                    "ko": "집"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직 아니에요"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "ko": ""
+                },
+                {
+                    "en": "Not yet.",
+                    "ko": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me (Jakarta slang)",
+                    "ko": ""
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ko": ""
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ko": ""
+                },
+                {
+                    "en": "Already",
+                    "ko": ""
+                },
+                {
+                    "en": "Not yet",
+                    "ko": ""
+                },
+                {
+                    "en": "Friend",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ko": ""
+                },
+                {
+                    "en": "I’m at home.",
+                    "ko": ""
+                },
+                {
+                    "en": "What are you doing?",
+                    "ko": ""
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ko": ""
+                },
+                {
+                    "en": "Already or not yet?",
+                    "ko": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ko": ""
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Currently",
+                    "ko": ""
+                },
+                {
+                    "en": "Already",
+                    "ko": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ko": ""
+                },
+                {
+                    "en": "What are you doing?",
+                    "ko": ""
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ko": ""
+                }
+            ]
+        }
+    },
+    "About": {
         "neutral": {
             "words": [
                 {
@@ -7467,7 +7181,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "About (re: a matter)",
+                    "en": "About",
                     "ko": ""
                 },
                 {
@@ -7591,7 +7305,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let's (casual)",
+                    "en": "Let's",
                     "ko": ""
                 },
                 {
@@ -7611,11 +7325,11 @@
                     "ko": ""
                 },
                 {
-                    "en": "Chat about (spoken)",
+                    "en": "Chat about",
                     "ko": ""
                 },
                 {
-                    "en": "Talking about (spoken)",
+                    "en": "Talking about",
                     "ko": ""
                 },
                 {
@@ -7623,7 +7337,7 @@
                     "ko": ""
                 },
                 {
-                    "en": "About (re: a matter)",
+                    "en": "About",
                     "ko": ""
                 },
                 {

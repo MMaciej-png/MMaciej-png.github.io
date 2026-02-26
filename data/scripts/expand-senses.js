@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 
 const LANG_CODES = ["en", "indo", "ja", "ko", "pl", "fr"];
-const DATA_DIR = __dirname;
+const DATA_DIR = path.join(__dirname, "..");
 
 function isEntry(o) {
   return o && typeof o === "object" && !Array.isArray(o) && o.en !== undefined;

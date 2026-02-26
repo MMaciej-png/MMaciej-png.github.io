@@ -45,6 +45,10 @@ data/CLARITY_CHECK_FULL.md
 data/EQUIVALENCE_GAPS.md
 data/_tmp_*.py
 
+# Optional: uncomment to avoid committing large archive source files
+# data/archive/NewContent.json
+# data/archive/*-translations.json
+
 # Ignore Markdown except README
 *.md
 !README.md

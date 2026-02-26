@@ -146,8 +146,11 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1001;
-  min-width: 320px;
-  max-width: 90vw;
+  width: 320px;
+  max-width: calc(100vw - 24px);
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
   background: #1e222a;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 14px;
@@ -175,6 +178,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .lang-pair-popup-option {
@@ -197,6 +203,18 @@ body {
 .lang-pair-popup-option.active {
   background: rgba(255, 255, 255, 0.12);
   font-weight: 500;
+}
+
+.lang-pair-popup-tts-note {
+  margin-top: 12px;
+  padding: 10px 20px 16px;
+  font-size: 0.8em;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.75);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.lang-pair-popup-tts-note strong {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 

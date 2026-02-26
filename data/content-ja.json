@@ -137,7 +137,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Good night (before sleeping).",
+                    "en": "Good night",
                     "ja": ""
                 }
             ]
@@ -160,10 +160,6 @@
                 },
                 {
                     "en": "News",
-                    "ja": ""
-                },
-                {
-                    "en": "Condition",
                     "ja": ""
                 },
                 {
@@ -203,23 +199,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ja": ""
                 },
                 {
                     "en": "The news",
-                    "ja": ""
-                },
-                {
-                    "en": "condition",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
                     "ja": ""
                 }
             ],
@@ -272,7 +256,7 @@
                     "ja": "いいえ"
                 },
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ja": ""
                 }
             ],
@@ -371,7 +355,7 @@
                     "ja": "大丈夫です"
                 },
                 {
-                    "en": "No problem (spoken)",
+                    "en": "No problem",
                     "ja": ""
                 },
                 {
@@ -383,11 +367,7 @@
                     "ja": "私"
                 },
                 {
-                    "en": "Understand (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Understand",
                     "ja": ""
                 },
                 {
@@ -396,14 +376,6 @@
                 },
                 {
                     "en": "Laughing",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
                     "ja": ""
                 }
             ],
@@ -473,7 +445,7 @@
                     "ja": "お願いします"
                 },
                 {
-                    "en": "Kindly (formal)",
+                    "en": "Kindly",
                     "ja": ""
                 },
                 {
@@ -503,7 +475,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Thanks (spoken)",
+                    "en": "Thanks",
                     "ja": ""
                 },
                 {
@@ -523,7 +495,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "“come on”",
+                    "en": "come on",
                     "ja": ""
                 }
             ],
@@ -609,7 +581,7 @@
                     "ja": "私"
                 },
                 {
-                    "en": "Take leave (polite)",
+                    "en": "Take leave",
                     "ja": ""
                 }
             ],
@@ -635,7 +607,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Bye (spoken)",
+                    "en": "Bye",
                     "ja": ""
                 },
                 {
@@ -645,10 +617,6 @@
                 {
                     "en": "Me",
                     "ja": "私"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
                 },
                 {
                     "en": "casual closure",
@@ -753,327 +721,6 @@
         "formal": {
             "words": [],
             "sentences": []
-        }
-    },
-    "Conditions (Kalau)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "If",
-                    "ja": ""
-                },
-                {
-                    "en": "Hungry",
-                    "ja": "お腹が空いた"
-                },
-                {
-                    "en": "Tired",
-                    "ja": "疲れた"
-                },
-                {
-                    "en": "Exist",
-                    "ja": ""
-                },
-                {
-                    "en": "There is",
-                    "ja": ""
-                },
-                {
-                    "en": "Time",
-                    "ja": ""
-                },
-                {
-                    "en": "Can",
-                    "ja": "できる"
-                },
-                {
-                    "en": "Able",
-                    "ja": ""
-                },
-                {
-                    "en": "Later",
-                    "ja": "後で"
-                },
-                {
-                    "en": "Eat",
-                    "ja": "食べる"
-                },
-                {
-                    "en": "Possible",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "If hungry.",
-                    "ja": ""
-                },
-                {
-                    "en": "If tired.",
-                    "ja": ""
-                },
-                {
-                    "en": "If there is time.",
-                    "ja": ""
-                },
-                {
-                    "en": "If able.",
-                    "ja": ""
-                },
-                {
-                    "en": "If able, later.",
-                    "ja": ""
-                },
-                {
-                    "en": "If hungry, eat.",
-                    "ja": ""
-                },
-                {
-                    "en": "If tired, later.",
-                    "ja": ""
-                },
-                {
-                    "en": "If possible.",
-                    "ja": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Okay",
-                    "ja": "わかりました"
-                },
-                {
-                    "en": "Yeah",
-                    "ja": ""
-                },
-                {
-                    "en": "Just",
-                    "ja": ""
-                }
-            ],
-            "sentences": []
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "If (formal)",
-                    "ja": ""
-                },
-                {
-                    "en": "Can",
-                    "ja": "できる"
-                },
-                {
-                    "en": "Be able to (formal)",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "If there is time.",
-                    "ja": ""
-                },
-                {
-                    "en": "If possible.",
-                    "ja": ""
-                },
-                {
-                    "en": "If able.",
-                    "ja": ""
-                }
-            ]
-        }
-    },
-    "Moments (Pas)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "(Right) when",
-                    "ja": ""
-                },
-                {
-                    "en": "At the moment",
-                    "ja": ""
-                },
-                {
-                    "en": "Arrive",
-                    "ja": "着く"
-                },
-                {
-                    "en": "Hungry",
-                    "ja": "お腹が空いた"
-                },
-                {
-                    "en": "Start",
-                    "ja": "始める"
-                },
-                {
-                    "en": "Okay",
-                    "ja": "わかりました"
-                },
-                {
-                    "en": "Yes",
-                    "ja": "はい"
-                },
-                {
-                    "en": "Eat",
-                    "ja": "食べる"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Eat when you’re hungry.",
-                    "ja": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Let me know (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Tell",
-                    "ja": ""
-                },
-                {
-                    "en": "Say (spoken)",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let me know when you arrive.",
-                    "ja": ""
-                },
-                {
-                    "en": "Tell me when it starts.",
-                    "ja": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [],
-            "sentences": []
-        }
-    },
-    "With (Sama)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "With",
-                    "ja": ""
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                },
-                {
-                    "en": "He",
-                    "ja": "彼"
-                },
-                {
-                    "en": "She",
-                    "ja": "彼女"
-                },
-                {
-                    "en": "Friend",
-                    "ja": "友達"
-                },
-                {
-                    "en": "Go",
-                    "ja": "進む"
-                },
-                {
-                    "en": "Come",
-                    "ja": "来る"
-                },
-                {
-                    "en": "Arrive",
-                    "ja": "着く"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "With you.",
-                    "ja": ""
-                },
-                {
-                    "en": "Come with a friend.",
-                    "ja": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me",
-                    "ja": "私"
-                },
-                {
-                    "en": "Just (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "casual closure",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "With me.",
-                    "ja": ""
-                },
-                {
-                    "en": "Go with me.",
-                    "ja": ""
-                },
-                {
-                    "en": "With me.",
-                    "ja": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "With",
-                    "ja": ""
-                },
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me",
-                    "ja": "私"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "With me.",
-                    "ja": ""
-                },
-                {
-                    "en": "Go with me.",
-                    "ja": ""
-                }
-            ]
         }
     },
     "Titles & Relationships": {
@@ -1192,7 +839,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Girlfriend (spoken)",
+                    "en": "Girlfriend",
                     "ja": ""
                 },
                 {
@@ -1200,7 +847,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Boyfriend (spoken)",
+                    "en": "Boyfriend",
                     "ja": ""
                 },
                 {
@@ -1212,7 +859,7 @@
                     "ja": "私"
                 },
                 {
-                    "en": "Friend (spoken)",
+                    "en": "Friend",
                     "ja": ""
                 },
                 {
@@ -1220,11 +867,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "“here”",
+                    "en": "here",
                     "ja": ""
                 },
                 {
-                    "en": "“this”",
+                    "en": "this",
                     "ja": ""
                 }
             ],
@@ -1255,114 +902,6 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "ja": ""
-                }
-            ]
-        }
-    },
-    "For (Buat)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "For",
-                    "ja": ""
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                },
-                {
-                    "en": "This",
-                    "ja": "これ"
-                },
-                {
-                    "en": "That",
-                    "ja": "あれ"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "This is for you.",
-                    "ja": ""
-                },
-                {
-                    "en": "For you.",
-                    "ja": ""
-                },
-                {
-                    "en": "For that.",
-                    "ja": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me",
-                    "ja": "私"
-                },
-                {
-                    "en": "Just (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "casual closure",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "For me.",
-                    "ja": ""
-                },
-                {
-                    "en": "For me.",
-                    "ja": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "For",
-                    "ja": ""
-                },
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me",
-                    "ja": "私"
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "This is for you.",
-                    "ja": ""
-                },
-                {
-                    "en": "For me.",
                     "ja": ""
                 }
             ]
@@ -1482,14 +1021,6 @@
                 {
                     "en": "Really",
                     "ja": "本当に"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -1598,7 +1129,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 }
             ],
@@ -1624,15 +1155,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "No",
                     "ja": ""
                 }
             ],
@@ -1714,7 +1237,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 }
             ],
@@ -1744,7 +1267,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
@@ -1858,7 +1381,7 @@
                     "ja": "あなた"
                 },
                 {
-                    "en": "Please (formal)",
+                    "en": "Please",
                     "ja": ""
                 },
                 {
@@ -1916,11 +1439,11 @@
                     "ja": "あなた"
                 },
                 {
-                    "en": "Help (spoken)",
+                    "en": "Help",
                     "ja": ""
                 },
                 {
-                    "en": "A sec (spoken)",
+                    "en": "A sec",
                     "ja": ""
                 },
                 {
@@ -1928,7 +1451,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "“come on”",
+                    "en": "come on",
                     "ja": ""
                 }
             ],
@@ -1988,7 +1511,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "The meaning (spoken)",
+                    "en": "The meaning",
                     "ja": ""
                 }
             ],
@@ -2022,11 +1545,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ja": ""
                 },
                 {
@@ -2064,11 +1587,11 @@
                     "ja": "私"
                 },
                 {
-                    "en": "Understand (spoken)",
+                    "en": "Understand",
                     "ja": ""
                 },
                 {
-                    "en": "Understand (spoken)",
+                    "en": "Understand",
                     "ja": ""
                 },
                 {
@@ -2076,7 +1599,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
@@ -2086,14 +1609,6 @@
                 {
                     "en": "You",
                     "ja": "あなた"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -2148,7 +1663,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "The meaning (spoken)",
+                    "en": "The meaning",
                     "ja": ""
                 },
                 {
@@ -2190,7 +1705,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ja": ""
                 },
                 {
@@ -2214,16 +1729,7 @@
             ]
         },
         "informal": {
-            "words": [
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
-                }
-            ],
+            "words": [],
             "sentences": [
                 {
                     "en": "What do you mean?",
@@ -2282,7 +1788,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ja": ""
                 },
                 {
@@ -2312,7 +1818,7 @@
                     "ja": "いいえ"
                 },
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ja": ""
                 }
             ],
@@ -2382,7 +1888,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 }
             ],
@@ -2408,7 +1914,7 @@
                     "ja": "私"
                 },
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ja": ""
                 },
                 {
@@ -2420,31 +1926,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "No",
                     "ja": ""
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
                     "ja": ""
                 }
             ],
@@ -2592,11 +2078,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Just (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Just",
                     "ja": ""
                 },
                 {
@@ -2641,10 +2123,6 @@
                 },
                 {
                     "en": "Choose",
-                    "ja": ""
-                },
-                {
-                    "en": "The one that",
                     "ja": ""
                 },
                 {
@@ -2706,14 +2184,6 @@
                 {
                     "en": "Me",
                     "ja": "私"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -2866,14 +2336,6 @@
                 {
                     "en": "Really",
                     "ja": "本当に"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -2918,10 +2380,6 @@
                 {
                     "en": "Different",
                     "ja": "違う"
-                },
-                {
-                    "en": "The one that",
-                    "ja": ""
                 },
                 {
                     "en": "Which",
@@ -3022,14 +2480,6 @@
                 {
                     "en": "You",
                     "ja": "あなた"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -3144,7 +2594,7 @@
                     "ja": "私"
                 },
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ja": ""
                 },
                 {
@@ -3156,7 +2606,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Already (spoken)",
+                    "en": "Already",
                     "ja": ""
                 },
                 {
@@ -3164,11 +2614,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "“here”",
+                    "en": "here",
                     "ja": ""
                 },
                 {
-                    "en": "“this”",
+                    "en": "this",
                     "ja": ""
                 }
             ],
@@ -3398,14 +2848,6 @@
                 {
                     "en": "You",
                     "ja": "あなた"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -3494,14 +2936,6 @@
     "Numbers (11–100)": {
         "neutral": {
             "words": [
-                {
-                    "en": "‑teen",
-                    "ja": ""
-                },
-                {
-                    "en": "‑ty",
-                    "ja": ""
-                },
                 {
                     "en": "tens",
                     "ja": ""
@@ -3752,169 +3186,13 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ja": ""
                 }
             ],
             "sentences": [
                 {
                     "en": "There isn’t any.",
-                    "ja": ""
-                }
-            ]
-        }
-    },
-    "Because (Karena / Soalnya)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "Because",
-                    "ja": ""
-                },
-                {
-                    "en": "Not",
-                    "ja": ""
-                },
-                {
-                    "en": "No (alone)",
-                    "ja": ""
-                },
-                {
-                    "en": "Can",
-                    "ja": "できる"
-                },
-                {
-                    "en": "Able",
-                    "ja": ""
-                },
-                {
-                    "en": "Busy",
-                    "ja": "忙しい"
-                },
-                {
-                    "en": "Traffic jam",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Because I’m busy.",
-                    "ja": ""
-                },
-                {
-                    "en": "I can’t because I’m busy.",
-                    "ja": ""
-                },
-                {
-                    "en": "Because of traffic.",
-                    "ja": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Not",
-                    "ja": ""
-                },
-                {
-                    "en": "No (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Because (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me",
-                    "ja": "私"
-                },
-                {
-                    "en": "Currently (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Work",
-                    "ja": "働く"
-                },
-                {
-                    "en": "Tired",
-                    "ja": "疲れた"
-                },
-                {
-                    "en": "Because of (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I can’t because I’m working.",
-                    "ja": ""
-                },
-                {
-                    "en": "I can’t because I’m working.",
-                    "ja": ""
-                },
-                {
-                    "en": "Because I’m tired.",
-                    "ja": ""
-                },
-                {
-                    "en": "Because I’m tired.",
-                    "ja": ""
-                },
-                {
-                    "en": "Because of traffic.",
-                    "ja": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me",
-                    "ja": "私"
-                },
-                {
-                    "en": "Currently",
-                    "ja": ""
-                },
-                {
-                    "en": "Work",
-                    "ja": "働く"
-                },
-                {
-                    "en": "Because (formal)",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I can’t because I’m working.",
-                    "ja": ""
-                },
-                {
-                    "en": "I can’t because I’m busy.",
-                    "ja": ""
-                },
-                {
-                    "en": "Because of traffic.",
                     "ja": ""
                 }
             ]
@@ -3982,7 +3260,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "That’s why (spoken)",
+                    "en": "That’s why",
                     "ja": ""
                 },
                 {
@@ -3998,7 +3276,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Say (spoken)",
+                    "en": "Say",
                     "ja": ""
                 },
                 {
@@ -4010,15 +3288,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Like that (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "Like that",
                     "ja": ""
                 }
             ],
@@ -4162,11 +3432,7 @@
                     "ja": "疲れた"
                 },
                 {
-                    "en": "Already (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Already",
                     "ja": ""
                 },
                 {
@@ -4204,7 +3470,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
@@ -4266,11 +3532,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "Then (spoken)",
+                    "en": "Then",
                     "ja": ""
                 },
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ja": ""
                 }
             ],
@@ -4340,7 +3606,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
@@ -4370,7 +3636,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Probably (spoken)",
+                    "en": "Probably",
                     "ja": ""
                 },
                 {
@@ -4386,15 +3652,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
-                    "en": "Already (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Already",
                     "ja": ""
                 },
                 {
@@ -4486,11 +3748,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
-                    "en": "Disagree (spoken)",
+                    "en": "Disagree",
                     "ja": ""
                 },
                 {
@@ -4578,7 +3840,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ja": ""
                 }
             ],
@@ -4654,11 +3916,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "Like (spoken)",
+                    "en": "Like",
                     "ja": ""
                 },
                 {
-                    "en": "Like that (spoken)",
+                    "en": "Like that",
                     "ja": ""
                 },
                 {
@@ -4750,7 +4012,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "A sec (spoken)",
+                    "en": "A sec",
                     "ja": ""
                 },
                 {
@@ -4788,7 +4050,7 @@
                     "ja": "お願いします"
                 },
                 {
-                    "en": "Kindly (formal)",
+                    "en": "Kindly",
                     "ja": ""
                 },
                 {
@@ -4816,7 +4078,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "I mean (spoken)",
+                    "en": "I mean",
                     "ja": ""
                 },
                 {
@@ -4846,11 +4108,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "I mean (spoken)",
+                    "en": "I mean",
                     "ja": ""
                 },
                 {
-                    "en": "Like this (spoken)",
+                    "en": "Like this",
                     "ja": ""
                 }
             ],
@@ -4938,7 +4200,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Please (spoken)",
+                    "en": "Please",
                     "ja": ""
                 }
             ],
@@ -4964,7 +4226,7 @@
                     "ja": "お願いします"
                 },
                 {
-                    "en": "Kindly (formal)",
+                    "en": "Kindly",
                     "ja": ""
                 }
             ],
@@ -4976,82 +4238,6 @@
                 {
                     "en": "Slower, please.",
                     "ja": ""
-                }
-            ]
-        }
-    },
-    "Inviting (Ayo / Yuk)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "Let’s",
-                    "ja": ""
-                },
-                {
-                    "en": "Eat",
-                    "ja": "食べる"
-                },
-                {
-                    "en": "Go",
-                    "ja": "進む"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let’s eat.",
-                    "ja": ""
-                },
-                {
-                    "en": "Let’s go.",
-                    "ja": "行きましょう。"
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "Let’s (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Together (spoken)",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let’s eat.",
-                    "ja": ""
-                },
-                {
-                    "en": "Let’s go together.",
-                    "ja": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "Let’s (formal)",
-                    "ja": ""
-                },
-                {
-                    "en": "We",
-                    "ja": "私たち"
-                },
-                {
-                    "en": "Us",
-                    "ja": "私たち"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "Let’s eat.",
-                    "ja": ""
-                },
-                {
-                    "en": "Let’s go.",
-                    "ja": "行きましょう。"
                 }
             ]
         }
@@ -5114,15 +4300,15 @@
         "informal": {
             "words": [
                 {
-                    "en": "Not right now (spoken)",
+                    "en": "Not right now",
                     "ja": ""
                 },
                 {
-                    "en": "Later (spoken)",
+                    "en": "Later",
                     "ja": ""
                 },
                 {
-                    "en": "Just (spoken)",
+                    "en": "Just",
                     "ja": ""
                 }
             ],
@@ -5164,7 +4350,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
@@ -5208,7 +4394,7 @@
                     "ja": "今"
                 },
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ja": ""
                 }
             ],
@@ -5248,22 +4434,6 @@
                 {
                     "en": "Yes",
                     "ja": "はい"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -5328,162 +4498,6 @@
             ]
         }
     },
-    "Jakarta Pronouns (Gue / Lu)": {
-        "neutral": {
-            "words": [
-                {
-                    "en": "What",
-                    "ja": "何"
-                },
-                {
-                    "en": "At",
-                    "ja": ""
-                },
-                {
-                    "en": "In",
-                    "ja": ""
-                },
-                {
-                    "en": "Currently (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Eat",
-                    "ja": "食べる"
-                },
-                {
-                    "en": "House",
-                    "ja": "家"
-                },
-                {
-                    "en": "Home",
-                    "ja": "家"
-                },
-                {
-                    "en": "Not yet",
-                    "ja": "まだです"
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "What are you doing?",
-                    "ja": ""
-                },
-                {
-                    "en": "Not yet.",
-                    "ja": ""
-                }
-            ]
-        },
-        "informal": {
-            "words": [
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me (Jakarta slang)",
-                    "ja": ""
-                },
-                {
-                    "en": "You (Jakarta slang)",
-                    "ja": ""
-                },
-                {
-                    "en": "You (Jakarta slang)",
-                    "ja": ""
-                },
-                {
-                    "en": "Already (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Not yet (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Friend (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I’m at home.",
-                    "ja": ""
-                },
-                {
-                    "en": "I’m at home.",
-                    "ja": ""
-                },
-                {
-                    "en": "What are you doing?",
-                    "ja": ""
-                },
-                {
-                    "en": "Have you eaten yet?",
-                    "ja": ""
-                },
-                {
-                    "en": "Already or not yet?",
-                    "ja": ""
-                }
-            ]
-        },
-        "formal": {
-            "words": [
-                {
-                    "en": "Whether (yes-no question)",
-                    "ja": ""
-                },
-                {
-                    "en": "I",
-                    "ja": "私"
-                },
-                {
-                    "en": "Me",
-                    "ja": "私"
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                },
-                {
-                    "en": "You",
-                    "ja": "あなた"
-                },
-                {
-                    "en": "Currently",
-                    "ja": ""
-                },
-                {
-                    "en": "Already",
-                    "ja": ""
-                }
-            ],
-            "sentences": [
-                {
-                    "en": "I’m at home.",
-                    "ja": ""
-                },
-                {
-                    "en": "What are you doing?",
-                    "ja": ""
-                },
-                {
-                    "en": "Have you eaten yet?",
-                    "ja": ""
-                }
-            ]
-        }
-    },
     "Chat Softeners": {
         "neutral": {
             "words": [
@@ -5509,11 +4523,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "Hurry up (spoken)",
+                    "en": "Hurry up",
                     "ja": ""
                 },
                 {
-                    "en": "Like this (spoken)",
+                    "en": "Like this",
                     "ja": ""
                 },
                 {
@@ -5521,19 +4535,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "“here”",
+                    "en": "here",
                     "ja": ""
                 },
                 {
-                    "en": "“this”",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "this",
                     "ja": ""
                 },
                 {
@@ -5541,7 +4547,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "“how come?” tone",
+                    "en": "how come? tone",
                     "ja": ""
                 },
                 {
@@ -5549,11 +4555,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "“come on”",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "come on",
                     "ja": ""
                 },
                 {
@@ -5565,11 +4567,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "“there”",
+                    "en": "there",
                     "ja": ""
                 },
                 {
-                    "en": "“see?”",
+                    "en": "see?",
                     "ja": ""
                 }
             ],
@@ -5645,15 +4647,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "“how come?” tone",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "how come? tone",
                     "ja": ""
                 }
             ],
@@ -5685,7 +4679,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Currently (spoken)",
+                    "en": "Currently",
                     "ja": ""
                 },
                 {
@@ -5693,7 +4687,7 @@
                     "ja": "何"
                 },
                 {
-                    "en": "Already (spoken)",
+                    "en": "Already",
                     "ja": ""
                 },
                 {
@@ -5727,7 +4721,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Not yet (spoken)",
+                    "en": "Not yet",
                     "ja": ""
                 }
             ],
@@ -5741,7 +4735,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Whether (yes-no question)",
+                    "en": "Whether",
                     "ja": ""
                 },
                 {
@@ -5769,7 +4763,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s (spoken)",
+                    "en": "Let’s",
                     "ja": ""
                 },
                 {
@@ -5785,7 +4779,7 @@
                     "ja": "後で"
                 },
                 {
-                    "en": "Just (spoken)",
+                    "en": "Just",
                     "ja": ""
                 }
             ],
@@ -5807,10 +4801,6 @@
         "informal": {
             "words": [
                 {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
                     "en": "casual closure",
                     "ja": ""
                 }
@@ -5825,7 +4815,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let’s (formal)",
+                    "en": "Let’s",
                     "ja": ""
                 },
                 {
@@ -5947,23 +4937,11 @@
                     "ja": "本当に"
                 },
                 {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
                     "en": "casual closure",
                     "ja": ""
                 },
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ja": ""
                 }
             ],
@@ -6041,15 +5019,15 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Know (spoken)",
+                    "en": "Know",
                     "ja": ""
                 },
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ja": ""
                 },
                 {
-                    "en": "Hear (spoken)",
+                    "en": "Hear",
                     "ja": ""
                 }
             ],
@@ -6071,19 +5049,11 @@
         "informal": {
             "words": [
                 {
-                    "en": "Not (spoken)",
+                    "en": "Not",
                     "ja": ""
                 },
                 {
-                    "en": "Hey (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "Hey",
                     "ja": ""
                 }
             ],
@@ -6179,16 +5149,7 @@
             ]
         },
         "informal": {
-            "words": [
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
-                }
-            ],
+            "words": [],
             "sentences": [
                 {
                     "en": "So cool.",
@@ -6374,14 +5335,6 @@
                 {
                     "en": "Work",
                     "ja": "働く"
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
-                    "ja": ""
                 }
             ],
             "sentences": [
@@ -6456,15 +5409,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Hey (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
+                    "en": "Hey",
                     "ja": ""
                 }
             ],
@@ -6492,7 +5437,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (spoken)",
+                    "en": "No",
                     "ja": ""
                 },
                 {
@@ -6513,14 +5458,6 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
                     "ja": ""
                 },
                 {
@@ -6546,7 +5483,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Hey (spoken)",
+                    "en": "Hey",
                     "ja": ""
                 },
                 {
@@ -6563,7 +5500,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "No (alone)",
+                    "en": "No",
                     "ja": ""
                 }
             ],
@@ -6583,7 +5520,7 @@
                     "ja": "好き"
                 },
                 {
-                    "en": "As (spoken)",
+                    "en": "As",
                     "ja": ""
                 },
                 {
@@ -6619,7 +5556,7 @@
                     "ja": "友達"
                 },
                 {
-                    "en": "How (spoken)",
+                    "en": "How",
                     "ja": ""
                 }
             ],
@@ -6670,14 +5607,6 @@
                 },
                 {
                     "en": "Like that",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
-                    "ja": ""
-                },
-                {
-                    "en": "emphasis",
                     "ja": ""
                 }
             ],
@@ -6903,23 +5832,23 @@
                     "ja": "私"
                 },
                 {
-                    "en": "I (casual)",
+                    "en": "I",
                     "ja": ""
                 },
                 {
-                    "en": "Mum (spoken)",
+                    "en": "Mum",
                     "ja": ""
                 },
                 {
-                    "en": "Close (spoken)",
+                    "en": "Close",
                     "ja": ""
                 },
                 {
-                    "en": "Friend (spoken)",
+                    "en": "Friend",
                     "ja": ""
                 },
                 {
-                    "en": "Be friends (casual)",
+                    "en": "Be friends",
                     "ja": ""
                 },
                 {
@@ -6927,11 +5856,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Already (spoken)",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
+                    "en": "Already",
                     "ja": ""
                 },
                 {
@@ -7247,7 +6172,7 @@
                     "ja": "私"
                 },
                 {
-                    "en": "I (casual)",
+                    "en": "I",
                     "ja": ""
                 },
                 {
@@ -7259,7 +6184,7 @@
                     "ja": "あなた"
                 },
                 {
-                    "en": "You (casual)",
+                    "en": "You",
                     "ja": ""
                 },
                 {
@@ -7275,7 +6200,7 @@
                     "ja": "愛する"
                 },
                 {
-                    "en": "Babe (casual)",
+                    "en": "Babe",
                     "ja": ""
                 },
                 {
@@ -7287,7 +6212,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "Already (spoken)",
+                    "en": "Already",
                     "ja": ""
                 },
                 {
@@ -7303,11 +6228,11 @@
                     "ja": "何"
                 },
                 {
-                    "en": "Want (spoken)",
+                    "en": "Want",
                     "ja": ""
                 },
                 {
-                    "en": "Happy (spoken)",
+                    "en": "Happy",
                     "ja": ""
                 },
                 {
@@ -7344,10 +6269,6 @@
                 },
                 {
                     "en": "Yeah",
-                    "ja": ""
-                },
-                {
-                    "en": "Softener",
                     "ja": ""
                 },
                 {
@@ -7459,7 +6380,800 @@
             ]
         }
     },
-    "About (Tentang / Soal)": {
+    "Conditions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "If",
+                    "ja": ""
+                },
+                {
+                    "en": "Hungry",
+                    "ja": "お腹が空いた"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Exist",
+                    "ja": ""
+                },
+                {
+                    "en": "There is",
+                    "ja": ""
+                },
+                {
+                    "en": "Time",
+                    "ja": ""
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": ""
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "Possible",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If hungry.",
+                    "ja": ""
+                },
+                {
+                    "en": "If tired.",
+                    "ja": ""
+                },
+                {
+                    "en": "If there is time.",
+                    "ja": ""
+                },
+                {
+                    "en": "If able.",
+                    "ja": ""
+                },
+                {
+                    "en": "If able, later.",
+                    "ja": ""
+                },
+                {
+                    "en": "If hungry, eat.",
+                    "ja": ""
+                },
+                {
+                    "en": "If tired, later.",
+                    "ja": ""
+                },
+                {
+                    "en": "If possible.",
+                    "ja": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Yeah",
+                    "ja": ""
+                },
+                {
+                    "en": "Just",
+                    "ja": ""
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "If",
+                    "ja": ""
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Be able to",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If there is time.",
+                    "ja": ""
+                },
+                {
+                    "en": "If possible.",
+                    "ja": ""
+                },
+                {
+                    "en": "If able.",
+                    "ja": ""
+                }
+            ]
+        }
+    },
+    "Moments": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "when",
+                    "ja": ""
+                },
+                {
+                    "en": "At the moment",
+                    "ja": ""
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "着く"
+                },
+                {
+                    "en": "Hungry",
+                    "ja": "お腹が空いた"
+                },
+                {
+                    "en": "Start",
+                    "ja": "始める"
+                },
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Eat when you’re hungry.",
+                    "ja": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let me know",
+                    "ja": ""
+                },
+                {
+                    "en": "Tell",
+                    "ja": ""
+                },
+                {
+                    "en": "Say",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let me know when you arrive.",
+                    "ja": ""
+                },
+                {
+                    "en": "Tell me when it starts.",
+                    "ja": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "With": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "With",
+                    "ja": ""
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "He",
+                    "ja": "彼"
+                },
+                {
+                    "en": "She",
+                    "ja": "彼女"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                },
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                },
+                {
+                    "en": "Come",
+                    "ja": "来る"
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "着く"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With you.",
+                    "ja": ""
+                },
+                {
+                    "en": "Come with a friend.",
+                    "ja": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Just",
+                    "ja": ""
+                },
+                {
+                    "en": "casual closure",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ja": ""
+                },
+                {
+                    "en": "Go with me.",
+                    "ja": ""
+                },
+                {
+                    "en": "With me.",
+                    "ja": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "With",
+                    "ja": ""
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ja": ""
+                },
+                {
+                    "en": "Go with me.",
+                    "ja": ""
+                }
+            ]
+        }
+    },
+    "For": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "For",
+                    "ja": ""
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ja": ""
+                },
+                {
+                    "en": "For you.",
+                    "ja": ""
+                },
+                {
+                    "en": "For that.",
+                    "ja": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Just",
+                    "ja": ""
+                },
+                {
+                    "en": "casual closure",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "For me.",
+                    "ja": ""
+                },
+                {
+                    "en": "For me.",
+                    "ja": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "For",
+                    "ja": ""
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ja": ""
+                },
+                {
+                    "en": "For me.",
+                    "ja": ""
+                }
+            ]
+        }
+    },
+    "Because": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Because",
+                    "ja": ""
+                },
+                {
+                    "en": "Not",
+                    "ja": ""
+                },
+                {
+                    "en": "No",
+                    "ja": ""
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": ""
+                },
+                {
+                    "en": "Busy",
+                    "ja": "忙しい"
+                },
+                {
+                    "en": "Traffic jam",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Because I’m busy.",
+                    "ja": ""
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ja": ""
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ja": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ja": ""
+                },
+                {
+                    "en": "No",
+                    "ja": ""
+                },
+                {
+                    "en": "Because",
+                    "ja": ""
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": ""
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Because of",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ja": ""
+                },
+                {
+                    "en": "I can’t because I’m working.",
+                    "ja": ""
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ja": ""
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ja": ""
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ja": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": ""
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                },
+                {
+                    "en": "Because",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ja": ""
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ja": ""
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ja": ""
+                }
+            ]
+        }
+    },
+    "Inviting": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let’s",
+                    "ja": ""
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat.",
+                    "ja": ""
+                },
+                {
+                    "en": "Let’s go.",
+                    "ja": "行きましょう。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let’s",
+                    "ja": ""
+                },
+                {
+                    "en": "Together",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat.",
+                    "ja": ""
+                },
+                {
+                    "en": "Let’s go together.",
+                    "ja": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let’s",
+                    "ja": ""
+                },
+                {
+                    "en": "We",
+                    "ja": "私たち"
+                },
+                {
+                    "en": "Us",
+                    "ja": "私たち"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat.",
+                    "ja": ""
+                },
+                {
+                    "en": "Let’s go.",
+                    "ja": "行きましょう。"
+                }
+            ]
+        }
+    },
+    "Informal pronouns": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "At",
+                    "ja": ""
+                },
+                {
+                    "en": "In",
+                    "ja": ""
+                },
+                {
+                    "en": "Currently",
+                    "ja": ""
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "House",
+                    "ja": "家"
+                },
+                {
+                    "en": "Home",
+                    "ja": "家"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだです"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "ja": ""
+                },
+                {
+                    "en": "Not yet.",
+                    "ja": ""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me (Jakarta slang)",
+                    "ja": ""
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ja": ""
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ja": ""
+                },
+                {
+                    "en": "Already",
+                    "ja": ""
+                },
+                {
+                    "en": "Not yet",
+                    "ja": ""
+                },
+                {
+                    "en": "Friend",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ja": ""
+                },
+                {
+                    "en": "I’m at home.",
+                    "ja": ""
+                },
+                {
+                    "en": "What are you doing?",
+                    "ja": ""
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ja": ""
+                },
+                {
+                    "en": "Already or not yet?",
+                    "ja": ""
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ja": ""
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Currently",
+                    "ja": ""
+                },
+                {
+                    "en": "Already",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ja": ""
+                },
+                {
+                    "en": "What are you doing?",
+                    "ja": ""
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ja": ""
+                }
+            ]
+        }
+    },
+    "About": {
         "neutral": {
             "words": [
                 {
@@ -7467,7 +7181,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "About (re: a matter)",
+                    "en": "About",
                     "ja": ""
                 },
                 {
@@ -7591,7 +7305,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let's (casual)",
+                    "en": "Let's",
                     "ja": ""
                 },
                 {
@@ -7611,11 +7325,11 @@
                     "ja": ""
                 },
                 {
-                    "en": "Chat about (spoken)",
+                    "en": "Chat about",
                     "ja": ""
                 },
                 {
-                    "en": "Talking about (spoken)",
+                    "en": "Talking about",
                     "ja": ""
                 },
                 {
@@ -7623,7 +7337,7 @@
                     "ja": ""
                 },
                 {
-                    "en": "About (re: a matter)",
+                    "en": "About",
                     "ja": ""
                 },
                 {

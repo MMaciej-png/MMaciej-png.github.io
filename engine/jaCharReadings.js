@@ -333,9 +333,62 @@ const JA_HIRAGANA_FOR_TTS = new Map([
   ["待", "ま"],
 ]);
 
+/** Romaji syllable → Hiragana (for converting KANJI_READINGS romaji to Hiragana). Longest-first order. */
+const ROMAJI_SYLLABLES = [
+  "chi", "tsu", "shi", "sha", "shu", "sho", "cha", "chu", "cho", "ja", "ju", "jo",
+  "ga", "gi", "gu", "ge", "go", "za", "ji", "zu", "ze", "zo", "da", "de", "do",
+  "ba", "bi", "bu", "be", "bo", "pa", "pi", "pu", "pe", "po",
+  "ka", "ki", "ku", "ke", "ko", "sa", "su", "se", "so", "ta", "te", "to",
+  "na", "ni", "nu", "ne", "no", "ha", "hi", "fu", "he", "ho", "ma", "mi", "mu", "me", "mo",
+  "ya", "yu", "yo", "ra", "ri", "ru", "re", "ro", "wa", "wo", "n",
+  "a", "i", "u", "e", "o"
+].sort((a, b) => b.length - a.length);
+
+const ROMAJI_TO_HIRAGANA = new Map();
+[...HIRAGANA].forEach((h, i) => {
+  const r = HIRAGANA_ROMAJI[i];
+  if (r) ROMAJI_TO_HIRAGANA.set(r, h);
+});
+["じゃ", "じゅ", "じょ", "ちゃ", "ちゅ", "ちょ", "しゃ", "しゅ", "しょ"].forEach((h, i) => {
+  ROMAJI_TO_HIRAGANA.set(["ja", "ju", "jo", "cha", "chu", "cho", "sha", "shu", "sho"][i], h);
+});
+
+function romajiToHiragana(romaji) {
+  if (!romaji || typeof romaji !== "string") return "";
+  let s = romaji.toLowerCase().trim();
+  const out = [];
+  while (s.length) {
+    if (/^\s+/.test(s)) {
+      out.push(s.match(/^\s+/)[0]);
+      s = s.replace(/^\s+/, "");
+      continue;
+    }
+    if (s.length >= 2 && s[0] === s[1] && /[kstp]/.test(s[0])) {
+      out.push("っ");
+      s = s.slice(1);
+      continue;
+    }
+    let matched = false;
+    for (const syl of ROMAJI_SYLLABLES) {
+      if (s.startsWith(syl) && ROMAJI_TO_HIRAGANA.has(syl)) {
+        out.push(ROMAJI_TO_HIRAGANA.get(syl));
+        s = s.slice(syl.length);
+        matched = true;
+        break;
+      }
+    }
+    if (!matched) {
+      out.push(s[0]);
+      s = s.slice(1);
+    }
+  }
+  return out.join("");
+}
+
 /**
  * Return Japanese text as Hiragana where we have a reading, so TTS says e.g. わたし not し for 私.
  * Iteration mark 々 repeats the previous character's Hiragana.
+ * Falls back to KANJI_READINGS romaji→Hiragana for single Kanji so more content is convertible when Kanji is OFF.
  */
 export function getJaTextForTts(text) {
   if (!text || typeof text !== "string") return text;
@@ -350,8 +403,12 @@ export function getJaTextForTts(text) {
       if (out.length) out.push(out[out.length - 1]);
       else out.push(c);
     } else {
-      const h = JA_HIRAGANA_FOR_TTS.get(c) ?? c;
-      out.push(typeof h === "string" ? h : c);
+      let h = JA_HIRAGANA_FOR_TTS.get(c);
+      if (h == null && c.length === 1) {
+        const romaji = KANJI_READINGS.get(c);
+        if (romaji) h = romajiToHiragana(romaji.replace(/\s+/g, ""));
+      }
+      out.push(typeof h === "string" && h ? h : c);
     }
   }
   return out.join("");

@@ -12,6 +12,9 @@ export const LANGUAGES = [
   { code: "ko", name: "Korean", ttsLocale: "ko-KR", flagClass: "fi-kr", contentKey: "korean" },
   { code: "pl", name: "Polish", ttsLocale: "pl-PL", flagClass: "fi-pl", contentKey: "polish" },
   { code: "fr", name: "French", ttsLocale: "fr-FR", flagClass: "fi-fr", contentKey: "french" },
+  { code: "mo", name: "Moldovan", ttsLocale: "ro-RO", flagClass: "fi-md", contentKey: "moldovan" },
+  { code: "ro", name: "Romanian", ttsLocale: "ro-RO", flagClass: "fi-ro", contentKey: "romanian" },
+  { code: "ru", name: "Russian", ttsLocale: "ru-RU", flagClass: "fi-ru", contentKey: "russian" },
 ];
 
 const byCode = new Map(LANGUAGES.map((l) => [l.code, l]));
@@ -56,7 +59,7 @@ export function setLanguagePair(pair) {
 }
 
 export function getTtsLocale(code) {
-  const l = byCode.get(code);
+  const l = byCode.get(code) ?? LANGUAGES.find((x) => x.contentKey === code);
   return l ? l.ttsLocale : "en-GB";
 }
 

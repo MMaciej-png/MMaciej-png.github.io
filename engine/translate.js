@@ -433,6 +433,41 @@ const FR_EQUIVALENTS = [
 ];
 
 /* ===============================
+   MOLDOVAN / ROMANIAN EQUIVALENTS & NORMALISATION
+=============================== */
+const MO_DIACRITICS = [
+  ["ă", "a"], ["â", "a"], ["î", "i"], ["ș", "s"], ["ț", "t"],
+  ["Ă", "a"], ["Â", "a"], ["Î", "i"], ["Ș", "s"], ["Ț", "t"],
+];
+const MO_EQUIVALENTS = [
+  [/\b(da|așa)\b/g, "da"],
+  [/\b(nu|nope)\b/g, "nu"],
+  [/\b(bună|buna|bună ziua|salut)\b/g, "buna"],
+  [/\b(mulțumesc|multumesc|mersi)\b/g, "multumesc"],
+  [/\b(la revedere|pa|pe mâine)\b/g, "la revedere"],
+  [/\b(eu sunt|mă numesc)\b/g, "eu sunt"],
+  [/\b(te rog|vă rog|vă rog)\b/g, "te rog"],
+  [/\b(scuze|scuzeți-mă|scuzati-ma)\b/g, "scuze"],
+];
+
+/* ===============================
+   RUSSIAN EQUIVALENTS & NORMALISATION (Cyrillic)
+=============================== */
+const RU_NORMALISE = [
+  ["ё", "е"], ["Ё", "е"],
+];
+const RU_EQUIVALENTS = [
+  [/\b(привет|прив|здравствуй|здравствуйте)\b/gu, "привет"],
+  [/\b(спасибо|спс|благодарю)\b/gu, "спасибо"],
+  [/\b(пока|до свидания|бывай)\b/gu, "пока"],
+  [/\b(да|ага|угу|ну да)\b/gu, "да"],
+  [/\b(нет|неа)\b/gu, "нет"],
+  [/\b(пожалуйста|пжлста)\b/gu, "пожалуйста"],
+  [/\b(извини|извините|прости|простите)\b/gu, "извини"],
+  [/\b(меня зовут)\b/gu, "меня зовут"],
+];
+
+/* ===============================
    JAPANESE ROMAJI EQUIVALENTS (for answer matching)
 =============================== */
 const JA_EQUIVALENTS = [
@@ -536,6 +571,16 @@ export function inferLangFromExpected(expected) {
     t.includes(` ${w} `) || t.startsWith(`${w} `) || t.endsWith(` ${w}`) || t === w
   );
   if (hasFrDiacritics || hasFrWord) return "FR";
+
+  const moHints = [
+    "bună", "buna", "da", "nu", "mulțumesc", "multumesc", "eu", "tu", "el", "ea",
+    "sunt", "este", "merci", "salut", "la revedere", "te rog", "scuze"
+  ];
+  const hasMoDiacritics = /[ăâîșț]/i.test(expected);
+  const hasMoWord = moHints.some(w =>
+    t.includes(` ${w} `) || t.startsWith(`${w} `) || t.endsWith(` ${w}`) || t === w
+  );
+  if (hasMoDiacritics || hasMoWord) return "MO";
 
   const idHints = [
     "aku", "kamu", "dia", "kita", "kami", "mereka",
@@ -662,6 +707,38 @@ export function normalise(text, lang, expand = false) {
     });
   }
 
+  if (lang === "MO") {
+    return inputs.map(input => {
+      let t = input
+        .toLowerCase()
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      for (const [from, to] of MO_DIACRITICS) t = t.split(from).join(to);
+      for (const [p, r] of MO_EQUIVALENTS) t = t.replace(p, r);
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
+  if (lang === "RU") {
+    return inputs.map(input => {
+      let t = input
+        .toLowerCase()
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      for (const [from, to] of RU_NORMALISE) t = t.split(from).join(to);
+      for (const [p, r] of RU_EQUIVALENTS) t = t.replace(p, r);
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
   if (lang === "JA") {
     return inputs.map(input => {
       let t = input
@@ -749,6 +826,22 @@ export function isCorrect(user, expected) {
     return variants.some(v => {
       const vFRs = normalise(v, "FR", true);
       return vFRs.some(vFR => containsAllRequiredTokens(uFR, vFR));
+    });
+  }
+
+  if (expectedLang === "MO") {
+    const uMO = normalise(user, "MO")[0];
+    return variants.some(v => {
+      const vMOs = normalise(v, "MO", true);
+      return vMOs.some(vMO => containsAllRequiredTokens(uMO, vMO));
+    });
+  }
+
+  if (expectedLang === "RU") {
+    const uRU = normalise(user, "RU")[0];
+    return variants.some(v => {
+      const vRUs = normalise(v, "RU", true);
+      return vRUs.some(vRU => containsAllRequiredTokens(uRU, vRU));
     });
   }
 

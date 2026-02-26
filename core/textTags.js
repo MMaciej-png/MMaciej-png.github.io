@@ -68,28 +68,28 @@ export function hasJakartaTokens(text) {
   return detectJakartaTokens(text).length > 0;
 }
 
-// Modules where Jakarta tokens are intentionally practiced.
+// Module IDs (language-agnostic) where Jakarta tokens are intentionally practiced.
 // Token-bearing sentences outside these modules are treated as duplicates/noise.
 const JAKARTA_FOCUSED_MODULES = new Set([
-  "Jakarta Pronouns (Gue / Lu)",
-  "Chat Softeners",
-  "Text Abbreviations",
-  "Daily Small Talk (Chat)",
-  "Hangout Planning (Texting)",
-  "Messaging Basics"
+  "informal_pronouns",
+  "chat_softeners",
+  "text_abbreviations",
+  "daily_small_talk_chat",
+  "hangout_planning_texting",
+  "messaging_basics",
 ]);
 
-export function isJakartaFocusedModule(moduleName) {
-  return JAKARTA_FOCUSED_MODULES.has(String(moduleName ?? ""));
+export function isJakartaFocusedModule(moduleId) {
+  return JAKARTA_FOCUSED_MODULES.has(String(moduleId ?? ""));
 }
 
-// Modules that are not pooled (softeners, casual closure — tone only, not content).
+// Module IDs that are not pooled (softeners, casual closure — tone only, not content).
 const EXCLUDE_MODULES_FROM_POOL = new Set([
-  "Chat Softeners",
+  "chat_softeners",
 ]);
 
-export function shouldExcludeModuleFromPool(moduleName) {
-  return EXCLUDE_MODULES_FROM_POOL.has(String(moduleName ?? ""));
+export function shouldExcludeModuleFromPool(moduleId) {
+  return EXCLUDE_MODULES_FROM_POOL.has(String(moduleId ?? ""));
 }
 
 // English strings that are only softener/closure labels — exclude from pool for non-Indonesian pairs.

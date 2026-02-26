@@ -1,6 +1,8 @@
 import { getModuleStats } from "./moduleStats.js";
-import { shouldExcludeWordFromPool } from "../core/textTags.js";
+import { getModuleId, getModuleDisplayName, getCategoryForModuleKey } from "./moduleIds.js";
+import { shouldExcludeWordFromPool, isJakartaFocusedModule } from "../core/textTags.js";
 import { getLanguagePair, parsePair, LANGUAGES } from "./languageConfig.js";
+import { canConvertToHiragana } from "../engine/jaCharReadings.js";
 
 const byCode = new Map(LANGUAGES.map((l) => [l.code, l]));
 
@@ -9,94 +11,9 @@ function getTranslation(entry, code) {
   if (v !== undefined && v !== null) return String(Array.isArray(v) ? v[0] : v).trim();
   const lang = byCode.get(code);
   if (!lang) return "";
-  const raw = entry[lang.contentKey] ?? (lang.contentKey === "english" ? entry.eng : null) ?? "";
+  const raw = entry[lang.contentKey] ?? entry[lang.code] ?? (lang.contentKey === "english" ? entry.eng : null) ?? "";
   return String(raw).trim();
 }
-
-/**
- * Module → Category / Subcategory mapping
- * Categories = lesson plans; subcategories = what's being learned in that lesson
- */
-const MODULE_CATEGORY_MAP = {
-
-  "Greetings (Basic)": { category: "Getting started", subcategory: "Greetings" },
-  "Greetings (Time-Based)": { category: "Getting started", subcategory: "Greetings" },
-  "Thanks & Politeness": { category: "Getting started", subcategory: "Thanks & goodbyes" },
-  "Goodbyes & Leaving": { category: "Getting started", subcategory: "Thanks & goodbyes" },
-  "Numbers (Basic)": { category: "Getting started", subcategory: "Numbers, time & place" },
-  "Numbers (11–100)": { category: "Getting started", subcategory: "Numbers, time & place" },
-  "Time (Basic)": { category: "Getting started", subcategory: "Numbers, time & place" },
-  "Places & Location": { category: "Getting started", subcategory: "Numbers, time & place" },
-  "Existence & Availability": { category: "Getting started", subcategory: "Numbers, time & place" },
-
-  "Asking How Are You": { category: "How are you?", subcategory: "Ask & answer" },
-  "How I\u2019m doing (positive)": { category: "How are you?", subcategory: "Ask & answer" },
-  "How I\u2019m doing (negative)": { category: "How are you?", subcategory: "Ask & answer" },
-  "Reactions": { category: "How are you?", subcategory: "Reactions" },
-  "Yes / No / Maybe": { category: "How are you?", subcategory: "Reactions" },
-  "Emotions & Empathy": { category: "How are you?", subcategory: "Reactions" },
-
-  "Inviting (Ayo / Yuk)": { category: "Making plans", subcategory: "Invite & respond" },
-  "Accepting & Declining": { category: "Making plans", subcategory: "Invite & respond" },
-  "Plans & Timing": { category: "Making plans", subcategory: "When & how often" },
-  "When (Time Questions)": { category: "Making plans", subcategory: "When & how often" },
-  "Frequency & Habits": { category: "Making plans", subcategory: "When & how often" },
-
-  "Understanding": { category: "Clarifying & help", subcategory: "Clarifying" },
-  "What do you mean?": { category: "Clarifying & help", subcategory: "Clarifying" },
-  "Clarifying (Maksudku…)": { category: "Clarifying & help", subcategory: "Clarifying" },
-  "Repeat / Slower": { category: "Clarifying & help", subcategory: "Clarifying" },
-  "Requests & Help": { category: "Clarifying & help", subcategory: "Requests" },
-  "Wait / Hold on (Bentar / Tunggu)": { category: "Clarifying & help", subcategory: "Requests" },
-  "Knowing & Ability": { category: "Clarifying & help", subcategory: "Can & know" },
-
-  "Agreeing & Disagreeing": { category: "Opinions & agreement", subcategory: "Agree & disagree" },
-  "Asking opinions": { category: "Opinions & agreement", subcategory: "Agree & disagree" },
-  "Preferences & Choices": { category: "Opinions & agreement", subcategory: "Agree & disagree" },
-  "Topic Shift": { category: "Opinions & agreement", subcategory: "Change topic" },
-  "Casual Pushback": { category: "Opinions & agreement", subcategory: "Change topic" },
-  "About (Tentang / Soal)": { category: "Opinions & agreement", subcategory: "Change topic" },
-
-  "Conditions (Kalau)": { category: "Connecting ideas", subcategory: "If & like" },
-  "Moments (Pas)": { category: "Connecting ideas", subcategory: "If & like" },
-
-  "Because (Karena / Soalnya)": { category: "Connecting ideas", subcategory: "Because & so" },
-
-  "So / That’s why (Jadi / Makanya)": { category: "Connecting ideas", subcategory: "Because & so" },
-
-  "But / Contrast (Tapi / Padahal)": { category: "Connecting ideas", subcategory: "But & then" },
-  "Then / And then (Terus / Trus)": { category: "Connecting ideas", subcategory: "But & then" },
-  "Maybe / Probably (Mungkin / Kayaknya)": { category: "Connecting ideas", subcategory: "If & like" },
-  "As / Like (Kayak / Seperti / Maksudnya)": { category: "Connecting ideas", subcategory: "If & like" },
-
-  "With (Sama)": { category: "People & things", subcategory: "With, for & whose" },
-  "For (Buat)": { category: "People & things", subcategory: "With, for & whose" },
-  "Mine & Yours": { category: "People & things", subcategory: "With, for & whose" },
-  "This / That (Choosing)": { category: "People & things", subcategory: "People & choice" },
-  "Titles & Relationships": { category: "People & things", subcategory: "People & choice" },
-  "Relationships (Family & Friends)": { category: "People & things", subcategory: "Family & friends" },
-  "Couple Talk": { category: "People & things", subcategory: "Couple talk" },
-  "What I\u2019m Doing": { category: "Daily life", subcategory: "What I'm doing" },
-  "Food & Drink": { category: "Daily life", subcategory: "Food, places & going" },
-  "Going & Arriving": { category: "Daily life", subcategory: "Food, places & going" },
-  "Places (Everyday)": { category: "Daily life", subcategory: "Food, places & going" },
-  "Casual Venting": { category: "Daily life", subcategory: "Venting" },
-
-  "Questions (Yes / No)": { category: "Questions & tone", subcategory: "Yes or no" },
-  "Softening (Agak / Kayak / Lumayan)": { category: "Questions & tone", subcategory: "Softening" },
-
-  "Sharing News": { category: "Sharing & reacting", subcategory: "Sharing & compliments" },
-  "Compliments": { category: "Sharing & reacting", subcategory: "Sharing & compliments" },
-
-  "Jakarta Pronouns (Gue / Lu)": { category: "Chat & texting", subcategory: "Casual you & I" },
-  "Daily Small Talk (Chat)": { category: "Chat & texting", subcategory: "Chat phrases" },
-  "Messaging Basics": { category: "Chat & texting", subcategory: "Chat phrases" },
-  "Hangout Planning (Texting)": { category: "Chat & texting", subcategory: "Chat phrases" },
-  "Text Abbreviations": { category: "Chat & texting", subcategory: "Shorteners" },
-  "Chat Softeners": { category: "Chat & texting", subcategory: "Shorteners" }
-
-};
-
 
 const CATEGORY_ORDER = [
   "Smart Modes",
@@ -116,7 +33,7 @@ const CATEGORY_ORDER = [
 
 const SUBCATEGORY_ORDER = {
   "Getting started": ["Greetings", "Thanks & goodbyes", "Numbers, time & place"],
-  "How are you?": ["Ask & answer", "Reactions"],
+  "How are you?": ["Ask & answer", "Not so good", "Reactions"],
   "Making plans": ["Invite & respond", "When & how often"],
   "Clarifying & help": ["Clarifying", "Requests", "Can & know"],
   "Opinions & agreement": ["Agree & disagree", "Change topic"],
@@ -143,6 +60,12 @@ export async function loadModulesMeta(options = {}) {
 
     const contentFilter = options?.contentFilter ?? "all"; // all | words | sentences
     const registerFilter = options?.registerFilter ?? "all"; // all | informal | formal
+    const showKanjiForJapanese = options?.showKanjiForJapanese !== false;
+    const showKatakanaForJapanese = options?.showKatakanaForJapanese !== false;
+
+    const pairIncludesJa = langACode === "ja" || langBCode === "ja";
+    const pairIncludesIndo = langACode === "indo" || langBCode === "indo";
+    const hiraganaOnly = pairIncludesJa && !showKanjiForJapanese && !showKatakanaForJapanese;
 
     const allowWord = contentFilter !== "sentences";
     const allowSentence = contentFilter !== "words";
@@ -155,6 +78,13 @@ export async function loadModulesMeta(options = {}) {
     const hasBothForPair = (entry) =>
         getTranslation(entry, langACode) && getTranslation(entry, langBCode);
 
+    const countForPool = (entry) => {
+        if (!hiraganaOnly) return true;
+        if (langACode === "ja" && !canConvertToHiragana(getTranslation(entry, langACode))) return false;
+        if (langBCode === "ja" && !canConvertToHiragana(getTranslation(entry, langBCode))) return false;
+        return true;
+    };
+
     let totalItems = 0;
     let allAttempted = 0;
     let allCorrect = 0;
@@ -164,6 +94,10 @@ export async function loadModulesMeta(options = {}) {
     const grouped = {};
 
     for (const [moduleName, data] of Object.entries(content)) {
+        const moduleId = getModuleId(moduleName);
+        // Jakarta / Chat & texting modules only appear when Indonesian is in the pair.
+        if (!pairIncludesIndo && isJakartaFocusedModule(moduleId)) continue;
+
         let wordCount = 0;
         let sentenceCount = 0;
 
@@ -181,12 +115,14 @@ export async function loadModulesMeta(options = {}) {
                         if (!hasBothForPair(w)) continue;
                         const indo = getTranslation(w, "indo");
                         if (indo && shouldExcludeWordFromPool(indo)) continue;
+                        if (!countForPool(w)) continue;
                         wordCount++;
                     }
                 }
                 if (allowSentence) {
                     for (const s of (block.sentences ?? [])) {
                         if (!hasBothForPair(s)) continue;
+                        if (!countForPool(s)) continue;
                         sentenceCount++;
                     }
                 }
@@ -202,12 +138,14 @@ export async function loadModulesMeta(options = {}) {
                     if (!hasBothForPair(w)) continue;
                     const indo = getTranslation(w, "indo");
                     if (indo && shouldExcludeWordFromPool(indo)) continue;
+                    if (!countForPool(w)) continue;
                     wordCount++;
                 }
             }
             if (allowSentence) {
                 for (const s of (data.sentences ?? [])) {
                     if (!hasBothForPair(s)) continue;
+                    if (!countForPool(s)) continue;
                     sentenceCount++;
                 }
             }
@@ -215,7 +153,8 @@ export async function loadModulesMeta(options = {}) {
 
         const total = wordCount + sentenceCount;
 
-        const stats = getModuleStats(moduleName);
+        const stats = getModuleStats(moduleId, languagePair);
+        const displayName = getModuleDisplayName(moduleId, langACode) || moduleName;
 
         const accuracy =
             stats.attempted > 0
@@ -223,7 +162,8 @@ export async function loadModulesMeta(options = {}) {
                 : null;
 
         const meta = {
-            name: moduleName,
+            id: moduleId,
+            name: displayName,
             words: wordCount,
             sentences: sentenceCount,
             total,
@@ -235,10 +175,7 @@ export async function loadModulesMeta(options = {}) {
         // ===============================
         // CATEGORY / SUBCATEGORY HANDLING
         // ===============================
-        const mapping = MODULE_CATEGORY_MAP[moduleName] ?? {
-            category: "Other",
-            subcategory: "Uncategorised"
-        };
+        const mapping = getCategoryForModuleKey(moduleName);
 
         const { category, subcategory } = mapping;
 

@@ -6,8 +6,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const enPath = path.join(__dirname, "content-en.json");
-const jaPath = path.join(__dirname, "content-ja.json");
+const DATA_DIR = path.join(__dirname, "..");
+const enPath = path.join(DATA_DIR, "content-en.json");
+const jaPath = path.join(DATA_DIR, "content-ja.json");
 const content = JSON.parse(fs.readFileSync(enPath, "utf8"));
 
 function addJaKey(obj) {

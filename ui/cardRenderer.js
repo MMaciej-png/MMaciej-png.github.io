@@ -8,6 +8,7 @@ import { getPhraseReading as getJaPhraseReading, getReadingsForText as getJaRead
 import { getReadingsForText as getKoReadings } from "../engine/koCharReadings.js";
 import { getReadingsForText as getPlReadings } from "../engine/plCharReadings.js";
 import { getReadingsForText as getFrReadings } from "../engine/frCharReadings.js";
+import { getReadingsForText as getRuReadings } from "../engine/ruCharReadings.js";
 
 export function createCardRenderer({
   frontTextEl,
@@ -39,8 +40,8 @@ export function createCardRenderer({
   }
 
   /**
-   * Non-English language text → HTML with ruby (English pronunciation above characters).
-   * ja/ko: full character stores; pl/fr: diacritics only. English/Indonesian: no ruby.
+   * Non-English language text → HTML with ruby (pronunciation/transliteration above characters).
+   * ja/ko: full character readings; pl/fr: diacritics only; ru: Cyrillic → Latin.
    * If explicit reading is provided (e.g. for kanji), use it: space-separated = per-char, else whole-word.
    */
   function withRubyHtml(text, lang, explicitReading) {
@@ -76,6 +77,18 @@ export function createCardRenderer({
 
     if (lang === "pl" || lang === "fr") {
       const readings = lang === "pl" ? getPlReadings(text) : getFrReadings(text);
+      const hasAny = readings.some((r) => r !== "");
+      if (!hasAny) return null;
+      return chars
+        .map((c, i) => {
+          const r = readings[i];
+          return r ? `<ruby>${escapeHtml(c)}<rt>${escapeHtml(r)}</rt></ruby>` : escapeHtml(c);
+        })
+        .join("");
+    }
+
+    if (lang === "ru") {
+      const readings = getRuReadings(text);
       const hasAny = readings.some((r) => r !== "");
       if (!hasAny) return null;
       return chars
