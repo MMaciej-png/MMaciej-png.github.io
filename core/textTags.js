@@ -83,6 +83,30 @@ export function isJakartaFocusedModule(moduleName) {
   return JAKARTA_FOCUSED_MODULES.has(String(moduleName ?? ""));
 }
 
+// Modules that are not pooled (softeners, casual closure — tone only, not content).
+const EXCLUDE_MODULES_FROM_POOL = new Set([
+  "Chat Softeners",
+]);
+
+export function shouldExcludeModuleFromPool(moduleName) {
+  return EXCLUDE_MODULES_FROM_POOL.has(String(moduleName ?? ""));
+}
+
+// English strings that are only softener/closure labels — exclude from pool for non-Indonesian pairs.
+const EN_SOFTENER_ONLY = new Set([
+  "casual closure",
+  "(softener)",
+  "softener / casual closure",
+  "softener / emphasis",
+  "softening / casual closure",
+]);
+
+export function isEnglishSoftenerOnly(eng) {
+  if (!eng || typeof eng !== "string") return false;
+  const n = eng.trim().toLowerCase();
+  return EN_SOFTENER_ONLY.has(n) || n === "softener";
+}
+
 // Tokens that should NEVER be practiced as standalone word cards.
 // They are “tone/metadata” and should only appear inside sentences + as badges.
 const EXCLUDE_JAKARTA_WORD_TOKENS = new Set([
@@ -111,6 +135,27 @@ export function shouldExcludeWordFromPool(indo) {
   // Examples excluded: "deh", "wkwk", "otw", "udah", "belom/blm", "gpp", etc.
   // Examples NOT excluded: "gue", "lu" (pronouns are meaningful vocabulary).
   return parts.length > 0 && parts.every(p => EXCLUDE_JAKARTA_WORD_TOKENS.has(p));
+}
+
+// Words that don’t add real content when a sentence is only softeners/closure.
+const SENTENCE_ONLY_SOFTENER_WORDS = new Set([
+  ...EXCLUDE_JAKARTA_WORD_TOKENS,
+  "ya", "iya", "gak", "ga", "tak", "tidak", "udah", "belum", "nggak", "enggak",
+  "oh", "kok", "lah", "dong", "sih", "deh", "nih", "tuh"
+]);
+
+/**
+ * Exclude sentences that are only softeners / casual closure (e.g. "Ya deh.", "Gak kok.").
+ * After stripping particles, if nothing meaningful remains, do not pool.
+ */
+export function shouldExcludeSentenceFromPool(indo) {
+  if (!indo || !String(indo).trim()) return false;
+  const stripped = stripParticlesForDisplay(indo);
+  const s = normalizeTokenWordForm(stripped);
+  if (!s) return true;
+  const parts = s.split(/\s+/g).filter(Boolean);
+  if (parts.length === 0) return true;
+  return parts.every(p => SENTENCE_ONLY_SOFTENER_WORDS.has(p));
 }
 
 /**

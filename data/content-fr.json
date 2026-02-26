@@ -1,0 +1,6825 @@
+{
+    "Greetings (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Hello",
+                    "fr": "Bonjour"
+                },
+                {
+                    "en": "Name",
+                    "fr": "Nom"
+                },
+                {
+                    "en": "Good",
+                    "fr": "Bon"
+                },
+                {
+                    "en": "Well",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Safe",
+                    "fr": "En sécurité"
+                },
+                {
+                    "en": "Come",
+                    "fr": "Venir"
+                },
+                {
+                    "en": "Arrive",
+                    "fr": "Arriver"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Welcome.",
+                    "fr": "Bienvenue."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hi, I’m (name).",
+                    "fr": "Salut, je suis (nom)."
+                },
+                {
+                    "en": "Hello, my name is (name).",
+                    "fr": "Bonjour, je m'appelle (nom)."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hi, I’m (name).",
+                    "fr": "Salut, je suis (nom)."
+                },
+                {
+                    "en": "Hello, my name is (name).",
+                    "fr": "Bonjour, je m'appelle (nom)."
+                }
+            ]
+        }
+    },
+    "Greetings (Time-Based)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Good",
+                    "fr": "Bon"
+                },
+                {
+                    "en": "Well",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Safe",
+                    "fr": "En sécurité"
+                },
+                {
+                    "en": "Morning",
+                    "fr": "Matin"
+                },
+                {
+                    "en": "Afternoon",
+                    "fr": "Après-midi"
+                },
+                {
+                    "en": "Daytime",
+                    "fr": "Journée"
+                },
+                {
+                    "en": "Evening",
+                    "fr": "Soir"
+                },
+                {
+                    "en": "Night",
+                    "fr": "Nuit"
+                },
+                {
+                    "en": "Sleep",
+                    "fr": "Sommeil"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Good morning.",
+                    "fr": "Bonjour."
+                },
+                {
+                    "en": "Good afternoon.",
+                    "fr": "Bon après-midi."
+                },
+                {
+                    "en": "Good evening.",
+                    "fr": "Bonsoir."
+                },
+                {
+                    "en": "Good night (before sleeping).",
+                    "fr": "Bonne nuit."
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Asking How Are You": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                },
+                {
+                    "en": "News",
+                    "fr": "Nouvelles"
+                },
+                {
+                    "en": "Condition",
+                    "fr": "État"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How are you?",
+                    "fr": "Comment allez-vous ?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "How",
+                    "fr": "Comment"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How are you now?",
+                    "fr": "Comment allez-vous ?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "How (spoken)",
+                    "fr": "Comment"
+                },
+                {
+                    "en": "The news",
+                    "fr": "Les nouvelles"
+                },
+                {
+                    "en": "condition",
+                    "fr": "L'état"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How’s it going now?",
+                    "fr": "Comment ça va ?"
+                },
+                {
+                    "en": "How’s it going now?",
+                    "fr": "Comment ça va ?"
+                }
+            ]
+        }
+    },
+    "Yes / No / Maybe": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "No",
+                    "fr": "Non"
+                },
+                {
+                    "en": "Not",
+                    "fr": "Non"
+                },
+                {
+                    "en": "Maybe",
+                    "fr": "Peut-être"
+                },
+                {
+                    "en": "Okay",
+                    "fr": "D'accord"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "No",
+                    "fr": "Non"
+                },
+                {
+                    "en": "Not (spoken)",
+                    "fr": "Non"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Reactions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Oh",
+                    "fr": "Oh"
+                },
+                {
+                    "en": "Oh right",
+                    "fr": "Ah oui"
+                },
+                {
+                    "en": "Okay",
+                    "fr": "D'accord"
+                },
+                {
+                    "en": "Alright",
+                    "fr": "D'accord"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Haha",
+                    "fr": "Haha"
+                },
+                {
+                    "en": "Hmm",
+                    "fr": "Hmm"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh, okay.",
+                    "fr": "Oh, d'accord."
+                },
+                {
+                    "en": "Oh right.",
+                    "fr": "Ah oui."
+                },
+                {
+                    "en": "Yeah, okay.",
+                    "fr": "Oui, d'accord."
+                },
+                {
+                    "en": "Haha.",
+                    "fr": "Haha."
+                },
+                {
+                    "en": "Hmm.",
+                    "fr": "Hmm."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Understand",
+                    "fr": "Comprendre"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Alright, I understand.",
+                    "fr": "D'accord, je comprends."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "It's okay",
+                    "fr": "Pas de souci"
+                },
+                {
+                    "en": "No problem (spoken)",
+                    "fr": "Pas de souci"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Understand (spoken)",
+                    "fr": "Comprendre"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Laughing",
+                    "fr": "Rire"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Yeah, true.",
+                    "fr": "Oui, c'est vrai."
+                },
+                {
+                    "en": "Okay, I understand.",
+                    "fr": "D'accord, je comprends."
+                },
+                {
+                    "en": "Okay.",
+                    "fr": "D'accord."
+                },
+                {
+                    "en": "Haha.",
+                    "fr": "Haha."
+                },
+                {
+                    "en": "Yeah, true.",
+                    "fr": "Oui, c'est vrai."
+                }
+            ]
+        }
+    },
+    "Thanks & Politeness": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Thank you",
+                    "fr": "Merci"
+                },
+                {
+                    "en": "You’re welcome",
+                    "fr": "De rien"
+                },
+                {
+                    "en": "Sorry",
+                    "fr": "Désolé"
+                },
+                {
+                    "en": "Excuse me",
+                    "fr": "Excusez-moi"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Thank you.",
+                    "fr": "Merci."
+                },
+                {
+                    "en": "You’re welcome.",
+                    "fr": "De rien."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "fr": "S'il vous plaît"
+                },
+                {
+                    "en": "Kindly (formal)",
+                    "fr": "S'il vous plaît"
+                },
+                {
+                    "en": "Forgive",
+                    "fr": "Pardonner"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My apologies.",
+                    "fr": "Mes excuses."
+                },
+                {
+                    "en": "I sincerely apologize.",
+                    "fr": "Je m'excuse sincèrement."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Thanks (spoken)",
+                    "fr": "Merci"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Ask for",
+                    "fr": "Demander"
+                },
+                {
+                    "en": "Urging"
+                },
+                {
+                    "en": "“come on”"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Thanks.",
+                    "fr": "Merci."
+                },
+                {
+                    "en": "Thanks.",
+                    "fr": "Merci."
+                },
+                {
+                    "en": "Sorry, okay?",
+                    "fr": "Désolé, d'accord ?"
+                },
+                {
+                    "en": "I sincerely apologize.",
+                    "fr": "Je m'excuse sincèrement."
+                }
+            ]
+        }
+    },
+    "Goodbyes & Leaving": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Until",
+                    "fr": "Jusqu'à"
+                },
+                {
+                    "en": "See",
+                    "fr": "Voir"
+                },
+                {
+                    "en": "Meet",
+                    "fr": "Rencontrer"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Take care",
+                    "fr": "Prends soin de toi"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "First",
+                    "fr": "D'abord"
+                },
+                {
+                    "en": "Earlier",
+                    "fr": "Plus tôt"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "See you.",
+                    "fr": "À bientôt."
+                },
+                {
+                    "en": "See you later.",
+                    "fr": "À tout à l'heure."
+                },
+                {
+                    "en": "Take care.",
+                    "fr": "Prends soin de toi."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Take leave (polite)",
+                    "fr": "Prendre congé"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’ll take my leave.",
+                    "fr": "Je prends congé."
+                },
+                {
+                    "en": "I’ll go first",
+                    "fr": "J'y vais en premier"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "First",
+                    "fr": "D'abord"
+                },
+                {
+                    "en": "Earlier",
+                    "fr": "Plus tôt"
+                },
+                {
+                    "en": "Bye (spoken)",
+                    "fr": "Salut"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’ll take my leave.",
+                    "fr": "Je prends congé."
+                },
+                {
+                    "en": "I’ll go first",
+                    "fr": "J'y vais en premier"
+                },
+                {
+                    "en": "I’ll go first",
+                    "fr": "J'y vais en premier"
+                },
+                {
+                    "en": "Bye.",
+                    "fr": "Salut."
+                }
+            ]
+        }
+    },
+    "When (Time Questions)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "When",
+                    "fr": "Quand"
+                },
+                {
+                    "en": "Hour",
+                    "fr": "Heure"
+                },
+                {
+                    "en": "O’clock",
+                    "fr": "Heure"
+                },
+                {
+                    "en": "How many",
+                    "fr": "Combien"
+                },
+                {
+                    "en": "How much",
+                    "fr": "Combien"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Go",
+                    "fr": "Aller"
+                },
+                {
+                    "en": "Come",
+                    "fr": "Venir"
+                },
+                {
+                    "en": "Arrive",
+                    "fr": "Arriver"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "When can you?",
+                    "fr": "Quand tu peux ?"
+                },
+                {
+                    "en": "When are you going?",
+                    "fr": "Quand tu pars ?"
+                },
+                {
+                    "en": "When will you arrive?",
+                    "fr": "Quand tu arrives ?"
+                },
+                {
+                    "en": "When is that?",
+                    "fr": "C'est quand ?"
+                },
+                {
+                    "en": "What time?",
+                    "fr": "Quelle heure ?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Conditions (Kalau)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "If"
+                },
+                {
+                    "en": "Hungry"
+                },
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Exist"
+                },
+                {
+                    "en": "There is"
+                },
+                {
+                    "en": "Time"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Eat",
+                    "fr": "Manger"
+                },
+                {
+                    "en": "Possible"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If hungry."
+                },
+                {
+                    "en": "If tired."
+                },
+                {
+                    "en": "If there is time."
+                },
+                {
+                    "en": "If able."
+                },
+                {
+                    "en": "If able, later."
+                },
+                {
+                    "en": "If hungry, eat."
+                },
+                {
+                    "en": "If tired, later."
+                },
+                {
+                    "en": "If possible."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Okay"
+                },
+                {
+                    "en": "Yeah"
+                },
+                {
+                    "en": "Just"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "If (formal)"
+                },
+                {
+                    "en": "Can"
+                },
+                {
+                    "en": "Be able to (formal)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If there is time."
+                },
+                {
+                    "en": "If possible."
+                },
+                {
+                    "en": "If able."
+                }
+            ]
+        }
+    },
+    "Moments (Pas)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "(Right) when"
+                },
+                {
+                    "en": "At the moment"
+                },
+                {
+                    "en": "Arrive"
+                },
+                {
+                    "en": "Hungry"
+                },
+                {
+                    "en": "Start"
+                },
+                {
+                    "en": "Okay"
+                },
+                {
+                    "en": "Yes"
+                },
+                {
+                    "en": "Eat",
+                    "fr": "Manger"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Eat when you’re hungry."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let me know (spoken)"
+                },
+                {
+                    "en": "Tell"
+                },
+                {
+                    "en": "Say (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let me know when you arrive."
+                },
+                {
+                    "en": "Tell me when it starts."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "With (Sama)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "With",
+                    "fr": "Avec"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "He",
+                    "fr": "Il"
+                },
+                {
+                    "en": "She",
+                    "fr": "Elle"
+                },
+                {
+                    "en": "Friend",
+                    "fr": "Ami"
+                },
+                {
+                    "en": "Go",
+                    "fr": "Aller"
+                },
+                {
+                    "en": "Come",
+                    "fr": "Venir"
+                },
+                {
+                    "en": "Arrive",
+                    "fr": "Arriver"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With you."
+                },
+                {
+                    "en": "Come with a friend.",
+                    "fr": "Viens avec un ami."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Just (spoken)",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "fr": "Avec moi."
+                },
+                {
+                    "en": "Go with me.",
+                    "fr": "Viens avec moi."
+                },
+                {
+                    "en": "With me.",
+                    "fr": "Avec moi."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "With",
+                    "fr": "Avec"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "fr": "Avec moi."
+                },
+                {
+                    "en": "Go with me.",
+                    "fr": "Viens avec moi."
+                }
+            ]
+        }
+    },
+    "Titles & Relationships": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Girlfriend",
+                    "fr": "Petite amie"
+                },
+                {
+                    "en": "Boyfriend",
+                    "fr": "Petit ami"
+                },
+                {
+                    "en": "Friend",
+                    "fr": "Ami"
+                },
+                {
+                    "en": "Wife",
+                    "fr": "Épouse"
+                },
+                {
+                    "en": "Husband",
+                    "fr": "Mari"
+                },
+                {
+                    "en": "Mrs",
+                    "fr": "Madame"
+                },
+                {
+                    "en": "Ma’am",
+                    "fr": "Madame"
+                },
+                {
+                    "en": "Mr",
+                    "fr": "Monsieur"
+                },
+                {
+                    "en": "Sir",
+                    "fr": "Monsieur"
+                },
+                {
+                    "en": "He",
+                    "fr": "Il"
+                },
+                {
+                    "en": "She",
+                    "fr": "Elle"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This ma’am.",
+                    "fr": "Voici madame."
+                },
+                {
+                    "en": "That sir.",
+                    "fr": "Voilà monsieur."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Mrs",
+                    "fr": "Mme"
+                },
+                {
+                    "en": "Mr",
+                    "fr": "M."
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My girlfriend",
+                    "fr": "Ma copine"
+                },
+                {
+                    "en": "boyfriend.",
+                    "fr": "Mon copain."
+                },
+                {
+                    "en": "They’re my friend.",
+                    "fr": "C'est mon ami."
+                },
+                {
+                    "en": "This gentleman.",
+                    "fr": "Ce monsieur."
+                },
+                {
+                    "en": "That lady.",
+                    "fr": "Cette dame."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Girl",
+                    "fr": "Fille"
+                },
+                {
+                    "en": "Girlfriend (spoken)",
+                    "fr": "Copine"
+                },
+                {
+                    "en": "Guy",
+                    "fr": "Mec"
+                },
+                {
+                    "en": "Boyfriend (spoken)",
+                    "fr": "Copain"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Friend (spoken)",
+                    "fr": "Pote"
+                },
+                {
+                    "en": "Pointing"
+                },
+                {
+                    "en": "“here”"
+                },
+                {
+                    "en": "“this”"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My girlfriend",
+                    "fr": "Ma copine"
+                },
+                {
+                    "en": "boyfriend.",
+                    "fr": "Mon copain."
+                },
+                {
+                    "en": "They’re my friend.",
+                    "fr": "C'est mon ami."
+                },
+                {
+                    "en": "My girlfriend.",
+                    "fr": "Ma copine."
+                },
+                {
+                    "en": "My boyfriend.",
+                    "fr": "Mon copain."
+                },
+                {
+                    "en": "This is my girlfriend",
+                    "fr": "C'est ma copine"
+                },
+                {
+                    "en": "boyfriend.",
+                    "fr": "mon copain."
+                }
+            ]
+        }
+    },
+    "For (Buat)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "For",
+                    "fr": "Pour"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "fr": "C'est pour toi."
+                },
+                {
+                    "en": "For you.",
+                    "fr": "Pour toi."
+                },
+                {
+                    "en": "For that.",
+                    "fr": "Pour ça."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Just (spoken)",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "For me.",
+                    "fr": "Pour moi."
+                },
+                {
+                    "en": "For me.",
+                    "fr": "Pour moi."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "For",
+                    "fr": "Pour"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "fr": "C'est pour toi."
+                },
+                {
+                    "en": "For me.",
+                    "fr": "Pour moi."
+                }
+            ]
+        }
+    },
+    "How I’m doing (positive)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Good",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Fine",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Fine",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Okay",
+                    "fr": "D'accord"
+                },
+                {
+                    "en": "Still",
+                    "fr": "Encore"
+                },
+                {
+                    "en": "Okay",
+                    "fr": "D'accord"
+                },
+                {
+                    "en": "Not bad",
+                    "fr": "Pas mal"
+                },
+                {
+                    "en": "Busy",
+                    "fr": "Occupé"
+                },
+                {
+                    "en": "Just",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Only",
+                    "fr": "Seulement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "fr": "Je vais bien."
+                },
+                {
+                    "en": "I’m busy.",
+                    "fr": "Je suis occupé(e)."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Very"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "fr": "Je vais bien."
+                },
+                {
+                    "en": "I’m busy.",
+                    "fr": "Je suis occupé(e)."
+                },
+                {
+                    "en": "I’m tired."
+                },
+                {
+                    "en": "I’m really tired."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "fr": "Je vais bien."
+                },
+                {
+                    "en": "I’m busy.",
+                    "fr": "Je suis occupé(e)."
+                },
+                {
+                    "en": "I’m busy.",
+                    "fr": "Je suis occupé(e)."
+                },
+                {
+                    "en": "I’m really tired."
+                },
+                {
+                    "en": "I’m really tired."
+                },
+                {
+                    "en": "I’m tired."
+                }
+            ]
+        }
+    },
+    "How I’m doing (negative)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Less"
+                },
+                {
+                    "en": "Not quite"
+                },
+                {
+                    "en": "Good",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Fine",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Like that"
+                },
+                {
+                    "en": "So"
+                },
+                {
+                    "en": "Just",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Only",
+                    "fr": "Seulement"
+                },
+                {
+                    "en": "Comfortable"
+                },
+                {
+                    "en": "Good"
+                },
+                {
+                    "en": "Tasty"
+                },
+                {
+                    "en": "Body"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not quite good."
+                },
+                {
+                    "en": "Just so-so."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t feel well."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t feel well."
+                },
+                {
+                    "en": "I don’t feel well."
+                }
+            ]
+        }
+    },
+    "Knowing & Ability": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "Know"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                },
+                {
+                    "en": "Not"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not this."
+                },
+                {
+                    "en": "I don’t know."
+                },
+                {
+                    "en": "I can’t."
+                },
+                {
+                    "en": "Can do it now."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Belong to"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is not mine."
+                },
+                {
+                    "en": "Not me."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Have"
+                },
+                {
+                    "en": "Own"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is not mine."
+                },
+                {
+                    "en": "Not me."
+                }
+            ]
+        }
+    },
+    "Requests & Help": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Please"
+                },
+                {
+                    "en": "Help"
+                },
+                {
+                    "en": "Help"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Wait"
+                },
+                {
+                    "en": "A moment"
+                },
+                {
+                    "en": "Ask for",
+                    "fr": "Demander"
+                },
+                {
+                    "en": "Excuse me"
+                },
+                {
+                    "en": "May"
+                },
+                {
+                    "en": "Allowed"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Please help."
+                },
+                {
+                    "en": "Can you help?"
+                },
+                {
+                    "en": "Please wait a moment."
+                },
+                {
+                    "en": "Excuse me for a moment."
+                },
+                {
+                    "en": "May I ask for help?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Please (formal)"
+                },
+                {
+                    "en": "Help"
+                },
+                {
+                    "en": "To help"
+                },
+                {
+                    "en": "Help"
+                },
+                {
+                    "en": "Assistance"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I kindly ask for your help."
+                },
+                {
+                    "en": "Can you help me?"
+                },
+                {
+                    "en": "Wait a sec, okay?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Help (spoken)"
+                },
+                {
+                    "en": "A sec (spoken)"
+                },
+                {
+                    "en": "Urging"
+                },
+                {
+                    "en": "“come on”"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you help me?"
+                },
+                {
+                    "en": "Wait a sec, okay?"
+                },
+                {
+                    "en": "One sec."
+                },
+                {
+                    "en": "Excuse me for a moment."
+                },
+                {
+                    "en": "I kindly ask for your help."
+                }
+            ]
+        }
+    },
+    "Understanding": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Meaning"
+                },
+                {
+                    "en": "Intention"
+                },
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "Repeat"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "The meaning (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What does it mean?"
+                },
+                {
+                    "en": "Can you repeat?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Understand",
+                    "fr": "Comprendre"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Whether (yes-no question)"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I understand."
+                },
+                {
+                    "en": "I don’t understand."
+                },
+                {
+                    "en": "Do you understand?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Understand (spoken)",
+                    "fr": "Comprendre"
+                },
+                {
+                    "en": "Understand (spoken)",
+                    "fr": "Comprendre"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (spoken)"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t understand."
+                },
+                {
+                    "en": "I understand."
+                },
+                {
+                    "en": "Do you understand?"
+                },
+                {
+                    "en": "Do you understand?"
+                },
+                {
+                    "en": "Got it?"
+                }
+            ]
+        }
+    },
+    "What do you mean?": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Means"
+                },
+                {
+                    "en": "So it means"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "Meaning"
+                },
+                {
+                    "en": "Intention"
+                },
+                {
+                    "en": "The meaning (spoken)"
+                },
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                },
+                {
+                    "en": "Like that"
+                },
+                {
+                    "en": "So"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So this means?"
+                },
+                {
+                    "en": "So that means?"
+                },
+                {
+                    "en": "What does it mean?"
+                },
+                {
+                    "en": "What do you mean?"
+                },
+                {
+                    "en": "Does this mean that?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether (yes-no question)"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Does this mean that?"
+                },
+                {
+                    "en": "What do you mean?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you mean?"
+                }
+            ]
+        }
+    },
+    "Questions (Yes / No)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                },
+                {
+                    "en": "Not yet"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can this?"
+                },
+                {
+                    "en": "Can that?"
+                },
+                {
+                    "en": "Can you already?"
+                },
+                {
+                    "en": "Can't yet?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether (yes-no question)"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can this?"
+                },
+                {
+                    "en": "Can you already?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "No",
+                    "fr": "Non"
+                },
+                {
+                    "en": "Not (spoken)",
+                    "fr": "Non"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can't?"
+                }
+            ]
+        }
+    },
+    "What I’m Doing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Busy",
+                    "fr": "Occupé"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Busy right now."
+                },
+                {
+                    "en": "Can do it later."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Currently"
+                },
+                {
+                    "en": "Work"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I am working."
+                },
+                {
+                    "en": "I can’t right now."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Currently (spoken)"
+                },
+                {
+                    "en": "Work"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Working."
+                },
+                {
+                    "en": "Working."
+                },
+                {
+                    "en": "Can’t right now."
+                },
+                {
+                    "en": "Can’t right now."
+                },
+                {
+                    "en": "I am working."
+                },
+                {
+                    "en": "I am working."
+                },
+                {
+                    "en": "Working."
+                },
+                {
+                    "en": "Can’t right now."
+                }
+            ]
+        }
+    },
+    "Plans & Timing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Tomorrow",
+                    "fr": "Demain"
+                },
+                {
+                    "en": "Day"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                },
+                {
+                    "en": "Not yet"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Go",
+                    "fr": "Aller"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Later, okay."
+                },
+                {
+                    "en": "Not yet."
+                },
+                {
+                    "en": "Already."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Will"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I will go now."
+                },
+                {
+                    "en": "I will go tomorrow."
+                },
+                {
+                    "en": "Going later."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Want"
+                },
+                {
+                    "en": "Going to"
+                },
+                {
+                    "en": "Just (spoken)",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Going later."
+                },
+                {
+                    "en": "Going tomorrow."
+                },
+                {
+                    "en": "I will go now."
+                },
+                {
+                    "en": "I will go tomorrow."
+                },
+                {
+                    "en": "Later, okay."
+                }
+            ]
+        }
+    },
+    "Preferences & Choices": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Like"
+                },
+                {
+                    "en": "Want",
+                    "fr": "Vouloir"
+                },
+                {
+                    "en": "Choose"
+                },
+                {
+                    "en": "The one that"
+                },
+                {
+                    "en": "Which"
+                },
+                {
+                    "en": "Different"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "Other"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That one is different."
+                },
+                {
+                    "en": "The other one."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose the other one."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose the other one."
+                },
+                {
+                    "en": "I choose the other one."
+                },
+                {
+                    "en": "I want this one."
+                }
+            ]
+        }
+    },
+    "Food & Drink": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Eat",
+                    "fr": "Manger"
+                },
+                {
+                    "en": "Drink"
+                },
+                {
+                    "en": "Hungry"
+                },
+                {
+                    "en": "Thirsty"
+                },
+                {
+                    "en": "Comfortable"
+                },
+                {
+                    "en": "Good"
+                },
+                {
+                    "en": "Tasty"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "Food"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                },
+                {
+                    "en": "Want",
+                    "fr": "Vouloir"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hungry."
+                },
+                {
+                    "en": "Thirsty."
+                },
+                {
+                    "en": "This is good."
+                },
+                {
+                    "en": "This food is good."
+                },
+                {
+                    "en": "That’s really good."
+                },
+                {
+                    "en": "I want to eat."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Want",
+                    "fr": "Vouloir"
+                },
+                {
+                    "en": "Drink"
+                },
+                {
+                    "en": "Beverage"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m hungry."
+                },
+                {
+                    "en": "I want to eat."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m hungry."
+                },
+                {
+                    "en": "I’m hungry."
+                },
+                {
+                    "en": "I want to eat."
+                },
+                {
+                    "en": "That’s really good."
+                }
+            ]
+        }
+    },
+    "This / That (Choosing)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "Choose"
+                },
+                {
+                    "en": "Same"
+                },
+                {
+                    "en": "Different"
+                },
+                {
+                    "en": "The one that"
+                },
+                {
+                    "en": "Which"
+                },
+                {
+                    "en": "And"
+                },
+                {
+                    "en": "Or"
+                },
+                {
+                    "en": "But"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This."
+                },
+                {
+                    "en": "That."
+                },
+                {
+                    "en": "The same one."
+                },
+                {
+                    "en": "The different one."
+                },
+                {
+                    "en": "This and that."
+                },
+                {
+                    "en": "This or that."
+                },
+                {
+                    "en": "This but that."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose this."
+                },
+                {
+                    "en": "That is what you choose."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Just"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Just the other one."
+                },
+                {
+                    "en": "Just the other one."
+                },
+                {
+                    "en": "I choose this."
+                },
+                {
+                    "en": "I choose this."
+                },
+                {
+                    "en": "Just this one."
+                },
+                {
+                    "en": "Just this one."
+                },
+                {
+                    "en": "That is what you choose."
+                }
+            ]
+        }
+    },
+    "Going & Arriving": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Go",
+                    "fr": "Aller"
+                },
+                {
+                    "en": "Come",
+                    "fr": "Venir"
+                },
+                {
+                    "en": "Arrive",
+                    "fr": "Arriver"
+                },
+                {
+                    "en": "Arrive"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                },
+                {
+                    "en": "Here"
+                },
+                {
+                    "en": "There"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Already arrived."
+                },
+                {
+                    "en": "Here."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Will"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I will go."
+                },
+                {
+                    "en": "I have arrived."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Currently (spoken)"
+                },
+                {
+                    "en": "Want"
+                },
+                {
+                    "en": "Going to"
+                },
+                {
+                    "en": "Already (spoken)"
+                },
+                {
+                    "en": "Pointing"
+                },
+                {
+                    "en": "“here”"
+                },
+                {
+                    "en": "“this”"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Heading out."
+                },
+                {
+                    "en": "I will go."
+                },
+                {
+                    "en": "I have arrived."
+                },
+                {
+                    "en": "Arrived."
+                }
+            ]
+        }
+    },
+    "Places (Everyday)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "House"
+                },
+                {
+                    "en": "Home"
+                },
+                {
+                    "en": "Toilet"
+                },
+                {
+                    "en": "Bathroom"
+                },
+                {
+                    "en": "Room"
+                },
+                {
+                    "en": "Bedroom"
+                },
+                {
+                    "en": "Kitchen"
+                },
+                {
+                    "en": "Bathroom"
+                },
+                {
+                    "en": "Shop"
+                },
+                {
+                    "en": "Store"
+                },
+                {
+                    "en": "School"
+                },
+                {
+                    "en": "University"
+                },
+                {
+                    "en": "At"
+                },
+                {
+                    "en": "In"
+                },
+                {
+                    "en": "To"
+                },
+                {
+                    "en": "Here"
+                },
+                {
+                    "en": "There"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "At home."
+                },
+                {
+                    "en": "To the toilet."
+                },
+                {
+                    "en": "In the kitchen."
+                },
+                {
+                    "en": "In the room."
+                },
+                {
+                    "en": "At the shop."
+                },
+                {
+                    "en": "At school."
+                },
+                {
+                    "en": "At the university."
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Mine & Yours": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "Have"
+                },
+                {
+                    "en": "Own"
+                },
+                {
+                    "en": "Who"
+                },
+                {
+                    "en": "Whose"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That is yours."
+                },
+                {
+                    "en": "Whose is this?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Belong to"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is mine."
+                },
+                {
+                    "en": "This belongs to me."
+                },
+                {
+                    "en": "That belongs to you."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is mine."
+                },
+                {
+                    "en": "This is mine."
+                },
+                {
+                    "en": "That’s yours."
+                },
+                {
+                    "en": "This belongs to me."
+                },
+                {
+                    "en": "That belongs to you."
+                }
+            ]
+        }
+    },
+    "Numbers (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Zero"
+                },
+                {
+                    "en": "One"
+                },
+                {
+                    "en": "Two"
+                },
+                {
+                    "en": "Three"
+                },
+                {
+                    "en": "Four"
+                },
+                {
+                    "en": "Five"
+                },
+                {
+                    "en": "Six"
+                },
+                {
+                    "en": "Seven"
+                },
+                {
+                    "en": "Eight"
+                },
+                {
+                    "en": "Nine"
+                },
+                {
+                    "en": "Ten"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Numbers (11–100)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "‑teen"
+                },
+                {
+                    "en": "‑ty"
+                },
+                {
+                    "en": "tens"
+                },
+                {
+                    "en": "Eleven"
+                },
+                {
+                    "en": "Twelve"
+                },
+                {
+                    "en": "Thirteen"
+                },
+                {
+                    "en": "Fourteen"
+                },
+                {
+                    "en": "Fifteen"
+                },
+                {
+                    "en": "Sixteen"
+                },
+                {
+                    "en": "Seventeen"
+                },
+                {
+                    "en": "Eighteen"
+                },
+                {
+                    "en": "Nineteen"
+                },
+                {
+                    "en": "Twenty"
+                },
+                {
+                    "en": "Thirty"
+                },
+                {
+                    "en": "Forty"
+                },
+                {
+                    "en": "Fifty"
+                },
+                {
+                    "en": "One hundred"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Time (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Day"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "Yesterday"
+                },
+                {
+                    "en": "Tomorrow",
+                    "fr": "Demain"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                },
+                {
+                    "en": "Just",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Only",
+                    "fr": "Seulement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Today."
+                },
+                {
+                    "en": "Now."
+                },
+                {
+                    "en": "Tomorrow is fine."
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Places & Location": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "At"
+                },
+                {
+                    "en": "In"
+                },
+                {
+                    "en": "Here"
+                },
+                {
+                    "en": "There"
+                },
+                {
+                    "en": "Which"
+                },
+                {
+                    "en": "Where"
+                },
+                {
+                    "en": "Place"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Here."
+                },
+                {
+                    "en": "There."
+                },
+                {
+                    "en": "Which place?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Existence & Availability": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Time"
+                },
+                {
+                    "en": "Exist"
+                },
+                {
+                    "en": "There is"
+                },
+                {
+                    "en": "There is not"
+                },
+                {
+                    "en": "None"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                },
+                {
+                    "en": "Here"
+                },
+                {
+                    "en": "There"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "It's here."
+                },
+                {
+                    "en": "There is none."
+                },
+                {
+                    "en": "There is time."
+                },
+                {
+                    "en": "Not right now."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "There isn’t any."
+                }
+            ]
+        }
+    },
+    "Because (Karena / Soalnya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Because"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Busy",
+                    "fr": "Occupé"
+                },
+                {
+                    "en": "Traffic jam"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Because I’m busy."
+                },
+                {
+                    "en": "I can’t because I’m busy."
+                },
+                {
+                    "en": "Because of traffic."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (spoken)"
+                },
+                {
+                    "en": "Because (spoken)"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Currently (spoken)"
+                },
+                {
+                    "en": "Work"
+                },
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Because of (spoken)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working."
+                },
+                {
+                    "en": "I can’t because I’m working."
+                },
+                {
+                    "en": "Because I’m tired."
+                },
+                {
+                    "en": "Because I’m tired."
+                },
+                {
+                    "en": "Because of traffic."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Currently"
+                },
+                {
+                    "en": "Work"
+                },
+                {
+                    "en": "Because (formal)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working."
+                },
+                {
+                    "en": "I can’t because I’m busy."
+                },
+                {
+                    "en": "Because of traffic."
+                }
+            ]
+        }
+    },
+    "So / That’s why (Jadi / Makanya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "So"
+                },
+                {
+                    "en": "Then"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Tomorrow",
+                    "fr": "Demain"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Oh",
+                    "fr": "Oh"
+                },
+                {
+                    "en": "Like that"
+                },
+                {
+                    "en": "So"
+                },
+                {
+                    "en": "Just",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Only",
+                    "fr": "Seulement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So, later."
+                },
+                {
+                    "en": "So tomorrow, okay."
+                },
+                {
+                    "en": "Oh, so that’s how it is."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "That’s why (spoken)"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Tell"
+                },
+                {
+                    "en": "Say (spoken)"
+                },
+                {
+                    "en": "Since earlier"
+                },
+                {
+                    "en": "Don’t",
+                    "fr": "Ne ... pas"
+                },
+                {
+                    "en": "Like that (spoken)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That’s why I told you earlier."
+                },
+                {
+                    "en": "That’s why I told you earlier."
+                },
+                {
+                    "en": "That’s why don’t do that."
+                },
+                {
+                    "en": "That’s why."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Go",
+                    "fr": "Aller"
+                },
+                {
+                    "en": "First",
+                    "fr": "D'abord"
+                },
+                {
+                    "en": "Earlier",
+                    "fr": "Plus tôt"
+                },
+                {
+                    "en": "Wait"
+                },
+                {
+                    "en": "Here"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So, I’ll go first."
+                },
+                {
+                    "en": "So, I’ll wait here."
+                }
+            ]
+        }
+    },
+    "But / Contrast (Tapi / Padahal)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Want",
+                    "fr": "Vouloir"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "But"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Even though"
+                },
+                {
+                    "en": "But actually"
+                },
+                {
+                    "en": "Close"
+                },
+                {
+                    "en": "Near"
+                },
+                {
+                    "en": "Tell"
+                },
+                {
+                    "en": "Say"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but later."
+                },
+                {
+                    "en": "I can, but later."
+                },
+                {
+                    "en": "Even though it’s close."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Already (spoken)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but I’m tired."
+                },
+                {
+                    "en": "I want to, but I’m tired."
+                },
+                {
+                    "en": "But I already told you."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but I can’t right now."
+                },
+                {
+                    "en": "But I already told you."
+                }
+            ]
+        }
+    },
+    "Then / And then (Terus / Trus)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Then"
+                },
+                {
+                    "en": "And then"
+                },
+                {
+                    "en": "After that"
+                },
+                {
+                    "en": "And then"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then?"
+                },
+                {
+                    "en": "And then?"
+                },
+                {
+                    "en": "Then what?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Then (spoken)"
+                },
+                {
+                    "en": "How (spoken)",
+                    "fr": "Comment"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then what?"
+                },
+                {
+                    "en": "Then?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Then"
+                },
+                {
+                    "en": "How",
+                    "fr": "Comment"
+                },
+                {
+                    "en": "After that"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then what?"
+                },
+                {
+                    "en": "And then?"
+                }
+            ]
+        }
+    },
+    "Maybe / Probably (Mungkin / Kayaknya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Maybe",
+                    "fr": "Peut-être"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Maybe later."
+                },
+                {
+                    "en": "Maybe."
+                },
+                {
+                    "en": "Maybe."
+                },
+                {
+                    "en": "Maybe not right now."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Probably (spoken)"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (spoken)"
+                },
+                {
+                    "en": "Already (spoken)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I probably can’t."
+                },
+                {
+                    "en": "I probably can’t."
+                },
+                {
+                    "en": "Probably already."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Maybe I can."
+                }
+            ]
+        }
+    },
+    "Agreeing & Disagreeing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Agree"
+                },
+                {
+                    "en": "Disagree"
+                },
+                {
+                    "en": "But"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Agree."
+                },
+                {
+                    "en": "Disagree."
+                },
+                {
+                    "en": "I agree, but later."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (spoken)"
+                },
+                {
+                    "en": "Disagree (spoken)"
+                },
+                {
+                    "en": "Yeah."
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I agree."
+                },
+                {
+                    "en": "I disagree."
+                },
+                {
+                    "en": "Yeah."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I agree."
+                },
+                {
+                    "en": "I disagree."
+                }
+            ]
+        }
+    },
+    "Asking opinions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "According to"
+                },
+                {
+                    "en": "In your opinion"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "How",
+                    "fr": "Comment"
+                },
+                {
+                    "en": "If"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?"
+                },
+                {
+                    "en": "What do you think?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "How (spoken)",
+                    "fr": "Comment"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?"
+                },
+                {
+                    "en": "What do you think?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?"
+                },
+                {
+                    "en": "What do you think?"
+                }
+            ]
+        }
+    },
+    "Softening (Agak / Kayak / Lumayan)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "A bit"
+                },
+                {
+                    "en": "Not bad",
+                    "fr": "Pas mal"
+                },
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Expensive"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "A bit tired."
+                },
+                {
+                    "en": "Not bad."
+                },
+                {
+                    "en": "A bit expensive."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Like (spoken)"
+                },
+                {
+                    "en": "Like that (spoken)"
+                },
+                {
+                    "en": "(softener)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Like that."
+                },
+                {
+                    "en": "A bit tired."
+                },
+                {
+                    "en": "Not bad."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Quite"
+                },
+                {
+                    "en": "Good",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "Fine",
+                    "fr": "Bien"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Tired"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Pretty good."
+                },
+                {
+                    "en": "I’m quite tired."
+                }
+            ]
+        }
+    },
+    "Wait / Hold on (Bentar / Tunggu)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Wait"
+                },
+                {
+                    "en": "A moment"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Wait a moment."
+                },
+                {
+                    "en": "One sec, okay."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "A sec (spoken)"
+                },
+                {
+                    "en": "First",
+                    "fr": "D'abord"
+                },
+                {
+                    "en": "Earlier",
+                    "fr": "Plus tôt"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "One sec, okay."
+                },
+                {
+                    "en": "Wait a sec."
+                },
+                {
+                    "en": "Hold on."
+                },
+                {
+                    "en": "Hold on."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "fr": "S'il vous plaît"
+                },
+                {
+                    "en": "Kindly (formal)",
+                    "fr": "S'il vous plaît"
+                },
+                {
+                    "en": "Excuse me"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Please wait a moment."
+                },
+                {
+                    "en": "Excuse me, wait a moment."
+                }
+            ]
+        }
+    },
+    "Clarifying (Maksudku…)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "The meaning"
+                },
+                {
+                    "en": "I mean (spoken)"
+                },
+                {
+                    "en": "Like this"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this."
+                },
+                {
+                    "en": "I mean, not that."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I mean (spoken)"
+                },
+                {
+                    "en": "Like this (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this."
+                },
+                {
+                    "en": "I mean, not that."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I mean"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this."
+                },
+                {
+                    "en": "I mean, not that."
+                }
+            ]
+        }
+    },
+    "Repeat / Slower": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Repeat"
+                },
+                {
+                    "en": "One more time"
+                },
+                {
+                    "en": "Slowly"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you say it again?"
+                },
+                {
+                    "en": "One more time."
+                },
+                {
+                    "en": "Slower, please."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Please (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Say it again."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Please",
+                    "fr": "S'il vous plaît"
+                },
+                {
+                    "en": "Kindly (formal)",
+                    "fr": "S'il vous plaît"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you say it again?"
+                },
+                {
+                    "en": "Slower, please."
+                }
+            ]
+        }
+    },
+    "Inviting (Ayo / Yuk)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let’s",
+                    "fr": "Allons"
+                },
+                {
+                    "en": "Eat",
+                    "fr": "Manger"
+                },
+                {
+                    "en": "Go",
+                    "fr": "Aller"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat."
+                },
+                {
+                    "en": "Let’s go."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let’s (spoken)"
+                },
+                {
+                    "en": "Together (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat."
+                },
+                {
+                    "en": "Let’s go together."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let’s (formal)"
+                },
+                {
+                    "en": "We"
+                },
+                {
+                    "en": "Us"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s eat."
+                },
+                {
+                    "en": "Let’s go."
+                }
+            ]
+        }
+    },
+    "Accepting & Declining": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Sure"
+                },
+                {
+                    "en": "Allowed"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Just",
+                    "fr": "Juste"
+                },
+                {
+                    "en": "Only",
+                    "fr": "Seulement"
+                },
+                {
+                    "en": "Another time"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Maybe",
+                    "fr": "Peut-être"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Sure."
+                },
+                {
+                    "en": "Later."
+                },
+                {
+                    "en": "Another time, okay."
+                },
+                {
+                    "en": "Maybe another time."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not right now (spoken)"
+                },
+                {
+                    "en": "Later (spoken)"
+                },
+                {
+                    "en": "Just (spoken)",
+                    "fr": "Juste"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not right now."
+                },
+                {
+                    "en": "Later."
+                },
+                {
+                    "en": "Another time."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Sorry",
+                    "fr": "Désolé"
+                },
+                {
+                    "en": "Excuse me",
+                    "fr": "Excusez-moi"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Sorry, I can’t right now."
+                }
+            ]
+        }
+    },
+    "Messaging Basics": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Where"
+                },
+                {
+                    "en": "Now",
+                    "fr": "Maintenant"
+                },
+                {
+                    "en": "Currently (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?"
+                },
+                {
+                    "en": "Where are you now?"
+                },
+                {
+                    "en": "Where are you?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "On my way"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "At home"
+                },
+                {
+                    "en": "Yes",
+                    "fr": "Oui"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?"
+                },
+                {
+                    "en": "On my way."
+                },
+                {
+                    "en": "On my way."
+                },
+                {
+                    "en": "I’m at home."
+                },
+                {
+                    "en": "I’m at home."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Currently"
+                },
+                {
+                    "en": "On the way"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?"
+                },
+                {
+                    "en": "I’m on my way."
+                }
+            ]
+        }
+    },
+    "Jakarta Pronouns (Gue / Lu)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                },
+                {
+                    "en": "At"
+                },
+                {
+                    "en": "In"
+                },
+                {
+                    "en": "Currently (spoken)"
+                },
+                {
+                    "en": "Eat",
+                    "fr": "Manger"
+                },
+                {
+                    "en": "House"
+                },
+                {
+                    "en": "Home"
+                },
+                {
+                    "en": "Not yet"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "fr": "Qu'est-ce que tu fais ?"
+                },
+                {
+                    "en": "Not yet."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I"
+                },
+                {
+                    "en": "Me (Jakarta slang)"
+                },
+                {
+                    "en": "You (Jakarta slang)"
+                },
+                {
+                    "en": "You (Jakarta slang)"
+                },
+                {
+                    "en": "Already (spoken)"
+                },
+                {
+                    "en": "Not yet (spoken)"
+                },
+                {
+                    "en": "Friend (spoken)",
+                    "fr": "Pote"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home."
+                },
+                {
+                    "en": "I’m at home."
+                },
+                {
+                    "en": "What are you doing?",
+                    "fr": "Qu'est-ce que tu fais ?"
+                },
+                {
+                    "en": "Have you eaten yet?"
+                },
+                {
+                    "en": "Already or not yet?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether (yes-no question)"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Currently"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home."
+                },
+                {
+                    "en": "What are you doing?",
+                    "fr": "Qu'est-ce que tu fais ?"
+                },
+                {
+                    "en": "Have you eaten yet?"
+                }
+            ]
+        }
+    },
+    "Chat Softeners": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Hurry up (spoken)"
+                },
+                {
+                    "en": "Like this (spoken)"
+                },
+                {
+                    "en": "Pointing"
+                },
+                {
+                    "en": "“here”"
+                },
+                {
+                    "en": "“this”"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Surprise"
+                },
+                {
+                    "en": "“how come?” tone"
+                },
+                {
+                    "en": "Urging"
+                },
+                {
+                    "en": "“come on”"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Pointing"
+                },
+                {
+                    "en": "“there”"
+                },
+                {
+                    "en": "“see?”"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Like this."
+                },
+                {
+                    "en": "How come?"
+                },
+                {
+                    "en": "Hurry up."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Text Abbreviations": {
+        "neutral": {
+            "words": [],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I"
+                },
+                {
+                    "en": "Me (Jakarta slang)"
+                },
+                {
+                    "en": "It’s okay"
+                },
+                {
+                    "en": "No problem"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                },
+                {
+                    "en": "Not yet"
+                },
+                {
+                    "en": "On my way"
+                },
+                {
+                    "en": "Laughing",
+                    "fr": "Rire"
+                },
+                {
+                    "en": "Surprise"
+                },
+                {
+                    "en": "“how come?” tone"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "It’s okay."
+                },
+                {
+                    "en": "Haha.",
+                    "fr": "Haha."
+                },
+                {
+                    "en": "I’m on my way."
+                },
+                {
+                    "en": "I’m on my way."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Daily Small Talk (Chat)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Currently (spoken)"
+                },
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                },
+                {
+                    "en": "Already (spoken)"
+                },
+                {
+                    "en": "Not yet"
+                },
+                {
+                    "en": "Eat",
+                    "fr": "Manger"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "fr": "Qu'est-ce que tu fais ?"
+                },
+                {
+                    "en": "Have you eaten yet?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "You (Jakarta slang)"
+                },
+                {
+                    "en": "You (Jakarta slang)"
+                },
+                {
+                    "en": "Not yet (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Have you eaten yet?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether (yes-no question)"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Have you eaten yet?"
+                }
+            ]
+        }
+    },
+    "Hangout Planning (Texting)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let’s (spoken)"
+                },
+                {
+                    "en": "Hang out"
+                },
+                {
+                    "en": "What time"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Just (spoken)",
+                    "fr": "Juste"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s hang out."
+                },
+                {
+                    "en": "What time?",
+                    "fr": "Quelle heure ?"
+                },
+                {
+                    "en": "Later."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s hang out."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let’s (formal)"
+                },
+                {
+                    "en": "We"
+                },
+                {
+                    "en": "Us"
+                },
+                {
+                    "en": "Meet",
+                    "fr": "Rencontrer"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let’s meet."
+                }
+            ]
+        }
+    },
+    "Emotions & Empathy": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Fun"
+                },
+                {
+                    "en": "Exciting"
+                },
+                {
+                    "en": "Bored"
+                },
+                {
+                    "en": "Pitiful"
+                },
+                {
+                    "en": "Poor thing"
+                },
+                {
+                    "en": "Oh no"
+                },
+                {
+                    "en": "Wow"
+                },
+                {
+                    "en": "Oh dear"
+                },
+                {
+                    "en": "Oh my"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So fun."
+                },
+                {
+                    "en": "So bored."
+                },
+                {
+                    "en": "Poor thing."
+                },
+                {
+                    "en": "Oh no!"
+                },
+                {
+                    "en": "Oh dear."
+                },
+                {
+                    "en": "Oh my."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Nervous"
+                },
+                {
+                    "en": "Miss"
+                },
+                {
+                    "en": "Annoyed"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "casual closure",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "How (spoken)",
+                    "fr": "Comment"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I'm bored."
+                },
+                {
+                    "en": "I'm nervous."
+                },
+                {
+                    "en": "I'm nervous."
+                },
+                {
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
+                },
+                {
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
+                },
+                {
+                    "en": "I'm annoyed."
+                },
+                {
+                    "en": "I'm annoyed."
+                },
+                {
+                    "en": "How about it?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Nervous"
+                },
+                {
+                    "en": "Miss"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I'm bored."
+                },
+                {
+                    "en": "I'm nervous."
+                },
+                {
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
+                }
+            ]
+        }
+    },
+    "Sharing News": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Know (spoken)"
+                },
+                {
+                    "en": "Not (spoken)"
+                },
+                {
+                    "en": "Hear (spoken)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "You know what?"
+                },
+                {
+                    "en": "Did you hear?"
+                },
+                {
+                    "en": "Hey, you know what?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not (spoken)"
+                },
+                {
+                    "en": "Hey (spoken)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "You know what?"
+                },
+                {
+                    "en": "You know what?"
+                },
+                {
+                    "en": "Did you hear?"
+                },
+                {
+                    "en": "Hey, you know what?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Compliments": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Cool"
+                },
+                {
+                    "en": "Awesome"
+                },
+                {
+                    "en": "Awesome"
+                },
+                {
+                    "en": "Good"
+                },
+                {
+                    "en": "Nice"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                },
+                {
+                    "en": "Fun"
+                },
+                {
+                    "en": "Cool"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So cool."
+                },
+                {
+                    "en": "Awesome!"
+                },
+                {
+                    "en": "Really good."
+                },
+                {
+                    "en": "So fun."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So cool."
+                },
+                {
+                    "en": "Really awesome."
+                },
+                {
+                    "en": "Really awesome."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": [
+                {
+                    "en": "Very good."
+                }
+            ]
+        }
+    },
+    "Frequency & Habits": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Often"
+                },
+                {
+                    "en": "Rarely"
+                },
+                {
+                    "en": "Sometimes"
+                },
+                {
+                    "en": "Sometimes"
+                },
+                {
+                    "en": "Usually"
+                },
+                {
+                    "en": "Like that"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Often."
+                },
+                {
+                    "en": "Rarely."
+                },
+                {
+                    "en": "Sometimes."
+                },
+                {
+                    "en": "Usually like that."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "To"
+                },
+                {
+                    "en": "Here"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I often come here."
+                },
+                {
+                    "en": "Really rarely."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "To"
+                },
+                {
+                    "en": "Here"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I often come here."
+                }
+            ]
+        }
+    },
+    "Casual Venting": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Traffic jam"
+                },
+                {
+                    "en": "Hot"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                },
+                {
+                    "en": "Very"
+                },
+                {
+                    "en": "Really"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible."
+                },
+                {
+                    "en": "So hot."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Work"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible."
+                },
+                {
+                    "en": "So hot."
+                },
+                {
+                    "en": "Tired from work."
+                },
+                {
+                    "en": "Tired from work."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Tired"
+                },
+                {
+                    "en": "Work"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible."
+                },
+                {
+                    "en": "Tired from work."
+                }
+            ]
+        }
+    },
+    "Topic Shift": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Oh right"
+                },
+                {
+                    "en": "By the way"
+                },
+                {
+                    "en": "By the way"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh right.",
+                    "fr": "Ah oui."
+                },
+                {
+                    "en": "By the way."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Hey (spoken)"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hey by the way."
+                },
+                {
+                    "en": "Hey by the way."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Casual Pushback": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (spoken)"
+                },
+                {
+                    "en": "Also"
+                },
+                {
+                    "en": "Either"
+                },
+                {
+                    "en": "How come"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Able",
+                    "fr": "Pouvoir"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "Really"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh not really."
+                },
+                {
+                    "en": "How come?"
+                },
+                {
+                    "en": "Really?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Hey (spoken)"
+                },
+                {
+                    "en": "Oh",
+                    "fr": "Oh"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Not"
+                },
+                {
+                    "en": "No (alone)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not really."
+                }
+            ]
+        }
+    },
+    "As / Like (Kayak / Seperti / Maksudnya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Like"
+                },
+                {
+                    "en": "As (spoken)"
+                },
+                {
+                    "en": "Earlier"
+                },
+                {
+                    "en": "Before"
+                },
+                {
+                    "en": "Like"
+                },
+                {
+                    "en": "As"
+                },
+                {
+                    "en": "I mean"
+                },
+                {
+                    "en": "As in"
+                },
+                {
+                    "en": "As (a)"
+                },
+                {
+                    "en": "Friend",
+                    "fr": "Ami"
+                },
+                {
+                    "en": "How (spoken)",
+                    "fr": "Comment"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As before."
+                },
+                {
+                    "en": "Like before."
+                },
+                {
+                    "en": "What do you mean?"
+                },
+                {
+                    "en": "As a friend."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Seems like"
+                },
+                {
+                    "en": "That"
+                },
+                {
+                    "en": "Which"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Say"
+                },
+                {
+                    "en": "Like that"
+                },
+                {
+                    "en": "Softener",
+                    "fr": "adoucissement"
+                },
+                {
+                    "en": "emphasis",
+                    "fr": "adoucissement"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As you said."
+                },
+                {
+                    "en": "As you said."
+                },
+                {
+                    "en": "Seems like that."
+                },
+                {
+                    "en": "Seems like that."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "That"
+                },
+                {
+                    "en": "Which"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Say"
+                },
+                {
+                    "en": "How",
+                    "fr": "Comment"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As you said."
+                },
+                {
+                    "en": "What do you mean?"
+                }
+            ]
+        }
+    },
+    "Relationships (Family & Friends)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Family",
+                    "fr": "Famille"
+                },
+                {
+                    "en": "Parents",
+                    "fr": "Parents"
+                },
+                {
+                    "en": "Mother",
+                    "fr": "Mère"
+                },
+                {
+                    "en": "Father",
+                    "fr": "Père"
+                },
+                {
+                    "en": "Older sibling",
+                    "fr": "Frère"
+                },
+                {
+                    "en": "Older sibling",
+                    "fr": "Sœur aîné(e)"
+                },
+                {
+                    "en": "Younger sibling",
+                    "fr": "Frère"
+                },
+                {
+                    "en": "Younger sibling",
+                    "fr": "Sœur cadet(te)"
+                },
+                {
+                    "en": "Sibling",
+                    "fr": "Frère et sœur"
+                },
+                {
+                    "en": "Relative",
+                    "fr": "Parent"
+                },
+                {
+                    "en": "Know (someone)",
+                    "fr": "Connaître"
+                },
+                {
+                    "en": "Close",
+                    "fr": "Proche"
+                },
+                {
+                    "en": "Friend",
+                    "fr": "Ami"
+                },
+                {
+                    "en": "New",
+                    "fr": "Nouveau"
+                },
+                {
+                    "en": "Just",
+                    "fr": "Vient de"
+                },
+                {
+                    "en": "Long time",
+                    "fr": "Longtemps"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Family."
+                },
+                {
+                    "en": "Parents."
+                },
+                {
+                    "en": "Close friend.",
+                    "fr": "Ami proche."
+                },
+                {
+                    "en": "Just met.",
+                    "fr": "On vient de se rencontrer."
+                },
+                {
+                    "en": "Known each other a long time.",
+                    "fr": "On se connaît depuis longtemps."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Have",
+                    "fr": "Avoir"
+                },
+                {
+                    "en": "Already",
+                    "fr": "Déjà"
+                },
+                {
+                    "en": "We",
+                    "fr": "Nous"
+                },
+                {
+                    "en": "He",
+                    "fr": "Il"
+                },
+                {
+                    "en": "She",
+                    "fr": "Elle"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My family.",
+                    "fr": "Ma famille."
+                },
+                {
+                    "en": "My parents.",
+                    "fr": "Mes parents."
+                },
+                {
+                    "en": "They're my friend.",
+                    "fr": "C'est mon ami."
+                },
+                {
+                    "en": "We just met.",
+                    "fr": "On vient de se rencontrer."
+                },
+                {
+                    "en": "We've known each other a long time.",
+                    "fr": "On se connaît depuis longtemps."
+                },
+                {
+                    "en": "I have an older sibling.",
+                    "fr": "J'ai un frère"
+                },
+                {
+                    "en": "I have an older sibling.",
+                    "fr": "une sœur aîné(e)."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "I (casual)"
+                },
+                {
+                    "en": "Mum (spoken)"
+                },
+                {
+                    "en": "Close (spoken)"
+                },
+                {
+                    "en": "Friend (spoken)",
+                    "fr": "Pote"
+                },
+                {
+                    "en": "Be friends (casual)"
+                },
+                {
+                    "en": "Get to know each other"
+                },
+                {
+                    "en": "Already (spoken)"
+                },
+                {
+                    "en": "Softener"
+                },
+                {
+                    "en": "Love",
+                    "fr": "Aimer"
+                },
+                {
+                    "en": "Care for",
+                    "fr": "Aimer"
+                },
+                {
+                    "en": "Miss (someone)",
+                    "fr": "Manquer"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "We",
+                    "fr": "Nous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My family.",
+                    "fr": "Ma famille."
+                },
+                {
+                    "en": "My parents.",
+                    "fr": "Mes parents."
+                },
+                {
+                    "en": "They're a close friend of mine."
+                },
+                {
+                    "en": "We're just friends."
+                },
+                {
+                    "en": "Just met.",
+                    "fr": "On vient de se rencontrer."
+                },
+                {
+                    "en": "Known each other for ages."
+                },
+                {
+                    "en": "I care about you.",
+                    "fr": "Tu comptes pour moi."
+                },
+                {
+                    "en": "Miss you.",
+                    "fr": "Tu me manques."
+                }
+            ]
+        }
+    },
+    "Couple Talk": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Love",
+                    "fr": "Chéri(e)"
+                },
+                {
+                    "en": "Dear",
+                    "fr": "Chéri(e)"
+                },
+                {
+                    "en": "Beautiful",
+                    "fr": "Belle"
+                },
+                {
+                    "en": "Handsome",
+                    "fr": "Beau"
+                },
+                {
+                    "en": "Miss (someone)",
+                    "fr": "Manquer"
+                },
+                {
+                    "en": "Good",
+                    "fr": "Bon"
+                },
+                {
+                    "en": "Morning",
+                    "fr": "Matin"
+                },
+                {
+                    "en": "Night"
+                },
+                {
+                    "en": "Sleep",
+                    "fr": "Sommeil"
+                },
+                {
+                    "en": "Eat",
+                    "fr": "Manger"
+                },
+                {
+                    "en": "Be careful",
+                    "fr": "Fais attention"
+                },
+                {
+                    "en": "Road",
+                    "fr": "Route"
+                },
+                {
+                    "en": "Way",
+                    "fr": "Route"
+                },
+                {
+                    "en": "Don't",
+                    "fr": "Ne ... pas"
+                },
+                {
+                    "en": "Forget",
+                    "fr": "Oublier"
+                },
+                {
+                    "en": "At"
+                },
+                {
+                    "en": "In"
+                },
+                {
+                    "en": "On"
+                },
+                {
+                    "en": "Rest",
+                    "fr": "Repos"
+                },
+                {
+                    "en": "Meet",
+                    "fr": "Rencontrer"
+                },
+                {
+                    "en": "Tomorrow",
+                    "fr": "Demain"
+                },
+                {
+                    "en": "Later",
+                    "fr": "Plus tard"
+                },
+                {
+                    "en": "Want",
+                    "fr": "Vouloir"
+                },
+                {
+                    "en": "Where to",
+                    "fr": "Où"
+                },
+                {
+                    "en": "Can",
+                    "fr": "Pouvoir"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Beautiful."
+                },
+                {
+                    "en": "Handsome."
+                },
+                {
+                    "en": "Miss you.",
+                    "fr": "Tu me manques."
+                },
+                {
+                    "en": "Good morning.",
+                    "fr": "Bonjour."
+                },
+                {
+                    "en": "Good evening.",
+                    "fr": "Bonsoir."
+                },
+                {
+                    "en": "Good night.",
+                    "fr": "Bonne nuit."
+                },
+                {
+                    "en": "Don't forget to eat.",
+                    "fr": "N'oublie pas de manger."
+                },
+                {
+                    "en": "Be careful on the road.",
+                    "fr": "Fais attention sur la route."
+                },
+                {
+                    "en": "Rest, okay?",
+                    "fr": "Repose-toi, d'accord ?"
+                },
+                {
+                    "en": "Sleep first, okay?",
+                    "fr": "Dors d'abord, d'accord ?"
+                },
+                {
+                    "en": "See you later?",
+                    "fr": "À tout à l'heure ?"
+                },
+                {
+                    "en": "See you tomorrow.",
+                    "fr": "À demain."
+                },
+                {
+                    "en": "Where are you going?",
+                    "fr": "Où vas-tu ?"
+                },
+                {
+                    "en": "Can you tomorrow?",
+                    "fr": "Tu peux demain ?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "Love"
+                },
+                {
+                    "en": "Long for"
+                },
+                {
+                    "en": "Miss"
+                },
+                {
+                    "en": "Happy"
+                },
+                {
+                    "en": "We",
+                    "fr": "Nous"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I care about you.",
+                    "fr": "Tu comptes pour moi."
+                },
+                {
+                    "en": "I love you.",
+                    "fr": "Je t'aime."
+                },
+                {
+                    "en": "You're beautiful.",
+                    "fr": "Tu es belle."
+                },
+                {
+                    "en": "You're handsome.",
+                    "fr": "Tu es beau."
+                },
+                {
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
+                },
+                {
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
+                },
+                {
+                    "en": "Nice to meet you.",
+                    "fr": "Enchanté(e)."
+                },
+                {
+                    "en": "Don't forget to eat, okay?",
+                    "fr": "N'oublie pas de manger, d'accord ?"
+                },
+                {
+                    "en": "Let's meet tomorrow, okay?",
+                    "fr": "On se voit demain, d'accord ?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "I (casual)"
+                },
+                {
+                    "en": "You",
+                    "fr": "Tu"
+                },
+                {
+                    "en": "You",
+                    "fr": "Vous"
+                },
+                {
+                    "en": "You (casual)"
+                },
+                {
+                    "en": "My love"
+                },
+                {
+                    "en": "My dear"
+                },
+                {
+                    "en": "Love"
+                },
+                {
+                    "en": "Babe (casual)"
+                },
+                {
+                    "en": "Long for"
+                },
+                {
+                    "en": "Miss"
+                },
+                {
+                    "en": "Already (spoken)"
+                },
+                {
+                    "en": "Doing"
+                },
+                {
+                    "en": "Right now"
+                },
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                },
+                {
+                    "en": "Want (spoken)"
+                },
+                {
+                    "en": "Happy (spoken)"
+                },
+                {
+                    "en": "Very",
+                    "fr": "Très"
+                },
+                {
+                    "en": "So",
+                    "fr": "Très"
+                },
+                {
+                    "en": "With",
+                    "fr": "Avec"
+                },
+                {
+                    "en": "Pick up",
+                    "fr": "Chercher"
+                },
+                {
+                    "en": "Chat",
+                    "fr": "Discuter"
+                },
+                {
+                    "en": "Call",
+                    "fr": "Appeler"
+                },
+                {
+                    "en": "Waiting for",
+                    "fr": "Attendre"
+                },
+                {
+                    "en": "Okay"
+                },
+                {
+                    "en": "Yeah"
+                },
+                {
+                    "en": "Softener"
+                },
+                {
+                    "en": "First"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I care about you.",
+                    "fr": "Tu comptes pour moi."
+                },
+                {
+                    "en": "I care about you.",
+                    "fr": "Tu comptes pour moi."
+                },
+                {
+                    "en": "I love you.",
+                    "fr": "Je t'aime."
+                },
+                {
+                    "en": "Love you."
+                },
+                {
+                    "en": "My love.",
+                    "fr": "Mon amour."
+                },
+                {
+                    "en": "So beautiful.",
+                    "fr": "Si belle."
+                },
+                {
+                    "en": "So handsome.",
+                    "fr": "Si beau."
+                },
+                {
+                    "en": "Miss you so much.",
+                    "fr": "Tu me manques tellement."
+                },
+                {
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
+                },
+                {
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
+                },
+                {
+                    "en": "Have you eaten?",
+                    "fr": "Tu as mangé ?"
+                },
+                {
+                    "en": "What are you doing?",
+                    "fr": "Qu'est-ce que tu fais ?"
+                },
+                {
+                    "en": "Have you slept?",
+                    "fr": "Tu as dormi ?"
+                },
+                {
+                    "en": "Good morning love.",
+                    "fr": "Bonjour mon amour."
+                },
+                {
+                    "en": "Good evening love.",
+                    "fr": "Bonsoir mon amour."
+                },
+                {
+                    "en": "Good night love.",
+                    "fr": "Bonne nuit mon amour."
+                },
+                {
+                    "en": "Don't forget to eat, okay?",
+                    "fr": "N'oublie pas de manger, d'accord ?"
+                },
+                {
+                    "en": "Be careful on the road, okay?",
+                    "fr": "Fais attention sur la route, d'accord ?"
+                },
+                {
+                    "en": "Pick me up, okay?",
+                    "fr": "Viens me chercher, d'accord ?"
+                },
+                {
+                    "en": "Want to see you.",
+                    "fr": "Je veux te voir."
+                },
+                {
+                    "en": "So happy with you.",
+                    "fr": "Si heureux(se) avec toi."
+                },
+                {
+                    "en": "I'll chat you later, okay?",
+                    "fr": "Je t'écrirai plus tard, d'accord ?"
+                },
+                {
+                    "en": "I'll call you later, okay?",
+                    "fr": "Je t'appellerai plus tard, d'accord ?"
+                },
+                {
+                    "en": "Waiting for you, okay?",
+                    "fr": "Je t'attends, d'accord ?"
+                },
+                {
+                    "en": "Bye love.",
+                    "fr": "Salut mon amour."
+                }
+            ]
+        }
+    },
+    "About (Tentang / Soal)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "About",
+                    "fr": "Sur"
+                },
+                {
+                    "en": "About (re: a matter)",
+                    "fr": "Concernant"
+                },
+                {
+                    "en": "Talk",
+                    "fr": "Parler"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "This",
+                    "fr": "Ceci"
+                },
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                },
+                {
+                    "en": "How"
+                },
+                {
+                    "en": "What about"
+                },
+                {
+                    "en": "With",
+                    "fr": "Avec"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "About what?",
+                    "fr": "De quoi ?"
+                },
+                {
+                    "en": "About what?",
+                    "fr": "De quoi ?"
+                },
+                {
+                    "en": "Talk about that.",
+                    "fr": "Parlons de ça."
+                },
+                {
+                    "en": "What about that?",
+                    "fr": "Et ça ?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let's",
+                    "fr": "Allons"
+                },
+                {
+                    "en": "We",
+                    "fr": "Nous"
+                },
+                {
+                    "en": "About",
+                    "fr": "Sur"
+                },
+                {
+                    "en": "Regarding",
+                    "fr": "Concernant"
+                },
+                {
+                    "en": "About",
+                    "fr": "Concernant"
+                },
+                {
+                    "en": "Discuss",
+                    "fr": "Discuter"
+                },
+                {
+                    "en": "Talk about",
+                    "fr": "Discuter"
+                },
+                {
+                    "en": "How",
+                    "fr": "Comment"
+                },
+                {
+                    "en": "With",
+                    "fr": "Avec"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "I",
+                    "fr": "Je"
+                },
+                {
+                    "en": "Me",
+                    "fr": "Moi"
+                },
+                {
+                    "en": "Want to",
+                    "fr": "Vouloir"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let's talk about that.",
+                    "fr": "Parlons de ça."
+                },
+                {
+                    "en": "What about that?",
+                    "fr": "Et ça ?"
+                },
+                {
+                    "en": "I want to talk about that.",
+                    "fr": "Je veux parler de ça."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let's (casual)"
+                },
+                {
+                    "en": "Come on"
+                },
+                {
+                    "en": "Let's"
+                },
+                {
+                    "en": "Talk",
+                    "fr": "Parler"
+                },
+                {
+                    "en": "Chat",
+                    "fr": "Discuter"
+                },
+                {
+                    "en": "Chat about (spoken)"
+                },
+                {
+                    "en": "Talking about (spoken)"
+                },
+                {
+                    "en": "About",
+                    "fr": "Sur"
+                },
+                {
+                    "en": "About (re: a matter)",
+                    "fr": "Concernant"
+                },
+                {
+                    "en": "That",
+                    "fr": "Cela"
+                },
+                {
+                    "en": "How"
+                },
+                {
+                    "en": "What about"
+                },
+                {
+                    "en": "Doing"
+                },
+                {
+                    "en": "Right now"
+                },
+                {
+                    "en": "What",
+                    "fr": "Quoi"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let's talk about that.",
+                    "fr": "Parlons de ça."
+                },
+                {
+                    "en": "Let's talk about that.",
+                    "fr": "Parlons de ça."
+                },
+                {
+                    "en": "What about that?",
+                    "fr": "Et ça ?"
+                },
+                {
+                    "en": "What are you talking about?"
+                }
+            ]
+        }
+    }
+}

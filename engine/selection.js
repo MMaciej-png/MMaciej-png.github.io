@@ -70,10 +70,14 @@ function effectiveWeight(item) {
 
 
 /* ===============================
-   ID GENERATION
+   ID GENERATION (pair-aware)
 =============================== */
 
-export function makeId(type, module, indo, english) {
-  return `${type}::${module}::${indo}::${english}`.toLowerCase();
+/** Unique ID per (type, module, sideA, sideB, pair). */
+export function makeId(type, module, sideA, sideB, pair) {
+  const a = String(sideA ?? "").toLowerCase();
+  const b = String(sideB ?? "").toLowerCase();
+  const p = String(pair ?? "en-indo");
+  return `${type}::${module}::${a}::${b}::${p}`;
 }
 

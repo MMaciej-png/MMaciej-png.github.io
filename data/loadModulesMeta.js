@@ -1,5 +1,17 @@
 import { getModuleStats } from "./moduleStats.js";
 import { shouldExcludeWordFromPool } from "../core/textTags.js";
+import { getLanguagePair, parsePair, LANGUAGES } from "./languageConfig.js";
+
+const byCode = new Map(LANGUAGES.map((l) => [l.code, l]));
+
+function getTranslation(entry, code) {
+  const v = entry?.translations?.[code] ?? entry?.[code];
+  if (v !== undefined && v !== null) return String(Array.isArray(v) ? v[0] : v).trim();
+  const lang = byCode.get(code);
+  if (!lang) return "";
+  const raw = entry[lang.contentKey] ?? (lang.contentKey === "english" ? entry.eng : null) ?? "";
+  return String(raw).trim();
+}
 
 /**
  * Module → Category / Subcategory mapping
@@ -124,8 +136,10 @@ const SUBCATEGORY_ORDER = {
  * Loads grouped module metadata for the UI
  */
 export async function loadModulesMeta(options = {}) {
-    const content = await fetch("../data/NewContent.json")
-        .then(r => r.json());
+    const languagePair = options?.languagePair ?? getLanguagePair();
+    const [langACode, langBCode] = parsePair(languagePair);
+    const { loadContentForPair } = await import("./loadContent.js");
+    const content = await loadContentForPair(langACode, langBCode);
 
     const contentFilter = options?.contentFilter ?? "all"; // all | words | sentences
     const registerFilter = options?.registerFilter ?? "all"; // all | informal | formal
@@ -135,9 +149,11 @@ export async function loadModulesMeta(options = {}) {
 
     const allowRegister = (reg) => {
         if (registerFilter === "all") return true;
-        // Mirror casual mode: if filtering to a register, still include neutral.
         return reg === "neutral" || reg === registerFilter;
     };
+
+    const hasBothForPair = (entry) =>
+        getTranslation(entry, langACode) && getTranslation(entry, langBCode);
 
     let totalItems = 0;
     let allAttempted = 0;
@@ -162,16 +178,15 @@ export async function loadModulesMeta(options = {}) {
 
                 if (allowWord) {
                     for (const w of (block.words ?? [])) {
-                        const indo = (w?.indo ?? "").trim();
-                        if (!indo) continue;
-                        if (shouldExcludeWordFromPool(indo)) continue;
+                        if (!hasBothForPair(w)) continue;
+                        const indo = getTranslation(w, "indo");
+                        if (indo && shouldExcludeWordFromPool(indo)) continue;
                         wordCount++;
                     }
                 }
                 if (allowSentence) {
                     for (const s of (block.sentences ?? [])) {
-                        const indo = (s?.indo ?? "").trim();
-                        if (!indo) continue;
+                        if (!hasBothForPair(s)) continue;
                         sentenceCount++;
                     }
                 }
@@ -184,16 +199,15 @@ export async function loadModulesMeta(options = {}) {
             // Legacy modules are implicitly neutral, and neutral is always allowed.
             if (allowWord) {
                 for (const w of (data.words ?? [])) {
-                    const indo = (w?.indo ?? "").trim();
-                    if (!indo) continue;
-                    if (shouldExcludeWordFromPool(indo)) continue;
+                    if (!hasBothForPair(w)) continue;
+                    const indo = getTranslation(w, "indo");
+                    if (indo && shouldExcludeWordFromPool(indo)) continue;
                     wordCount++;
                 }
             }
             if (allowSentence) {
                 for (const s of (data.sentences ?? [])) {
-                    const indo = (s?.indo ?? "").trim();
-                    if (!indo) continue;
+                    if (!hasBothForPair(s)) continue;
                     sentenceCount++;
                 }
             }

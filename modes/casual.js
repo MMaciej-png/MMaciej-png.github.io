@@ -5,6 +5,7 @@ import { speak, setRate, setVolume } from "../core/tts.js?v=1";
 import { playCorrect, playWrong } from "../core/audio.js";
 
 import { isCorrect } from "../engine/translate.js";
+import { getJaTextForTts, canConvertToHiragana } from "../engine/jaCharReadings.js";
 import { weightedRandom } from "../engine/selection.js";
 
 import { loadItems } from "../data/loadData.js";
@@ -34,6 +35,17 @@ import {
   updateCasualLifetimeUI
 } from "../data/casualLifetimeStats.js";
 
+import {
+  getLanguagePair,
+  setLanguagePair,
+  getAllPairs,
+  getFlagClass,
+  getLanguageName,
+  getTtsLocale,
+  LANGUAGES,
+  parsePair
+} from "../data/languageConfig.js";
+
 /* ===============================
    STATE
 =============================== */
@@ -58,6 +70,14 @@ let includeJakartaTokens = false; // default OFF
 /* AFFIX HELP (TEACHING) */
 const AFFIX_HELP_KEY = "show_affix_help";
 let showAffixHelp = false; // default OFF
+
+/* JAPANESE: SHOW KANJI OR HIRAGANA */
+const JA_SHOW_KANJI_KEY = "ja_show_kanji";
+let showKanjiForJapanese = true; // default ON (show Kanji with ruby)
+
+/* JAPANESE: SHOW KATAKANA OR CONVERT TO HIRAGANA */
+const JA_SHOW_KATAKANA_KEY = "ja_show_katakana";
+let showKatakanaForJapanese = true; // default ON (show Katakana); when OFF, display is Hiragana only
 
 /* MODULE FILTERS */
 let activeModules = new Set(); // empty = all modules
@@ -90,22 +110,21 @@ function syncMatchingItems(sourceItem) {
     return noParticles.trim().toLowerCase();
   };
   const canonEng = (s) => String(s ?? "").trim().toLowerCase();
+  const canon = (s) => String(s ?? "").trim().toLowerCase();
 
-  const sourceIndo = canonIndo(sourceItem.indo);
-  const sourceEng = canonEng(sourceItem.eng);
+  const useLangPair = sourceItem.langA != null && sourceItem.langB != null;
+  const sourceA = useLangPair ? canon(sourceItem.langA) : canonIndo(sourceItem.indo);
+  const sourceB = useLangPair ? canon(sourceItem.langB) : canonEng(sourceItem.eng);
 
   for (const item of allItems) {
-    if (
-      item !== sourceItem &&
-      item.type === sourceItem.type &&
-      canonIndo(item.indo) === sourceIndo &&
-      canonEng(item.eng) === sourceEng
-    ) {
+    if (item === sourceItem || item.type !== sourceItem.type) continue;
+    const match = useLangPair && item.langA != null && item.langB != null
+      ? canon(item.langA) === sourceA && canon(item.langB) === sourceB
+      : canonIndo(item.indo) === sourceA && canonEng(item.eng) === sourceB;
+    if (match) {
       item.points = sourceItem.points;
       item.weight = sourceItem.weight;
       item.fail_streak = sourceItem.fail_streak;
-
-      // Persist for the particle/non-particle variant too
       saveItemStats("casual", item.id, item);
     }
   }
@@ -120,12 +139,20 @@ async function refreshCasualRank() {
 async function refreshModulesPanel() {
   if (!modulesRenderer) return;
 
-  const groups = await loadModulesMeta({ contentFilter, registerFilter });
+  const groups = await loadModulesMeta({
+    contentFilter,
+    registerFilter,
+    languagePair: getLanguagePair()
+  });
 
   if (groups["Smart Modes"]) {
     const all = groups["Smart Modes"].find(m => m.name === "All Modules");
     if (all) all.currentStreak = sessionStreak;
   }
+
+  const [codeA, codeB] = parsePair(getLanguagePair());
+  const pairIncludesJa = codeA === "ja" || codeB === "ja";
+  const pairIncludesIndo = codeA === "indo" || codeB === "indo";
 
   modulesRenderer.render(
     groups,
@@ -134,7 +161,11 @@ async function refreshModulesPanel() {
     contentFilter,
     registerFilter,
     includeJakartaTokens,
-    showAffixHelp
+    showAffixHelp,
+    pairIncludesJa,
+    showKanjiForJapanese,
+    showKatakanaForJapanese,
+    pairIncludesIndo
   );
 }
 
@@ -164,7 +195,16 @@ function applyAllFilters() {
 
   // NOTE: Jakarta toggle now controls DISPLAY, not the pool.
 
-
+  // When Kanji and Katakana are both OFF, only pool items we can fully convert to Hiragana.
+  const [codeA, codeB] = parsePair(getLanguagePair());
+  const pairIncludesJa = codeA === "ja" || codeB === "ja";
+  if (pairIncludesJa && !showKanjiForJapanese && !showKatakanaForJapanese) {
+    pool = pool.filter((i) => {
+      if (i.langACode === "ja" && !canConvertToHiragana(i.langA)) return false;
+      if (i.langBCode === "ja" && !canConvertToHiragana(i.langB)) return false;
+      return true;
+    });
+  }
 
   // Module filter
   if (activeMode === "modules" && activeModules.size > 0) {
@@ -193,6 +233,10 @@ function getCandidatePoolForPick() {
     // Only sentence cards can collapse to the same display text.
     // Dedicated Jakarta-focused modules always display tokens, so don't dedupe them.
     if (it.type !== "sentence" || it.moduleIsJakartaFocused) {
+      out.push(it);
+      continue;
+    }
+    if (!it.indo) {
       out.push(it);
       continue;
     }
@@ -259,6 +303,136 @@ function pickNewCard({ resetRecency = false } = {}) {
 
 export const casualEngine = (() => {
 
+  let langPairSelectorEl = null;
+  let langPairPopupBackdrop = null;
+  let langPairPopupEl = null;
+  let langPairPopupSide = null;
+
+  function showLangPairPopup(show, side) {
+    langPairPopupSide = side;
+    if (langPairPopupBackdrop) langPairPopupBackdrop.classList.toggle("is-open", show);
+    if (langPairPopupEl) {
+      langPairPopupEl.classList.toggle("is-open", show);
+      langPairPopupEl.setAttribute("aria-hidden", show ? "false" : "true");
+    }
+    const trigger = langPairSelectorEl?.querySelector(`[data-side="${side}"]`);
+    if (trigger) trigger.setAttribute("aria-expanded", show ? "true" : "false");
+    if (show) {
+      const onEsc = (e) => {
+        if (e.key === "Escape") {
+          showLangPairPopup(false, null);
+          document.removeEventListener("keydown", onEsc);
+        }
+      };
+      document.addEventListener("keydown", onEsc);
+    }
+  }
+
+  function renderLangPairSelector(containerEl) {
+    if (!containerEl) return;
+    const current = getLanguagePair();
+    const [codeA, codeB] = parsePair(current);
+    containerEl.innerHTML = "";
+
+    const wrap = document.createElement("div");
+    wrap.className = "lang-pair-sides";
+
+    const btnA = document.createElement("button");
+    btnA.type = "button";
+    btnA.className = "lang-pair-side-btn";
+    btnA.setAttribute("data-side", "A");
+    btnA.setAttribute("aria-label", "Change first language");
+    btnA.setAttribute("aria-haspopup", "true");
+    btnA.setAttribute("aria-expanded", "false");
+    btnA.innerHTML = `<span class="fi ${getFlagClass(codeA)} lang-flag lang-flag-large" aria-hidden="true"></span><span class="lang-pair-side-name">${getLanguageName(codeA)}</span>`;
+    btnA.onclick = () => showLangPairPopup(true, "A");
+    wrap.appendChild(btnA);
+
+    const sep = document.createElement("span");
+    sep.className = "lang-pair-sep";
+    sep.textContent = "↔";
+    wrap.appendChild(sep);
+
+    const btnB = document.createElement("button");
+    btnB.type = "button";
+    btnB.className = "lang-pair-side-btn";
+    btnB.setAttribute("data-side", "B");
+    btnB.setAttribute("aria-label", "Change second language");
+    btnB.setAttribute("aria-haspopup", "true");
+    btnB.setAttribute("aria-expanded", "false");
+    btnB.innerHTML = `<span class="fi ${getFlagClass(codeB)} lang-flag lang-flag-large" aria-hidden="true"></span><span class="lang-pair-side-name">${getLanguageName(codeB)}</span>`;
+    btnB.onclick = () => showLangPairPopup(true, "B");
+    wrap.appendChild(btnB);
+
+    containerEl.appendChild(wrap);
+
+    if (!langPairPopupBackdrop) {
+      langPairPopupBackdrop = document.createElement("div");
+      langPairPopupBackdrop.className = "lang-pair-popup-backdrop";
+      langPairPopupBackdrop.setAttribute("aria-hidden", "true");
+      langPairPopupBackdrop.onclick = () => showLangPairPopup(false, null);
+      document.body.appendChild(langPairPopupBackdrop);
+    }
+    if (!langPairPopupEl) {
+      langPairPopupEl = document.createElement("div");
+      langPairPopupEl.className = "lang-pair-popup";
+      langPairPopupEl.setAttribute("role", "dialog");
+      langPairPopupEl.setAttribute("aria-label", "Choose language");
+      langPairPopupEl.setAttribute("aria-hidden", "true");
+      document.body.appendChild(langPairPopupEl);
+    }
+
+    langPairPopupEl.innerHTML = "";
+    const title = document.createElement("div");
+    title.className = "lang-pair-popup-title";
+    title.textContent = "Choose language";
+    langPairPopupEl.appendChild(title);
+    const list = document.createElement("div");
+    list.className = "lang-pair-popup-list";
+    for (const lang of LANGUAGES) {
+      const option = document.createElement("button");
+      option.type = "button";
+      option.className = "lang-pair-popup-option";
+      option.innerHTML = `<span class="fi ${lang.flagClass} lang-flag lang-flag-large" aria-hidden="true"></span> ${lang.name}`;
+      option.onclick = async () => {
+        const side = langPairPopupSide;
+        showLangPairPopup(false, null);
+        const [a, b] = parsePair(getLanguagePair());
+        const newA = side === "A" ? lang.code : a;
+        const newB = side === "B" ? lang.code : b;
+        if (newA === newB) return;
+        const pair = `${newA}-${newB}`;
+        if (pair !== getLanguagePair()) {
+          setLanguagePair(pair);
+          await reloadForNewPair();
+        } else {
+          renderLangPairSelector(containerEl);
+        }
+      };
+      list.appendChild(option);
+    }
+    langPairPopupEl.appendChild(list);
+  }
+
+  async function reloadForNewPair() {
+    const rawItems = await loadItems();
+    allItems = rawItems.map(item => {
+      const stats = getItemStats("casual", item.id);
+      return {
+        ...item,
+        points: stats.points,
+        weight: stats.weight,
+        fail_streak: stats.fail_streak
+      };
+    });
+    applyAllFilters();
+    pickNewCard({ resetRecency: true });
+    updateCasualLifetimeUI();
+    refreshCasualRank();
+    await refreshModulesPanel();
+    if (langPairSelectorEl) renderLangPairSelector(langPairSelectorEl);
+  }
+
   async function start() {
     card = document.getElementById("casual-card");
     cardInner = card.querySelector(".card-inner");
@@ -278,7 +452,9 @@ export const casualEngine = (() => {
       frontMetaBadgesEl: document.getElementById("c-meta-badges-front"),
       backMetaBadgesEl: document.getElementById("c-meta-badges-back"),
       tagsPanelEl: document.getElementById("c-tags-panel"),
-      affixPanelEl: document.getElementById("c-affix-panel")
+      affixPanelEl: document.getElementById("c-affix-panel"),
+      getShowKanjiForJapanese: () => showKanjiForJapanese,
+      getShowKatakanaForJapanese: () => showKatakanaForJapanese
     });
 
     // Load persisted settings
@@ -294,9 +470,23 @@ export const casualEngine = (() => {
       showAffixHelp = false;
     }
 
+    try {
+      showKanjiForJapanese = localStorage.getItem(JA_SHOW_KANJI_KEY) !== "0";
+    } catch {
+      showKanjiForJapanese = true;
+    }
+
+    try {
+      showKatakanaForJapanese = localStorage.getItem(JA_SHOW_KATAKANA_KEY) !== "0";
+    } catch {
+      showKatakanaForJapanese = true;
+    }
+
     // Expose as a tiny global getter so the renderer can react to toggles
     window.__includeJakartaTokens = () => includeJakartaTokens;
     window.__showAffixHelp = () => showAffixHelp;
+    window.__showKanjiForJapanese = () => showKanjiForJapanese;
+    window.__showKatakanaForJapanese = () => showKatakanaForJapanese;
 
     /* ---------- MODULES ---------- */
 
@@ -350,6 +540,38 @@ export const casualEngine = (() => {
           showAffixHelp = !showAffixHelp;
           try {
             localStorage.setItem(AFFIX_HELP_KEY, showAffixHelp ? "1" : "0");
+          } catch {}
+
+          if (current) {
+            currentRender = renderer.buildRender(current);
+            renderer.renderFront(currentRender);
+            renderer.renderBack(currentRender);
+          }
+          refreshModulesPanel();
+          return;
+        }
+
+        /* KANJI TOGGLE (Japanese: show Kanji with ruby vs Hiragana only) */
+        if (name === "__KANJI_TOGGLE__") {
+          showKanjiForJapanese = !showKanjiForJapanese;
+          try {
+            localStorage.setItem(JA_SHOW_KANJI_KEY, showKanjiForJapanese ? "1" : "0");
+          } catch {}
+
+          if (current) {
+            currentRender = renderer.buildRender(current);
+            renderer.renderFront(currentRender);
+            renderer.renderBack(currentRender);
+          }
+          refreshModulesPanel();
+          return;
+        }
+
+        /* KATAKANA TOGGLE (Japanese: show Katakana vs convert to Hiragana) */
+        if (name === "__KATAKANA_TOGGLE__") {
+          showKatakanaForJapanese = !showKatakanaForJapanese;
+          try {
+            localStorage.setItem(JA_SHOW_KATAKANA_KEY, showKatakanaForJapanese ? "1" : "0");
           } catch {}
 
           if (current) {
@@ -469,7 +691,8 @@ export const casualEngine = (() => {
     });
 
     inputController.setOnUnlockAttempt(value => {
-      if (locked && isCorrect(value, currentRender.answer, current.type)) {
+      const expected = currentRender.answerVariants?.length ? currentRender.answerVariants.join(" / ") : currentRender.answer;
+      if (locked && isCorrect(value, expected, current.type)) {
         locked = false;
         flip.beginAdvance();
       }
@@ -512,7 +735,7 @@ export const casualEngine = (() => {
         micBtn.setAttribute("aria-pressed", String(on));
         if (!on) micBtn.disabled = locked || card.classList.contains("flipped");
         input.placeholder = on
-          ? (currentRender?.answerLang === "indo" ? "Listening in Indonesian…" : "Listening in English…")
+          ? `Listening in ${getLanguageName(currentRender?.answerLang || "en")}…`
           : INPUT_PLACEHOLDER;
       }
 
@@ -531,7 +754,7 @@ export const casualEngine = (() => {
           return;
         }
 
-        const lang = currentRender?.answerLang === "indo" ? "id-ID" : "en-US";
+        const lang = getTtsLocale(currentRender?.answerLang || "en");
 
         const rec = createSpeechRecognition({
           lang,
@@ -572,14 +795,14 @@ export const casualEngine = (() => {
       btn.addEventListener("click", e => {
         e.stopPropagation();
         const isAnswer = card.classList.contains("flipped");
-        speak(
-          isAnswer ? current.indo : currentRender.question,
-          isAnswer
-            ? "id-ID"
-            : currentRender.direction === "IE"
-              ? "id-ID"
-              : "en-GB"
-        );
+        let text = isAnswer ? currentRender.answer : currentRender.question;
+        const locale = isAnswer
+          ? getTtsLocale(currentRender.answerLang)
+          : getTtsLocale(currentRender.questionLang);
+        if (locale && locale.toLowerCase().startsWith("ja")) {
+          text = getJaTextForTts(text) || text;
+        }
+        speak(text, locale);
       });
     });
 
@@ -610,6 +833,8 @@ export const casualEngine = (() => {
 
     updateCasualLifetimeUI();
     refreshCasualRank();
+    langPairSelectorEl = document.getElementById("lang-pair-selector");
+    renderLangPairSelector(langPairSelectorEl);
     input.focus();
   }
 
@@ -620,7 +845,8 @@ export const casualEngine = (() => {
   function checkAnswer(value) {
     if (locked) return;
 
-    if (isCorrect(value, currentRender.answer, current.type)) {
+    const expected = currentRender.answerVariants?.length ? currentRender.answerVariants.join(" / ") : currentRender.answer;
+    if (isCorrect(value, expected, current.type)) {
       success();
     } else {
       attemptsLeft--;
@@ -748,6 +974,10 @@ export const casualEngine = (() => {
     return items.map((i) => ({
       indo: i.indo,
       english: i.eng,
+      langA: i.langA,
+      langB: i.langB,
+      langACode: i.langACode,
+      langBCode: i.langBCode,
       module: i.module,
       register: i.register
     }));

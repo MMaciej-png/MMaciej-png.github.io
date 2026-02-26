@@ -3,16 +3,59 @@ import { getItemStats } from "../engine/itemStats.js";
 import {
   detectJakartaTokens,
   isJakartaFocusedModule,
-  shouldExcludeWordFromPool
+  shouldExcludeWordFromPool,
+  shouldExcludeSentenceFromPool,
+  shouldExcludeModuleFromPool,
+  isEnglishSoftenerOnly,
 } from "../core/textTags.js";
 import { stripAffixMarkers } from "../core/affixTags.js";
+import {
+  getLanguagePair,
+  parsePair,
+  LANGUAGES
+} from "./languageConfig.js";
+
+const byCode = new Map(LANGUAGES.map((l) => [l.code, l]));
+
+function getTranslation(entry, code) {
+  const v = entry?.translations?.[code] ?? entry?.[code];
+  if (v !== undefined && v !== null) return String(Array.isArray(v) ? v[0] : v).trim();
+  const lang = byCode.get(code);
+  if (!lang) return "";
+  const key = lang.contentKey;
+  const raw = entry[key] ?? (key === "english" ? entry.eng : null) ?? "";
+  return String(raw).trim();
+}
+
+/** All accepted variants for a language (for answer checking). */
+function getTranslationVariants(entry, code) {
+  const v = entry?.translations?.[code] ?? entry?.[code];
+  if (v === undefined || v === null) return [];
+  if (Array.isArray(v)) return v.map((s) => String(s).trim()).filter(Boolean);
+  return [String(v).trim()].filter(Boolean);
+}
+
+/** Optional reading (e.g. romaji for Japanese) to show above the text. */
+function getReading(entry, code) {
+  if (code === "ja") {
+    const r = entry?.jaReading ?? entry?.translations?.jaReading ?? "";
+    return String(r ?? "").trim();
+  }
+  if (code === "ko") {
+    const r = entry?.koReading ?? entry?.translations?.koReading ?? "";
+    return String(r ?? "").trim();
+  }
+  return "";
+}
 
 export async function loadItems() {
-  const content = await fetch("../data/NewContent.json")
-    .then(r => r.json());
+  const pair = getLanguagePair();
+  const [langACode, langBCode] = parsePair(pair);
+  const { loadContentForPair } = await import("./loadContent.js");
+  const content = await loadContentForPair(langACode, langBCode);
 
-  const getIndo = x => (x.indo ?? x.indonesian ?? "").trim();
-  const getEng  = x => (x.english ?? x.eng ?? "").trim();
+  const getIndo = x => getTranslation(x, "indo");
+  const getEng  = x => getTranslation(x, "en");
 
   const VALID_REGISTERS = new Set(["formal", "informal", "neutral"]);
 
@@ -61,34 +104,88 @@ export async function loadItems() {
   }
 
   /* ===============================
-     ITEM MAPPER
+     COLLECT VARIANTS (same source → multiple translations)
+  =============================== */
+  const variantsByKeyA = new Map(); // key (module|register|type|textA) → textB[]
+  const variantsByKeyB = new Map(); // key (module|register|type|textB) → textA[]
+
+  function collectVariants(entries, type, moduleName, register) {
+    const reg = register ?? "neutral";
+    for (const x of entries) {
+      const textA = getTranslation(x, langACode);
+      const textB = getTranslation(x, langBCode);
+      if (!textA || !textB) continue;
+      const keyA = `${moduleName}|${reg}|${type}|${textA}`;
+      const keyB = `${moduleName}|${reg}|${type}|${textB}`;
+      if (!variantsByKeyA.has(keyA)) variantsByKeyA.set(keyA, []);
+      if (!variantsByKeyA.get(keyA).includes(textB)) variantsByKeyA.get(keyA).push(textB);
+      if (!variantsByKeyB.has(keyB)) variantsByKeyB.set(keyB, []);
+      if (!variantsByKeyB.get(keyB).includes(textA)) variantsByKeyB.get(keyB).push(textA);
+    }
+  }
+
+  for (const [moduleName, moduleData] of Object.entries(content)) {
+    if (moduleData.formal || moduleData.informal || moduleData.neutral) {
+      for (const [register, block] of Object.entries(moduleData)) {
+        if (!VALID_REGISTERS.has(register) || !block) continue;
+        collectVariants(block.words ?? [], "word", moduleName, register);
+        collectVariants(block.sentences ?? [], "sentence", moduleName, register);
+      }
+    } else {
+      collectVariants(moduleData.words ?? [], "word", moduleName, "neutral");
+      collectVariants(moduleData.sentences ?? [], "sentence", moduleName, "neutral");
+    }
+  }
+
+  /* ===============================
+     ITEM MAPPER (pair-aware)
   =============================== */
 
   const mapItem = (x, type, module, register) => {
+    const textA = getTranslation(x, langACode);
+    const textB = getTranslation(x, langBCode);
+    if (!textA || !textB) return null;
+
+    const pair = getLanguagePair();
+    let variantsA = getTranslationVariants(x, langACode);
+    let variantsB = getTranslationVariants(x, langBCode);
+
+    const reg = register ?? "neutral";
+    const keyA = `${module}|${reg}|${type}|${textA}`;
+    const keyB = `${module}|${reg}|${type}|${textB}`;
+    const collectedB = variantsByKeyA.get(keyA);
+    const collectedA = variantsByKeyB.get(keyB);
+    if (collectedB && collectedB.length > 0) variantsB = [...new Set([...collectedB, ...variantsB])];
+    if (collectedA && collectedA.length > 0) variantsA = [...new Set([...collectedA, ...variantsA])];
+
+    // For affix logic we need indo when pair includes indo
     const indoRaw = getIndo(x);
-    const eng  = getEng(x);
-    if (!indoRaw || !eng) return null;
+    const indo = indoRaw ? stripAffixMarkers(indoRaw) : "";
 
-    // Learner-visible Indonesian should NOT show affix markers.
-    const indo = stripAffixMarkers(indoRaw);
-
-    // 🔒 ID MUST NEVER CHANGE
-    // We canonicalize the indo string for IDs so adding markers later doesn't reset SR stats.
-    const id = makeId(type, indo, eng);
+    const id = makeId(type, module, textA, textB, pair);
     const stats = getItemStats("casual", id);
 
     const jakartaTokens = detectJakartaTokens(indo);
+    const pairIncludesIndo = langACode === "indo" || langBCode === "indo";
+    const enText = getEng(x);
     let excludeFromPool =
-      type === "word" && shouldExcludeWordFromPool(indo);
+      (pairIncludesIndo &&
+        (shouldExcludeModuleFromPool(module) ||
+          (type === "word" && indo && shouldExcludeWordFromPool(indo)) ||
+          (type === "sentence" && indo && shouldExcludeSentenceFromPool(indo)))) ||
+      (!pairIncludesIndo && enText && isEnglishSoftenerOnly(enText));
 
-    return {
+    const item = {
       id,
       type,
       module,
-      register, // formal | informal | neutral
-      indo,
-      indoRaw,
-      eng,
+      register,
+      langA: textA,
+      langB: textB,
+      langAVariants: variantsA.length ? variantsA : [textA],
+      langBVariants: variantsB.length ? variantsB : [textB],
+      langACode,
+      langBCode,
       moduleWordSet: MODULE_WORDSETS.get(module),
       hasJakartaTokens: jakartaTokens.length > 0,
       jakartaTokens,
@@ -96,6 +193,16 @@ export async function loadItems() {
       excludeFromPool,
       ...stats
     };
+    if (langACode === "ja" || langACode === "ko") item.langAReading = getReading(x, langACode);
+    if (langBCode === "ja" || langBCode === "ko") item.langBReading = getReading(x, langBCode);
+    if (langACode === "indo" || langBCode === "indo") {
+      item.indo = indo;
+      item.indoRaw = indoRaw;
+    }
+    if (langACode === "en" || langBCode === "en") {
+      item.eng = getEng(x);
+    }
+    return item;
   };
 
   /* ===============================

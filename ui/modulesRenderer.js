@@ -14,7 +14,11 @@ export function createModulesRenderer({ containerEl, onSelect }) {
     contentFilter,
     registerFilter,
     includeJakartaTokens,
-    showAffixHelp
+    showAffixHelp,
+    pairIncludesJa = false,
+    showKanjiForJapanese = true,
+    showKatakanaForJapanese = true,
+    pairIncludesIndo = false
   ) {
     containerEl.innerHTML = "";
 
@@ -24,6 +28,10 @@ export function createModulesRenderer({ containerEl, onSelect }) {
       registerFilter,
       includeJakartaTokens,
       showAffixHelp,
+      pairIncludesJa,
+      showKanjiForJapanese,
+      showKatakanaForJapanese,
+      pairIncludesIndo,
       onSelect
     );
 
@@ -66,6 +74,10 @@ function renderTogglesGrid(
   registerFilter,
   includeJakartaTokens,
   showAffixHelp,
+  pairIncludesJa,
+  showKanjiForJapanese,
+  showKatakanaForJapanese,
+  pairIncludesIndo,
   onSelect
 ) {
   const wrap = document.createElement("div");
@@ -89,21 +101,43 @@ function renderTogglesGrid(
         "Formal";
   btnRegister.onclick = () => onSelect("__REGISTER_TOGGLE__");
 
-  const btnParticles = document.createElement("button");
-  btnParticles.type = "button";
-  btnParticles.className = "module-toggle-btn toggle-particles";
-  btnParticles.dataset.state = includeJakartaTokens ? "on" : "off";
-  btnParticles.textContent = includeJakartaTokens ? "Particles: ON" : "Particles: OFF";
-  btnParticles.onclick = () => onSelect("__JAKARTA_TOGGLE__");
+  wrap.append(btnContent, btnRegister);
 
-  const btnAffix = document.createElement("button");
-  btnAffix.type = "button";
-  btnAffix.className = "module-toggle-btn toggle-affix";
-  btnAffix.dataset.state = showAffixHelp ? "on" : "off";
-  btnAffix.textContent = showAffixHelp ? "Affix Help: ON" : "Affix Help: OFF";
-  btnAffix.onclick = () => onSelect("__AFFIX_TOGGLE__");
+  if (pairIncludesIndo) {
+    const btnParticles = document.createElement("button");
+    btnParticles.type = "button";
+    btnParticles.className = "module-toggle-btn toggle-particles";
+    btnParticles.dataset.state = includeJakartaTokens ? "on" : "off";
+    btnParticles.textContent = includeJakartaTokens ? "Particles: ON" : "Particles: OFF";
+    btnParticles.onclick = () => onSelect("__JAKARTA_TOGGLE__");
+    const btnAffix = document.createElement("button");
+    btnAffix.type = "button";
+    btnAffix.className = "module-toggle-btn toggle-affix";
+    btnAffix.dataset.state = showAffixHelp ? "on" : "off";
+    btnAffix.textContent = showAffixHelp ? "Affix Help: ON" : "Affix Help: OFF";
+    btnAffix.onclick = () => onSelect("__AFFIX_TOGGLE__");
+    wrap.append(btnParticles, btnAffix);
+  }
 
-  wrap.append(btnContent, btnRegister, btnParticles, btnAffix);
+  if (pairIncludesJa) {
+    const btnKanji = document.createElement("button");
+    btnKanji.type = "button";
+    btnKanji.className = "module-toggle-btn toggle-kanji";
+    btnKanji.dataset.state = showKanjiForJapanese ? "on" : "off";
+    btnKanji.textContent = showKanjiForJapanese ? "Kanji: ON" : "Kanji: OFF";
+    btnKanji.title = showKanjiForJapanese ? "Show Kanji with reading" : "Show Hiragana only";
+    btnKanji.onclick = () => onSelect("__KANJI_TOGGLE__");
+    wrap.appendChild(btnKanji);
+    const btnKatakana = document.createElement("button");
+    btnKatakana.type = "button";
+    btnKatakana.className = "module-toggle-btn toggle-katakana";
+    btnKatakana.dataset.state = showKatakanaForJapanese ? "on" : "off";
+    btnKatakana.textContent = showKatakanaForJapanese ? "Katakana: ON" : "Katakana: OFF";
+    btnKatakana.title = showKatakanaForJapanese ? "Show Katakana" : "Show Hiragana only (convert Katakana)";
+    btnKatakana.onclick = () => onSelect("__KATAKANA_TOGGLE__");
+    wrap.appendChild(btnKatakana);
+  }
+
   container.appendChild(wrap);
 }
 

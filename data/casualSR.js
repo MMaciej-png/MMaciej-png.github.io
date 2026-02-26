@@ -7,11 +7,9 @@ export async function getCasualSR() {
   const seen = new Map();
 
   for (const i of items) {
-    const key = `${i.type}::${i.indo}::${i.eng}`;
-
-    // Only count the concept once
-    if (!seen.has(key)) {
-      seen.set(key, i.points);
+    // id is unique per (type, module, sideA, sideB, pair) so rank is per language pair
+    if (!seen.has(i.id)) {
+      seen.set(i.id, i.points);
     }
   }
 
