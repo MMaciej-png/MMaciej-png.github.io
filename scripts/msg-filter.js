@@ -17,6 +17,20 @@ const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
 
+// Synthetic issue IDs per area so commits can reference issues like "Refs #3".
+// Create matching GitHub issues with these numbers if you want UI links.
+const ISSUE_FOR_SCOPE = {
+  server: 1,
+  chat: 2,
+  selection: 3,
+  translate: 4,
+  content: 5,
+  ui: 6,
+  casual: 7,
+  modes: 8,
+  app: 9,
+};
+
 function inferScopeFromCommit(sha) {
   if (!sha) return { scope: null, files: [] };
   let files = [];
@@ -106,8 +120,12 @@ process.stdin.on("end", () => {
 
 function transformSubject(subject) {
   const t = (subject || "").trim();
-  if (!t) return { subject: "chore: (empty message)" };
   const commitSha = process.env.GIT_COMMIT || "";
+  const { scope } = inferScopeFromCommit(commitSha);
+
+  if (!t) {
+    return attachIssueRef({ subject: "chore: (empty message)" }, scope);
+  }
 
   // Keep merge commits unchanged (they already refer to PRs like #1, #2).
   if (t.startsWith("Merge pull request")) {
@@ -116,14 +134,13 @@ function transformSubject(subject) {
 
   // Generic \"fixes\" commits – rewrite to scoped messages based on touched files.
   if (t === "fix: bug fix" || t === "feat: fixes") {
-    const { scope } = inferScopeFromCommit(commitSha);
     const type = "fix";
-    return { subject: buildScopedFixSubject(type, scope) };
+    return attachIssueRef({ subject: buildScopedFixSubject(type, scope) }, scope);
   }
 
   // If this already looks like a Conventional Commit (and isn't one of the generic ones), keep it as-is.
   if (/^(feat|fix|chore|docs|refactor|style|test)(\([^)]+\))?:/i.test(t)) {
-    return { subject: t };
+    return attachIssueRef({ subject: t }, scope);
   }
 
   // Exact overrides for important commits where we want clear names / issue refs.
@@ -151,63 +168,71 @@ function transformSubject(subject) {
     },
   };
 
-  if (overrides[t]) return overrides[t];
+  if (overrides[t]) return attachIssueRef({ ...overrides[t] }, scope);
 
   const lower = t.toLowerCase();
 
   if (lower === "fix" || lower === "fixes") {
-    return { subject: "fix: bug fix" };
+    return attachIssueRef({ subject: "fix: bug fix" }, scope);
   }
   if (lower.includes("bug fix")) {
-    return { subject: "fix: bug fix" };
+    return attachIssueRef({ subject: "fix: bug fix" }, scope);
   }
   if (lower.includes("final fix")) {
-    return { subject: "fix: final fix" };
+    return attachIssueRef({ subject: "fix: final fix" }, scope);
   }
   if (lower.startsWith("added ") || lower.startsWith("add ")) {
-    return { subject: "feat: " + t.slice(6) };
+    return attachIssueRef({ subject: "feat: " + t.slice(6) }, scope);
   }
   if (lower.startsWith("new content")) {
-    return { subject: "feat(content): new content" };
+    return attachIssueRef({ subject: "feat(content): new content" }, scope);
   }
   if (lower.startsWith("new words and modules")) {
-    return { subject: "feat(content): new words and modules" };
+    return attachIssueRef({ subject: "feat(content): new words and modules" }, scope);
   }
   if (lower.includes("normalisation")) {
-    return { subject: "feat(translate): normalisation" };
+    return attachIssueRef({ subject: "feat(translate): normalisation" }, scope);
   }
   if (lower.includes("translate.js fix")) {
-    return { subject: "fix(translate): translate.js fix" };
+    return attachIssueRef({ subject: "fix(translate): translate.js fix" }, scope);
   }
   if (lower.includes("selection fix")) {
-    return { subject: "fix(selection): selection fix" };
+    return attachIssueRef({ subject: "fix(selection): selection fix" }, scope);
   }
   if (lower.includes("tts duplicated")) {
-    return { subject: "fix(tts): duplicated TTS" };
+    return attachIssueRef({ subject: "fix(tts): duplicated TTS" }, scope);
   }
   if (lower.includes("gap fills")) {
-    return { subject: "feat(content): gap fills" };
+    return attachIssueRef({ subject: "feat(content): gap fills" }, scope);
   }
   if (lower.includes("reactions")) {
-    return { subject: "feat(ui): reactions" };
+    return attachIssueRef({ subject: "feat(ui): reactions" }, scope);
   }
   if (lower.includes("places")) {
-    return { subject: "feat(content): places" };
+    return attachIssueRef({ subject: "feat(content): places" }, scope);
   }
   if (lower.includes("titles")) {
-    return { subject: "feat(content): titles" };
+    return attachIssueRef({ subject: "feat(content): titles" }, scope);
   }
   if (lower.includes("categories")) {
-    return { subject: "feat(content): categories" };
+    return attachIssueRef({ subject: "feat(content): categories" }, scope);
   }
   if (lower.includes("ai chat bot")) {
-    return { subject: "feat(chat): add ai chat bot" };
+    return attachIssueRef({ subject: "feat(chat): add ai chat bot" }, scope);
   }
   if (lower.includes("added mic")) {
-    return { subject: "feat(tts): add mic" };
+    return attachIssueRef({ subject: "feat(tts): add mic" }, scope);
   }
 
   // Default: keep the text but make it a chore.
-  return { subject: "chore: " + t };
+  return attachIssueRef({ subject: "chore: " + t }, scope);
+}
+
+function attachIssueRef(result, scope) {
+  const res = result || {};
+  if (!res.extraBody && scope && ISSUE_FOR_SCOPE[scope]) {
+    res.extraBody = `Refs #${ISSUE_FOR_SCOPE[scope]}`;
+  }
+  return res;
 }
 
