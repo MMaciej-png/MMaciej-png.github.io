@@ -12,6 +12,78 @@
  */
 
 const fs = require("fs");
+const { execSync } = require("child_process");
+const path = require("path");
+
+const repoRoot = path.resolve(__dirname, "..");
+
+function inferScopeFromCommit(sha) {
+  if (!sha) return { scope: null, files: [] };
+  let files = [];
+  try {
+    const out = execSync(`git show --pretty="format:" --name-only ${sha}`, {
+      cwd: repoRoot,
+      encoding: "utf8",
+    });
+    files = out
+      .split(/\r?\n/)
+      .map((f) => f.trim())
+      .filter(Boolean);
+  } catch {
+    return { scope: null, files: [] };
+  }
+
+  const has = (prefix) => files.some((f) => f === prefix || f.startsWith(prefix));
+  const onlyUnder = (prefix) => files.length && files.every((f) => f.startsWith(prefix));
+
+  if (has("server.js")) return { scope: "server", files };
+  if (has("engine/chatLLM.js")) return { scope: "chat", files };
+  if (has("engine/selection.js")) return { scope: "selection", files };
+  if (has("engine/translate.js")) return { scope: "translate", files };
+  if (has("modes/casual.js")) return { scope: "casual", files };
+  if (files.some((f) => f.startsWith("modes/"))) return { scope: "modes", files };
+  if (onlyUnder("data/")) return { scope: "content", files };
+  if (has("style.css") || files.some((f) => f.startsWith("ui/")) || has("index.html")) {
+    return { scope: "ui", files };
+  }
+  return { scope: "app", files };
+}
+
+function buildScopedFixSubject(origType, scope) {
+  const type = origType || "fix";
+  if (!scope) return `${type}: bug fix`;
+
+  let desc;
+  switch (scope) {
+    case "server":
+      desc = "chat API server and CORS";
+      break;
+    case "chat":
+      desc = "chat client and static-site handling";
+      break;
+    case "selection":
+      desc = "card selection weighting and IDs";
+      break;
+    case "translate":
+      desc = "normalisation and equivalence rules";
+      break;
+    case "content":
+      desc = "content JSON and module structure";
+      break;
+    case "ui":
+      desc = "layout and visual styling";
+      break;
+    case "casual":
+      desc = "casual mode flow";
+      break;
+    case "modes":
+      desc = "mode configuration";
+      break;
+    default:
+      desc = "bug fix";
+  }
+  return `${type}(${scope}): ${desc}`;
+}
 
 let input = "";
 process.stdin.setEncoding("utf8");
@@ -35,14 +107,22 @@ process.stdin.on("end", () => {
 function transformSubject(subject) {
   const t = (subject || "").trim();
   if (!t) return { subject: "chore: (empty message)" };
-
-  // If this already looks like a Conventional Commit, keep it as-is.
-  if (/^(feat|fix|chore|docs|refactor|style|test)(\([^)]+\))?:/i.test(t)) {
-    return { subject: t };
-  }
+  const commitSha = process.env.GIT_COMMIT || "";
 
   // Keep merge commits unchanged (they already refer to PRs like #1, #2).
   if (t.startsWith("Merge pull request")) {
+    return { subject: t };
+  }
+
+  // Generic \"fixes\" commits – rewrite to scoped messages based on touched files.
+  if (t === "fix: bug fix" || t === "feat: fixes") {
+    const { scope } = inferScopeFromCommit(commitSha);
+    const type = "fix";
+    return { subject: buildScopedFixSubject(type, scope) };
+  }
+
+  // If this already looks like a Conventional Commit (and isn't one of the generic ones), keep it as-is.
+  if (/^(feat|fix|chore|docs|refactor|style|test)(\([^)]+\))?:/i.test(t)) {
     return { subject: t };
   }
 
