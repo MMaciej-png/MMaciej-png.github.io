@@ -5,11 +5,12 @@ import { speak, setRate, setVolume } from "../core/tts.js?v=1";
 import { playCorrect, playWrong } from "../core/audio.js";
 
 import { isCorrect } from "../engine/translate.js";
+import { getJaTextForTts, canConvertToHiragana } from "../engine/jaCharReadings.js";
 import { weightedRandom } from "../engine/selection.js";
 
 import { loadItems } from "../data/loadData.js";
 import { getItemStats, saveItemStats } from "../engine/itemStats.js";
-import { stripParticlesForDisplay } from "../core/textTags.js";
+import { stripParticlesForDisplay, isJakartaFocusedModule } from "../core/textTags.js";
 import { stripAffixMarkers } from "../core/affixTags.js";
 
 import { applySuccess, applyFail } from "../engine/scoring.js";
@@ -30,9 +31,21 @@ import {
 } from "../data/moduleStats.js";
 
 import {
-  casualLifetime,
+  getCasualLifetime,
+  saveCasualLifetime,
   updateCasualLifetimeUI
 } from "../data/casualLifetimeStats.js";
+
+import {
+  getLanguagePair,
+  setLanguagePair,
+  getAllPairs,
+  getFlagClass,
+  getLanguageName,
+  getTtsLocale,
+  LANGUAGES,
+  parsePair
+} from "../data/languageConfig.js";
 
 /* ===============================
    STATE
@@ -58,6 +71,14 @@ let includeJakartaTokens = false; // default OFF
 /* AFFIX HELP (TEACHING) */
 const AFFIX_HELP_KEY = "show_affix_help";
 let showAffixHelp = false; // default OFF
+
+/* JAPANESE: SHOW KANJI OR HIRAGANA */
+const JA_SHOW_KANJI_KEY = "ja_show_kanji";
+let showKanjiForJapanese = true; // default ON (show Kanji with ruby)
+
+/* JAPANESE: SHOW KATAKANA OR CONVERT TO HIRAGANA */
+const JA_SHOW_KATAKANA_KEY = "ja_show_katakana";
+let showKatakanaForJapanese = true; // default ON (show Katakana); when OFF, display is Hiragana only
 
 /* MODULE FILTERS */
 let activeModules = new Set(); // empty = all modules
@@ -90,22 +111,21 @@ function syncMatchingItems(sourceItem) {
     return noParticles.trim().toLowerCase();
   };
   const canonEng = (s) => String(s ?? "").trim().toLowerCase();
+  const canon = (s) => String(s ?? "").trim().toLowerCase();
 
-  const sourceIndo = canonIndo(sourceItem.indo);
-  const sourceEng = canonEng(sourceItem.eng);
+  const useLangPair = sourceItem.langA != null && sourceItem.langB != null;
+  const sourceA = useLangPair ? canon(sourceItem.langA) : canonIndo(sourceItem.indo);
+  const sourceB = useLangPair ? canon(sourceItem.langB) : canonEng(sourceItem.eng);
 
   for (const item of allItems) {
-    if (
-      item !== sourceItem &&
-      item.type === sourceItem.type &&
-      canonIndo(item.indo) === sourceIndo &&
-      canonEng(item.eng) === sourceEng
-    ) {
+    if (item === sourceItem || item.type !== sourceItem.type) continue;
+    const match = useLangPair && item.langA != null && item.langB != null
+      ? canon(item.langA) === sourceA && canon(item.langB) === sourceB
+      : canonIndo(item.indo) === sourceA && canonEng(item.eng) === sourceB;
+    if (match) {
       item.points = sourceItem.points;
       item.weight = sourceItem.weight;
       item.fail_streak = sourceItem.fail_streak;
-
-      // Persist for the particle/non-particle variant too
       saveItemStats("casual", item.id, item);
     }
   }
@@ -120,12 +140,22 @@ async function refreshCasualRank() {
 async function refreshModulesPanel() {
   if (!modulesRenderer) return;
 
-  const groups = await loadModulesMeta({ contentFilter, registerFilter });
+  const groups = await loadModulesMeta({
+    contentFilter,
+    registerFilter,
+    languagePair: getLanguagePair(),
+    showKanjiForJapanese,
+    showKatakanaForJapanese
+  });
 
   if (groups["Smart Modes"]) {
     const all = groups["Smart Modes"].find(m => m.name === "All Modules");
     if (all) all.currentStreak = sessionStreak;
   }
+
+  const [codeA, codeB] = parsePair(getLanguagePair());
+  const pairIncludesJa = codeA === "ja" || codeB === "ja";
+  const pairIncludesIndo = codeA === "indo" || codeB === "indo";
 
   modulesRenderer.render(
     groups,
@@ -134,7 +164,11 @@ async function refreshModulesPanel() {
     contentFilter,
     registerFilter,
     includeJakartaTokens,
-    showAffixHelp
+    showAffixHelp,
+    pairIncludesJa,
+    showKanjiForJapanese,
+    showKatakanaForJapanese,
+    pairIncludesIndo
   );
 }
 
@@ -143,6 +177,14 @@ async function refreshModulesPanel() {
 =============================== */
 
 function applyAllFilters() {
+  const [codeA, codeB] = parsePair(getLanguagePair());
+  const pairIncludesIndo = codeA === "indo" || codeB === "indo";
+  if (!pairIncludesIndo) {
+    for (const id of activeModules) {
+      if (isJakartaFocusedModule(id)) activeModules.delete(id);
+    }
+  }
+
   let pool = [...allItems];
 
   // Never show “token-only” word cards (particles/abbrevs/laughter).
@@ -164,7 +206,15 @@ function applyAllFilters() {
 
   // NOTE: Jakarta toggle now controls DISPLAY, not the pool.
 
-
+  // When Kanji and Katakana are both OFF, only pool items we can fully convert to Hiragana.
+  const pairIncludesJa = codeA === "ja" || codeB === "ja";
+  if (pairIncludesJa && !showKanjiForJapanese && !showKatakanaForJapanese) {
+    pool = pool.filter((i) => {
+      if (i.langACode === "ja" && !canConvertToHiragana(i.langA)) return false;
+      if (i.langBCode === "ja" && !canConvertToHiragana(i.langB)) return false;
+      return true;
+    });
+  }
 
   // Module filter
   if (activeMode === "modules" && activeModules.size > 0) {
@@ -181,40 +231,52 @@ function applyAllFilters() {
   items = pool;
 }
 
+/** Normalized display text for duplicate key (one side). Indo: strip particles; others: trim + lower. */
+function normDisplayForDedup(it, side) {
+  const code = side === "A" ? it.langACode : it.langBCode;
+  const text = side === "A" ? it.langA : it.langB;
+  if (!text) return "";
+  if (code === "indo") return stripParticlesForDisplay(text);
+  return String(text).trim().toLowerCase();
+}
+
 function getCandidatePoolForPick() {
-  // The Jakarta toggle is a DISPLAY toggle, but we must prevent
-  // "looks-identical" duplicates when particles are hidden.
-  if (includeJakartaTokens) return items;
+  const [codeA, codeB] = parsePair(getLanguagePair());
+  const pairIncludesIndo = codeA === "indo" || codeB === "indo";
+
+  // When Jakarta tokens are shown, no need to collapse Indo duplicates (user sees the difference).
+  const skipIndoDedup = pairIncludesIndo && includeJakartaTokens;
 
   const out = [];
   const groups = new Map(); // key -> { best: item }
 
   for (const it of items) {
-    // Only sentence cards can collapse to the same display text.
-    // Dedicated Jakarta-focused modules always display tokens, so don't dedupe them.
-    if (it.type !== "sentence" || it.moduleIsJakartaFocused) {
+    // Jakarta-focused sentence modules: show all variants when Indo; don't collapse.
+    if (pairIncludesIndo && it.type === "sentence" && it.moduleIsJakartaFocused && skipIndoDedup) {
       out.push(it);
       continue;
     }
 
-    const stripped = stripParticlesForDisplay(it.indo);
-
+    const normA = normDisplayForDedup(it, "A");
+    const normB = normDisplayForDedup(it, "B");
     const key =
-      `${it.type}::${it.module}::${it.register}::${stripped}`
-        .toLowerCase();
+      `${it.type}::${it.module}::${it.register}::${normA}::${normB}`.toLowerCase();
 
     const g = groups.get(key) ?? { best: null };
 
-    // Prefer the "clean" version if it exists (i.e. no particles in stored text).
-    if (!g.best) g.best = it;
-    else {
-      const bestStripped = stripParticlesForDisplay(g.best.indo);
-      const bestHasParticles = g.best.indo !== bestStripped;
-      const itHasParticles = it.indo !== stripped;
+    if (!g.best) {
+      g.best = it;
+    } else {
+      // Prefer the "clean" Indo version (no particles) when both would look the same without tokens.
+      const bestHasParticles =
+        pairIncludesIndo &&
+        g.best.indo &&
+        g.best.indo !== stripParticlesForDisplay(g.best.indo);
+      const itHasParticles =
+        pairIncludesIndo && it.indo && it.indo !== stripParticlesForDisplay(it.indo);
 
       if (bestHasParticles && !itHasParticles) g.best = it;
       else if (bestHasParticles === itHasParticles) {
-        // Tie-breaker: keep the weaker item (lower points) so practice stays meaningful.
         const bestPts = Number(g.best.points) || 0;
         const itPts = Number(it.points) || 0;
         if (itPts < bestPts) g.best = it;
@@ -224,7 +286,6 @@ function getCandidatePoolForPick() {
     groups.set(key, g);
   }
 
-  // Add one representative per collapsed group.
   for (const { best } of groups.values()) {
     if (best) out.push(best);
   }
@@ -235,6 +296,21 @@ function getCandidatePoolForPick() {
 function pickNewCard({ resetRecency = false } = {}) {
   const candidatePool = getCandidatePoolForPick();
   if (!candidatePool.length) return;
+
+  // Clear any preloaded "next" card so we don't advance into stale content
+  nextItem = null;
+  nextRender = null;
+
+  // Reset card to question side when changing module/filters so the new card shows correctly
+  flip?.resetToQuestion();
+  card?.classList.remove("correct", "wrong");
+  locked = false;
+  attemptsLeft = 3;
+  inputController?.setLocked?.(false);
+  if (input) {
+    input.value = "";
+    input.focus();
+  }
 
   // Close tag panel on next card (with animation)
   renderer?.hideTagsPanel?.();
@@ -249,8 +325,13 @@ function pickNewCard({ resetRecency = false } = {}) {
   current.seen = (current.seen ?? 0) + 1;
   current.lastSeen = Date.now();
   currentRender = renderer.buildRender(current);
-  renderer.renderFront(currentRender);
-  renderer.renderBack(currentRender);
+
+  // Update DOM after reset so the new content is visible (next frame ensures flip state has been applied)
+  requestAnimationFrame(() => {
+    if (!current || !currentRender) return;
+    renderer?.renderFront(currentRender);
+    renderer?.renderBack(currentRender);
+  });
 }
 
 /* ===============================
@@ -258,6 +339,163 @@ function pickNewCard({ resetRecency = false } = {}) {
 =============================== */
 
 export const casualEngine = (() => {
+
+  let langPairSelectorEl = null;
+  let langPairPopupBackdrop = null;
+  let langPairPopupEl = null;
+  let langPairPopupSide = null;
+  let onLanguageChange = null;
+
+  function showLangPairPopup(show, side) {
+    langPairPopupSide = side;
+    if (!show && langPairPopupEl) {
+      const active = document.activeElement;
+      if (active && langPairPopupEl.contains(active)) {
+        const trigger = langPairPopupSide && langPairSelectorEl
+          ? langPairSelectorEl.querySelector(`[data-side="${langPairPopupSide}"]`)
+          : null;
+        if (trigger) trigger.focus();
+      }
+    }
+    if (langPairPopupBackdrop) langPairPopupBackdrop.classList.toggle("is-open", show);
+    if (langPairPopupEl) {
+      langPairPopupEl.classList.toggle("is-open", show);
+      langPairPopupEl.setAttribute("aria-hidden", show ? "false" : "true");
+    }
+    const trigger = langPairSelectorEl?.querySelector(`[data-side="${side}"]`);
+    if (trigger) trigger.setAttribute("aria-expanded", show ? "true" : "false");
+    if (show && side && langPairPopupEl) {
+      const listEl = langPairPopupEl.querySelector(".lang-pair-popup-list");
+      if (listEl) {
+        const [codeA, codeB] = parsePair(getLanguagePair());
+        const otherCode = side === "A" ? codeB : codeA;
+        listEl.innerHTML = "";
+        for (const lang of LANGUAGES) {
+          if (lang.code === otherCode) continue;
+          const option = document.createElement("button");
+          option.type = "button";
+          option.className = "lang-pair-popup-option";
+          option.innerHTML = `<span class="fi ${lang.flagClass} lang-flag lang-flag-large" aria-hidden="true"></span> ${lang.name}`;
+          option.onclick = async () => {
+            const s = langPairPopupSide;
+            showLangPairPopup(false, null);
+            const [a, b] = parsePair(getLanguagePair());
+            const newA = s === "A" ? lang.code : a;
+            const newB = s === "B" ? lang.code : b;
+            if (newA === newB) return;
+            const pair = `${newA}-${newB}`;
+            if (pair !== getLanguagePair()) {
+              setLanguagePair(pair);
+              await reloadForNewPair();
+            } else {
+              renderLangPairSelector(langPairSelectorEl);
+            }
+          };
+          listEl.appendChild(option);
+        }
+      }
+      const onEsc = (e) => {
+        if (e.key === "Escape") {
+          showLangPairPopup(false, null);
+          document.removeEventListener("keydown", onEsc);
+        }
+      };
+      document.addEventListener("keydown", onEsc);
+    }
+  }
+
+  function renderLangPairSelector(containerEl) {
+    if (!containerEl) return;
+    const current = getLanguagePair();
+    const [codeA, codeB] = parsePair(current);
+    containerEl.innerHTML = "";
+
+    const wrap = document.createElement("div");
+    wrap.className = "lang-pair-sides";
+
+    const btnA = document.createElement("button");
+    btnA.type = "button";
+    btnA.className = "lang-pair-side-btn";
+    btnA.setAttribute("data-side", "A");
+    btnA.setAttribute("aria-label", "Change first language");
+    btnA.setAttribute("aria-haspopup", "true");
+    btnA.setAttribute("aria-expanded", "false");
+    btnA.innerHTML = `<span class="fi ${getFlagClass(codeA)} lang-flag lang-flag-large" aria-hidden="true"></span><span class="lang-pair-side-name">${getLanguageName(codeA)}</span>`;
+    btnA.onclick = () => showLangPairPopup(true, "A");
+    wrap.appendChild(btnA);
+
+    const sep = document.createElement("span");
+    sep.className = "lang-pair-sep";
+    sep.textContent = "↔";
+    wrap.appendChild(sep);
+
+    const btnB = document.createElement("button");
+    btnB.type = "button";
+    btnB.className = "lang-pair-side-btn";
+    btnB.setAttribute("data-side", "B");
+    btnB.setAttribute("aria-label", "Change second language");
+    btnB.setAttribute("aria-haspopup", "true");
+    btnB.setAttribute("aria-expanded", "false");
+    btnB.innerHTML = `<span class="fi ${getFlagClass(codeB)} lang-flag lang-flag-large" aria-hidden="true"></span><span class="lang-pair-side-name">${getLanguageName(codeB)}</span>`;
+    btnB.onclick = () => showLangPairPopup(true, "B");
+    wrap.appendChild(btnB);
+
+    containerEl.appendChild(wrap);
+
+    if (!langPairPopupBackdrop) {
+      langPairPopupBackdrop = document.createElement("div");
+      langPairPopupBackdrop.className = "lang-pair-popup-backdrop";
+      langPairPopupBackdrop.setAttribute("aria-hidden", "true");
+      langPairPopupBackdrop.onclick = () => showLangPairPopup(false, null);
+      document.body.appendChild(langPairPopupBackdrop);
+    }
+    if (!langPairPopupEl) {
+      langPairPopupEl = document.createElement("div");
+      langPairPopupEl.className = "lang-pair-popup";
+      langPairPopupEl.setAttribute("role", "dialog");
+      langPairPopupEl.setAttribute("aria-label", "Choose language");
+      langPairPopupEl.setAttribute("aria-hidden", "true");
+      document.body.appendChild(langPairPopupEl);
+    }
+
+    langPairPopupEl.innerHTML = "";
+    const title = document.createElement("div");
+    title.className = "lang-pair-popup-title";
+    title.textContent = "Choose language";
+    langPairPopupEl.appendChild(title);
+    const list = document.createElement("div");
+    list.className = "lang-pair-popup-list";
+    langPairPopupEl.appendChild(list);
+    const ttsNote = document.createElement("div");
+    ttsNote.className = "lang-pair-popup-tts-note";
+    ttsNote.setAttribute("aria-live", "polite");
+    ttsNote.innerHTML = "On <strong>Windows</strong>, install speech packages for each language (Settings → Time &amp; language → Speech → Manage voices) so the 🔊 button works.";
+    langPairPopupEl.appendChild(ttsNote);
+  }
+
+  async function reloadForNewPair() {
+    const rawItems = await loadItems();
+    allItems = rawItems.map(item => {
+      const stats = getItemStats("casual", item.id);
+      return {
+        ...item,
+        points: stats.points,
+        weight: stats.weight,
+        fail_streak: stats.fail_streak
+      };
+    });
+    applyAllFilters();
+    pickNewCard({ resetRecency: true });
+    updateCasualLifetimeUI(getLanguagePair());
+    refreshCasualRank();
+    await refreshModulesPanel();
+    if (langPairSelectorEl) renderLangPairSelector(langPairSelectorEl);
+    onLanguageChange?.();
+  }
+
+  function setOnLanguageChange(cb) {
+    onLanguageChange = cb;
+  }
 
   async function start() {
     card = document.getElementById("casual-card");
@@ -278,7 +516,9 @@ export const casualEngine = (() => {
       frontMetaBadgesEl: document.getElementById("c-meta-badges-front"),
       backMetaBadgesEl: document.getElementById("c-meta-badges-back"),
       tagsPanelEl: document.getElementById("c-tags-panel"),
-      affixPanelEl: document.getElementById("c-affix-panel")
+      affixPanelEl: document.getElementById("c-affix-panel"),
+      getShowKanjiForJapanese: () => showKanjiForJapanese,
+      getShowKatakanaForJapanese: () => showKatakanaForJapanese
     });
 
     // Load persisted settings
@@ -294,9 +534,23 @@ export const casualEngine = (() => {
       showAffixHelp = false;
     }
 
+    try {
+      showKanjiForJapanese = localStorage.getItem(JA_SHOW_KANJI_KEY) !== "0";
+    } catch {
+      showKanjiForJapanese = true;
+    }
+
+    try {
+      showKatakanaForJapanese = localStorage.getItem(JA_SHOW_KATAKANA_KEY) !== "0";
+    } catch {
+      showKatakanaForJapanese = true;
+    }
+
     // Expose as a tiny global getter so the renderer can react to toggles
     window.__includeJakartaTokens = () => includeJakartaTokens;
     window.__showAffixHelp = () => showAffixHelp;
+    window.__showKanjiForJapanese = () => showKanjiForJapanese;
+    window.__showKatakanaForJapanese = () => showKatakanaForJapanese;
 
     /* ---------- MODULES ---------- */
 
@@ -352,6 +606,42 @@ export const casualEngine = (() => {
             localStorage.setItem(AFFIX_HELP_KEY, showAffixHelp ? "1" : "0");
           } catch {}
 
+          if (current) {
+            currentRender = renderer.buildRender(current);
+            renderer.renderFront(currentRender);
+            renderer.renderBack(currentRender);
+          }
+          refreshModulesPanel();
+          return;
+        }
+
+        /* KANJI TOGGLE (Japanese: show Kanji with ruby vs Hiragana only) */
+        if (name === "__KANJI_TOGGLE__") {
+          showKanjiForJapanese = !showKanjiForJapanese;
+          try {
+            localStorage.setItem(JA_SHOW_KANJI_KEY, showKanjiForJapanese ? "1" : "0");
+          } catch {}
+
+          applyAllFilters();
+          pickNewCard({ resetRecency: true });
+          if (current) {
+            currentRender = renderer.buildRender(current);
+            renderer.renderFront(currentRender);
+            renderer.renderBack(currentRender);
+          }
+          refreshModulesPanel();
+          return;
+        }
+
+        /* KATAKANA TOGGLE (Japanese: show Katakana vs convert to Hiragana) */
+        if (name === "__KATAKANA_TOGGLE__") {
+          showKatakanaForJapanese = !showKatakanaForJapanese;
+          try {
+            localStorage.setItem(JA_SHOW_KATAKANA_KEY, showKatakanaForJapanese ? "1" : "0");
+          } catch {}
+
+          applyAllFilters();
+          pickNewCard({ resetRecency: true });
           if (current) {
             currentRender = renderer.buildRender(current);
             renderer.renderFront(currentRender);
@@ -469,7 +759,8 @@ export const casualEngine = (() => {
     });
 
     inputController.setOnUnlockAttempt(value => {
-      if (locked && isCorrect(value, currentRender.answer, current.type)) {
+      const expected = currentRender.answerVariants?.length ? currentRender.answerVariants.join(" / ") : currentRender.answer;
+      if (locked && isCorrect(value, expected, current.type)) {
         locked = false;
         flip.beginAdvance();
       }
@@ -512,7 +803,7 @@ export const casualEngine = (() => {
         micBtn.setAttribute("aria-pressed", String(on));
         if (!on) micBtn.disabled = locked || card.classList.contains("flipped");
         input.placeholder = on
-          ? (currentRender?.answerLang === "indo" ? "Listening in Indonesian…" : "Listening in English…")
+          ? `Listening in ${getLanguageName(currentRender?.answerLang || "en")}…`
           : INPUT_PLACEHOLDER;
       }
 
@@ -531,7 +822,7 @@ export const casualEngine = (() => {
           return;
         }
 
-        const lang = currentRender?.answerLang === "indo" ? "id-ID" : "en-US";
+        const lang = getTtsLocale(currentRender?.answerLang || "en");
 
         const rec = createSpeechRecognition({
           lang,
@@ -572,14 +863,14 @@ export const casualEngine = (() => {
       btn.addEventListener("click", e => {
         e.stopPropagation();
         const isAnswer = card.classList.contains("flipped");
-        speak(
-          isAnswer ? current.indo : currentRender.question,
-          isAnswer
-            ? "id-ID"
-            : currentRender.direction === "IE"
-              ? "id-ID"
-              : "en-GB"
-        );
+        let text = isAnswer ? currentRender.answer : currentRender.question;
+        const locale = isAnswer
+          ? getTtsLocale(currentRender.answerLang)
+          : getTtsLocale(currentRender.questionLang);
+        if (locale && locale.toLowerCase().startsWith("ja")) {
+          text = getJaTextForTts(text) || text;
+        }
+        speak(text, locale);
       });
     });
 
@@ -608,8 +899,10 @@ export const casualEngine = (() => {
     applyAllFilters();
     pickNewCard({ resetRecency: true });
 
-    updateCasualLifetimeUI();
+    updateCasualLifetimeUI(getLanguagePair());
     refreshCasualRank();
+    langPairSelectorEl = document.getElementById("lang-pair-selector");
+    renderLangPairSelector(langPairSelectorEl);
     input.focus();
   }
 
@@ -620,7 +913,8 @@ export const casualEngine = (() => {
   function checkAnswer(value) {
     if (locked) return;
 
-    if (isCorrect(value, currentRender.answer, current.type)) {
+    const expected = currentRender.answerVariants?.length ? currentRender.answerVariants.join(" / ") : currentRender.answer;
+    if (isCorrect(value, expected, current.type)) {
       success();
     } else {
       attemptsLeft--;
@@ -647,34 +941,32 @@ export const casualEngine = (() => {
     sessionStreak++;
     sessionBestStreak = Math.max(sessionBestStreak, sessionStreak);
 
-    casualLifetime.total++;
-    casualLifetime.complete++;
-
+    const pair = getLanguagePair();
+    const lifetime = getCasualLifetime(pair);
+    lifetime.total++;
+    lifetime.complete++;
     if (current.type === "word") {
-      casualLifetime.word.total++;
-      casualLifetime.word.correct++;
+      lifetime.word.total++;
+      lifetime.word.correct++;
     } else {
-      casualLifetime.sentence.total++;
-      casualLifetime.sentence.correct++;
+      lifetime.sentence.total++;
+      lifetime.sentence.correct++;
     }
+    lifetime.bestStreak = Math.max(lifetime.bestStreak, sessionStreak);
+    saveCasualLifetime();
 
-    casualLifetime.bestStreak = Math.max(
-      casualLifetime.bestStreak,
-      sessionStreak
-    );
-
-    const m = getModuleStats(current.module);
+    const m = getModuleStats(current.module, pair);
     m.attempted++;
     m.correct++;
     m.currentStreak++;
     m.bestStreak = Math.max(m.bestStreak, m.currentStreak);
-    saveModuleStats(current.module, m);
+    saveModuleStats(current.module, m, pair);
 
     card.classList.add("correct");
     flip.flipToAnswer();
 
     updateSessionUI();
-    updateCasualLifetimeUI();
+    updateCasualLifetimeUI(pair);
     refreshCasualRank();
     refreshModulesPanel();
   }
@@ -696,25 +988,26 @@ export const casualEngine = (() => {
     );
 
     sessionFailed++;
-    casualLifetime.streaks.push(sessionStreak);
+    const pair = getLanguagePair();
+    const lifetime = getCasualLifetime(pair);
+    lifetime.streaks.push(sessionStreak);
     sessionStreak = 0;
+    lifetime.total++;
+    lifetime.failed++;
+    if (current.type === "word") lifetime.word.total++;
+    else lifetime.sentence.total++;
+    saveCasualLifetime();
 
-    casualLifetime.total++;
-    casualLifetime.failed++;
-
-    if (current.type === "word") casualLifetime.word.total++;
-    else casualLifetime.sentence.total++;
-
-    const m = getModuleStats(current.module);
+    const m = getModuleStats(current.module, pair);
     m.attempted++;
     m.currentStreak = 0;
-    saveModuleStats(current.module, m);
+    saveModuleStats(current.module, m, pair);
 
     card.classList.add("wrong");
     flip.flipToAnswer();
 
     updateSessionUI();
-    updateCasualLifetimeUI();
+    updateCasualLifetimeUI(pair);
     refreshCasualRank();
     refreshModulesPanel();
   }
@@ -748,10 +1041,14 @@ export const casualEngine = (() => {
     return items.map((i) => ({
       indo: i.indo,
       english: i.eng,
+      langA: i.langA,
+      langB: i.langB,
+      langACode: i.langACode,
+      langBCode: i.langBCode,
       module: i.module,
       register: i.register
     }));
   }
 
-  return { start, getSelectedModuleNames, getVocabForChat };
+  return { start, getSelectedModuleNames, getVocabForChat, setOnLanguageChange };
 })();

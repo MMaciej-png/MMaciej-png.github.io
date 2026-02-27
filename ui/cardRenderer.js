@@ -4,6 +4,11 @@ import {
   stripParticlesForDisplay
 } from "../core/textTags.js";
 import { detectAffixTags } from "../core/affixTags.js";
+import { getPhraseReading as getJaPhraseReading, getReadingsForText as getJaReadings, getJaTextForTts, katakanaToHiragana } from "../engine/jaCharReadings.js";
+import { getReadingsForText as getKoReadings } from "../engine/koCharReadings.js";
+import { getReadingsForText as getPlReadings } from "../engine/plCharReadings.js";
+import { getReadingsForText as getFrReadings } from "../engine/frCharReadings.js";
+import { getReadingsForText as getRuReadings } from "../engine/ruCharReadings.js";
 
 export function createCardRenderer({
   frontTextEl,
@@ -19,36 +24,174 @@ export function createCardRenderer({
   frontMetaBadgesEl,
   backMetaBadgesEl,
   tagsPanelEl,
-  affixPanelEl
+  affixPanelEl,
+  getShowKanjiForJapanese,
+  getShowKatakanaForJapanese
 }) {
 
   // Badges are computed at render-time; JSON schema stays locked.
   // - Token badges (Jakarta slang/particles/shorteners) only show when Indonesian is visible.
   // - Meta badges like SPOKEN show on both sides.
 
+  function escapeHtml(s) {
+    const div = document.createElement("div");
+    div.textContent = s;
+    return div.innerHTML;
+  }
+
+  /**
+   * Non-English language text → HTML with ruby (pronunciation/transliteration above characters).
+   * ja/ko: full character readings; pl/fr: diacritics only; ru: Cyrillic → Latin.
+   * If explicit reading is provided (e.g. for kanji), use it: space-separated = per-char, else whole-word.
+   */
+  function withRubyHtml(text, lang, explicitReading) {
+    const chars = [...text];
+    if (chars.length === 0) return null;
+
+    if (lang === "ja" || lang === "ko") {
+      if (explicitReading) {
+        const parts = explicitReading.trim().split(/\s+/);
+        if (parts.length === chars.length) {
+          return chars
+            .map((c, i) => `<ruby>${escapeHtml(c)}<rt>${escapeHtml(parts[i])}</rt></ruby>`)
+            .join("");
+        }
+        // For Japanese, wrong part count (e.g. no token for 々) → use computed readings so every char gets one
+        if (lang !== "ja") return `<ruby>${escapeHtml(text)}<rt>${escapeHtml(explicitReading)}</rt></ruby>`;
+      }
+
+      if (lang === "ja") {
+        const phraseReading = getJaPhraseReading(text);
+        if (phraseReading) {
+          return `<ruby>${escapeHtml(text)}<rt>${escapeHtml(phraseReading)}</rt></ruby>`;
+        }
+      }
+      const readings = lang === "ja" ? getJaReadings(text) : getKoReadings(text);
+      return chars
+        .map((c, i) => {
+          const r = readings[i];
+          return r ? `<ruby>${escapeHtml(c)}<rt>${escapeHtml(r)}</rt></ruby>` : escapeHtml(c);
+        })
+        .join("");
+    }
+
+    if (lang === "pl" || lang === "fr") {
+      const readings = lang === "pl" ? getPlReadings(text) : getFrReadings(text);
+      const hasAny = readings.some((r) => r !== "");
+      if (!hasAny) return null;
+      return chars
+        .map((c, i) => {
+          const r = readings[i];
+          return r ? `<ruby>${escapeHtml(c)}<rt>${escapeHtml(r)}</rt></ruby>` : escapeHtml(c);
+        })
+        .join("");
+    }
+
+    if (lang === "ru") {
+      const readings = getRuReadings(text);
+      const hasAny = readings.some((r) => r !== "");
+      if (!hasAny) return null;
+      return chars
+        .map((c, i) => {
+          const r = readings[i];
+          return r ? `<ruby>${escapeHtml(c)}<rt>${escapeHtml(r)}</rt></ruby>` : escapeHtml(c);
+        })
+        .join("");
+    }
+
+    return null;
+  }
+
   function buildRender(cardObj) {
-    const direction = Math.random() < 0.5 ? "IE" : "EI";
+    const hasPair = cardObj.langA != null && cardObj.langB != null && cardObj.langACode != null && cardObj.langBCode != null;
 
-    const labels = extractEnglishLabels(cardObj.eng);
-    const engDisplay = labels.clean ?? cardObj.eng;
-    const metaLabels = labels.labels ?? [];
+    let direction, question, answer, questionLang, answerLang, metaLabels, answerVariants, questionVariants, questionReading, answerReading;
 
-    return {
+    if (hasPair) {
+      const displayA = cardObj.langACode === "en"
+        ? (extractEnglishLabels(cardObj.langA).clean ?? cardObj.langA)
+        : cardObj.langA;
+      const displayB = cardObj.langBCode === "en"
+        ? (extractEnglishLabels(cardObj.langB).clean ?? cardObj.langB)
+        : cardObj.langB;
+      const labelsA = cardObj.langACode === "en" ? extractEnglishLabels(cardObj.langA).labels ?? [] : [];
+      const labelsB = cardObj.langBCode === "en" ? extractEnglishLabels(cardObj.langB).labels ?? [] : [];
+      const showAThenB = Math.random() < 0.5;
+      direction = showAThenB ? "AB" : "BA";
+      question = showAThenB ? displayA : displayB;
+      answer = showAThenB ? displayB : displayA;
+      questionReading = showAThenB ? cardObj.langAReading : cardObj.langBReading;
+      answerReading = showAThenB ? cardObj.langBReading : cardObj.langAReading;
+      answerVariants = showAThenB ? (cardObj.langBVariants ?? [answer]) : (cardObj.langAVariants ?? [answer]);
+      questionVariants = showAThenB ? (cardObj.langAVariants ?? [question]) : (cardObj.langBVariants ?? [question]);
+      questionLang = showAThenB ? cardObj.langACode : cardObj.langBCode;
+      answerLang = showAThenB ? cardObj.langBCode : cardObj.langACode;
+      metaLabels = showAThenB ? labelsA : labelsB;
+
+      const showKanji = typeof getShowKanjiForJapanese === "function" ? getShowKanjiForJapanese() : true;
+      const showKatakana = typeof getShowKatakanaForJapanese === "function" ? getShowKatakanaForJapanese() : true;
+      if (!showKanji) {
+        if (questionLang === "ja") {
+          question = getJaTextForTts(question) || question;
+          questionReading = "";
+        }
+        if (answerLang === "ja") {
+          answer = getJaTextForTts(answer) || answer;
+          answerReading = "";
+        }
+      }
+      if (!showKatakana) {
+        if (questionLang === "ja") {
+          question = katakanaToHiragana(question) || question;
+          questionReading = "";
+        }
+        if (answerLang === "ja") {
+          answer = katakanaToHiragana(answer) || answer;
+          answerReading = "";
+        }
+      }
+    } else {
+      direction = Math.random() < 0.5 ? "IE" : "EI";
+      const labels = extractEnglishLabels(cardObj.eng);
+      const engDisplay = labels.clean ?? cardObj.eng;
+      metaLabels = labels.labels ?? [];
+      question = direction === "IE" ? cardObj.indo : engDisplay;
+      answer = direction === "IE" ? engDisplay : cardObj.indo;
+      answerVariants = [answer];
+      questionVariants = [question];
+      questionReading = "";
+      answerReading = "";
+      questionLang = direction === "IE" ? "indo" : "eng";
+      answerLang = direction === "IE" ? "eng" : "indo";
+    }
+
+    const out = {
       direction,
-      question: direction === "IE" ? cardObj.indo : engDisplay,
-      answer: direction === "IE" ? engDisplay : cardObj.indo,
+      question,
+      answer,
       points: cardObj.points,
-      register: cardObj.register, // ✅ KEEP REGISTER
+      register: cardObj.register,
       moduleIsJakartaFocused: !!cardObj.moduleIsJakartaFocused,
-      // Language markers for badge display rules
-      questionLang: direction === "IE" ? "indo" : "eng",
-      answerLang: direction === "IE" ? "eng" : "indo",
+      questionLang,
+      answerLang,
+      questionReading: questionReading ?? "",
+      answerReading: answerReading ?? "",
       indoText: cardObj.indo,
       tokens: detectJakartaTokens(cardObj.indo),
-      // Use raw Indonesian (with affix markers) for better affix popups.
       affixes: detectAffixTags(cardObj.indoRaw ?? cardObj.indo, cardObj.moduleWordSet),
-      metaLabels
+      metaLabels: metaLabels ?? []
     };
+    // Each side shows all its variants: e.g. question "Good / Well / Safe", answer "Selamat" (or the other way around).
+    out.questionDisplay = (questionVariants && questionVariants.length > 1)
+      ? questionVariants.join(" / ")
+      : question;
+    out.answerDisplay = (answerVariants && answerVariants.length > 1)
+      ? answerVariants.join(" / ")
+      : answer;
+    if (typeof answerVariants !== "undefined") out.answerVariants = answerVariants;
+    out.questionMeaningsHint = null;
+    out.answerMeaningsHint = null;
+    return out;
   }
 
   function clearBadges(el) {
@@ -306,12 +449,19 @@ export function createCardRenderer({
         : false;
     const showParticles = render.moduleIsJakartaFocused || globalShow;
 
+    const frontQuestionText = render.questionDisplay ?? render.question;
     const frontText =
       render.questionLang === "indo" && !showParticles
-        ? stripParticlesForDisplay(render.question)
-        : render.question;
+        ? stripParticlesForDisplay(frontQuestionText)
+        : frontQuestionText;
 
-    frontTextEl.textContent = frontText;
+    const frontRuby = withRubyHtml(frontText, render.questionLang, render.questionReading);
+    const frontHint = render.questionMeaningsHint ? `<span class="card-meanings-hint">${escapeHtml(render.questionMeaningsHint)}</span>` : "";
+    if (frontRuby) {
+      frontTextEl.innerHTML = frontRuby + frontHint;
+    } else {
+      frontTextEl.innerHTML = escapeHtml(frontText) + frontHint;
+    }
     renderRegister(frontRegisterEl, render.register);
     // Show SPOKEN next to the register pill; keep other labels in the normal meta area
     const frontLabels = splitLabels(render.metaLabels);
@@ -336,18 +486,25 @@ export function createCardRenderer({
         : false;
     const showParticles = render.moduleIsJakartaFocused || globalShow;
 
+    const questionText = render.questionDisplay ?? render.question;
     const q =
       render.questionLang === "indo" && !showParticles
-        ? stripParticlesForDisplay(render.question)
-        : render.question;
+        ? stripParticlesForDisplay(questionText)
+        : questionText;
 
+    const answerText = render.answerDisplay ?? render.answer;
     const a =
       render.answerLang === "indo" && !showParticles
-        ? stripParticlesForDisplay(render.answer)
-        : render.answer;
+        ? stripParticlesForDisplay(answerText)
+        : answerText;
 
-    backTextEl.textContent =
-      `${q}\n────────\n${a}`;
+    const qRuby = withRubyHtml(q, render.questionLang, render.questionReading);
+    const aRuby = withRubyHtml(a, render.answerLang, render.answerReading);
+    const qHint = render.questionMeaningsHint ? `<div class="card-meanings-hint">${escapeHtml(render.questionMeaningsHint)}</div>` : "";
+    const aHint = render.answerMeaningsHint ? `<div class="card-meanings-hint">${escapeHtml(render.answerMeaningsHint)}</div>` : "";
+    const qPart = qRuby ?? escapeHtml(q);
+    const aPart = aRuby ?? escapeHtml(a);
+    backTextEl.innerHTML = `<div class="back-line">${qPart}${qHint}</div><div class="back-sep" aria-hidden="true">────────</div><div class="back-line">${aPart}${aHint}</div>`;
 
     renderRegister(backRegisterEl, render.register);
     const backLabels = splitLabels(render.metaLabels);

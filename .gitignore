@@ -45,6 +45,14 @@ data/CLARITY_CHECK_FULL.md
 data/EQUIVALENCE_GAPS.md
 data/_tmp_*.py
 
-# Ignore Markdown except README
+# Optional: uncomment to avoid committing large archive source files
+# data/archive/NewContent.json
+# data/archive/*-translations.json
+
+# Ignore Markdown except README and docs
 *.md
 !README.md
+!docs/*.md
+
+# Commit-rewrite script artifacts
+scripts/.commit-msg-counter

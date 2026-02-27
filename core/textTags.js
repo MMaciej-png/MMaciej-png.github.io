@@ -68,19 +68,43 @@ export function hasJakartaTokens(text) {
   return detectJakartaTokens(text).length > 0;
 }
 
-// Modules where Jakarta tokens are intentionally practiced.
+// Module IDs (language-agnostic) where Jakarta tokens are intentionally practiced.
 // Token-bearing sentences outside these modules are treated as duplicates/noise.
 const JAKARTA_FOCUSED_MODULES = new Set([
-  "Jakarta Pronouns (Gue / Lu)",
-  "Chat Softeners",
-  "Text Abbreviations",
-  "Daily Small Talk (Chat)",
-  "Hangout Planning (Texting)",
-  "Messaging Basics"
+  "informal_pronouns",
+  "chat_softeners",
+  "text_abbreviations",
+  "daily_small_talk_chat",
+  "hangout_planning_texting",
+  "messaging_basics",
 ]);
 
-export function isJakartaFocusedModule(moduleName) {
-  return JAKARTA_FOCUSED_MODULES.has(String(moduleName ?? ""));
+export function isJakartaFocusedModule(moduleId) {
+  return JAKARTA_FOCUSED_MODULES.has(String(moduleId ?? ""));
+}
+
+// Module IDs that are not pooled (softeners, casual closure — tone only, not content).
+const EXCLUDE_MODULES_FROM_POOL = new Set([
+  "chat_softeners",
+]);
+
+export function shouldExcludeModuleFromPool(moduleId) {
+  return EXCLUDE_MODULES_FROM_POOL.has(String(moduleId ?? ""));
+}
+
+// English strings that are only softener/closure labels — exclude from pool for non-Indonesian pairs.
+const EN_SOFTENER_ONLY = new Set([
+  "casual closure",
+  "(softener)",
+  "softener / casual closure",
+  "softener / emphasis",
+  "softening / casual closure",
+]);
+
+export function isEnglishSoftenerOnly(eng) {
+  if (!eng || typeof eng !== "string") return false;
+  const n = eng.trim().toLowerCase();
+  return EN_SOFTENER_ONLY.has(n) || n === "softener";
 }
 
 // Tokens that should NEVER be practiced as standalone word cards.
@@ -111,6 +135,27 @@ export function shouldExcludeWordFromPool(indo) {
   // Examples excluded: "deh", "wkwk", "otw", "udah", "belom/blm", "gpp", etc.
   // Examples NOT excluded: "gue", "lu" (pronouns are meaningful vocabulary).
   return parts.length > 0 && parts.every(p => EXCLUDE_JAKARTA_WORD_TOKENS.has(p));
+}
+
+// Words that don’t add real content when a sentence is only softeners/closure.
+const SENTENCE_ONLY_SOFTENER_WORDS = new Set([
+  ...EXCLUDE_JAKARTA_WORD_TOKENS,
+  "ya", "iya", "gak", "ga", "tak", "tidak", "udah", "belum", "nggak", "enggak",
+  "oh", "kok", "lah", "dong", "sih", "deh", "nih", "tuh"
+]);
+
+/**
+ * Exclude sentences that are only softeners / casual closure (e.g. "Ya deh.", "Gak kok.").
+ * After stripping particles, if nothing meaningful remains, do not pool.
+ */
+export function shouldExcludeSentenceFromPool(indo) {
+  if (!indo || !String(indo).trim()) return false;
+  const stripped = stripParticlesForDisplay(indo);
+  const s = normalizeTokenWordForm(stripped);
+  if (!s) return true;
+  const parts = s.split(/\s+/g).filter(Boolean);
+  if (parts.length === 0) return true;
+  return parts.every(p => SENTENCE_ONLY_SOFTENER_WORDS.has(p));
 }
 
 /**

@@ -1,46 +1,51 @@
 #!/usr/bin/env node
 /**
- * Rewrites commit messages using scripts/msg-filter.js as a git --msg-filter.
+ * Rewrites git commit messages using scripts/commit-message-map.json.
+ * Run from repo root. Creates a backup ref before rewriting.
  *
- * Usage (from repo root):
- *   node scripts/rewrite-commit-messages.js
+ * Prerequisites:
+ *   1. Run: node scripts/build-commit-message-map.js
+ *   2. Review scripts/commit-message-map.json and edit if needed
  *
- * WARNING: This rewrites history on the current branch (HEAD).
- * - You must have a CLEAN working tree (no uncommitted changes).
- * - If this branch is pushed, you will need to force-push:
- *     git push --force-with-lease
+ * Usage: node scripts/rewrite-commit-messages.js
+ *
+ * WARNING: This rewrites history. If you've already pushed, you'll need to
+ * force-push (e.g. git push --force-with-lease). Coordinate with collaborators.
  */
 
 const { execSync } = require("child_process");
+const fs = require("fs");
 const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
-const msgFilterPath = path.join(__dirname, "msg-filter.js").replace(/\\/g, "/");
+const counterPath = path.join(__dirname, ".commit-msg-counter");
+const mapPath = path.join(__dirname, "commit-message-map.json");
 
-// Ensure working tree is clean.
-const status = execSync("git status --porcelain", {
-  cwd: repoRoot,
-  encoding: "utf8",
-});
+if (!fs.existsSync(mapPath)) {
+  console.error("Run build-commit-message-map.js first.");
+  process.exit(1);
+}
+
+const status = execSync("git status --porcelain", { cwd: repoRoot, encoding: "utf8" });
 if (status.trim()) {
   console.error("Working tree has uncommitted changes. Commit or stash them first.");
   process.exit(1);
 }
 
-const env = { ...process.env, FILTER_BRANCH_SQUELCH_WARNING: "1" };
+// Reset counter so msg-filter uses indices 0, 1, 2, ...
+fs.writeFileSync(counterPath, "0", "utf8");
 
+const env = { ...process.env, FILTER_BRANCH_SQUELCH_WARNING: "1" };
 try {
-  const cmd = `git filter-branch -f --msg-filter "node \\"${msgFilterPath}\\"" HEAD`;
-  execSync(cmd, {
+  execSync("git filter-branch -f --msg-filter \"node scripts/msg-filter.js\" HEAD", {
     cwd: repoRoot,
     stdio: "inherit",
     env,
   });
-  console.log(
-    "\nDone rewriting commit messages. If this branch is pushed, run: git push --force-with-lease"
-  );
-} catch (err) {
-  console.error("Error running git filter-branch:", err.message || err);
-  process.exit(1);
+  console.log("\nDone. Backup ref: refs/original/refs/heads/<branch>");
+  console.log("To remove backup: git update-ref -d refs/original/refs/heads/<branch>");
+} finally {
+  if (fs.existsSync(counterPath)) {
+    fs.unlinkSync(counterPath);
+  }
 }
-

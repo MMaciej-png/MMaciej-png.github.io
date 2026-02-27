@@ -49,6 +49,14 @@ export function createFlipController(cardEl) {
     onQuestionShown?.();
   }
 
+  /** Reset card to question side immediately (e.g. when changing module). No animation. */
+  function resetToQuestion() {
+    if (!isFlipped) return;
+    isFlipped = false;
+    isTransitioning = false;
+    cardEl.classList.remove("flipped");
+  }
+
   // click anywhere on card flips to answer (your existing behavior)
   cardEl.addEventListener("click", flipToAnswer);
   innerEl.addEventListener("transitionend", handleTransitionEnd);
@@ -56,6 +64,7 @@ export function createFlipController(cardEl) {
   return {
     flipToAnswer,
     beginAdvance,
+    resetToQuestion,
 
     setOnAnswerShown(fn) {
       onAnswerShown = fn;

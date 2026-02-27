@@ -1,5 +1,7 @@
 /* engine/selection.js */
 
+import { stripParticlesForDisplay } from "../core/textTags.js";
+
 let lastPickedId = null;
 
 export function weightedRandom(candidateItems) {
@@ -70,10 +72,26 @@ function effectiveWeight(item) {
 
 
 /* ===============================
-   ID GENERATION
+   ID GENERATION (pair-aware, duplicate-aware)
 =============================== */
 
-export function makeId(type, module, indo, english) {
-  return `${type}::${module}::${indo}::${english}`.toLowerCase();
+/** Normalize one side for id/dedup key: Indo = strip particles; others = trim + lower. */
+function normForId(text, langCode) {
+  if (text == null || text === "") return "";
+  if (langCode === "indo") return stripParticlesForDisplay(String(text));
+  return String(text).trim().toLowerCase();
+}
+
+/**
+ * Unique ID per (type, module, register, normalized sideA, normalized sideB, pair).
+ * Duplicates (same display content across registers/variants) share the same id so
+ * selection and scoring are consistent for all languages.
+ */
+export function makeId(type, module, register, sideA, sideB, pair, langACode, langBCode) {
+  const reg = String(register ?? "neutral").toLowerCase();
+  const normA = normForId(sideA, langACode);
+  const normB = normForId(sideB, langBCode);
+  const p = String(pair ?? "en-indo");
+  return `${type}::${module}::${reg}::${normA}::${normB}::${p}`.toLowerCase();
 }
 

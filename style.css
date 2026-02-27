@@ -53,6 +53,170 @@ body {
   font-size: 1.1em;
 }
 
+.lang-flag {
+  width: 1.2em;
+  height: 0.9em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1px;
+}
+.lang-flag-large {
+  width: 2em;
+  height: 1.5em;
+}
+.lang-pair-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  margin: 0 2px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.lang-pair-btn:hover,
+.lang-pair-btn.active {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.lang-pair-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.lang-pair-sides {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.lang-pair-side-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.95em;
+  min-height: 72px;
+}
+.lang-pair-side-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.lang-pair-side-name {
+  font-weight: 500;
+}
+.lang-pair-sep {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.5);
+  flex-shrink: 0;
+}
+
+.lang-pair-popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.lang-pair-popup-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lang-pair-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  width: 320px;
+  max-width: calc(100vw - 24px);
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background: #1e222a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  padding: 16px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.lang-pair-popup.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lang-pair-popup-title {
+  padding: 0 20px 14px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+}
+
+.lang-pair-popup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.lang-pair-popup-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 1.05em;
+  text-align: left;
+  cursor: pointer;
+}
+.lang-pair-popup-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.lang-pair-popup-option.active {
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 500;
+}
+
+.lang-pair-popup-tts-note {
+  margin-top: 12px;
+  padding: 10px 20px 16px;
+  font-size: 0.8em;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.75);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.lang-pair-popup-tts-note strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 
 /* ======================================================
    MAIN LAYOUT
@@ -278,6 +442,39 @@ body {
   max-width: 100%;
   line-height: 1.4;
   pointer-events: none;
+}
+
+.card-text .back-line {
+  display: block;
+}
+.card-text .back-sep {
+  margin: 0.4em 0;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card-meanings-hint {
+  display: block;
+  margin-top: 0.25em;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.02em;
+}
+
+/* Japanese/Korean: reading (romaji/romaja) above the characters */
+.card-text ruby {
+  ruby-position: over;
+  ruby-align: center;
+}
+.card-text rt {
+  font-size: 0.55em;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  opacity: 0.95;
+  min-height: 1em;
+  display: ruby-text;
+  visibility: visible;
 }
 
 
@@ -1178,6 +1375,10 @@ body.light input {
 .module-toggle-btn.toggle-affix {
   background: rgba(245, 158, 11, 0.12);
   border-color: rgba(245, 158, 11, 0.26);
+}
+.module-toggle-btn.toggle-kanji {
+  background: rgba(236, 72, 153, 0.12);
+  border-color: rgba(236, 72, 153, 0.26);
 }
 
 /* Label styling */

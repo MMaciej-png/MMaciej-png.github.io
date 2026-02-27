@@ -18,7 +18,7 @@ A vocabulary and conversation trainer for Indonesian. Flip cards, practice with 
 - **Session stats** – Correct / wrong count, accuracy %, and streak for the current session.
 - **Lifetime stats** – Total cards, completed, failed, overall/word/sentence accuracy, best and average streak. Stored in the browser (localStorage).
 - **Rank** – Casual rank (Bronze → Silver → Gold → Platinum → Diamond → Master) based on lifetime performance; displayed in the left Stats panel.
-- **TTS** – Speech volume and speed controls; 🔊 on each card and in practice chat to hear Indonesian.
+- **TTS** – Speech volume and speed controls; 🔊 on each card and in practice chat to hear Indonesian. The app prefers **Windows TTS** (Microsoft voices) when available. On Windows, install speech packages for each language you use: **Settings → Time & language → Speech → Manage voices** (or Add voices).
 - **Sounds** – Optional correct/wrong audio feedback.
 
 ### Practice chat
@@ -138,6 +138,7 @@ This clears all localStorage for this origin (including IndoTrainer keys like `c
 
 ## Notes
 
+- **Windows speech (TTS):** The 🔊 button uses the browser’s speech synthesis. On Windows, download the speech packages for your languages so voices are available: **Settings → Time & language → Speech → Manage voices** (or “Add voices”). Without them, some languages may have no voice or fall back to a default.
 - **Content:** Edit `data/NewContent.json` to add or change modules. Structure: module name → `formal` / `informal` / `neutral` → `words` and `sentences` with `indo` and `english`.
 - **Chat model:** Practice chat uses `gpt-4o-mini` by default (set in `ui/chatUI.js`). The server only proxies; model and system prompt are defined in the client.
 - **Scaling:** The layout uses a viewport scaling function that runs on load, resize, and when the practice chat is opened or closed so the chat and main app scale together.

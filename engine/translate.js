@@ -2,6 +2,8 @@
    NORMALISATION (LOCKED)
 =============================== */
 
+import { getJaTextToRomaji } from "./jaCharReadings.js";
+
 const EN_EQUIVALENTS = [
 
   /* ===============================
@@ -391,6 +393,132 @@ const ID_EQUIVALENTS = [
 ];
 
 
+/* ===============================
+   POLISH EQUIVALENTS & NORMALISATION
+=============================== */
+const PL_DIACRITICS = [
+  ["ą", "a"], ["ę", "e"], ["ć", "c"], ["ł", "l"], ["ń", "n"], ["ó", "o"], ["ś", "s"], ["ź", "z"], ["ż", "z"],
+  ["Ą", "a"], ["Ę", "e"], ["Ć", "c"], ["Ł", "l"], ["Ń", "n"], ["Ó", "o"], ["Ś", "s"], ["Ź", "z"], ["Ż", "z"],
+];
+const PL_EQUIVALENTS = [
+  [/\b(przepraszam\s+bardzo|przepraszam)\b/g, "przepraszam"],
+  [/\b(dziękuję\s+bardzo|dziękuje|dziekuje)\b/g, "dziekuje"],
+  [/\b(cześć|hej|hejka|siema)\b/g, "czesc"],
+  [/\b(dobry\s+ranek|ranek)\b/g, "dzien dobry"],
+  [/\b(do\s+widzenia|pa|na\s+razie)\b/g, "do widzenia"],
+  [/\b(tak|no|aha)\b/g, "tak"],
+  [/\b(nie|nope)\b/g, "nie"],
+  [/\b(proszę|prosze)\b/g, "prosze"],
+  [/\b(jestem|nazywam\s+się)\b/g, "jestem"],
+];
+
+/* ===============================
+   FRENCH EQUIVALENTS & NORMALISATION
+=============================== */
+const FR_DIACRITICS = [
+  ["à", "a"], ["â", "a"], ["ä", "a"], ["é", "e"], ["è", "e"], ["ê", "e"], ["ë", "e"], ["î", "i"], ["ï", "i"],
+  ["ô", "o"], ["ù", "u"], ["û", "u"], ["ü", "u"], ["ÿ", "y"], ["ç", "c"], ["œ", "oe"], ["æ", "ae"],
+  ["À", "a"], ["Â", "a"], ["Ä", "a"], ["É", "e"], ["È", "e"], ["Ê", "e"], ["Ë", "e"], ["Î", "i"], ["Ï", "i"],
+  ["Ô", "o"], ["Ù", "u"], ["Û", "u"], ["Ü", "u"], ["Ÿ", "y"], ["Ç", "c"], ["Œ", "oe"], ["Æ", "ae"],
+];
+const FR_EQUIVALENTS = [
+  [/\b(oui|ouais|ouaip|si|mouais)\b/g, "oui"],
+  [/\b(non|nan|nope)\b/g, "non"],
+  [/\b(bonjour|salut|coucou)\b/g, "bonjour"],
+  [/\b(merci\s+beaucoup|merci)\b/g, "merci"],
+  [/\b(au\s+revoir|à\s+bientôt|salut)\b/g, "au revoir"],
+  [/\b(je\s+suis|j'ai)\b/g, "je"],
+  [/\b(s'il\s+te\s+plaît|s'il\s+vous\s+plaît|stp|svp)\b/g, "s'il vous plait"],
+  [/\b(excusez-moi|désolé|désolée|pardon)\b/g, "excusez-moi"],
+  [/\b(très\s+bien|tres bien|super|génial)\b/g, "tres bien"],
+  [/\b(je\s+suis|j'suis)\b/g, "je suis"],
+  [/\b(peut-être|ptet|p't-être)\b/g, "peut-etre"],
+  [/\b(pas\s+encore|pas encore)\b/g, "pas encore"],
+  [/\b(à\s+bientôt|a bientot)\b/g, "a bientot"],
+  [/\b(je\s+ne\s+sais\s+pas|j'sais pas|chais pas)\b/g, "je ne sais pas"],
+  [/\b(il\s+y\s+a|y a)\b/g, "il y a"],
+  [/\b(c'est|ces\s+temps)\b/g, "c'est"],
+  [/\b(qu'est-ce\s+que|keske)\b/g, "qu'est-ce que"],
+  [/\b(d'accord|daccord|ok)\b/g, "d'accord"],
+];
+
+/* ===============================
+   MOLDOVAN / ROMANIAN EQUIVALENTS & NORMALISATION
+=============================== */
+const MO_DIACRITICS = [
+  ["ă", "a"], ["â", "a"], ["î", "i"], ["ș", "s"], ["ț", "t"],
+  ["Ă", "a"], ["Â", "a"], ["Î", "i"], ["Ș", "s"], ["Ț", "t"],
+];
+const MO_EQUIVALENTS = [
+  [/\b(da|așa)\b/g, "da"],
+  [/\b(nu|nope)\b/g, "nu"],
+  [/\b(bună|buna|bună ziua|salut)\b/g, "buna"],
+  [/\b(mulțumesc|multumesc|mersi)\b/g, "multumesc"],
+  [/\b(la revedere|pa|pe mâine)\b/g, "la revedere"],
+  [/\b(eu sunt|mă numesc)\b/g, "eu sunt"],
+  [/\b(te rog|vă rog|vă rog)\b/g, "te rog"],
+  [/\b(scuze|scuzeți-mă|scuzati-ma)\b/g, "scuze"],
+];
+
+/* ===============================
+   RUSSIAN EQUIVALENTS & NORMALISATION (Cyrillic)
+=============================== */
+const RU_NORMALISE = [
+  ["ё", "е"], ["Ё", "е"],
+];
+const RU_EQUIVALENTS = [
+  [/\b(привет|прив|здравствуй|здравствуйте)\b/gu, "привет"],
+  [/\b(спасибо|спс|благодарю)\b/gu, "спасибо"],
+  [/\b(пока|до свидания|бывай)\b/gu, "пока"],
+  [/\b(да|ага|угу|ну да)\b/gu, "да"],
+  [/\b(нет|неа)\b/gu, "нет"],
+  [/\b(пожалуйста|пжлста)\b/gu, "пожалуйста"],
+  [/\b(извини|извините|прости|простите)\b/gu, "извини"],
+  [/\b(меня зовут)\b/gu, "меня зовут"],
+];
+
+/* ===============================
+   JAPANESE ROMAJI EQUIVALENTS (for answer matching)
+=============================== */
+const JA_EQUIVALENTS = [
+  [/\u014d/g, "o"],  [/\u016b/g, "u"],  [/\u012b/g, "i"],  [/\u0113/g, "e"],  [/\u0101/g, "a"],  // macrons ō ū ī ē ā
+  [/\b(arigatou|arigatō|arigato)\b/g, "arigatou"],
+  [/\b(konnichiwa|konnichiha)\b/g, "konnichiwa"],
+  [/\b(sensei|sensee)\b/g, "sensei"],
+  [/\b(juu|jū|ju)\b/g, "juu"],
+  [/\b(nana|shichi)\b/g, "nana"],
+  [/\b(yon|shi)\b/g, "yon"],
+  [/\b(ichi|iti)\b/g, "ichi"],
+  [/\b(roku|rokuu)\b/g, "roku"],
+  [/\b(hachi|hati)\b/g, "hachi"],
+  [/\b(kyuu|kyu|ku)\b/g, "kyuu"],
+  [/\b(gakkou|gakko)\b/g, "gakkou"],
+  [/\b(toukyou|tokyo|tōkyō)\b/g, "tokyo"],
+];
+
+/* ===============================
+   KOREAN ROMANIZATION EQUIVALENTS (Revised vs common spellings)
+=============================== */
+const KR_EQUIVALENTS = [
+  [/\b(annyeong|anyeong|an-nyeong|annyung)\b/g, "annyeong"],
+  [/\b(gamsa|kamsa|gam sa|gamsahamnida)\b/g, "gamsa"],
+  [/\b(hanguk|han-guk)\b/g, "hanguk"],
+  [/\b(jeoneun|jeo neun|jeo-neun)\b/g, "jeoneun"],
+  [/\b(imnida|ipnida|hamnida|iyeyo|iyo)\b/g, "imnida"],
+  [/\b(ne|ye|de)\b/g, "ne"],
+  [/\b(aniyo|ani)\b/g, "aniyo"],
+  [/\b(mianhae|mianhe|mianhamnida)\b/g, "mianhae"],
+  [/\b(joaha|joahae|saranghae)\b/g, "joaha"],
+  [/\b(eodie|odi)\b/g, "eodie"],
+  [/\b(eonje|onje)\b/g, "eonje"],
+  [/\b(mwo|mueo)\b/g, "mwo"],
+  [/\b(waeeo|wae)\b/g, "wae"],
+  [/\b(isseoyo|isseo)\b/g, "isseoyo"],
+  [/\b(gwaenchanha|gwaenchanhayo)\b/g, "gwaenchanha"],
+  [/\b(algo|alayo)\b/g, "algo"],
+];
+
+
 // Tone-only tokens
 const OPTIONAL_TOKENS = new Set([
   "kok", "nih", "dong", "sih", "deh", "akan", "ya", "yah", "lagi" , "haha", "saja"
@@ -433,9 +561,47 @@ function expandEncliticsID(text) {
    LANGUAGE HEURISTIC
 =============================== */
 
+/** Hangul syllables and Jamo */
+const KR_SCRIPT = /[\uAC00-\uD7A3\u1100-\u11FF]/;
+/** Hiragana, Katakana, or CJK (Kanji) */
+const JA_SCRIPT = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]/;
+
 export function inferLangFromExpected(expected) {
   if (typeof expected !== "string") return "EN";
+  if (KR_SCRIPT.test(expected)) return "KR";
+  if (JA_SCRIPT.test(expected)) return "JA";
+
   const t = expected.toLowerCase();
+
+  const plHints = [
+    "jestem", "nazywam", "dziękuję", "przepraszam", "proszę", "cześć", "dobry",
+    "witaj", "dzień", "dobranoc", "miło", "tak", "nie", "może", "okej", "pa"
+  ];
+  const hasPlDiacritics = /[ąęćłńóśźż]/i.test(expected);
+  const hasPlWord = plHints.some(w =>
+    t.includes(` ${w} `) || t.startsWith(`${w} `) || t.endsWith(` ${w}`) || t === w
+  );
+  if (hasPlDiacritics || hasPlWord) return "PL";
+
+  const frHints = [
+    "je", "tu", "il", "elle", "nous", "vous", "ils", "elles",
+    "est", "sont", "avez", "suis", "bonjour", "merci", "oui", "non"
+  ];
+  const hasFrDiacritics = /[àâäæçéèêëïîôùûüÿœ]/i.test(expected);
+  const hasFrWord = frHints.some(w =>
+    t.includes(` ${w} `) || t.startsWith(`${w} `) || t.endsWith(` ${w}`) || t === w
+  );
+  if (hasFrDiacritics || hasFrWord) return "FR";
+
+  const moHints = [
+    "bună", "buna", "da", "nu", "mulțumesc", "multumesc", "eu", "tu", "el", "ea",
+    "sunt", "este", "merci", "salut", "la revedere", "te rog", "scuze"
+  ];
+  const hasMoDiacritics = /[ăâîșț]/i.test(expected);
+  const hasMoWord = moHints.some(w =>
+    t.includes(` ${w} `) || t.startsWith(`${w} `) || t.endsWith(` ${w}`) || t === w
+  );
+  if (hasMoDiacritics || hasMoWord) return "MO";
 
   const idHints = [
     "aku", "kamu", "dia", "kita", "kami", "mereka",
@@ -530,6 +696,104 @@ export function normalise(text, lang, expand = false) {
     });
   }
 
+  if (lang === "PL") {
+    return inputs.map(input => {
+      let t = input
+        .toLowerCase()
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      for (const [from, to] of PL_DIACRITICS) t = t.split(from).join(to);
+      for (const [p, r] of PL_EQUIVALENTS) t = t.replace(p, r);
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
+  if (lang === "FR") {
+    return inputs.map(input => {
+      let t = input
+        .toLowerCase()
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      for (const [from, to] of FR_DIACRITICS) t = t.split(from).join(to);
+      for (const [p, r] of FR_EQUIVALENTS) t = t.replace(p, r);
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
+  if (lang === "MO") {
+    return inputs.map(input => {
+      let t = input
+        .toLowerCase()
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      for (const [from, to] of MO_DIACRITICS) t = t.split(from).join(to);
+      for (const [p, r] of MO_EQUIVALENTS) t = t.replace(p, r);
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
+  if (lang === "RU") {
+    return inputs.map(input => {
+      let t = input
+        .toLowerCase()
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      for (const [from, to] of RU_NORMALISE) t = t.split(from).join(to);
+      for (const [p, r] of RU_EQUIVALENTS) t = t.replace(p, r);
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
+  if (lang === "JA") {
+    return inputs.map(input => {
+      let t = input
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      if (!JA_SCRIPT.test(t)) {
+        t = t.toLowerCase();
+        for (const [p, r] of JA_EQUIVALENTS) t = t.replace(p, r);
+      }
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
+  if (lang === "KR") {
+    return inputs.map(input => {
+      let t = input
+        .replace(/"[^"]*"/g, "")
+        .replace(/'[^']*'/g, "");
+      if (!KR_SCRIPT.test(t)) {
+        t = t.toLowerCase();
+        for (const [p, r] of KR_EQUIVALENTS) t = t.replace(p, r);
+      }
+      return t
+        .replace(/[-–—]/g, " ")
+        .replace(/[?.!,;:]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    });
+  }
+
   return inputs.map(input => {
     let t = input.toLowerCase()
       .replace(/"[^"]*"/g, "")
@@ -568,6 +832,59 @@ export function isCorrect(user, expected) {
   if (!user || !expected) return false;
 
   const variants = splitExpectedVariants(expected);
+  const expectedLang = inferLangFromExpected(expected);
+
+  if (expectedLang === "PL") {
+    const uPL = normalise(user, "PL")[0];
+    return variants.some(v => {
+      const vPLs = normalise(v, "PL", true);
+      return vPLs.some(vPL => containsAllRequiredTokens(uPL, vPL));
+    });
+  }
+
+  if (expectedLang === "FR") {
+    const uFR = normalise(user, "FR")[0];
+    return variants.some(v => {
+      const vFRs = normalise(v, "FR", true);
+      return vFRs.some(vFR => containsAllRequiredTokens(uFR, vFR));
+    });
+  }
+
+  if (expectedLang === "MO") {
+    const uMO = normalise(user, "MO")[0];
+    return variants.some(v => {
+      const vMOs = normalise(v, "MO", true);
+      return vMOs.some(vMO => containsAllRequiredTokens(uMO, vMO));
+    });
+  }
+
+  if (expectedLang === "RU") {
+    const uRU = normalise(user, "RU")[0];
+    return variants.some(v => {
+      const vRUs = normalise(v, "RU", true);
+      return vRUs.some(vRU => containsAllRequiredTokens(uRU, vRU));
+    });
+  }
+
+  if (expectedLang === "JA") {
+    const uJA = normalise(user, "JA")[0];
+    return variants.some(v => {
+      const vJAs = normalise(v, "JA", true);
+      if (JA_SCRIPT.test(v)) {
+        const romaji = getJaTextToRomaji(v);
+        if (romaji) vJAs.push(...normalise(romaji, "JA", true));
+      }
+      return vJAs.some(vJA => containsAllRequiredTokens(uJA, vJA));
+    });
+  }
+
+  if (expectedLang === "KR") {
+    const uKR = normalise(user, "KR")[0];
+    return variants.some(v => {
+      const vKRs = normalise(v, "KR", true);
+      return vKRs.some(vKR => containsAllRequiredTokens(uKR, vKR));
+    });
+  }
 
   const uEN = normalise(user, "EN")[0];
   const uID = normalise(user, "ID")[0];
