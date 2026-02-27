@@ -1,0 +1,7372 @@
+{
+    "Greetings (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Hello",
+                    "ko": "안녕하세요"
+                },
+                {
+                    "en": "Name",
+                    "ko": "이름"
+                },
+                {
+                    "en": "Good",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Come",
+                    "ko": "오다"
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "오다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Welcome.",
+                    "ko": "환영합니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hi, I’m (name).",
+                    "ko": "안녕하세요. (이름) 입니다."
+                },
+                {
+                    "en": "Hello, my name is (name).",
+                    "ko": "안녕하세요, 제 이름은 (이름) 입니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hi, I’m (name).",
+                    "ko": "안녕하세요. (이름) 입니다."
+                },
+                {
+                    "en": "Hello, my name is (name).",
+                    "ko": "안녕하세요, 제 이름은 (이름) 입니다."
+                }
+            ]
+        }
+    },
+    "Greetings (Time-Based)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Good",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Morning",
+                    "ko": "아침"
+                },
+                {
+                    "en": "Afternoon",
+                    "ko": "오후"
+                },
+                {
+                    "en": "Daytime",
+                    "ko": "오후"
+                },
+                {
+                    "en": "Evening",
+                    "ko": "저녁"
+                },
+                {
+                    "en": "Night",
+                    "ko": "저녁"
+                },
+                {
+                    "en": "Sleep",
+                    "ko": "자다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Good morning.",
+                    "ko": "안녕하세요."
+                },
+                {
+                    "en": "Good afternoon.",
+                    "ko": "좋은 오후와"
+                },
+                {
+                    "en": "Good evening.",
+                    "ko": "안녕하세요."
+                },
+                {
+                    "en": "Good night",
+                    "ko": "학교에 가서 영어를 공부해요"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Asking How Are You": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "News",
+                    "ko": "뉴스"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How are you?",
+                    "ko": "잘 지내세요?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "How",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How are you now?",
+                    "ko": "어떻게 지내세요?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "How",
+                    "ko": "방법"
+                },
+                {
+                    "en": "The news",
+                    "ko": "뉴스"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How’s it going now?",
+                    "ko": "잘 지내십니까?"
+                },
+                {
+                    "en": "How’s it going now?",
+                    "ko": "잘 지내십니까?"
+                }
+            ]
+        }
+    },
+    "Yes / No / Maybe": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "No",
+                    "ko": "아니요"
+                },
+                {
+                    "en": "Not",
+                    "ko": "아니요"
+                },
+                {
+                    "en": "Maybe",
+                    "ko": "아마"
+                },
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "No",
+                    "ko": "아니요"
+                },
+                {
+                    "en": "Not",
+                    "ko": "아니요"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Reactions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Oh",
+                    "ko": "OH"
+                },
+                {
+                    "en": "Oh right",
+                    "ko": "아 그러면 되겠네"
+                },
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Alright",
+                    "ko": "좋아."
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Haha",
+                    "ko": "하하"
+                },
+                {
+                    "en": "Hmm",
+                    "ko": "OH"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh, okay.",
+                    "ko": "그래, 이거지."
+                },
+                {
+                    "en": "Oh right.",
+                    "ko": "아, 맞다!<g id=\"2\"> </g>"
+                },
+                {
+                    "en": "Yeah, okay.",
+                    "ko": "- 알겠어?&#10;- 네, 알았어요"
+                },
+                {
+                    "en": "Haha.",
+                    "ko": "하하."
+                },
+                {
+                    "en": "Hmm.",
+                    "ko": "흐음."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Understand",
+                    "ko": "이해하다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Alright, I understand.",
+                    "ko": "알겠습니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "It's okay",
+                    "ko": "괜찮아요"
+                },
+                {
+                    "en": "No problem",
+                    "ko": "괜찮아요"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Understand",
+                    "ko": "과학, 원리"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                },
+                {
+                    "en": "Laughing",
+                    "ko": "웃음"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Yeah, true.",
+                    "ko": "네, 맞아요."
+                },
+                {
+                    "en": "Okay, I understand.",
+                    "ko": "빨리 가서 그들을 지켜봐"
+                },
+                {
+                    "en": "Okay.",
+                    "ko": "좋아요."
+                },
+                {
+                    "en": "Haha.",
+                    "ko": "하하."
+                },
+                {
+                    "en": "Yeah, true.",
+                    "ko": "네, 맞아요."
+                }
+            ]
+        }
+    },
+    "Thanks & Politeness": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Thank you",
+                    "ko": "감사합니다"
+                },
+                {
+                    "en": "You’re welcome",
+                    "ko": "천만에요"
+                },
+                {
+                    "en": "Sorry",
+                    "ko": "죄송해요"
+                },
+                {
+                    "en": "Excuse me",
+                    "ko": "죄송해요"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Thank you.",
+                    "ko": "감사합니다."
+                },
+                {
+                    "en": "You’re welcome.",
+                    "ko": "천만에요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ko": "부탁해요"
+                },
+                {
+                    "en": "Kindly",
+                    "ko": "부탁해요"
+                },
+                {
+                    "en": "Forgive",
+                    "ko": "용서"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My apologies.",
+                    "ko": "사과드린다.\"라고 함."
+                },
+                {
+                    "en": "I sincerely apologize.",
+                    "ko": "진심으로 사과드립니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Thanks",
+                    "ko": "감사합니다."
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Ask for",
+                    "ko": "구하다"
+                },
+                {
+                    "en": "Urging",
+                    "ko": "독촉"
+                },
+                {
+                    "en": "come on",
+                    "ko": "독촉"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Thanks.",
+                    "ko": "고마워."
+                },
+                {
+                    "en": "Thanks.",
+                    "ko": "고마워."
+                },
+                {
+                    "en": "Sorry, okay?",
+                    "ko": "미안, 알았지?"
+                },
+                {
+                    "en": "I sincerely apologize.",
+                    "ko": "진심으로 사과드립니다."
+                }
+            ]
+        }
+    },
+    "Goodbyes & Leaving": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Until",
+                    "ko": "현재"
+                },
+                {
+                    "en": "See",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Meet",
+                    "ko": "만나다"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Take care",
+                    "ko": "몸 조리하세요"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "First",
+                    "ko": "첫 번째"
+                },
+                {
+                    "en": "Earlier",
+                    "ko": "첫 번째"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "See you.",
+                    "ko": "잘 가"
+                },
+                {
+                    "en": "See you later.",
+                    "ko": "다음에 뵈어요."
+                },
+                {
+                    "en": "Take care.",
+                    "ko": "몸 조리하세요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Take leave",
+                    "ko": "휴가하기"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’ll take my leave.",
+                    "ko": "내가 떠날게."
+                },
+                {
+                    "en": "I’ll go first",
+                    "ko": "나 먼저 갈게."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "First",
+                    "ko": "첫 번째"
+                },
+                {
+                    "en": "Earlier",
+                    "ko": "첫 번째"
+                },
+                {
+                    "en": "Bye",
+                    "ko": "Je veux mettre fin à cela"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’ll take my leave.",
+                    "ko": "내가 떠날게."
+                },
+                {
+                    "en": "I’ll go first",
+                    "ko": "나 먼저 갈게."
+                },
+                {
+                    "en": "I’ll go first",
+                    "ko": "나 먼저 갈게."
+                },
+                {
+                    "en": "Bye.",
+                    "ko": "안녕"
+                }
+            ]
+        }
+    },
+    "When (Time Questions)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "When",
+                    "ko": "언제"
+                },
+                {
+                    "en": "Hour",
+                    "ko": "시간"
+                },
+                {
+                    "en": "O’clock",
+                    "ko": "시간"
+                },
+                {
+                    "en": "How many",
+                    "ko": "몇"
+                },
+                {
+                    "en": "How much",
+                    "ko": "몇"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                },
+                {
+                    "en": "Come",
+                    "ko": "오다"
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "오다"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "When can you?",
+                    "ko": "언제쯤 가능할까요?"
+                },
+                {
+                    "en": "When are you going?",
+                    "ko": "언제 가시나요?"
+                },
+                {
+                    "en": "When will you arrive?",
+                    "ko": "언제 도착하시나요?"
+                },
+                {
+                    "en": "When is that?",
+                    "ko": "언제인가요?"
+                },
+                {
+                    "en": "What time?",
+                    "ko": "몇 시죠?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Titles & Relationships": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Girlfriend",
+                    "ko": "여자 친구"
+                },
+                {
+                    "en": "Boyfriend",
+                    "ko": "여자 친구"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                },
+                {
+                    "en": "Wife",
+                    "ko": "아내"
+                },
+                {
+                    "en": "Husband",
+                    "ko": "남편"
+                },
+                {
+                    "en": "Mrs",
+                    "ko": "씨"
+                },
+                {
+                    "en": "Ma’am",
+                    "ko": "씨"
+                },
+                {
+                    "en": "Mr",
+                    "ko": "씨"
+                },
+                {
+                    "en": "Sir",
+                    "ko": "씨"
+                },
+                {
+                    "en": "He",
+                    "ko": "그"
+                },
+                {
+                    "en": "She",
+                    "ko": "그"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This ma’am.",
+                    "ko": "이 부인."
+                },
+                {
+                    "en": "That sir.",
+                    "ko": "저기요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Mrs",
+                    "ko": "씨"
+                },
+                {
+                    "en": "Mr",
+                    "ko": "씨"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My girlfriend",
+                    "ko": "여자친구"
+                },
+                {
+                    "en": "boyfriend.",
+                    "ko": "여자친구"
+                },
+                {
+                    "en": "They’re my friend.",
+                    "ko": "내 친구들이야."
+                },
+                {
+                    "en": "This gentleman.",
+                    "ko": "이 신사."
+                },
+                {
+                    "en": "That lady.",
+                    "ko": "저 아가씨."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Girl",
+                    "ko": "여"
+                },
+                {
+                    "en": "Girlfriend",
+                    "ko": "여"
+                },
+                {
+                    "en": "Guy",
+                    "ko": "사람"
+                },
+                {
+                    "en": "Boyfriend",
+                    "ko": "사람"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                },
+                {
+                    "en": "Pointing",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "here",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "this",
+                    "ko": "관찰위치( P)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My girlfriend",
+                    "ko": "여자친구"
+                },
+                {
+                    "en": "boyfriend.",
+                    "ko": "여자친구"
+                },
+                {
+                    "en": "They’re my friend.",
+                    "ko": "내 친구들이야."
+                },
+                {
+                    "en": "My girlfriend.",
+                    "ko": "여자친구."
+                },
+                {
+                    "en": "My boyfriend.",
+                    "ko": "내 남자 친구"
+                },
+                {
+                    "en": "This is my girlfriend",
+                    "ko": "제 여자친구입니다."
+                },
+                {
+                    "en": "boyfriend.",
+                    "ko": "제 여자친구입니다."
+                }
+            ]
+        }
+    },
+    "How I’m doing (positive)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Good",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Fine",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Fine",
+                    "ko": "괜찮은"
+                },
+                {
+                    "en": "Okay",
+                    "ko": "괜찮은"
+                },
+                {
+                    "en": "Still",
+                    "ko": "스틸"
+                },
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Not bad",
+                    "ko": "생각보다 괜찮아요"
+                },
+                {
+                    "en": "Busy",
+                    "ko": "바쁜"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Only",
+                    "ko": "저스트"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "ko": "잘 지내요."
+                },
+                {
+                    "en": "I’m busy.",
+                    "ko": "바빠요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "ko": "잘 지내요."
+                },
+                {
+                    "en": "I’m busy.",
+                    "ko": "바빠요."
+                },
+                {
+                    "en": "I’m tired.",
+                    "ko": "피곤해요."
+                },
+                {
+                    "en": "I’m really tired.",
+                    "ko": "정말 싫증나요.\""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "ko": "잘 지내요."
+                },
+                {
+                    "en": "I’m busy.",
+                    "ko": "바빠요."
+                },
+                {
+                    "en": "I’m busy.",
+                    "ko": "바빠요."
+                },
+                {
+                    "en": "I’m really tired.",
+                    "ko": "정말 싫증나요.\""
+                },
+                {
+                    "en": "I’m really tired.",
+                    "ko": "정말 싫증나요.\""
+                },
+                {
+                    "en": "I’m tired.",
+                    "ko": "피곤해요."
+                }
+            ]
+        }
+    },
+    "How I’m doing (negative)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Less",
+                    "ko": "덜"
+                },
+                {
+                    "en": "Not quite",
+                    "ko": "덜"
+                },
+                {
+                    "en": "Good",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Fine",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "So",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Only",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Comfortable",
+                    "ko": "편안한"
+                },
+                {
+                    "en": "Good",
+                    "ko": "편안한"
+                },
+                {
+                    "en": "Tasty",
+                    "ko": "편안한"
+                },
+                {
+                    "en": "Body",
+                    "ko": "몸통"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not quite good.",
+                    "ko": "별로 좋지 않습니다."
+                },
+                {
+                    "en": "Just so-so.",
+                    "ko": "그저 그렇습니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t feel well.",
+                    "ko": "그런 예감이 들었다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t feel well.",
+                    "ko": "그런 예감이 들었다."
+                },
+                {
+                    "en": "I don’t feel well.",
+                    "ko": "그런 예감이 들었다."
+                }
+            ]
+        }
+    },
+    "Knowing & Ability": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "Know",
+                    "ko": "알다"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not this.",
+                    "ko": "이건 아냐."
+                },
+                {
+                    "en": "I don’t know.",
+                    "ko": "몰라요."
+                },
+                {
+                    "en": "I can’t.",
+                    "ko": "못하겠어."
+                },
+                {
+                    "en": "Can do it now.",
+                    "ko": "현재 불가능"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Belong to",
+                    "ko": "소속"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is not mine.",
+                    "ko": "이건 내 것이 아니야."
+                },
+                {
+                    "en": "Not me.",
+                    "ko": "저는 아닙니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Have",
+                    "ko": "가지다"
+                },
+                {
+                    "en": "Own",
+                    "ko": "가지다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is not mine.",
+                    "ko": "이건 내 것이 아니야."
+                },
+                {
+                    "en": "Not me.",
+                    "ko": "저는 아닙니다."
+                }
+            ]
+        }
+    },
+    "Requests & Help": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ko": "부탁해요"
+                },
+                {
+                    "en": "Help",
+                    "ko": "부탁해요"
+                },
+                {
+                    "en": "Help",
+                    "ko": "도와주다"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Wait",
+                    "ko": "기다리다"
+                },
+                {
+                    "en": "A moment",
+                    "ko": "잠시 전"
+                },
+                {
+                    "en": "Ask for",
+                    "ko": "구하다"
+                },
+                {
+                    "en": "Excuse me",
+                    "ko": "실례합니다"
+                },
+                {
+                    "en": "May",
+                    "ko": "짜리나"
+                },
+                {
+                    "en": "Allowed",
+                    "ko": "짜리나"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Please help.",
+                    "ko": "도와주세요."
+                },
+                {
+                    "en": "Can you help?",
+                    "ko": "도움을 받을 수 있나요?"
+                },
+                {
+                    "en": "Please wait a moment.",
+                    "ko": "잠시만 기다려주세요."
+                },
+                {
+                    "en": "Excuse me for a moment.",
+                    "ko": "실례하겠습니다."
+                },
+                {
+                    "en": "May I ask for help?",
+                    "ko": "도움을 요청해도 될까요?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Please",
+                    "ko": "업무 진행에 속도를 높일 수 있도록 협조하여 주시기를 요청합니다."
+                },
+                {
+                    "en": "Help",
+                    "ko": "도와주다"
+                },
+                {
+                    "en": "To help",
+                    "ko": "도와주다"
+                },
+                {
+                    "en": "Help",
+                    "ko": "도와주다"
+                },
+                {
+                    "en": "Assistance",
+                    "ko": "도와주다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I kindly ask for your help.",
+                    "ko": "도와주시기 바랍니다."
+                },
+                {
+                    "en": "Can you help me?",
+                    "ko": "도와주실 수 있어요?"
+                },
+                {
+                    "en": "Wait a sec, okay?",
+                    "ko": "잠깐만, 알았지?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Help",
+                    "ko": "도움말"
+                },
+                {
+                    "en": "A sec",
+                    "ko": "1초"
+                },
+                {
+                    "en": "Urging",
+                    "ko": "독촉"
+                },
+                {
+                    "en": "come on",
+                    "ko": "독촉"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you help me?",
+                    "ko": "도와주실 수 있어요?"
+                },
+                {
+                    "en": "Wait a sec, okay?",
+                    "ko": "잠깐만, 알았지?"
+                },
+                {
+                    "en": "One sec.",
+                    "ko": "잠깐만."
+                },
+                {
+                    "en": "Excuse me for a moment.",
+                    "ko": "실례하겠습니다."
+                },
+                {
+                    "en": "I kindly ask for your help.",
+                    "ko": "도와주시기 바랍니다."
+                }
+            ]
+        }
+    },
+    "Understanding": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Meaning",
+                    "ko": "의미"
+                },
+                {
+                    "en": "Intention",
+                    "ko": "의미"
+                },
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "Repeat",
+                    "ko": "재교부"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "The meaning",
+                    "ko": "의미"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What does it mean?",
+                    "ko": "이게 무슨 의미일까요?"
+                },
+                {
+                    "en": "Can you repeat?",
+                    "ko": "다시 말씀해 주시겠어요?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Understand",
+                    "ko": "이해하다"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Whether",
+                    "ko": "날씨"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I understand.",
+                    "ko": "Μάλιστα."
+                },
+                {
+                    "en": "I don’t understand.",
+                    "ko": "이해가 안 돼요."
+                },
+                {
+                    "en": "Do you understand?",
+                    "ko": "왜 웃고 있어?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Understand",
+                    "ko": "과학, 원리"
+                },
+                {
+                    "en": "Understand",
+                    "ko": "과학, 원리"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t understand.",
+                    "ko": "이해가 안 돼요."
+                },
+                {
+                    "en": "I understand.",
+                    "ko": "Μάλιστα."
+                },
+                {
+                    "en": "Do you understand?",
+                    "ko": "왜 웃고 있어?"
+                },
+                {
+                    "en": "Do you understand?",
+                    "ko": "왜 웃고 있어?"
+                },
+                {
+                    "en": "Got it?",
+                    "ko": "확인"
+                }
+            ]
+        }
+    },
+    "What do you mean?": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Means",
+                    "ko": "수단"
+                },
+                {
+                    "en": "So it means",
+                    "ko": "수단"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Meaning",
+                    "ko": "의미"
+                },
+                {
+                    "en": "Intention",
+                    "ko": "의미"
+                },
+                {
+                    "en": "The meaning",
+                    "ko": "의미"
+                },
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "So",
+                    "ko": "그렇게"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So this means?",
+                    "ko": "그렇다면 이것은 무엇을 의미할까요?"
+                },
+                {
+                    "en": "So that means?",
+                    "ko": "그렇다면 이는 무엇을 의미할까요?"
+                },
+                {
+                    "en": "What does it mean?",
+                    "ko": "이게 무슨 의미일까요?"
+                },
+                {
+                    "en": "What do you mean?",
+                    "ko": "그게 무슨 말이야?"
+                },
+                {
+                    "en": "Does this mean that?",
+                    "ko": "이게 무슨 뜻인가요?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ko": "날씨"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Does this mean that?",
+                    "ko": "이게 무슨 뜻인가요?"
+                },
+                {
+                    "en": "What do you mean?",
+                    "ko": "그게 무슨 말이야?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": [
+                {
+                    "en": "What do you mean?",
+                    "ko": "그게 무슨 말이야?"
+                }
+            ]
+        }
+    },
+    "Questions (Yes / No)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직 아니에요"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can this?",
+                    "ko": "가능할까요?"
+                },
+                {
+                    "en": "Can that?",
+                    "ko": "가능할까요?"
+                },
+                {
+                    "en": "Can you already?",
+                    "ko": "당신은 이미 할 수 있습니까?"
+                },
+                {
+                    "en": "Can't yet?",
+                    "ko": "아직 안 되나요?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ko": "날씨"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can this?",
+                    "ko": "가능할까요?"
+                },
+                {
+                    "en": "Can you already?",
+                    "ko": "당신은 이미 할 수 있습니까?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "No",
+                    "ko": "아니요"
+                },
+                {
+                    "en": "Not",
+                    "ko": "아니요"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can't?",
+                    "ko": "안되나요?"
+                }
+            ]
+        }
+    },
+    "What I’m Doing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Busy",
+                    "ko": "바쁜"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Busy right now.",
+                    "ko": "지금은 바쁩니다."
+                },
+                {
+                    "en": "Can do it later.",
+                    "ko": "나중에 할 수 있습니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I am working.",
+                    "ko": "म काम गर्दै छु"
+                },
+                {
+                    "en": "I can’t right now.",
+                    "ko": "지금은 안 돼."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Working.",
+                    "ko": "Working"
+                },
+                {
+                    "en": "Working.",
+                    "ko": "Working"
+                },
+                {
+                    "en": "Can’t right now.",
+                    "ko": "지금은 할 수 없습니다."
+                },
+                {
+                    "en": "Can’t right now.",
+                    "ko": "지금은 할 수 없습니다."
+                },
+                {
+                    "en": "I am working.",
+                    "ko": "म काम गर्दै छु"
+                },
+                {
+                    "en": "I am working.",
+                    "ko": "म काम गर्दै छु"
+                },
+                {
+                    "en": "Working.",
+                    "ko": "Working"
+                },
+                {
+                    "en": "Can’t right now.",
+                    "ko": "지금은 할 수 없습니다."
+                }
+            ]
+        }
+    },
+    "Plans & Timing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ko": "내일"
+                },
+                {
+                    "en": "Day",
+                    "ko": "일"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직 아니에요"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Later, okay.",
+                    "ko": "나중에, 알았어."
+                },
+                {
+                    "en": "Not yet.",
+                    "ko": "아직 아닙니다."
+                },
+                {
+                    "en": "Already.",
+                    "ko": "DMX"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Will",
+                    "ko": "의지"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I will go now.",
+                    "ko": "이만 가보겠습니다."
+                },
+                {
+                    "en": "I will go tomorrow.",
+                    "ko": "내일 가겠습니다."
+                },
+                {
+                    "en": "Going later.",
+                    "ko": "나중에 하기."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Going to",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Going later.",
+                    "ko": "나중에 하기."
+                },
+                {
+                    "en": "Going tomorrow.",
+                    "ko": "내일 갑니다."
+                },
+                {
+                    "en": "I will go now.",
+                    "ko": "이만 가보겠습니다."
+                },
+                {
+                    "en": "I will go tomorrow.",
+                    "ko": "내일 가겠습니다."
+                },
+                {
+                    "en": "Later, okay.",
+                    "ko": "나중에, 알았어."
+                }
+            ]
+        }
+    },
+    "Preferences & Choices": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Like",
+                    "ko": "좋아하다"
+                },
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Choose",
+                    "ko": "선택"
+                },
+                {
+                    "en": "Which",
+                    "ko": "어느"
+                },
+                {
+                    "en": "Different",
+                    "ko": "다른"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Other",
+                    "ko": "다른"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That one is different.",
+                    "ko": "그것은 다릅니다."
+                },
+                {
+                    "en": "The other one.",
+                    "ko": "다른 하나는"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose the other one.",
+                    "ko": "다른 하나를 선택합니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose the other one.",
+                    "ko": "다른 하나를 선택합니다."
+                },
+                {
+                    "en": "I choose the other one.",
+                    "ko": "다른 하나를 선택합니다."
+                },
+                {
+                    "en": "I want this one.",
+                    "ko": "나는 이것을 원한다."
+                }
+            ]
+        }
+    },
+    "Food & Drink": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "Drink",
+                    "ko": "마시다"
+                },
+                {
+                    "en": "Hungry",
+                    "ko": "배고픈"
+                },
+                {
+                    "en": "Thirsty",
+                    "ko": "목마름"
+                },
+                {
+                    "en": "Comfortable",
+                    "ko": "편안한"
+                },
+                {
+                    "en": "Good",
+                    "ko": "편안한"
+                },
+                {
+                    "en": "Tasty",
+                    "ko": "편안한"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Food",
+                    "ko": "음식"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hungry.",
+                    "ko": "배고프"
+                },
+                {
+                    "en": "Thirsty.",
+                    "ko": "목마름"
+                },
+                {
+                    "en": "This is good.",
+                    "ko": "좋아요."
+                },
+                {
+                    "en": "This food is good.",
+                    "ko": "이 음식은 맛있어요."
+                },
+                {
+                    "en": "That’s really good.",
+                    "ko": "정말 좋습니다."
+                },
+                {
+                    "en": "I want to eat.",
+                    "ko": "따 먹고 싶다"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Drink",
+                    "ko": "마시다"
+                },
+                {
+                    "en": "Beverage",
+                    "ko": "마시다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m hungry.",
+                    "ko": "배고파요."
+                },
+                {
+                    "en": "I want to eat.",
+                    "ko": "따 먹고 싶다"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m hungry.",
+                    "ko": "배고파요."
+                },
+                {
+                    "en": "I’m hungry.",
+                    "ko": "배고파요."
+                },
+                {
+                    "en": "I want to eat.",
+                    "ko": "따 먹고 싶다"
+                },
+                {
+                    "en": "That’s really good.",
+                    "ko": "정말 좋습니다."
+                }
+            ]
+        }
+    },
+    "This / That (Choosing)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Choose",
+                    "ko": "선택"
+                },
+                {
+                    "en": "Same",
+                    "ko": "같은"
+                },
+                {
+                    "en": "Different",
+                    "ko": "다른"
+                },
+                {
+                    "en": "Which",
+                    "ko": "어느"
+                },
+                {
+                    "en": "And",
+                    "ko": "스슈미타"
+                },
+                {
+                    "en": "Or",
+                    "ko": "또는"
+                },
+                {
+                    "en": "But",
+                    "ko": "근데"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This.",
+                    "ko": "이거."
+                },
+                {
+                    "en": "That.",
+                    "ko": "저것"
+                },
+                {
+                    "en": "The same one.",
+                    "ko": "똑같아."
+                },
+                {
+                    "en": "The different one.",
+                    "ko": "다른 것."
+                },
+                {
+                    "en": "This and that.",
+                    "ko": "이것 저것."
+                },
+                {
+                    "en": "This or that.",
+                    "ko": "모 아니면 도"
+                },
+                {
+                    "en": "This but that.",
+                    "ko": "이것만."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose this.",
+                    "ko": "나는 이것을 선택한다."
+                },
+                {
+                    "en": "That is what you choose.",
+                    "ko": "그것이 여러분이 선택하는 것입니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Just the other one.",
+                    "ko": "다른 하나만요."
+                },
+                {
+                    "en": "Just the other one.",
+                    "ko": "다른 하나만요."
+                },
+                {
+                    "en": "I choose this.",
+                    "ko": "나는 이것을 선택한다."
+                },
+                {
+                    "en": "I choose this.",
+                    "ko": "나는 이것을 선택한다."
+                },
+                {
+                    "en": "Just this one.",
+                    "ko": "이거 하나만!"
+                },
+                {
+                    "en": "Just this one.",
+                    "ko": "이거 하나만!"
+                },
+                {
+                    "en": "That is what you choose.",
+                    "ko": "그것이 여러분이 선택하는 것입니다."
+                }
+            ]
+        }
+    },
+    "Going & Arriving": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                },
+                {
+                    "en": "Come",
+                    "ko": "오다"
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "오다"
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "도착하다"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Here",
+                    "ko": "여기"
+                },
+                {
+                    "en": "There",
+                    "ko": "거기"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Already arrived.",
+                    "ko": "이미 도착했습니다."
+                },
+                {
+                    "en": "Here.",
+                    "ko": "여기"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Will",
+                    "ko": "의지"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I will go.",
+                    "ko": "주민등록번호"
+                },
+                {
+                    "en": "I have arrived.",
+                    "ko": "도착했습니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Going to",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Pointing",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "here",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "this",
+                    "ko": "관찰위치( P)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Heading out.",
+                    "ko": "나간다."
+                },
+                {
+                    "en": "I will go.",
+                    "ko": "주민등록번호"
+                },
+                {
+                    "en": "I have arrived.",
+                    "ko": "도착했습니다."
+                },
+                {
+                    "en": "Arrived.",
+                    "ko": "도착"
+                }
+            ]
+        }
+    },
+    "Places (Everyday)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "House",
+                    "ko": "집"
+                },
+                {
+                    "en": "Home",
+                    "ko": "집"
+                },
+                {
+                    "en": "Toilet",
+                    "ko": "변기"
+                },
+                {
+                    "en": "Bathroom",
+                    "ko": "화장실"
+                },
+                {
+                    "en": "Room",
+                    "ko": "방"
+                },
+                {
+                    "en": "Bedroom",
+                    "ko": "방"
+                },
+                {
+                    "en": "Kitchen",
+                    "ko": "부엌"
+                },
+                {
+                    "en": "Bathroom",
+                    "ko": "화장실"
+                },
+                {
+                    "en": "Shop",
+                    "ko": "상점"
+                },
+                {
+                    "en": "Store",
+                    "ko": "상점"
+                },
+                {
+                    "en": "School",
+                    "ko": "학교"
+                },
+                {
+                    "en": "University",
+                    "ko": "대학교"
+                },
+                {
+                    "en": "At",
+                    "ko": "~에"
+                },
+                {
+                    "en": "In",
+                    "ko": "~에"
+                },
+                {
+                    "en": "To",
+                    "ko": "받는 사람"
+                },
+                {
+                    "en": "Here",
+                    "ko": "여기"
+                },
+                {
+                    "en": "There",
+                    "ko": "거기"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "At home.",
+                    "ko": "집에서"
+                },
+                {
+                    "en": "To the toilet.",
+                    "ko": "화장실로."
+                },
+                {
+                    "en": "In the kitchen.",
+                    "ko": "주방에서"
+                },
+                {
+                    "en": "In the room.",
+                    "ko": "방에서."
+                },
+                {
+                    "en": "At the shop.",
+                    "ko": "상점에서."
+                },
+                {
+                    "en": "At school.",
+                    "ko": "학교에서"
+                },
+                {
+                    "en": "At the university.",
+                    "ko": "대학에서."
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Mine & Yours": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Have",
+                    "ko": "가지다"
+                },
+                {
+                    "en": "Own",
+                    "ko": "가지다"
+                },
+                {
+                    "en": "Who",
+                    "ko": "누구"
+                },
+                {
+                    "en": "Whose",
+                    "ko": "누구"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That is yours.",
+                    "ko": "그건 당신 몫입니다."
+                },
+                {
+                    "en": "Whose is this?",
+                    "ko": "누구시죠?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Belong to",
+                    "ko": "소속"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is mine.",
+                    "ko": "이 책은 내 것입니다."
+                },
+                {
+                    "en": "This belongs to me.",
+                    "ko": "이건 내 거야."
+                },
+                {
+                    "en": "That belongs to you.",
+                    "ko": "그건 여러분의 몫입니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is mine.",
+                    "ko": "이 책은 내 것입니다."
+                },
+                {
+                    "en": "This is mine.",
+                    "ko": "이 책은 내 것입니다."
+                },
+                {
+                    "en": "That’s yours.",
+                    "ko": "그건 네 몫이야."
+                },
+                {
+                    "en": "This belongs to me.",
+                    "ko": "이건 내 거야."
+                },
+                {
+                    "en": "That belongs to you.",
+                    "ko": "그건 여러분의 몫입니다."
+                }
+            ]
+        }
+    },
+    "Numbers (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Zero",
+                    "ko": "0이"
+                },
+                {
+                    "en": "One",
+                    "ko": "일"
+                },
+                {
+                    "en": "Two",
+                    "ko": "이"
+                },
+                {
+                    "en": "Three",
+                    "ko": "삼"
+                },
+                {
+                    "en": "Four",
+                    "ko": "사"
+                },
+                {
+                    "en": "Five",
+                    "ko": "오"
+                },
+                {
+                    "en": "Six",
+                    "ko": "육"
+                },
+                {
+                    "en": "Seven",
+                    "ko": "칠"
+                },
+                {
+                    "en": "Eight",
+                    "ko": "팔"
+                },
+                {
+                    "en": "Nine",
+                    "ko": "구"
+                },
+                {
+                    "en": "Ten",
+                    "ko": "십"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Numbers (11–100)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "tens",
+                    "ko": "시제"
+                },
+                {
+                    "en": "Eleven",
+                    "ko": "십일"
+                },
+                {
+                    "en": "Twelve",
+                    "ko": "십이"
+                },
+                {
+                    "en": "Thirteen",
+                    "ko": "십삼"
+                },
+                {
+                    "en": "Fourteen",
+                    "ko": "십사"
+                },
+                {
+                    "en": "Fifteen",
+                    "ko": "십오"
+                },
+                {
+                    "en": "Sixteen",
+                    "ko": "십육"
+                },
+                {
+                    "en": "Seventeen",
+                    "ko": "십칠"
+                },
+                {
+                    "en": "Eighteen",
+                    "ko": "십팔"
+                },
+                {
+                    "en": "Nineteen",
+                    "ko": "십구"
+                },
+                {
+                    "en": "Twenty",
+                    "ko": "이십"
+                },
+                {
+                    "en": "Thirty",
+                    "ko": "삼십"
+                },
+                {
+                    "en": "Forty",
+                    "ko": "사십"
+                },
+                {
+                    "en": "Fifty",
+                    "ko": "오십"
+                },
+                {
+                    "en": "One hundred",
+                    "ko": "100"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Time (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Day",
+                    "ko": "일"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "Yesterday",
+                    "ko": "어제"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ko": "내일"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Only",
+                    "ko": "저스트"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Today.",
+                    "ko": "오늘"
+                },
+                {
+                    "en": "Now.",
+                    "ko": "지금"
+                },
+                {
+                    "en": "Tomorrow is fine.",
+                    "ko": "내일은 괜찮습니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Places & Location": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "At",
+                    "ko": "~에"
+                },
+                {
+                    "en": "In",
+                    "ko": "~에"
+                },
+                {
+                    "en": "Here",
+                    "ko": "여기"
+                },
+                {
+                    "en": "There",
+                    "ko": "거기"
+                },
+                {
+                    "en": "Which",
+                    "ko": "어느"
+                },
+                {
+                    "en": "Where",
+                    "ko": "어느"
+                },
+                {
+                    "en": "Place",
+                    "ko": "장소"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Here.",
+                    "ko": "여기"
+                },
+                {
+                    "en": "There.",
+                    "ko": "이건 됐고."
+                },
+                {
+                    "en": "Which place?",
+                    "ko": "내 이름은 alensa입니다"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Existence & Availability": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Time",
+                    "ko": "시간"
+                },
+                {
+                    "en": "Exist",
+                    "ko": "존재"
+                },
+                {
+                    "en": "There is",
+                    "ko": "존재"
+                },
+                {
+                    "en": "There is not",
+                    "ko": "버너에 가스가"
+                },
+                {
+                    "en": "None",
+                    "ko": "버너에 가스가"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                },
+                {
+                    "en": "Here",
+                    "ko": "여기"
+                },
+                {
+                    "en": "There",
+                    "ko": "거기"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "It's here.",
+                    "ko": "여기 있어요"
+                },
+                {
+                    "en": "There is none.",
+                    "ko": "없죠 \n없기 때문에 false가 나옵니다"
+                },
+                {
+                    "en": "There is time.",
+                    "ko": "시간이 있습니다."
+                },
+                {
+                    "en": "Not right now.",
+                    "ko": "지금은 안 됩니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "There isn’t any.",
+                    "ko": "없습니다."
+                }
+            ]
+        }
+    },
+    "So / That’s why (Jadi / Makanya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "So",
+                    "ko": "너무"
+                },
+                {
+                    "en": "Then",
+                    "ko": "너무"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ko": "내일"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Oh",
+                    "ko": "OH"
+                },
+                {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "So",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Only",
+                    "ko": "저스트"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So, later.",
+                    "ko": "그래서, 나중에."
+                },
+                {
+                    "en": "So tomorrow, okay.",
+                    "ko": "그래서 내일, 알겠습니다."
+                },
+                {
+                    "en": "Oh, so that’s how it is.",
+                    "ko": "아, 그래서 그런 거군요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "That’s why",
+                    "ko": "쿠데소"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Tell",
+                    "ko": "텔"
+                },
+                {
+                    "en": "Say",
+                    "ko": "텔"
+                },
+                {
+                    "en": "Since earlier",
+                    "ko": "이전부터"
+                },
+                {
+                    "en": "Don’t",
+                    "ko": "하지 마세요"
+                },
+                {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That’s why I told you earlier.",
+                    "ko": "그래서 아까 말씀드렸잖아요."
+                },
+                {
+                    "en": "That’s why I told you earlier.",
+                    "ko": "그래서 아까 말씀드렸잖아요."
+                },
+                {
+                    "en": "That’s why don’t do that.",
+                    "ko": "그렇기 때문에 그렇게 하지 마세요."
+                },
+                {
+                    "en": "That’s why.",
+                    "ko": "쿠데소"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                },
+                {
+                    "en": "First",
+                    "ko": "첫 번째"
+                },
+                {
+                    "en": "Earlier",
+                    "ko": "첫 번째"
+                },
+                {
+                    "en": "Wait",
+                    "ko": "기다리다"
+                },
+                {
+                    "en": "Here",
+                    "ko": "여기"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So, I’ll go first.",
+                    "ko": "자, 먼저 가보겠습니다."
+                },
+                {
+                    "en": "So, I’ll wait here.",
+                    "ko": "그래서 여기서 기다리겠습니다."
+                }
+            ]
+        }
+    },
+    "But / Contrast (Tapi / Padahal)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "But",
+                    "ko": "근데"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Even though",
+                    "ko": "그럼에도"
+                },
+                {
+                    "en": "But actually",
+                    "ko": "그럼에도"
+                },
+                {
+                    "en": "Close",
+                    "ko": "닫다"
+                },
+                {
+                    "en": "Near",
+                    "ko": "닫다"
+                },
+                {
+                    "en": "Tell",
+                    "ko": "텔"
+                },
+                {
+                    "en": "Say",
+                    "ko": "텔"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but later.",
+                    "ko": "그러고 싶지만 나중에."
+                },
+                {
+                    "en": "I can, but later.",
+                    "ko": "할 수 있지만 나중에."
+                },
+                {
+                    "en": "Even though it’s close.",
+                    "ko": "가깝긴 하지만요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but I’m tired.",
+                    "ko": "하고 싶지만 피곤하다."
+                },
+                {
+                    "en": "I want to, but I’m tired.",
+                    "ko": "하고 싶지만 피곤하다."
+                },
+                {
+                    "en": "But I already told you.",
+                    "ko": "아니, 괜찮아."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but I can’t right now.",
+                    "ko": "그러고 싶지만 지금은 안 돼요."
+                },
+                {
+                    "en": "But I already told you.",
+                    "ko": "아니, 괜찮아."
+                }
+            ]
+        }
+    },
+    "Then / And then (Terus / Trus)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Then",
+                    "ko": "그때"
+                },
+                {
+                    "en": "And then",
+                    "ko": "그때"
+                },
+                {
+                    "en": "After that",
+                    "ko": "그 다음"
+                },
+                {
+                    "en": "And then",
+                    "ko": "그 다음"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then?",
+                    "ko": "그때라고요?"
+                },
+                {
+                    "en": "And then?",
+                    "ko": "그 다음엔&amp;'85;"
+                },
+                {
+                    "en": "Then what?",
+                    "ko": "그럼 어떡하지?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Then",
+                    "ko": "그때"
+                },
+                {
+                    "en": "How",
+                    "ko": "방법"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then what?",
+                    "ko": "그럼 어떡하지?"
+                },
+                {
+                    "en": "Then?",
+                    "ko": "그때라고요?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Then",
+                    "ko": "그때"
+                },
+                {
+                    "en": "How",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "After that",
+                    "ko": "그 다음"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then what?",
+                    "ko": "그럼 어떡하지?"
+                },
+                {
+                    "en": "And then?",
+                    "ko": "그 다음엔&amp;'85;"
+                }
+            ]
+        }
+    },
+    "Maybe / Probably (Mungkin / Kayaknya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Maybe",
+                    "ko": "아마"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Maybe later.",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Maybe.",
+                    "ko": "아마도."
+                },
+                {
+                    "en": "Maybe.",
+                    "ko": "아마도."
+                },
+                {
+                    "en": "Maybe not right now.",
+                    "ko": "아마 여러분들이 지금 당장 이것을"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Probably",
+                    "ko": "아마도"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I probably can’t.",
+                    "ko": "못 할 것 같아요."
+                },
+                {
+                    "en": "I probably can’t.",
+                    "ko": "못 할 것 같아요."
+                },
+                {
+                    "en": "Probably already.",
+                    "ko": "아마 이미 그러셨을 겁니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Maybe I can.",
+                    "ko": "내가 할 수 있을지도 몰라."
+                }
+            ]
+        }
+    },
+    "Agreeing & Disagreeing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Agree",
+                    "ko": "동의"
+                },
+                {
+                    "en": "Disagree",
+                    "ko": "동의하지 않는다"
+                },
+                {
+                    "en": "But",
+                    "ko": "근데"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Agree.",
+                    "ko": "동의"
+                },
+                {
+                    "en": "Disagree.",
+                    "ko": "난 반대야."
+                },
+                {
+                    "en": "I agree, but later.",
+                    "ko": "동의하지만 나중에."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Disagree",
+                    "ko": "동의하지 않는다"
+                },
+                {
+                    "en": "Yeah.",
+                    "ko": "네."
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I agree.",
+                    "ko": "동의해요."
+                },
+                {
+                    "en": "I disagree.",
+                    "ko": "반대해요."
+                },
+                {
+                    "en": "Yeah.",
+                    "ko": "네."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I agree.",
+                    "ko": "동의해요."
+                },
+                {
+                    "en": "I disagree.",
+                    "ko": "반대해요."
+                }
+            ]
+        }
+    },
+    "Asking opinions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "According to",
+                    "ko": "A에 따르면"
+                },
+                {
+                    "en": "In your opinion",
+                    "ko": "A에 따르면"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "How",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "If",
+                    "ko": "만약"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?",
+                    "ko": "“너희는 어떻게 생각하느냐?"
+                },
+                {
+                    "en": "What do you think?",
+                    "ko": "“너희는 어떻게 생각하느냐?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "How",
+                    "ko": "방법"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?",
+                    "ko": "“너희는 어떻게 생각하느냐?"
+                },
+                {
+                    "en": "What do you think?",
+                    "ko": "“너희는 어떻게 생각하느냐?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?",
+                    "ko": "“너희는 어떻게 생각하느냐?"
+                },
+                {
+                    "en": "What do you think?",
+                    "ko": "“너희는 어떻게 생각하느냐?"
+                }
+            ]
+        }
+    },
+    "Softening (Agak / Kayak / Lumayan)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "A bit",
+                    "ko": "약간"
+                },
+                {
+                    "en": "Not bad",
+                    "ko": "생각보다 괜찮아요"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Expensive",
+                    "ko": "비싼"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "A bit tired.",
+                    "ko": "조금 피곤했다."
+                },
+                {
+                    "en": "Not bad.",
+                    "ko": "나쁘지 않네."
+                },
+                {
+                    "en": "A bit expensive.",
+                    "ko": "약간 비쌈"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Like",
+                    "ko": "좋아요"
+                },
+                {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "(softener)",
+                    "ko": "(유연제)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Like that.",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "A bit tired.",
+                    "ko": "조금 피곤했다."
+                },
+                {
+                    "en": "Not bad.",
+                    "ko": "나쁘지 않네."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Quite",
+                    "ko": "꽤"
+                },
+                {
+                    "en": "Good",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Fine",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Pretty good.",
+                    "ko": "매우 좋아요!"
+                },
+                {
+                    "en": "I’m quite tired.",
+                    "ko": "꽤 피곤하다."
+                }
+            ]
+        }
+    },
+    "Wait / Hold on (Bentar / Tunggu)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Wait",
+                    "ko": "기다리다"
+                },
+                {
+                    "en": "A moment",
+                    "ko": "잠시 전"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Wait a moment.",
+                    "ko": "잠깐만요."
+                },
+                {
+                    "en": "One sec, okay.",
+                    "ko": "잠깐만요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "A sec",
+                    "ko": "1초"
+                },
+                {
+                    "en": "First",
+                    "ko": "첫 번째"
+                },
+                {
+                    "en": "Earlier",
+                    "ko": "첫 번째"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "One sec, okay.",
+                    "ko": "잠깐만요."
+                },
+                {
+                    "en": "Wait a sec.",
+                    "ko": "잠깐만요."
+                },
+                {
+                    "en": "Hold on.",
+                    "ko": "잠깐만요."
+                },
+                {
+                    "en": "Hold on.",
+                    "ko": "잠깐만요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ko": "부탁해요"
+                },
+                {
+                    "en": "Kindly",
+                    "ko": "부탁해요"
+                },
+                {
+                    "en": "Excuse me",
+                    "ko": "실례합니다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Please wait a moment.",
+                    "ko": "잠시만 기다려주세요."
+                },
+                {
+                    "en": "Excuse me, wait a moment.",
+                    "ko": "실례하겠습니다."
+                }
+            ]
+        }
+    },
+    "Clarifying (Maksudku…)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "The meaning",
+                    "ko": "의미"
+                },
+                {
+                    "en": "I mean",
+                    "ko": "의미"
+                },
+                {
+                    "en": "Like this",
+                    "ko": "좋아요"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this.",
+                    "ko": "진심이야."
+                },
+                {
+                    "en": "I mean, not that.",
+                    "ko": "제 말은, 그게 아닙니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I mean",
+                    "ko": "제 말씀은"
+                },
+                {
+                    "en": "Like this",
+                    "ko": "좋아요"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this.",
+                    "ko": "진심이야."
+                },
+                {
+                    "en": "I mean, not that.",
+                    "ko": "제 말은, 그게 아닙니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I mean",
+                    "ko": "제 말은"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this.",
+                    "ko": "진심이야."
+                },
+                {
+                    "en": "I mean, not that.",
+                    "ko": "제 말은, 그게 아닙니다."
+                }
+            ]
+        }
+    },
+    "Repeat / Slower": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Repeat",
+                    "ko": "재교부"
+                },
+                {
+                    "en": "One more time",
+                    "ko": "한번 더"
+                },
+                {
+                    "en": "Slowly",
+                    "ko": "느리게"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you say it again?",
+                    "ko": "다시 한 번 말씀해주시겠어요?"
+                },
+                {
+                    "en": "One more time.",
+                    "ko": "한번 더"
+                },
+                {
+                    "en": "Slower, please.",
+                    "ko": "천천히 해주세요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ko": "업무 진행에 속도를 높일 수 있도록 협조하여 주시기를 요청합니다."
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Say it again.",
+                    "ko": "다시 한 번 말한다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Please",
+                    "ko": "부탁해요"
+                },
+                {
+                    "en": "Kindly",
+                    "ko": "부탁해요"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you say it again?",
+                    "ko": "다시 한 번 말씀해주시겠어요?"
+                },
+                {
+                    "en": "Slower, please.",
+                    "ko": "천천히 해주세요."
+                }
+            ]
+        }
+    },
+    "Accepting & Declining": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Sure",
+                    "ko": "물론이죠"
+                },
+                {
+                    "en": "Allowed",
+                    "ko": "물론이죠"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Only",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Another time",
+                    "ko": "다른 시간"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                },
+                {
+                    "en": "Maybe",
+                    "ko": "아마"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Sure.",
+                    "ko": "물론이지."
+                },
+                {
+                    "en": "Later.",
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
+                },
+                {
+                    "en": "Another time, okay.",
+                    "ko": "다음에 또 오세요."
+                },
+                {
+                    "en": "Maybe another time.",
+                    "ko": "\"다음에 오겠습니다.\""
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not right now",
+                    "ko": "지금 말고"
+                },
+                {
+                    "en": "Later",
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not right now.",
+                    "ko": "지금은 안 됩니다."
+                },
+                {
+                    "en": "Later.",
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
+                },
+                {
+                    "en": "Another time.",
+                    "ko": "다른 시간"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Sorry",
+                    "ko": "죄송해요"
+                },
+                {
+                    "en": "Excuse me",
+                    "ko": "죄송해요"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Sorry, I can’t right now.",
+                    "ko": "죄송합니다. 지금은 할 수 없습니다."
+                }
+            ]
+        }
+    },
+    "Messaging Basics": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Where",
+                    "ko": "어디"
+                },
+                {
+                    "en": "Now",
+                    "ko": "지금"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?",
+                    "ko": "어디이신가요?"
+                },
+                {
+                    "en": "Where are you now?",
+                    "ko": "지금 어디에 있나요?"
+                },
+                {
+                    "en": "Where are you?",
+                    "ko": "어디이신가요?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "On my way",
+                    "ko": "갑니다."
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "At home",
+                    "ko": "집에서"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "네"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?",
+                    "ko": "어디이신가요?"
+                },
+                {
+                    "en": "On my way.",
+                    "ko": "갑니다."
+                },
+                {
+                    "en": "On my way.",
+                    "ko": "갑니다."
+                },
+                {
+                    "en": "I’m at home.",
+                    "ko": "집에 있어요."
+                },
+                {
+                    "en": "I’m at home.",
+                    "ko": "집에 있어요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "On the way",
+                    "ko": "인기 상승 중"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?",
+                    "ko": "어디이신가요?"
+                },
+                {
+                    "en": "I’m on my way.",
+                    "ko": "지금 갑니다."
+                }
+            ]
+        }
+    },
+    "Chat Softeners": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Hurry up",
+                    "ko": "서두르시오."
+                },
+                {
+                    "en": "Like this",
+                    "ko": "좋아요"
+                },
+                {
+                    "en": "Pointing",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "here",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "this",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "Surprise",
+                    "ko": "서프라이즈"
+                },
+                {
+                    "en": "how come? tone",
+                    "ko": "서프라이즈"
+                },
+                {
+                    "en": "Urging",
+                    "ko": "독촉"
+                },
+                {
+                    "en": "come on",
+                    "ko": "독촉"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                },
+                {
+                    "en": "Pointing",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "there",
+                    "ko": "관찰위치( P)"
+                },
+                {
+                    "en": "see?",
+                    "ko": "관찰위치( P)"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Like this.",
+                    "ko": "좋아요"
+                },
+                {
+                    "en": "How come?",
+                    "ko": "어째서…….’"
+                },
+                {
+                    "en": "Hurry up.",
+                    "ko": "서두르세요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Text Abbreviations": {
+        "neutral": {
+            "words": [],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me (Jakarta slang)",
+                    "ko": "나 (자카르타 속어)"
+                },
+                {
+                    "en": "It’s okay",
+                    "ko": "괜찮아요"
+                },
+                {
+                    "en": "No problem",
+                    "ko": "괜찮아요"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직 아니에요"
+                },
+                {
+                    "en": "On my way",
+                    "ko": "갑니다."
+                },
+                {
+                    "en": "Laughing",
+                    "ko": "웃음"
+                },
+                {
+                    "en": "Surprise",
+                    "ko": "서프라이즈"
+                },
+                {
+                    "en": "how come? tone",
+                    "ko": "서프라이즈"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "It’s okay.",
+                    "ko": "괜찮아요."
+                },
+                {
+                    "en": "Haha.",
+                    "ko": "하하."
+                },
+                {
+                    "en": "I’m on my way.",
+                    "ko": "지금 갑니다."
+                },
+                {
+                    "en": "I’m on my way.",
+                    "ko": "지금 갑니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Daily Small Talk (Chat)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직 아니에요"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "ko": "기분이 어떤가요?"
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "You (Jakarta slang)",
+                    "ko": "당신 (자카르타 속어)"
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ko": "당신 (자카르타 속어)"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Have you eaten yet?",
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ko": "날씨"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Have you eaten yet?",
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
+                }
+            ]
+        }
+    },
+    "Hangout Planning (Texting)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ko": "Let's"
+                },
+                {
+                    "en": "Hang out",
+                    "ko": "어울림"
+                },
+                {
+                    "en": "What time",
+                    "ko": "몇 시"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us hang out.",
+                    "ko": "놀러가자."
+                },
+                {
+                    "en": "What time?",
+                    "ko": "몇 시죠?"
+                },
+                {
+                    "en": "Later.",
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us hang out.",
+                    "ko": "놀러가자."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ko": "Let's"
+                },
+                {
+                    "en": "We",
+                    "ko": "우리"
+                },
+                {
+                    "en": "Us",
+                    "ko": "우리"
+                },
+                {
+                    "en": "Meet",
+                    "ko": "만나다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us meet.",
+                    "ko": "만나자."
+                }
+            ]
+        }
+    },
+    "Emotions & Empathy": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Fun",
+                    "ko": "재밌는"
+                },
+                {
+                    "en": "Exciting",
+                    "ko": "재밌는"
+                },
+                {
+                    "en": "Bored",
+                    "ko": "지루함"
+                },
+                {
+                    "en": "Pitiful",
+                    "ko": "감상적인"
+                },
+                {
+                    "en": "Poor thing",
+                    "ko": "감상적인"
+                },
+                {
+                    "en": "Oh no",
+                    "ko": "안 돼요."
+                },
+                {
+                    "en": "Wow",
+                    "ko": "안 돼요."
+                },
+                {
+                    "en": "Oh dear",
+                    "ko": "오 이런"
+                },
+                {
+                    "en": "Oh my",
+                    "ko": "omo"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So fun.",
+                    "ko": "너무 재미있어요."
+                },
+                {
+                    "en": "So bored.",
+                    "ko": "너무 지루해."
+                },
+                {
+                    "en": "Poor thing.",
+                    "ko": "불쌍하다."
+                },
+                {
+                    "en": "Oh no!",
+                    "ko": "아, 안 돼!"
+                },
+                {
+                    "en": "Oh dear.",
+                    "ko": "오 이런"
+                },
+                {
+                    "en": "Oh my.",
+                    "ko": "저런."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Nervous",
+                    "ko": "신경쇠약"
+                },
+                {
+                    "en": "Miss",
+                    "ko": "빗나감"
+                },
+                {
+                    "en": "Annoyed",
+                    "ko": "분노중이에요"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                },
+                {
+                    "en": "How",
+                    "ko": "방법"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I am bored.",
+                    "ko": "카를&#09;&#09;아, 지겨워."
+                },
+                {
+                    "en": "I am nervous.",
+                    "ko": "긴장된다."
+                },
+                {
+                    "en": "I am nervous.",
+                    "ko": "긴장된다."
+                },
+                {
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
+                },
+                {
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
+                },
+                {
+                    "en": "I am annoyed.",
+                    "ko": "짜증나."
+                },
+                {
+                    "en": "I am annoyed.",
+                    "ko": "짜증나."
+                },
+                {
+                    "en": "How about it?",
+                    "ko": "어때?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Nervous",
+                    "ko": "신경쇠약"
+                },
+                {
+                    "en": "Miss",
+                    "ko": "빗나감"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I am bored.",
+                    "ko": "카를&#09;&#09;아, 지겨워."
+                },
+                {
+                    "en": "I am nervous.",
+                    "ko": "긴장된다."
+                },
+                {
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
+                }
+            ]
+        }
+    },
+    "Sharing News": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Know",
+                    "ko": "앎"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Hear",
+                    "ko": "듣다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "You know what?",
+                    "ko": "그거 아세요?"
+                },
+                {
+                    "en": "Did you hear?",
+                    "ko": "들으셨어요…?"
+                },
+                {
+                    "en": "Hey, you know what?",
+                    "ko": "이봐, 그거 알아?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Hey",
+                    "ko": "안녕"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "You know what?",
+                    "ko": "그거 아세요?"
+                },
+                {
+                    "en": "You know what?",
+                    "ko": "그거 아세요?"
+                },
+                {
+                    "en": "Did you hear?",
+                    "ko": "들으셨어요…?"
+                },
+                {
+                    "en": "Hey, you know what?",
+                    "ko": "이봐, 그거 알아?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Compliments": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Cool",
+                    "ko": "알았습니다."
+                },
+                {
+                    "en": "Awesome",
+                    "ko": "알았습니다."
+                },
+                {
+                    "en": "Awesome",
+                    "ko": "Font Awesome PRO 아이콘을 활성화합니다."
+                },
+                {
+                    "en": "Good",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Nice",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Fun",
+                    "ko": "재밌는"
+                },
+                {
+                    "en": "Cool",
+                    "ko": "재밌는"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So cool.",
+                    "ko": "엏ㅎㅎㅎ뭐아햐햫ㅎ"
+                },
+                {
+                    "en": "Awesome!",
+                    "ko": "멋져!"
+                },
+                {
+                    "en": "Really good.",
+                    "ko": "정말 좋습니다."
+                },
+                {
+                    "en": "So fun.",
+                    "ko": "너무 재미있어요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": [
+                {
+                    "en": "So cool.",
+                    "ko": "엏ㅎㅎㅎ뭐아햐햫ㅎ"
+                },
+                {
+                    "en": "Really awesome.",
+                    "ko": "정말 멋져요."
+                },
+                {
+                    "en": "Really awesome.",
+                    "ko": "정말 멋져요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": [
+                {
+                    "en": "Very good.",
+                    "ko": "훌륭합니다."
+                }
+            ]
+        }
+    },
+    "Frequency & Habits": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Often",
+                    "ko": "자주"
+                },
+                {
+                    "en": "Rarely",
+                    "ko": "드물게"
+                },
+                {
+                    "en": "Sometimes",
+                    "ko": "가끔"
+                },
+                {
+                    "en": "Sometimes",
+                    "ko": "가끔"
+                },
+                {
+                    "en": "Usually",
+                    "ko": "보통"
+                },
+                {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Often.",
+                    "ko": "자주"
+                },
+                {
+                    "en": "Rarely.",
+                    "ko": "드물게"
+                },
+                {
+                    "en": "Sometimes.",
+                    "ko": "때때로"
+                },
+                {
+                    "en": "Usually like that.",
+                    "ko": "보통은 그렇게 하죠."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "To",
+                    "ko": "받는 사람"
+                },
+                {
+                    "en": "Here",
+                    "ko": "여기"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I often come here.",
+                    "ko": "저는 종종 이곳에 옵니다."
+                },
+                {
+                    "en": "Really rarely.",
+                    "ko": "정말 드물게요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "To",
+                    "ko": "받는 사람"
+                },
+                {
+                    "en": "Here",
+                    "ko": "여기"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I often come here.",
+                    "ko": "저는 종종 이곳에 옵니다."
+                }
+            ]
+        }
+    },
+    "Casual Venting": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Traffic jam",
+                    "ko": "교통 체증"
+                },
+                {
+                    "en": "Hot",
+                    "ko": "더운"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "Really",
+                    "ko": "매우"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible.",
+                    "ko": "교통 체증은 끔찍합니다."
+                },
+                {
+                    "en": "So hot.",
+                    "ko": "앗 뜨거!"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible.",
+                    "ko": "교통 체증은 끔찍합니다."
+                },
+                {
+                    "en": "So hot.",
+                    "ko": "앗 뜨거!"
+                },
+                {
+                    "en": "Tired from work.",
+                    "ko": "업무에 지쳤습니다."
+                },
+                {
+                    "en": "Tired from work.",
+                    "ko": "업무에 지쳤습니다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible.",
+                    "ko": "교통 체증은 끔찍합니다."
+                },
+                {
+                    "en": "Tired from work.",
+                    "ko": "업무에 지쳤습니다."
+                }
+            ]
+        }
+    },
+    "Topic Shift": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Oh right",
+                    "ko": "아 그러면 되겠네"
+                },
+                {
+                    "en": "By the way",
+                    "ko": "아 그러면 되겠네"
+                },
+                {
+                    "en": "By the way",
+                    "ko": "그런데"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh right.",
+                    "ko": "아, 맞다!<g id=\"2\"> </g>"
+                },
+                {
+                    "en": "By the way.",
+                    "ko": "그나저나."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Hey",
+                    "ko": "안녕"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hey by the way.",
+                    "ko": "그나저나."
+                },
+                {
+                    "en": "Hey by the way.",
+                    "ko": "그나저나."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Casual Pushback": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Also",
+                    "ko": "또한"
+                },
+                {
+                    "en": "Either",
+                    "ko": "또한"
+                },
+                {
+                    "en": "How come",
+                    "ko": "어째서…….’"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Really",
+                    "ko": "정말"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh not really.",
+                    "ko": "아, 정답이 아니에요."
+                },
+                {
+                    "en": "How come?",
+                    "ko": "어째서…….’"
+                },
+                {
+                    "en": "Really?",
+                    "ko": "진심인가요?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Hey",
+                    "ko": "안녕"
+                },
+                {
+                    "en": "Oh",
+                    "ko": "OH"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not really.",
+                    "ko": "전혀 그렇지 않다"
+                }
+            ]
+        }
+    },
+    "As / Like (Kayak / Seperti / Maksudnya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Like",
+                    "ko": "좋아하다"
+                },
+                {
+                    "en": "As",
+                    "ko": "좋아하다"
+                },
+                {
+                    "en": "Earlier",
+                    "ko": "이전"
+                },
+                {
+                    "en": "Before",
+                    "ko": "이전"
+                },
+                {
+                    "en": "Like",
+                    "ko": "좋아하다"
+                },
+                {
+                    "en": "As",
+                    "ko": "좋아하다"
+                },
+                {
+                    "en": "I mean",
+                    "ko": "제 말은"
+                },
+                {
+                    "en": "As in",
+                    "ko": "제 말은"
+                },
+                {
+                    "en": "As (a)",
+                    "ko": "이의"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                },
+                {
+                    "en": "How",
+                    "ko": "방법"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As before.",
+                    "ko": "예전처럼."
+                },
+                {
+                    "en": "Like before.",
+                    "ko": "예전처럼."
+                },
+                {
+                    "en": "What do you mean?",
+                    "ko": "그게 무슨 말이야?"
+                },
+                {
+                    "en": "As a friend.",
+                    "ko": "친구로"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Seems like",
+                    "ko": "다음과 같이 보입니다."
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Which",
+                    "ko": "저것"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Say",
+                    "ko": "말하다"
+                },
+                {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As you said.",
+                    "ko": "말씀하신 대로요."
+                },
+                {
+                    "en": "As you said.",
+                    "ko": "말씀하신 대로요."
+                },
+                {
+                    "en": "Seems like that.",
+                    "ko": "그런 것 같네요."
+                },
+                {
+                    "en": "Seems like that.",
+                    "ko": "그런 것 같네요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "Which",
+                    "ko": "저것"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Say",
+                    "ko": "말하다"
+                },
+                {
+                    "en": "How",
+                    "ko": "어떻게"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As you said.",
+                    "ko": "말씀하신 대로요."
+                },
+                {
+                    "en": "What do you mean?",
+                    "ko": "그게 무슨 말이야?"
+                }
+            ]
+        }
+    },
+    "Relationships (Family & Friends)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Family",
+                    "ko": "가족"
+                },
+                {
+                    "en": "Parents",
+                    "ko": "부모님"
+                },
+                {
+                    "en": "Mother",
+                    "ko": "어머니"
+                },
+                {
+                    "en": "Father",
+                    "ko": "아버지"
+                },
+                {
+                    "en": "Older sibling",
+                    "ko": "형제자매"
+                },
+                {
+                    "en": "Older sibling",
+                    "ko": "형제자매"
+                },
+                {
+                    "en": "Younger sibling",
+                    "ko": "Dohngsaeng"
+                },
+                {
+                    "en": "Younger sibling",
+                    "ko": "Dohngsaeng"
+                },
+                {
+                    "en": "Sibling",
+                    "ko": "형제자매"
+                },
+                {
+                    "en": "Relative",
+                    "ko": "형제자매"
+                },
+                {
+                    "en": "Know (someone)",
+                    "ko": "알기 (누군가)"
+                },
+                {
+                    "en": "Close",
+                    "ko": "닫다"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                },
+                {
+                    "en": "New",
+                    "ko": "새로운"
+                },
+                {
+                    "en": "Just",
+                    "ko": "새로운"
+                },
+                {
+                    "en": "Long time",
+                    "ko": "오래가"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Family.",
+                    "ko": "가정"
+                },
+                {
+                    "en": "Parents.",
+                    "ko": "부모"
+                },
+                {
+                    "en": "Close friend.",
+                    "ko": "우정"
+                },
+                {
+                    "en": "Just met.",
+                    "ko": "방금 만났어."
+                },
+                {
+                    "en": "Known each other a long time.",
+                    "ko": "서로 오래 알고 지냈다."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Have",
+                    "ko": "가지다"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "We",
+                    "ko": "우리"
+                },
+                {
+                    "en": "He",
+                    "ko": "그"
+                },
+                {
+                    "en": "She",
+                    "ko": "그"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My family.",
+                    "ko": "내 가족들과 말입니다.<t1/>"
+                },
+                {
+                    "en": "My parents.",
+                    "ko": "부모님."
+                },
+                {
+                    "en": "They're my friend.",
+                    "ko": "내 친구들이야."
+                },
+                {
+                    "en": "We just met.",
+                    "ko": "방금 만났어."
+                },
+                {
+                    "en": "We've known each other a long time.",
+                    "ko": "우리는 오랫동안 서로 알고 지냈습니다."
+                },
+                {
+                    "en": "I have an older sibling.",
+                    "ko": "저는 형제가 있습니다."
+                },
+                {
+                    "en": "I have an older sibling.",
+                    "ko": "저는 형제가 있습니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "I",
+                    "ko": "제1장"
+                },
+                {
+                    "en": "Mum",
+                    "ko": "어머니"
+                },
+                {
+                    "en": "Close",
+                    "ko": "닫기"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                },
+                {
+                    "en": "Be friends",
+                    "ko": "친구가 되세요"
+                },
+                {
+                    "en": "Get to know each other",
+                    "ko": "서로에 대해 알아가는 시간"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Love",
+                    "ko": "사랑하다"
+                },
+                {
+                    "en": "Care for",
+                    "ko": "사랑하다"
+                },
+                {
+                    "en": "Miss (someone)",
+                    "ko": "미스 (누군가)"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "We",
+                    "ko": "우리"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My family.",
+                    "ko": "내 가족들과 말입니다.<t1/>"
+                },
+                {
+                    "en": "My parents.",
+                    "ko": "부모님."
+                },
+                {
+                    "en": "They're a close friend of mine.",
+                    "ko": "그들은 제 가까운 친구입니다."
+                },
+                {
+                    "en": "We're just friends.",
+                    "ko": "우린 그냥 친구일 뿐이야."
+                },
+                {
+                    "en": "Just met.",
+                    "ko": "방금 만났어."
+                },
+                {
+                    "en": "Known each other for ages.",
+                    "ko": "서로 오래도록 알고 지냈습니다."
+                },
+                {
+                    "en": "I care about you.",
+                    "ko": "널 생각해."
+                },
+                {
+                    "en": "Miss you.",
+                    "ko": "보고 싶어."
+                }
+            ]
+        }
+    },
+    "Couple Talk": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Love",
+                    "ko": "사랑하다"
+                },
+                {
+                    "en": "Dear",
+                    "ko": "사랑하다"
+                },
+                {
+                    "en": "Beautiful",
+                    "ko": "아름다운"
+                },
+                {
+                    "en": "Handsome",
+                    "ko": "잘생겼다"
+                },
+                {
+                    "en": "Miss (someone)",
+                    "ko": "미스 (누군가)"
+                },
+                {
+                    "en": "Good",
+                    "ko": "좋은"
+                },
+                {
+                    "en": "Morning",
+                    "ko": "아침"
+                },
+                {
+                    "en": "Night",
+                    "ko": "밤"
+                },
+                {
+                    "en": "Sleep",
+                    "ko": "자다"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "Be careful",
+                    "ko": "조심하세요"
+                },
+                {
+                    "en": "Road",
+                    "ko": "길"
+                },
+                {
+                    "en": "Way",
+                    "ko": "길"
+                },
+                {
+                    "en": "Don't",
+                    "ko": "~하지 마"
+                },
+                {
+                    "en": "Forget",
+                    "ko": "잊다"
+                },
+                {
+                    "en": "At",
+                    "ko": "~에"
+                },
+                {
+                    "en": "In",
+                    "ko": "~에"
+                },
+                {
+                    "en": "On",
+                    "ko": "~에"
+                },
+                {
+                    "en": "Rest",
+                    "ko": "쉬다"
+                },
+                {
+                    "en": "Meet",
+                    "ko": "만나다"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ko": "내일"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Where to",
+                    "ko": "어디로"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Beautiful.",
+                    "ko": "예쁘다."
+                },
+                {
+                    "en": "Handsome.",
+                    "ko": "잘생겼다."
+                },
+                {
+                    "en": "Miss you.",
+                    "ko": "보고 싶어."
+                },
+                {
+                    "en": "Good morning.",
+                    "ko": "안녕하세요."
+                },
+                {
+                    "en": "Good evening.",
+                    "ko": "안녕하세요."
+                },
+                {
+                    "en": "Good night.",
+                    "ko": "잘 자."
+                },
+                {
+                    "en": "Don't forget to eat.",
+                    "ko": "밥 먹는 거 잊지 마."
+                },
+                {
+                    "en": "Be careful on the road.",
+                    "ko": "길 조심해."
+                },
+                {
+                    "en": "Rest, okay?",
+                    "ko": "쉬어, 알겠지?"
+                },
+                {
+                    "en": "Sleep first, okay?",
+                    "ko": "먼저 자, 알겠지?"
+                },
+                {
+                    "en": "See you later?",
+                    "ko": "나중에 볼래?"
+                },
+                {
+                    "en": "See you tomorrow.",
+                    "ko": "내일 보자."
+                },
+                {
+                    "en": "Where are you going?",
+                    "ko": "어디 가?"
+                },
+                {
+                    "en": "Can you tomorrow?",
+                    "ko": "내일 할 수 있어?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Love",
+                    "ko": "사랑하다"
+                },
+                {
+                    "en": "Long for",
+                    "ko": "그리워하다"
+                },
+                {
+                    "en": "Miss",
+                    "ko": "그리워하다"
+                },
+                {
+                    "en": "Happy",
+                    "ko": "행복한"
+                },
+                {
+                    "en": "We",
+                    "ko": "우리"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I care about you.",
+                    "ko": "널 생각해."
+                },
+                {
+                    "en": "I love you.",
+                    "ko": "사랑해요."
+                },
+                {
+                    "en": "You're beautiful.",
+                    "ko": "예쁘다."
+                },
+                {
+                    "en": "You're handsome.",
+                    "ko": "잘생겼다."
+                },
+                {
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
+                },
+                {
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
+                },
+                {
+                    "en": "Nice to meet you.",
+                    "ko": "만나서 반가워요."
+                },
+                {
+                    "en": "Don't forget to eat, okay?",
+                    "ko": "밥 먹는 거 잊지 마, 알겠지?"
+                },
+                {
+                    "en": "Let us meet tomorrow, okay?",
+                    "ko": "내일 보자, 알겠지?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "I",
+                    "ko": "제1장"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "너"
+                },
+                {
+                    "en": "My love",
+                    "ko": "내 사랑"
+                },
+                {
+                    "en": "My dear",
+                    "ko": "내 사랑"
+                },
+                {
+                    "en": "Love",
+                    "ko": "사랑하다"
+                },
+                {
+                    "en": "Babe",
+                    "ko": "자기"
+                },
+                {
+                    "en": "Long for",
+                    "ko": "그리워하다"
+                },
+                {
+                    "en": "Miss",
+                    "ko": "그리워하다"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Doing",
+                    "ko": "하는 중"
+                },
+                {
+                    "en": "Right now",
+                    "ko": "하는 중"
+                },
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "Want",
+                    "ko": "원하다"
+                },
+                {
+                    "en": "Happy",
+                    "ko": "행복해"
+                },
+                {
+                    "en": "Very",
+                    "ko": "매우"
+                },
+                {
+                    "en": "So",
+                    "ko": "매우"
+                },
+                {
+                    "en": "With",
+                    "ko": "~와/과"
+                },
+                {
+                    "en": "Pick up",
+                    "ko": "픽업하다"
+                },
+                {
+                    "en": "Chat",
+                    "ko": "채팅"
+                },
+                {
+                    "en": "Call",
+                    "ko": "전화하다"
+                },
+                {
+                    "en": "Waiting for",
+                    "ko": "~를 기다리는 중"
+                },
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Yeah",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "First",
+                    "ko": "첫 번째"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I care about you.",
+                    "ko": "널 생각해."
+                },
+                {
+                    "en": "I care about you.",
+                    "ko": "널 생각해."
+                },
+                {
+                    "en": "I love you.",
+                    "ko": "사랑해요."
+                },
+                {
+                    "en": "Love you.",
+                    "ko": "사랑해."
+                },
+                {
+                    "en": "My love.",
+                    "ko": "내 사랑."
+                },
+                {
+                    "en": "So beautiful.",
+                    "ko": "너무 예쁘다."
+                },
+                {
+                    "en": "So handsome.",
+                    "ko": "너무 잘생겼다."
+                },
+                {
+                    "en": "Miss you so much.",
+                    "ko": "엄청 보고 싶어."
+                },
+                {
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
+                },
+                {
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
+                },
+                {
+                    "en": "Have you eaten?",
+                    "ko": "밥 먹었어?"
+                },
+                {
+                    "en": "What are you doing?",
+                    "ko": "기분이 어떤가요?"
+                },
+                {
+                    "en": "Have you slept?",
+                    "ko": "잤어?"
+                },
+                {
+                    "en": "Good morning love.",
+                    "ko": "좋은 아침, 자기."
+                },
+                {
+                    "en": "Good evening love.",
+                    "ko": "좋은 저녁, 자기."
+                },
+                {
+                    "en": "Good night love.",
+                    "ko": "잘 자, 자기."
+                },
+                {
+                    "en": "Don't forget to eat, okay?",
+                    "ko": "밥 먹는 거 잊지 마, 알겠지?"
+                },
+                {
+                    "en": "Be careful on the road, okay?",
+                    "ko": "길 조심해, 알겠지?"
+                },
+                {
+                    "en": "Pick me up, okay?",
+                    "ko": "나 픽업해 줘, 알겠지?"
+                },
+                {
+                    "en": "Want to see you.",
+                    "ko": "보고 싶어."
+                },
+                {
+                    "en": "So happy with you.",
+                    "ko": "너랑 있어서 너무 행복해."
+                },
+                {
+                    "en": "I will chat you later, okay?",
+                    "ko": "나중에 채팅할게, 알겠지?"
+                },
+                {
+                    "en": "I will call you later, okay?",
+                    "ko": "나중에 전화할게, 알겠지?"
+                },
+                {
+                    "en": "Waiting for you, okay?",
+                    "ko": "널 기다릴게, 알겠지?"
+                },
+                {
+                    "en": "Bye love.",
+                    "ko": "잘 가, 자기."
+                }
+            ]
+        }
+    },
+    "Conditions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "If",
+                    "ko": "만약"
+                },
+                {
+                    "en": "Hungry",
+                    "ko": "배고픈"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Exist",
+                    "ko": "존재"
+                },
+                {
+                    "en": "There is",
+                    "ko": "존재"
+                },
+                {
+                    "en": "Time",
+                    "ko": "시간"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Later",
+                    "ko": "나중에"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "Possible",
+                    "ko": "가능한"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If hungry.",
+                    "ko": "배고프면."
+                },
+                {
+                    "en": "If tired.",
+                    "ko": "피곤하면."
+                },
+                {
+                    "en": "If there is time.",
+                    "ko": "시간 있으면."
+                },
+                {
+                    "en": "If able.",
+                    "ko": "가능하면."
+                },
+                {
+                    "en": "If able, later.",
+                    "ko": "가능하면 나중에."
+                },
+                {
+                    "en": "If hungry, eat.",
+                    "ko": "배고프면 먹어."
+                },
+                {
+                    "en": "If tired, later.",
+                    "ko": "피곤하면 나중에."
+                },
+                {
+                    "en": "If possible.",
+                    "ko": "가능하면."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Yeah",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "If",
+                    "ko": "만약"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Be able to",
+                    "ko": "할 수 있다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If there is time.",
+                    "ko": "시간 있으면."
+                },
+                {
+                    "en": "If possible.",
+                    "ko": "가능하면."
+                },
+                {
+                    "en": "If able.",
+                    "ko": "가능하면."
+                }
+            ]
+        }
+    },
+    "Moments": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "when",
+                    "ko": "언제"
+                },
+                {
+                    "en": "At the moment",
+                    "ko": "언제"
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "도착하다"
+                },
+                {
+                    "en": "Hungry",
+                    "ko": "배고픈"
+                },
+                {
+                    "en": "Start",
+                    "ko": "시작하다"
+                },
+                {
+                    "en": "Okay",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Yes",
+                    "ko": "알겠어요"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Eat when you’re hungry.",
+                    "ko": "배고프면 먹어."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let me know",
+                    "ko": "알려줘"
+                },
+                {
+                    "en": "Tell",
+                    "ko": "텔"
+                },
+                {
+                    "en": "Say",
+                    "ko": "텔"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let me know when you arrive.",
+                    "ko": "도착하면 알려줘."
+                },
+                {
+                    "en": "Tell me when it starts.",
+                    "ko": "시작하면 알려줘."
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "With": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "With",
+                    "ko": "~와/과"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "He",
+                    "ko": "그"
+                },
+                {
+                    "en": "She",
+                    "ko": "그"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                },
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                },
+                {
+                    "en": "Come",
+                    "ko": "오다"
+                },
+                {
+                    "en": "Arrive",
+                    "ko": "오다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With you.",
+                    "ko": "너랑."
+                },
+                {
+                    "en": "Come with a friend.",
+                    "ko": "친구랑 와."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ko": "나랑."
+                },
+                {
+                    "en": "Go with me.",
+                    "ko": "나랑 가."
+                },
+                {
+                    "en": "With me.",
+                    "ko": "나랑."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "With",
+                    "ko": "~와/과"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ko": "나랑."
+                },
+                {
+                    "en": "Go with me.",
+                    "ko": "나랑 가."
+                }
+            ]
+        }
+    },
+    "For": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "For",
+                    "ko": "~을/를 위해"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ko": "이거 너야."
+                },
+                {
+                    "en": "For you.",
+                    "ko": "너를 위해."
+                },
+                {
+                    "en": "For that.",
+                    "ko": "그걸 위해."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "casual closure",
+                    "ko": "캐주얼 클로저"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "For me.",
+                    "ko": "나한테."
+                },
+                {
+                    "en": "For me.",
+                    "ko": "나한테."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "For",
+                    "ko": "~을/를 위해"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ko": "이거 너야."
+                },
+                {
+                    "en": "For me.",
+                    "ko": "나한테."
+                }
+            ]
+        }
+    },
+    "Because": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Because",
+                    "ko": "왜냐하면"
+                },
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Can",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Able",
+                    "ko": "할 수 있다"
+                },
+                {
+                    "en": "Busy",
+                    "ko": "바쁜"
+                },
+                {
+                    "en": "Traffic jam",
+                    "ko": "교통 체증"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Because I’m busy.",
+                    "ko": "바빠서요."
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ko": "바빠서 못 해."
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ko": "교통 때문에요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "No",
+                    "ko": "값 제외"
+                },
+                {
+                    "en": "Because",
+                    "ko": "왜냐하면"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                },
+                {
+                    "en": "Tired",
+                    "ko": "피곤한"
+                },
+                {
+                    "en": "Because of",
+                    "ko": "~때문에"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ko": "일해서 못 해."
+                },
+                {
+                    "en": "I can’t because I’m working.",
+                    "ko": "일해서 못 해."
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ko": "피곤해서요."
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ko": "피곤해서요."
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ko": "교통 때문에요."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Work",
+                    "ko": "일하다"
+                },
+                {
+                    "en": "Because",
+                    "ko": "왜냐하면"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ko": "일해서 못 해."
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ko": "바빠서 못 해."
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ko": "교통 때문에요."
+                }
+            ]
+        }
+    },
+    "Inviting": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ko": "Let's"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "Go",
+                    "ko": "가다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us eat.",
+                    "ko": "먹자."
+                },
+                {
+                    "en": "Let us go.",
+                    "ko": "가요."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ko": "Let's"
+                },
+                {
+                    "en": "Together",
+                    "ko": "같이"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us eat.",
+                    "ko": "먹자."
+                },
+                {
+                    "en": "Let us go together.",
+                    "ko": "같이 가자."
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ko": "Let's"
+                },
+                {
+                    "en": "We",
+                    "ko": "우리"
+                },
+                {
+                    "en": "Us",
+                    "ko": "우리"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us eat.",
+                    "ko": "먹자."
+                },
+                {
+                    "en": "Let us go.",
+                    "ko": "가요."
+                }
+            ]
+        }
+    },
+    "Informal pronouns": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "At",
+                    "ko": "~에"
+                },
+                {
+                    "en": "In",
+                    "ko": "~에"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Eat",
+                    "ko": "먹다"
+                },
+                {
+                    "en": "House",
+                    "ko": "집"
+                },
+                {
+                    "en": "Home",
+                    "ko": "집"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직 아니에요"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "ko": "기분이 어떤가요?"
+                },
+                {
+                    "en": "Not yet.",
+                    "ko": "아직 아닙니다."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me (Jakarta slang)",
+                    "ko": "나 (자카르타 속어)"
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ko": "당신 (자카르타 속어)"
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ko": "당신 (자카르타 속어)"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                },
+                {
+                    "en": "Not yet",
+                    "ko": "아직"
+                },
+                {
+                    "en": "Friend",
+                    "ko": "친구"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ko": "집에 있어요."
+                },
+                {
+                    "en": "I’m at home.",
+                    "ko": "집에 있어요."
+                },
+                {
+                    "en": "What are you doing?",
+                    "ko": "기분이 어떤가요?"
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
+                },
+                {
+                    "en": "Already or not yet?",
+                    "ko": "이미요? 아직 아니에요?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ko": "날씨"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "You",
+                    "ko": "당신"
+                },
+                {
+                    "en": "Currently",
+                    "ko": "현재"
+                },
+                {
+                    "en": "Already",
+                    "ko": "DMX"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ko": "집에 있어요."
+                },
+                {
+                    "en": "What are you doing?",
+                    "ko": "기분이 어떤가요?"
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
+                }
+            ]
+        }
+    },
+    "About": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "About",
+                    "ko": "~에 대해"
+                },
+                {
+                    "en": "About",
+                    "ko": "~에 대해"
+                },
+                {
+                    "en": "Talk",
+                    "ko": "이야기하다"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "This",
+                    "ko": "이것"
+                },
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                },
+                {
+                    "en": "How",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "What about",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "With",
+                    "ko": "~와/과"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "About what?",
+                    "ko": "뭘요?"
+                },
+                {
+                    "en": "About what?",
+                    "ko": "뭘요?"
+                },
+                {
+                    "en": "Talk about that.",
+                    "ko": "그거 이야기해."
+                },
+                {
+                    "en": "What about that?",
+                    "ko": "그건 어때?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ko": "~하자"
+                },
+                {
+                    "en": "We",
+                    "ko": "우리"
+                },
+                {
+                    "en": "About",
+                    "ko": "~에 대해"
+                },
+                {
+                    "en": "Regarding",
+                    "ko": "~에 관해"
+                },
+                {
+                    "en": "About",
+                    "ko": "~에 관해"
+                },
+                {
+                    "en": "Discuss",
+                    "ko": "논의하다"
+                },
+                {
+                    "en": "Talk about",
+                    "ko": "논의하다"
+                },
+                {
+                    "en": "How",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "With",
+                    "ko": "~와/과"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "I",
+                    "ko": "저"
+                },
+                {
+                    "en": "Me",
+                    "ko": "저"
+                },
+                {
+                    "en": "Want to",
+                    "ko": "~하고 싶다"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us talk about that.",
+                    "ko": "그거 이야기하자."
+                },
+                {
+                    "en": "What about that?",
+                    "ko": "그건 어때?"
+                },
+                {
+                    "en": "I want to talk about that.",
+                    "ko": "그거 이야기하고 싶어."
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ko": "~하자"
+                },
+                {
+                    "en": "Come on",
+                    "ko": "자, 어서"
+                },
+                {
+                    "en": "Let us",
+                    "ko": "자, 어서"
+                },
+                {
+                    "en": "Talk",
+                    "ko": "이야기하다"
+                },
+                {
+                    "en": "Chat",
+                    "ko": "채팅"
+                },
+                {
+                    "en": "Chat about",
+                    "ko": "~에 대해 채팅하다"
+                },
+                {
+                    "en": "Talking about",
+                    "ko": "~에 대해 이야기하는 중"
+                },
+                {
+                    "en": "About",
+                    "ko": "~에 대해"
+                },
+                {
+                    "en": "About",
+                    "ko": "~에 대해"
+                },
+                {
+                    "en": "That",
+                    "ko": "저것"
+                },
+                {
+                    "en": "How",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "What about",
+                    "ko": "어떻게"
+                },
+                {
+                    "en": "Doing",
+                    "ko": "하는 중"
+                },
+                {
+                    "en": "Right now",
+                    "ko": "하는 중"
+                },
+                {
+                    "en": "What",
+                    "ko": "무엇"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us talk about that.",
+                    "ko": "그거 이야기하자."
+                },
+                {
+                    "en": "Let us talk about that.",
+                    "ko": "그거 이야기하자."
+                },
+                {
+                    "en": "What about that?",
+                    "ko": "그건 어때?"
+                },
+                {
+                    "en": "What are you talking about?",
+                    "ko": "뭘 이야기하는 거야?"
+                }
+            ]
+        }
+    }
+}

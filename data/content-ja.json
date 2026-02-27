@@ -1,0 +1,7372 @@
+{
+    "Greetings (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Hello",
+                    "ja": "こんにちは"
+                },
+                {
+                    "en": "Name",
+                    "ja": "名前"
+                },
+                {
+                    "en": "Good",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Come",
+                    "ja": "来る"
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "来る"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Welcome.",
+                    "ja": "ようこそ！"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hi, I’m (name).",
+                    "ja": "こんにちは、(名前)と申します。"
+                },
+                {
+                    "en": "Hello, my name is (name).",
+                    "ja": "こんにちは、俺の名前は {name}。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hi, I’m (name).",
+                    "ja": "こんにちは、(名前)と申します。"
+                },
+                {
+                    "en": "Hello, my name is (name).",
+                    "ja": "こんにちは、俺の名前は {name}。"
+                }
+            ]
+        }
+    },
+    "Greetings (Time-Based)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Good",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Morning",
+                    "ja": "朝"
+                },
+                {
+                    "en": "Afternoon",
+                    "ja": "午後"
+                },
+                {
+                    "en": "Daytime",
+                    "ja": "午後"
+                },
+                {
+                    "en": "Evening",
+                    "ja": "夕方"
+                },
+                {
+                    "en": "Night",
+                    "ja": "夕方"
+                },
+                {
+                    "en": "Sleep",
+                    "ja": "寝る"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Good morning.",
+                    "ja": "おはようございます。"
+                },
+                {
+                    "en": "Good afternoon.",
+                    "ja": "こんにちは。"
+                },
+                {
+                    "en": "Good evening.",
+                    "ja": "いらっしゃいませ。"
+                },
+                {
+                    "en": "Good night",
+                    "ja": "おやすみ"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Asking How Are You": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "News",
+                    "ja": "ニュース"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How are you?",
+                    "ja": "お元気ですか。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "How",
+                    "ja": "どう"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How are you now?",
+                    "ja": "元気なのか？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "How",
+                    "ja": "方法"
+                },
+                {
+                    "en": "The news",
+                    "ja": "ニュース"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "How’s it going now?",
+                    "ja": "調子はどうだ？"
+                },
+                {
+                    "en": "How’s it going now?",
+                    "ja": "調子はどうだ？"
+                }
+            ]
+        }
+    },
+    "Yes / No / Maybe": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "No",
+                    "ja": "いいえ"
+                },
+                {
+                    "en": "Not",
+                    "ja": "いいえ"
+                },
+                {
+                    "en": "Maybe",
+                    "ja": "多分"
+                },
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "No",
+                    "ja": "いいえ"
+                },
+                {
+                    "en": "Not",
+                    "ja": "いいえ"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Reactions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Oh",
+                    "ja": "あら"
+                },
+                {
+                    "en": "Oh right",
+                    "ja": "オッケー。"
+                },
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Alright",
+                    "ja": "わかりました。"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Haha",
+                    "ja": "うける！"
+                },
+                {
+                    "en": "Hmm",
+                    "ja": "あら"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh, okay.",
+                    "ja": "ああ、わかりました。"
+                },
+                {
+                    "en": "Oh right.",
+                    "ja": "オッケー。"
+                },
+                {
+                    "en": "Yeah, okay.",
+                    "ja": "\"あぁ　判った\""
+                },
+                {
+                    "en": "Haha.",
+                    "ja": "あはは。"
+                },
+                {
+                    "en": "Hmm.",
+                    "ja": "なるほど。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Understand",
+                    "ja": "わかる"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Alright, I understand.",
+                    "ja": "うん、わかった。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "It's okay",
+                    "ja": "大丈夫です"
+                },
+                {
+                    "en": "No problem",
+                    "ja": "大丈夫です"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Understand",
+                    "ja": "理解"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                },
+                {
+                    "en": "Laughing",
+                    "ja": "笑い"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Yeah, true.",
+                    "ja": "あぁ"
+                },
+                {
+                    "en": "Okay, I understand.",
+                    "ja": "なるほど　わかりました"
+                },
+                {
+                    "en": "Okay.",
+                    "ja": "わかったわ。"
+                },
+                {
+                    "en": "Haha.",
+                    "ja": "あはは。"
+                },
+                {
+                    "en": "Yeah, true.",
+                    "ja": "あぁ"
+                }
+            ]
+        }
+    },
+    "Thanks & Politeness": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Thank you",
+                    "ja": "ありがとうございます"
+                },
+                {
+                    "en": "You’re welcome",
+                    "ja": "どういたしまして"
+                },
+                {
+                    "en": "Sorry",
+                    "ja": "すみません"
+                },
+                {
+                    "en": "Excuse me",
+                    "ja": "すみません"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Thank you.",
+                    "ja": "ありがとうございます。"
+                },
+                {
+                    "en": "You’re welcome.",
+                    "ja": "どういたしまして。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ja": "お願いします"
+                },
+                {
+                    "en": "Kindly",
+                    "ja": "お願いします"
+                },
+                {
+                    "en": "Forgive",
+                    "ja": "許そう。"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My apologies.",
+                    "ja": "今度は \"失礼\" か"
+                },
+                {
+                    "en": "I sincerely apologize.",
+                    "ja": "心からお詫び申し上げます"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Thanks",
+                    "ja": "ありがとうございます"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Ask for",
+                    "ja": "お願いする"
+                },
+                {
+                    "en": "Urging",
+                    "ja": "促す"
+                },
+                {
+                    "en": "come on",
+                    "ja": "促す"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Thanks.",
+                    "ja": "ありがとう。"
+                },
+                {
+                    "en": "Thanks.",
+                    "ja": "ありがとう。"
+                },
+                {
+                    "en": "Sorry, okay?",
+                    "ja": "すまない"
+                },
+                {
+                    "en": "I sincerely apologize.",
+                    "ja": "心からお詫び申し上げます"
+                }
+            ]
+        }
+    },
+    "Goodbyes & Leaving": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Until",
+                    "ja": "至"
+                },
+                {
+                    "en": "See",
+                    "ja": "至"
+                },
+                {
+                    "en": "Meet",
+                    "ja": "会う"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Take care",
+                    "ja": "お大事に"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "First",
+                    "ja": "最初"
+                },
+                {
+                    "en": "Earlier",
+                    "ja": "最初"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "See you.",
+                    "ja": "じゃ、またねっ！"
+                },
+                {
+                    "en": "See you later.",
+                    "ja": "また後で。"
+                },
+                {
+                    "en": "Take care.",
+                    "ja": "お大事に。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Take leave",
+                    "ja": "休暇を取る"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’ll take my leave.",
+                    "ja": "失礼します"
+                },
+                {
+                    "en": "I’ll go first",
+                    "ja": "私が最初に行きます。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "First",
+                    "ja": "最初"
+                },
+                {
+                    "en": "Earlier",
+                    "ja": "最初"
+                },
+                {
+                    "en": "Bye",
+                    "ja": "さようなら"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’ll take my leave.",
+                    "ja": "失礼します"
+                },
+                {
+                    "en": "I’ll go first",
+                    "ja": "私が最初に行きます。"
+                },
+                {
+                    "en": "I’ll go first",
+                    "ja": "私が最初に行きます。"
+                },
+                {
+                    "en": "Bye.",
+                    "ja": "では。"
+                }
+            ]
+        }
+    },
+    "When (Time Questions)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "When",
+                    "ja": "いつ"
+                },
+                {
+                    "en": "Hour",
+                    "ja": "時間"
+                },
+                {
+                    "en": "O’clock",
+                    "ja": "時間"
+                },
+                {
+                    "en": "How many",
+                    "ja": "いくつ"
+                },
+                {
+                    "en": "How much",
+                    "ja": "いくつ"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                },
+                {
+                    "en": "Come",
+                    "ja": "来る"
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "来る"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "When can you?",
+                    "ja": "いつできますか？"
+                },
+                {
+                    "en": "When are you going?",
+                    "ja": "いついく"
+                },
+                {
+                    "en": "When will you arrive?",
+                    "ja": "ご到着はいつですか？"
+                },
+                {
+                    "en": "When is that?",
+                    "ja": "いつもそうなの？"
+                },
+                {
+                    "en": "What time?",
+                    "ja": "何時にきましょうか。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Titles & Relationships": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Girlfriend",
+                    "ja": "彼女"
+                },
+                {
+                    "en": "Boyfriend",
+                    "ja": "彼女"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                },
+                {
+                    "en": "Wife",
+                    "ja": "妻"
+                },
+                {
+                    "en": "Husband",
+                    "ja": "夫"
+                },
+                {
+                    "en": "Mrs",
+                    "ja": ""
+                },
+                {
+                    "en": "Ma’am",
+                    "ja": "もしもし？"
+                },
+                {
+                    "en": "Mr",
+                    "ja": ""
+                },
+                {
+                    "en": "Sir",
+                    "ja": "閣下"
+                },
+                {
+                    "en": "He",
+                    "ja": "彼"
+                },
+                {
+                    "en": "She",
+                    "ja": "彼"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This ma’am.",
+                    "ja": "この奥様。"
+                },
+                {
+                    "en": "That sir.",
+                    "ja": "そのとおりです。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Mrs",
+                    "ja": ""
+                },
+                {
+                    "en": "Mr",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My girlfriend",
+                    "ja": "- 僕の彼女だ"
+                },
+                {
+                    "en": "boyfriend.",
+                    "ja": "- 僕の彼女だ"
+                },
+                {
+                    "en": "They’re my friend.",
+                    "ja": "彼らは私の友達です。"
+                },
+                {
+                    "en": "This gentleman.",
+                    "ja": "こちらの方が"
+                },
+                {
+                    "en": "That lady.",
+                    "ja": "あのお嬢さん。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Girl",
+                    "ja": "女の子"
+                },
+                {
+                    "en": "Girlfriend",
+                    "ja": "女の子"
+                },
+                {
+                    "en": "Guy",
+                    "ja": "ガイ"
+                },
+                {
+                    "en": "Boyfriend",
+                    "ja": "ガイ"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                },
+                {
+                    "en": "Pointing",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "here",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "this",
+                    "ja": "指さしてる？"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My girlfriend",
+                    "ja": "- 僕の彼女だ"
+                },
+                {
+                    "en": "boyfriend.",
+                    "ja": "- 僕の彼女だ"
+                },
+                {
+                    "en": "They’re my friend.",
+                    "ja": "彼らは私の友達です。"
+                },
+                {
+                    "en": "My girlfriend.",
+                    "ja": "- 僕の彼女だ"
+                },
+                {
+                    "en": "My boyfriend.",
+                    "ja": "そうカレ氏"
+                },
+                {
+                    "en": "This is my girlfriend",
+                    "ja": "- ガールフレンドなんだ"
+                },
+                {
+                    "en": "boyfriend.",
+                    "ja": "- ガールフレンドなんだ"
+                }
+            ]
+        }
+    },
+    "How I’m doing (positive)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Good",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Fine",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Fine",
+                    "ja": "元気"
+                },
+                {
+                    "en": "Okay",
+                    "ja": "元気"
+                },
+                {
+                    "en": "Still",
+                    "ja": "静止"
+                },
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Not bad",
+                    "ja": "ミチコ"
+                },
+                {
+                    "en": "Busy",
+                    "ja": "忙しい"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Only",
+                    "ja": "これ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "ja": "元気です。"
+                },
+                {
+                    "en": "I’m busy.",
+                    "ja": "忙しいです。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "ja": "元気です。"
+                },
+                {
+                    "en": "I’m busy.",
+                    "ja": "忙しいです。"
+                },
+                {
+                    "en": "I’m tired.",
+                    "ja": "疲れました。"
+                },
+                {
+                    "en": "I’m really tired.",
+                    "ja": "くたくたに疲れた。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m fine.",
+                    "ja": "元気です。"
+                },
+                {
+                    "en": "I’m busy.",
+                    "ja": "忙しいです。"
+                },
+                {
+                    "en": "I’m busy.",
+                    "ja": "忙しいです。"
+                },
+                {
+                    "en": "I’m really tired.",
+                    "ja": "くたくたに疲れた。"
+                },
+                {
+                    "en": "I’m really tired.",
+                    "ja": "くたくたに疲れた。"
+                },
+                {
+                    "en": "I’m tired.",
+                    "ja": "疲れました。"
+                }
+            ]
+        }
+    },
+    "How I’m doing (negative)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Less",
+                    "ja": "少なく"
+                },
+                {
+                    "en": "Not quite",
+                    "ja": "少なく"
+                },
+                {
+                    "en": "Good",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Fine",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "So",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Only",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Comfortable",
+                    "ja": "快適"
+                },
+                {
+                    "en": "Good",
+                    "ja": "快適"
+                },
+                {
+                    "en": "Tasty",
+                    "ja": "快適"
+                },
+                {
+                    "en": "Body",
+                    "ja": "ボディ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not quite good.",
+                    "ja": "別の回答を選択してください。"
+                },
+                {
+                    "en": "Just so-so.",
+                    "ja": "まあまあ。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t feel well.",
+                    "ja": "気分がよくないんだ。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t feel well.",
+                    "ja": "気分がよくないんだ。"
+                },
+                {
+                    "en": "I don’t feel well.",
+                    "ja": "気分がよくないんだ。"
+                }
+            ]
+        }
+    },
+    "Knowing & Ability": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Know",
+                    "ja": "知っている"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not this.",
+                    "ja": "この件は　ちがいます"
+                },
+                {
+                    "en": "I don’t know.",
+                    "ja": "知りません。"
+                },
+                {
+                    "en": "I can’t.",
+                    "ja": "離れられない！"
+                },
+                {
+                    "en": "Can do it now.",
+                    "ja": "今 やるよ"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Belong to",
+                    "ja": "あなたが所属するチーム"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is not mine.",
+                    "ja": "これは私のものではありません。"
+                },
+                {
+                    "en": "Not me.",
+                    "ja": "俺は通ってない。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Have",
+                    "ja": "持っている"
+                },
+                {
+                    "en": "Own",
+                    "ja": "持っている"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is not mine.",
+                    "ja": "これは私のものではありません。"
+                },
+                {
+                    "en": "Not me.",
+                    "ja": "俺は通ってない。"
+                }
+            ]
+        }
+    },
+    "Requests & Help": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ja": "お願いします"
+                },
+                {
+                    "en": "Help",
+                    "ja": "お願いします"
+                },
+                {
+                    "en": "Help",
+                    "ja": "助ける"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Wait",
+                    "ja": "待つ"
+                },
+                {
+                    "en": "A moment",
+                    "ja": "お待ちを"
+                },
+                {
+                    "en": "Ask for",
+                    "ja": "お願いする"
+                },
+                {
+                    "en": "Excuse me",
+                    "ja": "すみません"
+                },
+                {
+                    "en": "May",
+                    "ja": "5月"
+                },
+                {
+                    "en": "Allowed",
+                    "ja": "5月"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Please help.",
+                    "ja": "どうか　助けて"
+                },
+                {
+                    "en": "Can you help?",
+                    "ja": "助けてもらえませんか？"
+                },
+                {
+                    "en": "Please wait a moment.",
+                    "ja": "しばらくお待ちください。"
+                },
+                {
+                    "en": "Excuse me for a moment.",
+                    "ja": "ちょっと失敬"
+                },
+                {
+                    "en": "May I ask for help?",
+                    "ja": "助けを求めてもいいですか？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Please",
+                    "ja": ""
+                },
+                {
+                    "en": "Help",
+                    "ja": "助ける"
+                },
+                {
+                    "en": "To help",
+                    "ja": "助ける"
+                },
+                {
+                    "en": "Help",
+                    "ja": "助ける"
+                },
+                {
+                    "en": "Assistance",
+                    "ja": "助ける"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I kindly ask for your help.",
+                    "ja": "どうぞよろしくお願いいたします。"
+                },
+                {
+                    "en": "Can you help me?",
+                    "ja": "手伝ってくれますか。"
+                },
+                {
+                    "en": "Wait a sec, okay?",
+                    "ja": "ちょっと待って、いい？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Help",
+                    "ja": "ヘルプ"
+                },
+                {
+                    "en": "A sec",
+                    "ja": ""
+                },
+                {
+                    "en": "Urging",
+                    "ja": "促す"
+                },
+                {
+                    "en": "come on",
+                    "ja": "促す"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you help me?",
+                    "ja": "手伝ってくれますか。"
+                },
+                {
+                    "en": "Wait a sec, okay?",
+                    "ja": "ちょっと待って、いい？"
+                },
+                {
+                    "en": "One sec.",
+                    "ja": "ちょっと待った。"
+                },
+                {
+                    "en": "Excuse me for a moment.",
+                    "ja": "ちょっと失敬"
+                },
+                {
+                    "en": "I kindly ask for your help.",
+                    "ja": "どうぞよろしくお願いいたします。"
+                }
+            ]
+        }
+    },
+    "Understanding": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Meaning",
+                    "ja": "意味"
+                },
+                {
+                    "en": "Intention",
+                    "ja": "意味"
+                },
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Repeat",
+                    "ja": "繰り返し"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "The meaning",
+                    "ja": "意味"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What does it mean?",
+                    "ja": "これは何ですか？"
+                },
+                {
+                    "en": "Can you repeat?",
+                    "ja": "\" もう一度？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Understand",
+                    "ja": "わかる"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Whether",
+                    "ja": "かどうか"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I understand.",
+                    "ja": "ああ わかるよ"
+                },
+                {
+                    "en": "I don’t understand.",
+                    "ja": "わかりません。"
+                },
+                {
+                    "en": "Do you understand?",
+                    "ja": "わかりましたか。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Understand",
+                    "ja": "理解"
+                },
+                {
+                    "en": "Understand",
+                    "ja": "理解"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I don’t understand.",
+                    "ja": "わかりません。"
+                },
+                {
+                    "en": "I understand.",
+                    "ja": "ああ わかるよ"
+                },
+                {
+                    "en": "Do you understand?",
+                    "ja": "わかりましたか。"
+                },
+                {
+                    "en": "Do you understand?",
+                    "ja": "わかりましたか。"
+                },
+                {
+                    "en": "Got it?",
+                    "ja": "いいか？"
+                }
+            ]
+        }
+    },
+    "What do you mean?": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Means",
+                    "ja": "意味"
+                },
+                {
+                    "en": "So it means",
+                    "ja": "意味"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Meaning",
+                    "ja": "意味"
+                },
+                {
+                    "en": "Intention",
+                    "ja": "意味"
+                },
+                {
+                    "en": "The meaning",
+                    "ja": "意味"
+                },
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "So",
+                    "ja": "こうだ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So this means?",
+                    "ja": "ということは？"
+                },
+                {
+                    "en": "So that means?",
+                    "ja": "だからつまり"
+                },
+                {
+                    "en": "What does it mean?",
+                    "ja": "これは何ですか？"
+                },
+                {
+                    "en": "What do you mean?",
+                    "ja": "どういう意味だ？"
+                },
+                {
+                    "en": "Does this mean that?",
+                    "ja": "これはそういう意味ですか？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ja": "かどうか"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Does this mean that?",
+                    "ja": "これはそういう意味ですか？"
+                },
+                {
+                    "en": "What do you mean?",
+                    "ja": "どういう意味だ？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": [
+                {
+                    "en": "What do you mean?",
+                    "ja": "どういう意味だ？"
+                }
+            ]
+        }
+    },
+    "Questions (Yes / No)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだです"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can this?",
+                    "ja": "これはできますか？"
+                },
+                {
+                    "en": "Can that?",
+                    "ja": "それはできますか？"
+                },
+                {
+                    "en": "Can you already?",
+                    "ja": "もうできますか？"
+                },
+                {
+                    "en": "Can't yet?",
+                    "ja": "まだできませんか？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ja": "かどうか"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can this?",
+                    "ja": "これはできますか？"
+                },
+                {
+                    "en": "Can you already?",
+                    "ja": "もうできますか？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "No",
+                    "ja": "いいえ"
+                },
+                {
+                    "en": "Not",
+                    "ja": "いいえ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can't?",
+                    "ja": "できませんか？"
+                }
+            ]
+        }
+    },
+    "What I’m Doing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Now",
+                    "ja": "今"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Busy",
+                    "ja": "忙しい"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Busy right now.",
+                    "ja": "取り込み中"
+                },
+                {
+                    "en": "Can do it later.",
+                    "ja": "後でやって。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I am working.",
+                    "ja": "仕事中です。"
+                },
+                {
+                    "en": "I can’t right now.",
+                    "ja": "今はできません。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Working.",
+                    "ja": "- 仕事さ"
+                },
+                {
+                    "en": "Working.",
+                    "ja": "- 仕事さ"
+                },
+                {
+                    "en": "Can’t right now.",
+                    "ja": "今は無理だ。"
+                },
+                {
+                    "en": "Can’t right now.",
+                    "ja": "今は無理だ。"
+                },
+                {
+                    "en": "I am working.",
+                    "ja": "仕事中です。"
+                },
+                {
+                    "en": "I am working.",
+                    "ja": "仕事中です。"
+                },
+                {
+                    "en": "Working.",
+                    "ja": "- 仕事さ"
+                },
+                {
+                    "en": "Can’t right now.",
+                    "ja": "今は無理だ。"
+                }
+            ]
+        }
+    },
+    "Plans & Timing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ja": "明日"
+                },
+                {
+                    "en": "Day",
+                    "ja": "日"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだです"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Later, okay.",
+                    "ja": "後でね、わかった。"
+                },
+                {
+                    "en": "Not yet.",
+                    "ja": "まだだ。"
+                },
+                {
+                    "en": "Already.",
+                    "ja": "既知"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Will",
+                    "ja": "意思"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I will go now.",
+                    "ja": "私が行きます。"
+                },
+                {
+                    "en": "I will go tomorrow.",
+                    "ja": "明日行きます。"
+                },
+                {
+                    "en": "Going later.",
+                    "ja": "後ほどお送りします。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Want",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Going to",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Going later.",
+                    "ja": "後ほどお送りします。"
+                },
+                {
+                    "en": "Going tomorrow.",
+                    "ja": "明日行きます。"
+                },
+                {
+                    "en": "I will go now.",
+                    "ja": "私が行きます。"
+                },
+                {
+                    "en": "I will go tomorrow.",
+                    "ja": "明日行きます。"
+                },
+                {
+                    "en": "Later, okay.",
+                    "ja": "後でね、わかった。"
+                }
+            ]
+        }
+    },
+    "Preferences & Choices": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Like",
+                    "ja": "好き"
+                },
+                {
+                    "en": "Want",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Choose",
+                    "ja": "選択"
+                },
+                {
+                    "en": "Which",
+                    "ja": "どれ"
+                },
+                {
+                    "en": "Different",
+                    "ja": "違う"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Other",
+                    "ja": "他の"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That one is different.",
+                    "ja": "あれは違う。"
+                },
+                {
+                    "en": "The other one.",
+                    "ja": "こっち"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose the other one.",
+                    "ja": "私はもう片方を選びます。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose the other one.",
+                    "ja": "私はもう片方を選びます。"
+                },
+                {
+                    "en": "I choose the other one.",
+                    "ja": "私はもう片方を選びます。"
+                },
+                {
+                    "en": "I want this one.",
+                    "ja": "こっちがいいな"
+                }
+            ]
+        }
+    },
+    "Food & Drink": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "Drink",
+                    "ja": "飲む"
+                },
+                {
+                    "en": "Hungry",
+                    "ja": "お腹が空いた"
+                },
+                {
+                    "en": "Thirsty",
+                    "ja": "喉が渇いている"
+                },
+                {
+                    "en": "Comfortable",
+                    "ja": "快適"
+                },
+                {
+                    "en": "Good",
+                    "ja": "快適"
+                },
+                {
+                    "en": "Tasty",
+                    "ja": "快適"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Food",
+                    "ja": "食べ物"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Want",
+                    "ja": "欲しい"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hungry.",
+                    "ja": "はらへった"
+                },
+                {
+                    "en": "Thirsty.",
+                    "ja": "飲み物が欲しい"
+                },
+                {
+                    "en": "This is good.",
+                    "ja": "いいことだよ」"
+                },
+                {
+                    "en": "This food is good.",
+                    "ja": "この食べ物はおいしいです。"
+                },
+                {
+                    "en": "That’s really good.",
+                    "ja": "- ジェーン？ - ホント気持ちいいね"
+                },
+                {
+                    "en": "I want to eat.",
+                    "ja": "それより"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Want",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Drink",
+                    "ja": "飲む"
+                },
+                {
+                    "en": "Beverage",
+                    "ja": "飲む"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m hungry.",
+                    "ja": "お腹が空きました。"
+                },
+                {
+                    "en": "I want to eat.",
+                    "ja": "それより"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m hungry.",
+                    "ja": "お腹が空きました。"
+                },
+                {
+                    "en": "I’m hungry.",
+                    "ja": "お腹が空きました。"
+                },
+                {
+                    "en": "I want to eat.",
+                    "ja": "それより"
+                },
+                {
+                    "en": "That’s really good.",
+                    "ja": "- ジェーン？ - ホント気持ちいいね"
+                }
+            ]
+        }
+    },
+    "This / That (Choosing)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Choose",
+                    "ja": "選択"
+                },
+                {
+                    "en": "Same",
+                    "ja": "同じ"
+                },
+                {
+                    "en": "Different",
+                    "ja": "違う"
+                },
+                {
+                    "en": "Which",
+                    "ja": "どれ"
+                },
+                {
+                    "en": "And",
+                    "ja": "および"
+                },
+                {
+                    "en": "Or",
+                    "ja": ""
+                },
+                {
+                    "en": "But",
+                    "ja": "しかし"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This.",
+                    "ja": "これだぜ。"
+                },
+                {
+                    "en": "That.",
+                    "ja": "− あれだ"
+                },
+                {
+                    "en": "The same one.",
+                    "ja": "同じやつだ。"
+                },
+                {
+                    "en": "The different one.",
+                    "ja": "違うやつだ。"
+                },
+                {
+                    "en": "This and that.",
+                    "ja": "あれやこれや"
+                },
+                {
+                    "en": "This or that.",
+                    "ja": "あれやこれや。"
+                },
+                {
+                    "en": "This but that.",
+                    "ja": "これだけだ。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I choose this.",
+                    "ja": "私はこれを選びます。"
+                },
+                {
+                    "en": "That is what you choose.",
+                    "ja": "- それがお望みなら"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Just the other one.",
+                    "ja": "こっち"
+                },
+                {
+                    "en": "Just the other one.",
+                    "ja": "こっち"
+                },
+                {
+                    "en": "I choose this.",
+                    "ja": "私はこれを選びます。"
+                },
+                {
+                    "en": "I choose this.",
+                    "ja": "私はこれを選びます。"
+                },
+                {
+                    "en": "Just this one.",
+                    "ja": "ここだけ"
+                },
+                {
+                    "en": "Just this one.",
+                    "ja": "ここだけ"
+                },
+                {
+                    "en": "That is what you choose.",
+                    "ja": "- それがお望みなら"
+                }
+            ]
+        }
+    },
+    "Going & Arriving": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                },
+                {
+                    "en": "Come",
+                    "ja": "来る"
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "来る"
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "着く"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Here",
+                    "ja": "ここ"
+                },
+                {
+                    "en": "There",
+                    "ja": "そこ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Already arrived.",
+                    "ja": "すでに到着しています。"
+                },
+                {
+                    "en": "Here.",
+                    "ja": "今すぐにだ。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Will",
+                    "ja": "意思"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I will go.",
+                    "ja": "私が行きます。"
+                },
+                {
+                    "en": "I have arrived.",
+                    "ja": "tsukimashita"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "Want",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Going to",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Pointing",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "here",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "this",
+                    "ja": "指さしてる？"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Heading out.",
+                    "ja": "- もう行く？"
+                },
+                {
+                    "en": "I will go.",
+                    "ja": "私が行きます。"
+                },
+                {
+                    "en": "I have arrived.",
+                    "ja": "tsukimashita"
+                },
+                {
+                    "en": "Arrived.",
+                    "ja": "もう着いた"
+                }
+            ]
+        }
+    },
+    "Places (Everyday)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "House",
+                    "ja": "家"
+                },
+                {
+                    "en": "Home",
+                    "ja": "家"
+                },
+                {
+                    "en": "Toilet",
+                    "ja": "トイレ"
+                },
+                {
+                    "en": "Bathroom",
+                    "ja": "浴室"
+                },
+                {
+                    "en": "Room",
+                    "ja": "部屋"
+                },
+                {
+                    "en": "Bedroom",
+                    "ja": "部屋"
+                },
+                {
+                    "en": "Kitchen",
+                    "ja": "台所"
+                },
+                {
+                    "en": "Bathroom",
+                    "ja": "浴室"
+                },
+                {
+                    "en": "Shop",
+                    "ja": "ショップ"
+                },
+                {
+                    "en": "Store",
+                    "ja": "ショップ"
+                },
+                {
+                    "en": "School",
+                    "ja": "学校"
+                },
+                {
+                    "en": "University",
+                    "ja": "大学"
+                },
+                {
+                    "en": "At",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "In",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "To",
+                    "ja": "宛先"
+                },
+                {
+                    "en": "Here",
+                    "ja": "ここ"
+                },
+                {
+                    "en": "There",
+                    "ja": "そこ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "At home.",
+                    "ja": "家で。"
+                },
+                {
+                    "en": "To the toilet.",
+                    "ja": "トイレでも"
+                },
+                {
+                    "en": "In the kitchen.",
+                    "ja": "- 帰ったよ、ハニー。"
+                },
+                {
+                    "en": "In the room.",
+                    "ja": "Heya no naka ni."
+                },
+                {
+                    "en": "At the shop.",
+                    "ja": "（＃店で）"
+                },
+                {
+                    "en": "At school.",
+                    "ja": "学校で"
+                },
+                {
+                    "en": "At the university.",
+                    "ja": "- ええ 大学の"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Mine & Yours": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Have",
+                    "ja": "持っている"
+                },
+                {
+                    "en": "Own",
+                    "ja": "持っている"
+                },
+                {
+                    "en": "Who",
+                    "ja": "誰"
+                },
+                {
+                    "en": "Whose",
+                    "ja": "誰"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That is yours.",
+                    "ja": "パトリック　どうぞ"
+                },
+                {
+                    "en": "Whose is this?",
+                    "ja": "これは誰のものですか。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Belong to",
+                    "ja": "あなたが所属するチーム"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is mine.",
+                    "ja": "これは 私のものだ"
+                },
+                {
+                    "en": "This belongs to me.",
+                    "ja": "この本は私のものだ。"
+                },
+                {
+                    "en": "That belongs to you.",
+                    "ja": "それはあなたのものです。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is mine.",
+                    "ja": "これは 私のものだ"
+                },
+                {
+                    "en": "This is mine.",
+                    "ja": "これは 私のものだ"
+                },
+                {
+                    "en": "That’s yours.",
+                    "ja": "- お前のだ"
+                },
+                {
+                    "en": "This belongs to me.",
+                    "ja": "この本は私のものだ。"
+                },
+                {
+                    "en": "That belongs to you.",
+                    "ja": "それはあなたのものです。"
+                }
+            ]
+        }
+    },
+    "Numbers (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Zero",
+                    "ja": "0"
+                },
+                {
+                    "en": "One",
+                    "ja": "一"
+                },
+                {
+                    "en": "Two",
+                    "ja": "二"
+                },
+                {
+                    "en": "Three",
+                    "ja": "三"
+                },
+                {
+                    "en": "Four",
+                    "ja": "四"
+                },
+                {
+                    "en": "Five",
+                    "ja": "五"
+                },
+                {
+                    "en": "Six",
+                    "ja": "六"
+                },
+                {
+                    "en": "Seven",
+                    "ja": "七"
+                },
+                {
+                    "en": "Eight",
+                    "ja": "八"
+                },
+                {
+                    "en": "Nine",
+                    "ja": "九"
+                },
+                {
+                    "en": "Ten",
+                    "ja": "十"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Numbers (11–100)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "tens",
+                    "ja": "電気刺激-経皮的"
+                },
+                {
+                    "en": "Eleven",
+                    "ja": "十一"
+                },
+                {
+                    "en": "Twelve",
+                    "ja": "十二"
+                },
+                {
+                    "en": "Thirteen",
+                    "ja": "十三"
+                },
+                {
+                    "en": "Fourteen",
+                    "ja": "十四"
+                },
+                {
+                    "en": "Fifteen",
+                    "ja": "十五"
+                },
+                {
+                    "en": "Sixteen",
+                    "ja": "十六"
+                },
+                {
+                    "en": "Seventeen",
+                    "ja": "十七"
+                },
+                {
+                    "en": "Eighteen",
+                    "ja": "十八"
+                },
+                {
+                    "en": "Nineteen",
+                    "ja": "十九"
+                },
+                {
+                    "en": "Twenty",
+                    "ja": "二十"
+                },
+                {
+                    "en": "Thirty",
+                    "ja": "三十"
+                },
+                {
+                    "en": "Forty",
+                    "ja": "四十"
+                },
+                {
+                    "en": "Fifty",
+                    "ja": "五十"
+                },
+                {
+                    "en": "One hundred",
+                    "ja": "100"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Time (Basic)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Day",
+                    "ja": "日"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Yesterday",
+                    "ja": "昨日"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ja": "明日"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Only",
+                    "ja": "これ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Today.",
+                    "ja": "今日"
+                },
+                {
+                    "en": "Now.",
+                    "ja": "ここを去れ。"
+                },
+                {
+                    "en": "Tomorrow is fine.",
+                    "ja": "明日は晴れです。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Places & Location": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "At",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "In",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "Here",
+                    "ja": "ここ"
+                },
+                {
+                    "en": "There",
+                    "ja": "そこ"
+                },
+                {
+                    "en": "Which",
+                    "ja": "どれ"
+                },
+                {
+                    "en": "Where",
+                    "ja": "どれ"
+                },
+                {
+                    "en": "Place",
+                    "ja": "場所"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Here.",
+                    "ja": "今すぐにだ。"
+                },
+                {
+                    "en": "There.",
+                    "ja": "ほうら。"
+                },
+                {
+                    "en": "Which place?",
+                    "ja": "どの場所ですか？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": []
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Existence & Availability": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Time",
+                    "ja": "時刻"
+                },
+                {
+                    "en": "Exist",
+                    "ja": "存在します"
+                },
+                {
+                    "en": "There is",
+                    "ja": "存在します"
+                },
+                {
+                    "en": "There is not",
+                    "ja": "しかし、現実的に見てその利点はありません。"
+                },
+                {
+                    "en": "None",
+                    "ja": "しかし、現実的に見てその利点はありません。"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                },
+                {
+                    "en": "Here",
+                    "ja": "ここ"
+                },
+                {
+                    "en": "There",
+                    "ja": "そこ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "It's here.",
+                    "ja": "え　それで　わざわざ？"
+                },
+                {
+                    "en": "There is none.",
+                    "ja": "そんなものは無い"
+                },
+                {
+                    "en": "There is time.",
+                    "ja": "And there is time."
+                },
+                {
+                    "en": "Not right now.",
+                    "ja": "後で設定します"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "There isn’t any.",
+                    "ja": "何もありません。"
+                }
+            ]
+        }
+    },
+    "So / That’s why (Jadi / Makanya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "So",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Then",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ja": "明日"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Oh",
+                    "ja": "あら"
+                },
+                {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "So",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Only",
+                    "ja": "これ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So, later.",
+                    "ja": "じゃあ、後で。"
+                },
+                {
+                    "en": "So tomorrow, okay.",
+                    "ja": "明日、いいですね。"
+                },
+                {
+                    "en": "Oh, so that’s how it is.",
+                    "ja": "その手に乗るか！"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "That’s why",
+                    "ja": "だからやだって！"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Tell",
+                    "ja": "遺丘"
+                },
+                {
+                    "en": "Say",
+                    "ja": "遺丘"
+                },
+                {
+                    "en": "Since earlier",
+                    "ja": "以前から"
+                },
+                {
+                    "en": "Don’t",
+                    "ja": "しないでください"
+                },
+                {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "That’s why I told you earlier.",
+                    "ja": "だからさっき言ったでしょ。"
+                },
+                {
+                    "en": "That’s why I told you earlier.",
+                    "ja": "だからさっき言ったでしょ。"
+                },
+                {
+                    "en": "That’s why don’t do that.",
+                    "ja": "だから、それをしないでください。"
+                },
+                {
+                    "en": "That’s why.",
+                    "ja": "そういうわけ"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                },
+                {
+                    "en": "First",
+                    "ja": "最初"
+                },
+                {
+                    "en": "Earlier",
+                    "ja": "最初"
+                },
+                {
+                    "en": "Wait",
+                    "ja": "待つ"
+                },
+                {
+                    "en": "Here",
+                    "ja": "ここ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So, I’ll go first.",
+                    "ja": "私が最初に行きます。"
+                },
+                {
+                    "en": "So, I’ll wait here.",
+                    "ja": "待ってるぞ"
+                }
+            ]
+        }
+    },
+    "But / Contrast (Tapi / Padahal)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Want",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "But",
+                    "ja": "しかし"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Even though",
+                    "ja": "「嫌なの…"
+                },
+                {
+                    "en": "But actually",
+                    "ja": "「嫌なの…"
+                },
+                {
+                    "en": "Close",
+                    "ja": "閉める"
+                },
+                {
+                    "en": "Near",
+                    "ja": "閉める"
+                },
+                {
+                    "en": "Tell",
+                    "ja": "遺丘"
+                },
+                {
+                    "en": "Say",
+                    "ja": "遺丘"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but later.",
+                    "ja": "そうしたいけど、後でね。"
+                },
+                {
+                    "en": "I can, but later.",
+                    "ja": "できますが、後ほど。"
+                },
+                {
+                    "en": "Even though it’s close.",
+                    "ja": "近くにいても。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but I’m tired.",
+                    "ja": "そうしたいのですが、疲れています。"
+                },
+                {
+                    "en": "I want to, but I’m tired.",
+                    "ja": "そうしたいのですが、疲れています。"
+                },
+                {
+                    "en": "But I already told you.",
+                    "ja": "すでにお話ししました。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I want to, but I can’t right now.",
+                    "ja": "そうしたいのですが、今はできません。"
+                },
+                {
+                    "en": "But I already told you.",
+                    "ja": "すでにお話ししました。"
+                }
+            ]
+        }
+    },
+    "Then / And then (Terus / Trus)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Then",
+                    "ja": "対応"
+                },
+                {
+                    "en": "And then",
+                    "ja": "対応"
+                },
+                {
+                    "en": "After that",
+                    "ja": "そのあとよ"
+                },
+                {
+                    "en": "And then",
+                    "ja": "そのあとよ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then?",
+                    "ja": "そして？"
+                },
+                {
+                    "en": "And then?",
+                    "ja": "そのアトは？"
+                },
+                {
+                    "en": "Then what?",
+                    "ja": "そしてどうするの?"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Then",
+                    "ja": "対応"
+                },
+                {
+                    "en": "How",
+                    "ja": "方法"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then what?",
+                    "ja": "そしてどうするの?"
+                },
+                {
+                    "en": "Then?",
+                    "ja": "そして？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Then",
+                    "ja": "対応"
+                },
+                {
+                    "en": "How",
+                    "ja": "どう"
+                },
+                {
+                    "en": "After that",
+                    "ja": "そのあとよ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Then what?",
+                    "ja": "そしてどうするの?"
+                },
+                {
+                    "en": "And then?",
+                    "ja": "そのアトは？"
+                }
+            ]
+        }
+    },
+    "Maybe / Probably (Mungkin / Kayaknya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Maybe",
+                    "ja": "多分"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Maybe later.",
+                    "ja": "- 後でね"
+                },
+                {
+                    "en": "Maybe.",
+                    "ja": "かもしれない。"
+                },
+                {
+                    "en": "Maybe.",
+                    "ja": "かもしれない。"
+                },
+                {
+                    "en": "Maybe not right now.",
+                    "ja": "今はね"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Probably",
+                    "ja": "多分"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I probably can’t.",
+                    "ja": "できないかもしれない。"
+                },
+                {
+                    "en": "I probably can’t.",
+                    "ja": "できないかもしれない。"
+                },
+                {
+                    "en": "Probably already.",
+                    "ja": "たぶんもう済んでいる。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Maybe I can.",
+                    "ja": "コーヒーかい？"
+                }
+            ]
+        }
+    },
+    "Agreeing & Disagreeing": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Agree",
+                    "ja": "同意する"
+                },
+                {
+                    "en": "Disagree",
+                    "ja": "そう思わない"
+                },
+                {
+                    "en": "But",
+                    "ja": "しかし"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Agree.",
+                    "ja": "同意する"
+                },
+                {
+                    "en": "Disagree.",
+                    "ja": "そう思わない"
+                },
+                {
+                    "en": "I agree, but later.",
+                    "ja": "同感ですが、後ほど。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Disagree",
+                    "ja": "そう思わない"
+                },
+                {
+                    "en": "Yeah.",
+                    "ja": "間違いない。"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I agree.",
+                    "ja": "同意します。"
+                },
+                {
+                    "en": "I disagree.",
+                    "ja": "反対です。"
+                },
+                {
+                    "en": "Yeah.",
+                    "ja": "間違いない。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I agree.",
+                    "ja": "同意します。"
+                },
+                {
+                    "en": "I disagree.",
+                    "ja": "反対です。"
+                }
+            ]
+        }
+    },
+    "Asking opinions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "According to",
+                    "ja": "によれば足り"
+                },
+                {
+                    "en": "In your opinion",
+                    "ja": "によれば足り"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "How",
+                    "ja": "どう"
+                },
+                {
+                    "en": "If",
+                    "ja": "状況"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?",
+                    "ja": "あなたはどう思いますか？"
+                },
+                {
+                    "en": "What do you think?",
+                    "ja": "あなたはどう思いますか？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "How",
+                    "ja": "方法"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?",
+                    "ja": "あなたはどう思いますか？"
+                },
+                {
+                    "en": "What do you think?",
+                    "ja": "あなたはどう思いますか？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What do you think?",
+                    "ja": "あなたはどう思いますか？"
+                },
+                {
+                    "en": "What do you think?",
+                    "ja": "あなたはどう思いますか？"
+                }
+            ]
+        }
+    },
+    "Softening (Agak / Kayak / Lumayan)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "A bit",
+                    "ja": "ああ"
+                },
+                {
+                    "en": "Not bad",
+                    "ja": "ミチコ"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Expensive",
+                    "ja": "高い"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "A bit tired.",
+                    "ja": "少し疲れました。"
+                },
+                {
+                    "en": "Not bad.",
+                    "ja": "まあまあです。"
+                },
+                {
+                    "en": "A bit expensive.",
+                    "ja": "ちょっと高いですね。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Like",
+                    "ja": "いいね"
+                },
+                {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "(softener)",
+                    "ja": "（柔軟剤）"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Like that.",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "A bit tired.",
+                    "ja": "少し疲れました。"
+                },
+                {
+                    "en": "Not bad.",
+                    "ja": "まあまあです。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Quite",
+                    "ja": "かなり"
+                },
+                {
+                    "en": "Good",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Fine",
+                    "ja": "良い"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Pretty good.",
+                    "ja": "(ゆべし)　いいねえ"
+                },
+                {
+                    "en": "I’m quite tired.",
+                    "ja": "私はかなり疲れています。"
+                }
+            ]
+        }
+    },
+    "Wait / Hold on (Bentar / Tunggu)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Wait",
+                    "ja": "待つ"
+                },
+                {
+                    "en": "A moment",
+                    "ja": "お待ちを"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Wait a moment.",
+                    "ja": "ちょっと待って。"
+                },
+                {
+                    "en": "One sec, okay.",
+                    "ja": "ちょっと待ってください、わかりました。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "A sec",
+                    "ja": ""
+                },
+                {
+                    "en": "First",
+                    "ja": "最初"
+                },
+                {
+                    "en": "Earlier",
+                    "ja": "最初"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "One sec, okay.",
+                    "ja": "ちょっと待ってください、わかりました。"
+                },
+                {
+                    "en": "Wait a sec.",
+                    "ja": "ちょっと待て。"
+                },
+                {
+                    "en": "Hold on.",
+                    "ja": "少々お待ちください。"
+                },
+                {
+                    "en": "Hold on.",
+                    "ja": "少々お待ちください。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ja": "お願いします"
+                },
+                {
+                    "en": "Kindly",
+                    "ja": "お願いします"
+                },
+                {
+                    "en": "Excuse me",
+                    "ja": "すみません"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Please wait a moment.",
+                    "ja": "しばらくお待ちください。"
+                },
+                {
+                    "en": "Excuse me, wait a moment.",
+                    "ja": "ちょっと失礼します。"
+                }
+            ]
+        }
+    },
+    "Clarifying (Maksudku…)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "The meaning",
+                    "ja": "意味"
+                },
+                {
+                    "en": "I mean",
+                    "ja": "意味"
+                },
+                {
+                    "en": "Like this",
+                    "ja": "こういう風に"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this.",
+                    "ja": "これは..."
+                },
+                {
+                    "en": "I mean, not that.",
+                    "ja": "あんな大きいのはな"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I mean",
+                    "ja": "つまり"
+                },
+                {
+                    "en": "Like this",
+                    "ja": "こういう風に"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this.",
+                    "ja": "これは..."
+                },
+                {
+                    "en": "I mean, not that.",
+                    "ja": "あんな大きいのはな"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I mean",
+                    "ja": "つまり"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I mean this.",
+                    "ja": "これは..."
+                },
+                {
+                    "en": "I mean, not that.",
+                    "ja": "あんな大きいのはな"
+                }
+            ]
+        }
+    },
+    "Repeat / Slower": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Repeat",
+                    "ja": "繰り返し"
+                },
+                {
+                    "en": "One more time",
+                    "ja": "もう一回。"
+                },
+                {
+                    "en": "Slowly",
+                    "ja": "遅く"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you say it again?",
+                    "ja": "もう一度言ってもらえますか？"
+                },
+                {
+                    "en": "One more time.",
+                    "ja": "もう一回。"
+                },
+                {
+                    "en": "Slower, please.",
+                    "ja": "もっとゆっくりお願いします。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Please",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Say it again.",
+                    "ja": "もう一度言って。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Please",
+                    "ja": "お願いします"
+                },
+                {
+                    "en": "Kindly",
+                    "ja": "お願いします"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Can you say it again?",
+                    "ja": "もう一度言ってもらえますか？"
+                },
+                {
+                    "en": "Slower, please.",
+                    "ja": "もっとゆっくりお願いします。"
+                }
+            ]
+        }
+    },
+    "Accepting & Declining": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Sure",
+                    "ja": "もちろん"
+                },
+                {
+                    "en": "Allowed",
+                    "ja": "もちろん"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Only",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Another time",
+                    "ja": "はあ... また今度"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                },
+                {
+                    "en": "Maybe",
+                    "ja": "多分"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Sure.",
+                    "ja": "もちろんできるだろう。"
+                },
+                {
+                    "en": "Later.",
+                    "ja": "元気でな。"
+                },
+                {
+                    "en": "Another time, okay.",
+                    "ja": "ええ　今度ね　いい？"
+                },
+                {
+                    "en": "Maybe another time.",
+                    "ja": "また今度ね"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not right now",
+                    "ja": "後で設定します"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not right now.",
+                    "ja": "後で設定します"
+                },
+                {
+                    "en": "Later.",
+                    "ja": "元気でな。"
+                },
+                {
+                    "en": "Another time.",
+                    "ja": "- また今度"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Sorry",
+                    "ja": "すみません"
+                },
+                {
+                    "en": "Excuse me",
+                    "ja": "すみません"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Sorry, I can’t right now.",
+                    "ja": "申し訳ありませんが、今はできません。"
+                }
+            ]
+        }
+    },
+    "Messaging Basics": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Where",
+                    "ja": "どこ"
+                },
+                {
+                    "en": "Now",
+                    "ja": "今"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?",
+                    "ja": "どこにいる？"
+                },
+                {
+                    "en": "Where are you now?",
+                    "ja": "今どこにいるの？"
+                },
+                {
+                    "en": "Where are you?",
+                    "ja": "どこにいる？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "On my way",
+                    "ja": "今向かっている"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "At home",
+                    "ja": "自宅"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "はい"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?",
+                    "ja": "どこにいる？"
+                },
+                {
+                    "en": "On my way.",
+                    "ja": "- すぐに行きます"
+                },
+                {
+                    "en": "On my way.",
+                    "ja": "- すぐに行きます"
+                },
+                {
+                    "en": "I’m at home.",
+                    "ja": "私は家にいます。"
+                },
+                {
+                    "en": "I’m at home.",
+                    "ja": "私は家にいます。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "On the way",
+                    "ja": "途中で"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Where are you?",
+                    "ja": "どこにいる？"
+                },
+                {
+                    "en": "I’m on my way.",
+                    "ja": "すぐに向かう。"
+                }
+            ]
+        }
+    },
+    "Chat Softeners": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                }
+            ],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Hurry up",
+                    "ja": "- よし　急げ"
+                },
+                {
+                    "en": "Like this",
+                    "ja": "こういう風に"
+                },
+                {
+                    "en": "Pointing",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "here",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "this",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "Surprise",
+                    "ja": "サプライズ"
+                },
+                {
+                    "en": "how come? tone",
+                    "ja": "サプライズ"
+                },
+                {
+                    "en": "Urging",
+                    "ja": "促す"
+                },
+                {
+                    "en": "come on",
+                    "ja": "促す"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                },
+                {
+                    "en": "Pointing",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "there",
+                    "ja": "指さしてる？"
+                },
+                {
+                    "en": "see?",
+                    "ja": "指さしてる？"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Like this.",
+                    "ja": "- こうするの。"
+                },
+                {
+                    "en": "How come?",
+                    "ja": "どう し て ?"
+                },
+                {
+                    "en": "Hurry up.",
+                    "ja": "急いで。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Text Abbreviations": {
+        "neutral": {
+            "words": [],
+            "sentences": []
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me (Jakarta slang)",
+                    "ja": "私（ジャカルタのスラング）"
+                },
+                {
+                    "en": "It’s okay",
+                    "ja": "大丈夫です"
+                },
+                {
+                    "en": "No problem",
+                    "ja": "大丈夫です"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだです"
+                },
+                {
+                    "en": "On my way",
+                    "ja": "今向かっている"
+                },
+                {
+                    "en": "Laughing",
+                    "ja": "笑い"
+                },
+                {
+                    "en": "Surprise",
+                    "ja": "サプライズ"
+                },
+                {
+                    "en": "how come? tone",
+                    "ja": "サプライズ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "It’s okay.",
+                    "ja": "大丈夫です。"
+                },
+                {
+                    "en": "Haha.",
+                    "ja": "あはは。"
+                },
+                {
+                    "en": "I’m on my way.",
+                    "ja": "すぐに向かう。"
+                },
+                {
+                    "en": "I’m on my way.",
+                    "ja": "すぐに向かう。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Daily Small Talk (Chat)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだです"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "ja": "何をしているの？"
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ja": "ごはん食べたの？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "You (Jakarta slang)",
+                    "ja": "あなた（ジャカルタのスラング）"
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ja": "あなた（ジャカルタのスラング）"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Have you eaten yet?",
+                    "ja": "ごはん食べたの？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ja": "かどうか"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Have you eaten yet?",
+                    "ja": "ごはん食べたの？"
+                }
+            ]
+        }
+    },
+    "Hangout Planning (Texting)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
+                },
+                {
+                    "en": "Hang out",
+                    "ja": "座らない？"
+                },
+                {
+                    "en": "What time",
+                    "ja": "何時"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us hang out.",
+                    "ja": "ぶらぶらしましょう。"
+                },
+                {
+                    "en": "What time?",
+                    "ja": "何時にきましょうか。"
+                },
+                {
+                    "en": "Later.",
+                    "ja": "元気でな。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us hang out.",
+                    "ja": "ぶらぶらしましょう。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
+                },
+                {
+                    "en": "We",
+                    "ja": "私たち"
+                },
+                {
+                    "en": "Us",
+                    "ja": "私たち"
+                },
+                {
+                    "en": "Meet",
+                    "ja": "会う"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us meet.",
+                    "ja": "お会いしましょう"
+                }
+            ]
+        }
+    },
+    "Emotions & Empathy": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Fun",
+                    "ja": "楽しい"
+                },
+                {
+                    "en": "Exciting",
+                    "ja": "楽しい"
+                },
+                {
+                    "en": "Bored",
+                    "ja": "退屈な感じ"
+                },
+                {
+                    "en": "Pitiful",
+                    "ja": "かわいそうに..."
+                },
+                {
+                    "en": "Poor thing",
+                    "ja": "かわいそうに..."
+                },
+                {
+                    "en": "Oh no",
+                    "ja": "あぁ、いや…"
+                },
+                {
+                    "en": "Wow",
+                    "ja": "あぁ、いや…"
+                },
+                {
+                    "en": "Oh dear",
+                    "ja": "「あらあら」"
+                },
+                {
+                    "en": "Oh my",
+                    "ja": "あぁ君からそんな..."
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So fun.",
+                    "ja": "楽しかったですね。"
+                },
+                {
+                    "en": "So bored.",
+                    "ja": "ああ　退屈..."
+                },
+                {
+                    "en": "Poor thing.",
+                    "ja": "- かわいそうに"
+                },
+                {
+                    "en": "Oh no!",
+                    "ja": "やめて！"
+                },
+                {
+                    "en": "Oh dear.",
+                    "ja": "そんな！"
+                },
+                {
+                    "en": "Oh my.",
+                    "ja": "なんてこった。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Nervous",
+                    "ja": "神経質"
+                },
+                {
+                    "en": "Miss",
+                    "ja": ""
+                },
+                {
+                    "en": "Annoyed",
+                    "ja": "腹が立つ"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                },
+                {
+                    "en": "How",
+                    "ja": "方法"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I am bored.",
+                    "ja": "退屈しちゃったよ。"
+                },
+                {
+                    "en": "I am nervous.",
+                    "ja": "緊張する"
+                },
+                {
+                    "en": "I am nervous.",
+                    "ja": "緊張する"
+                },
+                {
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
+                },
+                {
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
+                },
+                {
+                    "en": "I am annoyed.",
+                    "ja": "イライラしています。"
+                },
+                {
+                    "en": "I am annoyed.",
+                    "ja": "イライラしています。"
+                },
+                {
+                    "en": "How about it?",
+                    "ja": "どう？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Nervous",
+                    "ja": "神経質"
+                },
+                {
+                    "en": "Miss",
+                    "ja": ""
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I am bored.",
+                    "ja": "退屈しちゃったよ。"
+                },
+                {
+                    "en": "I am nervous.",
+                    "ja": "緊張する"
+                },
+                {
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
+                }
+            ]
+        }
+    },
+    "Sharing News": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Know",
+                    "ja": "知っている"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Hear",
+                    "ja": "聞く"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "You know what?",
+                    "ja": "聞いてよ。"
+                },
+                {
+                    "en": "Did you hear?",
+                    "ja": "- ええ　聞いてる？"
+                },
+                {
+                    "en": "Hey, you know what?",
+                    "ja": "ねえねえ、知ってる。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Hey",
+                    "ja": "kitakasa mikono"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "You know what?",
+                    "ja": "聞いてよ。"
+                },
+                {
+                    "en": "You know what?",
+                    "ja": "聞いてよ。"
+                },
+                {
+                    "en": "Did you hear?",
+                    "ja": "- ええ　聞いてる？"
+                },
+                {
+                    "en": "Hey, you know what?",
+                    "ja": "ねえねえ、知ってる。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Compliments": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Cool",
+                    "ja": "かっこいい"
+                },
+                {
+                    "en": "Awesome",
+                    "ja": "かっこいい"
+                },
+                {
+                    "en": "Awesome",
+                    "ja": "素晴らしい"
+                },
+                {
+                    "en": "Good",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Nice",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Fun",
+                    "ja": "楽しい"
+                },
+                {
+                    "en": "Cool",
+                    "ja": "楽しい"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "So cool.",
+                    "ja": "完璧よ"
+                },
+                {
+                    "en": "Awesome!",
+                    "ja": "とても元気だよ！"
+                },
+                {
+                    "en": "Really good.",
+                    "ja": "とっても良いわ"
+                },
+                {
+                    "en": "So fun.",
+                    "ja": "楽しかったですね。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [],
+            "sentences": [
+                {
+                    "en": "So cool.",
+                    "ja": "完璧よ"
+                },
+                {
+                    "en": "Really awesome.",
+                    "ja": "やった"
+                },
+                {
+                    "en": "Really awesome.",
+                    "ja": "やった"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": [
+                {
+                    "en": "Very good.",
+                    "ja": "- いいぞ"
+                }
+            ]
+        }
+    },
+    "Frequency & Habits": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Often",
+                    "ja": "よく"
+                },
+                {
+                    "en": "Rarely",
+                    "ja": "稀に"
+                },
+                {
+                    "en": "Sometimes",
+                    "ja": "時々"
+                },
+                {
+                    "en": "Sometimes",
+                    "ja": "時々"
+                },
+                {
+                    "en": "Usually",
+                    "ja": "普通"
+                },
+                {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Often.",
+                    "ja": "［君が私を捕まえるまで・・・］"
+                },
+                {
+                    "en": "Rarely.",
+                    "ja": "稀に"
+                },
+                {
+                    "en": "Sometimes.",
+                    "ja": "免除される場合もあります。"
+                },
+                {
+                    "en": "Usually like that.",
+                    "ja": "通常はそうです。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "To",
+                    "ja": "宛先"
+                },
+                {
+                    "en": "Here",
+                    "ja": "ここ"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I often come here.",
+                    "ja": "よくここに来ます。"
+                },
+                {
+                    "en": "Really rarely.",
+                    "ja": "めったにありません。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "To",
+                    "ja": "宛先"
+                },
+                {
+                    "en": "Here",
+                    "ja": "ここ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I often come here.",
+                    "ja": "よくここに来ます。"
+                }
+            ]
+        }
+    },
+    "Casual Venting": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Traffic jam",
+                    "ja": "渋滞"
+                },
+                {
+                    "en": "Hot",
+                    "ja": "暑い"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "Really",
+                    "ja": "とても"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible.",
+                    "ja": "渋滞がひどい。"
+                },
+                {
+                    "en": "So hot.",
+                    "ja": "とてもホットだった"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible.",
+                    "ja": "渋滞がひどい。"
+                },
+                {
+                    "en": "So hot.",
+                    "ja": "とてもホットだった"
+                },
+                {
+                    "en": "Tired from work.",
+                    "ja": "仕事に疲れている。"
+                },
+                {
+                    "en": "Tired from work.",
+                    "ja": "仕事に疲れている。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Traffic is terrible.",
+                    "ja": "渋滞がひどい。"
+                },
+                {
+                    "en": "Tired from work.",
+                    "ja": "仕事に疲れている。"
+                }
+            ]
+        }
+    },
+    "Topic Shift": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Oh right",
+                    "ja": "オッケー。"
+                },
+                {
+                    "en": "By the way",
+                    "ja": "オッケー。"
+                },
+                {
+                    "en": "By the way",
+                    "ja": "あのさ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh right.",
+                    "ja": "オッケー。"
+                },
+                {
+                    "en": "By the way.",
+                    "ja": "ところで"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Hey",
+                    "ja": "kitakasa mikono"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Hey by the way.",
+                    "ja": "ところで"
+                },
+                {
+                    "en": "Hey by the way.",
+                    "ja": "ところで"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "Casual Pushback": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Also",
+                    "ja": "また"
+                },
+                {
+                    "en": "Either",
+                    "ja": "また"
+                },
+                {
+                    "en": "How come",
+                    "ja": "どうしてだろう？"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Really",
+                    "ja": "本当に"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Oh not really.",
+                    "ja": "そうは思えない。"
+                },
+                {
+                    "en": "How come?",
+                    "ja": "どう し て ?"
+                },
+                {
+                    "en": "Really?",
+                    "ja": "そうなの？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Hey",
+                    "ja": "kitakasa mikono"
+                },
+                {
+                    "en": "Oh",
+                    "ja": "あら"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Not really.",
+                    "ja": "そうでもない。"
+                }
+            ]
+        }
+    },
+    "As / Like (Kayak / Seperti / Maksudnya)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Like",
+                    "ja": "好き"
+                },
+                {
+                    "en": "As",
+                    "ja": "好き"
+                },
+                {
+                    "en": "Earlier",
+                    "ja": "先の"
+                },
+                {
+                    "en": "Before",
+                    "ja": "先の"
+                },
+                {
+                    "en": "Like",
+                    "ja": "好き"
+                },
+                {
+                    "en": "As",
+                    "ja": "好き"
+                },
+                {
+                    "en": "I mean",
+                    "ja": "つまり"
+                },
+                {
+                    "en": "As in",
+                    "ja": "つまり"
+                },
+                {
+                    "en": "As (a)",
+                    "ja": "製品イノベーターとして、"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                },
+                {
+                    "en": "How",
+                    "ja": "方法"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As before.",
+                    "ja": "前と同じだ"
+                },
+                {
+                    "en": "Like before.",
+                    "ja": "前みたいに。"
+                },
+                {
+                    "en": "What do you mean?",
+                    "ja": "どういう意味だ？"
+                },
+                {
+                    "en": "As a friend.",
+                    "ja": "友達として"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Seems like",
+                    "ja": "のように思える"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Which",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Say",
+                    "ja": "言う"
+                },
+                {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As you said.",
+                    "ja": "おっしゃるとおりです。"
+                },
+                {
+                    "en": "As you said.",
+                    "ja": "おっしゃるとおりです。"
+                },
+                {
+                    "en": "Seems like that.",
+                    "ja": "そうみたいですね。"
+                },
+                {
+                    "en": "Seems like that.",
+                    "ja": "そうみたいですね。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "Which",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Say",
+                    "ja": "言う"
+                },
+                {
+                    "en": "How",
+                    "ja": "どう"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "As you said.",
+                    "ja": "おっしゃるとおりです。"
+                },
+                {
+                    "en": "What do you mean?",
+                    "ja": "どういう意味だ？"
+                }
+            ]
+        }
+    },
+    "Relationships (Family & Friends)": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Family",
+                    "ja": "家族"
+                },
+                {
+                    "en": "Parents",
+                    "ja": "両親"
+                },
+                {
+                    "en": "Mother",
+                    "ja": "母"
+                },
+                {
+                    "en": "Father",
+                    "ja": "父"
+                },
+                {
+                    "en": "Older sibling",
+                    "ja": "年上の兄弟姉妹"
+                },
+                {
+                    "en": "Older sibling",
+                    "ja": "年上の兄弟姉妹"
+                },
+                {
+                    "en": "Younger sibling",
+                    "ja": "弟"
+                },
+                {
+                    "en": "Younger sibling",
+                    "ja": "弟"
+                },
+                {
+                    "en": "Sibling",
+                    "ja": "兄妹"
+                },
+                {
+                    "en": "Relative",
+                    "ja": "兄妹"
+                },
+                {
+                    "en": "Know (someone)",
+                    "ja": "（誰か）を知る"
+                },
+                {
+                    "en": "Close",
+                    "ja": "閉める"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                },
+                {
+                    "en": "New",
+                    "ja": "新しい"
+                },
+                {
+                    "en": "Just",
+                    "ja": "新しい"
+                },
+                {
+                    "en": "Long time",
+                    "ja": "- おひさ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Family.",
+                    "ja": "家族"
+                },
+                {
+                    "en": "Parents.",
+                    "ja": "保護者"
+                },
+                {
+                    "en": "Close friend.",
+                    "ja": "親友だ"
+                },
+                {
+                    "en": "Just met.",
+                    "ja": "会ったばかりだ。"
+                },
+                {
+                    "en": "Known each other a long time.",
+                    "ja": "昔からお互いをよく知ってる"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Have",
+                    "ja": "持っている"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "We",
+                    "ja": "私たち"
+                },
+                {
+                    "en": "He",
+                    "ja": "彼"
+                },
+                {
+                    "en": "She",
+                    "ja": "彼"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My family.",
+                    "ja": "「家族です」"
+                },
+                {
+                    "en": "My parents.",
+                    "ja": "僕の両親"
+                },
+                {
+                    "en": "They're my friend.",
+                    "ja": "彼らは私の友達です。"
+                },
+                {
+                    "en": "We just met.",
+                    "ja": "今、会ったばかりよ。"
+                },
+                {
+                    "en": "We've known each other a long time.",
+                    "ja": "昔からお互いをよく知ってる"
+                },
+                {
+                    "en": "I have an older sibling.",
+                    "ja": "私には兄がいます。"
+                },
+                {
+                    "en": "I have an older sibling.",
+                    "ja": "私には兄がいます。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "I",
+                    "ja": "x"
+                },
+                {
+                    "en": "Mum",
+                    "ja": "母親"
+                },
+                {
+                    "en": "Close",
+                    "ja": "閉じる"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                },
+                {
+                    "en": "Be friends",
+                    "ja": "友達になる"
+                },
+                {
+                    "en": "Get to know each other",
+                    "ja": "お互いを知る事"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Love",
+                    "ja": "愛する"
+                },
+                {
+                    "en": "Care for",
+                    "ja": "愛する"
+                },
+                {
+                    "en": "Miss (someone)",
+                    "ja": "ミス（誰か）"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "We",
+                    "ja": "私たち"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "My family.",
+                    "ja": "「家族です」"
+                },
+                {
+                    "en": "My parents.",
+                    "ja": "僕の両親"
+                },
+                {
+                    "en": "They're a close friend of mine.",
+                    "ja": "彼らは私の親友です。"
+                },
+                {
+                    "en": "We're just friends.",
+                    "ja": "-- ただの友達だからな"
+                },
+                {
+                    "en": "Just met.",
+                    "ja": "会ったばかりだ。"
+                },
+                {
+                    "en": "Known each other for ages.",
+                    "ja": "マリさんとは 古い付き合いなんだ"
+                },
+                {
+                    "en": "I care about you.",
+                    "ja": "そんなの関係ない"
+                },
+                {
+                    "en": "Miss you.",
+                    "ja": "さみしいよ"
+                }
+            ]
+        }
+    },
+    "Couple Talk": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Love",
+                    "ja": "愛する"
+                },
+                {
+                    "en": "Dear",
+                    "ja": "愛する"
+                },
+                {
+                    "en": "Beautiful",
+                    "ja": "美しい"
+                },
+                {
+                    "en": "Handsome",
+                    "ja": "ハンサム"
+                },
+                {
+                    "en": "Miss (someone)",
+                    "ja": "ミス（誰か）"
+                },
+                {
+                    "en": "Good",
+                    "ja": "良い"
+                },
+                {
+                    "en": "Morning",
+                    "ja": "朝"
+                },
+                {
+                    "en": "Night",
+                    "ja": "夜"
+                },
+                {
+                    "en": "Sleep",
+                    "ja": "寝る"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "Be careful",
+                    "ja": "気をつけて"
+                },
+                {
+                    "en": "Road",
+                    "ja": "道路"
+                },
+                {
+                    "en": "Way",
+                    "ja": "道路"
+                },
+                {
+                    "en": "Don't",
+                    "ja": "使わない"
+                },
+                {
+                    "en": "Forget",
+                    "ja": "忘れる"
+                },
+                {
+                    "en": "At",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "In",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "On",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "Rest",
+                    "ja": "休む"
+                },
+                {
+                    "en": "Meet",
+                    "ja": "会う"
+                },
+                {
+                    "en": "Tomorrow",
+                    "ja": "明日"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Want",
+                    "ja": "欲しい"
+                },
+                {
+                    "en": "Where to",
+                    "ja": "どこへ？"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Beautiful.",
+                    "ja": "美しいわ。"
+                },
+                {
+                    "en": "Handsome.",
+                    "ja": "凛々しいわね"
+                },
+                {
+                    "en": "Miss you.",
+                    "ja": "さみしいよ"
+                },
+                {
+                    "en": "Good morning.",
+                    "ja": "おはようございます。"
+                },
+                {
+                    "en": "Good evening.",
+                    "ja": "いらっしゃいませ。"
+                },
+                {
+                    "en": "Good night.",
+                    "ja": "おやすみなさい。"
+                },
+                {
+                    "en": "Don't forget to eat.",
+                    "ja": "食べることを忘れないでください。"
+                },
+                {
+                    "en": "Be careful on the road.",
+                    "ja": "運転中は気をつけてください。"
+                },
+                {
+                    "en": "Rest, okay?",
+                    "ja": "休んでくれ、いいか？"
+                },
+                {
+                    "en": "Sleep first, okay?",
+                    "ja": "まずは寝るんだ、いいか？"
+                },
+                {
+                    "en": "See you later?",
+                    "ja": "また後で。"
+                },
+                {
+                    "en": "See you tomorrow.",
+                    "ja": "それじゃまた明日。"
+                },
+                {
+                    "en": "Where are you going?",
+                    "ja": "どちらへ行きますか？"
+                },
+                {
+                    "en": "Can you tomorrow?",
+                    "ja": "明日できますか？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Love",
+                    "ja": "愛する"
+                },
+                {
+                    "en": "Long for",
+                    "ja": ""
+                },
+                {
+                    "en": "Miss",
+                    "ja": ""
+                },
+                {
+                    "en": "Happy",
+                    "ja": "幸せ"
+                },
+                {
+                    "en": "We",
+                    "ja": "私たち"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I care about you.",
+                    "ja": "そんなの関係ない"
+                },
+                {
+                    "en": "I love you.",
+                    "ja": "愛しています。"
+                },
+                {
+                    "en": "You're beautiful.",
+                    "ja": "- あげるわ"
+                },
+                {
+                    "en": "You're handsome.",
+                    "ja": "-ハンサム野朗だ!"
+                },
+                {
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
+                },
+                {
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
+                },
+                {
+                    "en": "Nice to meet you.",
+                    "ja": "お会いできて嬉しいです。"
+                },
+                {
+                    "en": "Don't forget to eat, okay?",
+                    "ja": "食べるのを忘れないでね？"
+                },
+                {
+                    "en": "Let us meet tomorrow, okay?",
+                    "ja": "明日会いましょう、いいですか？"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "I",
+                    "ja": "x"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなたは"
+                },
+                {
+                    "en": "My love",
+                    "ja": "マイ・ラヴ"
+                },
+                {
+                    "en": "My dear",
+                    "ja": "マイ・ラヴ"
+                },
+                {
+                    "en": "Love",
+                    "ja": "愛する"
+                },
+                {
+                    "en": "Babe",
+                    "ja": "ベイブ"
+                },
+                {
+                    "en": "Long for",
+                    "ja": ""
+                },
+                {
+                    "en": "Miss",
+                    "ja": ""
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Doing",
+                    "ja": "進行中"
+                },
+                {
+                    "en": "Right now",
+                    "ja": "進行中"
+                },
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "Want",
+                    "ja": "ワント"
+                },
+                {
+                    "en": "Happy",
+                    "ja": "幸せ"
+                },
+                {
+                    "en": "Very",
+                    "ja": "とても"
+                },
+                {
+                    "en": "So",
+                    "ja": "とても"
+                },
+                {
+                    "en": "With",
+                    "ja": "あり"
+                },
+                {
+                    "en": "Pick up",
+                    "ja": "納車日"
+                },
+                {
+                    "en": "Chat",
+                    "ja": "チャット"
+                },
+                {
+                    "en": "Call",
+                    "ja": "電話する"
+                },
+                {
+                    "en": "Waiting for",
+                    "ja": "Wi-Fi に再接続しています"
+                },
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Yeah",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "First",
+                    "ja": "最初"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I care about you.",
+                    "ja": "そんなの関係ない"
+                },
+                {
+                    "en": "I care about you.",
+                    "ja": "そんなの関係ない"
+                },
+                {
+                    "en": "I love you.",
+                    "ja": "愛しています。"
+                },
+                {
+                    "en": "Love you.",
+                    "ja": "- 大好き"
+                },
+                {
+                    "en": "My love.",
+                    "ja": "よろしく"
+                },
+                {
+                    "en": "So beautiful.",
+                    "ja": "すごく綺麗"
+                },
+                {
+                    "en": "So handsome.",
+                    "ja": "とてもハンサム。"
+                },
+                {
+                    "en": "Miss you so much.",
+                    "ja": "あなたがとても恋しい。"
+                },
+                {
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
+                },
+                {
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
+                },
+                {
+                    "en": "Have you eaten?",
+                    "ja": "食べたことあるの？"
+                },
+                {
+                    "en": "What are you doing?",
+                    "ja": "何をしているの？"
+                },
+                {
+                    "en": "Have you slept?",
+                    "ja": "ぼろぼろだぞ"
+                },
+                {
+                    "en": "Good morning love.",
+                    "ja": "おはよう愛"
+                },
+                {
+                    "en": "Good evening love.",
+                    "ja": "いらっしゃいませ。"
+                },
+                {
+                    "en": "Good night love.",
+                    "ja": "お別れよ"
+                },
+                {
+                    "en": "Don't forget to eat, okay?",
+                    "ja": "食べるのを忘れないでね？"
+                },
+                {
+                    "en": "Be careful on the road, okay?",
+                    "ja": "道路には気をつけてね？"
+                },
+                {
+                    "en": "Pick me up, okay?",
+                    "ja": "迎えに来てくれないか？"
+                },
+                {
+                    "en": "Want to see you.",
+                    "ja": "私はあなたにお会いしたい。"
+                },
+                {
+                    "en": "So happy with you.",
+                    "ja": "あなたにとても満足しています。"
+                },
+                {
+                    "en": "I will chat you later, okay?",
+                    "ja": "多分　後で電話する　いい？"
+                },
+                {
+                    "en": "I will call you later, okay?",
+                    "ja": "多分　後で電話する　いい？"
+                },
+                {
+                    "en": "Waiting for you, okay?",
+                    "ja": "待っています"
+                },
+                {
+                    "en": "Bye love.",
+                    "ja": "さようなら。"
+                }
+            ]
+        }
+    },
+    "Conditions": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "If",
+                    "ja": "状況"
+                },
+                {
+                    "en": "Hungry",
+                    "ja": "お腹が空いた"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Exist",
+                    "ja": "存在します"
+                },
+                {
+                    "en": "There is",
+                    "ja": "存在します"
+                },
+                {
+                    "en": "Time",
+                    "ja": "時刻"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Later",
+                    "ja": "後で"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "Possible",
+                    "ja": "可能な"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If hungry.",
+                    "ja": "お腹が空いたら。"
+                },
+                {
+                    "en": "If tired.",
+                    "ja": "疲れている場合。"
+                },
+                {
+                    "en": "If there is time.",
+                    "ja": "生きていられたら"
+                },
+                {
+                    "en": "If able.",
+                    "ja": "可能であれば。"
+                },
+                {
+                    "en": "If able, later.",
+                    "ja": "可能であれば、後ほど。"
+                },
+                {
+                    "en": "If hungry, eat.",
+                    "ja": "お腹が空いたら、食べましょう。"
+                },
+                {
+                    "en": "If tired, later.",
+                    "ja": "疲れたら後で。"
+                },
+                {
+                    "en": "If possible.",
+                    "ja": "可能であればの話だ"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Yeah",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                }
+            ],
+            "sentences": []
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "If",
+                    "ja": "状況"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Be able to",
+                    "ja": "できる"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "If there is time.",
+                    "ja": "生きていられたら"
+                },
+                {
+                    "en": "If possible.",
+                    "ja": "可能であればの話だ"
+                },
+                {
+                    "en": "If able.",
+                    "ja": "可能であれば。"
+                }
+            ]
+        }
+    },
+    "Moments": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "when",
+                    "ja": "いつ"
+                },
+                {
+                    "en": "At the moment",
+                    "ja": "いつ"
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "着く"
+                },
+                {
+                    "en": "Hungry",
+                    "ja": "お腹が空いた"
+                },
+                {
+                    "en": "Start",
+                    "ja": "始める"
+                },
+                {
+                    "en": "Okay",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Yes",
+                    "ja": "わかりました"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Eat when you’re hungry.",
+                    "ja": "お腹が空いたら食べましょう。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let me know",
+                    "ja": "ご一報ください。"
+                },
+                {
+                    "en": "Tell",
+                    "ja": "遺丘"
+                },
+                {
+                    "en": "Say",
+                    "ja": "遺丘"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let me know when you arrive.",
+                    "ja": "到着したらお知らせください。"
+                },
+                {
+                    "en": "Tell me when it starts.",
+                    "ja": "いつ始まるか教えてくれ。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [],
+            "sentences": []
+        }
+    },
+    "With": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "With",
+                    "ja": "あり"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "He",
+                    "ja": "彼"
+                },
+                {
+                    "en": "She",
+                    "ja": "彼"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                },
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                },
+                {
+                    "en": "Come",
+                    "ja": "来る"
+                },
+                {
+                    "en": "Arrive",
+                    "ja": "来る"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With you.",
+                    "ja": "- 一緒に"
+                },
+                {
+                    "en": "Come with a friend.",
+                    "ja": "友達と一緒に来てください。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ja": "一緒に来い"
+                },
+                {
+                    "en": "Go with me.",
+                    "ja": "ついてきて"
+                },
+                {
+                    "en": "With me.",
+                    "ja": "一緒に来い"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "With",
+                    "ja": "あり"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "With me.",
+                    "ja": "一緒に来い"
+                },
+                {
+                    "en": "Go with me.",
+                    "ja": "ついてきて"
+                }
+            ]
+        }
+    },
+    "For": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "For",
+                    "ja": "のために"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ja": "これは君のためなんだ。"
+                },
+                {
+                    "en": "For you.",
+                    "ja": "- さあ"
+                },
+                {
+                    "en": "For that.",
+                    "ja": "ライセンスは必要ありません。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "casual closure",
+                    "ja": "カジュアルクロージャー"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "For me.",
+                    "ja": "「ボクのために」"
+                },
+                {
+                    "en": "For me.",
+                    "ja": "「ボクのために」"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "For",
+                    "ja": "のために"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "This is for you.",
+                    "ja": "これは君のためなんだ。"
+                },
+                {
+                    "en": "For me.",
+                    "ja": "「ボクのために」"
+                }
+            ]
+        }
+    },
+    "Because": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Because",
+                    "ja": "それは、"
+                },
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Can",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Able",
+                    "ja": "できる"
+                },
+                {
+                    "en": "Busy",
+                    "ja": "忙しい"
+                },
+                {
+                    "en": "Traffic jam",
+                    "ja": "渋滞"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Because I’m busy.",
+                    "ja": "忙しいから。"
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ja": "忙しいのでできません。"
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ja": "渋滞のため。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Not",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "No",
+                    "ja": "NOT"
+                },
+                {
+                    "en": "Because",
+                    "ja": "それは、"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                },
+                {
+                    "en": "Tired",
+                    "ja": "疲れた"
+                },
+                {
+                    "en": "Because of",
+                    "ja": "何故なら"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ja": "私は働いているのでできません。"
+                },
+                {
+                    "en": "I can’t because I’m working.",
+                    "ja": "私は働いているのでできません。"
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ja": "疲れたから。"
+                },
+                {
+                    "en": "Because I’m tired.",
+                    "ja": "疲れたから。"
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ja": "渋滞のため。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "Work",
+                    "ja": "働く"
+                },
+                {
+                    "en": "Because",
+                    "ja": "それは、"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I can’t because I’m working.",
+                    "ja": "私は働いているのでできません。"
+                },
+                {
+                    "en": "I can’t because I’m busy.",
+                    "ja": "忙しいのでできません。"
+                },
+                {
+                    "en": "Because of traffic.",
+                    "ja": "渋滞のため。"
+                }
+            ]
+        }
+    },
+    "Inviting": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "Go",
+                    "ja": "進む"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us eat.",
+                    "ja": "- 食べよう"
+                },
+                {
+                    "en": "Let us go.",
+                    "ja": "行きましょう。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
+                },
+                {
+                    "en": "Together",
+                    "ja": "一緒"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us eat.",
+                    "ja": "- 食べよう"
+                },
+                {
+                    "en": "Let us go together.",
+                    "ja": "一緒に来てくれ。"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
+                },
+                {
+                    "en": "We",
+                    "ja": "私たち"
+                },
+                {
+                    "en": "Us",
+                    "ja": "私たち"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us eat.",
+                    "ja": "- 食べよう"
+                },
+                {
+                    "en": "Let us go.",
+                    "ja": "行きましょう。"
+                }
+            ]
+        }
+    },
+    "Informal pronouns": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "At",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "In",
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "Eat",
+                    "ja": "食べる"
+                },
+                {
+                    "en": "House",
+                    "ja": "家"
+                },
+                {
+                    "en": "Home",
+                    "ja": "家"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだです"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "What are you doing?",
+                    "ja": "何をしているの？"
+                },
+                {
+                    "en": "Not yet.",
+                    "ja": "まだだ。"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me (Jakarta slang)",
+                    "ja": "私（ジャカルタのスラング）"
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ja": "あなた（ジャカルタのスラング）"
+                },
+                {
+                    "en": "You (Jakarta slang)",
+                    "ja": "あなた（ジャカルタのスラング）"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                },
+                {
+                    "en": "Not yet",
+                    "ja": "まだ"
+                },
+                {
+                    "en": "Friend",
+                    "ja": "友達"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ja": "私は家にいます。"
+                },
+                {
+                    "en": "I’m at home.",
+                    "ja": "私は家にいます。"
+                },
+                {
+                    "en": "What are you doing?",
+                    "ja": "何をしているの？"
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ja": "ごはん食べたの？"
+                },
+                {
+                    "en": "Already or not yet?",
+                    "ja": "もうお済みですか？それともまだですか？"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Whether",
+                    "ja": "かどうか"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "You",
+                    "ja": "あなた"
+                },
+                {
+                    "en": "Currently",
+                    "ja": "現在"
+                },
+                {
+                    "en": "Already",
+                    "ja": "既知"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "I’m at home.",
+                    "ja": "私は家にいます。"
+                },
+                {
+                    "en": "What are you doing?",
+                    "ja": "何をしているの？"
+                },
+                {
+                    "en": "Have you eaten yet?",
+                    "ja": "ごはん食べたの？"
+                }
+            ]
+        }
+    },
+    "About": {
+        "neutral": {
+            "words": [
+                {
+                    "en": "About",
+                    "ja": "情報"
+                },
+                {
+                    "en": "About",
+                    "ja": "情報"
+                },
+                {
+                    "en": "Talk",
+                    "ja": "話す"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "This",
+                    "ja": "これ"
+                },
+                {
+                    "en": "What",
+                    "ja": "何"
+                },
+                {
+                    "en": "How",
+                    "ja": "どう"
+                },
+                {
+                    "en": "What about",
+                    "ja": "どう"
+                },
+                {
+                    "en": "With",
+                    "ja": "あり"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "About what?",
+                    "ja": "何について？"
+                },
+                {
+                    "en": "About what?",
+                    "ja": "何について？"
+                },
+                {
+                    "en": "Talk about that.",
+                    "ja": "それについて話してください。"
+                },
+                {
+                    "en": "What about that?",
+                    "ja": "- あれはどう?"
+                }
+            ]
+        },
+        "formal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ja": "やろやろ"
+                },
+                {
+                    "en": "We",
+                    "ja": "私たち"
+                },
+                {
+                    "en": "About",
+                    "ja": "情報"
+                },
+                {
+                    "en": "Regarding",
+                    "ja": "「2．"
+                },
+                {
+                    "en": "About",
+                    "ja": "「2．"
+                },
+                {
+                    "en": "Discuss",
+                    "ja": "掲示板"
+                },
+                {
+                    "en": "Talk about",
+                    "ja": "掲示板"
+                },
+                {
+                    "en": "How",
+                    "ja": "どう"
+                },
+                {
+                    "en": "With",
+                    "ja": "あり"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "I",
+                    "ja": "私"
+                },
+                {
+                    "en": "Me",
+                    "ja": "私"
+                },
+                {
+                    "en": "Want to",
+                    "ja": "欲"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us talk about that.",
+                    "ja": "ぜひその話を聞きたい"
+                },
+                {
+                    "en": "What about that?",
+                    "ja": "- あれはどう?"
+                },
+                {
+                    "en": "I want to talk about that.",
+                    "ja": "その事で話があるの"
+                }
+            ]
+        },
+        "informal": {
+            "words": [
+                {
+                    "en": "Let us",
+                    "ja": "やろやろ"
+                },
+                {
+                    "en": "Come on",
+                    "ja": "来て"
+                },
+                {
+                    "en": "Let us",
+                    "ja": "来て"
+                },
+                {
+                    "en": "Talk",
+                    "ja": "話す"
+                },
+                {
+                    "en": "Chat",
+                    "ja": "チャット"
+                },
+                {
+                    "en": "Chat about",
+                    "ja": "チャットについて"
+                },
+                {
+                    "en": "Talking about",
+                    "ja": "話すこと..."
+                },
+                {
+                    "en": "About",
+                    "ja": "情報"
+                },
+                {
+                    "en": "About",
+                    "ja": "情報"
+                },
+                {
+                    "en": "That",
+                    "ja": "あれ"
+                },
+                {
+                    "en": "How",
+                    "ja": "どう"
+                },
+                {
+                    "en": "What about",
+                    "ja": "どう"
+                },
+                {
+                    "en": "Doing",
+                    "ja": "進行中"
+                },
+                {
+                    "en": "Right now",
+                    "ja": "進行中"
+                },
+                {
+                    "en": "What",
+                    "ja": "何"
+                }
+            ],
+            "sentences": [
+                {
+                    "en": "Let us talk about that.",
+                    "ja": "ぜひその話を聞きたい"
+                },
+                {
+                    "en": "Let us talk about that.",
+                    "ja": "ぜひその話を聞きたい"
+                },
+                {
+                    "en": "What about that?",
+                    "ja": "- あれはどう?"
+                },
+                {
+                    "en": "What are you talking about?",
+                    "ja": "何だって？"
+                }
+            ]
+        }
+    }
+}
