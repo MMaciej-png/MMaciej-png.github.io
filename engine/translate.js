@@ -35,6 +35,17 @@ const EN_EQUIVALENTS = [
 
 
   /* ===============================
+     PRONOUN GROUPS / SLOTS
+     (keep slash-variants stable)
+     =============================== */
+
+  // Treat any spacing/order variants of "I / Me" as one canonical key
+  [/\b(i\s*\/\s*me|me\s*\/\s*i)\b/g, "i / me"],
+  // Treat bare \"I\" and \"Me\" as the same slot so either form is accepted
+  [/\b(i|me)\b/g, "i"],
+
+
+  /* ===============================
      WOULD / HAD
      =============================== */
 
