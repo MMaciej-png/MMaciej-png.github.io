@@ -1,0 +1,384 @@
+[
+  {
+    "subject": "chore: initial commit"
+  },
+  {
+    "subject": "chore: initial commit"
+  },
+  {
+    "subject": "chore: fix commit message (abort message)"
+  },
+  {
+    "subject": "chore: add file"
+  },
+  {
+    "subject": "fix(data): align rank names with image names"
+  },
+  {
+    "subject": "fix: correct file directory"
+  },
+  {
+    "subject": "fix: correct file directory"
+  },
+  {
+    "subject": "feat(ui): mobile version"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "chore: finalise changes"
+  },
+  {
+    "subject": "fix: add fixes"
+  },
+  {
+    "subject": "fix(translate): normalisation"
+  },
+  {
+    "subject": "fix(translate): include enclitic pronouns in normalisation"
+  },
+  {
+    "subject": "chore(data): rank update 200 to 500"
+  },
+  {
+    "subject": "feat(content): add Greetings and arrival module with weighted frequency"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix(translate): Translate.js fix"
+  },
+  {
+    "subject": "fix(translate): Translate.js fix"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "feat(ui): add module tabs"
+  },
+  {
+    "subject": "style(ui): large text"
+  },
+  {
+    "subject": "style: scrollbar css"
+  },
+  {
+    "subject": "feat: Added folders for modules"
+  },
+  {
+    "subject": "fix(ui): folders no longer reset on answer"
+  },
+  {
+    "subject": "feat: Added category for main"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "feat(ui): fix module auto-close, highlight selection, add current streak"
+  },
+  {
+    "subject": "fix(ui): mobile compat"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "feat(selection): support multiple selection"
+  },
+  {
+    "subject": "fix(selection): wrong answer no longer locks the site"
+  },
+  {
+    "subject": "fix(modules): fix infinite correct guesses for all module"
+  },
+  {
+    "subject": "fix(style): remove horizontal scroll bar"
+  },
+  {
+    "subject": "feat(ui): add Words/Sentences/All toggle"
+  },
+  {
+    "subject": "style: better css"
+  },
+  {
+    "subject": "fix(ui): smart module opening on click"
+  },
+  {
+    "subject": "fix(ui): smart module opening on click"
+  },
+  {
+    "subject": "fix: minor bug"
+  },
+  {
+    "subject": "feat: added more words"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: fix html"
+  },
+  {
+    "subject": "feat: added more words"
+  },
+  {
+    "subject": "feat(translate): add come/arrive equivalence"
+  },
+  {
+    "subject": "feat(translate): add equivalences"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "feat(content): new words and modules"
+  },
+  {
+    "subject": "fix(ui): laptop compat"
+  },
+  {
+    "subject": "style(ui): centering"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "feat(content): new content"
+  },
+  {
+    "subject": "feat(ui): add formal/informal filter"
+  },
+  {
+    "subject": "feat(content): title"
+  },
+  {
+    "subject": "fix(data): fix json"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix(selection): better selection"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "feat(content): Thanks module"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "feat(content): more options for word (Tasty)"
+  },
+  {
+    "subject": "fix: softener bug"
+  },
+  {
+    "subject": "refactor: rework"
+  },
+  {
+    "subject": "feat: more"
+  },
+  {
+    "subject": "Merge pull request #1 from MMaciej-png/rework"
+  },
+  {
+    "subject": "fix(selection): selection bug fix",
+    "body": "Refs #1"
+  },
+  {
+    "subject": "Merge pull request #2 from MMaciej-png/rework"
+  },
+  {
+    "subject": "feat(content): gap fills"
+  },
+  {
+    "subject": "feat(ui): reactions"
+  },
+  {
+    "subject": "feat: added normalisation"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix(tts): duplicated TTS"
+  },
+  {
+    "subject": "refactor(data): better json"
+  },
+  {
+    "subject": "feat(content): meaning and clarification + categorising"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "feat(translate): normalisation"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix(selection): selection fix"
+  },
+  {
+    "subject": "fix(ui): image fix"
+  },
+  {
+    "subject": "fix: resolve bug"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: point fix"
+  },
+  {
+    "subject": "fix: sr fix"
+  },
+  {
+    "subject": "chore(content): ordering"
+  },
+  {
+    "subject": "feat(content): titles"
+  },
+  {
+    "subject": "feat(content): places"
+  },
+  {
+    "subject": "feat(content): places"
+  },
+  {
+    "subject": "feat: more"
+  },
+  {
+    "subject": "feat(content): categories"
+  },
+  {
+    "subject": "feat(content): kalau"
+  },
+  {
+    "subject": "feat(content): jam"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "feat(content): new content"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "feat(content): merge Jakarta tokens filter"
+  },
+  {
+    "subject": "feat(tts): display spoken"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "feat(chat): add AI chat bot"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: resolve issue"
+  },
+  {
+    "subject": "fix: final fix"
+  },
+  {
+    "subject": "feat(content): new content"
+  },
+  {
+    "subject": "feat(tts): add mic"
+  },
+  {
+    "subject": "fix: fix naming"
+  },
+  {
+    "subject": "feat: added fixes"
+  },
+  {
+    "subject": "feat(content): add Japanese, Polish, French, Korean"
+  },
+  {
+    "subject": "feat: more"
+  }
+]

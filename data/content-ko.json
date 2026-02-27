@@ -15,26 +15,18 @@
                     "ko": "좋은"
                 },
                 {
-                    "en": "Well",
-                    "ko": ""
-                },
-                {
-                    "en": "Safe",
-                    "ko": ""
-                },
-                {
                     "en": "Come",
                     "ko": "오다"
                 },
                 {
                     "en": "Arrive",
-                    "ko": "도착하다"
+                    "ko": "오다"
                 }
             ],
             "sentences": [
                 {
                     "en": "Welcome.",
-                    "ko": ""
+                    "ko": "환영합니다."
                 }
             ]
         },
@@ -52,11 +44,11 @@
             "sentences": [
                 {
                     "en": "Hi, I’m (name).",
-                    "ko": ""
+                    "ko": "안녕하세요. (이름) 입니다."
                 },
                 {
                     "en": "Hello, my name is (name).",
-                    "ko": ""
+                    "ko": "안녕하세요, 제 이름은 (이름) 입니다."
                 }
             ]
         },
@@ -74,11 +66,11 @@
             "sentences": [
                 {
                     "en": "Hi, I’m (name).",
-                    "ko": ""
+                    "ko": "안녕하세요. (이름) 입니다."
                 },
                 {
                     "en": "Hello, my name is (name).",
-                    "ko": ""
+                    "ko": "안녕하세요, 제 이름은 (이름) 입니다."
                 }
             ]
         }
@@ -91,14 +83,6 @@
                     "ko": "좋은"
                 },
                 {
-                    "en": "Well",
-                    "ko": ""
-                },
-                {
-                    "en": "Safe",
-                    "ko": ""
-                },
-                {
                     "en": "Morning",
                     "ko": "아침"
                 },
@@ -108,7 +92,7 @@
                 },
                 {
                     "en": "Daytime",
-                    "ko": ""
+                    "ko": "오후"
                 },
                 {
                     "en": "Evening",
@@ -116,7 +100,7 @@
                 },
                 {
                     "en": "Night",
-                    "ko": "밤"
+                    "ko": "저녁"
                 },
                 {
                     "en": "Sleep",
@@ -126,19 +110,19 @@
             "sentences": [
                 {
                     "en": "Good morning.",
-                    "ko": ""
+                    "ko": "안녕하세요."
                 },
                 {
                     "en": "Good afternoon.",
-                    "ko": ""
+                    "ko": "좋은 오후와"
                 },
                 {
                     "en": "Good evening.",
-                    "ko": ""
+                    "ko": "안녕하세요."
                 },
                 {
                     "en": "Good night",
-                    "ko": ""
+                    "ko": "학교에 가서 영어를 공부해요"
                 }
             ]
         },
@@ -160,7 +144,7 @@
                 },
                 {
                     "en": "News",
-                    "ko": ""
+                    "ko": "뉴스"
                 },
                 {
                     "en": "Now",
@@ -192,7 +176,7 @@
             "sentences": [
                 {
                     "en": "How are you now?",
-                    "ko": ""
+                    "ko": "어떻게 지내세요?"
                 }
             ]
         },
@@ -200,21 +184,21 @@
             "words": [
                 {
                     "en": "How",
-                    "ko": ""
+                    "ko": "방법"
                 },
                 {
                     "en": "The news",
-                    "ko": ""
+                    "ko": "뉴스"
                 }
             ],
             "sentences": [
                 {
                     "en": "How’s it going now?",
-                    "ko": ""
+                    "ko": "잘 지내십니까?"
                 },
                 {
                     "en": "How’s it going now?",
-                    "ko": ""
+                    "ko": "잘 지내십니까?"
                 }
             ]
         }
@@ -236,7 +220,7 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "아니요"
                 },
                 {
                     "en": "Maybe",
@@ -257,7 +241,7 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "아니요"
                 }
             ],
             "sentences": []
@@ -272,11 +256,11 @@
             "words": [
                 {
                     "en": "Oh",
-                    "ko": ""
+                    "ko": "OH"
                 },
                 {
                     "en": "Oh right",
-                    "ko": ""
+                    "ko": "아 그러면 되겠네"
                 },
                 {
                     "en": "Okay",
@@ -284,7 +268,7 @@
                 },
                 {
                     "en": "Alright",
-                    "ko": ""
+                    "ko": "좋아."
                 },
                 {
                     "en": "Yes",
@@ -296,33 +280,33 @@
                 },
                 {
                     "en": "Haha",
-                    "ko": ""
+                    "ko": "하하"
                 },
                 {
                     "en": "Hmm",
-                    "ko": ""
+                    "ko": "OH"
                 }
             ],
             "sentences": [
                 {
                     "en": "Oh, okay.",
-                    "ko": ""
+                    "ko": "그래, 이거지."
                 },
                 {
                     "en": "Oh right.",
-                    "ko": ""
+                    "ko": "아, 맞다!<g id=\"2\"> </g>"
                 },
                 {
                     "en": "Yeah, okay.",
-                    "ko": ""
+                    "ko": "- 알겠어?&#10;- 네, 알았어요"
                 },
                 {
                     "en": "Haha.",
-                    "ko": ""
+                    "ko": "하하."
                 },
                 {
                     "en": "Hmm.",
-                    "ko": ""
+                    "ko": "흐음."
                 }
             ]
         },
@@ -344,7 +328,7 @@
             "sentences": [
                 {
                     "en": "Alright, I understand.",
-                    "ko": ""
+                    "ko": "알겠습니다."
                 }
             ]
         },
@@ -356,7 +340,7 @@
                 },
                 {
                     "en": "No problem",
-                    "ko": ""
+                    "ko": "괜찮아요"
                 },
                 {
                     "en": "I",
@@ -368,37 +352,37 @@
                 },
                 {
                     "en": "Understand",
-                    "ko": ""
+                    "ko": "과학, 원리"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 },
                 {
                     "en": "Laughing",
-                    "ko": ""
+                    "ko": "웃음"
                 }
             ],
             "sentences": [
                 {
                     "en": "Yeah, true.",
-                    "ko": ""
+                    "ko": "네, 맞아요."
                 },
                 {
                     "en": "Okay, I understand.",
-                    "ko": ""
+                    "ko": "빨리 가서 그들을 지켜봐"
                 },
                 {
                     "en": "Okay.",
-                    "ko": ""
+                    "ko": "좋아요."
                 },
                 {
                     "en": "Haha.",
-                    "ko": ""
+                    "ko": "하하."
                 },
                 {
                     "en": "Yeah, true.",
-                    "ko": ""
+                    "ko": "네, 맞아요."
                 }
             ]
         }
@@ -420,7 +404,7 @@
                 },
                 {
                     "en": "Excuse me",
-                    "ko": "실례합니다"
+                    "ko": "죄송해요"
                 },
                 {
                     "en": "Yes",
@@ -446,11 +430,11 @@
                 },
                 {
                     "en": "Kindly",
-                    "ko": ""
+                    "ko": "부탁해요"
                 },
                 {
                     "en": "Forgive",
-                    "ko": ""
+                    "ko": "용서"
                 },
                 {
                     "en": "I",
@@ -464,11 +448,11 @@
             "sentences": [
                 {
                     "en": "My apologies.",
-                    "ko": ""
+                    "ko": "사과드린다.\"라고 함."
                 },
                 {
                     "en": "I sincerely apologize.",
-                    "ko": ""
+                    "ko": "진심으로 사과드립니다."
                 }
             ]
         },
@@ -476,7 +460,7 @@
             "words": [
                 {
                     "en": "Thanks",
-                    "ko": ""
+                    "ko": "감사합니다."
                 },
                 {
                     "en": "I",
@@ -488,33 +472,33 @@
                 },
                 {
                     "en": "Ask for",
-                    "ko": ""
+                    "ko": "구하다"
                 },
                 {
                     "en": "Urging",
-                    "ko": ""
+                    "ko": "독촉"
                 },
                 {
                     "en": "come on",
-                    "ko": ""
+                    "ko": "독촉"
                 }
             ],
             "sentences": [
                 {
                     "en": "Thanks.",
-                    "ko": ""
+                    "ko": "고마워."
                 },
                 {
                     "en": "Thanks.",
-                    "ko": ""
+                    "ko": "고마워."
                 },
                 {
                     "en": "Sorry, okay?",
-                    "ko": ""
+                    "ko": "미안, 알았지?"
                 },
                 {
                     "en": "I sincerely apologize.",
-                    "ko": ""
+                    "ko": "진심으로 사과드립니다."
                 }
             ]
         }
@@ -524,11 +508,11 @@
             "words": [
                 {
                     "en": "Until",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "See",
-                    "ko": "보다"
+                    "ko": "현재"
                 },
                 {
                     "en": "Meet",
@@ -552,17 +536,17 @@
                 },
                 {
                     "en": "Earlier",
-                    "ko": ""
+                    "ko": "첫 번째"
                 }
             ],
             "sentences": [
                 {
                     "en": "See you.",
-                    "ko": ""
+                    "ko": "잘 가"
                 },
                 {
                     "en": "See you later.",
-                    "ko": ""
+                    "ko": "다음에 뵈어요."
                 },
                 {
                     "en": "Take care.",
@@ -582,17 +566,17 @@
                 },
                 {
                     "en": "Take leave",
-                    "ko": ""
+                    "ko": "휴가하기"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’ll take my leave.",
-                    "ko": ""
+                    "ko": "내가 떠날게."
                 },
                 {
                     "en": "I’ll go first",
-                    "ko": ""
+                    "ko": "나 먼저 갈게."
                 }
             ]
         },
@@ -604,11 +588,11 @@
                 },
                 {
                     "en": "Earlier",
-                    "ko": ""
+                    "ko": "첫 번째"
                 },
                 {
                     "en": "Bye",
-                    "ko": ""
+                    "ko": "Je veux mettre fin à cela"
                 },
                 {
                     "en": "I",
@@ -620,25 +604,25 @@
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’ll take my leave.",
-                    "ko": ""
+                    "ko": "내가 떠날게."
                 },
                 {
                     "en": "I’ll go first",
-                    "ko": ""
+                    "ko": "나 먼저 갈게."
                 },
                 {
                     "en": "I’ll go first",
-                    "ko": ""
+                    "ko": "나 먼저 갈게."
                 },
                 {
                     "en": "Bye.",
-                    "ko": ""
+                    "ko": "안녕"
                 }
             ]
         }
@@ -652,11 +636,11 @@
                 },
                 {
                     "en": "Hour",
-                    "ko": ""
+                    "ko": "시간"
                 },
                 {
                     "en": "O’clock",
-                    "ko": ""
+                    "ko": "시간"
                 },
                 {
                     "en": "How many",
@@ -664,7 +648,7 @@
                 },
                 {
                     "en": "How much",
-                    "ko": "얼마"
+                    "ko": "몇"
                 },
                 {
                     "en": "Can",
@@ -672,7 +656,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Go",
@@ -684,7 +668,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "ko": "도착하다"
+                    "ko": "오다"
                 },
                 {
                     "en": "That",
@@ -694,23 +678,23 @@
             "sentences": [
                 {
                     "en": "When can you?",
-                    "ko": ""
+                    "ko": "언제쯤 가능할까요?"
                 },
                 {
                     "en": "When are you going?",
-                    "ko": ""
+                    "ko": "언제 가시나요?"
                 },
                 {
                     "en": "When will you arrive?",
-                    "ko": ""
+                    "ko": "언제 도착하시나요?"
                 },
                 {
                     "en": "When is that?",
-                    "ko": ""
+                    "ko": "언제인가요?"
                 },
                 {
                     "en": "What time?",
-                    "ko": ""
+                    "ko": "몇 시죠?"
                 }
             ]
         },
@@ -732,7 +716,7 @@
                 },
                 {
                     "en": "Boyfriend",
-                    "ko": "남자 친구"
+                    "ko": "여자 친구"
                 },
                 {
                     "en": "Friend",
@@ -748,19 +732,19 @@
                 },
                 {
                     "en": "Mrs",
-                    "ko": ""
+                    "ko": "씨"
                 },
                 {
                     "en": "Ma’am",
-                    "ko": ""
+                    "ko": "씨"
                 },
                 {
                     "en": "Mr",
-                    "ko": ""
+                    "ko": "씨"
                 },
                 {
                     "en": "Sir",
-                    "ko": ""
+                    "ko": "씨"
                 },
                 {
                     "en": "He",
@@ -768,7 +752,7 @@
                 },
                 {
                     "en": "She",
-                    "ko": "그녀"
+                    "ko": "그"
                 },
                 {
                     "en": "This",
@@ -782,11 +766,11 @@
             "sentences": [
                 {
                     "en": "This ma’am.",
-                    "ko": ""
+                    "ko": "이 부인."
                 },
                 {
                     "en": "That sir.",
-                    "ko": ""
+                    "ko": "저기요."
                 }
             ]
         },
@@ -802,33 +786,33 @@
                 },
                 {
                     "en": "Mrs",
-                    "ko": ""
+                    "ko": "씨"
                 },
                 {
                     "en": "Mr",
-                    "ko": ""
+                    "ko": "씨"
                 }
             ],
             "sentences": [
                 {
                     "en": "My girlfriend",
-                    "ko": ""
+                    "ko": "여자친구"
                 },
                 {
                     "en": "boyfriend.",
-                    "ko": ""
+                    "ko": "여자친구"
                 },
                 {
                     "en": "They’re my friend.",
-                    "ko": ""
+                    "ko": "내 친구들이야."
                 },
                 {
                     "en": "This gentleman.",
-                    "ko": ""
+                    "ko": "이 신사."
                 },
                 {
                     "en": "That lady.",
-                    "ko": ""
+                    "ko": "저 아가씨."
                 }
             ]
         },
@@ -836,19 +820,19 @@
             "words": [
                 {
                     "en": "Girl",
-                    "ko": ""
+                    "ko": "여"
                 },
                 {
                     "en": "Girlfriend",
-                    "ko": ""
+                    "ko": "여"
                 },
                 {
                     "en": "Guy",
-                    "ko": ""
+                    "ko": "사람"
                 },
                 {
                     "en": "Boyfriend",
-                    "ko": ""
+                    "ko": "사람"
                 },
                 {
                     "en": "I",
@@ -860,49 +844,49 @@
                 },
                 {
                     "en": "Friend",
-                    "ko": ""
+                    "ko": "친구"
                 },
                 {
                     "en": "Pointing",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "here",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "this",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 }
             ],
             "sentences": [
                 {
                     "en": "My girlfriend",
-                    "ko": ""
+                    "ko": "여자친구"
                 },
                 {
                     "en": "boyfriend.",
-                    "ko": ""
+                    "ko": "여자친구"
                 },
                 {
                     "en": "They’re my friend.",
-                    "ko": ""
+                    "ko": "내 친구들이야."
                 },
                 {
                     "en": "My girlfriend.",
-                    "ko": ""
+                    "ko": "여자친구."
                 },
                 {
                     "en": "My boyfriend.",
-                    "ko": ""
+                    "ko": "내 남자 친구"
                 },
                 {
                     "en": "This is my girlfriend",
-                    "ko": ""
+                    "ko": "제 여자친구입니다."
                 },
                 {
                     "en": "boyfriend.",
-                    "ko": ""
+                    "ko": "제 여자친구입니다."
                 }
             ]
         }
@@ -916,7 +900,7 @@
                 },
                 {
                     "en": "Fine",
-                    "ko": "괜찮은"
+                    "ko": "좋은"
                 },
                 {
                     "en": "Fine",
@@ -924,11 +908,11 @@
                 },
                 {
                     "en": "Okay",
-                    "ko": "알겠어요"
+                    "ko": "괜찮은"
                 },
                 {
                     "en": "Still",
-                    "ko": ""
+                    "ko": "스틸"
                 },
                 {
                     "en": "Okay",
@@ -936,7 +920,7 @@
                 },
                 {
                     "en": "Not bad",
-                    "ko": ""
+                    "ko": "생각보다 괜찮아요"
                 },
                 {
                     "en": "Busy",
@@ -944,11 +928,11 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "Only",
-                    "ko": ""
+                    "ko": "저스트"
                 }
             ],
             "sentences": [
@@ -996,7 +980,7 @@
                 },
                 {
                     "en": "I’m really tired.",
-                    "ko": ""
+                    "ko": "정말 싫증나요.\""
                 }
             ]
         },
@@ -1020,7 +1004,7 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 }
             ],
             "sentences": [
@@ -1038,11 +1022,11 @@
                 },
                 {
                     "en": "I’m really tired.",
-                    "ko": ""
+                    "ko": "정말 싫증나요.\""
                 },
                 {
                     "en": "I’m really tired.",
-                    "ko": ""
+                    "ko": "정말 싫증나요.\""
                 },
                 {
                     "en": "I’m tired.",
@@ -1060,7 +1044,7 @@
                 },
                 {
                     "en": "Not quite",
-                    "ko": ""
+                    "ko": "덜"
                 },
                 {
                     "en": "Good",
@@ -1068,49 +1052,49 @@
                 },
                 {
                     "en": "Fine",
-                    "ko": "괜찮은"
-                },
-                {
-                    "en": "Like that",
-                    "ko": ""
-                },
-                {
-                    "en": "So",
-                    "ko": "너무"
-                },
-                {
-                    "en": "Just",
-                    "ko": ""
-                },
-                {
-                    "en": "Only",
-                    "ko": ""
-                },
-                {
-                    "en": "Comfortable",
-                    "ko": ""
-                },
-                {
-                    "en": "Good",
                     "ko": "좋은"
                 },
                 {
+                    "en": "Like that",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "So",
+                    "ko": "그렇게"
+                },
+                {
+                    "en": "Just",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Only",
+                    "ko": "저스트"
+                },
+                {
+                    "en": "Comfortable",
+                    "ko": "편안한"
+                },
+                {
+                    "en": "Good",
+                    "ko": "편안한"
+                },
+                {
                     "en": "Tasty",
-                    "ko": ""
+                    "ko": "편안한"
                 },
                 {
                     "en": "Body",
-                    "ko": ""
+                    "ko": "몸통"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not quite good.",
-                    "ko": ""
+                    "ko": "별로 좋지 않습니다."
                 },
                 {
                     "en": "Just so-so.",
-                    "ko": ""
+                    "ko": "그저 그렇습니다."
                 }
             ]
         },
@@ -1126,17 +1110,17 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 }
             ],
             "sentences": [
                 {
                     "en": "I don’t feel well.",
-                    "ko": ""
+                    "ko": "그런 예감이 들었다."
                 }
             ]
         },
@@ -1152,21 +1136,21 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 }
             ],
             "sentences": [
                 {
                     "en": "I don’t feel well.",
-                    "ko": ""
+                    "ko": "그런 예감이 들었다."
                 },
                 {
                     "en": "I don’t feel well.",
-                    "ko": ""
+                    "ko": "그런 예감이 들었다."
                 }
             ]
         }
@@ -1188,7 +1172,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Now",
@@ -1196,13 +1180,13 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not this.",
-                    "ko": ""
+                    "ko": "이건 아냐."
                 },
                 {
                     "en": "I don’t know.",
@@ -1210,11 +1194,11 @@
                 },
                 {
                     "en": "I can’t.",
-                    "ko": ""
+                    "ko": "못하겠어."
                 },
                 {
                     "en": "Can do it now.",
-                    "ko": ""
+                    "ko": "현재 불가능"
                 }
             ]
         },
@@ -1230,25 +1214,25 @@
                 },
                 {
                     "en": "Belong to",
-                    "ko": ""
+                    "ko": "소속"
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is not mine.",
-                    "ko": ""
+                    "ko": "이건 내 것이 아니야."
                 },
                 {
                     "en": "Not me.",
-                    "ko": ""
+                    "ko": "저는 아닙니다."
                 }
             ]
         },
@@ -1264,11 +1248,11 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Have",
@@ -1276,17 +1260,17 @@
                 },
                 {
                     "en": "Own",
-                    "ko": ""
+                    "ko": "가지다"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is not mine.",
-                    "ko": ""
+                    "ko": "이건 내 것이 아니야."
                 },
                 {
                     "en": "Not me.",
-                    "ko": ""
+                    "ko": "저는 아닙니다."
                 }
             ]
         }
@@ -1300,7 +1284,7 @@
                 },
                 {
                     "en": "Help",
-                    "ko": "도와주다"
+                    "ko": "부탁해요"
                 },
                 {
                     "en": "Help",
@@ -1312,7 +1296,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Wait",
@@ -1320,11 +1304,11 @@
                 },
                 {
                     "en": "A moment",
-                    "ko": ""
+                    "ko": "잠시 전"
                 },
                 {
                     "en": "Ask for",
-                    "ko": ""
+                    "ko": "구하다"
                 },
                 {
                     "en": "Excuse me",
@@ -1332,33 +1316,33 @@
                 },
                 {
                     "en": "May",
-                    "ko": ""
+                    "ko": "짜리나"
                 },
                 {
                     "en": "Allowed",
-                    "ko": ""
+                    "ko": "짜리나"
                 }
             ],
             "sentences": [
                 {
                     "en": "Please help.",
-                    "ko": ""
+                    "ko": "도와주세요."
                 },
                 {
                     "en": "Can you help?",
-                    "ko": ""
+                    "ko": "도움을 받을 수 있나요?"
                 },
                 {
                     "en": "Please wait a moment.",
-                    "ko": ""
+                    "ko": "잠시만 기다려주세요."
                 },
                 {
                     "en": "Excuse me for a moment.",
-                    "ko": ""
+                    "ko": "실례하겠습니다."
                 },
                 {
                     "en": "May I ask for help?",
-                    "ko": ""
+                    "ko": "도움을 요청해도 될까요?"
                 }
             ]
         },
@@ -1382,7 +1366,7 @@
                 },
                 {
                     "en": "Please",
-                    "ko": ""
+                    "ko": "업무 진행에 속도를 높일 수 있도록 협조하여 주시기를 요청합니다."
                 },
                 {
                     "en": "Help",
@@ -1390,7 +1374,7 @@
                 },
                 {
                     "en": "To help",
-                    "ko": ""
+                    "ko": "도와주다"
                 },
                 {
                     "en": "Help",
@@ -1398,13 +1382,13 @@
                 },
                 {
                     "en": "Assistance",
-                    "ko": ""
+                    "ko": "도와주다"
                 }
             ],
             "sentences": [
                 {
                     "en": "I kindly ask for your help.",
-                    "ko": ""
+                    "ko": "도와주시기 바랍니다."
                 },
                 {
                     "en": "Can you help me?",
@@ -1412,7 +1396,7 @@
                 },
                 {
                     "en": "Wait a sec, okay?",
-                    "ko": ""
+                    "ko": "잠깐만, 알았지?"
                 }
             ]
         },
@@ -1440,19 +1424,19 @@
                 },
                 {
                     "en": "Help",
-                    "ko": ""
+                    "ko": "도움말"
                 },
                 {
                     "en": "A sec",
-                    "ko": ""
+                    "ko": "1초"
                 },
                 {
                     "en": "Urging",
-                    "ko": ""
+                    "ko": "독촉"
                 },
                 {
                     "en": "come on",
-                    "ko": ""
+                    "ko": "독촉"
                 }
             ],
             "sentences": [
@@ -1462,19 +1446,19 @@
                 },
                 {
                     "en": "Wait a sec, okay?",
-                    "ko": ""
+                    "ko": "잠깐만, 알았지?"
                 },
                 {
                     "en": "One sec.",
-                    "ko": ""
+                    "ko": "잠깐만."
                 },
                 {
                     "en": "Excuse me for a moment.",
-                    "ko": ""
+                    "ko": "실례하겠습니다."
                 },
                 {
                     "en": "I kindly ask for your help.",
-                    "ko": ""
+                    "ko": "도와주시기 바랍니다."
                 }
             ]
         }
@@ -1484,11 +1468,11 @@
             "words": [
                 {
                     "en": "Meaning",
-                    "ko": ""
+                    "ko": "의미"
                 },
                 {
                     "en": "Intention",
-                    "ko": ""
+                    "ko": "의미"
                 },
                 {
                     "en": "What",
@@ -1500,7 +1484,7 @@
                 },
                 {
                     "en": "Repeat",
-                    "ko": ""
+                    "ko": "재교부"
                 },
                 {
                     "en": "Can",
@@ -1508,21 +1492,21 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "The meaning",
-                    "ko": ""
+                    "ko": "의미"
                 }
             ],
             "sentences": [
                 {
                     "en": "What does it mean?",
-                    "ko": ""
+                    "ko": "이게 무슨 의미일까요?"
                 },
                 {
                     "en": "Can you repeat?",
-                    "ko": ""
+                    "ko": "다시 말씀해 주시겠어요?"
                 }
             ]
         },
@@ -1542,15 +1526,15 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Whether",
-                    "ko": ""
+                    "ko": "날씨"
                 },
                 {
                     "en": "You",
@@ -1564,7 +1548,7 @@
             "sentences": [
                 {
                     "en": "I understand.",
-                    "ko": ""
+                    "ko": "Μάλιστα."
                 },
                 {
                     "en": "I don’t understand.",
@@ -1572,7 +1556,7 @@
                 },
                 {
                     "en": "Do you understand?",
-                    "ko": ""
+                    "ko": "왜 웃고 있어?"
                 }
             ]
         },
@@ -1588,19 +1572,19 @@
                 },
                 {
                     "en": "Understand",
-                    "ko": ""
+                    "ko": "과학, 원리"
                 },
                 {
                     "en": "Understand",
-                    "ko": ""
+                    "ko": "과학, 원리"
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "You",
@@ -1618,19 +1602,19 @@
                 },
                 {
                     "en": "I understand.",
-                    "ko": ""
+                    "ko": "Μάλιστα."
                 },
                 {
                     "en": "Do you understand?",
-                    "ko": ""
+                    "ko": "왜 웃고 있어?"
                 },
                 {
                     "en": "Do you understand?",
-                    "ko": ""
+                    "ko": "왜 웃고 있어?"
                 },
                 {
                     "en": "Got it?",
-                    "ko": ""
+                    "ko": "확인"
                 }
             ]
         }
@@ -1640,11 +1624,11 @@
             "words": [
                 {
                     "en": "Means",
-                    "ko": ""
+                    "ko": "수단"
                 },
                 {
                     "en": "So it means",
-                    "ko": ""
+                    "ko": "수단"
                 },
                 {
                     "en": "This",
@@ -1656,15 +1640,15 @@
                 },
                 {
                     "en": "Meaning",
-                    "ko": ""
+                    "ko": "의미"
                 },
                 {
                     "en": "Intention",
-                    "ko": ""
+                    "ko": "의미"
                 },
                 {
                     "en": "The meaning",
-                    "ko": ""
+                    "ko": "의미"
                 },
                 {
                     "en": "What",
@@ -1672,33 +1656,33 @@
                 },
                 {
                     "en": "Like that",
-                    "ko": ""
+                    "ko": "그렇게"
                 },
                 {
                     "en": "So",
-                    "ko": "너무"
+                    "ko": "그렇게"
                 }
             ],
             "sentences": [
                 {
                     "en": "So this means?",
-                    "ko": ""
+                    "ko": "그렇다면 이것은 무엇을 의미할까요?"
                 },
                 {
                     "en": "So that means?",
-                    "ko": ""
+                    "ko": "그렇다면 이는 무엇을 의미할까요?"
                 },
                 {
                     "en": "What does it mean?",
-                    "ko": ""
+                    "ko": "이게 무슨 의미일까요?"
                 },
                 {
                     "en": "What do you mean?",
-                    "ko": ""
+                    "ko": "그게 무슨 말이야?"
                 },
                 {
                     "en": "Does this mean that?",
-                    "ko": ""
+                    "ko": "이게 무슨 뜻인가요?"
                 }
             ]
         },
@@ -1706,7 +1690,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ko": ""
+                    "ko": "날씨"
                 },
                 {
                     "en": "You",
@@ -1720,11 +1704,11 @@
             "sentences": [
                 {
                     "en": "Does this mean that?",
-                    "ko": ""
+                    "ko": "이게 무슨 뜻인가요?"
                 },
                 {
                     "en": "What do you mean?",
-                    "ko": ""
+                    "ko": "그게 무슨 말이야?"
                 }
             ]
         },
@@ -1733,7 +1717,7 @@
             "sentences": [
                 {
                     "en": "What do you mean?",
-                    "ko": ""
+                    "ko": "그게 무슨 말이야?"
                 }
             ]
         }
@@ -1747,7 +1731,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "This",
@@ -1759,7 +1743,7 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Not yet",
@@ -1769,19 +1753,19 @@
             "sentences": [
                 {
                     "en": "Can this?",
-                    "ko": ""
+                    "ko": "가능할까요?"
                 },
                 {
                     "en": "Can that?",
-                    "ko": ""
+                    "ko": "가능할까요?"
                 },
                 {
                     "en": "Can you already?",
-                    "ko": ""
+                    "ko": "당신은 이미 할 수 있습니까?"
                 },
                 {
                     "en": "Can't yet?",
-                    "ko": ""
+                    "ko": "아직 안 되나요?"
                 }
             ]
         },
@@ -1789,7 +1773,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ko": ""
+                    "ko": "날씨"
                 },
                 {
                     "en": "You",
@@ -1803,11 +1787,11 @@
             "sentences": [
                 {
                     "en": "Can this?",
-                    "ko": ""
+                    "ko": "가능할까요?"
                 },
                 {
                     "en": "Can you already?",
-                    "ko": ""
+                    "ko": "당신은 이미 할 수 있습니까?"
                 }
             ]
         },
@@ -1819,13 +1803,13 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "아니요"
                 }
             ],
             "sentences": [
                 {
                     "en": "Can't?",
-                    "ko": ""
+                    "ko": "안되나요?"
                 }
             ]
         }
@@ -1851,17 +1835,17 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 }
             ],
             "sentences": [
                 {
                     "en": "Busy right now.",
-                    "ko": ""
+                    "ko": "지금은 바쁩니다."
                 },
                 {
                     "en": "Can do it later.",
-                    "ko": ""
+                    "ko": "나중에 할 수 있습니다."
                 }
             ]
         },
@@ -1877,7 +1861,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "Work",
@@ -1885,21 +1869,21 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 }
             ],
             "sentences": [
                 {
                     "en": "I am working.",
-                    "ko": ""
+                    "ko": "म काम गर्दै छु"
                 },
                 {
                     "en": "I can’t right now.",
-                    "ko": ""
+                    "ko": "지금은 안 돼."
                 }
             ]
         },
@@ -1915,7 +1899,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "Work",
@@ -1923,49 +1907,49 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
                     "en": "Working.",
-                    "ko": ""
+                    "ko": "Working"
                 },
                 {
                     "en": "Working.",
-                    "ko": ""
+                    "ko": "Working"
                 },
                 {
                     "en": "Can’t right now.",
-                    "ko": ""
+                    "ko": "지금은 할 수 없습니다."
                 },
                 {
                     "en": "Can’t right now.",
-                    "ko": ""
+                    "ko": "지금은 할 수 없습니다."
                 },
                 {
                     "en": "I am working.",
-                    "ko": ""
+                    "ko": "म काम गर्दै छु"
                 },
                 {
                     "en": "I am working.",
-                    "ko": ""
+                    "ko": "म काम गर्दै छु"
                 },
                 {
                     "en": "Working.",
-                    "ko": ""
+                    "ko": "Working"
                 },
                 {
                     "en": "Can’t right now.",
-                    "ko": ""
+                    "ko": "지금은 할 수 없습니다."
                 }
             ]
         }
@@ -1995,7 +1979,7 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Not yet",
@@ -2013,15 +1997,15 @@
             "sentences": [
                 {
                     "en": "Later, okay.",
-                    "ko": ""
+                    "ko": "나중에, 알았어."
                 },
                 {
                     "en": "Not yet.",
-                    "ko": ""
+                    "ko": "아직 아닙니다."
                 },
                 {
                     "en": "Already.",
-                    "ko": ""
+                    "ko": "DMX"
                 }
             ]
         },
@@ -2037,7 +2021,7 @@
                 },
                 {
                     "en": "Will",
-                    "ko": ""
+                    "ko": "의지"
                 },
                 {
                     "en": "Now",
@@ -2047,15 +2031,15 @@
             "sentences": [
                 {
                     "en": "I will go now.",
-                    "ko": ""
+                    "ko": "이만 가보겠습니다."
                 },
                 {
                     "en": "I will go tomorrow.",
-                    "ko": ""
+                    "ko": "내일 가겠습니다."
                 },
                 {
                     "en": "Going later.",
-                    "ko": ""
+                    "ko": "나중에 하기."
                 }
             ]
         },
@@ -2075,37 +2059,37 @@
                 },
                 {
                     "en": "Going to",
-                    "ko": ""
+                    "ko": "원하다"
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
                     "en": "Going later.",
-                    "ko": ""
+                    "ko": "나중에 하기."
                 },
                 {
                     "en": "Going tomorrow.",
-                    "ko": ""
+                    "ko": "내일 갑니다."
                 },
                 {
                     "en": "I will go now.",
-                    "ko": ""
+                    "ko": "이만 가보겠습니다."
                 },
                 {
                     "en": "I will go tomorrow.",
-                    "ko": ""
+                    "ko": "내일 가겠습니다."
                 },
                 {
                     "en": "Later, okay.",
-                    "ko": ""
+                    "ko": "나중에, 알았어."
                 }
             ]
         }
@@ -2123,7 +2107,7 @@
                 },
                 {
                     "en": "Choose",
-                    "ko": ""
+                    "ko": "선택"
                 },
                 {
                     "en": "Which",
@@ -2149,11 +2133,11 @@
             "sentences": [
                 {
                     "en": "That one is different.",
-                    "ko": ""
+                    "ko": "그것은 다릅니다."
                 },
                 {
                     "en": "The other one.",
-                    "ko": ""
+                    "ko": "다른 하나는"
                 }
             ]
         },
@@ -2171,7 +2155,7 @@
             "sentences": [
                 {
                     "en": "I choose the other one.",
-                    "ko": ""
+                    "ko": "다른 하나를 선택합니다."
                 }
             ]
         },
@@ -2189,15 +2173,15 @@
             "sentences": [
                 {
                     "en": "I choose the other one.",
-                    "ko": ""
+                    "ko": "다른 하나를 선택합니다."
                 },
                 {
                     "en": "I choose the other one.",
-                    "ko": ""
+                    "ko": "다른 하나를 선택합니다."
                 },
                 {
                     "en": "I want this one.",
-                    "ko": ""
+                    "ko": "나는 이것을 원한다."
                 }
             ]
         }
@@ -2219,19 +2203,19 @@
                 },
                 {
                     "en": "Thirsty",
-                    "ko": ""
+                    "ko": "목마름"
                 },
                 {
                     "en": "Comfortable",
-                    "ko": ""
+                    "ko": "편안한"
                 },
                 {
                     "en": "Good",
-                    "ko": "좋은"
+                    "ko": "편안한"
                 },
                 {
                     "en": "Tasty",
-                    "ko": ""
+                    "ko": "편안한"
                 },
                 {
                     "en": "This",
@@ -2251,7 +2235,7 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 },
                 {
                     "en": "Want",
@@ -2261,27 +2245,27 @@
             "sentences": [
                 {
                     "en": "Hungry.",
-                    "ko": ""
+                    "ko": "배고프"
                 },
                 {
                     "en": "Thirsty.",
-                    "ko": ""
+                    "ko": "목마름"
                 },
                 {
                     "en": "This is good.",
-                    "ko": ""
+                    "ko": "좋아요."
                 },
                 {
                     "en": "This food is good.",
-                    "ko": ""
+                    "ko": "이 음식은 맛있어요."
                 },
                 {
                     "en": "That’s really good.",
-                    "ko": ""
+                    "ko": "정말 좋습니다."
                 },
                 {
                     "en": "I want to eat.",
-                    "ko": ""
+                    "ko": "따 먹고 싶다"
                 }
             ]
         },
@@ -2305,7 +2289,7 @@
                 },
                 {
                     "en": "Beverage",
-                    "ko": ""
+                    "ko": "마시다"
                 }
             ],
             "sentences": [
@@ -2315,7 +2299,7 @@
                 },
                 {
                     "en": "I want to eat.",
-                    "ko": ""
+                    "ko": "따 먹고 싶다"
                 }
             ]
         },
@@ -2335,7 +2319,7 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 }
             ],
             "sentences": [
@@ -2349,11 +2333,11 @@
                 },
                 {
                     "en": "I want to eat.",
-                    "ko": ""
+                    "ko": "따 먹고 싶다"
                 },
                 {
                     "en": "That’s really good.",
-                    "ko": ""
+                    "ko": "정말 좋습니다."
                 }
             ]
         }
@@ -2371,7 +2355,7 @@
                 },
                 {
                     "en": "Choose",
-                    "ko": ""
+                    "ko": "선택"
                 },
                 {
                     "en": "Same",
@@ -2387,45 +2371,45 @@
                 },
                 {
                     "en": "And",
-                    "ko": ""
+                    "ko": "스슈미타"
                 },
                 {
                     "en": "Or",
-                    "ko": ""
+                    "ko": "또는"
                 },
                 {
                     "en": "But",
-                    "ko": ""
+                    "ko": "근데"
                 }
             ],
             "sentences": [
                 {
                     "en": "This.",
-                    "ko": ""
+                    "ko": "이거."
                 },
                 {
                     "en": "That.",
-                    "ko": ""
+                    "ko": "저것"
                 },
                 {
                     "en": "The same one.",
-                    "ko": ""
+                    "ko": "똑같아."
                 },
                 {
                     "en": "The different one.",
-                    "ko": ""
+                    "ko": "다른 것."
                 },
                 {
                     "en": "This and that.",
-                    "ko": ""
+                    "ko": "이것 저것."
                 },
                 {
                     "en": "This or that.",
-                    "ko": ""
+                    "ko": "모 아니면 도"
                 },
                 {
                     "en": "This but that.",
-                    "ko": ""
+                    "ko": "이것만."
                 }
             ]
         },
@@ -2451,11 +2435,11 @@
             "sentences": [
                 {
                     "en": "I choose this.",
-                    "ko": ""
+                    "ko": "나는 이것을 선택한다."
                 },
                 {
                     "en": "That is what you choose.",
-                    "ko": ""
+                    "ko": "그것이 여러분이 선택하는 것입니다."
                 }
             ]
         },
@@ -2471,7 +2455,7 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "You",
@@ -2485,31 +2469,31 @@
             "sentences": [
                 {
                     "en": "Just the other one.",
-                    "ko": ""
+                    "ko": "다른 하나만요."
                 },
                 {
                     "en": "Just the other one.",
-                    "ko": ""
+                    "ko": "다른 하나만요."
                 },
                 {
                     "en": "I choose this.",
-                    "ko": ""
+                    "ko": "나는 이것을 선택한다."
                 },
                 {
                     "en": "I choose this.",
-                    "ko": ""
+                    "ko": "나는 이것을 선택한다."
                 },
                 {
                     "en": "Just this one.",
-                    "ko": ""
+                    "ko": "이거 하나만!"
                 },
                 {
                     "en": "Just this one.",
-                    "ko": ""
+                    "ko": "이거 하나만!"
                 },
                 {
                     "en": "That is what you choose.",
-                    "ko": ""
+                    "ko": "그것이 여러분이 선택하는 것입니다."
                 }
             ]
         }
@@ -2527,7 +2511,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "ko": "도착하다"
+                    "ko": "오다"
                 },
                 {
                     "en": "Arrive",
@@ -2535,7 +2519,7 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Here",
@@ -2549,11 +2533,11 @@
             "sentences": [
                 {
                     "en": "Already arrived.",
-                    "ko": ""
+                    "ko": "이미 도착했습니다."
                 },
                 {
                     "en": "Here.",
-                    "ko": ""
+                    "ko": "여기"
                 }
             ]
         },
@@ -2569,17 +2553,17 @@
                 },
                 {
                     "en": "Will",
-                    "ko": ""
+                    "ko": "의지"
                 }
             ],
             "sentences": [
                 {
                     "en": "I will go.",
-                    "ko": ""
+                    "ko": "주민등록번호"
                 },
                 {
                     "en": "I have arrived.",
-                    "ko": ""
+                    "ko": "도착했습니다."
                 }
             ]
         },
@@ -2595,7 +2579,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "Want",
@@ -2603,41 +2587,41 @@
                 },
                 {
                     "en": "Going to",
-                    "ko": ""
+                    "ko": "원하다"
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Pointing",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "here",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "this",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 }
             ],
             "sentences": [
                 {
                     "en": "Heading out.",
-                    "ko": ""
+                    "ko": "나간다."
                 },
                 {
                     "en": "I will go.",
-                    "ko": ""
+                    "ko": "주민등록번호"
                 },
                 {
                     "en": "I have arrived.",
-                    "ko": ""
+                    "ko": "도착했습니다."
                 },
                 {
                     "en": "Arrived.",
-                    "ko": ""
+                    "ko": "도착"
                 }
             ]
         }
@@ -2667,7 +2651,7 @@
                 },
                 {
                     "en": "Bedroom",
-                    "ko": ""
+                    "ko": "방"
                 },
                 {
                     "en": "Kitchen",
@@ -2679,11 +2663,11 @@
                 },
                 {
                     "en": "Shop",
-                    "ko": ""
+                    "ko": "상점"
                 },
                 {
                     "en": "Store",
-                    "ko": ""
+                    "ko": "상점"
                 },
                 {
                     "en": "School",
@@ -2695,15 +2679,15 @@
                 },
                 {
                     "en": "At",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "In",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "To",
-                    "ko": ""
+                    "ko": "받는 사람"
                 },
                 {
                     "en": "Here",
@@ -2717,31 +2701,31 @@
             "sentences": [
                 {
                     "en": "At home.",
-                    "ko": ""
+                    "ko": "집에서"
                 },
                 {
                     "en": "To the toilet.",
-                    "ko": ""
+                    "ko": "화장실로."
                 },
                 {
                     "en": "In the kitchen.",
-                    "ko": ""
+                    "ko": "주방에서"
                 },
                 {
                     "en": "In the room.",
-                    "ko": ""
+                    "ko": "방에서."
                 },
                 {
                     "en": "At the shop.",
-                    "ko": ""
+                    "ko": "상점에서."
                 },
                 {
                     "en": "At school.",
-                    "ko": ""
+                    "ko": "학교에서"
                 },
                 {
                     "en": "At the university.",
-                    "ko": ""
+                    "ko": "대학에서."
                 }
             ]
         },
@@ -2771,7 +2755,7 @@
                 },
                 {
                     "en": "Own",
-                    "ko": ""
+                    "ko": "가지다"
                 },
                 {
                     "en": "Who",
@@ -2779,17 +2763,17 @@
                 },
                 {
                     "en": "Whose",
-                    "ko": ""
+                    "ko": "누구"
                 }
             ],
             "sentences": [
                 {
                     "en": "That is yours.",
-                    "ko": ""
+                    "ko": "그건 당신 몫입니다."
                 },
                 {
                     "en": "Whose is this?",
-                    "ko": ""
+                    "ko": "누구시죠?"
                 }
             ]
         },
@@ -2813,21 +2797,21 @@
                 },
                 {
                     "en": "Belong to",
-                    "ko": ""
+                    "ko": "소속"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is mine.",
-                    "ko": ""
+                    "ko": "이 책은 내 것입니다."
                 },
                 {
                     "en": "This belongs to me.",
-                    "ko": ""
+                    "ko": "이건 내 거야."
                 },
                 {
                     "en": "That belongs to you.",
-                    "ko": ""
+                    "ko": "그건 여러분의 몫입니다."
                 }
             ]
         },
@@ -2853,23 +2837,23 @@
             "sentences": [
                 {
                     "en": "This is mine.",
-                    "ko": ""
+                    "ko": "이 책은 내 것입니다."
                 },
                 {
                     "en": "This is mine.",
-                    "ko": ""
+                    "ko": "이 책은 내 것입니다."
                 },
                 {
                     "en": "That’s yours.",
-                    "ko": ""
+                    "ko": "그건 네 몫이야."
                 },
                 {
                     "en": "This belongs to me.",
-                    "ko": ""
+                    "ko": "이건 내 거야."
                 },
                 {
                     "en": "That belongs to you.",
-                    "ko": ""
+                    "ko": "그건 여러분의 몫입니다."
                 }
             ]
         }
@@ -2879,7 +2863,7 @@
             "words": [
                 {
                     "en": "Zero",
-                    "ko": ""
+                    "ko": "0이"
                 },
                 {
                     "en": "One",
@@ -2938,7 +2922,7 @@
             "words": [
                 {
                     "en": "tens",
-                    "ko": ""
+                    "ko": "시제"
                 },
                 {
                     "en": "Eleven",
@@ -2994,7 +2978,7 @@
                 },
                 {
                     "en": "One hundred",
-                    "ko": ""
+                    "ko": "100"
                 }
             ],
             "sentences": []
@@ -3033,25 +3017,25 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "Only",
-                    "ko": ""
+                    "ko": "저스트"
                 }
             ],
             "sentences": [
                 {
                     "en": "Today.",
-                    "ko": ""
+                    "ko": "오늘"
                 },
                 {
                     "en": "Now.",
-                    "ko": ""
+                    "ko": "지금"
                 },
                 {
                     "en": "Tomorrow is fine.",
-                    "ko": ""
+                    "ko": "내일은 괜찮습니다."
                 }
             ]
         },
@@ -3069,11 +3053,11 @@
             "words": [
                 {
                     "en": "At",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "In",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "Here",
@@ -3089,7 +3073,7 @@
                 },
                 {
                     "en": "Where",
-                    "ko": "어디"
+                    "ko": "어느"
                 },
                 {
                     "en": "Place",
@@ -3099,15 +3083,15 @@
             "sentences": [
                 {
                     "en": "Here.",
-                    "ko": ""
+                    "ko": "여기"
                 },
                 {
                     "en": "There.",
-                    "ko": ""
+                    "ko": "이건 됐고."
                 },
                 {
                     "en": "Which place?",
-                    "ko": ""
+                    "ko": "내 이름은 alensa입니다"
                 }
             ]
         },
@@ -3125,23 +3109,23 @@
             "words": [
                 {
                     "en": "Time",
-                    "ko": ""
+                    "ko": "시간"
                 },
                 {
                     "en": "Exist",
-                    "ko": ""
+                    "ko": "존재"
                 },
                 {
                     "en": "There is",
-                    "ko": ""
+                    "ko": "존재"
                 },
                 {
                     "en": "There is not",
-                    "ko": ""
+                    "ko": "버너에 가스가"
                 },
                 {
                     "en": "None",
-                    "ko": ""
+                    "ko": "버너에 가스가"
                 },
                 {
                     "en": "Now",
@@ -3159,19 +3143,19 @@
             "sentences": [
                 {
                     "en": "It's here.",
-                    "ko": ""
+                    "ko": "여기 있어요"
                 },
                 {
                     "en": "There is none.",
-                    "ko": ""
+                    "ko": "없죠 \n없기 때문에 false가 나옵니다"
                 },
                 {
                     "en": "There is time.",
-                    "ko": ""
+                    "ko": "시간이 있습니다."
                 },
                 {
                     "en": "Not right now.",
-                    "ko": ""
+                    "ko": "지금은 안 됩니다."
                 }
             ]
         },
@@ -3183,17 +3167,17 @@
             "words": [
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 }
             ],
             "sentences": [
                 {
                     "en": "There isn’t any.",
-                    "ko": ""
+                    "ko": "없습니다."
                 }
             ]
         }
@@ -3207,7 +3191,7 @@
                 },
                 {
                     "en": "Then",
-                    "ko": ""
+                    "ko": "너무"
                 },
                 {
                     "en": "Later",
@@ -3223,37 +3207,37 @@
                 },
                 {
                     "en": "Oh",
-                    "ko": ""
+                    "ko": "OH"
                 },
                 {
                     "en": "Like that",
-                    "ko": ""
+                    "ko": "그렇게"
                 },
                 {
                     "en": "So",
-                    "ko": "너무"
+                    "ko": "그렇게"
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "Only",
-                    "ko": ""
+                    "ko": "저스트"
                 }
             ],
             "sentences": [
                 {
                     "en": "So, later.",
-                    "ko": ""
+                    "ko": "그래서, 나중에."
                 },
                 {
                     "en": "So tomorrow, okay.",
-                    "ko": ""
+                    "ko": "그래서 내일, 알겠습니다."
                 },
                 {
                     "en": "Oh, so that’s how it is.",
-                    "ko": ""
+                    "ko": "아, 그래서 그런 거군요."
                 }
             ]
         },
@@ -3261,7 +3245,7 @@
             "words": [
                 {
                     "en": "That’s why",
-                    "ko": ""
+                    "ko": "쿠데소"
                 },
                 {
                     "en": "I",
@@ -3273,41 +3257,41 @@
                 },
                 {
                     "en": "Tell",
-                    "ko": ""
+                    "ko": "텔"
                 },
                 {
                     "en": "Say",
-                    "ko": ""
+                    "ko": "텔"
                 },
                 {
                     "en": "Since earlier",
-                    "ko": ""
+                    "ko": "이전부터"
                 },
                 {
                     "en": "Don’t",
-                    "ko": ""
+                    "ko": "하지 마세요"
                 },
                 {
                     "en": "Like that",
-                    "ko": ""
+                    "ko": "그렇게"
                 }
             ],
             "sentences": [
                 {
                     "en": "That’s why I told you earlier.",
-                    "ko": ""
+                    "ko": "그래서 아까 말씀드렸잖아요."
                 },
                 {
                     "en": "That’s why I told you earlier.",
-                    "ko": ""
+                    "ko": "그래서 아까 말씀드렸잖아요."
                 },
                 {
                     "en": "That’s why don’t do that.",
-                    "ko": ""
+                    "ko": "그렇기 때문에 그렇게 하지 마세요."
                 },
                 {
                     "en": "That’s why.",
-                    "ko": ""
+                    "ko": "쿠데소"
                 }
             ]
         },
@@ -3331,7 +3315,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "ko": ""
+                    "ko": "첫 번째"
                 },
                 {
                     "en": "Wait",
@@ -3345,11 +3329,11 @@
             "sentences": [
                 {
                     "en": "So, I’ll go first.",
-                    "ko": ""
+                    "ko": "자, 먼저 가보겠습니다."
                 },
                 {
                     "en": "So, I’ll wait here.",
-                    "ko": ""
+                    "ko": "그래서 여기서 기다리겠습니다."
                 }
             ]
         }
@@ -3367,11 +3351,11 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "But",
-                    "ko": ""
+                    "ko": "근데"
                 },
                 {
                     "en": "Later",
@@ -3379,11 +3363,11 @@
                 },
                 {
                     "en": "Even though",
-                    "ko": ""
+                    "ko": "그럼에도"
                 },
                 {
                     "en": "But actually",
-                    "ko": ""
+                    "ko": "그럼에도"
                 },
                 {
                     "en": "Close",
@@ -3391,29 +3375,29 @@
                 },
                 {
                     "en": "Near",
-                    "ko": "가까운"
+                    "ko": "닫다"
                 },
                 {
                     "en": "Tell",
-                    "ko": ""
+                    "ko": "텔"
                 },
                 {
                     "en": "Say",
-                    "ko": "말하다"
+                    "ko": "텔"
                 }
             ],
             "sentences": [
                 {
                     "en": "I want to, but later.",
-                    "ko": ""
+                    "ko": "그러고 싶지만 나중에."
                 },
                 {
                     "en": "I can, but later.",
-                    "ko": ""
+                    "ko": "할 수 있지만 나중에."
                 },
                 {
                     "en": "Even though it’s close.",
-                    "ko": ""
+                    "ko": "가깝긴 하지만요."
                 }
             ]
         },
@@ -3433,25 +3417,25 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
                     "en": "I want to, but I’m tired.",
-                    "ko": ""
+                    "ko": "하고 싶지만 피곤하다."
                 },
                 {
                     "en": "I want to, but I’m tired.",
-                    "ko": ""
+                    "ko": "하고 싶지만 피곤하다."
                 },
                 {
                     "en": "But I already told you.",
-                    "ko": ""
+                    "ko": "아니, 괜찮아."
                 }
             ]
         },
@@ -3467,11 +3451,11 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Now",
@@ -3479,17 +3463,17 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 }
             ],
             "sentences": [
                 {
                     "en": "I want to, but I can’t right now.",
-                    "ko": ""
+                    "ko": "그러고 싶지만 지금은 안 돼요."
                 },
                 {
                     "en": "But I already told you.",
-                    "ko": ""
+                    "ko": "아니, 괜찮아."
                 }
             ]
         }
@@ -3499,33 +3483,33 @@
             "words": [
                 {
                     "en": "Then",
-                    "ko": ""
+                    "ko": "그때"
                 },
                 {
                     "en": "And then",
-                    "ko": ""
+                    "ko": "그때"
                 },
                 {
                     "en": "After that",
-                    "ko": ""
+                    "ko": "그 다음"
                 },
                 {
                     "en": "And then",
-                    "ko": ""
+                    "ko": "그 다음"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then?",
-                    "ko": ""
+                    "ko": "그때라고요?"
                 },
                 {
                     "en": "And then?",
-                    "ko": ""
+                    "ko": "그 다음엔&amp;'85;"
                 },
                 {
                     "en": "Then what?",
-                    "ko": ""
+                    "ko": "그럼 어떡하지?"
                 }
             ]
         },
@@ -3533,21 +3517,21 @@
             "words": [
                 {
                     "en": "Then",
-                    "ko": ""
+                    "ko": "그때"
                 },
                 {
                     "en": "How",
-                    "ko": ""
+                    "ko": "방법"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then what?",
-                    "ko": ""
+                    "ko": "그럼 어떡하지?"
                 },
                 {
                     "en": "Then?",
-                    "ko": ""
+                    "ko": "그때라고요?"
                 }
             ]
         },
@@ -3555,7 +3539,7 @@
             "words": [
                 {
                     "en": "Then",
-                    "ko": ""
+                    "ko": "그때"
                 },
                 {
                     "en": "How",
@@ -3563,17 +3547,17 @@
                 },
                 {
                     "en": "After that",
-                    "ko": ""
+                    "ko": "그 다음"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then what?",
-                    "ko": ""
+                    "ko": "그럼 어떡하지?"
                 },
                 {
                     "en": "And then?",
-                    "ko": ""
+                    "ko": "그 다음엔&amp;'85;"
                 }
             ]
         }
@@ -3595,7 +3579,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Yes",
@@ -3603,11 +3587,11 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Now",
@@ -3617,19 +3601,19 @@
             "sentences": [
                 {
                     "en": "Maybe later.",
-                    "ko": ""
+                    "ko": "나중에"
                 },
                 {
                     "en": "Maybe.",
-                    "ko": ""
+                    "ko": "아마도."
                 },
                 {
                     "en": "Maybe.",
-                    "ko": ""
+                    "ko": "아마도."
                 },
                 {
                     "en": "Maybe not right now.",
-                    "ko": ""
+                    "ko": "아마 여러분들이 지금 당장 이것을"
                 }
             ]
         },
@@ -3637,7 +3621,7 @@
             "words": [
                 {
                     "en": "Probably",
-                    "ko": ""
+                    "ko": "아마도"
                 },
                 {
                     "en": "I",
@@ -3649,33 +3633,33 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
                     "en": "I probably can’t.",
-                    "ko": ""
+                    "ko": "못 할 것 같아요."
                 },
                 {
                     "en": "I probably can’t.",
-                    "ko": ""
+                    "ko": "못 할 것 같아요."
                 },
                 {
                     "en": "Probably already.",
-                    "ko": ""
+                    "ko": "아마 이미 그러셨을 겁니다."
                 }
             ]
         },
@@ -3693,7 +3677,7 @@
             "sentences": [
                 {
                     "en": "Maybe I can.",
-                    "ko": ""
+                    "ko": "내가 할 수 있을지도 몰라."
                 }
             ]
         }
@@ -3703,15 +3687,15 @@
             "words": [
                 {
                     "en": "Agree",
-                    "ko": ""
+                    "ko": "동의"
                 },
                 {
                     "en": "Disagree",
-                    "ko": ""
+                    "ko": "동의하지 않는다"
                 },
                 {
                     "en": "But",
-                    "ko": ""
+                    "ko": "근데"
                 },
                 {
                     "en": "Later",
@@ -3721,15 +3705,15 @@
             "sentences": [
                 {
                     "en": "Agree.",
-                    "ko": ""
+                    "ko": "동의"
                 },
                 {
                     "en": "Disagree.",
-                    "ko": ""
+                    "ko": "난 반대야."
                 },
                 {
                     "en": "I agree, but later.",
-                    "ko": ""
+                    "ko": "동의하지만 나중에."
                 }
             ]
         },
@@ -3745,19 +3729,19 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Disagree",
-                    "ko": ""
+                    "ko": "동의하지 않는다"
                 },
                 {
                     "en": "Yeah.",
-                    "ko": ""
+                    "ko": "네."
                 }
             ],
             "sentences": [
@@ -3771,7 +3755,7 @@
                 },
                 {
                     "en": "Yeah.",
-                    "ko": ""
+                    "ko": "네."
                 }
             ]
         },
@@ -3803,11 +3787,11 @@
             "words": [
                 {
                     "en": "According to",
-                    "ko": ""
+                    "ko": "A에 따르면"
                 },
                 {
                     "en": "In your opinion",
-                    "ko": ""
+                    "ko": "A에 따르면"
                 },
                 {
                     "en": "You",
@@ -3823,17 +3807,17 @@
                 },
                 {
                     "en": "If",
-                    "ko": ""
+                    "ko": "만약"
                 }
             ],
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "ko": ""
+                    "ko": "“너희는 어떻게 생각하느냐?"
                 },
                 {
                     "en": "What do you think?",
-                    "ko": ""
+                    "ko": "“너희는 어떻게 생각하느냐?"
                 }
             ]
         },
@@ -3841,17 +3825,17 @@
             "words": [
                 {
                     "en": "How",
-                    "ko": ""
+                    "ko": "방법"
                 }
             ],
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "ko": ""
+                    "ko": "“너희는 어떻게 생각하느냐?"
                 },
                 {
                     "en": "What do you think?",
-                    "ko": ""
+                    "ko": "“너희는 어떻게 생각하느냐?"
                 }
             ]
         },
@@ -3869,11 +3853,11 @@
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "ko": ""
+                    "ko": "“너희는 어떻게 생각하느냐?"
                 },
                 {
                     "en": "What do you think?",
-                    "ko": ""
+                    "ko": "“너희는 어떻게 생각하느냐?"
                 }
             ]
         }
@@ -3883,11 +3867,11 @@
             "words": [
                 {
                     "en": "A bit",
-                    "ko": ""
+                    "ko": "약간"
                 },
                 {
                     "en": "Not bad",
-                    "ko": ""
+                    "ko": "생각보다 괜찮아요"
                 },
                 {
                     "en": "Tired",
@@ -3901,15 +3885,15 @@
             "sentences": [
                 {
                     "en": "A bit tired.",
-                    "ko": ""
+                    "ko": "조금 피곤했다."
                 },
                 {
                     "en": "Not bad.",
-                    "ko": ""
+                    "ko": "나쁘지 않네."
                 },
                 {
                     "en": "A bit expensive.",
-                    "ko": ""
+                    "ko": "약간 비쌈"
                 }
             ]
         },
@@ -3917,29 +3901,29 @@
             "words": [
                 {
                     "en": "Like",
-                    "ko": ""
+                    "ko": "좋아요"
                 },
                 {
                     "en": "Like that",
-                    "ko": ""
+                    "ko": "그렇게"
                 },
                 {
                     "en": "(softener)",
-                    "ko": ""
+                    "ko": "(유연제)"
                 }
             ],
             "sentences": [
                 {
                     "en": "Like that.",
-                    "ko": ""
+                    "ko": "그렇게"
                 },
                 {
                     "en": "A bit tired.",
-                    "ko": ""
+                    "ko": "조금 피곤했다."
                 },
                 {
                     "en": "Not bad.",
-                    "ko": ""
+                    "ko": "나쁘지 않네."
                 }
             ]
         },
@@ -3955,7 +3939,7 @@
                 },
                 {
                     "en": "Fine",
-                    "ko": "괜찮은"
+                    "ko": "좋은"
                 },
                 {
                     "en": "I",
@@ -3973,11 +3957,11 @@
             "sentences": [
                 {
                     "en": "Pretty good.",
-                    "ko": ""
+                    "ko": "매우 좋아요!"
                 },
                 {
                     "en": "I’m quite tired.",
-                    "ko": ""
+                    "ko": "꽤 피곤하다."
                 }
             ]
         }
@@ -3991,7 +3975,7 @@
                 },
                 {
                     "en": "A moment",
-                    "ko": ""
+                    "ko": "잠시 전"
                 },
                 {
                     "en": "Yes",
@@ -4001,11 +3985,11 @@
             "sentences": [
                 {
                     "en": "Wait a moment.",
-                    "ko": ""
+                    "ko": "잠깐만요."
                 },
                 {
                     "en": "One sec, okay.",
-                    "ko": ""
+                    "ko": "잠깐만요."
                 }
             ]
         },
@@ -4013,7 +3997,7 @@
             "words": [
                 {
                     "en": "A sec",
-                    "ko": ""
+                    "ko": "1초"
                 },
                 {
                     "en": "First",
@@ -4021,17 +4005,17 @@
                 },
                 {
                     "en": "Earlier",
-                    "ko": ""
+                    "ko": "첫 번째"
                 }
             ],
             "sentences": [
                 {
                     "en": "One sec, okay.",
-                    "ko": ""
+                    "ko": "잠깐만요."
                 },
                 {
                     "en": "Wait a sec.",
-                    "ko": ""
+                    "ko": "잠깐만요."
                 },
                 {
                     "en": "Hold on.",
@@ -4051,7 +4035,7 @@
                 },
                 {
                     "en": "Kindly",
-                    "ko": ""
+                    "ko": "부탁해요"
                 },
                 {
                     "en": "Excuse me",
@@ -4061,11 +4045,11 @@
             "sentences": [
                 {
                     "en": "Please wait a moment.",
-                    "ko": ""
+                    "ko": "잠시만 기다려주세요."
                 },
                 {
                     "en": "Excuse me, wait a moment.",
-                    "ko": ""
+                    "ko": "실례하겠습니다."
                 }
             ]
         }
@@ -4075,19 +4059,19 @@
             "words": [
                 {
                     "en": "The meaning",
-                    "ko": ""
+                    "ko": "의미"
                 },
                 {
                     "en": "I mean",
-                    "ko": ""
+                    "ko": "의미"
                 },
                 {
                     "en": "Like this",
-                    "ko": ""
+                    "ko": "좋아요"
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "That",
@@ -4097,11 +4081,11 @@
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "ko": ""
+                    "ko": "진심이야."
                 },
                 {
                     "en": "I mean, not that.",
-                    "ko": ""
+                    "ko": "제 말은, 그게 아닙니다."
                 }
             ]
         },
@@ -4109,21 +4093,21 @@
             "words": [
                 {
                     "en": "I mean",
-                    "ko": ""
+                    "ko": "제 말씀은"
                 },
                 {
                     "en": "Like this",
-                    "ko": ""
+                    "ko": "좋아요"
                 }
             ],
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "ko": ""
+                    "ko": "진심이야."
                 },
                 {
                     "en": "I mean, not that.",
-                    "ko": ""
+                    "ko": "제 말은, 그게 아닙니다."
                 }
             ]
         },
@@ -4145,11 +4129,11 @@
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "ko": ""
+                    "ko": "진심이야."
                 },
                 {
                     "en": "I mean, not that.",
-                    "ko": ""
+                    "ko": "제 말은, 그게 아닙니다."
                 }
             ]
         }
@@ -4163,19 +4147,19 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Repeat",
-                    "ko": ""
+                    "ko": "재교부"
                 },
                 {
                     "en": "One more time",
-                    "ko": ""
+                    "ko": "한번 더"
                 },
                 {
                     "en": "Slowly",
-                    "ko": ""
+                    "ko": "느리게"
                 },
                 {
                     "en": "Yes",
@@ -4185,15 +4169,15 @@
             "sentences": [
                 {
                     "en": "Can you say it again?",
-                    "ko": ""
+                    "ko": "다시 한 번 말씀해주시겠어요?"
                 },
                 {
                     "en": "One more time.",
-                    "ko": ""
+                    "ko": "한번 더"
                 },
                 {
                     "en": "Slower, please.",
-                    "ko": ""
+                    "ko": "천천히 해주세요."
                 }
             ]
         },
@@ -4201,13 +4185,13 @@
             "words": [
                 {
                     "en": "Please",
-                    "ko": ""
+                    "ko": "업무 진행에 속도를 높일 수 있도록 협조하여 주시기를 요청합니다."
                 }
             ],
             "sentences": [
                 {
                     "en": "Say it again.",
-                    "ko": ""
+                    "ko": "다시 한 번 말한다."
                 }
             ]
         },
@@ -4227,17 +4211,17 @@
                 },
                 {
                     "en": "Kindly",
-                    "ko": ""
+                    "ko": "부탁해요"
                 }
             ],
             "sentences": [
                 {
                     "en": "Can you say it again?",
-                    "ko": ""
+                    "ko": "다시 한 번 말씀해주시겠어요?"
                 },
                 {
                     "en": "Slower, please.",
-                    "ko": ""
+                    "ko": "천천히 해주세요."
                 }
             ]
         }
@@ -4251,7 +4235,7 @@
                 },
                 {
                     "en": "Allowed",
-                    "ko": ""
+                    "ko": "물론이죠"
                 },
                 {
                     "en": "Later",
@@ -4259,15 +4243,15 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "Only",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "Another time",
-                    "ko": ""
+                    "ko": "다른 시간"
                 },
                 {
                     "en": "Yes",
@@ -4281,19 +4265,19 @@
             "sentences": [
                 {
                     "en": "Sure.",
-                    "ko": ""
+                    "ko": "물론이지."
                 },
                 {
                     "en": "Later.",
-                    "ko": ""
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
                 },
                 {
                     "en": "Another time, okay.",
-                    "ko": ""
+                    "ko": "다음에 또 오세요."
                 },
                 {
                     "en": "Maybe another time.",
-                    "ko": ""
+                    "ko": "\"다음에 오겠습니다.\""
                 }
             ]
         },
@@ -4301,29 +4285,29 @@
             "words": [
                 {
                     "en": "Not right now",
-                    "ko": ""
+                    "ko": "지금 말고"
                 },
                 {
                     "en": "Later",
-                    "ko": ""
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not right now.",
-                    "ko": ""
+                    "ko": "지금은 안 됩니다."
                 },
                 {
                     "en": "Later.",
-                    "ko": ""
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
                 },
                 {
                     "en": "Another time.",
-                    "ko": ""
+                    "ko": "다른 시간"
                 }
             ]
         },
@@ -4335,7 +4319,7 @@
                 },
                 {
                     "en": "Excuse me",
-                    "ko": "실례합니다"
+                    "ko": "죄송해요"
                 },
                 {
                     "en": "I",
@@ -4347,11 +4331,11 @@
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Can",
@@ -4359,7 +4343,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Now",
@@ -4369,7 +4353,7 @@
             "sentences": [
                 {
                     "en": "Sorry, I can’t right now.",
-                    "ko": ""
+                    "ko": "죄송합니다. 지금은 할 수 없습니다."
                 }
             ]
         }
@@ -4395,21 +4379,21 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 }
             ],
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "ko": ""
+                    "ko": "어디이신가요?"
                 },
                 {
                     "en": "Where are you now?",
-                    "ko": ""
+                    "ko": "지금 어디에 있나요?"
                 },
                 {
                     "en": "Where are you?",
-                    "ko": ""
+                    "ko": "어디이신가요?"
                 }
             ]
         },
@@ -4417,7 +4401,7 @@
             "words": [
                 {
                     "en": "On my way",
-                    "ko": ""
+                    "ko": "갑니다."
                 },
                 {
                     "en": "I",
@@ -4429,7 +4413,7 @@
                 },
                 {
                     "en": "At home",
-                    "ko": ""
+                    "ko": "집에서"
                 },
                 {
                     "en": "Yes",
@@ -4439,23 +4423,23 @@
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "ko": ""
+                    "ko": "어디이신가요?"
                 },
                 {
                     "en": "On my way.",
-                    "ko": ""
+                    "ko": "갑니다."
                 },
                 {
                     "en": "On my way.",
-                    "ko": ""
+                    "ko": "갑니다."
                 },
                 {
                     "en": "I’m at home.",
-                    "ko": ""
+                    "ko": "집에 있어요."
                 },
                 {
                     "en": "I’m at home.",
-                    "ko": ""
+                    "ko": "집에 있어요."
                 }
             ]
         },
@@ -4479,21 +4463,21 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "On the way",
-                    "ko": ""
+                    "ko": "인기 상승 중"
                 }
             ],
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "ko": ""
+                    "ko": "어디이신가요?"
                 },
                 {
                     "en": "I’m on my way.",
-                    "ko": ""
+                    "ko": "지금 갑니다."
                 }
             ]
         }
@@ -4520,69 +4504,69 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Hurry up",
-                    "ko": ""
+                    "ko": "서두르시오."
                 },
                 {
                     "en": "Like this",
-                    "ko": ""
+                    "ko": "좋아요"
                 },
                 {
                     "en": "Pointing",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "here",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "this",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "Surprise",
-                    "ko": ""
+                    "ko": "서프라이즈"
                 },
                 {
                     "en": "how come? tone",
-                    "ko": ""
+                    "ko": "서프라이즈"
                 },
                 {
                     "en": "Urging",
-                    "ko": ""
+                    "ko": "독촉"
                 },
                 {
                     "en": "come on",
-                    "ko": ""
+                    "ko": "독촉"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 },
                 {
                     "en": "Pointing",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "there",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 },
                 {
                     "en": "see?",
-                    "ko": ""
+                    "ko": "관찰위치( P)"
                 }
             ],
             "sentences": [
                 {
                     "en": "Like this.",
-                    "ko": ""
+                    "ko": "좋아요"
                 },
                 {
                     "en": "How come?",
-                    "ko": ""
+                    "ko": "어째서…….’"
                 },
                 {
                     "en": "Hurry up.",
@@ -4608,7 +4592,7 @@
                 },
                 {
                     "en": "Me (Jakarta slang)",
-                    "ko": ""
+                    "ko": "나 (자카르타 속어)"
                 },
                 {
                     "en": "It’s okay",
@@ -4624,11 +4608,11 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Not yet",
@@ -4636,19 +4620,19 @@
                 },
                 {
                     "en": "On my way",
-                    "ko": ""
+                    "ko": "갑니다."
                 },
                 {
                     "en": "Laughing",
-                    "ko": ""
+                    "ko": "웃음"
                 },
                 {
                     "en": "Surprise",
-                    "ko": ""
+                    "ko": "서프라이즈"
                 },
                 {
                     "en": "how come? tone",
-                    "ko": ""
+                    "ko": "서프라이즈"
                 }
             ],
             "sentences": [
@@ -4658,15 +4642,15 @@
                 },
                 {
                     "en": "Haha.",
-                    "ko": ""
+                    "ko": "하하."
                 },
                 {
                     "en": "I’m on my way.",
-                    "ko": ""
+                    "ko": "지금 갑니다."
                 },
                 {
                     "en": "I’m on my way.",
-                    "ko": ""
+                    "ko": "지금 갑니다."
                 }
             ]
         },
@@ -4680,7 +4664,7 @@
             "words": [
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "What",
@@ -4688,7 +4672,7 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Not yet",
@@ -4702,11 +4686,11 @@
             "sentences": [
                 {
                     "en": "What are you doing?",
-                    "ko": ""
+                    "ko": "기분이 어떤가요?"
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "ko": ""
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
                 }
             ]
         },
@@ -4714,21 +4698,21 @@
             "words": [
                 {
                     "en": "You (Jakarta slang)",
-                    "ko": ""
+                    "ko": "당신 (자카르타 속어)"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "ko": ""
+                    "ko": "당신 (자카르타 속어)"
                 },
                 {
                     "en": "Not yet",
-                    "ko": ""
+                    "ko": "아직"
                 }
             ],
             "sentences": [
                 {
                     "en": "Have you eaten yet?",
-                    "ko": ""
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
                 }
             ]
         },
@@ -4736,7 +4720,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ko": ""
+                    "ko": "날씨"
                 },
                 {
                     "en": "You",
@@ -4748,13 +4732,13 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 }
             ],
             "sentences": [
                 {
                     "en": "Have you eaten yet?",
-                    "ko": ""
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
                 }
             ]
         }
@@ -4763,12 +4747,12 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "Let's"
                 },
                 {
                     "en": "Hang out",
-                    "ko": ""
+                    "ko": "어울림"
                 },
                 {
                     "en": "What time",
@@ -4780,21 +4764,21 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
-                    "ko": ""
+                    "en": "Let us hang out.",
+                    "ko": "놀러가자."
                 },
                 {
                     "en": "What time?",
-                    "ko": ""
+                    "ko": "몇 시죠?"
                 },
                 {
                     "en": "Later.",
-                    "ko": ""
+                    "ko": "활성화하는 중 오류가 발생했습니다. 나중에 다시 시도하세요"
                 }
             ]
         },
@@ -4802,21 +4786,21 @@
             "words": [
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
-                    "ko": ""
+                    "en": "Let us hang out.",
+                    "ko": "놀러가자."
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "Let's"
                 },
                 {
                     "en": "We",
@@ -4824,7 +4808,7 @@
                 },
                 {
                     "en": "Us",
-                    "ko": "우리를"
+                    "ko": "우리"
                 },
                 {
                     "en": "Meet",
@@ -4833,8 +4817,8 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s meet.",
-                    "ko": ""
+                    "en": "Let us meet.",
+                    "ko": "만나자."
                 }
             ]
         }
@@ -4844,65 +4828,65 @@
             "words": [
                 {
                     "en": "Fun",
-                    "ko": ""
+                    "ko": "재밌는"
                 },
                 {
                     "en": "Exciting",
-                    "ko": ""
+                    "ko": "재밌는"
                 },
                 {
                     "en": "Bored",
-                    "ko": ""
+                    "ko": "지루함"
                 },
                 {
                     "en": "Pitiful",
-                    "ko": ""
+                    "ko": "감상적인"
                 },
                 {
                     "en": "Poor thing",
-                    "ko": ""
+                    "ko": "감상적인"
                 },
                 {
                     "en": "Oh no",
-                    "ko": ""
+                    "ko": "안 돼요."
                 },
                 {
                     "en": "Wow",
-                    "ko": ""
+                    "ko": "안 돼요."
                 },
                 {
                     "en": "Oh dear",
-                    "ko": ""
+                    "ko": "오 이런"
                 },
                 {
                     "en": "Oh my",
-                    "ko": ""
+                    "ko": "omo"
                 }
             ],
             "sentences": [
                 {
                     "en": "So fun.",
-                    "ko": ""
+                    "ko": "너무 재미있어요."
                 },
                 {
                     "en": "So bored.",
-                    "ko": ""
+                    "ko": "너무 지루해."
                 },
                 {
                     "en": "Poor thing.",
-                    "ko": ""
+                    "ko": "불쌍하다."
                 },
                 {
                     "en": "Oh no!",
-                    "ko": ""
+                    "ko": "아, 안 돼!"
                 },
                 {
                     "en": "Oh dear.",
-                    "ko": ""
+                    "ko": "오 이런"
                 },
                 {
                     "en": "Oh my.",
-                    "ko": ""
+                    "ko": "저런."
                 }
             ]
         },
@@ -4918,15 +4902,15 @@
                 },
                 {
                     "en": "Nervous",
-                    "ko": ""
+                    "ko": "신경쇠약"
                 },
                 {
                     "en": "Miss",
-                    "ko": ""
+                    "ko": "빗나감"
                 },
                 {
                     "en": "Annoyed",
-                    "ko": ""
+                    "ko": "분노중이에요"
                 },
                 {
                     "en": "Very",
@@ -4934,49 +4918,49 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 },
                 {
                     "en": "How",
-                    "ko": ""
+                    "ko": "방법"
                 }
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
-                    "ko": ""
+                    "en": "I am bored.",
+                    "ko": "카를&#09;&#09;아, 지겨워."
                 },
                 {
-                    "en": "I'm nervous.",
-                    "ko": ""
+                    "en": "I am nervous.",
+                    "ko": "긴장된다."
                 },
                 {
-                    "en": "I'm nervous.",
-                    "ko": ""
-                },
-                {
-                    "en": "I miss you.",
-                    "ko": ""
+                    "en": "I am nervous.",
+                    "ko": "긴장된다."
                 },
                 {
                     "en": "I miss you.",
-                    "ko": ""
+                    "ko": "내가 당신을 그리워."
                 },
                 {
-                    "en": "I'm annoyed.",
-                    "ko": ""
+                    "en": "I miss you.",
+                    "ko": "내가 당신을 그리워."
                 },
                 {
-                    "en": "I'm annoyed.",
-                    "ko": ""
+                    "en": "I am annoyed.",
+                    "ko": "짜증나."
+                },
+                {
+                    "en": "I am annoyed.",
+                    "ko": "짜증나."
                 },
                 {
                     "en": "How about it?",
-                    "ko": ""
+                    "ko": "어때?"
                 }
             ]
         },
@@ -4992,25 +4976,25 @@
                 },
                 {
                     "en": "Nervous",
-                    "ko": ""
+                    "ko": "신경쇠약"
                 },
                 {
                     "en": "Miss",
-                    "ko": ""
+                    "ko": "빗나감"
                 }
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
-                    "ko": ""
+                    "en": "I am bored.",
+                    "ko": "카를&#09;&#09;아, 지겨워."
                 },
                 {
-                    "en": "I'm nervous.",
-                    "ko": ""
+                    "en": "I am nervous.",
+                    "ko": "긴장된다."
                 },
                 {
                     "en": "I miss you.",
-                    "ko": ""
+                    "ko": "내가 당신을 그리워."
                 }
             ]
         }
@@ -5020,29 +5004,29 @@
             "words": [
                 {
                     "en": "Know",
-                    "ko": ""
+                    "ko": "앎"
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Hear",
-                    "ko": ""
+                    "ko": "듣다"
                 }
             ],
             "sentences": [
                 {
                     "en": "You know what?",
-                    "ko": ""
+                    "ko": "그거 아세요?"
                 },
                 {
                     "en": "Did you hear?",
-                    "ko": ""
+                    "ko": "들으셨어요…?"
                 },
                 {
                     "en": "Hey, you know what?",
-                    "ko": ""
+                    "ko": "이봐, 그거 알아?"
                 }
             ]
         },
@@ -5050,29 +5034,29 @@
             "words": [
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Hey",
-                    "ko": ""
+                    "ko": "안녕"
                 }
             ],
             "sentences": [
                 {
                     "en": "You know what?",
-                    "ko": ""
+                    "ko": "그거 아세요?"
                 },
                 {
                     "en": "You know what?",
-                    "ko": ""
+                    "ko": "그거 아세요?"
                 },
                 {
                     "en": "Did you hear?",
-                    "ko": ""
+                    "ko": "들으셨어요…?"
                 },
                 {
                     "en": "Hey, you know what?",
-                    "ko": ""
+                    "ko": "이봐, 그거 알아?"
                 }
             ]
         },
@@ -5086,15 +5070,15 @@
             "words": [
                 {
                     "en": "Cool",
-                    "ko": ""
+                    "ko": "알았습니다."
                 },
                 {
                     "en": "Awesome",
-                    "ko": ""
+                    "ko": "알았습니다."
                 },
                 {
                     "en": "Awesome",
-                    "ko": ""
+                    "ko": "Font Awesome PRO 아이콘을 활성화합니다."
                 },
                 {
                     "en": "Good",
@@ -5102,7 +5086,7 @@
                 },
                 {
                     "en": "Nice",
-                    "ko": ""
+                    "ko": "좋은"
                 },
                 {
                     "en": "Very",
@@ -5110,15 +5094,15 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 },
                 {
                     "en": "Fun",
-                    "ko": ""
+                    "ko": "재밌는"
                 },
                 {
                     "en": "Cool",
-                    "ko": ""
+                    "ko": "재밌는"
                 },
                 {
                     "en": "Very",
@@ -5126,25 +5110,25 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 }
             ],
             "sentences": [
                 {
                     "en": "So cool.",
-                    "ko": ""
+                    "ko": "엏ㅎㅎㅎ뭐아햐햫ㅎ"
                 },
                 {
                     "en": "Awesome!",
-                    "ko": ""
+                    "ko": "멋져!"
                 },
                 {
                     "en": "Really good.",
-                    "ko": ""
+                    "ko": "정말 좋습니다."
                 },
                 {
                     "en": "So fun.",
-                    "ko": ""
+                    "ko": "너무 재미있어요."
                 }
             ]
         },
@@ -5153,15 +5137,15 @@
             "sentences": [
                 {
                     "en": "So cool.",
-                    "ko": ""
+                    "ko": "엏ㅎㅎㅎ뭐아햐햫ㅎ"
                 },
                 {
                     "en": "Really awesome.",
-                    "ko": ""
+                    "ko": "정말 멋져요."
                 },
                 {
                     "en": "Really awesome.",
-                    "ko": ""
+                    "ko": "정말 멋져요."
                 }
             ]
         },
@@ -5170,7 +5154,7 @@
             "sentences": [
                 {
                     "en": "Very good.",
-                    "ko": ""
+                    "ko": "훌륭합니다."
                 }
             ]
         }
@@ -5184,7 +5168,7 @@
                 },
                 {
                     "en": "Rarely",
-                    "ko": ""
+                    "ko": "드물게"
                 },
                 {
                     "en": "Sometimes",
@@ -5200,25 +5184,25 @@
                 },
                 {
                     "en": "Like that",
-                    "ko": ""
+                    "ko": "그렇게"
                 }
             ],
             "sentences": [
                 {
                     "en": "Often.",
-                    "ko": ""
+                    "ko": "자주"
                 },
                 {
                     "en": "Rarely.",
-                    "ko": ""
+                    "ko": "드물게"
                 },
                 {
                     "en": "Sometimes.",
-                    "ko": ""
+                    "ko": "때때로"
                 },
                 {
                     "en": "Usually like that.",
-                    "ko": ""
+                    "ko": "보통은 그렇게 하죠."
                 }
             ]
         },
@@ -5234,7 +5218,7 @@
                 },
                 {
                     "en": "To",
-                    "ko": ""
+                    "ko": "받는 사람"
                 },
                 {
                     "en": "Here",
@@ -5246,17 +5230,17 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 }
             ],
             "sentences": [
                 {
                     "en": "I often come here.",
-                    "ko": ""
+                    "ko": "저는 종종 이곳에 옵니다."
                 },
                 {
                     "en": "Really rarely.",
-                    "ko": ""
+                    "ko": "정말 드물게요."
                 }
             ]
         },
@@ -5272,7 +5256,7 @@
                 },
                 {
                     "en": "To",
-                    "ko": ""
+                    "ko": "받는 사람"
                 },
                 {
                     "en": "Here",
@@ -5282,7 +5266,7 @@
             "sentences": [
                 {
                     "en": "I often come here.",
-                    "ko": ""
+                    "ko": "저는 종종 이곳에 옵니다."
                 }
             ]
         }
@@ -5292,7 +5276,7 @@
             "words": [
                 {
                     "en": "Traffic jam",
-                    "ko": ""
+                    "ko": "교통 체증"
                 },
                 {
                     "en": "Hot",
@@ -5304,7 +5288,7 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 },
                 {
                     "en": "Very",
@@ -5312,17 +5296,17 @@
                 },
                 {
                     "en": "Really",
-                    "ko": "정말"
+                    "ko": "매우"
                 }
             ],
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "ko": ""
+                    "ko": "교통 체증은 끔찍합니다."
                 },
                 {
                     "en": "So hot.",
-                    "ko": ""
+                    "ko": "앗 뜨거!"
                 }
             ]
         },
@@ -5340,19 +5324,19 @@
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "ko": ""
+                    "ko": "교통 체증은 끔찍합니다."
                 },
                 {
                     "en": "So hot.",
-                    "ko": ""
+                    "ko": "앗 뜨거!"
                 },
                 {
                     "en": "Tired from work.",
-                    "ko": ""
+                    "ko": "업무에 지쳤습니다."
                 },
                 {
                     "en": "Tired from work.",
-                    "ko": ""
+                    "ko": "업무에 지쳤습니다."
                 }
             ]
         },
@@ -5370,11 +5354,11 @@
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "ko": ""
+                    "ko": "교통 체증은 끔찍합니다."
                 },
                 {
                     "en": "Tired from work.",
-                    "ko": ""
+                    "ko": "업무에 지쳤습니다."
                 }
             ]
         }
@@ -5384,25 +5368,25 @@
             "words": [
                 {
                     "en": "Oh right",
-                    "ko": ""
+                    "ko": "아 그러면 되겠네"
                 },
                 {
                     "en": "By the way",
-                    "ko": ""
+                    "ko": "아 그러면 되겠네"
                 },
                 {
                     "en": "By the way",
-                    "ko": ""
+                    "ko": "그런데"
                 }
             ],
             "sentences": [
                 {
                     "en": "Oh right.",
-                    "ko": ""
+                    "ko": "아, 맞다!<g id=\"2\"> </g>"
                 },
                 {
                     "en": "By the way.",
-                    "ko": ""
+                    "ko": "그나저나."
                 }
             ]
         },
@@ -5410,17 +5394,17 @@
             "words": [
                 {
                     "en": "Hey",
-                    "ko": ""
+                    "ko": "안녕"
                 }
             ],
             "sentences": [
                 {
                     "en": "Hey by the way.",
-                    "ko": ""
+                    "ko": "그나저나."
                 },
                 {
                     "en": "Hey by the way.",
-                    "ko": ""
+                    "ko": "그나저나."
                 }
             ]
         },
@@ -5434,11 +5418,11 @@
             "words": [
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Also",
@@ -5446,11 +5430,11 @@
                 },
                 {
                     "en": "Either",
-                    "ko": "~도"
+                    "ko": "또한"
                 },
                 {
                     "en": "How come",
-                    "ko": ""
+                    "ko": "어째서…….’"
                 },
                 {
                     "en": "Can",
@@ -5458,7 +5442,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Really",
@@ -5468,15 +5452,15 @@
             "sentences": [
                 {
                     "en": "Oh not really.",
-                    "ko": ""
+                    "ko": "아, 정답이 아니에요."
                 },
                 {
                     "en": "How come?",
-                    "ko": ""
+                    "ko": "어째서…….’"
                 },
                 {
                     "en": "Really?",
-                    "ko": ""
+                    "ko": "진심인가요?"
                 }
             ]
         },
@@ -5484,11 +5468,11 @@
             "words": [
                 {
                     "en": "Hey",
-                    "ko": ""
+                    "ko": "안녕"
                 },
                 {
                     "en": "Oh",
-                    "ko": ""
+                    "ko": "OH"
                 }
             ],
             "sentences": []
@@ -5497,17 +5481,17 @@
             "words": [
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not really.",
-                    "ko": ""
+                    "ko": "전혀 그렇지 않다"
                 }
             ]
         }
@@ -5521,15 +5505,15 @@
                 },
                 {
                     "en": "As",
-                    "ko": ""
+                    "ko": "좋아하다"
                 },
                 {
                     "en": "Earlier",
-                    "ko": ""
+                    "ko": "이전"
                 },
                 {
                     "en": "Before",
-                    "ko": "전"
+                    "ko": "이전"
                 },
                 {
                     "en": "Like",
@@ -5537,7 +5521,7 @@
                 },
                 {
                     "en": "As",
-                    "ko": ""
+                    "ko": "좋아하다"
                 },
                 {
                     "en": "I mean",
@@ -5545,11 +5529,11 @@
                 },
                 {
                     "en": "As in",
-                    "ko": ""
+                    "ko": "제 말은"
                 },
                 {
                     "en": "As (a)",
-                    "ko": ""
+                    "ko": "이의"
                 },
                 {
                     "en": "Friend",
@@ -5557,25 +5541,25 @@
                 },
                 {
                     "en": "How",
-                    "ko": ""
+                    "ko": "방법"
                 }
             ],
             "sentences": [
                 {
                     "en": "As before.",
-                    "ko": ""
+                    "ko": "예전처럼."
                 },
                 {
                     "en": "Like before.",
-                    "ko": ""
+                    "ko": "예전처럼."
                 },
                 {
                     "en": "What do you mean?",
-                    "ko": ""
+                    "ko": "그게 무슨 말이야?"
                 },
                 {
                     "en": "As a friend.",
-                    "ko": ""
+                    "ko": "친구로"
                 }
             ]
         },
@@ -5583,7 +5567,7 @@
             "words": [
                 {
                     "en": "Seems like",
-                    "ko": ""
+                    "ko": "다음과 같이 보입니다."
                 },
                 {
                     "en": "That",
@@ -5591,7 +5575,7 @@
                 },
                 {
                     "en": "Which",
-                    "ko": "어느"
+                    "ko": "저것"
                 },
                 {
                     "en": "You",
@@ -5607,25 +5591,25 @@
                 },
                 {
                     "en": "Like that",
-                    "ko": ""
+                    "ko": "그렇게"
                 }
             ],
             "sentences": [
                 {
                     "en": "As you said.",
-                    "ko": ""
+                    "ko": "말씀하신 대로요."
                 },
                 {
                     "en": "As you said.",
-                    "ko": ""
+                    "ko": "말씀하신 대로요."
                 },
                 {
                     "en": "Seems like that.",
-                    "ko": ""
+                    "ko": "그런 것 같네요."
                 },
                 {
                     "en": "Seems like that.",
-                    "ko": ""
+                    "ko": "그런 것 같네요."
                 }
             ]
         },
@@ -5637,7 +5621,7 @@
                 },
                 {
                     "en": "Which",
-                    "ko": "어느"
+                    "ko": "저것"
                 },
                 {
                     "en": "You",
@@ -5659,11 +5643,11 @@
             "sentences": [
                 {
                     "en": "As you said.",
-                    "ko": ""
+                    "ko": "말씀하신 대로요."
                 },
                 {
                     "en": "What do you mean?",
-                    "ko": ""
+                    "ko": "그게 무슨 말이야?"
                 }
             ]
         }
@@ -5689,31 +5673,31 @@
                 },
                 {
                     "en": "Older sibling",
-                    "ko": ""
+                    "ko": "형제자매"
                 },
                 {
                     "en": "Older sibling",
-                    "ko": ""
+                    "ko": "형제자매"
                 },
                 {
                     "en": "Younger sibling",
-                    "ko": ""
+                    "ko": "Dohngsaeng"
                 },
                 {
                     "en": "Younger sibling",
-                    "ko": ""
+                    "ko": "Dohngsaeng"
                 },
                 {
                     "en": "Sibling",
-                    "ko": ""
+                    "ko": "형제자매"
                 },
                 {
                     "en": "Relative",
-                    "ko": ""
+                    "ko": "형제자매"
                 },
                 {
                     "en": "Know (someone)",
-                    "ko": ""
+                    "ko": "알기 (누군가)"
                 },
                 {
                     "en": "Close",
@@ -5729,33 +5713,33 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "새로운"
                 },
                 {
                     "en": "Long time",
-                    "ko": ""
+                    "ko": "오래가"
                 }
             ],
             "sentences": [
                 {
                     "en": "Family.",
-                    "ko": ""
+                    "ko": "가정"
                 },
                 {
                     "en": "Parents.",
-                    "ko": ""
+                    "ko": "부모"
                 },
                 {
                     "en": "Close friend.",
-                    "ko": ""
+                    "ko": "우정"
                 },
                 {
                     "en": "Just met.",
-                    "ko": ""
+                    "ko": "방금 만났어."
                 },
                 {
                     "en": "Known each other a long time.",
-                    "ko": ""
+                    "ko": "서로 오래 알고 지냈다."
                 }
             ]
         },
@@ -5775,7 +5759,7 @@
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "We",
@@ -5787,37 +5771,37 @@
                 },
                 {
                     "en": "She",
-                    "ko": "그녀"
+                    "ko": "그"
                 }
             ],
             "sentences": [
                 {
                     "en": "My family.",
-                    "ko": ""
+                    "ko": "내 가족들과 말입니다.<t1/>"
                 },
                 {
                     "en": "My parents.",
-                    "ko": ""
+                    "ko": "부모님."
                 },
                 {
                     "en": "They're my friend.",
-                    "ko": ""
+                    "ko": "내 친구들이야."
                 },
                 {
                     "en": "We just met.",
-                    "ko": ""
+                    "ko": "방금 만났어."
                 },
                 {
                     "en": "We've known each other a long time.",
-                    "ko": ""
+                    "ko": "우리는 오랫동안 서로 알고 지냈습니다."
                 },
                 {
                     "en": "I have an older sibling.",
-                    "ko": ""
+                    "ko": "저는 형제가 있습니다."
                 },
                 {
                     "en": "I have an older sibling.",
-                    "ko": ""
+                    "ko": "저는 형제가 있습니다."
                 }
             ]
         },
@@ -5833,31 +5817,31 @@
                 },
                 {
                     "en": "I",
-                    "ko": ""
+                    "ko": "제1장"
                 },
                 {
                     "en": "Mum",
-                    "ko": ""
+                    "ko": "어머니"
                 },
                 {
                     "en": "Close",
-                    "ko": ""
+                    "ko": "닫기"
                 },
                 {
                     "en": "Friend",
-                    "ko": ""
+                    "ko": "친구"
                 },
                 {
                     "en": "Be friends",
-                    "ko": ""
+                    "ko": "친구가 되세요"
                 },
                 {
                     "en": "Get to know each other",
-                    "ko": ""
+                    "ko": "서로에 대해 알아가는 시간"
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Love",
@@ -5865,11 +5849,11 @@
                 },
                 {
                     "en": "Care for",
-                    "ko": ""
+                    "ko": "사랑하다"
                 },
                 {
                     "en": "Miss (someone)",
-                    "ko": ""
+                    "ko": "미스 (누군가)"
                 },
                 {
                     "en": "You",
@@ -5887,35 +5871,35 @@
             "sentences": [
                 {
                     "en": "My family.",
-                    "ko": ""
+                    "ko": "내 가족들과 말입니다.<t1/>"
                 },
                 {
                     "en": "My parents.",
-                    "ko": ""
+                    "ko": "부모님."
                 },
                 {
                     "en": "They're a close friend of mine.",
-                    "ko": ""
+                    "ko": "그들은 제 가까운 친구입니다."
                 },
                 {
                     "en": "We're just friends.",
-                    "ko": ""
+                    "ko": "우린 그냥 친구일 뿐이야."
                 },
                 {
                     "en": "Just met.",
-                    "ko": ""
+                    "ko": "방금 만났어."
                 },
                 {
                     "en": "Known each other for ages.",
-                    "ko": ""
+                    "ko": "서로 오래도록 알고 지냈습니다."
                 },
                 {
                     "en": "I care about you.",
-                    "ko": ""
+                    "ko": "널 생각해."
                 },
                 {
                     "en": "Miss you.",
-                    "ko": ""
+                    "ko": "보고 싶어."
                 }
             ]
         }
@@ -5929,7 +5913,7 @@
                 },
                 {
                     "en": "Dear",
-                    "ko": ""
+                    "ko": "사랑하다"
                 },
                 {
                     "en": "Beautiful",
@@ -5937,11 +5921,11 @@
                 },
                 {
                     "en": "Handsome",
-                    "ko": ""
+                    "ko": "잘생겼다"
                 },
                 {
                     "en": "Miss (someone)",
-                    "ko": ""
+                    "ko": "미스 (누군가)"
                 },
                 {
                     "en": "Good",
@@ -5969,15 +5953,15 @@
                 },
                 {
                     "en": "Road",
-                    "ko": ""
+                    "ko": "길"
                 },
                 {
                     "en": "Way",
-                    "ko": ""
+                    "ko": "길"
                 },
                 {
                     "en": "Don't",
-                    "ko": ""
+                    "ko": "~하지 마"
                 },
                 {
                     "en": "Forget",
@@ -5985,15 +5969,15 @@
                 },
                 {
                     "en": "At",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "In",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "On",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "Rest",
@@ -6017,7 +6001,7 @@
                 },
                 {
                     "en": "Where to",
-                    "ko": ""
+                    "ko": "어디로"
                 },
                 {
                     "en": "Can",
@@ -6027,59 +6011,59 @@
             "sentences": [
                 {
                     "en": "Beautiful.",
-                    "ko": ""
+                    "ko": "예쁘다."
                 },
                 {
                     "en": "Handsome.",
-                    "ko": ""
+                    "ko": "잘생겼다."
                 },
                 {
                     "en": "Miss you.",
-                    "ko": ""
+                    "ko": "보고 싶어."
                 },
                 {
                     "en": "Good morning.",
-                    "ko": ""
+                    "ko": "안녕하세요."
                 },
                 {
                     "en": "Good evening.",
-                    "ko": ""
+                    "ko": "안녕하세요."
                 },
                 {
                     "en": "Good night.",
-                    "ko": ""
+                    "ko": "잘 자."
                 },
                 {
                     "en": "Don't forget to eat.",
-                    "ko": ""
+                    "ko": "밥 먹는 거 잊지 마."
                 },
                 {
                     "en": "Be careful on the road.",
-                    "ko": ""
+                    "ko": "길 조심해."
                 },
                 {
                     "en": "Rest, okay?",
-                    "ko": ""
+                    "ko": "쉬어, 알겠지?"
                 },
                 {
                     "en": "Sleep first, okay?",
-                    "ko": ""
+                    "ko": "먼저 자, 알겠지?"
                 },
                 {
                     "en": "See you later?",
-                    "ko": ""
+                    "ko": "나중에 볼래?"
                 },
                 {
                     "en": "See you tomorrow.",
-                    "ko": ""
+                    "ko": "내일 보자."
                 },
                 {
                     "en": "Where are you going?",
-                    "ko": ""
+                    "ko": "어디 가?"
                 },
                 {
                     "en": "Can you tomorrow?",
-                    "ko": ""
+                    "ko": "내일 할 수 있어?"
                 }
             ]
         },
@@ -6107,11 +6091,11 @@
                 },
                 {
                     "en": "Long for",
-                    "ko": ""
+                    "ko": "그리워하다"
                 },
                 {
                     "en": "Miss",
-                    "ko": ""
+                    "ko": "그리워하다"
                 },
                 {
                     "en": "Happy",
@@ -6125,7 +6109,7 @@
             "sentences": [
                 {
                     "en": "I care about you.",
-                    "ko": ""
+                    "ko": "널 생각해."
                 },
                 {
                     "en": "I love you.",
@@ -6133,19 +6117,19 @@
                 },
                 {
                     "en": "You're beautiful.",
-                    "ko": ""
+                    "ko": "예쁘다."
                 },
                 {
                     "en": "You're handsome.",
-                    "ko": ""
+                    "ko": "잘생겼다."
                 },
                 {
                     "en": "I miss you.",
-                    "ko": ""
+                    "ko": "내가 당신을 그리워."
                 },
                 {
                     "en": "I miss you.",
-                    "ko": ""
+                    "ko": "내가 당신을 그리워."
                 },
                 {
                     "en": "Nice to meet you.",
@@ -6153,11 +6137,11 @@
                 },
                 {
                     "en": "Don't forget to eat, okay?",
-                    "ko": ""
+                    "ko": "밥 먹는 거 잊지 마, 알겠지?"
                 },
                 {
-                    "en": "Let's meet tomorrow, okay?",
-                    "ko": ""
+                    "en": "Let us meet tomorrow, okay?",
+                    "ko": "내일 보자, 알겠지?"
                 }
             ]
         },
@@ -6173,7 +6157,7 @@
                 },
                 {
                     "en": "I",
-                    "ko": ""
+                    "ko": "제1장"
                 },
                 {
                     "en": "You",
@@ -6185,15 +6169,15 @@
                 },
                 {
                     "en": "You",
-                    "ko": ""
+                    "ko": "너"
                 },
                 {
                     "en": "My love",
-                    "ko": ""
+                    "ko": "내 사랑"
                 },
                 {
                     "en": "My dear",
-                    "ko": ""
+                    "ko": "내 사랑"
                 },
                 {
                     "en": "Love",
@@ -6201,27 +6185,27 @@
                 },
                 {
                     "en": "Babe",
-                    "ko": ""
+                    "ko": "자기"
                 },
                 {
                     "en": "Long for",
-                    "ko": ""
+                    "ko": "그리워하다"
                 },
                 {
                     "en": "Miss",
-                    "ko": ""
+                    "ko": "그리워하다"
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Doing",
-                    "ko": ""
+                    "ko": "하는 중"
                 },
                 {
                     "en": "Right now",
-                    "ko": "지금 바로"
+                    "ko": "하는 중"
                 },
                 {
                     "en": "What",
@@ -6229,11 +6213,11 @@
                 },
                 {
                     "en": "Want",
-                    "ko": ""
+                    "ko": "원하다"
                 },
                 {
                     "en": "Happy",
-                    "ko": ""
+                    "ko": "행복해"
                 },
                 {
                     "en": "Very",
@@ -6241,19 +6225,19 @@
                 },
                 {
                     "en": "So",
-                    "ko": "너무"
+                    "ko": "매우"
                 },
                 {
                     "en": "With",
-                    "ko": ""
+                    "ko": "~와/과"
                 },
                 {
                     "en": "Pick up",
-                    "ko": ""
+                    "ko": "픽업하다"
                 },
                 {
                     "en": "Chat",
-                    "ko": ""
+                    "ko": "채팅"
                 },
                 {
                     "en": "Call",
@@ -6261,7 +6245,7 @@
                 },
                 {
                     "en": "Waiting for",
-                    "ko": ""
+                    "ko": "~를 기다리는 중"
                 },
                 {
                     "en": "Okay",
@@ -6269,7 +6253,7 @@
                 },
                 {
                     "en": "Yeah",
-                    "ko": ""
+                    "ko": "알겠어요"
                 },
                 {
                     "en": "First",
@@ -6279,11 +6263,11 @@
             "sentences": [
                 {
                     "en": "I care about you.",
-                    "ko": ""
+                    "ko": "널 생각해."
                 },
                 {
                     "en": "I care about you.",
-                    "ko": ""
+                    "ko": "널 생각해."
                 },
                 {
                     "en": "I love you.",
@@ -6291,91 +6275,91 @@
                 },
                 {
                     "en": "Love you.",
-                    "ko": ""
+                    "ko": "사랑해."
                 },
                 {
                     "en": "My love.",
-                    "ko": ""
+                    "ko": "내 사랑."
                 },
                 {
                     "en": "So beautiful.",
-                    "ko": ""
+                    "ko": "너무 예쁘다."
                 },
                 {
                     "en": "So handsome.",
-                    "ko": ""
+                    "ko": "너무 잘생겼다."
                 },
                 {
                     "en": "Miss you so much.",
-                    "ko": ""
+                    "ko": "엄청 보고 싶어."
                 },
                 {
                     "en": "I miss you.",
-                    "ko": ""
+                    "ko": "내가 당신을 그리워."
                 },
                 {
                     "en": "I miss you.",
-                    "ko": ""
+                    "ko": "내가 당신을 그리워."
                 },
                 {
                     "en": "Have you eaten?",
-                    "ko": ""
+                    "ko": "밥 먹었어?"
                 },
                 {
                     "en": "What are you doing?",
-                    "ko": ""
+                    "ko": "기분이 어떤가요?"
                 },
                 {
                     "en": "Have you slept?",
-                    "ko": ""
+                    "ko": "잤어?"
                 },
                 {
                     "en": "Good morning love.",
-                    "ko": ""
+                    "ko": "좋은 아침, 자기."
                 },
                 {
                     "en": "Good evening love.",
-                    "ko": ""
+                    "ko": "좋은 저녁, 자기."
                 },
                 {
                     "en": "Good night love.",
-                    "ko": ""
+                    "ko": "잘 자, 자기."
                 },
                 {
                     "en": "Don't forget to eat, okay?",
-                    "ko": ""
+                    "ko": "밥 먹는 거 잊지 마, 알겠지?"
                 },
                 {
                     "en": "Be careful on the road, okay?",
-                    "ko": ""
+                    "ko": "길 조심해, 알겠지?"
                 },
                 {
                     "en": "Pick me up, okay?",
-                    "ko": ""
+                    "ko": "나 픽업해 줘, 알겠지?"
                 },
                 {
                     "en": "Want to see you.",
-                    "ko": ""
+                    "ko": "보고 싶어."
                 },
                 {
                     "en": "So happy with you.",
-                    "ko": ""
+                    "ko": "너랑 있어서 너무 행복해."
                 },
                 {
-                    "en": "I'll chat you later, okay?",
-                    "ko": ""
+                    "en": "I will chat you later, okay?",
+                    "ko": "나중에 채팅할게, 알겠지?"
                 },
                 {
-                    "en": "I'll call you later, okay?",
-                    "ko": ""
+                    "en": "I will call you later, okay?",
+                    "ko": "나중에 전화할게, 알겠지?"
                 },
                 {
                     "en": "Waiting for you, okay?",
-                    "ko": ""
+                    "ko": "널 기다릴게, 알겠지?"
                 },
                 {
                     "en": "Bye love.",
-                    "ko": ""
+                    "ko": "잘 가, 자기."
                 }
             ]
         }
@@ -6385,7 +6369,7 @@
             "words": [
                 {
                     "en": "If",
-                    "ko": ""
+                    "ko": "만약"
                 },
                 {
                     "en": "Hungry",
@@ -6397,15 +6381,15 @@
                 },
                 {
                     "en": "Exist",
-                    "ko": ""
+                    "ko": "존재"
                 },
                 {
                     "en": "There is",
-                    "ko": ""
+                    "ko": "존재"
                 },
                 {
                     "en": "Time",
-                    "ko": ""
+                    "ko": "시간"
                 },
                 {
                     "en": "Can",
@@ -6413,7 +6397,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Later",
@@ -6425,41 +6409,41 @@
                 },
                 {
                     "en": "Possible",
-                    "ko": ""
+                    "ko": "가능한"
                 }
             ],
             "sentences": [
                 {
                     "en": "If hungry.",
-                    "ko": ""
+                    "ko": "배고프면."
                 },
                 {
                     "en": "If tired.",
-                    "ko": ""
+                    "ko": "피곤하면."
                 },
                 {
                     "en": "If there is time.",
-                    "ko": ""
+                    "ko": "시간 있으면."
                 },
                 {
                     "en": "If able.",
-                    "ko": ""
+                    "ko": "가능하면."
                 },
                 {
                     "en": "If able, later.",
-                    "ko": ""
+                    "ko": "가능하면 나중에."
                 },
                 {
                     "en": "If hungry, eat.",
-                    "ko": ""
+                    "ko": "배고프면 먹어."
                 },
                 {
                     "en": "If tired, later.",
-                    "ko": ""
+                    "ko": "피곤하면 나중에."
                 },
                 {
                     "en": "If possible.",
-                    "ko": ""
+                    "ko": "가능하면."
                 }
             ]
         },
@@ -6471,11 +6455,11 @@
                 },
                 {
                     "en": "Yeah",
-                    "ko": ""
+                    "ko": "알겠어요"
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 }
             ],
             "sentences": []
@@ -6484,7 +6468,7 @@
             "words": [
                 {
                     "en": "If",
-                    "ko": ""
+                    "ko": "만약"
                 },
                 {
                     "en": "Can",
@@ -6492,21 +6476,21 @@
                 },
                 {
                     "en": "Be able to",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 }
             ],
             "sentences": [
                 {
                     "en": "If there is time.",
-                    "ko": ""
+                    "ko": "시간 있으면."
                 },
                 {
                     "en": "If possible.",
-                    "ko": ""
+                    "ko": "가능하면."
                 },
                 {
                     "en": "If able.",
-                    "ko": ""
+                    "ko": "가능하면."
                 }
             ]
         }
@@ -6516,11 +6500,11 @@
             "words": [
                 {
                     "en": "when",
-                    "ko": ""
+                    "ko": "언제"
                 },
                 {
                     "en": "At the moment",
-                    "ko": ""
+                    "ko": "언제"
                 },
                 {
                     "en": "Arrive",
@@ -6540,7 +6524,7 @@
                 },
                 {
                     "en": "Yes",
-                    "ko": "네"
+                    "ko": "알겠어요"
                 },
                 {
                     "en": "Eat",
@@ -6550,7 +6534,7 @@
             "sentences": [
                 {
                     "en": "Eat when you’re hungry.",
-                    "ko": ""
+                    "ko": "배고프면 먹어."
                 }
             ]
         },
@@ -6558,25 +6542,25 @@
             "words": [
                 {
                     "en": "Let me know",
-                    "ko": ""
+                    "ko": "알려줘"
                 },
                 {
                     "en": "Tell",
-                    "ko": ""
+                    "ko": "텔"
                 },
                 {
                     "en": "Say",
-                    "ko": ""
+                    "ko": "텔"
                 }
             ],
             "sentences": [
                 {
                     "en": "Let me know when you arrive.",
-                    "ko": ""
+                    "ko": "도착하면 알려줘."
                 },
                 {
                     "en": "Tell me when it starts.",
-                    "ko": ""
+                    "ko": "시작하면 알려줘."
                 }
             ]
         },
@@ -6590,7 +6574,7 @@
             "words": [
                 {
                     "en": "With",
-                    "ko": ""
+                    "ko": "~와/과"
                 },
                 {
                     "en": "You",
@@ -6606,7 +6590,7 @@
                 },
                 {
                     "en": "She",
-                    "ko": "그녀"
+                    "ko": "그"
                 },
                 {
                     "en": "Friend",
@@ -6622,17 +6606,17 @@
                 },
                 {
                     "en": "Arrive",
-                    "ko": "도착하다"
+                    "ko": "오다"
                 }
             ],
             "sentences": [
                 {
                     "en": "With you.",
-                    "ko": ""
+                    "ko": "너랑."
                 },
                 {
                     "en": "Come with a friend.",
-                    "ko": ""
+                    "ko": "친구랑 와."
                 }
             ]
         },
@@ -6648,25 +6632,25 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
                     "en": "With me.",
-                    "ko": ""
+                    "ko": "나랑."
                 },
                 {
                     "en": "Go with me.",
-                    "ko": ""
+                    "ko": "나랑 가."
                 },
                 {
                     "en": "With me.",
-                    "ko": ""
+                    "ko": "나랑."
                 }
             ]
         },
@@ -6674,7 +6658,7 @@
             "words": [
                 {
                     "en": "With",
-                    "ko": ""
+                    "ko": "~와/과"
                 },
                 {
                     "en": "I",
@@ -6688,11 +6672,11 @@
             "sentences": [
                 {
                     "en": "With me.",
-                    "ko": ""
+                    "ko": "나랑."
                 },
                 {
                     "en": "Go with me.",
-                    "ko": ""
+                    "ko": "나랑 가."
                 }
             ]
         }
@@ -6702,7 +6686,7 @@
             "words": [
                 {
                     "en": "For",
-                    "ko": ""
+                    "ko": "~을/를 위해"
                 },
                 {
                     "en": "You",
@@ -6724,15 +6708,15 @@
             "sentences": [
                 {
                     "en": "This is for you.",
-                    "ko": ""
+                    "ko": "이거 너야."
                 },
                 {
                     "en": "For you.",
-                    "ko": ""
+                    "ko": "너를 위해."
                 },
                 {
                     "en": "For that.",
-                    "ko": ""
+                    "ko": "그걸 위해."
                 }
             ]
         },
@@ -6748,21 +6732,21 @@
                 },
                 {
                     "en": "Just",
-                    "ko": ""
+                    "ko": "저스트"
                 },
                 {
                     "en": "casual closure",
-                    "ko": ""
+                    "ko": "캐주얼 클로저"
                 }
             ],
             "sentences": [
                 {
                     "en": "For me.",
-                    "ko": ""
+                    "ko": "나한테."
                 },
                 {
                     "en": "For me.",
-                    "ko": ""
+                    "ko": "나한테."
                 }
             ]
         },
@@ -6770,7 +6754,7 @@
             "words": [
                 {
                     "en": "For",
-                    "ko": ""
+                    "ko": "~을/를 위해"
                 },
                 {
                     "en": "I",
@@ -6792,11 +6776,11 @@
             "sentences": [
                 {
                     "en": "This is for you.",
-                    "ko": ""
+                    "ko": "이거 너야."
                 },
                 {
                     "en": "For me.",
-                    "ko": ""
+                    "ko": "나한테."
                 }
             ]
         }
@@ -6806,15 +6790,15 @@
             "words": [
                 {
                     "en": "Because",
-                    "ko": ""
+                    "ko": "왜냐하면"
                 },
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Can",
@@ -6822,7 +6806,7 @@
                 },
                 {
                     "en": "Able",
-                    "ko": ""
+                    "ko": "할 수 있다"
                 },
                 {
                     "en": "Busy",
@@ -6830,21 +6814,21 @@
                 },
                 {
                     "en": "Traffic jam",
-                    "ko": ""
+                    "ko": "교통 체증"
                 }
             ],
             "sentences": [
                 {
                     "en": "Because I’m busy.",
-                    "ko": ""
+                    "ko": "바빠서요."
                 },
                 {
                     "en": "I can’t because I’m busy.",
-                    "ko": ""
+                    "ko": "바빠서 못 해."
                 },
                 {
                     "en": "Because of traffic.",
-                    "ko": ""
+                    "ko": "교통 때문에요."
                 }
             ]
         },
@@ -6852,15 +6836,15 @@
             "words": [
                 {
                     "en": "Not",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "No",
-                    "ko": ""
+                    "ko": "값 제외"
                 },
                 {
                     "en": "Because",
-                    "ko": ""
+                    "ko": "왜냐하면"
                 },
                 {
                     "en": "I",
@@ -6872,7 +6856,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "Work",
@@ -6884,29 +6868,29 @@
                 },
                 {
                     "en": "Because of",
-                    "ko": ""
+                    "ko": "~때문에"
                 }
             ],
             "sentences": [
                 {
                     "en": "I can’t because I’m working.",
-                    "ko": ""
+                    "ko": "일해서 못 해."
                 },
                 {
                     "en": "I can’t because I’m working.",
-                    "ko": ""
+                    "ko": "일해서 못 해."
                 },
                 {
                     "en": "Because I’m tired.",
-                    "ko": ""
+                    "ko": "피곤해서요."
                 },
                 {
                     "en": "Because I’m tired.",
-                    "ko": ""
+                    "ko": "피곤해서요."
                 },
                 {
                     "en": "Because of traffic.",
-                    "ko": ""
+                    "ko": "교통 때문에요."
                 }
             ]
         },
@@ -6922,7 +6906,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "Work",
@@ -6930,21 +6914,21 @@
                 },
                 {
                     "en": "Because",
-                    "ko": ""
+                    "ko": "왜냐하면"
                 }
             ],
             "sentences": [
                 {
                     "en": "I can’t because I’m working.",
-                    "ko": ""
+                    "ko": "일해서 못 해."
                 },
                 {
                     "en": "I can’t because I’m busy.",
-                    "ko": ""
+                    "ko": "바빠서 못 해."
                 },
                 {
                     "en": "Because of traffic.",
-                    "ko": ""
+                    "ko": "교통 때문에요."
                 }
             ]
         }
@@ -6953,8 +6937,8 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "Let's"
                 },
                 {
                     "en": "Eat",
@@ -6967,11 +6951,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "ko": ""
+                    "en": "Let us eat.",
+                    "ko": "먹자."
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "ko": "가요."
                 }
             ]
@@ -6979,30 +6963,30 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "Let's"
                 },
                 {
                     "en": "Together",
-                    "ko": ""
+                    "ko": "같이"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "ko": ""
+                    "en": "Let us eat.",
+                    "ko": "먹자."
                 },
                 {
-                    "en": "Let’s go together.",
-                    "ko": ""
+                    "en": "Let us go together.",
+                    "ko": "같이 가자."
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "Let's"
                 },
                 {
                     "en": "We",
@@ -7010,16 +6994,16 @@
                 },
                 {
                     "en": "Us",
-                    "ko": "우리를"
+                    "ko": "우리"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "ko": ""
+                    "en": "Let us eat.",
+                    "ko": "먹자."
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "ko": "가요."
                 }
             ]
@@ -7034,15 +7018,15 @@
                 },
                 {
                     "en": "At",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "In",
-                    "ko": ""
+                    "ko": "~에"
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "Eat",
@@ -7064,11 +7048,11 @@
             "sentences": [
                 {
                     "en": "What are you doing?",
-                    "ko": ""
+                    "ko": "기분이 어떤가요?"
                 },
                 {
                     "en": "Not yet.",
-                    "ko": ""
+                    "ko": "아직 아닙니다."
                 }
             ]
         },
@@ -7080,49 +7064,49 @@
                 },
                 {
                     "en": "Me (Jakarta slang)",
-                    "ko": ""
+                    "ko": "나 (자카르타 속어)"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "ko": ""
+                    "ko": "당신 (자카르타 속어)"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "ko": ""
+                    "ko": "당신 (자카르타 속어)"
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 },
                 {
                     "en": "Not yet",
-                    "ko": ""
+                    "ko": "아직"
                 },
                 {
                     "en": "Friend",
-                    "ko": ""
+                    "ko": "친구"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’m at home.",
-                    "ko": ""
+                    "ko": "집에 있어요."
                 },
                 {
                     "en": "I’m at home.",
-                    "ko": ""
+                    "ko": "집에 있어요."
                 },
                 {
                     "en": "What are you doing?",
-                    "ko": ""
+                    "ko": "기분이 어떤가요?"
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "ko": ""
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
                 },
                 {
                     "en": "Already or not yet?",
-                    "ko": ""
+                    "ko": "이미요? 아직 아니에요?"
                 }
             ]
         },
@@ -7130,7 +7114,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ko": ""
+                    "ko": "날씨"
                 },
                 {
                     "en": "I",
@@ -7150,25 +7134,25 @@
                 },
                 {
                     "en": "Currently",
-                    "ko": ""
+                    "ko": "현재"
                 },
                 {
                     "en": "Already",
-                    "ko": ""
+                    "ko": "DMX"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’m at home.",
-                    "ko": ""
+                    "ko": "집에 있어요."
                 },
                 {
                     "en": "What are you doing?",
-                    "ko": ""
+                    "ko": "기분이 어떤가요?"
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "ko": ""
+                    "ko": "당신이 한국어를 많이 이해할 수 있을지 모르겠지만 이것은 그렇습니다. 어떠한 보조장비 없이"
                 }
             ]
         }
@@ -7178,15 +7162,15 @@
             "words": [
                 {
                     "en": "About",
-                    "ko": ""
+                    "ko": "~에 대해"
                 },
                 {
                     "en": "About",
-                    "ko": ""
+                    "ko": "~에 대해"
                 },
                 {
                     "en": "Talk",
-                    "ko": ""
+                    "ko": "이야기하다"
                 },
                 {
                     "en": "That",
@@ -7206,37 +7190,37 @@
                 },
                 {
                     "en": "What about",
-                    "ko": "~는 어때요"
+                    "ko": "어떻게"
                 },
                 {
                     "en": "With",
-                    "ko": ""
+                    "ko": "~와/과"
                 }
             ],
             "sentences": [
                 {
                     "en": "About what?",
-                    "ko": ""
+                    "ko": "뭘요?"
                 },
                 {
                     "en": "About what?",
-                    "ko": ""
+                    "ko": "뭘요?"
                 },
                 {
                     "en": "Talk about that.",
-                    "ko": ""
+                    "ko": "그거 이야기해."
                 },
                 {
                     "en": "What about that?",
-                    "ko": ""
+                    "ko": "그건 어때?"
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let's",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "~하자"
                 },
                 {
                     "en": "We",
@@ -7244,23 +7228,23 @@
                 },
                 {
                     "en": "About",
-                    "ko": ""
+                    "ko": "~에 대해"
                 },
                 {
                     "en": "Regarding",
-                    "ko": ""
+                    "ko": "~에 관해"
                 },
                 {
                     "en": "About",
-                    "ko": ""
+                    "ko": "~에 관해"
                 },
                 {
                     "en": "Discuss",
-                    "ko": ""
+                    "ko": "논의하다"
                 },
                 {
                     "en": "Talk about",
-                    "ko": ""
+                    "ko": "논의하다"
                 },
                 {
                     "en": "How",
@@ -7268,7 +7252,7 @@
                 },
                 {
                     "en": "With",
-                    "ko": ""
+                    "ko": "~와/과"
                 },
                 {
                     "en": "That",
@@ -7284,61 +7268,61 @@
                 },
                 {
                     "en": "Want to",
-                    "ko": ""
+                    "ko": "~하고 싶다"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
-                    "ko": ""
+                    "en": "Let us talk about that.",
+                    "ko": "그거 이야기하자."
                 },
                 {
                     "en": "What about that?",
-                    "ko": ""
+                    "ko": "그건 어때?"
                 },
                 {
                     "en": "I want to talk about that.",
-                    "ko": ""
+                    "ko": "그거 이야기하고 싶어."
                 }
             ]
         },
         "informal": {
             "words": [
                 {
-                    "en": "Let's",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "~하자"
                 },
                 {
                     "en": "Come on",
-                    "ko": ""
+                    "ko": "자, 어서"
                 },
                 {
-                    "en": "Let's",
-                    "ko": ""
+                    "en": "Let us",
+                    "ko": "자, 어서"
                 },
                 {
                     "en": "Talk",
-                    "ko": ""
+                    "ko": "이야기하다"
                 },
                 {
                     "en": "Chat",
-                    "ko": ""
+                    "ko": "채팅"
                 },
                 {
                     "en": "Chat about",
-                    "ko": ""
+                    "ko": "~에 대해 채팅하다"
                 },
                 {
                     "en": "Talking about",
-                    "ko": ""
+                    "ko": "~에 대해 이야기하는 중"
                 },
                 {
                     "en": "About",
-                    "ko": ""
+                    "ko": "~에 대해"
                 },
                 {
                     "en": "About",
-                    "ko": ""
+                    "ko": "~에 대해"
                 },
                 {
                     "en": "That",
@@ -7350,15 +7334,15 @@
                 },
                 {
                     "en": "What about",
-                    "ko": "~는 어때요"
+                    "ko": "어떻게"
                 },
                 {
                     "en": "Doing",
-                    "ko": ""
+                    "ko": "하는 중"
                 },
                 {
                     "en": "Right now",
-                    "ko": "지금 바로"
+                    "ko": "하는 중"
                 },
                 {
                     "en": "What",
@@ -7367,20 +7351,20 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
-                    "ko": ""
+                    "en": "Let us talk about that.",
+                    "ko": "그거 이야기하자."
                 },
                 {
-                    "en": "Let's talk about that.",
-                    "ko": ""
+                    "en": "Let us talk about that.",
+                    "ko": "그거 이야기하자."
                 },
                 {
                     "en": "What about that?",
-                    "ko": ""
+                    "ko": "그건 어때?"
                 },
                 {
                     "en": "What are you talking about?",
-                    "ko": ""
+                    "ko": "뭘 이야기하는 거야?"
                 }
             ]
         }

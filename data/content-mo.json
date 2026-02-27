@@ -15,20 +15,12 @@
                     "mo": "Bun"
                 },
                 {
-                    "en": "Well",
-                    "mo": "Bine"
-                },
-                {
-                    "en": "Safe",
-                    "mo": "În siguranță"
-                },
-                {
                     "en": "Come",
                     "mo": "Vino"
                 },
                 {
                     "en": "Arrive",
-                    "mo": "Sosi"
+                    "mo": "Vino"
                 }
             ],
             "sentences": [
@@ -46,7 +38,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -68,7 +60,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -91,14 +83,6 @@
                     "mo": "Bun"
                 },
                 {
-                    "en": "Well",
-                    "mo": "Bine"
-                },
-                {
-                    "en": "Safe",
-                    "mo": "Sigur"
-                },
-                {
                     "en": "Morning",
                     "mo": "Dimineaţa"
                 },
@@ -108,7 +92,7 @@
                 },
                 {
                     "en": "Daytime",
-                    "mo": "În timpul zilei"
+                    "mo": "După-amiaza"
                 },
                 {
                     "en": "Evening",
@@ -116,7 +100,7 @@
                 },
                 {
                     "en": "Night",
-                    "mo": "Noaptea"
+                    "mo": "Seara"
                 },
                 {
                     "en": "Sleep",
@@ -257,7 +241,7 @@
                 },
                 {
                     "en": "Not",
-                    "mo": "Neexprimat"
+                    "mo": "Nu"
                 }
             ],
             "sentences": []
@@ -300,7 +284,7 @@
                 },
                 {
                     "en": "Hmm",
-                    "mo": "Hmm."
+                    "mo": "OH"
                 }
             ],
             "sentences": [
@@ -322,7 +306,7 @@
                 },
                 {
                     "en": "Hmm.",
-                    "mo": "Hmm."
+                    "mo": ""
                 }
             ]
         },
@@ -334,7 +318,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Understand",
@@ -356,7 +340,7 @@
                 },
                 {
                     "en": "No problem",
-                    "mo": "Nicio problemă"
+                    "mo": "Îi ok"
                 },
                 {
                     "en": "I",
@@ -364,7 +348,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Understand",
@@ -420,7 +404,7 @@
                 },
                 {
                     "en": "Excuse me",
-                    "mo": "Îmi cer scuze."
+                    "mo": "Ne pare rău"
                 },
                 {
                     "en": "Yes",
@@ -446,7 +430,7 @@
                 },
                 {
                     "en": "Kindly",
-                    "mo": "Cu amabilitate"
+                    "mo": "Vă rugăm să introduceți adresa"
                 },
                 {
                     "en": "Forgive",
@@ -458,13 +442,13 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
                 {
                     "en": "My apologies.",
-                    "mo": "My apologies."
+                    "mo": ""
                 },
                 {
                     "en": "I sincerely apologize.",
@@ -484,7 +468,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Ask for",
@@ -496,7 +480,7 @@
                 },
                 {
                     "en": "come on",
-                    "mo": "Haide."
+                    "mo": "Îndemn"
                 }
             ],
             "sentences": [
@@ -528,7 +512,7 @@
                 },
                 {
                     "en": "See",
-                    "mo": "Consultați"
+                    "mo": "până la"
                 },
                 {
                     "en": "Meet",
@@ -552,7 +536,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "mo": "Mai devreme"
+                    "mo": "Prima"
                 }
             ],
             "sentences": [
@@ -578,7 +562,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Take leave",
@@ -604,7 +588,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "mo": "Mai devreme"
+                    "mo": "Prima"
                 },
                 {
                     "en": "Bye",
@@ -616,7 +600,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "casual closure",
@@ -656,7 +640,7 @@
                 },
                 {
                     "en": "O’clock",
-                    "mo": "ora"
+                    "mo": "Oră"
                 },
                 {
                     "en": "How many",
@@ -664,7 +648,7 @@
                 },
                 {
                     "en": "How much",
-                    "mo": "Cata"
+                    "mo": "Câți"
                 },
                 {
                     "en": "Can",
@@ -672,7 +656,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Go",
@@ -684,7 +668,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "mo": "Sosire"
+                    "mo": "Veni"
                 },
                 {
                     "en": "That",
@@ -732,7 +716,7 @@
                 },
                 {
                     "en": "Boyfriend",
-                    "mo": "Iubit"
+                    "mo": "Prietenă"
                 },
                 {
                     "en": "Friend",
@@ -752,7 +736,7 @@
                 },
                 {
                     "en": "Ma’am",
-                    "mo": "Doamnă"
+                    "mo": "D-na"
                 },
                 {
                     "en": "Mr",
@@ -760,7 +744,7 @@
                 },
                 {
                     "en": "Sir",
-                    "mo": "Stimate Domn,"
+                    "mo": "Dl"
                 },
                 {
                     "en": "He",
@@ -768,7 +752,7 @@
                 },
                 {
                     "en": "She",
-                    "mo": "Ea"
+                    "mo": "Ha"
                 },
                 {
                     "en": "This",
@@ -798,7 +782,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Mrs",
@@ -816,7 +800,7 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "mo": "prieten"
+                    "mo": "Iubita mea"
                 },
                 {
                     "en": "They’re my friend.",
@@ -840,7 +824,7 @@
                 },
                 {
                     "en": "Girlfriend",
-                    "mo": "Prietenă"
+                    "mo": "Fată"
                 },
                 {
                     "en": "Guy",
@@ -848,7 +832,7 @@
                 },
                 {
                     "en": "Boyfriend",
-                    "mo": "Iubit"
+                    "mo": "GUY"
                 },
                 {
                     "en": "I",
@@ -856,7 +840,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Friend",
@@ -868,11 +852,11 @@
                 },
                 {
                     "en": "here",
-                    "mo": "Aici."
+                    "mo": "Arătatul cu degetul"
                 },
                 {
                     "en": "this",
-                    "mo": "Această"
+                    "mo": "Arătatul cu degetul"
                 }
             ],
             "sentences": [
@@ -882,7 +866,7 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "mo": "prieten"
+                    "mo": "Iubita mea"
                 },
                 {
                     "en": "They’re my friend.",
@@ -902,7 +886,7 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "mo": "prieten"
+                    "mo": "Aceasta este prietena mea."
                 }
             ]
         }
@@ -916,7 +900,7 @@
                 },
                 {
                     "en": "Fine",
-                    "mo": "Fin"
+                    "mo": "Bun"
                 },
                 {
                     "en": "Fine",
@@ -924,7 +908,7 @@
                 },
                 {
                     "en": "Okay",
-                    "mo": "Okay."
+                    "mo": "Fin"
                 },
                 {
                     "en": "Still",
@@ -948,7 +932,7 @@
                 },
                 {
                     "en": "Only",
-                    "mo": "Service"
+                    "mo": "Doar"
                 }
             ],
             "sentences": [
@@ -970,7 +954,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Tired",
@@ -1008,7 +992,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Tired",
@@ -1020,7 +1004,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 }
             ],
             "sentences": [
@@ -1060,7 +1044,7 @@
                 },
                 {
                     "en": "Not quite",
-                    "mo": "Nu chiar."
+                    "mo": "mai puține"
                 },
                 {
                     "en": "Good",
@@ -1068,7 +1052,7 @@
                 },
                 {
                     "en": "Fine",
-                    "mo": "Fin"
+                    "mo": "Bun"
                 },
                 {
                     "en": "Like that",
@@ -1076,7 +1060,7 @@
                 },
                 {
                     "en": "So",
-                    "mo": "Deci"
+                    "mo": "așa."
                 },
                 {
                     "en": "Just",
@@ -1084,7 +1068,7 @@
                 },
                 {
                     "en": "Only",
-                    "mo": "Service"
+                    "mo": "Doar"
                 },
                 {
                     "en": "Comfortable",
@@ -1092,11 +1076,11 @@
                 },
                 {
                     "en": "Good",
-                    "mo": "Bun"
+                    "mo": "Confortabil"
                 },
                 {
                     "en": "Tasty",
-                    "mo": "Gustos."
+                    "mo": "Confortabil"
                 },
                 {
                     "en": "Body",
@@ -1122,7 +1106,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -1148,7 +1132,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -1188,7 +1172,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Now",
@@ -1226,7 +1210,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Belong to",
@@ -1260,7 +1244,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -1276,7 +1260,7 @@
                 },
                 {
                     "en": "Own",
-                    "mo": "Contributie"
+                    "mo": "Avea"
                 }
             ],
             "sentences": [
@@ -1300,7 +1284,7 @@
                 },
                 {
                     "en": "Help",
-                    "mo": "Ajutor"
+                    "mo": "Vă rugăm să introduceți adresa"
                 },
                 {
                     "en": "Help",
@@ -1312,7 +1296,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Wait",
@@ -1336,7 +1320,7 @@
                 },
                 {
                     "en": "Allowed",
-                    "mo": "Permise"
+                    "mo": "Mai"
                 }
             ],
             "sentences": [
@@ -1370,7 +1354,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "You",
@@ -1390,7 +1374,7 @@
                 },
                 {
                     "en": "To help",
-                    "mo": "pentru a ajuta"
+                    "mo": "Ajutor"
                 },
                 {
                     "en": "Help",
@@ -1398,7 +1382,7 @@
                 },
                 {
                     "en": "Assistance",
-                    "mo": "Asistență"
+                    "mo": "Ajutor"
                 }
             ],
             "sentences": [
@@ -1424,7 +1408,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Yes",
@@ -1452,7 +1436,7 @@
                 },
                 {
                     "en": "come on",
-                    "mo": "Haide."
+                    "mo": "Îndemn"
                 }
             ],
             "sentences": [
@@ -1488,7 +1472,7 @@
                 },
                 {
                     "en": "Intention",
-                    "mo": "Intenţie"
+                    "mo": "Semnificație"
                 },
                 {
                     "en": "What",
@@ -1508,7 +1492,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "The meaning",
@@ -1538,7 +1522,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -1584,7 +1568,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Understand",
@@ -1644,7 +1628,7 @@
                 },
                 {
                     "en": "So it means",
-                    "mo": "Înseamnă"
+                    "mo": "Resurse"
                 },
                 {
                     "en": "This",
@@ -1660,7 +1644,7 @@
                 },
                 {
                     "en": "Intention",
-                    "mo": "Intenţie"
+                    "mo": "Semnificație"
                 },
                 {
                     "en": "The meaning",
@@ -1676,7 +1660,7 @@
                 },
                 {
                     "en": "So",
-                    "mo": "Deci"
+                    "mo": "așa."
                 }
             ],
             "sentences": [
@@ -1747,7 +1731,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "This",
@@ -1819,7 +1803,7 @@
                 },
                 {
                     "en": "Not",
-                    "mo": "Neexprimat"
+                    "mo": "Nu"
                 }
             ],
             "sentences": [
@@ -1851,7 +1835,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 }
             ],
             "sentences": [
@@ -1873,7 +1857,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Currently",
@@ -1911,7 +1895,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Currently",
@@ -2033,7 +2017,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Will",
@@ -2067,7 +2051,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Want",
@@ -2075,7 +2059,7 @@
                 },
                 {
                     "en": "Going to",
-                    "mo": "Cu destinația"
+                    "mo": "a vrea"
                 },
                 {
                     "en": "Just",
@@ -2165,7 +2149,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -2183,7 +2167,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -2227,11 +2211,11 @@
                 },
                 {
                     "en": "Good",
-                    "mo": "Bun"
+                    "mo": "Confortabil"
                 },
                 {
                     "en": "Tasty",
-                    "mo": "Gustos."
+                    "mo": "Confortabil"
                 },
                 {
                     "en": "This",
@@ -2251,7 +2235,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 },
                 {
                     "en": "Want",
@@ -2293,7 +2277,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Want",
@@ -2327,7 +2311,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Very",
@@ -2335,7 +2319,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 }
             ],
             "sentences": [
@@ -2437,7 +2421,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "You",
@@ -2467,7 +2451,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Just",
@@ -2527,7 +2511,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "mo": "Sosire"
+                    "mo": "Veni"
                 },
                 {
                     "en": "Arrive",
@@ -2565,7 +2549,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Will",
@@ -2591,7 +2575,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Currently",
@@ -2603,7 +2587,7 @@
                 },
                 {
                     "en": "Going to",
-                    "mo": "Cu destinația"
+                    "mo": "a vrea"
                 },
                 {
                     "en": "Already",
@@ -2615,11 +2599,11 @@
                 },
                 {
                     "en": "here",
-                    "mo": "Aici."
+                    "mo": "Arătatul cu degetul"
                 },
                 {
                     "en": "this",
-                    "mo": "Această"
+                    "mo": "Arătatul cu degetul"
                 }
             ],
             "sentences": [
@@ -2651,7 +2635,7 @@
                 },
                 {
                     "en": "Home",
-                    "mo": "Acasă"
+                    "mo": "Bloc"
                 },
                 {
                     "en": "Toilet",
@@ -2667,7 +2651,7 @@
                 },
                 {
                     "en": "Bedroom",
-                    "mo": "Dormitor"
+                    "mo": "Cameră"
                 },
                 {
                     "en": "Kitchen",
@@ -2683,7 +2667,7 @@
                 },
                 {
                     "en": "Store",
-                    "mo": "Stocați"
+                    "mo": "Magazin"
                 },
                 {
                     "en": "School",
@@ -2699,7 +2683,7 @@
                 },
                 {
                     "en": "In",
-                    "mo": "Ing"
+                    "mo": "La"
                 },
                 {
                     "en": "To",
@@ -2771,7 +2755,7 @@
                 },
                 {
                     "en": "Own",
-                    "mo": "Contributie"
+                    "mo": "Avea"
                 },
                 {
                     "en": "Who",
@@ -2779,7 +2763,7 @@
                 },
                 {
                     "en": "Whose",
-                    "mo": "Cui"
+                    "mo": "Cine"
                 }
             ],
             "sentences": [
@@ -2801,7 +2785,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "You",
@@ -2839,7 +2823,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "You",
@@ -2879,7 +2863,7 @@
             "words": [
                 {
                     "en": "Zero",
-                    "mo": "Zero"
+                    "mo": ""
                 },
                 {
                     "en": "One",
@@ -2887,7 +2871,7 @@
                 },
                 {
                     "en": "Two",
-                    "mo": "Two"
+                    "mo": ""
                 },
                 {
                     "en": "Three",
@@ -2962,7 +2946,7 @@
                 },
                 {
                     "en": "Sixteen",
-                    "mo": "Sixteen"
+                    "mo": ""
                 },
                 {
                     "en": "Seventeen",
@@ -3037,7 +3021,7 @@
                 },
                 {
                     "en": "Only",
-                    "mo": "Service"
+                    "mo": "Doar"
                 }
             ],
             "sentences": [
@@ -3073,7 +3057,7 @@
                 },
                 {
                     "en": "In",
-                    "mo": "Ing"
+                    "mo": "La"
                 },
                 {
                     "en": "Here",
@@ -3089,7 +3073,7 @@
                 },
                 {
                     "en": "Where",
-                    "mo": "(hemograma)."
+                    "mo": "Care"
                 },
                 {
                     "en": "Place",
@@ -3133,7 +3117,7 @@
                 },
                 {
                     "en": "There is",
-                    "mo": "Nu există"
+                    "mo": "Există"
                 },
                 {
                     "en": "There is not",
@@ -3141,7 +3125,7 @@
                 },
                 {
                     "en": "None",
-                    "mo": "Fără"
+                    "mo": "Nu există niciunul."
                 },
                 {
                     "en": "Now",
@@ -3207,7 +3191,7 @@
                 },
                 {
                     "en": "Then",
-                    "mo": "Apoi"
+                    "mo": "Deci"
                 },
                 {
                     "en": "Later",
@@ -3231,7 +3215,7 @@
                 },
                 {
                     "en": "So",
-                    "mo": "Deci"
+                    "mo": "așa."
                 },
                 {
                     "en": "Just",
@@ -3239,7 +3223,7 @@
                 },
                 {
                     "en": "Only",
-                    "mo": "Service"
+                    "mo": "Doar"
                 }
             ],
             "sentences": [
@@ -3269,7 +3253,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Tell",
@@ -3277,7 +3261,7 @@
                 },
                 {
                     "en": "Say",
-                    "mo": "Spune"
+                    "mo": "Prezentare"
                 },
                 {
                     "en": "Since earlier",
@@ -3319,7 +3303,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Go",
@@ -3331,7 +3315,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "mo": "Mai devreme"
+                    "mo": "Prima"
                 },
                 {
                     "en": "Wait",
@@ -3367,7 +3351,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "But",
@@ -3383,7 +3367,7 @@
                 },
                 {
                     "en": "But actually",
-                    "mo": "Dar, de fapt"
+                    "mo": "Deși"
                 },
                 {
                     "en": "Close",
@@ -3391,7 +3375,7 @@
                 },
                 {
                     "en": "Near",
-                    "mo": "Aproape"
+                    "mo": "Închide"
                 },
                 {
                     "en": "Tell",
@@ -3399,7 +3383,7 @@
                 },
                 {
                     "en": "Say",
-                    "mo": "Spune"
+                    "mo": "Prezentare"
                 }
             ],
             "sentences": [
@@ -3425,7 +3409,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Tired",
@@ -3463,7 +3447,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -3503,7 +3487,7 @@
                 },
                 {
                     "en": "And then",
-                    "mo": "Și apoi"
+                    "mo": "Apoi"
                 },
                 {
                     "en": "After that",
@@ -3511,7 +3495,7 @@
                 },
                 {
                     "en": "And then",
-                    "mo": "Și apoi"
+                    "mo": "După aceea,"
                 }
             ],
             "sentences": [
@@ -3595,7 +3579,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Yes",
@@ -3645,7 +3629,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -3687,7 +3671,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -3741,7 +3725,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -3767,7 +3751,7 @@
                 },
                 {
                     "en": "I disagree.",
-                    "mo": "I disagree."
+                    "mo": ""
                 },
                 {
                     "en": "Yeah.",
@@ -3783,7 +3767,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -3793,7 +3777,7 @@
                 },
                 {
                     "en": "I disagree.",
-                    "mo": "I disagree."
+                    "mo": ""
                 }
             ]
         }
@@ -3807,7 +3791,7 @@
                 },
                 {
                     "en": "In your opinion",
-                    "mo": "În opinia dumneavoastră, de ce...?"
+                    "mo": "Conform"
                 },
                 {
                     "en": "You",
@@ -3955,7 +3939,7 @@
                 },
                 {
                     "en": "Fine",
-                    "mo": "Fin"
+                    "mo": "Bun"
                 },
                 {
                     "en": "I",
@@ -3963,7 +3947,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Tired",
@@ -3973,7 +3957,7 @@
             "sentences": [
                 {
                     "en": "Pretty good.",
-                    "mo": "Pretty good."
+                    "mo": ""
                 },
                 {
                     "en": "I’m quite tired.",
@@ -4021,7 +4005,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "mo": "Mai devreme"
+                    "mo": "Prima"
                 }
             ],
             "sentences": [
@@ -4051,7 +4035,7 @@
                 },
                 {
                     "en": "Kindly",
-                    "mo": "Cu amabilitate"
+                    "mo": "Vă rugăm să introduceți adresa"
                 },
                 {
                     "en": "Excuse me",
@@ -4079,7 +4063,7 @@
                 },
                 {
                     "en": "I mean",
-                    "mo": "Adică"
+                    "mo": "Semnificația"
                 },
                 {
                     "en": "Like this",
@@ -4139,7 +4123,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -4163,7 +4147,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Repeat",
@@ -4227,7 +4211,7 @@
                 },
                 {
                     "en": "Kindly",
-                    "mo": "Cu amabilitate"
+                    "mo": "Vă rugăm să introduceți adresa"
                 }
             ],
             "sentences": [
@@ -4251,7 +4235,7 @@
                 },
                 {
                     "en": "Allowed",
-                    "mo": "Permise"
+                    "mo": "Sigur."
                 },
                 {
                     "en": "Later",
@@ -4263,7 +4247,7 @@
                 },
                 {
                     "en": "Only",
-                    "mo": "Service"
+                    "mo": "Doar"
                 },
                 {
                     "en": "Another time",
@@ -4335,7 +4319,7 @@
                 },
                 {
                     "en": "Excuse me",
-                    "mo": "Îmi cer scuze."
+                    "mo": "Ne pare rău"
                 },
                 {
                     "en": "I",
@@ -4343,7 +4327,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Not",
@@ -4359,7 +4343,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Now",
@@ -4425,7 +4409,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "At home",
@@ -4475,7 +4459,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Currently",
@@ -4520,7 +4504,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Hurry up",
@@ -4536,11 +4520,11 @@
                 },
                 {
                     "en": "here",
-                    "mo": "Aici."
+                    "mo": "Arătatul cu degetul"
                 },
                 {
                     "en": "this",
-                    "mo": "Această"
+                    "mo": "Arătatul cu degetul"
                 },
                 {
                     "en": "Surprise",
@@ -4548,7 +4532,7 @@
                 },
                 {
                     "en": "how come? tone",
-                    "mo": "tonul cum așa?"
+                    "mo": "Surpriză"
                 },
                 {
                     "en": "Urging",
@@ -4556,7 +4540,7 @@
                 },
                 {
                     "en": "come on",
-                    "mo": "Haide."
+                    "mo": "Îndemn"
                 },
                 {
                     "en": "casual closure",
@@ -4568,11 +4552,11 @@
                 },
                 {
                     "en": "there",
-                    "mo": "Acolo."
+                    "mo": "Arătatul cu degetul"
                 },
                 {
                     "en": "see?",
-                    "mo": "vedeți ?"
+                    "mo": "Arătatul cu degetul"
                 }
             ],
             "sentences": [
@@ -4604,7 +4588,7 @@
             "words": [
                 {
                     "en": "I",
-                    "mo": "I"
+                    "mo": ""
                 },
                 {
                     "en": "Me (Jakarta slang)",
@@ -4616,7 +4600,7 @@
                 },
                 {
                     "en": "No problem",
-                    "mo": "Nicio problemă"
+                    "mo": "Îi ok"
                 },
                 {
                     "en": "Very",
@@ -4624,7 +4608,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 },
                 {
                     "en": "Already",
@@ -4648,7 +4632,7 @@
                 },
                 {
                     "en": "how come? tone",
-                    "mo": "tonul cum așa?"
+                    "mo": "Surpriză"
                 }
             ],
             "sentences": [
@@ -4763,7 +4747,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "mo": "Hai să (vorbim)"
                 },
                 {
@@ -4785,7 +4769,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
+                    "en": "Let us hang out.",
                     "mo": "Hai să petrecem timpul împreună."
                 },
                 {
@@ -4807,7 +4791,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
+                    "en": "Let us hang out.",
                     "mo": "Hai să petrecem timpul împreună."
                 }
             ]
@@ -4815,7 +4799,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "mo": "Hai"
                 },
                 {
@@ -4824,7 +4808,7 @@
                 },
                 {
                     "en": "Us",
-                    "mo": "Ne"
+                    "mo": "Subscrisa"
                 },
                 {
                     "en": "Meet",
@@ -4833,7 +4817,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s meet.",
+                    "en": "Let us meet.",
                     "mo": "Haideți să ne cunoaștem!"
                 }
             ]
@@ -4848,7 +4832,7 @@
                 },
                 {
                     "en": "Exciting",
-                    "mo": "Excitant"
+                    "mo": "Distracție"
                 },
                 {
                     "en": "Bored",
@@ -4860,7 +4844,7 @@
                 },
                 {
                     "en": "Poor thing",
-                    "mo": "Biata de ea."
+                    "mo": "sărac"
                 },
                 {
                     "en": "Oh no",
@@ -4868,7 +4852,7 @@
                 },
                 {
                     "en": "Wow",
-                    "mo": "Mob Concept"
+                    "mo": "Oh, nu."
                 },
                 {
                     "en": "Oh dear",
@@ -4898,11 +4882,11 @@
                 },
                 {
                     "en": "Oh dear.",
-                    "mo": "Oh dear."
+                    "mo": ""
                 },
                 {
                     "en": "Oh my.",
-                    "mo": "Oh my."
+                    "mo": ""
                 }
             ]
         },
@@ -4914,7 +4898,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Nervous",
@@ -4922,7 +4906,7 @@
                 },
                 {
                     "en": "Miss",
-                    "mo": "Miss"
+                    "mo": ""
                 },
                 {
                     "en": "Annoyed",
@@ -4934,7 +4918,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 },
                 {
                     "en": "casual closure",
@@ -4947,15 +4931,15 @@
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
+                    "en": "I am bored.",
                     "mo": "Sunt plictisit."
                 },
                 {
-                    "en": "I'm nervous.",
+                    "en": "I am nervous.",
                     "mo": "Mă nelinişteşte."
                 },
                 {
-                    "en": "I'm nervous.",
+                    "en": "I am nervous.",
                     "mo": "Mă nelinişteşte."
                 },
                 {
@@ -4967,11 +4951,11 @@
                     "mo": "Mi-e dor de tine."
                 },
                 {
-                    "en": "I'm annoyed.",
+                    "en": "I am annoyed.",
                     "mo": "Sunt enervat."
                 },
                 {
-                    "en": "I'm annoyed.",
+                    "en": "I am annoyed.",
                     "mo": "Sunt enervat."
                 },
                 {
@@ -4988,7 +4972,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Nervous",
@@ -4996,16 +4980,16 @@
                 },
                 {
                     "en": "Miss",
-                    "mo": "Miss"
+                    "mo": ""
                 }
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
+                    "en": "I am bored.",
                     "mo": "Sunt plictisit."
                 },
                 {
-                    "en": "I'm nervous.",
+                    "en": "I am nervous.",
                     "mo": "Mă nelinişteşte."
                 },
                 {
@@ -5090,7 +5074,7 @@
                 },
                 {
                     "en": "Awesome",
-                    "mo": "Excelent"
+                    "mo": "Rece"
                 },
                 {
                     "en": "Awesome",
@@ -5102,7 +5086,7 @@
                 },
                 {
                     "en": "Nice",
-                    "mo": "Nisa"
+                    "mo": "Bun"
                 },
                 {
                     "en": "Very",
@@ -5110,7 +5094,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 },
                 {
                     "en": "Fun",
@@ -5118,7 +5102,7 @@
                 },
                 {
                     "en": "Cool",
-                    "mo": "Rece"
+                    "mo": "Distracție"
                 },
                 {
                     "en": "Very",
@@ -5126,7 +5110,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 }
             ],
             "sentences": [
@@ -5214,7 +5198,7 @@
                 },
                 {
                     "en": "Sometimes.",
-                    "mo": "Sometimes."
+                    "mo": ""
                 },
                 {
                     "en": "Usually like that.",
@@ -5230,7 +5214,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "To",
@@ -5246,7 +5230,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 }
             ],
             "sentences": [
@@ -5268,7 +5252,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "To",
@@ -5296,7 +5280,7 @@
                 },
                 {
                     "en": "Hot",
-                    "mo": "Hot"
+                    "mo": ""
                 },
                 {
                     "en": "Very",
@@ -5304,7 +5288,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 },
                 {
                     "en": "Very",
@@ -5312,7 +5296,7 @@
                 },
                 {
                     "en": "Really",
-                    "mo": "Într-adevăr"
+                    "mo": "Foarte"
                 }
             ],
             "sentences": [
@@ -5388,7 +5372,7 @@
                 },
                 {
                     "en": "By the way",
-                    "mo": "Apropo,"
+                    "mo": "Oh. da."
                 },
                 {
                     "en": "By the way",
@@ -5402,7 +5386,7 @@
                 },
                 {
                     "en": "By the way.",
-                    "mo": "By the way."
+                    "mo": ""
                 }
             ]
         },
@@ -5446,7 +5430,7 @@
                 },
                 {
                     "en": "Either",
-                    "mo": "Tipul trebuie să fie unic sau multiplu."
+                    "mo": "De asemenea,"
                 },
                 {
                     "en": "How come",
@@ -5458,7 +5442,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Really",
@@ -5521,7 +5505,7 @@
                 },
                 {
                     "en": "As",
-                    "mo": "Așa cum a fost"
+                    "mo": "Îmi place"
                 },
                 {
                     "en": "Earlier",
@@ -5529,7 +5513,7 @@
                 },
                 {
                     "en": "Before",
-                    "mo": "Înainte"
+                    "mo": "Mai devreme"
                 },
                 {
                     "en": "Like",
@@ -5537,7 +5521,7 @@
                 },
                 {
                     "en": "As",
-                    "mo": "As"
+                    "mo": "Îmi place"
                 },
                 {
                     "en": "I mean",
@@ -5545,7 +5529,7 @@
                 },
                 {
                     "en": "As in",
-                    "mo": "As in,"
+                    "mo": "Adică..."
                 },
                 {
                     "en": "As (a)",
@@ -5591,7 +5575,7 @@
                 },
                 {
                     "en": "Which",
-                    "mo": "Care"
+                    "mo": "Acea"
                 },
                 {
                     "en": "You",
@@ -5637,7 +5621,7 @@
                 },
                 {
                     "en": "Which",
-                    "mo": "Care"
+                    "mo": "Acea"
                 },
                 {
                     "en": "You",
@@ -5709,7 +5693,7 @@
                 },
                 {
                     "en": "Relative",
-                    "mo": "Relativ"
+                    "mo": "Soră"
                 },
                 {
                     "en": "Know (someone)",
@@ -5729,7 +5713,7 @@
                 },
                 {
                     "en": "Just",
-                    "mo": "Doar"
+                    "mo": "Nou"
                 },
                 {
                     "en": "Long time",
@@ -5767,7 +5751,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Have",
@@ -5787,7 +5771,7 @@
                 },
                 {
                     "en": "She",
-                    "mo": "Ea"
+                    "mo": "Ha"
                 }
             ],
             "sentences": [
@@ -5829,11 +5813,11 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "I",
-                    "mo": "I"
+                    "mo": ""
                 },
                 {
                     "en": "Mum",
@@ -5865,7 +5849,7 @@
                 },
                 {
                     "en": "Care for",
-                    "mo": "a trata"
+                    "mo": "Dragoste"
                 },
                 {
                     "en": "Miss (someone)",
@@ -5929,7 +5913,7 @@
                 },
                 {
                     "en": "Dear",
-                    "mo": "Stimate / Stimată"
+                    "mo": "Dragoste"
                 },
                 {
                     "en": "Beautiful",
@@ -5973,7 +5957,7 @@
                 },
                 {
                     "en": "Way",
-                    "mo": "Metodă"
+                    "mo": "Drum"
                 },
                 {
                     "en": "Don't",
@@ -5989,11 +5973,11 @@
                 },
                 {
                     "en": "In",
-                    "mo": "Ing"
+                    "mo": "La"
                 },
                 {
                     "en": "On",
-                    "mo": "In"
+                    "mo": "La"
                 },
                 {
                     "en": "Rest",
@@ -6047,7 +6031,7 @@
                 },
                 {
                     "en": "Good night.",
-                    "mo": "Good night."
+                    "mo": ""
                 },
                 {
                     "en": "Don't forget to eat.",
@@ -6091,7 +6075,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "You",
@@ -6111,7 +6095,7 @@
                 },
                 {
                     "en": "Miss",
-                    "mo": "Miss"
+                    "mo": "Tânjesc după"
                 },
                 {
                     "en": "Happy",
@@ -6156,7 +6140,7 @@
                     "mo": "Nu uita să mănânci, bine?"
                 },
                 {
-                    "en": "Let's meet tomorrow, okay?",
+                    "en": "Let us meet tomorrow, okay?",
                     "mo": "Hai să ne întâlnim mâine, bine?"
                 }
             ]
@@ -6169,11 +6153,11 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "I",
-                    "mo": "I"
+                    "mo": ""
                 },
                 {
                     "en": "You",
@@ -6193,7 +6177,7 @@
                 },
                 {
                     "en": "My dear",
-                    "mo": "Dragă"
+                    "mo": "my love"
                 },
                 {
                     "en": "Love",
@@ -6209,7 +6193,7 @@
                 },
                 {
                     "en": "Miss",
-                    "mo": "Miss"
+                    "mo": "Tânjesc după"
                 },
                 {
                     "en": "Already",
@@ -6221,7 +6205,7 @@
                 },
                 {
                     "en": "Right now",
-                    "mo": "Chiar acum"
+                    "mo": "Să faci"
                 },
                 {
                     "en": "What",
@@ -6241,7 +6225,7 @@
                 },
                 {
                     "en": "So",
-                    "mo": "Deci"
+                    "mo": "Foarte"
                 },
                 {
                     "en": "With",
@@ -6253,7 +6237,7 @@
                 },
                 {
                     "en": "Chat",
-                    "mo": "Chat"
+                    "mo": ""
                 },
                 {
                     "en": "Call",
@@ -6269,7 +6253,7 @@
                 },
                 {
                     "en": "Yeah",
-                    "mo": "Da"
+                    "mo": "Okay."
                 },
                 {
                     "en": "First",
@@ -6299,7 +6283,7 @@
                 },
                 {
                     "en": "So beautiful.",
-                    "mo": "So beautiful."
+                    "mo": ""
                 },
                 {
                     "en": "So handsome.",
@@ -6362,11 +6346,11 @@
                     "mo": "Sunt atât de fericit cu tine."
                 },
                 {
-                    "en": "I'll chat you later, okay?",
+                    "en": "I will chat you later, okay?",
                     "mo": "Vorbim mai târziu, bine?"
                 },
                 {
-                    "en": "I'll call you later, okay?",
+                    "en": "I will call you later, okay?",
                     "mo": "Te sun mai târziu, bine?"
                 },
                 {
@@ -6401,7 +6385,7 @@
                 },
                 {
                     "en": "There is",
-                    "mo": "Nu există"
+                    "mo": "Există"
                 },
                 {
                     "en": "Time",
@@ -6413,7 +6397,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Later",
@@ -6471,7 +6455,7 @@
                 },
                 {
                     "en": "Yeah",
-                    "mo": "Da"
+                    "mo": "Okay."
                 },
                 {
                     "en": "Just",
@@ -6492,7 +6476,7 @@
                 },
                 {
                     "en": "Be able to",
-                    "mo": "Să fie capabil să"
+                    "mo": "Pot"
                 }
             ],
             "sentences": [
@@ -6520,7 +6504,7 @@
                 },
                 {
                     "en": "At the moment",
-                    "mo": "pentru moment"
+                    "mo": "când"
                 },
                 {
                     "en": "Arrive",
@@ -6532,7 +6516,7 @@
                 },
                 {
                     "en": "Start",
-                    "mo": "Start"
+                    "mo": ""
                 },
                 {
                     "en": "Okay",
@@ -6540,7 +6524,7 @@
                 },
                 {
                     "en": "Yes",
-                    "mo": "Da"
+                    "mo": "Okay."
                 },
                 {
                     "en": "Eat",
@@ -6566,7 +6550,7 @@
                 },
                 {
                     "en": "Say",
-                    "mo": "Spune"
+                    "mo": "Prezentare"
                 }
             ],
             "sentences": [
@@ -6606,7 +6590,7 @@
                 },
                 {
                     "en": "She",
-                    "mo": "Ea"
+                    "mo": "Ha"
                 },
                 {
                     "en": "Friend",
@@ -6622,7 +6606,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "mo": "Sosire"
+                    "mo": "Veni"
                 }
             ],
             "sentences": [
@@ -6644,7 +6628,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Just",
@@ -6682,7 +6666,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 }
             ],
             "sentences": [
@@ -6728,7 +6712,7 @@
                 },
                 {
                     "en": "For you.",
-                    "mo": "For you."
+                    "mo": ""
                 },
                 {
                     "en": "For that.",
@@ -6744,7 +6728,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Just",
@@ -6778,7 +6762,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "You",
@@ -6822,7 +6806,7 @@
                 },
                 {
                     "en": "Able",
-                    "mo": "Capabil"
+                    "mo": "Pot"
                 },
                 {
                     "en": "Busy",
@@ -6868,7 +6852,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Currently",
@@ -6918,7 +6902,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Currently",
@@ -6953,7 +6937,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "mo": "hai"
                 },
                 {
@@ -6967,11 +6951,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
+                    "en": "Let us eat.",
                     "mo": "Hai să mâncăm."
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "mo": "Să mergem!"
                 }
             ]
@@ -6979,7 +6963,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "mo": "Hai să (vorbim)"
                 },
                 {
@@ -6989,11 +6973,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
+                    "en": "Let us eat.",
                     "mo": "Hai să mâncăm."
                 },
                 {
-                    "en": "Let’s go together.",
+                    "en": "Let us go together.",
                     "mo": "Să mergem împreună."
                 }
             ]
@@ -7001,7 +6985,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "mo": "Hai"
                 },
                 {
@@ -7010,16 +6994,16 @@
                 },
                 {
                     "en": "Us",
-                    "mo": "Ne"
+                    "mo": "Subscrisa"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
+                    "en": "Let us eat.",
                     "mo": "Hai să mâncăm."
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "mo": "Să mergem!"
                 }
             ]
@@ -7038,7 +7022,7 @@
                 },
                 {
                     "en": "In",
-                    "mo": "Ing"
+                    "mo": "La"
                 },
                 {
                     "en": "Currently",
@@ -7054,7 +7038,7 @@
                 },
                 {
                     "en": "Home",
-                    "mo": "Acasă"
+                    "mo": "Bloc"
                 },
                 {
                     "en": "Not yet",
@@ -7076,7 +7060,7 @@
             "words": [
                 {
                     "en": "I",
-                    "mo": "I"
+                    "mo": ""
                 },
                 {
                     "en": "Me (Jakarta slang)",
@@ -7138,7 +7122,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "You",
@@ -7206,7 +7190,7 @@
                 },
                 {
                     "en": "What about",
-                    "mo": "Ce ziceti"
+                    "mo": "Cum"
                 },
                 {
                     "en": "With",
@@ -7235,7 +7219,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let's",
+                    "en": "Let us",
                     "mo": "Hai să"
                 },
                 {
@@ -7252,7 +7236,7 @@
                 },
                 {
                     "en": "About",
-                    "mo": "Despre"
+                    "mo": "Referitor"
                 },
                 {
                     "en": "Discuss",
@@ -7260,7 +7244,7 @@
                 },
                 {
                     "en": "Talk about",
-                    "mo": "Vorbiți despre:"
+                    "mo": "Discuție"
                 },
                 {
                     "en": "How",
@@ -7280,7 +7264,7 @@
                 },
                 {
                     "en": "Me",
-                    "mo": "Mine"
+                    "mo": "Eu"
                 },
                 {
                     "en": "Want to",
@@ -7289,7 +7273,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "mo": "Hai să vorbim despre carte."
                 },
                 {
@@ -7305,7 +7289,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let's",
+                    "en": "Let us",
                     "mo": "Să"
                 },
                 {
@@ -7313,8 +7297,8 @@
                     "mo": "Haide"
                 },
                 {
-                    "en": "Let's",
-                    "mo": "Hai să"
+                    "en": "Let us",
+                    "mo": "Haide"
                 },
                 {
                     "en": "Talk",
@@ -7322,7 +7306,7 @@
                 },
                 {
                     "en": "Chat",
-                    "mo": "Chat"
+                    "mo": ""
                 },
                 {
                     "en": "Chat about",
@@ -7350,7 +7334,7 @@
                 },
                 {
                     "en": "What about",
-                    "mo": "Ce ziceti"
+                    "mo": "Cum"
                 },
                 {
                     "en": "Doing",
@@ -7358,7 +7342,7 @@
                 },
                 {
                     "en": "Right now",
-                    "mo": "Chiar acum"
+                    "mo": "Să faci"
                 },
                 {
                     "en": "What",
@@ -7367,11 +7351,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "mo": "Hai să vorbim despre carte."
                 },
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "mo": "Hai să vorbim despre carte."
                 },
                 {

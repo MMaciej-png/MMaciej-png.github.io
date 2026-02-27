@@ -430,6 +430,16 @@ const FR_EQUIVALENTS = [
   [/\b(je\s+suis|j'ai)\b/g, "je"],
   [/\b(s'il\s+te\s+plaît|s'il\s+vous\s+plaît|stp|svp)\b/g, "s'il vous plait"],
   [/\b(excusez-moi|désolé|désolée|pardon)\b/g, "excusez-moi"],
+  [/\b(très\s+bien|tres bien|super|génial)\b/g, "tres bien"],
+  [/\b(je\s+suis|j'suis)\b/g, "je suis"],
+  [/\b(peut-être|ptet|p't-être)\b/g, "peut-etre"],
+  [/\b(pas\s+encore|pas encore)\b/g, "pas encore"],
+  [/\b(à\s+bientôt|a bientot)\b/g, "a bientot"],
+  [/\b(je\s+ne\s+sais\s+pas|j'sais pas|chais pas)\b/g, "je ne sais pas"],
+  [/\b(il\s+y\s+a|y a)\b/g, "il y a"],
+  [/\b(c'est|ces\s+temps)\b/g, "c'est"],
+  [/\b(qu'est-ce\s+que|keske)\b/g, "qu'est-ce que"],
+  [/\b(d'accord|daccord|ok)\b/g, "d'accord"],
 ];
 
 /* ===============================
@@ -490,11 +500,22 @@ const JA_EQUIVALENTS = [
    KOREAN ROMANIZATION EQUIVALENTS (Revised vs common spellings)
 =============================== */
 const KR_EQUIVALENTS = [
-  [/\b(annyeong|anyeong|an-nyeong)\b/g, "annyeong"],
-  [/\b(gamsa|kamsa|gam sa)\b/g, "gamsa"],
+  [/\b(annyeong|anyeong|an-nyeong|annyung)\b/g, "annyeong"],
+  [/\b(gamsa|kamsa|gam sa|gamsahamnida)\b/g, "gamsa"],
   [/\b(hanguk|han-guk)\b/g, "hanguk"],
-  [/\b(jeoneun|jeo neun)\b/g, "jeoneun"],
-  [/\b(imnida|ipnida|hamnida)\b/g, "imnida"],
+  [/\b(jeoneun|jeo neun|jeo-neun)\b/g, "jeoneun"],
+  [/\b(imnida|ipnida|hamnida|iyeyo|iyo)\b/g, "imnida"],
+  [/\b(ne|ye|de)\b/g, "ne"],
+  [/\b(aniyo|ani)\b/g, "aniyo"],
+  [/\b(mianhae|mianhe|mianhamnida)\b/g, "mianhae"],
+  [/\b(joaha|joahae|saranghae)\b/g, "joaha"],
+  [/\b(eodie|odi)\b/g, "eodie"],
+  [/\b(eonje|onje)\b/g, "eonje"],
+  [/\b(mwo|mueo)\b/g, "mwo"],
+  [/\b(waeeo|wae)\b/g, "wae"],
+  [/\b(isseoyo|isseo)\b/g, "isseoyo"],
+  [/\b(gwaenchanha|gwaenchanhayo)\b/g, "gwaenchanha"],
+  [/\b(algo|alayo)\b/g, "algo"],
 ];
 
 

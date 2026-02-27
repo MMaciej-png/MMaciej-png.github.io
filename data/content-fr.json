@@ -15,20 +15,12 @@
                     "fr": "Bon"
                 },
                 {
-                    "en": "Well",
-                    "fr": "Bien"
-                },
-                {
-                    "en": "Safe",
-                    "fr": "En sécurité"
-                },
-                {
                     "en": "Come",
                     "fr": "Venir"
                 },
                 {
                     "en": "Arrive",
-                    "fr": "Arriver"
+                    "fr": "Venir"
                 }
             ],
             "sentences": [
@@ -46,7 +38,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
@@ -68,7 +60,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
@@ -91,14 +83,6 @@
                     "fr": "Bon"
                 },
                 {
-                    "en": "Well",
-                    "fr": "Bien"
-                },
-                {
-                    "en": "Safe",
-                    "fr": "En sécurité"
-                },
-                {
                     "en": "Morning",
                     "fr": "Matin"
                 },
@@ -108,7 +92,7 @@
                 },
                 {
                     "en": "Daytime",
-                    "fr": "Journée"
+                    "fr": "Après-midi"
                 },
                 {
                     "en": "Evening",
@@ -116,7 +100,7 @@
                 },
                 {
                     "en": "Night",
-                    "fr": "Nuit"
+                    "fr": "Soir"
                 },
                 {
                     "en": "Sleep",
@@ -186,7 +170,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
@@ -272,7 +256,7 @@
             "words": [
                 {
                     "en": "Oh",
-                    "fr": "Oh"
+                    "fr": ""
                 },
                 {
                     "en": "Oh right",
@@ -334,7 +318,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Understand",
@@ -364,7 +348,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Understand",
@@ -420,7 +404,7 @@
                 },
                 {
                     "en": "Excuse me",
-                    "fr": "Excusez-moi"
+                    "fr": "Désolé"
                 },
                 {
                     "en": "Yes",
@@ -458,7 +442,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
@@ -484,7 +468,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Ask for",
@@ -492,11 +476,11 @@
                 },
                 {
                     "en": "Urging",
-                    "fr": ""
+                    "fr": "Insister"
                 },
                 {
                     "en": "come on",
-                    "fr": ""
+                    "fr": "Insister"
                 }
             ],
             "sentences": [
@@ -528,7 +512,7 @@
                 },
                 {
                     "en": "See",
-                    "fr": "Voir"
+                    "fr": "Jusqu'à"
                 },
                 {
                     "en": "Meet",
@@ -552,7 +536,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "fr": "Plus tôt"
+                    "fr": "D'abord"
                 }
             ],
             "sentences": [
@@ -578,7 +562,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Take leave",
@@ -604,7 +588,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "fr": "Plus tôt"
+                    "fr": "D'abord"
                 },
                 {
                     "en": "Bye",
@@ -616,7 +600,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "casual closure",
@@ -684,7 +668,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "fr": "Arriver"
+                    "fr": "Venir"
                 },
                 {
                     "en": "That",
@@ -732,7 +716,7 @@
                 },
                 {
                     "en": "Boyfriend",
-                    "fr": "Petit ami"
+                    "fr": "Petite amie"
                 },
                 {
                     "en": "Friend",
@@ -768,7 +752,7 @@
                 },
                 {
                     "en": "She",
-                    "fr": "Elle"
+                    "fr": "Il"
                 },
                 {
                     "en": "This",
@@ -798,7 +782,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Mrs",
@@ -816,7 +800,7 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "fr": "Mon copain."
+                    "fr": "Ma copine"
                 },
                 {
                     "en": "They’re my friend.",
@@ -840,7 +824,7 @@
                 },
                 {
                     "en": "Girlfriend",
-                    "fr": "Copine"
+                    "fr": "Fille"
                 },
                 {
                     "en": "Guy",
@@ -848,7 +832,7 @@
                 },
                 {
                     "en": "Boyfriend",
-                    "fr": "Copain"
+                    "fr": "Mec"
                 },
                 {
                     "en": "I",
@@ -856,7 +840,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Friend",
@@ -864,15 +848,15 @@
                 },
                 {
                     "en": "Pointing",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "here",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "this",
-                    "fr": ""
+                    "fr": "Montrer"
                 }
             ],
             "sentences": [
@@ -882,7 +866,7 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "fr": "Mon copain."
+                    "fr": "Ma copine"
                 },
                 {
                     "en": "They’re my friend.",
@@ -902,7 +886,7 @@
                 },
                 {
                     "en": "boyfriend.",
-                    "fr": "mon copain."
+                    "fr": "C'est ma copine"
                 }
             ]
         }
@@ -924,7 +908,7 @@
                 },
                 {
                     "en": "Okay",
-                    "fr": "D'accord"
+                    "fr": "Bien"
                 },
                 {
                     "en": "Still",
@@ -948,7 +932,7 @@
                 },
                 {
                     "en": "Only",
-                    "fr": "Seulement"
+                    "fr": "Juste"
                 }
             ],
             "sentences": [
@@ -970,15 +954,15 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 }
             ],
             "sentences": [
@@ -992,11 +976,11 @@
                 },
                 {
                     "en": "I’m tired.",
-                    "fr": ""
+                    "fr": "Je suis fatigué."
                 },
                 {
                     "en": "I’m really tired.",
-                    "fr": ""
+                    "fr": "Je suis vraiment fatigué."
                 }
             ]
         },
@@ -1008,19 +992,19 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 }
             ],
             "sentences": [
@@ -1038,15 +1022,15 @@
                 },
                 {
                     "en": "I’m really tired.",
-                    "fr": ""
+                    "fr": "Je suis vraiment fatigué."
                 },
                 {
                     "en": "I’m really tired.",
-                    "fr": ""
+                    "fr": "Je suis vraiment fatigué."
                 },
                 {
                     "en": "I’m tired.",
-                    "fr": ""
+                    "fr": "Je suis fatigué."
                 }
             ]
         }
@@ -1056,11 +1040,11 @@
             "words": [
                 {
                     "en": "Less",
-                    "fr": ""
+                    "fr": "Moins"
                 },
                 {
                     "en": "Not quite",
-                    "fr": ""
+                    "fr": "Moins"
                 },
                 {
                     "en": "Good",
@@ -1072,11 +1056,11 @@
                 },
                 {
                     "en": "Like that",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "So",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "Just",
@@ -1084,33 +1068,33 @@
                 },
                 {
                     "en": "Only",
-                    "fr": "Seulement"
+                    "fr": "Juste"
                 },
                 {
                     "en": "Comfortable",
-                    "fr": ""
+                    "fr": "Confortable"
                 },
                 {
                     "en": "Good",
-                    "fr": ""
+                    "fr": "Confortable"
                 },
                 {
                     "en": "Tasty",
-                    "fr": ""
+                    "fr": "Confortable"
                 },
                 {
                     "en": "Body",
-                    "fr": ""
+                    "fr": "Corps"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not quite good.",
-                    "fr": ""
+                    "fr": "Pas très bien."
                 },
                 {
                     "en": "Just so-so.",
-                    "fr": ""
+                    "fr": "Comme ci comme ça."
                 }
             ]
         },
@@ -1122,21 +1106,21 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 }
             ],
             "sentences": [
                 {
                     "en": "I don’t feel well.",
-                    "fr": ""
+                    "fr": "Je ne me sens pas bien."
                 }
             ]
         },
@@ -1148,25 +1132,25 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 }
             ],
             "sentences": [
                 {
                     "en": "I don’t feel well.",
-                    "fr": ""
+                    "fr": "Je ne me sens pas bien."
                 },
                 {
                     "en": "I don’t feel well.",
-                    "fr": ""
+                    "fr": "Je ne me sens pas bien."
                 }
             ]
         }
@@ -1180,7 +1164,7 @@
                 },
                 {
                     "en": "Know",
-                    "fr": ""
+                    "fr": "Savoir"
                 },
                 {
                     "en": "Can",
@@ -1196,25 +1180,25 @@
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not this.",
-                    "fr": ""
+                    "fr": "Pas ça."
                 },
                 {
                     "en": "I don’t know.",
-                    "fr": ""
+                    "fr": "Je ne sais pas."
                 },
                 {
                     "en": "I can’t.",
-                    "fr": ""
+                    "fr": "Je ne peux pas."
                 },
                 {
                     "en": "Can do it now.",
-                    "fr": ""
+                    "fr": "Je peux maintenant."
                 }
             ]
         },
@@ -1226,29 +1210,29 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Belong to",
-                    "fr": ""
+                    "fr": "Appartenir à"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is not mine.",
-                    "fr": ""
+                    "fr": "Ce n'est pas à moi."
                 },
                 {
                     "en": "Not me.",
-                    "fr": ""
+                    "fr": "Pas moi."
                 }
             ]
         },
@@ -1260,33 +1244,33 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Have",
-                    "fr": ""
+                    "fr": "Avoir"
                 },
                 {
                     "en": "Own",
-                    "fr": ""
+                    "fr": "Avoir"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is not mine.",
-                    "fr": ""
+                    "fr": "Ce n'est pas à moi."
                 },
                 {
                     "en": "Not me.",
-                    "fr": ""
+                    "fr": "Pas moi."
                 }
             ]
         }
@@ -1296,15 +1280,15 @@
             "words": [
                 {
                     "en": "Please",
-                    "fr": ""
+                    "fr": "S'il vous plaît"
                 },
                 {
                     "en": "Help",
-                    "fr": ""
+                    "fr": "S'il vous plaît"
                 },
                 {
                     "en": "Help",
-                    "fr": ""
+                    "fr": "Aide"
                 },
                 {
                     "en": "Can",
@@ -1316,11 +1300,11 @@
                 },
                 {
                     "en": "Wait",
-                    "fr": ""
+                    "fr": "Attendre"
                 },
                 {
                     "en": "A moment",
-                    "fr": ""
+                    "fr": "Un moment"
                 },
                 {
                     "en": "Ask for",
@@ -1328,37 +1312,37 @@
                 },
                 {
                     "en": "Excuse me",
-                    "fr": ""
+                    "fr": "Excusez-moi"
                 },
                 {
                     "en": "May",
-                    "fr": ""
+                    "fr": "Pouvoir"
                 },
                 {
                     "en": "Allowed",
-                    "fr": ""
+                    "fr": "Pouvoir"
                 }
             ],
             "sentences": [
                 {
                     "en": "Please help.",
-                    "fr": ""
+                    "fr": "Aidez-moi, s'il vous plaît."
                 },
                 {
                     "en": "Can you help?",
-                    "fr": ""
+                    "fr": "Tu peux aider ?"
                 },
                 {
                     "en": "Please wait a moment.",
-                    "fr": ""
+                    "fr": "Veuillez attendre un instant."
                 },
                 {
                     "en": "Excuse me for a moment.",
-                    "fr": ""
+                    "fr": "Excusez-moi un instant."
                 },
                 {
                     "en": "May I ask for help?",
-                    "fr": ""
+                    "fr": "Puis-je demander de l'aide ?"
                 }
             ]
         },
@@ -1370,7 +1354,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -1378,41 +1362,41 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Please",
-                    "fr": ""
+                    "fr": "S'il vous plaît"
                 },
                 {
                     "en": "Help",
-                    "fr": ""
+                    "fr": "Aide"
                 },
                 {
                     "en": "To help",
-                    "fr": ""
+                    "fr": "Aide"
                 },
                 {
                     "en": "Help",
-                    "fr": ""
+                    "fr": "Aide"
                 },
                 {
                     "en": "Assistance",
-                    "fr": ""
+                    "fr": "Aide"
                 }
             ],
             "sentences": [
                 {
                     "en": "I kindly ask for your help.",
-                    "fr": ""
+                    "fr": "Je vous demande votre aide."
                 },
                 {
                     "en": "Can you help me?",
-                    "fr": ""
+                    "fr": "Tu peux m'aider ?"
                 },
                 {
                     "en": "Wait a sec, okay?",
-                    "fr": ""
+                    "fr": "Une seconde, d'accord ?"
                 }
             ]
         },
@@ -1424,7 +1408,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Yes",
@@ -1436,45 +1420,45 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Help",
-                    "fr": ""
+                    "fr": "Aide"
                 },
                 {
                     "en": "A sec",
-                    "fr": ""
+                    "fr": "Une seconde"
                 },
                 {
                     "en": "Urging",
-                    "fr": ""
+                    "fr": "Insister"
                 },
                 {
                     "en": "come on",
-                    "fr": ""
+                    "fr": "Insister"
                 }
             ],
             "sentences": [
                 {
                     "en": "Can you help me?",
-                    "fr": ""
+                    "fr": "Tu peux m'aider ?"
                 },
                 {
                     "en": "Wait a sec, okay?",
-                    "fr": ""
+                    "fr": "Une seconde, d'accord ?"
                 },
                 {
                     "en": "One sec.",
-                    "fr": ""
+                    "fr": "Une seconde."
                 },
                 {
                     "en": "Excuse me for a moment.",
-                    "fr": ""
+                    "fr": "Excusez-moi un instant."
                 },
                 {
                     "en": "I kindly ask for your help.",
-                    "fr": ""
+                    "fr": "Je vous demande votre aide."
                 }
             ]
         }
@@ -1484,11 +1468,11 @@
             "words": [
                 {
                     "en": "Meaning",
-                    "fr": ""
+                    "fr": "Signification"
                 },
                 {
                     "en": "Intention",
-                    "fr": ""
+                    "fr": "Signification"
                 },
                 {
                     "en": "What",
@@ -1500,7 +1484,7 @@
                 },
                 {
                     "en": "Repeat",
-                    "fr": ""
+                    "fr": "Répéter"
                 },
                 {
                     "en": "Can",
@@ -1512,17 +1496,17 @@
                 },
                 {
                     "en": "The meaning",
-                    "fr": ""
+                    "fr": "Le sens"
                 }
             ],
             "sentences": [
                 {
                     "en": "What does it mean?",
-                    "fr": ""
+                    "fr": "Ça veut dire quoi ?"
                 },
                 {
                     "en": "Can you repeat?",
-                    "fr": ""
+                    "fr": "Tu peux répéter ?"
                 }
             ]
         },
@@ -1538,19 +1522,19 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Whether",
-                    "fr": ""
+                    "fr": "Si"
                 },
                 {
                     "en": "You",
@@ -1558,21 +1542,21 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "I understand.",
-                    "fr": ""
+                    "fr": "Je comprends."
                 },
                 {
                     "en": "I don’t understand.",
-                    "fr": ""
+                    "fr": "Je ne comprends pas."
                 },
                 {
                     "en": "Do you understand?",
-                    "fr": ""
+                    "fr": "Tu comprends ?"
                 }
             ]
         },
@@ -1584,7 +1568,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Understand",
@@ -1596,11 +1580,11 @@
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "You",
@@ -1608,29 +1592,29 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "I don’t understand.",
-                    "fr": ""
+                    "fr": "Je ne comprends pas."
                 },
                 {
                     "en": "I understand.",
-                    "fr": ""
+                    "fr": "Je comprends."
                 },
                 {
                     "en": "Do you understand?",
-                    "fr": ""
+                    "fr": "Tu comprends ?"
                 },
                 {
                     "en": "Do you understand?",
-                    "fr": ""
+                    "fr": "Tu comprends ?"
                 },
                 {
                     "en": "Got it?",
-                    "fr": ""
+                    "fr": "Compris ?"
                 }
             ]
         }
@@ -1640,11 +1624,11 @@
             "words": [
                 {
                     "en": "Means",
-                    "fr": ""
+                    "fr": "Signifie"
                 },
                 {
                     "en": "So it means",
-                    "fr": ""
+                    "fr": "Signifie"
                 },
                 {
                     "en": "This",
@@ -1656,15 +1640,15 @@
                 },
                 {
                     "en": "Meaning",
-                    "fr": ""
+                    "fr": "Signification"
                 },
                 {
                     "en": "Intention",
-                    "fr": ""
+                    "fr": "Signification"
                 },
                 {
                     "en": "The meaning",
-                    "fr": ""
+                    "fr": "Le sens"
                 },
                 {
                     "en": "What",
@@ -1672,33 +1656,33 @@
                 },
                 {
                     "en": "Like that",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "So",
-                    "fr": ""
+                    "fr": "Comme ça"
                 }
             ],
             "sentences": [
                 {
                     "en": "So this means?",
-                    "fr": ""
+                    "fr": "Donc ça veut dire ?"
                 },
                 {
                     "en": "So that means?",
-                    "fr": ""
+                    "fr": "Donc ça veut dire ?"
                 },
                 {
                     "en": "What does it mean?",
-                    "fr": ""
+                    "fr": "Ça veut dire quoi ?"
                 },
                 {
                     "en": "What do you mean?",
-                    "fr": ""
+                    "fr": "Tu veux dire quoi ?"
                 },
                 {
                     "en": "Does this mean that?",
-                    "fr": ""
+                    "fr": "Ça veut dire que ?"
                 }
             ]
         },
@@ -1706,7 +1690,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "fr": ""
+                    "fr": "Si"
                 },
                 {
                     "en": "You",
@@ -1714,17 +1698,17 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "Does this mean that?",
-                    "fr": ""
+                    "fr": "Ça veut dire que ?"
                 },
                 {
                     "en": "What do you mean?",
-                    "fr": ""
+                    "fr": "Tu veux dire quoi ?"
                 }
             ]
         },
@@ -1733,7 +1717,7 @@
             "sentences": [
                 {
                     "en": "What do you mean?",
-                    "fr": ""
+                    "fr": "Tu veux dire quoi ?"
                 }
             ]
         }
@@ -1763,25 +1747,25 @@
                 },
                 {
                     "en": "Not yet",
-                    "fr": ""
+                    "fr": "Pas encore"
                 }
             ],
             "sentences": [
                 {
                     "en": "Can this?",
-                    "fr": ""
+                    "fr": "On peut ça ?"
                 },
                 {
                     "en": "Can that?",
-                    "fr": ""
+                    "fr": "On peut ?"
                 },
                 {
                     "en": "Can you already?",
-                    "fr": ""
+                    "fr": "Tu peux déjà ?"
                 },
                 {
                     "en": "Can't yet?",
-                    "fr": ""
+                    "fr": "Pas encore ?"
                 }
             ]
         },
@@ -1789,7 +1773,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "fr": ""
+                    "fr": "Si"
                 },
                 {
                     "en": "You",
@@ -1797,17 +1781,17 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "Can this?",
-                    "fr": ""
+                    "fr": "On peut ça ?"
                 },
                 {
                     "en": "Can you already?",
-                    "fr": ""
+                    "fr": "Tu peux déjà ?"
                 }
             ]
         },
@@ -1825,7 +1809,7 @@
             "sentences": [
                 {
                     "en": "Can't?",
-                    "fr": ""
+                    "fr": "On ne peut pas ?"
                 }
             ]
         }
@@ -1857,11 +1841,11 @@
             "sentences": [
                 {
                     "en": "Busy right now.",
-                    "fr": ""
+                    "fr": "Occupé en ce moment."
                 },
                 {
                     "en": "Can do it later.",
-                    "fr": ""
+                    "fr": "Je peux plus tard."
                 }
             ]
         },
@@ -1873,33 +1857,33 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "Work",
-                    "fr": ""
+                    "fr": "Travail"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 }
             ],
             "sentences": [
                 {
                     "en": "I am working.",
-                    "fr": ""
+                    "fr": "Je travaille."
                 },
                 {
                     "en": "I can’t right now.",
-                    "fr": ""
+                    "fr": "Je ne peux pas tout de suite."
                 }
             ]
         },
@@ -1911,23 +1895,23 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "Work",
-                    "fr": ""
+                    "fr": "Travail"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "casual closure",
@@ -1937,35 +1921,35 @@
             "sentences": [
                 {
                     "en": "Working.",
-                    "fr": ""
+                    "fr": "Je travaille."
                 },
                 {
                     "en": "Working.",
-                    "fr": ""
+                    "fr": "Je travaille."
                 },
                 {
                     "en": "Can’t right now.",
-                    "fr": ""
+                    "fr": "Je ne peux pas tout de suite."
                 },
                 {
                     "en": "Can’t right now.",
-                    "fr": ""
+                    "fr": "Je ne peux pas tout de suite."
                 },
                 {
                     "en": "I am working.",
-                    "fr": ""
+                    "fr": "Je travaille."
                 },
                 {
                     "en": "I am working.",
-                    "fr": ""
+                    "fr": "Je travaille."
                 },
                 {
                     "en": "Working.",
-                    "fr": ""
+                    "fr": "Je travaille."
                 },
                 {
                     "en": "Can’t right now.",
-                    "fr": ""
+                    "fr": "Je ne peux pas tout de suite."
                 }
             ]
         }
@@ -1983,7 +1967,7 @@
                 },
                 {
                     "en": "Day",
-                    "fr": ""
+                    "fr": "Jour"
                 },
                 {
                     "en": "This",
@@ -1999,7 +1983,7 @@
                 },
                 {
                     "en": "Not yet",
-                    "fr": ""
+                    "fr": "Pas encore"
                 },
                 {
                     "en": "Yes",
@@ -2013,15 +1997,15 @@
             "sentences": [
                 {
                     "en": "Later, okay.",
-                    "fr": ""
+                    "fr": "Plus tard, d'accord."
                 },
                 {
                     "en": "Not yet.",
-                    "fr": ""
+                    "fr": "Pas encore."
                 },
                 {
                     "en": "Already.",
-                    "fr": ""
+                    "fr": "Déjà."
                 }
             ]
         },
@@ -2033,11 +2017,11 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Will",
-                    "fr": ""
+                    "fr": "Va"
                 },
                 {
                     "en": "Now",
@@ -2047,15 +2031,15 @@
             "sentences": [
                 {
                     "en": "I will go now.",
-                    "fr": ""
+                    "fr": "J'y vais maintenant."
                 },
                 {
                     "en": "I will go tomorrow.",
-                    "fr": ""
+                    "fr": "J'y vais demain."
                 },
                 {
                     "en": "Going later.",
-                    "fr": ""
+                    "fr": "J'y vais plus tard."
                 }
             ]
         },
@@ -2067,15 +2051,15 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Want",
-                    "fr": ""
+                    "fr": "Vouloir"
                 },
                 {
                     "en": "Going to",
-                    "fr": ""
+                    "fr": "Vouloir"
                 },
                 {
                     "en": "Just",
@@ -2089,23 +2073,23 @@
             "sentences": [
                 {
                     "en": "Going later.",
-                    "fr": ""
+                    "fr": "J'y vais plus tard."
                 },
                 {
                     "en": "Going tomorrow.",
-                    "fr": ""
+                    "fr": "J'y vais demain."
                 },
                 {
                     "en": "I will go now.",
-                    "fr": ""
+                    "fr": "J'y vais maintenant."
                 },
                 {
                     "en": "I will go tomorrow.",
-                    "fr": ""
+                    "fr": "J'y vais demain."
                 },
                 {
                     "en": "Later, okay.",
-                    "fr": ""
+                    "fr": "Plus tard, d'accord."
                 }
             ]
         }
@@ -2115,7 +2099,7 @@
             "words": [
                 {
                     "en": "Like",
-                    "fr": ""
+                    "fr": "Comme"
                 },
                 {
                     "en": "Want",
@@ -2123,15 +2107,15 @@
                 },
                 {
                     "en": "Choose",
-                    "fr": ""
+                    "fr": "Choisir"
                 },
                 {
                     "en": "Which",
-                    "fr": ""
+                    "fr": "Quel"
                 },
                 {
                     "en": "Different",
-                    "fr": ""
+                    "fr": "Différent"
                 },
                 {
                     "en": "This",
@@ -2143,17 +2127,17 @@
                 },
                 {
                     "en": "Other",
-                    "fr": ""
+                    "fr": "Autre"
                 }
             ],
             "sentences": [
                 {
                     "en": "That one is different.",
-                    "fr": ""
+                    "fr": "Celui-là est différent."
                 },
                 {
                     "en": "The other one.",
-                    "fr": ""
+                    "fr": "L'autre."
                 }
             ]
         },
@@ -2165,13 +2149,13 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
                 {
                     "en": "I choose the other one.",
-                    "fr": ""
+                    "fr": "Je choisis l'autre."
                 }
             ]
         },
@@ -2183,21 +2167,21 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
                 {
                     "en": "I choose the other one.",
-                    "fr": ""
+                    "fr": "Je choisis l'autre."
                 },
                 {
                     "en": "I choose the other one.",
-                    "fr": ""
+                    "fr": "Je choisis l'autre."
                 },
                 {
                     "en": "I want this one.",
-                    "fr": ""
+                    "fr": "Je veux celui-ci."
                 }
             ]
         }
@@ -2211,27 +2195,27 @@
                 },
                 {
                     "en": "Drink",
-                    "fr": ""
+                    "fr": "Boire"
                 },
                 {
                     "en": "Hungry",
-                    "fr": ""
+                    "fr": "Faim"
                 },
                 {
                     "en": "Thirsty",
-                    "fr": ""
+                    "fr": "Soif"
                 },
                 {
                     "en": "Comfortable",
-                    "fr": ""
+                    "fr": "Confortable"
                 },
                 {
                     "en": "Good",
-                    "fr": ""
+                    "fr": "Confortable"
                 },
                 {
                     "en": "Tasty",
-                    "fr": ""
+                    "fr": "Confortable"
                 },
                 {
                     "en": "This",
@@ -2243,15 +2227,15 @@
                 },
                 {
                     "en": "Food",
-                    "fr": ""
+                    "fr": "Nourriture"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Want",
@@ -2261,27 +2245,27 @@
             "sentences": [
                 {
                     "en": "Hungry.",
-                    "fr": ""
+                    "fr": "Faim."
                 },
                 {
                     "en": "Thirsty.",
-                    "fr": ""
+                    "fr": "Soif."
                 },
                 {
                     "en": "This is good.",
-                    "fr": ""
+                    "fr": "C'est bon."
                 },
                 {
                     "en": "This food is good.",
-                    "fr": ""
+                    "fr": "Cette nourriture est bonne."
                 },
                 {
                     "en": "That’s really good.",
-                    "fr": ""
+                    "fr": "C'est vraiment bien."
                 },
                 {
                     "en": "I want to eat.",
-                    "fr": ""
+                    "fr": "Je veux manger."
                 }
             ]
         },
@@ -2293,7 +2277,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Want",
@@ -2301,21 +2285,21 @@
                 },
                 {
                     "en": "Drink",
-                    "fr": ""
+                    "fr": "Boire"
                 },
                 {
                     "en": "Beverage",
-                    "fr": ""
+                    "fr": "Boire"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’m hungry.",
-                    "fr": ""
+                    "fr": "J'ai faim."
                 },
                 {
                     "en": "I want to eat.",
-                    "fr": ""
+                    "fr": "Je veux manger."
                 }
             ]
         },
@@ -2327,33 +2311,33 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’m hungry.",
-                    "fr": ""
+                    "fr": "J'ai faim."
                 },
                 {
                     "en": "I’m hungry.",
-                    "fr": ""
+                    "fr": "J'ai faim."
                 },
                 {
                     "en": "I want to eat.",
-                    "fr": ""
+                    "fr": "Je veux manger."
                 },
                 {
                     "en": "That’s really good.",
-                    "fr": ""
+                    "fr": "C'est vraiment bien."
                 }
             ]
         }
@@ -2371,61 +2355,61 @@
                 },
                 {
                     "en": "Choose",
-                    "fr": ""
+                    "fr": "Choisir"
                 },
                 {
                     "en": "Same",
-                    "fr": ""
+                    "fr": "Même"
                 },
                 {
                     "en": "Different",
-                    "fr": ""
+                    "fr": "Différent"
                 },
                 {
                     "en": "Which",
-                    "fr": ""
+                    "fr": "Quel"
                 },
                 {
                     "en": "And",
-                    "fr": ""
+                    "fr": "Et"
                 },
                 {
                     "en": "Or",
-                    "fr": ""
+                    "fr": "Ou"
                 },
                 {
                     "en": "But",
-                    "fr": ""
+                    "fr": "Mais"
                 }
             ],
             "sentences": [
                 {
                     "en": "This.",
-                    "fr": ""
+                    "fr": "Ça."
                 },
                 {
                     "en": "That.",
-                    "fr": ""
+                    "fr": "Ça."
                 },
                 {
                     "en": "The same one.",
-                    "fr": ""
+                    "fr": "Le même."
                 },
                 {
                     "en": "The different one.",
-                    "fr": ""
+                    "fr": "L'autre."
                 },
                 {
                     "en": "This and that.",
-                    "fr": ""
+                    "fr": "Ça et ça."
                 },
                 {
                     "en": "This or that.",
-                    "fr": ""
+                    "fr": "Ça ou ça."
                 },
                 {
                     "en": "This but that.",
-                    "fr": ""
+                    "fr": "Ça mais ça."
                 }
             ]
         },
@@ -2437,7 +2421,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -2445,17 +2429,17 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "I choose this.",
-                    "fr": ""
+                    "fr": "Je choisis celui-ci."
                 },
                 {
                     "en": "That is what you choose.",
-                    "fr": ""
+                    "fr": "C'est ce que tu choisis."
                 }
             ]
         },
@@ -2467,11 +2451,11 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Just",
-                    "fr": ""
+                    "fr": "Juste"
                 },
                 {
                     "en": "You",
@@ -2479,37 +2463,37 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "Just the other one.",
-                    "fr": ""
+                    "fr": "Juste l'autre."
                 },
                 {
                     "en": "Just the other one.",
-                    "fr": ""
+                    "fr": "Juste l'autre."
                 },
                 {
                     "en": "I choose this.",
-                    "fr": ""
+                    "fr": "Je choisis celui-ci."
                 },
                 {
                     "en": "I choose this.",
-                    "fr": ""
+                    "fr": "Je choisis celui-ci."
                 },
                 {
                     "en": "Just this one.",
-                    "fr": ""
+                    "fr": "Juste celui-ci."
                 },
                 {
                     "en": "Just this one.",
-                    "fr": ""
+                    "fr": "Juste celui-ci."
                 },
                 {
                     "en": "That is what you choose.",
-                    "fr": ""
+                    "fr": "C'est ce que tu choisis."
                 }
             ]
         }
@@ -2527,11 +2511,11 @@
                 },
                 {
                     "en": "Arrive",
-                    "fr": "Arriver"
+                    "fr": "Venir"
                 },
                 {
                     "en": "Arrive",
-                    "fr": ""
+                    "fr": "Arriver"
                 },
                 {
                     "en": "Already",
@@ -2539,21 +2523,21 @@
                 },
                 {
                     "en": "Here",
-                    "fr": ""
+                    "fr": "Ici"
                 },
                 {
                     "en": "There",
-                    "fr": ""
+                    "fr": "Là"
                 }
             ],
             "sentences": [
                 {
                     "en": "Already arrived.",
-                    "fr": ""
+                    "fr": "Déjà arrivé."
                 },
                 {
                     "en": "Here.",
-                    "fr": ""
+                    "fr": "Ici."
                 }
             ]
         },
@@ -2565,21 +2549,21 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Will",
-                    "fr": ""
+                    "fr": "Va"
                 }
             ],
             "sentences": [
                 {
                     "en": "I will go.",
-                    "fr": ""
+                    "fr": "J'y vais."
                 },
                 {
                     "en": "I have arrived.",
-                    "fr": ""
+                    "fr": "Je suis arrivé."
                 }
             ]
         },
@@ -2591,53 +2575,53 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "Want",
-                    "fr": ""
+                    "fr": "Vouloir"
                 },
                 {
                     "en": "Going to",
-                    "fr": ""
+                    "fr": "Vouloir"
                 },
                 {
                     "en": "Already",
-                    "fr": ""
+                    "fr": "Déjà"
                 },
                 {
                     "en": "Pointing",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "here",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "this",
-                    "fr": ""
+                    "fr": "Montrer"
                 }
             ],
             "sentences": [
                 {
                     "en": "Heading out.",
-                    "fr": ""
+                    "fr": "Je pars."
                 },
                 {
                     "en": "I will go.",
-                    "fr": ""
+                    "fr": "J'y vais."
                 },
                 {
                     "en": "I have arrived.",
-                    "fr": ""
+                    "fr": "Je suis arrivé."
                 },
                 {
                     "en": "Arrived.",
-                    "fr": ""
+                    "fr": "Je suis arrivé."
                 }
             ]
         }
@@ -2647,101 +2631,101 @@
             "words": [
                 {
                     "en": "House",
-                    "fr": ""
+                    "fr": "Maison"
                 },
                 {
                     "en": "Home",
-                    "fr": ""
+                    "fr": "Maison"
                 },
                 {
                     "en": "Toilet",
-                    "fr": ""
+                    "fr": "Toilettes"
                 },
                 {
                     "en": "Bathroom",
-                    "fr": ""
+                    "fr": "Salle de bain"
                 },
                 {
                     "en": "Room",
-                    "fr": ""
+                    "fr": "Pièce"
                 },
                 {
                     "en": "Bedroom",
-                    "fr": ""
+                    "fr": "Pièce"
                 },
                 {
                     "en": "Kitchen",
-                    "fr": ""
+                    "fr": "Cuisine"
                 },
                 {
                     "en": "Bathroom",
-                    "fr": ""
+                    "fr": "Salle de bain"
                 },
                 {
                     "en": "Shop",
-                    "fr": ""
+                    "fr": "Magasin"
                 },
                 {
                     "en": "Store",
-                    "fr": ""
+                    "fr": "Magasin"
                 },
                 {
                     "en": "School",
-                    "fr": ""
+                    "fr": "École"
                 },
                 {
                     "en": "University",
-                    "fr": ""
+                    "fr": "Université"
                 },
                 {
                     "en": "At",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "In",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "To",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "Here",
-                    "fr": ""
+                    "fr": "Ici"
                 },
                 {
                     "en": "There",
-                    "fr": ""
+                    "fr": "Là"
                 }
             ],
             "sentences": [
                 {
                     "en": "At home.",
-                    "fr": ""
+                    "fr": "À la maison."
                 },
                 {
                     "en": "To the toilet.",
-                    "fr": ""
+                    "fr": "Aux toilettes."
                 },
                 {
                     "en": "In the kitchen.",
-                    "fr": ""
+                    "fr": "Dans la cuisine."
                 },
                 {
                     "en": "In the room.",
-                    "fr": ""
+                    "fr": "Dans la pièce."
                 },
                 {
                     "en": "At the shop.",
-                    "fr": ""
+                    "fr": "Au magasin."
                 },
                 {
                     "en": "At school.",
-                    "fr": ""
+                    "fr": "À l'école."
                 },
                 {
                     "en": "At the university.",
-                    "fr": ""
+                    "fr": "À l'université."
                 }
             ]
         },
@@ -2767,29 +2751,29 @@
                 },
                 {
                     "en": "Have",
-                    "fr": ""
+                    "fr": "Avoir"
                 },
                 {
                     "en": "Own",
-                    "fr": ""
+                    "fr": "Avoir"
                 },
                 {
                     "en": "Who",
-                    "fr": ""
+                    "fr": "Qui"
                 },
                 {
                     "en": "Whose",
-                    "fr": ""
+                    "fr": "Qui"
                 }
             ],
             "sentences": [
                 {
                     "en": "That is yours.",
-                    "fr": ""
+                    "fr": "C'est à toi."
                 },
                 {
                     "en": "Whose is this?",
-                    "fr": ""
+                    "fr": "C'est à qui ?"
                 }
             ]
         },
@@ -2801,7 +2785,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -2809,25 +2793,25 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Belong to",
-                    "fr": ""
+                    "fr": "Appartenir à"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is mine.",
-                    "fr": ""
+                    "fr": "C'est à moi."
                 },
                 {
                     "en": "This belongs to me.",
-                    "fr": ""
+                    "fr": "Ça m'appartient."
                 },
                 {
                     "en": "That belongs to you.",
-                    "fr": ""
+                    "fr": "Ça t'appartient."
                 }
             ]
         },
@@ -2839,7 +2823,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -2847,29 +2831,29 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is mine.",
-                    "fr": ""
+                    "fr": "C'est à moi."
                 },
                 {
                     "en": "This is mine.",
-                    "fr": ""
+                    "fr": "C'est à moi."
                 },
                 {
                     "en": "That’s yours.",
-                    "fr": ""
+                    "fr": "C'est à toi."
                 },
                 {
                     "en": "This belongs to me.",
-                    "fr": ""
+                    "fr": "Ça m'appartient."
                 },
                 {
                     "en": "That belongs to you.",
-                    "fr": ""
+                    "fr": "Ça t'appartient."
                 }
             ]
         }
@@ -2879,47 +2863,47 @@
             "words": [
                 {
                     "en": "Zero",
-                    "fr": ""
+                    "fr": "Zéro"
                 },
                 {
                     "en": "One",
-                    "fr": ""
+                    "fr": "Un"
                 },
                 {
                     "en": "Two",
-                    "fr": ""
+                    "fr": "Deux"
                 },
                 {
                     "en": "Three",
-                    "fr": ""
+                    "fr": "Trois"
                 },
                 {
                     "en": "Four",
-                    "fr": ""
+                    "fr": "Quatre"
                 },
                 {
                     "en": "Five",
-                    "fr": ""
+                    "fr": "Cinq"
                 },
                 {
                     "en": "Six",
-                    "fr": ""
+                    "fr": "Six"
                 },
                 {
                     "en": "Seven",
-                    "fr": ""
+                    "fr": "Sept"
                 },
                 {
                     "en": "Eight",
-                    "fr": ""
+                    "fr": "Huit"
                 },
                 {
                     "en": "Nine",
-                    "fr": ""
+                    "fr": "Neuf"
                 },
                 {
                     "en": "Ten",
-                    "fr": ""
+                    "fr": "Dix"
                 }
             ],
             "sentences": []
@@ -2938,63 +2922,63 @@
             "words": [
                 {
                     "en": "tens",
-                    "fr": ""
+                    "fr": "dizaines"
                 },
                 {
                     "en": "Eleven",
-                    "fr": ""
+                    "fr": "Onze"
                 },
                 {
                     "en": "Twelve",
-                    "fr": ""
+                    "fr": "Douze"
                 },
                 {
                     "en": "Thirteen",
-                    "fr": ""
+                    "fr": "Treize"
                 },
                 {
                     "en": "Fourteen",
-                    "fr": ""
+                    "fr": "Quatorze"
                 },
                 {
                     "en": "Fifteen",
-                    "fr": ""
+                    "fr": "Quinze"
                 },
                 {
                     "en": "Sixteen",
-                    "fr": ""
+                    "fr": "Seize"
                 },
                 {
                     "en": "Seventeen",
-                    "fr": ""
+                    "fr": "Dix-sept"
                 },
                 {
                     "en": "Eighteen",
-                    "fr": ""
+                    "fr": "Dix-huit"
                 },
                 {
                     "en": "Nineteen",
-                    "fr": ""
+                    "fr": "Dix-neuf"
                 },
                 {
                     "en": "Twenty",
-                    "fr": ""
+                    "fr": "Vingt"
                 },
                 {
                     "en": "Thirty",
-                    "fr": ""
+                    "fr": "Trente"
                 },
                 {
                     "en": "Forty",
-                    "fr": ""
+                    "fr": "Quarante"
                 },
                 {
                     "en": "Fifty",
-                    "fr": ""
+                    "fr": "Cinquante"
                 },
                 {
                     "en": "One hundred",
-                    "fr": ""
+                    "fr": "Cent"
                 }
             ],
             "sentences": []
@@ -3013,7 +2997,7 @@
             "words": [
                 {
                     "en": "Day",
-                    "fr": ""
+                    "fr": "Jour"
                 },
                 {
                     "en": "This",
@@ -3021,7 +3005,7 @@
                 },
                 {
                     "en": "Yesterday",
-                    "fr": ""
+                    "fr": "Hier"
                 },
                 {
                     "en": "Tomorrow",
@@ -3037,21 +3021,21 @@
                 },
                 {
                     "en": "Only",
-                    "fr": "Seulement"
+                    "fr": "Juste"
                 }
             ],
             "sentences": [
                 {
                     "en": "Today.",
-                    "fr": ""
+                    "fr": "Aujourd'hui."
                 },
                 {
                     "en": "Now.",
-                    "fr": ""
+                    "fr": "Maintenant."
                 },
                 {
                     "en": "Tomorrow is fine.",
-                    "fr": ""
+                    "fr": "Demain ça va."
                 }
             ]
         },
@@ -3069,45 +3053,45 @@
             "words": [
                 {
                     "en": "At",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "In",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "Here",
-                    "fr": ""
+                    "fr": "Ici"
                 },
                 {
                     "en": "There",
-                    "fr": ""
+                    "fr": "Là"
                 },
                 {
                     "en": "Which",
-                    "fr": ""
+                    "fr": "Quel"
                 },
                 {
                     "en": "Where",
-                    "fr": ""
+                    "fr": "Quel"
                 },
                 {
                     "en": "Place",
-                    "fr": ""
+                    "fr": "Lieu"
                 }
             ],
             "sentences": [
                 {
                     "en": "Here.",
-                    "fr": ""
+                    "fr": "Ici."
                 },
                 {
                     "en": "There.",
-                    "fr": ""
+                    "fr": "Là."
                 },
                 {
                     "en": "Which place?",
-                    "fr": ""
+                    "fr": "Quel endroit ?"
                 }
             ]
         },
@@ -3125,23 +3109,23 @@
             "words": [
                 {
                     "en": "Time",
-                    "fr": ""
+                    "fr": "Temps"
                 },
                 {
                     "en": "Exist",
-                    "fr": ""
+                    "fr": "Exister"
                 },
                 {
                     "en": "There is",
-                    "fr": ""
+                    "fr": "Exister"
                 },
                 {
                     "en": "There is not",
-                    "fr": ""
+                    "fr": "Il n'y a pas"
                 },
                 {
                     "en": "None",
-                    "fr": ""
+                    "fr": "Il n'y a pas"
                 },
                 {
                     "en": "Now",
@@ -3149,29 +3133,29 @@
                 },
                 {
                     "en": "Here",
-                    "fr": ""
+                    "fr": "Ici"
                 },
                 {
                     "en": "There",
-                    "fr": ""
+                    "fr": "Là"
                 }
             ],
             "sentences": [
                 {
                     "en": "It's here.",
-                    "fr": ""
+                    "fr": "C'est ici."
                 },
                 {
                     "en": "There is none.",
-                    "fr": ""
+                    "fr": "Il n'y en a pas."
                 },
                 {
                     "en": "There is time.",
-                    "fr": ""
+                    "fr": "Il y a le temps."
                 },
                 {
                     "en": "Not right now.",
-                    "fr": ""
+                    "fr": "Pas tout de suite."
                 }
             ]
         },
@@ -3183,17 +3167,17 @@
             "words": [
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 }
             ],
             "sentences": [
                 {
                     "en": "There isn’t any.",
-                    "fr": ""
+                    "fr": "Il n'y en a pas."
                 }
             ]
         }
@@ -3203,11 +3187,11 @@
             "words": [
                 {
                     "en": "So",
-                    "fr": ""
+                    "fr": "Donc"
                 },
                 {
                     "en": "Then",
-                    "fr": ""
+                    "fr": "Donc"
                 },
                 {
                     "en": "Later",
@@ -3223,15 +3207,15 @@
                 },
                 {
                     "en": "Oh",
-                    "fr": "Oh"
+                    "fr": ""
                 },
                 {
                     "en": "Like that",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "So",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "Just",
@@ -3239,21 +3223,21 @@
                 },
                 {
                     "en": "Only",
-                    "fr": "Seulement"
+                    "fr": "Juste"
                 }
             ],
             "sentences": [
                 {
                     "en": "So, later.",
-                    "fr": ""
+                    "fr": "Donc, à plus tard."
                 },
                 {
                     "en": "So tomorrow, okay.",
-                    "fr": ""
+                    "fr": "Donc demain, d'accord."
                 },
                 {
                     "en": "Oh, so that’s how it is.",
-                    "fr": ""
+                    "fr": "Ah, c'est comme ça."
                 }
             ]
         },
@@ -3261,7 +3245,7 @@
             "words": [
                 {
                     "en": "That’s why",
-                    "fr": ""
+                    "fr": "C'est pour ça"
                 },
                 {
                     "en": "I",
@@ -3269,19 +3253,19 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Tell",
-                    "fr": ""
+                    "fr": "Dire"
                 },
                 {
                     "en": "Say",
-                    "fr": ""
+                    "fr": "Dire"
                 },
                 {
                     "en": "Since earlier",
-                    "fr": ""
+                    "fr": "Depuis tout à l'heure"
                 },
                 {
                     "en": "Don’t",
@@ -3289,25 +3273,25 @@
                 },
                 {
                     "en": "Like that",
-                    "fr": ""
+                    "fr": "Comme ça"
                 }
             ],
             "sentences": [
                 {
                     "en": "That’s why I told you earlier.",
-                    "fr": ""
+                    "fr": "C'est pour ça que je t'ai dit plus tôt."
                 },
                 {
                     "en": "That’s why I told you earlier.",
-                    "fr": ""
+                    "fr": "C'est pour ça que je t'ai dit plus tôt."
                 },
                 {
                     "en": "That’s why don’t do that.",
-                    "fr": ""
+                    "fr": "C'est pour ça, ne fais pas ça."
                 },
                 {
                     "en": "That’s why.",
-                    "fr": ""
+                    "fr": "C'est pour ça."
                 }
             ]
         },
@@ -3319,7 +3303,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Go",
@@ -3331,25 +3315,25 @@
                 },
                 {
                     "en": "Earlier",
-                    "fr": "Plus tôt"
+                    "fr": "D'abord"
                 },
                 {
                     "en": "Wait",
-                    "fr": ""
+                    "fr": "Attendre"
                 },
                 {
                     "en": "Here",
-                    "fr": ""
+                    "fr": "Ici"
                 }
             ],
             "sentences": [
                 {
                     "en": "So, I’ll go first.",
-                    "fr": ""
+                    "fr": "Donc, j'y vais en premier."
                 },
                 {
                     "en": "So, I’ll wait here.",
-                    "fr": ""
+                    "fr": "Donc, j'attends ici."
                 }
             ]
         }
@@ -3371,7 +3355,7 @@
                 },
                 {
                     "en": "But",
-                    "fr": ""
+                    "fr": "Mais"
                 },
                 {
                     "en": "Later",
@@ -3379,41 +3363,41 @@
                 },
                 {
                     "en": "Even though",
-                    "fr": ""
+                    "fr": "Même si"
                 },
                 {
                     "en": "But actually",
-                    "fr": ""
+                    "fr": "Même si"
                 },
                 {
                     "en": "Close",
-                    "fr": ""
+                    "fr": "Proche"
                 },
                 {
                     "en": "Near",
-                    "fr": ""
+                    "fr": "Proche"
                 },
                 {
                     "en": "Tell",
-                    "fr": ""
+                    "fr": "Dire"
                 },
                 {
                     "en": "Say",
-                    "fr": ""
+                    "fr": "Dire"
                 }
             ],
             "sentences": [
                 {
                     "en": "I want to, but later.",
-                    "fr": ""
+                    "fr": "Je veux bien, mais plus tard."
                 },
                 {
                     "en": "I can, but later.",
-                    "fr": ""
+                    "fr": "Je peux, mais plus tard."
                 },
                 {
                     "en": "Even though it’s close.",
-                    "fr": ""
+                    "fr": "Même si c'est proche."
                 }
             ]
         },
@@ -3425,15 +3409,15 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Already",
-                    "fr": ""
+                    "fr": "Déjà"
                 },
                 {
                     "en": "casual closure",
@@ -3443,15 +3427,15 @@
             "sentences": [
                 {
                     "en": "I want to, but I’m tired.",
-                    "fr": ""
+                    "fr": "Je veux bien, mais je suis fatigué."
                 },
                 {
                     "en": "I want to, but I’m tired.",
-                    "fr": ""
+                    "fr": "Je veux bien, mais je suis fatigué."
                 },
                 {
                     "en": "But I already told you.",
-                    "fr": ""
+                    "fr": "Mais je te l'ai déjà dit."
                 }
             ]
         },
@@ -3463,15 +3447,15 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Now",
@@ -3485,11 +3469,11 @@
             "sentences": [
                 {
                     "en": "I want to, but I can’t right now.",
-                    "fr": ""
+                    "fr": "Je veux bien, mais je ne peux pas tout de suite."
                 },
                 {
                     "en": "But I already told you.",
-                    "fr": ""
+                    "fr": "Mais je te l'ai déjà dit."
                 }
             ]
         }
@@ -3499,33 +3483,33 @@
             "words": [
                 {
                     "en": "Then",
-                    "fr": ""
+                    "fr": "Alors"
                 },
                 {
                     "en": "And then",
-                    "fr": ""
+                    "fr": "Alors"
                 },
                 {
                     "en": "After that",
-                    "fr": ""
+                    "fr": "Après ça"
                 },
                 {
                     "en": "And then",
-                    "fr": ""
+                    "fr": "Après ça"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then?",
-                    "fr": ""
+                    "fr": "Et alors ?"
                 },
                 {
                     "en": "And then?",
-                    "fr": ""
+                    "fr": "Et alors ?"
                 },
                 {
                     "en": "Then what?",
-                    "fr": ""
+                    "fr": "Et alors ?"
                 }
             ]
         },
@@ -3533,7 +3517,7 @@
             "words": [
                 {
                     "en": "Then",
-                    "fr": ""
+                    "fr": "Alors"
                 },
                 {
                     "en": "How",
@@ -3543,11 +3527,11 @@
             "sentences": [
                 {
                     "en": "Then what?",
-                    "fr": ""
+                    "fr": "Et alors ?"
                 },
                 {
                     "en": "Then?",
-                    "fr": ""
+                    "fr": "Et alors ?"
                 }
             ]
         },
@@ -3555,7 +3539,7 @@
             "words": [
                 {
                     "en": "Then",
-                    "fr": ""
+                    "fr": "Alors"
                 },
                 {
                     "en": "How",
@@ -3563,17 +3547,17 @@
                 },
                 {
                     "en": "After that",
-                    "fr": ""
+                    "fr": "Après ça"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then what?",
-                    "fr": ""
+                    "fr": "Et alors ?"
                 },
                 {
                     "en": "And then?",
-                    "fr": ""
+                    "fr": "Et alors ?"
                 }
             ]
         }
@@ -3603,11 +3587,11 @@
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Now",
@@ -3617,19 +3601,19 @@
             "sentences": [
                 {
                     "en": "Maybe later.",
-                    "fr": ""
+                    "fr": "Peut-être plus tard."
                 },
                 {
                     "en": "Maybe.",
-                    "fr": ""
+                    "fr": "Peut-être."
                 },
                 {
                     "en": "Maybe.",
-                    "fr": ""
+                    "fr": "Peut-être."
                 },
                 {
                     "en": "Maybe not right now.",
-                    "fr": ""
+                    "fr": "Peut-être pas tout de suite."
                 }
             ]
         },
@@ -3637,7 +3621,7 @@
             "words": [
                 {
                     "en": "Probably",
-                    "fr": ""
+                    "fr": "Probablement"
                 },
                 {
                     "en": "I",
@@ -3645,19 +3629,19 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Already",
-                    "fr": ""
+                    "fr": "Déjà"
                 },
                 {
                     "en": "casual closure",
@@ -3667,15 +3651,15 @@
             "sentences": [
                 {
                     "en": "I probably can’t.",
-                    "fr": ""
+                    "fr": "Je ne pourrai probablement pas."
                 },
                 {
                     "en": "I probably can’t.",
-                    "fr": ""
+                    "fr": "Je ne pourrai probablement pas."
                 },
                 {
                     "en": "Probably already.",
-                    "fr": ""
+                    "fr": "Probablement déjà."
                 }
             ]
         },
@@ -3687,13 +3671,13 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
                 {
                     "en": "Maybe I can.",
-                    "fr": ""
+                    "fr": "Peut-être que je peux."
                 }
             ]
         }
@@ -3703,15 +3687,15 @@
             "words": [
                 {
                     "en": "Agree",
-                    "fr": ""
+                    "fr": "Être d'accord"
                 },
                 {
                     "en": "Disagree",
-                    "fr": ""
+                    "fr": "Ne pas être d'accord"
                 },
                 {
                     "en": "But",
-                    "fr": ""
+                    "fr": "Mais"
                 },
                 {
                     "en": "Later",
@@ -3721,15 +3705,15 @@
             "sentences": [
                 {
                     "en": "Agree.",
-                    "fr": ""
+                    "fr": "D'accord."
                 },
                 {
                     "en": "Disagree.",
-                    "fr": ""
+                    "fr": "Je ne suis pas d'accord."
                 },
                 {
                     "en": "I agree, but later.",
-                    "fr": ""
+                    "fr": "D'accord, mais plus tard."
                 }
             ]
         },
@@ -3741,37 +3725,37 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Disagree",
-                    "fr": ""
+                    "fr": "Ne pas être d'accord"
                 },
                 {
                     "en": "Yeah.",
-                    "fr": ""
+                    "fr": "Ouais."
                 }
             ],
             "sentences": [
                 {
                     "en": "I agree.",
-                    "fr": ""
+                    "fr": "Je suis d'accord."
                 },
                 {
                     "en": "I disagree.",
-                    "fr": ""
+                    "fr": "Je ne suis pas d'accord."
                 },
                 {
                     "en": "Yeah.",
-                    "fr": ""
+                    "fr": "Ouais."
                 }
             ]
         },
@@ -3783,17 +3767,17 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
                 {
                     "en": "I agree.",
-                    "fr": ""
+                    "fr": "Je suis d'accord."
                 },
                 {
                     "en": "I disagree.",
-                    "fr": ""
+                    "fr": "Je ne suis pas d'accord."
                 }
             ]
         }
@@ -3803,11 +3787,11 @@
             "words": [
                 {
                     "en": "According to",
-                    "fr": ""
+                    "fr": "Selon"
                 },
                 {
                     "en": "In your opinion",
-                    "fr": ""
+                    "fr": "Selon"
                 },
                 {
                     "en": "You",
@@ -3815,7 +3799,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "How",
@@ -3823,17 +3807,17 @@
                 },
                 {
                     "en": "If",
-                    "fr": ""
+                    "fr": "Si"
                 }
             ],
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "fr": ""
+                    "fr": "Qu'en penses-tu ?"
                 },
                 {
                     "en": "What do you think?",
-                    "fr": ""
+                    "fr": "Qu'en penses-tu ?"
                 }
             ]
         },
@@ -3847,11 +3831,11 @@
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "fr": ""
+                    "fr": "Qu'en penses-tu ?"
                 },
                 {
                     "en": "What do you think?",
-                    "fr": ""
+                    "fr": "Qu'en penses-tu ?"
                 }
             ]
         },
@@ -3863,17 +3847,17 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "fr": ""
+                    "fr": "Qu'en penses-tu ?"
                 },
                 {
                     "en": "What do you think?",
-                    "fr": ""
+                    "fr": "Qu'en penses-tu ?"
                 }
             ]
         }
@@ -3883,7 +3867,7 @@
             "words": [
                 {
                     "en": "A bit",
-                    "fr": ""
+                    "fr": "Un peu"
                 },
                 {
                     "en": "Not bad",
@@ -3891,25 +3875,25 @@
                 },
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Expensive",
-                    "fr": ""
+                    "fr": "Cher"
                 }
             ],
             "sentences": [
                 {
                     "en": "A bit tired.",
-                    "fr": ""
+                    "fr": "Un peu fatigué."
                 },
                 {
                     "en": "Not bad.",
-                    "fr": ""
+                    "fr": "Pas mal."
                 },
                 {
                     "en": "A bit expensive.",
-                    "fr": ""
+                    "fr": "Un peu cher."
                 }
             ]
         },
@@ -3917,29 +3901,29 @@
             "words": [
                 {
                     "en": "Like",
-                    "fr": ""
+                    "fr": "Comme"
                 },
                 {
                     "en": "Like that",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "(softener)",
-                    "fr": ""
+                    "fr": "(adoucissant)"
                 }
             ],
             "sentences": [
                 {
                     "en": "Like that.",
-                    "fr": ""
+                    "fr": "Comme ça."
                 },
                 {
                     "en": "A bit tired.",
-                    "fr": ""
+                    "fr": "Un peu fatigué."
                 },
                 {
                     "en": "Not bad.",
-                    "fr": ""
+                    "fr": "Pas mal."
                 }
             ]
         },
@@ -3947,7 +3931,7 @@
             "words": [
                 {
                     "en": "Quite",
-                    "fr": ""
+                    "fr": "Assez"
                 },
                 {
                     "en": "Good",
@@ -3963,21 +3947,21 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 }
             ],
             "sentences": [
                 {
                     "en": "Pretty good.",
-                    "fr": ""
+                    "fr": "Assez bien."
                 },
                 {
                     "en": "I’m quite tired.",
-                    "fr": ""
+                    "fr": "Je suis assez fatigué."
                 }
             ]
         }
@@ -3987,11 +3971,11 @@
             "words": [
                 {
                     "en": "Wait",
-                    "fr": ""
+                    "fr": "Attendre"
                 },
                 {
                     "en": "A moment",
-                    "fr": ""
+                    "fr": "Un moment"
                 },
                 {
                     "en": "Yes",
@@ -4001,11 +3985,11 @@
             "sentences": [
                 {
                     "en": "Wait a moment.",
-                    "fr": ""
+                    "fr": "Attends un instant."
                 },
                 {
                     "en": "One sec, okay.",
-                    "fr": ""
+                    "fr": "Une seconde, d'accord."
                 }
             ]
         },
@@ -4013,7 +3997,7 @@
             "words": [
                 {
                     "en": "A sec",
-                    "fr": ""
+                    "fr": "Une seconde"
                 },
                 {
                     "en": "First",
@@ -4021,25 +4005,25 @@
                 },
                 {
                     "en": "Earlier",
-                    "fr": "Plus tôt"
+                    "fr": "D'abord"
                 }
             ],
             "sentences": [
                 {
                     "en": "One sec, okay.",
-                    "fr": ""
+                    "fr": "Une seconde, d'accord."
                 },
                 {
                     "en": "Wait a sec.",
-                    "fr": ""
+                    "fr": "Une seconde."
                 },
                 {
                     "en": "Hold on.",
-                    "fr": ""
+                    "fr": "Attends."
                 },
                 {
                     "en": "Hold on.",
-                    "fr": ""
+                    "fr": "Attends."
                 }
             ]
         },
@@ -4055,17 +4039,17 @@
                 },
                 {
                     "en": "Excuse me",
-                    "fr": ""
+                    "fr": "Excusez-moi"
                 }
             ],
             "sentences": [
                 {
                     "en": "Please wait a moment.",
-                    "fr": ""
+                    "fr": "Veuillez attendre un instant."
                 },
                 {
                     "en": "Excuse me, wait a moment.",
-                    "fr": ""
+                    "fr": "Excusez-moi, attendez un instant."
                 }
             ]
         }
@@ -4075,19 +4059,19 @@
             "words": [
                 {
                     "en": "The meaning",
-                    "fr": ""
+                    "fr": "Le sens"
                 },
                 {
                     "en": "I mean",
-                    "fr": ""
+                    "fr": "Le sens"
                 },
                 {
                     "en": "Like this",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "That",
@@ -4097,11 +4081,11 @@
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "fr": ""
+                    "fr": "Je parle de ça."
                 },
                 {
                     "en": "I mean, not that.",
-                    "fr": ""
+                    "fr": "Je veux dire, pas ça."
                 }
             ]
         },
@@ -4109,21 +4093,21 @@
             "words": [
                 {
                     "en": "I mean",
-                    "fr": ""
+                    "fr": "Je veux dire"
                 },
                 {
                     "en": "Like this",
-                    "fr": ""
+                    "fr": "Comme ça"
                 }
             ],
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "fr": ""
+                    "fr": "Je parle de ça."
                 },
                 {
                     "en": "I mean, not that.",
-                    "fr": ""
+                    "fr": "Je veux dire, pas ça."
                 }
             ]
         },
@@ -4131,7 +4115,7 @@
             "words": [
                 {
                     "en": "I mean",
-                    "fr": ""
+                    "fr": "Je veux dire"
                 },
                 {
                     "en": "I",
@@ -4139,17 +4123,17 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "fr": ""
+                    "fr": "Je parle de ça."
                 },
                 {
                     "en": "I mean, not that.",
-                    "fr": ""
+                    "fr": "Je veux dire, pas ça."
                 }
             ]
         }
@@ -4167,15 +4151,15 @@
                 },
                 {
                     "en": "Repeat",
-                    "fr": ""
+                    "fr": "Répéter"
                 },
                 {
                     "en": "One more time",
-                    "fr": ""
+                    "fr": "Encore une fois"
                 },
                 {
                     "en": "Slowly",
-                    "fr": ""
+                    "fr": "Lentement"
                 },
                 {
                     "en": "Yes",
@@ -4185,15 +4169,15 @@
             "sentences": [
                 {
                     "en": "Can you say it again?",
-                    "fr": ""
+                    "fr": "Tu peux redire ?"
                 },
                 {
                     "en": "One more time.",
-                    "fr": ""
+                    "fr": "Encore une fois."
                 },
                 {
                     "en": "Slower, please.",
-                    "fr": ""
+                    "fr": "Plus lentement, s'il vous plaît."
                 }
             ]
         },
@@ -4201,13 +4185,13 @@
             "words": [
                 {
                     "en": "Please",
-                    "fr": ""
+                    "fr": "S'il vous plaît"
                 }
             ],
             "sentences": [
                 {
                     "en": "Say it again.",
-                    "fr": ""
+                    "fr": "Redis."
                 }
             ]
         },
@@ -4219,7 +4203,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Please",
@@ -4233,11 +4217,11 @@
             "sentences": [
                 {
                     "en": "Can you say it again?",
-                    "fr": ""
+                    "fr": "Tu peux redire ?"
                 },
                 {
                     "en": "Slower, please.",
-                    "fr": ""
+                    "fr": "Plus lentement, s'il vous plaît."
                 }
             ]
         }
@@ -4247,11 +4231,11 @@
             "words": [
                 {
                     "en": "Sure",
-                    "fr": ""
+                    "fr": "Bien sûr"
                 },
                 {
                     "en": "Allowed",
-                    "fr": ""
+                    "fr": "Bien sûr"
                 },
                 {
                     "en": "Later",
@@ -4263,11 +4247,11 @@
                 },
                 {
                     "en": "Only",
-                    "fr": "Seulement"
+                    "fr": "Juste"
                 },
                 {
                     "en": "Another time",
-                    "fr": ""
+                    "fr": "Une autre fois"
                 },
                 {
                     "en": "Yes",
@@ -4281,19 +4265,19 @@
             "sentences": [
                 {
                     "en": "Sure.",
-                    "fr": ""
+                    "fr": "Bien sûr."
                 },
                 {
                     "en": "Later.",
-                    "fr": ""
+                    "fr": "Plus tard."
                 },
                 {
                     "en": "Another time, okay.",
-                    "fr": ""
+                    "fr": "Une autre fois, d'accord."
                 },
                 {
                     "en": "Maybe another time.",
-                    "fr": ""
+                    "fr": "Peut-être une autre fois."
                 }
             ]
         },
@@ -4301,11 +4285,11 @@
             "words": [
                 {
                     "en": "Not right now",
-                    "fr": ""
+                    "fr": "Pas tout de suite"
                 },
                 {
                     "en": "Later",
-                    "fr": ""
+                    "fr": "Plus tard"
                 },
                 {
                     "en": "Just",
@@ -4315,15 +4299,15 @@
             "sentences": [
                 {
                     "en": "Not right now.",
-                    "fr": ""
+                    "fr": "Pas tout de suite."
                 },
                 {
                     "en": "Later.",
-                    "fr": ""
+                    "fr": "Plus tard."
                 },
                 {
                     "en": "Another time.",
-                    "fr": ""
+                    "fr": "Une autre fois."
                 }
             ]
         },
@@ -4335,7 +4319,7 @@
                 },
                 {
                     "en": "Excuse me",
-                    "fr": "Excusez-moi"
+                    "fr": "Désolé"
                 },
                 {
                     "en": "I",
@@ -4343,15 +4327,15 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Can",
@@ -4369,7 +4353,7 @@
             "sentences": [
                 {
                     "en": "Sorry, I can’t right now.",
-                    "fr": ""
+                    "fr": "Désolé, je ne peux pas tout de suite."
                 }
             ]
         }
@@ -4383,11 +4367,11 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Where",
-                    "fr": ""
+                    "fr": "Où"
                 },
                 {
                     "en": "Now",
@@ -4395,21 +4379,21 @@
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 }
             ],
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "fr": ""
+                    "fr": "Où es-tu ?"
                 },
                 {
                     "en": "Where are you now?",
-                    "fr": ""
+                    "fr": "Où tu es ?"
                 },
                 {
                     "en": "Where are you?",
-                    "fr": ""
+                    "fr": "Où es-tu ?"
                 }
             ]
         },
@@ -4417,7 +4401,7 @@
             "words": [
                 {
                     "en": "On my way",
-                    "fr": ""
+                    "fr": "En chemin"
                 },
                 {
                     "en": "I",
@@ -4425,11 +4409,11 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "At home",
-                    "fr": ""
+                    "fr": "À la maison"
                 },
                 {
                     "en": "Yes",
@@ -4439,23 +4423,23 @@
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "fr": ""
+                    "fr": "Où es-tu ?"
                 },
                 {
                     "en": "On my way.",
-                    "fr": ""
+                    "fr": "Je suis en chemin."
                 },
                 {
                     "en": "On my way.",
-                    "fr": ""
+                    "fr": "Je suis en chemin."
                 },
                 {
                     "en": "I’m at home.",
-                    "fr": ""
+                    "fr": "Je suis à la maison."
                 },
                 {
                     "en": "I’m at home.",
-                    "fr": ""
+                    "fr": "Je suis à la maison."
                 }
             ]
         },
@@ -4467,7 +4451,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "I",
@@ -4475,25 +4459,25 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "On the way",
-                    "fr": ""
+                    "fr": "En chemin"
                 }
             ],
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "fr": ""
+                    "fr": "Où es-tu ?"
                 },
                 {
                     "en": "I’m on my way.",
-                    "fr": ""
+                    "fr": "Je suis en chemin."
                 }
             ]
         }
@@ -4524,39 +4508,39 @@
                 },
                 {
                     "en": "Hurry up",
-                    "fr": ""
+                    "fr": "Dépêche-toi"
                 },
                 {
                     "en": "Like this",
-                    "fr": ""
+                    "fr": "Comme ça"
                 },
                 {
                     "en": "Pointing",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "here",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "this",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "Surprise",
-                    "fr": ""
+                    "fr": "Surprise"
                 },
                 {
                     "en": "how come? tone",
-                    "fr": ""
+                    "fr": "Surprise"
                 },
                 {
                     "en": "Urging",
-                    "fr": ""
+                    "fr": "Insister"
                 },
                 {
                     "en": "come on",
-                    "fr": ""
+                    "fr": "Insister"
                 },
                 {
                     "en": "casual closure",
@@ -4564,29 +4548,29 @@
                 },
                 {
                     "en": "Pointing",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "there",
-                    "fr": ""
+                    "fr": "Montrer"
                 },
                 {
                     "en": "see?",
-                    "fr": ""
+                    "fr": "Montrer"
                 }
             ],
             "sentences": [
                 {
                     "en": "Like this.",
-                    "fr": ""
+                    "fr": "Comme ça."
                 },
                 {
                     "en": "How come?",
-                    "fr": ""
+                    "fr": "Pourquoi ?"
                 },
                 {
                     "en": "Hurry up.",
-                    "fr": ""
+                    "fr": "Dépêche-toi."
                 }
             ]
         },
@@ -4604,27 +4588,27 @@
             "words": [
                 {
                     "en": "I",
-                    "fr": ""
+                    "fr": "Je"
                 },
                 {
                     "en": "Me (Jakarta slang)",
-                    "fr": ""
+                    "fr": "Moi (argot)"
                 },
                 {
                     "en": "It’s okay",
-                    "fr": ""
+                    "fr": "C'est bon"
                 },
                 {
                     "en": "No problem",
-                    "fr": ""
+                    "fr": "C'est bon"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Already",
@@ -4632,11 +4616,11 @@
                 },
                 {
                     "en": "Not yet",
-                    "fr": ""
+                    "fr": "Pas encore"
                 },
                 {
                     "en": "On my way",
-                    "fr": ""
+                    "fr": "En chemin"
                 },
                 {
                     "en": "Laughing",
@@ -4644,17 +4628,17 @@
                 },
                 {
                     "en": "Surprise",
-                    "fr": ""
+                    "fr": "Surprise"
                 },
                 {
                     "en": "how come? tone",
-                    "fr": ""
+                    "fr": "Surprise"
                 }
             ],
             "sentences": [
                 {
                     "en": "It’s okay.",
-                    "fr": ""
+                    "fr": "C'est bon."
                 },
                 {
                     "en": "Haha.",
@@ -4662,11 +4646,11 @@
                 },
                 {
                     "en": "I’m on my way.",
-                    "fr": ""
+                    "fr": "Je suis en chemin."
                 },
                 {
                     "en": "I’m on my way.",
-                    "fr": ""
+                    "fr": "Je suis en chemin."
                 }
             ]
         },
@@ -4680,7 +4664,7 @@
             "words": [
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "What",
@@ -4688,11 +4672,11 @@
                 },
                 {
                     "en": "Already",
-                    "fr": ""
+                    "fr": "Déjà"
                 },
                 {
                     "en": "Not yet",
-                    "fr": ""
+                    "fr": "Pas encore"
                 },
                 {
                     "en": "Eat",
@@ -4706,7 +4690,7 @@
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "fr": ""
+                    "fr": "Tu as déjà mangé ?"
                 }
             ]
         },
@@ -4714,21 +4698,21 @@
             "words": [
                 {
                     "en": "You (Jakarta slang)",
-                    "fr": ""
+                    "fr": "Tu (argot)"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "fr": ""
+                    "fr": "Tu (argot)"
                 },
                 {
                     "en": "Not yet",
-                    "fr": ""
+                    "fr": "Pas encore"
                 }
             ],
             "sentences": [
                 {
                     "en": "Have you eaten yet?",
-                    "fr": ""
+                    "fr": "Tu as déjà mangé ?"
                 }
             ]
         },
@@ -4736,7 +4720,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "fr": ""
+                    "fr": "Si"
                 },
                 {
                     "en": "You",
@@ -4744,7 +4728,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Already",
@@ -4754,7 +4738,7 @@
             "sentences": [
                 {
                     "en": "Have you eaten yet?",
-                    "fr": ""
+                    "fr": "Tu as déjà mangé ?"
                 }
             ]
         }
@@ -4763,16 +4747,16 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "fr": ""
+                    "en": "Let us",
+                    "fr": "On"
                 },
                 {
                     "en": "Hang out",
-                    "fr": ""
+                    "fr": "Traîner"
                 },
                 {
                     "en": "What time",
-                    "fr": ""
+                    "fr": "À quelle heure"
                 },
                 {
                     "en": "Later",
@@ -4785,8 +4769,8 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
-                    "fr": ""
+                    "en": "Let us hang out.",
+                    "fr": "Traînons ensemble."
                 },
                 {
                     "en": "What time?",
@@ -4794,7 +4778,7 @@
                 },
                 {
                     "en": "Later.",
-                    "fr": ""
+                    "fr": "Plus tard."
                 }
             ]
         },
@@ -4807,24 +4791,24 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
-                    "fr": ""
+                    "en": "Let us hang out.",
+                    "fr": "Traînons ensemble."
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "fr": ""
+                    "en": "Let us",
+                    "fr": "On"
                 },
                 {
                     "en": "We",
-                    "fr": ""
+                    "fr": "Nous"
                 },
                 {
                     "en": "Us",
-                    "fr": ""
+                    "fr": "Nous"
                 },
                 {
                     "en": "Meet",
@@ -4833,8 +4817,8 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s meet.",
-                    "fr": ""
+                    "en": "Let us meet.",
+                    "fr": "Retrouvons-nous."
                 }
             ]
         }
@@ -4844,65 +4828,65 @@
             "words": [
                 {
                     "en": "Fun",
-                    "fr": ""
+                    "fr": "Amusant"
                 },
                 {
                     "en": "Exciting",
-                    "fr": ""
+                    "fr": "Amusant"
                 },
                 {
                     "en": "Bored",
-                    "fr": ""
+                    "fr": "Ennuyé"
                 },
                 {
                     "en": "Pitiful",
-                    "fr": ""
+                    "fr": "Pitoyable"
                 },
                 {
                     "en": "Poor thing",
-                    "fr": ""
+                    "fr": "Pitoyable"
                 },
                 {
                     "en": "Oh no",
-                    "fr": ""
+                    "fr": "Oh non"
                 },
                 {
                     "en": "Wow",
-                    "fr": ""
+                    "fr": "Oh non"
                 },
                 {
                     "en": "Oh dear",
-                    "fr": ""
+                    "fr": "Oh là là"
                 },
                 {
                     "en": "Oh my",
-                    "fr": ""
+                    "fr": "Oh mon"
                 }
             ],
             "sentences": [
                 {
                     "en": "So fun.",
-                    "fr": ""
+                    "fr": "Tellement amusant."
                 },
                 {
                     "en": "So bored.",
-                    "fr": ""
+                    "fr": "Tellement ennuyé."
                 },
                 {
                     "en": "Poor thing.",
-                    "fr": ""
+                    "fr": "Pauvre."
                 },
                 {
                     "en": "Oh no!",
-                    "fr": ""
+                    "fr": "Oh non !"
                 },
                 {
                     "en": "Oh dear.",
-                    "fr": ""
+                    "fr": "Oh là là."
                 },
                 {
                     "en": "Oh my.",
-                    "fr": ""
+                    "fr": "Oh mon."
                 }
             ]
         },
@@ -4914,27 +4898,27 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Nervous",
-                    "fr": ""
+                    "fr": "Nerveux"
                 },
                 {
                     "en": "Miss",
-                    "fr": ""
+                    "fr": "Manquer"
                 },
                 {
                     "en": "Annoyed",
-                    "fr": ""
+                    "fr": "Agacé"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "casual closure",
@@ -4947,36 +4931,36 @@
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
-                    "fr": ""
+                    "en": "I am bored.",
+                    "fr": "Je m'ennuie."
                 },
                 {
-                    "en": "I'm nervous.",
-                    "fr": ""
+                    "en": "I am nervous.",
+                    "fr": "Je suis nerveux."
                 },
                 {
-                    "en": "I'm nervous.",
-                    "fr": ""
-                },
-                {
-                    "en": "I miss you.",
-                    "fr": "Tu me manques."
+                    "en": "I am nervous.",
+                    "fr": "Je suis nerveux."
                 },
                 {
                     "en": "I miss you.",
                     "fr": "Tu me manques."
                 },
                 {
-                    "en": "I'm annoyed.",
-                    "fr": ""
+                    "en": "I miss you.",
+                    "fr": "Tu me manques."
                 },
                 {
-                    "en": "I'm annoyed.",
-                    "fr": ""
+                    "en": "I am annoyed.",
+                    "fr": "Je suis agacé."
+                },
+                {
+                    "en": "I am annoyed.",
+                    "fr": "Je suis agacé."
                 },
                 {
                     "en": "How about it?",
-                    "fr": ""
+                    "fr": "Qu'en penses-tu ?"
                 }
             ]
         },
@@ -4988,25 +4972,25 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Nervous",
-                    "fr": ""
+                    "fr": "Nerveux"
                 },
                 {
                     "en": "Miss",
-                    "fr": ""
+                    "fr": "Manquer"
                 }
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
-                    "fr": ""
+                    "en": "I am bored.",
+                    "fr": "Je m'ennuie."
                 },
                 {
-                    "en": "I'm nervous.",
-                    "fr": ""
+                    "en": "I am nervous.",
+                    "fr": "Je suis nerveux."
                 },
                 {
                     "en": "I miss you.",
@@ -5020,29 +5004,29 @@
             "words": [
                 {
                     "en": "Know",
-                    "fr": ""
+                    "fr": "Savoir"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Hear",
-                    "fr": ""
+                    "fr": "Entendre"
                 }
             ],
             "sentences": [
                 {
                     "en": "You know what?",
-                    "fr": ""
+                    "fr": "Tu sais quoi ?"
                 },
                 {
                     "en": "Did you hear?",
-                    "fr": ""
+                    "fr": "Tu as entendu ?"
                 },
                 {
                     "en": "Hey, you know what?",
-                    "fr": ""
+                    "fr": "Hé, tu sais quoi ?"
                 }
             ]
         },
@@ -5050,29 +5034,29 @@
             "words": [
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Hey",
-                    "fr": ""
+                    "fr": "Salut"
                 }
             ],
             "sentences": [
                 {
                     "en": "You know what?",
-                    "fr": ""
+                    "fr": "Tu sais quoi ?"
                 },
                 {
                     "en": "You know what?",
-                    "fr": ""
+                    "fr": "Tu sais quoi ?"
                 },
                 {
                     "en": "Did you hear?",
-                    "fr": ""
+                    "fr": "Tu as entendu ?"
                 },
                 {
                     "en": "Hey, you know what?",
-                    "fr": ""
+                    "fr": "Hé, tu sais quoi ?"
                 }
             ]
         },
@@ -5086,65 +5070,65 @@
             "words": [
                 {
                     "en": "Cool",
-                    "fr": ""
+                    "fr": "Cool"
                 },
                 {
                     "en": "Awesome",
-                    "fr": ""
+                    "fr": "Cool"
                 },
                 {
                     "en": "Awesome",
-                    "fr": ""
+                    "fr": "Génial"
                 },
                 {
                     "en": "Good",
-                    "fr": ""
+                    "fr": "Bon"
                 },
                 {
                     "en": "Nice",
-                    "fr": ""
+                    "fr": "Bon"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Fun",
-                    "fr": ""
+                    "fr": "Amusant"
                 },
                 {
                     "en": "Cool",
-                    "fr": ""
+                    "fr": "Amusant"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 }
             ],
             "sentences": [
                 {
                     "en": "So cool.",
-                    "fr": ""
+                    "fr": "Trop cool."
                 },
                 {
                     "en": "Awesome!",
-                    "fr": ""
+                    "fr": "Génial !"
                 },
                 {
                     "en": "Really good.",
-                    "fr": ""
+                    "fr": "Vraiment bien."
                 },
                 {
                     "en": "So fun.",
-                    "fr": ""
+                    "fr": "Tellement amusant."
                 }
             ]
         },
@@ -5153,15 +5137,15 @@
             "sentences": [
                 {
                     "en": "So cool.",
-                    "fr": ""
+                    "fr": "Trop cool."
                 },
                 {
                     "en": "Really awesome.",
-                    "fr": ""
+                    "fr": "Vraiment génial."
                 },
                 {
                     "en": "Really awesome.",
-                    "fr": ""
+                    "fr": "Vraiment génial."
                 }
             ]
         },
@@ -5170,7 +5154,7 @@
             "sentences": [
                 {
                     "en": "Very good.",
-                    "fr": ""
+                    "fr": "Très bien."
                 }
             ]
         }
@@ -5180,45 +5164,45 @@
             "words": [
                 {
                     "en": "Often",
-                    "fr": ""
+                    "fr": "Souvent"
                 },
                 {
                     "en": "Rarely",
-                    "fr": ""
+                    "fr": "Rarement"
                 },
                 {
                     "en": "Sometimes",
-                    "fr": ""
+                    "fr": "Parfois"
                 },
                 {
                     "en": "Sometimes",
-                    "fr": ""
+                    "fr": "Parfois"
                 },
                 {
                     "en": "Usually",
-                    "fr": ""
+                    "fr": "D'habitude"
                 },
                 {
                     "en": "Like that",
-                    "fr": ""
+                    "fr": "Comme ça"
                 }
             ],
             "sentences": [
                 {
                     "en": "Often.",
-                    "fr": ""
+                    "fr": "Souvent."
                 },
                 {
                     "en": "Rarely.",
-                    "fr": ""
+                    "fr": "Rarement."
                 },
                 {
                     "en": "Sometimes.",
-                    "fr": ""
+                    "fr": "Parfois."
                 },
                 {
                     "en": "Usually like that.",
-                    "fr": ""
+                    "fr": "D'habitude comme ça."
                 }
             ]
         },
@@ -5230,33 +5214,33 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "To",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "Here",
-                    "fr": ""
+                    "fr": "Ici"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 }
             ],
             "sentences": [
                 {
                     "en": "I often come here.",
-                    "fr": ""
+                    "fr": "Je viens souvent ici."
                 },
                 {
                     "en": "Really rarely.",
-                    "fr": ""
+                    "fr": "Vraiment rarement."
                 }
             ]
         },
@@ -5268,21 +5252,21 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "To",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "Here",
-                    "fr": ""
+                    "fr": "Ici"
                 }
             ],
             "sentences": [
                 {
                     "en": "I often come here.",
-                    "fr": ""
+                    "fr": "Je viens souvent ici."
                 }
             ]
         }
@@ -5292,37 +5276,37 @@
             "words": [
                 {
                     "en": "Traffic jam",
-                    "fr": ""
+                    "fr": "Embouteillage"
                 },
                 {
                     "en": "Hot",
-                    "fr": ""
+                    "fr": "Chaud"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Very",
-                    "fr": ""
+                    "fr": "Très"
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Très"
                 }
             ],
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "fr": ""
+                    "fr": "La circulation est terrible."
                 },
                 {
                     "en": "So hot.",
-                    "fr": ""
+                    "fr": "Tellement chaud."
                 }
             ]
         },
@@ -5330,29 +5314,29 @@
             "words": [
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Work",
-                    "fr": ""
+                    "fr": "Travail"
                 }
             ],
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "fr": ""
+                    "fr": "La circulation est terrible."
                 },
                 {
                     "en": "So hot.",
-                    "fr": ""
+                    "fr": "Tellement chaud."
                 },
                 {
                     "en": "Tired from work.",
-                    "fr": ""
+                    "fr": "Fatigué du travail."
                 },
                 {
                     "en": "Tired from work.",
-                    "fr": ""
+                    "fr": "Fatigué du travail."
                 }
             ]
         },
@@ -5360,21 +5344,21 @@
             "words": [
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Work",
-                    "fr": ""
+                    "fr": "Travail"
                 }
             ],
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "fr": ""
+                    "fr": "La circulation est terrible."
                 },
                 {
                     "en": "Tired from work.",
-                    "fr": ""
+                    "fr": "Fatigué du travail."
                 }
             ]
         }
@@ -5384,15 +5368,15 @@
             "words": [
                 {
                     "en": "Oh right",
-                    "fr": ""
+                    "fr": "Ah oui"
                 },
                 {
                     "en": "By the way",
-                    "fr": ""
+                    "fr": "Ah oui"
                 },
                 {
                     "en": "By the way",
-                    "fr": ""
+                    "fr": "À propos"
                 }
             ],
             "sentences": [
@@ -5402,7 +5386,7 @@
                 },
                 {
                     "en": "By the way.",
-                    "fr": ""
+                    "fr": "À propos."
                 }
             ]
         },
@@ -5410,17 +5394,17 @@
             "words": [
                 {
                     "en": "Hey",
-                    "fr": ""
+                    "fr": "Salut"
                 }
             ],
             "sentences": [
                 {
                     "en": "Hey by the way.",
-                    "fr": ""
+                    "fr": "Hé, à propos."
                 },
                 {
                     "en": "Hey by the way.",
-                    "fr": ""
+                    "fr": "Hé, à propos."
                 }
             ]
         },
@@ -5434,23 +5418,23 @@
             "words": [
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Also",
-                    "fr": ""
+                    "fr": "Aussi"
                 },
                 {
                     "en": "Either",
-                    "fr": ""
+                    "fr": "Aussi"
                 },
                 {
                     "en": "How come",
-                    "fr": ""
+                    "fr": "Pourquoi"
                 },
                 {
                     "en": "Can",
@@ -5462,21 +5446,21 @@
                 },
                 {
                     "en": "Really",
-                    "fr": ""
+                    "fr": "Vraiment"
                 }
             ],
             "sentences": [
                 {
                     "en": "Oh not really.",
-                    "fr": ""
+                    "fr": "Oh pas vraiment."
                 },
                 {
                     "en": "How come?",
-                    "fr": ""
+                    "fr": "Pourquoi ?"
                 },
                 {
                     "en": "Really?",
-                    "fr": ""
+                    "fr": "Vraiment ?"
                 }
             ]
         },
@@ -5484,11 +5468,11 @@
             "words": [
                 {
                     "en": "Hey",
-                    "fr": ""
+                    "fr": "Salut"
                 },
                 {
                     "en": "Oh",
-                    "fr": "Oh"
+                    "fr": ""
                 }
             ],
             "sentences": []
@@ -5497,17 +5481,17 @@
             "words": [
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not really.",
-                    "fr": ""
+                    "fr": "Pas vraiment."
                 }
             ]
         }
@@ -5517,39 +5501,39 @@
             "words": [
                 {
                     "en": "Like",
-                    "fr": ""
+                    "fr": "Comme"
                 },
                 {
                     "en": "As",
-                    "fr": ""
+                    "fr": "Comme"
                 },
                 {
                     "en": "Earlier",
-                    "fr": ""
+                    "fr": "Plus tôt"
                 },
                 {
                     "en": "Before",
-                    "fr": ""
+                    "fr": "Plus tôt"
                 },
                 {
                     "en": "Like",
-                    "fr": ""
+                    "fr": "Comme"
                 },
                 {
                     "en": "As",
-                    "fr": ""
+                    "fr": "Comme"
                 },
                 {
                     "en": "I mean",
-                    "fr": ""
+                    "fr": "Je veux dire"
                 },
                 {
                     "en": "As in",
-                    "fr": ""
+                    "fr": "Je veux dire"
                 },
                 {
                     "en": "As (a)",
-                    "fr": ""
+                    "fr": "En tant que"
                 },
                 {
                     "en": "Friend",
@@ -5563,19 +5547,19 @@
             "sentences": [
                 {
                     "en": "As before.",
-                    "fr": ""
+                    "fr": "Comme avant."
                 },
                 {
                     "en": "Like before.",
-                    "fr": ""
+                    "fr": "Comme avant."
                 },
                 {
                     "en": "What do you mean?",
-                    "fr": ""
+                    "fr": "Tu veux dire quoi ?"
                 },
                 {
                     "en": "As a friend.",
-                    "fr": ""
+                    "fr": "En ami."
                 }
             ]
         },
@@ -5583,15 +5567,15 @@
             "words": [
                 {
                     "en": "Seems like",
-                    "fr": ""
+                    "fr": "On dirait"
                 },
                 {
                     "en": "That",
-                    "fr": ""
+                    "fr": "Ça"
                 },
                 {
                     "en": "Which",
-                    "fr": ""
+                    "fr": "Ça"
                 },
                 {
                     "en": "You",
@@ -5599,33 +5583,33 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Say",
-                    "fr": ""
+                    "fr": "Dire"
                 },
                 {
                     "en": "Like that",
-                    "fr": ""
+                    "fr": "Comme ça"
                 }
             ],
             "sentences": [
                 {
                     "en": "As you said.",
-                    "fr": ""
+                    "fr": "Comme tu as dit."
                 },
                 {
                     "en": "As you said.",
-                    "fr": ""
+                    "fr": "Comme tu as dit."
                 },
                 {
                     "en": "Seems like that.",
-                    "fr": ""
+                    "fr": "On dirait."
                 },
                 {
                     "en": "Seems like that.",
-                    "fr": ""
+                    "fr": "On dirait."
                 }
             ]
         },
@@ -5633,11 +5617,11 @@
             "words": [
                 {
                     "en": "That",
-                    "fr": ""
+                    "fr": "Ça"
                 },
                 {
                     "en": "Which",
-                    "fr": ""
+                    "fr": "Ça"
                 },
                 {
                     "en": "You",
@@ -5645,11 +5629,11 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Say",
-                    "fr": ""
+                    "fr": "Dire"
                 },
                 {
                     "en": "How",
@@ -5659,11 +5643,11 @@
             "sentences": [
                 {
                     "en": "As you said.",
-                    "fr": ""
+                    "fr": "Comme tu as dit."
                 },
                 {
                     "en": "What do you mean?",
-                    "fr": ""
+                    "fr": "Tu veux dire quoi ?"
                 }
             ]
         }
@@ -5677,7 +5661,7 @@
                 },
                 {
                     "en": "Parents",
-                    "fr": "Parents"
+                    "fr": ""
                 },
                 {
                     "en": "Mother",
@@ -5693,7 +5677,7 @@
                 },
                 {
                     "en": "Older sibling",
-                    "fr": "Sœur aîné(e)"
+                    "fr": "Frère"
                 },
                 {
                     "en": "Younger sibling",
@@ -5701,7 +5685,7 @@
                 },
                 {
                     "en": "Younger sibling",
-                    "fr": "Sœur cadet(te)"
+                    "fr": "Frère"
                 },
                 {
                     "en": "Sibling",
@@ -5709,7 +5693,7 @@
                 },
                 {
                     "en": "Relative",
-                    "fr": "Parent"
+                    "fr": "Frère et sœur"
                 },
                 {
                     "en": "Know (someone)",
@@ -5729,7 +5713,7 @@
                 },
                 {
                     "en": "Just",
-                    "fr": "Vient de"
+                    "fr": "Nouveau"
                 },
                 {
                     "en": "Long time",
@@ -5739,11 +5723,11 @@
             "sentences": [
                 {
                     "en": "Family.",
-                    "fr": ""
+                    "fr": "Famille."
                 },
                 {
                     "en": "Parents.",
-                    "fr": ""
+                    "fr": "Parents."
                 },
                 {
                     "en": "Close friend.",
@@ -5767,7 +5751,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Have",
@@ -5787,7 +5771,7 @@
                 },
                 {
                     "en": "She",
-                    "fr": "Elle"
+                    "fr": "Il"
                 }
             ],
             "sentences": [
@@ -5817,7 +5801,7 @@
                 },
                 {
                     "en": "I have an older sibling.",
-                    "fr": "une sœur aîné(e)."
+                    "fr": "J'ai un frère"
                 }
             ]
         },
@@ -5829,19 +5813,19 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "I",
-                    "fr": ""
+                    "fr": "Je"
                 },
                 {
                     "en": "Mum",
-                    "fr": ""
+                    "fr": "Maman"
                 },
                 {
                     "en": "Close",
-                    "fr": ""
+                    "fr": "Proche"
                 },
                 {
                     "en": "Friend",
@@ -5849,15 +5833,15 @@
                 },
                 {
                     "en": "Be friends",
-                    "fr": ""
+                    "fr": "Être amis"
                 },
                 {
                     "en": "Get to know each other",
-                    "fr": ""
+                    "fr": "Apprendre à se connaître"
                 },
                 {
                     "en": "Already",
-                    "fr": ""
+                    "fr": "Déjà"
                 },
                 {
                     "en": "Love",
@@ -5877,7 +5861,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "We",
@@ -5895,11 +5879,11 @@
                 },
                 {
                     "en": "They're a close friend of mine.",
-                    "fr": ""
+                    "fr": "C'est un proche ami."
                 },
                 {
                     "en": "We're just friends.",
-                    "fr": ""
+                    "fr": "On est juste amis."
                 },
                 {
                     "en": "Just met.",
@@ -5907,7 +5891,7 @@
                 },
                 {
                     "en": "Known each other for ages.",
-                    "fr": ""
+                    "fr": "On se connaît depuis toujours."
                 },
                 {
                     "en": "I care about you.",
@@ -5953,7 +5937,7 @@
                 },
                 {
                     "en": "Night",
-                    "fr": ""
+                    "fr": "Nuit"
                 },
                 {
                     "en": "Sleep",
@@ -5985,15 +5969,15 @@
                 },
                 {
                     "en": "At",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "In",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "On",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "Rest",
@@ -6027,11 +6011,11 @@
             "sentences": [
                 {
                     "en": "Beautiful.",
-                    "fr": ""
+                    "fr": "Belle."
                 },
                 {
                     "en": "Handsome.",
-                    "fr": ""
+                    "fr": "Beau."
                 },
                 {
                     "en": "Miss you.",
@@ -6091,7 +6075,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -6099,23 +6083,23 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Love",
-                    "fr": ""
+                    "fr": "Amour"
                 },
                 {
                     "en": "Long for",
-                    "fr": ""
+                    "fr": "Regretter"
                 },
                 {
                     "en": "Miss",
-                    "fr": ""
+                    "fr": "Regretter"
                 },
                 {
                     "en": "Happy",
-                    "fr": ""
+                    "fr": "Content"
                 },
                 {
                     "en": "We",
@@ -6156,7 +6140,7 @@
                     "fr": "N'oublie pas de manger, d'accord ?"
                 },
                 {
-                    "en": "Let's meet tomorrow, okay?",
+                    "en": "Let us meet tomorrow, okay?",
                     "fr": "On se voit demain, d'accord ?"
                 }
             ]
@@ -6169,11 +6153,11 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "I",
-                    "fr": ""
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -6181,47 +6165,47 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "You",
-                    "fr": ""
+                    "fr": "Tu"
                 },
                 {
                     "en": "My love",
-                    "fr": ""
+                    "fr": "Mon amour"
                 },
                 {
                     "en": "My dear",
-                    "fr": ""
+                    "fr": "Mon amour"
                 },
                 {
                     "en": "Love",
-                    "fr": ""
+                    "fr": "Amour"
                 },
                 {
                     "en": "Babe",
-                    "fr": ""
+                    "fr": "Chéri"
                 },
                 {
                     "en": "Long for",
-                    "fr": ""
+                    "fr": "Regretter"
                 },
                 {
                     "en": "Miss",
-                    "fr": ""
+                    "fr": "Regretter"
                 },
                 {
                     "en": "Already",
-                    "fr": ""
+                    "fr": "Déjà"
                 },
                 {
                     "en": "Doing",
-                    "fr": ""
+                    "fr": "Faire"
                 },
                 {
                     "en": "Right now",
-                    "fr": ""
+                    "fr": "Faire"
                 },
                 {
                     "en": "What",
@@ -6229,11 +6213,11 @@
                 },
                 {
                     "en": "Want",
-                    "fr": ""
+                    "fr": "Vouloir"
                 },
                 {
                     "en": "Happy",
-                    "fr": ""
+                    "fr": "Content"
                 },
                 {
                     "en": "Very",
@@ -6265,15 +6249,15 @@
                 },
                 {
                     "en": "Okay",
-                    "fr": ""
+                    "fr": "D'accord"
                 },
                 {
                     "en": "Yeah",
-                    "fr": ""
+                    "fr": "D'accord"
                 },
                 {
                     "en": "First",
-                    "fr": ""
+                    "fr": "Premier"
                 }
             ],
             "sentences": [
@@ -6291,7 +6275,7 @@
                 },
                 {
                     "en": "Love you.",
-                    "fr": ""
+                    "fr": "Je t'aime."
                 },
                 {
                     "en": "My love.",
@@ -6362,11 +6346,11 @@
                     "fr": "Si heureux(se) avec toi."
                 },
                 {
-                    "en": "I'll chat you later, okay?",
+                    "en": "I will chat you later, okay?",
                     "fr": "Je t'écrirai plus tard, d'accord ?"
                 },
                 {
-                    "en": "I'll call you later, okay?",
+                    "en": "I will call you later, okay?",
                     "fr": "Je t'appellerai plus tard, d'accord ?"
                 },
                 {
@@ -6385,27 +6369,27 @@
             "words": [
                 {
                     "en": "If",
-                    "fr": ""
+                    "fr": "Si"
                 },
                 {
                     "en": "Hungry",
-                    "fr": ""
+                    "fr": "Faim"
                 },
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Exist",
-                    "fr": ""
+                    "fr": "Exister"
                 },
                 {
                     "en": "There is",
-                    "fr": ""
+                    "fr": "Exister"
                 },
                 {
                     "en": "Time",
-                    "fr": ""
+                    "fr": "Temps"
                 },
                 {
                     "en": "Can",
@@ -6425,41 +6409,41 @@
                 },
                 {
                     "en": "Possible",
-                    "fr": ""
+                    "fr": "Possible"
                 }
             ],
             "sentences": [
                 {
                     "en": "If hungry.",
-                    "fr": ""
+                    "fr": "Si tu as faim."
                 },
                 {
                     "en": "If tired.",
-                    "fr": ""
+                    "fr": "Si fatigué."
                 },
                 {
                     "en": "If there is time.",
-                    "fr": ""
+                    "fr": "S'il y a le temps."
                 },
                 {
                     "en": "If able.",
-                    "fr": ""
+                    "fr": "Si possible."
                 },
                 {
                     "en": "If able, later.",
-                    "fr": ""
+                    "fr": "Si possible, plus tard."
                 },
                 {
                     "en": "If hungry, eat.",
-                    "fr": ""
+                    "fr": "Si tu as faim, mange."
                 },
                 {
                     "en": "If tired, later.",
-                    "fr": ""
+                    "fr": "Si fatigué, plus tard."
                 },
                 {
                     "en": "If possible.",
-                    "fr": ""
+                    "fr": "Si possible."
                 }
             ]
         },
@@ -6467,15 +6451,15 @@
             "words": [
                 {
                     "en": "Okay",
-                    "fr": ""
+                    "fr": "D'accord"
                 },
                 {
                     "en": "Yeah",
-                    "fr": ""
+                    "fr": "D'accord"
                 },
                 {
                     "en": "Just",
-                    "fr": ""
+                    "fr": "Juste"
                 }
             ],
             "sentences": []
@@ -6484,29 +6468,29 @@
             "words": [
                 {
                     "en": "If",
-                    "fr": ""
+                    "fr": "Si"
                 },
                 {
                     "en": "Can",
-                    "fr": ""
+                    "fr": "Pouvoir"
                 },
                 {
                     "en": "Be able to",
-                    "fr": ""
+                    "fr": "Pouvoir"
                 }
             ],
             "sentences": [
                 {
                     "en": "If there is time.",
-                    "fr": ""
+                    "fr": "S'il y a le temps."
                 },
                 {
                     "en": "If possible.",
-                    "fr": ""
+                    "fr": "Si possible."
                 },
                 {
                     "en": "If able.",
-                    "fr": ""
+                    "fr": "Si possible."
                 }
             ]
         }
@@ -6516,31 +6500,31 @@
             "words": [
                 {
                     "en": "when",
-                    "fr": ""
+                    "fr": "quand"
                 },
                 {
                     "en": "At the moment",
-                    "fr": ""
+                    "fr": "quand"
                 },
                 {
                     "en": "Arrive",
-                    "fr": ""
+                    "fr": "Arriver"
                 },
                 {
                     "en": "Hungry",
-                    "fr": ""
+                    "fr": "Faim"
                 },
                 {
                     "en": "Start",
-                    "fr": ""
+                    "fr": "Commencer"
                 },
                 {
                     "en": "Okay",
-                    "fr": ""
+                    "fr": "D'accord"
                 },
                 {
                     "en": "Yes",
-                    "fr": ""
+                    "fr": "D'accord"
                 },
                 {
                     "en": "Eat",
@@ -6550,7 +6534,7 @@
             "sentences": [
                 {
                     "en": "Eat when you’re hungry.",
-                    "fr": ""
+                    "fr": "Mange quand tu as faim."
                 }
             ]
         },
@@ -6558,25 +6542,25 @@
             "words": [
                 {
                     "en": "Let me know",
-                    "fr": ""
+                    "fr": "Dis-moi"
                 },
                 {
                     "en": "Tell",
-                    "fr": ""
+                    "fr": "Dire"
                 },
                 {
                     "en": "Say",
-                    "fr": ""
+                    "fr": "Dire"
                 }
             ],
             "sentences": [
                 {
                     "en": "Let me know when you arrive.",
-                    "fr": ""
+                    "fr": "Dis-moi quand tu arrives."
                 },
                 {
                     "en": "Tell me when it starts.",
-                    "fr": ""
+                    "fr": "Dis-moi quand ça commence."
                 }
             ]
         },
@@ -6598,7 +6582,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "He",
@@ -6606,7 +6590,7 @@
                 },
                 {
                     "en": "She",
-                    "fr": "Elle"
+                    "fr": "Il"
                 },
                 {
                     "en": "Friend",
@@ -6622,13 +6606,13 @@
                 },
                 {
                     "en": "Arrive",
-                    "fr": "Arriver"
+                    "fr": "Venir"
                 }
             ],
             "sentences": [
                 {
                     "en": "With you.",
-                    "fr": ""
+                    "fr": "Avec toi."
                 },
                 {
                     "en": "Come with a friend.",
@@ -6644,7 +6628,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Just",
@@ -6682,7 +6666,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 }
             ],
             "sentences": [
@@ -6710,7 +6694,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "This",
@@ -6744,7 +6728,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Just",
@@ -6778,7 +6762,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -6786,7 +6770,7 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 }
             ],
             "sentences": [
@@ -6806,15 +6790,15 @@
             "words": [
                 {
                     "en": "Because",
-                    "fr": ""
+                    "fr": "Parce que"
                 },
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Can",
@@ -6830,21 +6814,21 @@
                 },
                 {
                     "en": "Traffic jam",
-                    "fr": ""
+                    "fr": "Embouteillage"
                 }
             ],
             "sentences": [
                 {
                     "en": "Because I’m busy.",
-                    "fr": ""
+                    "fr": "Parce que je suis occupé."
                 },
                 {
                     "en": "I can’t because I’m busy.",
-                    "fr": ""
+                    "fr": "Je ne peux pas, je suis occupé."
                 },
                 {
                     "en": "Because of traffic.",
-                    "fr": ""
+                    "fr": "À cause des embouteillages."
                 }
             ]
         },
@@ -6852,15 +6836,15 @@
             "words": [
                 {
                     "en": "Not",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "No",
-                    "fr": ""
+                    "fr": "Pas"
                 },
                 {
                     "en": "Because",
-                    "fr": ""
+                    "fr": "Parce que"
                 },
                 {
                     "en": "I",
@@ -6868,45 +6852,45 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "Work",
-                    "fr": ""
+                    "fr": "Travail"
                 },
                 {
                     "en": "Tired",
-                    "fr": ""
+                    "fr": "Fatigué"
                 },
                 {
                     "en": "Because of",
-                    "fr": ""
+                    "fr": "À cause de"
                 }
             ],
             "sentences": [
                 {
                     "en": "I can’t because I’m working.",
-                    "fr": ""
+                    "fr": "Je ne peux pas, je travaille."
                 },
                 {
                     "en": "I can’t because I’m working.",
-                    "fr": ""
+                    "fr": "Je ne peux pas, je travaille."
                 },
                 {
                     "en": "Because I’m tired.",
-                    "fr": ""
+                    "fr": "Parce que je suis fatigué."
                 },
                 {
                     "en": "Because I’m tired.",
-                    "fr": ""
+                    "fr": "Parce que je suis fatigué."
                 },
                 {
                     "en": "Because of traffic.",
-                    "fr": ""
+                    "fr": "À cause des embouteillages."
                 }
             ]
         },
@@ -6918,33 +6902,33 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "Work",
-                    "fr": ""
+                    "fr": "Travail"
                 },
                 {
                     "en": "Because",
-                    "fr": ""
+                    "fr": "Parce que"
                 }
             ],
             "sentences": [
                 {
                     "en": "I can’t because I’m working.",
-                    "fr": ""
+                    "fr": "Je ne peux pas, je travaille."
                 },
                 {
                     "en": "I can’t because I’m busy.",
-                    "fr": ""
+                    "fr": "Je ne peux pas, je suis occupé."
                 },
                 {
                     "en": "Because of traffic.",
-                    "fr": ""
+                    "fr": "À cause des embouteillages."
                 }
             ]
         }
@@ -6953,7 +6937,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "fr": "Allons"
                 },
                 {
@@ -6967,60 +6951,60 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "fr": ""
+                    "en": "Let us eat.",
+                    "fr": "Mangeons."
                 },
                 {
-                    "en": "Let’s go.",
-                    "fr": ""
+                    "en": "Let us go.",
+                    "fr": "Allons-y."
                 }
             ]
         },
         "informal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "fr": ""
+                    "en": "Let us",
+                    "fr": "On"
                 },
                 {
                     "en": "Together",
-                    "fr": ""
+                    "fr": "Ensemble"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "fr": ""
+                    "en": "Let us eat.",
+                    "fr": "Mangeons."
                 },
                 {
-                    "en": "Let’s go together.",
-                    "fr": ""
+                    "en": "Let us go together.",
+                    "fr": "Allons-y ensemble."
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "fr": ""
+                    "en": "Let us",
+                    "fr": "On"
                 },
                 {
                     "en": "We",
-                    "fr": ""
+                    "fr": "Nous"
                 },
                 {
                     "en": "Us",
-                    "fr": ""
+                    "fr": "Nous"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "fr": ""
+                    "en": "Let us eat.",
+                    "fr": "Mangeons."
                 },
                 {
-                    "en": "Let’s go.",
-                    "fr": ""
+                    "en": "Let us go.",
+                    "fr": "Allons-y."
                 }
             ]
         }
@@ -7034,15 +7018,15 @@
                 },
                 {
                     "en": "At",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "In",
-                    "fr": ""
+                    "fr": "À"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "Eat",
@@ -7050,15 +7034,15 @@
                 },
                 {
                     "en": "House",
-                    "fr": ""
+                    "fr": "Maison"
                 },
                 {
                     "en": "Home",
-                    "fr": ""
+                    "fr": "Maison"
                 },
                 {
                     "en": "Not yet",
-                    "fr": ""
+                    "fr": "Pas encore"
                 }
             ],
             "sentences": [
@@ -7068,7 +7052,7 @@
                 },
                 {
                     "en": "Not yet.",
-                    "fr": ""
+                    "fr": "Pas encore."
                 }
             ]
         },
@@ -7076,27 +7060,27 @@
             "words": [
                 {
                     "en": "I",
-                    "fr": ""
+                    "fr": "Je"
                 },
                 {
                     "en": "Me (Jakarta slang)",
-                    "fr": ""
+                    "fr": "Moi (argot)"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "fr": ""
+                    "fr": "Tu (argot)"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "fr": ""
+                    "fr": "Tu (argot)"
                 },
                 {
                     "en": "Already",
-                    "fr": ""
+                    "fr": "Déjà"
                 },
                 {
                     "en": "Not yet",
-                    "fr": ""
+                    "fr": "Pas encore"
                 },
                 {
                     "en": "Friend",
@@ -7106,11 +7090,11 @@
             "sentences": [
                 {
                     "en": "I’m at home.",
-                    "fr": ""
+                    "fr": "Je suis à la maison."
                 },
                 {
                     "en": "I’m at home.",
-                    "fr": ""
+                    "fr": "Je suis à la maison."
                 },
                 {
                     "en": "What are you doing?",
@@ -7118,11 +7102,11 @@
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "fr": ""
+                    "fr": "Tu as déjà mangé ?"
                 },
                 {
                     "en": "Already or not yet?",
-                    "fr": ""
+                    "fr": "Déjà ou pas encore ?"
                 }
             ]
         },
@@ -7130,7 +7114,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "fr": ""
+                    "fr": "Si"
                 },
                 {
                     "en": "I",
@@ -7138,7 +7122,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "You",
@@ -7146,11 +7130,11 @@
                 },
                 {
                     "en": "You",
-                    "fr": "Vous"
+                    "fr": "Tu"
                 },
                 {
                     "en": "Currently",
-                    "fr": ""
+                    "fr": "Actuellement"
                 },
                 {
                     "en": "Already",
@@ -7160,7 +7144,7 @@
             "sentences": [
                 {
                     "en": "I’m at home.",
-                    "fr": ""
+                    "fr": "Je suis à la maison."
                 },
                 {
                     "en": "What are you doing?",
@@ -7168,7 +7152,7 @@
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "fr": ""
+                    "fr": "Tu as déjà mangé ?"
                 }
             ]
         }
@@ -7202,11 +7186,11 @@
                 },
                 {
                     "en": "How",
-                    "fr": ""
+                    "fr": "Comment"
                 },
                 {
                     "en": "What about",
-                    "fr": ""
+                    "fr": "Comment"
                 },
                 {
                     "en": "With",
@@ -7235,7 +7219,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let's",
+                    "en": "Let us",
                     "fr": "Allons"
                 },
                 {
@@ -7280,7 +7264,7 @@
                 },
                 {
                     "en": "Me",
-                    "fr": "Moi"
+                    "fr": "Je"
                 },
                 {
                     "en": "Want to",
@@ -7289,7 +7273,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "fr": "Parlons de ça."
                 },
                 {
@@ -7305,16 +7289,16 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let's",
-                    "fr": ""
+                    "en": "Let us",
+                    "fr": "On"
                 },
                 {
                     "en": "Come on",
-                    "fr": ""
+                    "fr": "Allez"
                 },
                 {
-                    "en": "Let's",
-                    "fr": ""
+                    "en": "Let us",
+                    "fr": "Allez"
                 },
                 {
                     "en": "Talk",
@@ -7326,11 +7310,11 @@
                 },
                 {
                     "en": "Chat about",
-                    "fr": ""
+                    "fr": "Parler de"
                 },
                 {
                     "en": "Talking about",
-                    "fr": ""
+                    "fr": "Parler de"
                 },
                 {
                     "en": "About",
@@ -7346,19 +7330,19 @@
                 },
                 {
                     "en": "How",
-                    "fr": ""
+                    "fr": "Comment"
                 },
                 {
                     "en": "What about",
-                    "fr": ""
+                    "fr": "Comment"
                 },
                 {
                     "en": "Doing",
-                    "fr": ""
+                    "fr": "Faire"
                 },
                 {
                     "en": "Right now",
-                    "fr": ""
+                    "fr": "Faire"
                 },
                 {
                     "en": "What",
@@ -7367,11 +7351,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "fr": "Parlons de ça."
                 },
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "fr": "Parlons de ça."
                 },
                 {
@@ -7380,7 +7364,7 @@
                 },
                 {
                     "en": "What are you talking about?",
-                    "fr": ""
+                    "fr": "De quoi tu parles ?"
                 }
             ]
         }

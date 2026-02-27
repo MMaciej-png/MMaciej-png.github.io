@@ -49,6 +49,10 @@ data/_tmp_*.py
 # data/archive/NewContent.json
 # data/archive/*-translations.json
 
-# Ignore Markdown except README
+# Ignore Markdown except README and docs
 *.md
 !README.md
+!docs/*.md
+
+# Commit-rewrite script artifacts
+scripts/.commit-msg-counter

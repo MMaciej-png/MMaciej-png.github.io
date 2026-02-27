@@ -15,14 +15,6 @@
                     "indo": "Selamat"
                 },
                 {
-                    "en": "Well",
-                    "indo": "Selamat"
-                },
-                {
-                    "en": "Safe",
-                    "indo": "Selamat"
-                },
-                {
                     "en": "Come",
                     "indo": "Datang"
                 },
@@ -88,14 +80,6 @@
             "words": [
                 {
                     "en": "Good",
-                    "indo": "Selamat"
-                },
-                {
-                    "en": "Well",
-                    "indo": "Selamat"
-                },
-                {
-                    "en": "Safe",
                     "indo": "Selamat"
                 },
                 {
@@ -272,7 +256,7 @@
             "words": [
                 {
                     "en": "Oh",
-                    "indo": "Oh"
+                    "indo": ""
                 },
                 {
                     "en": "Oh right",
@@ -300,7 +284,7 @@
                 },
                 {
                     "en": "Hmm",
-                    "indo": "Hmm"
+                    "indo": ""
                 }
             ],
             "sentences": [
@@ -322,7 +306,7 @@
                 },
                 {
                     "en": "Hmm.",
-                    "indo": "Hmm."
+                    "indo": ""
                 }
             ]
         },
@@ -2655,7 +2639,7 @@
                 },
                 {
                     "en": "Toilet",
-                    "indo": "Toilet"
+                    "indo": ""
                 },
                 {
                     "en": "Bathroom",
@@ -3223,7 +3207,7 @@
                 },
                 {
                     "en": "Oh",
-                    "indo": "Oh"
+                    "indo": ""
                 },
                 {
                     "en": "Like that",
@@ -4763,7 +4747,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "indo": "Yuk"
                 },
                 {
@@ -4785,7 +4769,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
+                    "en": "Let us hang out.",
                     "indo": "Yuk nongkrong."
                 },
                 {
@@ -4807,7 +4791,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
+                    "en": "Let us hang out.",
                     "indo": "Yuk nongkrong deh."
                 }
             ]
@@ -4815,7 +4799,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "indo": "Mari"
                 },
                 {
@@ -4833,7 +4817,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s meet.",
+                    "en": "Let us meet.",
                     "indo": "Mari kita bertemu."
                 }
             ]
@@ -4947,15 +4931,15 @@
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
+                    "en": "I am bored.",
                     "indo": "Aku bosan nih."
                 },
                 {
-                    "en": "I'm nervous.",
+                    "en": "I am nervous.",
                     "indo": "Aku gugup."
                 },
                 {
-                    "en": "I'm nervous.",
+                    "en": "I am nervous.",
                     "indo": "Aku gugup nih."
                 },
                 {
@@ -4967,11 +4951,11 @@
                     "indo": "Aku kangen nih."
                 },
                 {
-                    "en": "I'm annoyed.",
+                    "en": "I am annoyed.",
                     "indo": "Aku kesal nih."
                 },
                 {
-                    "en": "I'm annoyed.",
+                    "en": "I am annoyed.",
                     "indo": "Aku kesal deh."
                 },
                 {
@@ -5001,11 +4985,11 @@
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
+                    "en": "I am bored.",
                     "indo": "Saya bosan."
                 },
                 {
-                    "en": "I'm nervous.",
+                    "en": "I am nervous.",
                     "indo": "Saya gugup."
                 },
                 {
@@ -6156,7 +6140,7 @@
                     "indo": "Jangan lupa makan ya."
                 },
                 {
-                    "en": "Let's meet tomorrow, okay?",
+                    "en": "Let us meet tomorrow, okay?",
                     "indo": "Kita ketemu besok ya."
                 }
             ]
@@ -6253,7 +6237,7 @@
                 },
                 {
                     "en": "Chat",
-                    "indo": "Chat"
+                    "indo": ""
                 },
                 {
                     "en": "Call",
@@ -6362,11 +6346,11 @@
                     "indo": "Seneng banget sama kamu."
                 },
                 {
-                    "en": "I'll chat you later, okay?",
+                    "en": "I will chat you later, okay?",
                     "indo": "Nanti aku chat ya."
                 },
                 {
-                    "en": "I'll call you later, okay?",
+                    "en": "I will call you later, okay?",
                     "indo": "Nanti gue telpon ya."
                 },
                 {
@@ -6953,7 +6937,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "indo": "Ayo"
                 },
                 {
@@ -6967,11 +6951,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
+                    "en": "Let us eat.",
                     "indo": "Ayo makan."
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "indo": "Ayo pergi."
                 }
             ]
@@ -6979,7 +6963,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "indo": "Yuk"
                 },
                 {
@@ -6989,11 +6973,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
+                    "en": "Let us eat.",
                     "indo": "Yuk makan."
                 },
                 {
-                    "en": "Let’s go together.",
+                    "en": "Let us go together.",
                     "indo": "Yuk pergi bareng."
                 }
             ]
@@ -7001,7 +6985,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
+                    "en": "Let us",
                     "indo": "Mari"
                 },
                 {
@@ -7015,11 +6999,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
+                    "en": "Let us eat.",
                     "indo": "Mari kita makan."
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "indo": "Mari kita pergi."
                 }
             ]
@@ -7235,7 +7219,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let's",
+                    "en": "Let us",
                     "indo": "Mari"
                 },
                 {
@@ -7289,7 +7273,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "indo": "Mari kita bicara tentang itu."
                 },
                 {
@@ -7305,7 +7289,7 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let's",
+                    "en": "Let us",
                     "indo": "Yuk"
                 },
                 {
@@ -7313,7 +7297,7 @@
                     "indo": "Ayo"
                 },
                 {
-                    "en": "Let's",
+                    "en": "Let us",
                     "indo": "Ayo"
                 },
                 {
@@ -7367,11 +7351,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "indo": "Yuk bicara tentang itu."
                 },
                 {
-                    "en": "Let's talk about that.",
+                    "en": "Let us talk about that.",
                     "indo": "Ayo ngobrolin soal itu."
                 },
                 {

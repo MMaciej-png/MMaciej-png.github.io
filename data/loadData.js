@@ -1,5 +1,6 @@
 import { makeId } from "../engine/selection.js";
 import { getItemStats } from "../engine/itemStats.js";
+import { normalise } from "../engine/translate.js";
 import {
   detectJakartaTokens,
   isJakartaFocusedModule,
@@ -18,7 +19,54 @@ import {
 
 const byCode = new Map(LANGUAGES.map((l) => [l.code, l]));
 
-function getTranslation(entry, code) {
+/** Walk content tree and collect all entries that have "en". */
+function collectEntries(obj, out) {
+  if (!obj || typeof obj !== "object") return;
+  if (Array.isArray(obj)) {
+    obj.forEach((o) => collectEntries(o, out));
+    return;
+  }
+  if ("en" in obj) {
+    out.push(obj);
+    return;
+  }
+  Object.values(obj).forEach((v) => collectEntries(v, out));
+}
+
+/** Build map: normalised English -> one canonical entry (prefer entries with non-empty translations for langA, langB). */
+function buildCanonicalByNormEn(content, langACode, langBCode) {
+  const entries = [];
+  collectEntries(content, entries);
+  const map = new Map();
+  for (const entry of entries) {
+    const en = typeof entry.en === "string" ? entry.en.trim() : "";
+    if (!en) continue;
+    const normEn = normalise(en, "EN", false)[0];
+    if (!normEn) continue;
+    const existing = map.get(normEn);
+    const hasA = (entry[langACode] ?? "").toString().trim();
+    const hasB = (entry[langBCode] ?? "").toString().trim();
+    const prefer = !existing || (hasA && hasB && (!(existing[langACode] ?? "").toString().trim() || !(existing[langBCode] ?? "").toString().trim()));
+    if (prefer) map.set(normEn, entry);
+  }
+  return map;
+}
+
+function getTranslation(entry, code, canonicalByNormEn) {
+  const en = typeof entry?.en === "string" ? entry.en.trim() : "";
+  if (canonicalByNormEn && en) {
+    const normEn = normalise(en, "EN", false)[0];
+    const canon = normEn ? canonicalByNormEn.get(normEn) : null;
+    if (canon) {
+      const v = canon.translations?.[code] ?? canon[code];
+      if (v !== undefined && v !== null) return String(Array.isArray(v) ? v[0] : v).trim();
+      const lang = byCode.get(code);
+      if (lang) {
+        const raw = canon[lang.contentKey] ?? (lang.contentKey === "english" ? canon.eng : null) ?? "";
+        if (raw !== undefined && raw !== null && String(raw).trim()) return String(raw).trim();
+      }
+    }
+  }
   const v = entry?.translations?.[code] ?? entry?.[code];
   if (v !== undefined && v !== null) return String(Array.isArray(v) ? v[0] : v).trim();
   const lang = byCode.get(code);
@@ -28,8 +76,20 @@ function getTranslation(entry, code) {
   return String(raw).trim();
 }
 
-/** All accepted variants for a language (for answer checking). */
-function getTranslationVariants(entry, code) {
+/** All accepted variants for a language (for answer checking). Uses canonical entry after normalisation when provided. */
+function getTranslationVariants(entry, code, canonicalByNormEn) {
+  const en = typeof entry?.en === "string" ? entry.en.trim() : "";
+  if (canonicalByNormEn && en) {
+    const normEn = normalise(en, "EN", false)[0];
+    const canon = normEn ? canonicalByNormEn.get(normEn) : null;
+    if (canon) {
+      const v = canon.translations?.[code] ?? canon[code];
+      if (v !== undefined && v !== null) {
+        if (Array.isArray(v)) return v.map((s) => String(s).trim()).filter(Boolean);
+        return [String(v).trim()].filter(Boolean);
+      }
+    }
+  }
   const v = entry?.translations?.[code] ?? entry?.[code];
   if (v === undefined || v === null) return [];
   if (Array.isArray(v)) return v.map((s) => String(s).trim()).filter(Boolean);
@@ -55,8 +115,12 @@ export async function loadItems() {
   const { loadContentForPair } = await import("./loadContent.js");
   const content = await loadContentForPair(langACode, langBCode);
 
-  const getIndo = x => getTranslation(x, "indo");
-  const getEng  = x => getTranslation(x, "en");
+  const canonicalByNormEn = buildCanonicalByNormEn(content, langACode, langBCode);
+  const getT = (x, code) => getTranslation(x, code, canonicalByNormEn);
+  const getTV = (x, code) => getTranslationVariants(x, code, canonicalByNormEn);
+
+  const getIndo = x => getT(x, "indo");
+  const getEng  = x => getT(x, "en");
 
   const VALID_REGISTERS = new Set(["formal", "informal", "neutral"]);
 
@@ -113,8 +177,8 @@ export async function loadItems() {
   function collectVariants(entries, type, moduleName, register) {
     const reg = register ?? "neutral";
     for (const x of entries) {
-      const textA = getTranslation(x, langACode);
-      const textB = getTranslation(x, langBCode);
+      const textA = getT(x, langACode);
+      const textB = getT(x, langBCode);
       if (!textA || !textB) continue;
       const keyA = `${moduleName}|${reg}|${type}|${textA}`;
       const keyB = `${moduleName}|${reg}|${type}|${textB}`;
@@ -143,13 +207,13 @@ export async function loadItems() {
   =============================== */
 
   const mapItem = (x, type, module, register) => {
-    const textA = getTranslation(x, langACode);
-    const textB = getTranslation(x, langBCode);
+    const textA = getT(x, langACode);
+    const textB = getT(x, langBCode);
     if (!textA || !textB) return null;
 
     const pair = getLanguagePair();
-    let variantsA = getTranslationVariants(x, langACode);
-    let variantsB = getTranslationVariants(x, langBCode);
+    let variantsA = getTV(x, langACode);
+    let variantsB = getTV(x, langBCode);
 
     const reg = register ?? "neutral";
     const keyA = `${module}|${reg}|${type}|${textA}`;

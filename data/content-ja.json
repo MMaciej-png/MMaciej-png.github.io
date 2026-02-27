@@ -15,26 +15,18 @@
                     "ja": "良い"
                 },
                 {
-                    "en": "Well",
-                    "ja": ""
-                },
-                {
-                    "en": "Safe",
-                    "ja": ""
-                },
-                {
                     "en": "Come",
                     "ja": "来る"
                 },
                 {
                     "en": "Arrive",
-                    "ja": "着く"
+                    "ja": "来る"
                 }
             ],
             "sentences": [
                 {
                     "en": "Welcome.",
-                    "ja": ""
+                    "ja": "ようこそ！"
                 }
             ]
         },
@@ -52,11 +44,11 @@
             "sentences": [
                 {
                     "en": "Hi, I’m (name).",
-                    "ja": ""
+                    "ja": "こんにちは、(名前)と申します。"
                 },
                 {
                     "en": "Hello, my name is (name).",
-                    "ja": ""
+                    "ja": "こんにちは、俺の名前は {name}。"
                 }
             ]
         },
@@ -74,11 +66,11 @@
             "sentences": [
                 {
                     "en": "Hi, I’m (name).",
-                    "ja": ""
+                    "ja": "こんにちは、(名前)と申します。"
                 },
                 {
                     "en": "Hello, my name is (name).",
-                    "ja": ""
+                    "ja": "こんにちは、俺の名前は {name}。"
                 }
             ]
         }
@@ -91,14 +83,6 @@
                     "ja": "良い"
                 },
                 {
-                    "en": "Well",
-                    "ja": ""
-                },
-                {
-                    "en": "Safe",
-                    "ja": ""
-                },
-                {
                     "en": "Morning",
                     "ja": "朝"
                 },
@@ -108,7 +92,7 @@
                 },
                 {
                     "en": "Daytime",
-                    "ja": ""
+                    "ja": "午後"
                 },
                 {
                     "en": "Evening",
@@ -116,7 +100,7 @@
                 },
                 {
                     "en": "Night",
-                    "ja": "夜"
+                    "ja": "夕方"
                 },
                 {
                     "en": "Sleep",
@@ -126,19 +110,19 @@
             "sentences": [
                 {
                     "en": "Good morning.",
-                    "ja": ""
+                    "ja": "おはようございます。"
                 },
                 {
                     "en": "Good afternoon.",
-                    "ja": ""
+                    "ja": "こんにちは。"
                 },
                 {
                     "en": "Good evening.",
-                    "ja": ""
+                    "ja": "いらっしゃいませ。"
                 },
                 {
                     "en": "Good night",
-                    "ja": ""
+                    "ja": "おやすみ"
                 }
             ]
         },
@@ -160,7 +144,7 @@
                 },
                 {
                     "en": "News",
-                    "ja": ""
+                    "ja": "ニュース"
                 },
                 {
                     "en": "Now",
@@ -192,7 +176,7 @@
             "sentences": [
                 {
                     "en": "How are you now?",
-                    "ja": ""
+                    "ja": "元気なのか？"
                 }
             ]
         },
@@ -200,21 +184,21 @@
             "words": [
                 {
                     "en": "How",
-                    "ja": ""
+                    "ja": "方法"
                 },
                 {
                     "en": "The news",
-                    "ja": ""
+                    "ja": "ニュース"
                 }
             ],
             "sentences": [
                 {
                     "en": "How’s it going now?",
-                    "ja": ""
+                    "ja": "調子はどうだ？"
                 },
                 {
                     "en": "How’s it going now?",
-                    "ja": ""
+                    "ja": "調子はどうだ？"
                 }
             ]
         }
@@ -236,7 +220,7 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "いいえ"
                 },
                 {
                     "en": "Maybe",
@@ -257,7 +241,7 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "いいえ"
                 }
             ],
             "sentences": []
@@ -272,11 +256,11 @@
             "words": [
                 {
                     "en": "Oh",
-                    "ja": ""
+                    "ja": "あら"
                 },
                 {
                     "en": "Oh right",
-                    "ja": ""
+                    "ja": "オッケー。"
                 },
                 {
                     "en": "Okay",
@@ -284,7 +268,7 @@
                 },
                 {
                     "en": "Alright",
-                    "ja": ""
+                    "ja": "わかりました。"
                 },
                 {
                     "en": "Yes",
@@ -296,33 +280,33 @@
                 },
                 {
                     "en": "Haha",
-                    "ja": ""
+                    "ja": "うける！"
                 },
                 {
                     "en": "Hmm",
-                    "ja": ""
+                    "ja": "あら"
                 }
             ],
             "sentences": [
                 {
                     "en": "Oh, okay.",
-                    "ja": ""
+                    "ja": "ああ、わかりました。"
                 },
                 {
                     "en": "Oh right.",
-                    "ja": ""
+                    "ja": "オッケー。"
                 },
                 {
                     "en": "Yeah, okay.",
-                    "ja": ""
+                    "ja": "\"あぁ　判った\""
                 },
                 {
                     "en": "Haha.",
-                    "ja": ""
+                    "ja": "あはは。"
                 },
                 {
                     "en": "Hmm.",
-                    "ja": ""
+                    "ja": "なるほど。"
                 }
             ]
         },
@@ -344,7 +328,7 @@
             "sentences": [
                 {
                     "en": "Alright, I understand.",
-                    "ja": ""
+                    "ja": "うん、わかった。"
                 }
             ]
         },
@@ -356,7 +340,7 @@
                 },
                 {
                     "en": "No problem",
-                    "ja": ""
+                    "ja": "大丈夫です"
                 },
                 {
                     "en": "I",
@@ -368,37 +352,37 @@
                 },
                 {
                     "en": "Understand",
-                    "ja": ""
+                    "ja": "理解"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 },
                 {
                     "en": "Laughing",
-                    "ja": ""
+                    "ja": "笑い"
                 }
             ],
             "sentences": [
                 {
                     "en": "Yeah, true.",
-                    "ja": ""
+                    "ja": "あぁ"
                 },
                 {
                     "en": "Okay, I understand.",
-                    "ja": ""
+                    "ja": "なるほど　わかりました"
                 },
                 {
                     "en": "Okay.",
-                    "ja": ""
+                    "ja": "わかったわ。"
                 },
                 {
                     "en": "Haha.",
-                    "ja": ""
+                    "ja": "あはは。"
                 },
                 {
                     "en": "Yeah, true.",
-                    "ja": ""
+                    "ja": "あぁ"
                 }
             ]
         }
@@ -446,11 +430,11 @@
                 },
                 {
                     "en": "Kindly",
-                    "ja": ""
+                    "ja": "お願いします"
                 },
                 {
                     "en": "Forgive",
-                    "ja": ""
+                    "ja": "許そう。"
                 },
                 {
                     "en": "I",
@@ -464,11 +448,11 @@
             "sentences": [
                 {
                     "en": "My apologies.",
-                    "ja": ""
+                    "ja": "今度は \"失礼\" か"
                 },
                 {
                     "en": "I sincerely apologize.",
-                    "ja": ""
+                    "ja": "心からお詫び申し上げます"
                 }
             ]
         },
@@ -476,7 +460,7 @@
             "words": [
                 {
                     "en": "Thanks",
-                    "ja": ""
+                    "ja": "ありがとうございます"
                 },
                 {
                     "en": "I",
@@ -488,33 +472,33 @@
                 },
                 {
                     "en": "Ask for",
-                    "ja": ""
+                    "ja": "お願いする"
                 },
                 {
                     "en": "Urging",
-                    "ja": ""
+                    "ja": "促す"
                 },
                 {
                     "en": "come on",
-                    "ja": ""
+                    "ja": "促す"
                 }
             ],
             "sentences": [
                 {
                     "en": "Thanks.",
-                    "ja": ""
+                    "ja": "ありがとう。"
                 },
                 {
                     "en": "Thanks.",
-                    "ja": ""
+                    "ja": "ありがとう。"
                 },
                 {
                     "en": "Sorry, okay?",
-                    "ja": ""
+                    "ja": "すまない"
                 },
                 {
                     "en": "I sincerely apologize.",
-                    "ja": ""
+                    "ja": "心からお詫び申し上げます"
                 }
             ]
         }
@@ -524,11 +508,11 @@
             "words": [
                 {
                     "en": "Until",
-                    "ja": ""
+                    "ja": "至"
                 },
                 {
                     "en": "See",
-                    "ja": "見る"
+                    "ja": "至"
                 },
                 {
                     "en": "Meet",
@@ -552,17 +536,17 @@
                 },
                 {
                     "en": "Earlier",
-                    "ja": ""
+                    "ja": "最初"
                 }
             ],
             "sentences": [
                 {
                     "en": "See you.",
-                    "ja": ""
+                    "ja": "じゃ、またねっ！"
                 },
                 {
                     "en": "See you later.",
-                    "ja": ""
+                    "ja": "また後で。"
                 },
                 {
                     "en": "Take care.",
@@ -582,17 +566,17 @@
                 },
                 {
                     "en": "Take leave",
-                    "ja": ""
+                    "ja": "休暇を取る"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’ll take my leave.",
-                    "ja": ""
+                    "ja": "失礼します"
                 },
                 {
                     "en": "I’ll go first",
-                    "ja": ""
+                    "ja": "私が最初に行きます。"
                 }
             ]
         },
@@ -604,11 +588,11 @@
                 },
                 {
                     "en": "Earlier",
-                    "ja": ""
+                    "ja": "最初"
                 },
                 {
                     "en": "Bye",
-                    "ja": ""
+                    "ja": "さようなら"
                 },
                 {
                     "en": "I",
@@ -620,25 +604,25 @@
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’ll take my leave.",
-                    "ja": ""
+                    "ja": "失礼します"
                 },
                 {
                     "en": "I’ll go first",
-                    "ja": ""
+                    "ja": "私が最初に行きます。"
                 },
                 {
                     "en": "I’ll go first",
-                    "ja": ""
+                    "ja": "私が最初に行きます。"
                 },
                 {
                     "en": "Bye.",
-                    "ja": ""
+                    "ja": "では。"
                 }
             ]
         }
@@ -652,11 +636,11 @@
                 },
                 {
                     "en": "Hour",
-                    "ja": ""
+                    "ja": "時間"
                 },
                 {
                     "en": "O’clock",
-                    "ja": ""
+                    "ja": "時間"
                 },
                 {
                     "en": "How many",
@@ -664,7 +648,7 @@
                 },
                 {
                     "en": "How much",
-                    "ja": "いくら"
+                    "ja": "いくつ"
                 },
                 {
                     "en": "Can",
@@ -672,7 +656,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Go",
@@ -684,7 +668,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "ja": "着く"
+                    "ja": "来る"
                 },
                 {
                     "en": "That",
@@ -694,23 +678,23 @@
             "sentences": [
                 {
                     "en": "When can you?",
-                    "ja": ""
+                    "ja": "いつできますか？"
                 },
                 {
                     "en": "When are you going?",
-                    "ja": ""
+                    "ja": "いついく"
                 },
                 {
                     "en": "When will you arrive?",
-                    "ja": ""
+                    "ja": "ご到着はいつですか？"
                 },
                 {
                     "en": "When is that?",
-                    "ja": ""
+                    "ja": "いつもそうなの？"
                 },
                 {
                     "en": "What time?",
-                    "ja": ""
+                    "ja": "何時にきましょうか。"
                 }
             ]
         },
@@ -732,7 +716,7 @@
                 },
                 {
                     "en": "Boyfriend",
-                    "ja": "彼氏"
+                    "ja": "彼女"
                 },
                 {
                     "en": "Friend",
@@ -752,7 +736,7 @@
                 },
                 {
                     "en": "Ma’am",
-                    "ja": ""
+                    "ja": "もしもし？"
                 },
                 {
                     "en": "Mr",
@@ -760,7 +744,7 @@
                 },
                 {
                     "en": "Sir",
-                    "ja": ""
+                    "ja": "閣下"
                 },
                 {
                     "en": "He",
@@ -768,7 +752,7 @@
                 },
                 {
                     "en": "She",
-                    "ja": "彼女"
+                    "ja": "彼"
                 },
                 {
                     "en": "This",
@@ -782,11 +766,11 @@
             "sentences": [
                 {
                     "en": "This ma’am.",
-                    "ja": ""
+                    "ja": "この奥様。"
                 },
                 {
                     "en": "That sir.",
-                    "ja": ""
+                    "ja": "そのとおりです。"
                 }
             ]
         },
@@ -812,23 +796,23 @@
             "sentences": [
                 {
                     "en": "My girlfriend",
-                    "ja": ""
+                    "ja": "- 僕の彼女だ"
                 },
                 {
                     "en": "boyfriend.",
-                    "ja": ""
+                    "ja": "- 僕の彼女だ"
                 },
                 {
                     "en": "They’re my friend.",
-                    "ja": ""
+                    "ja": "彼らは私の友達です。"
                 },
                 {
                     "en": "This gentleman.",
-                    "ja": ""
+                    "ja": "こちらの方が"
                 },
                 {
                     "en": "That lady.",
-                    "ja": ""
+                    "ja": "あのお嬢さん。"
                 }
             ]
         },
@@ -836,19 +820,19 @@
             "words": [
                 {
                     "en": "Girl",
-                    "ja": ""
+                    "ja": "女の子"
                 },
                 {
                     "en": "Girlfriend",
-                    "ja": ""
+                    "ja": "女の子"
                 },
                 {
                     "en": "Guy",
-                    "ja": ""
+                    "ja": "ガイ"
                 },
                 {
                     "en": "Boyfriend",
-                    "ja": ""
+                    "ja": "ガイ"
                 },
                 {
                     "en": "I",
@@ -860,49 +844,49 @@
                 },
                 {
                     "en": "Friend",
-                    "ja": ""
+                    "ja": "友達"
                 },
                 {
                     "en": "Pointing",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "here",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "this",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 }
             ],
             "sentences": [
                 {
                     "en": "My girlfriend",
-                    "ja": ""
+                    "ja": "- 僕の彼女だ"
                 },
                 {
                     "en": "boyfriend.",
-                    "ja": ""
+                    "ja": "- 僕の彼女だ"
                 },
                 {
                     "en": "They’re my friend.",
-                    "ja": ""
+                    "ja": "彼らは私の友達です。"
                 },
                 {
                     "en": "My girlfriend.",
-                    "ja": ""
+                    "ja": "- 僕の彼女だ"
                 },
                 {
                     "en": "My boyfriend.",
-                    "ja": ""
+                    "ja": "そうカレ氏"
                 },
                 {
                     "en": "This is my girlfriend",
-                    "ja": ""
+                    "ja": "- ガールフレンドなんだ"
                 },
                 {
                     "en": "boyfriend.",
-                    "ja": ""
+                    "ja": "- ガールフレンドなんだ"
                 }
             ]
         }
@@ -916,7 +900,7 @@
                 },
                 {
                     "en": "Fine",
-                    "ja": "元気"
+                    "ja": "良い"
                 },
                 {
                     "en": "Fine",
@@ -924,11 +908,11 @@
                 },
                 {
                     "en": "Okay",
-                    "ja": "わかりました"
+                    "ja": "元気"
                 },
                 {
                     "en": "Still",
-                    "ja": ""
+                    "ja": "静止"
                 },
                 {
                     "en": "Okay",
@@ -936,7 +920,7 @@
                 },
                 {
                     "en": "Not bad",
-                    "ja": ""
+                    "ja": "ミチコ"
                 },
                 {
                     "en": "Busy",
@@ -944,11 +928,11 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "Only",
-                    "ja": ""
+                    "ja": "これ"
                 }
             ],
             "sentences": [
@@ -996,7 +980,7 @@
                 },
                 {
                     "en": "I’m really tired.",
-                    "ja": ""
+                    "ja": "くたくたに疲れた。"
                 }
             ]
         },
@@ -1020,7 +1004,7 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 }
             ],
             "sentences": [
@@ -1038,11 +1022,11 @@
                 },
                 {
                     "en": "I’m really tired.",
-                    "ja": ""
+                    "ja": "くたくたに疲れた。"
                 },
                 {
                     "en": "I’m really tired.",
-                    "ja": ""
+                    "ja": "くたくたに疲れた。"
                 },
                 {
                     "en": "I’m tired.",
@@ -1060,7 +1044,7 @@
                 },
                 {
                     "en": "Not quite",
-                    "ja": ""
+                    "ja": "少なく"
                 },
                 {
                     "en": "Good",
@@ -1068,49 +1052,49 @@
                 },
                 {
                     "en": "Fine",
-                    "ja": "元気"
-                },
-                {
-                    "en": "Like that",
-                    "ja": ""
-                },
-                {
-                    "en": "So",
-                    "ja": "とても"
-                },
-                {
-                    "en": "Just",
-                    "ja": ""
-                },
-                {
-                    "en": "Only",
-                    "ja": ""
-                },
-                {
-                    "en": "Comfortable",
-                    "ja": ""
-                },
-                {
-                    "en": "Good",
                     "ja": "良い"
                 },
                 {
+                    "en": "Like that",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "So",
+                    "ja": "こうだ"
+                },
+                {
+                    "en": "Just",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Only",
+                    "ja": "これ"
+                },
+                {
+                    "en": "Comfortable",
+                    "ja": "快適"
+                },
+                {
+                    "en": "Good",
+                    "ja": "快適"
+                },
+                {
                     "en": "Tasty",
-                    "ja": ""
+                    "ja": "快適"
                 },
                 {
                     "en": "Body",
-                    "ja": ""
+                    "ja": "ボディ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not quite good.",
-                    "ja": ""
+                    "ja": "別の回答を選択してください。"
                 },
                 {
                     "en": "Just so-so.",
-                    "ja": ""
+                    "ja": "まあまあ。"
                 }
             ]
         },
@@ -1126,17 +1110,17 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 }
             ],
             "sentences": [
                 {
                     "en": "I don’t feel well.",
-                    "ja": ""
+                    "ja": "気分がよくないんだ。"
                 }
             ]
         },
@@ -1152,21 +1136,21 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 }
             ],
             "sentences": [
                 {
                     "en": "I don’t feel well.",
-                    "ja": ""
+                    "ja": "気分がよくないんだ。"
                 },
                 {
                     "en": "I don’t feel well.",
-                    "ja": ""
+                    "ja": "気分がよくないんだ。"
                 }
             ]
         }
@@ -1188,7 +1172,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Now",
@@ -1196,13 +1180,13 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not this.",
-                    "ja": ""
+                    "ja": "この件は　ちがいます"
                 },
                 {
                     "en": "I don’t know.",
@@ -1210,11 +1194,11 @@
                 },
                 {
                     "en": "I can’t.",
-                    "ja": ""
+                    "ja": "離れられない！"
                 },
                 {
                     "en": "Can do it now.",
-                    "ja": ""
+                    "ja": "今 やるよ"
                 }
             ]
         },
@@ -1230,25 +1214,25 @@
                 },
                 {
                     "en": "Belong to",
-                    "ja": ""
+                    "ja": "あなたが所属するチーム"
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is not mine.",
-                    "ja": ""
+                    "ja": "これは私のものではありません。"
                 },
                 {
                     "en": "Not me.",
-                    "ja": ""
+                    "ja": "俺は通ってない。"
                 }
             ]
         },
@@ -1264,11 +1248,11 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Have",
@@ -1276,17 +1260,17 @@
                 },
                 {
                     "en": "Own",
-                    "ja": ""
+                    "ja": "持っている"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is not mine.",
-                    "ja": ""
+                    "ja": "これは私のものではありません。"
                 },
                 {
                     "en": "Not me.",
-                    "ja": ""
+                    "ja": "俺は通ってない。"
                 }
             ]
         }
@@ -1300,7 +1284,7 @@
                 },
                 {
                     "en": "Help",
-                    "ja": "助ける"
+                    "ja": "お願いします"
                 },
                 {
                     "en": "Help",
@@ -1312,7 +1296,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Wait",
@@ -1320,11 +1304,11 @@
                 },
                 {
                     "en": "A moment",
-                    "ja": ""
+                    "ja": "お待ちを"
                 },
                 {
                     "en": "Ask for",
-                    "ja": ""
+                    "ja": "お願いする"
                 },
                 {
                     "en": "Excuse me",
@@ -1332,33 +1316,33 @@
                 },
                 {
                     "en": "May",
-                    "ja": ""
+                    "ja": "5月"
                 },
                 {
                     "en": "Allowed",
-                    "ja": ""
+                    "ja": "5月"
                 }
             ],
             "sentences": [
                 {
                     "en": "Please help.",
-                    "ja": ""
+                    "ja": "どうか　助けて"
                 },
                 {
                     "en": "Can you help?",
-                    "ja": ""
+                    "ja": "助けてもらえませんか？"
                 },
                 {
                     "en": "Please wait a moment.",
-                    "ja": ""
+                    "ja": "しばらくお待ちください。"
                 },
                 {
                     "en": "Excuse me for a moment.",
-                    "ja": ""
+                    "ja": "ちょっと失敬"
                 },
                 {
                     "en": "May I ask for help?",
-                    "ja": ""
+                    "ja": "助けを求めてもいいですか？"
                 }
             ]
         },
@@ -1390,7 +1374,7 @@
                 },
                 {
                     "en": "To help",
-                    "ja": ""
+                    "ja": "助ける"
                 },
                 {
                     "en": "Help",
@@ -1398,13 +1382,13 @@
                 },
                 {
                     "en": "Assistance",
-                    "ja": ""
+                    "ja": "助ける"
                 }
             ],
             "sentences": [
                 {
                     "en": "I kindly ask for your help.",
-                    "ja": ""
+                    "ja": "どうぞよろしくお願いいたします。"
                 },
                 {
                     "en": "Can you help me?",
@@ -1412,7 +1396,7 @@
                 },
                 {
                     "en": "Wait a sec, okay?",
-                    "ja": ""
+                    "ja": "ちょっと待って、いい？"
                 }
             ]
         },
@@ -1440,7 +1424,7 @@
                 },
                 {
                     "en": "Help",
-                    "ja": ""
+                    "ja": "ヘルプ"
                 },
                 {
                     "en": "A sec",
@@ -1448,11 +1432,11 @@
                 },
                 {
                     "en": "Urging",
-                    "ja": ""
+                    "ja": "促す"
                 },
                 {
                     "en": "come on",
-                    "ja": ""
+                    "ja": "促す"
                 }
             ],
             "sentences": [
@@ -1462,19 +1446,19 @@
                 },
                 {
                     "en": "Wait a sec, okay?",
-                    "ja": ""
+                    "ja": "ちょっと待って、いい？"
                 },
                 {
                     "en": "One sec.",
-                    "ja": ""
+                    "ja": "ちょっと待った。"
                 },
                 {
                     "en": "Excuse me for a moment.",
-                    "ja": ""
+                    "ja": "ちょっと失敬"
                 },
                 {
                     "en": "I kindly ask for your help.",
-                    "ja": ""
+                    "ja": "どうぞよろしくお願いいたします。"
                 }
             ]
         }
@@ -1484,11 +1468,11 @@
             "words": [
                 {
                     "en": "Meaning",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "Intention",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "What",
@@ -1500,7 +1484,7 @@
                 },
                 {
                     "en": "Repeat",
-                    "ja": ""
+                    "ja": "繰り返し"
                 },
                 {
                     "en": "Can",
@@ -1508,21 +1492,21 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "The meaning",
-                    "ja": ""
+                    "ja": "意味"
                 }
             ],
             "sentences": [
                 {
                     "en": "What does it mean?",
-                    "ja": ""
+                    "ja": "これは何ですか？"
                 },
                 {
                     "en": "Can you repeat?",
-                    "ja": ""
+                    "ja": "\" もう一度？"
                 }
             ]
         },
@@ -1542,15 +1526,15 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Whether",
-                    "ja": ""
+                    "ja": "かどうか"
                 },
                 {
                     "en": "You",
@@ -1564,7 +1548,7 @@
             "sentences": [
                 {
                     "en": "I understand.",
-                    "ja": ""
+                    "ja": "ああ わかるよ"
                 },
                 {
                     "en": "I don’t understand.",
@@ -1572,7 +1556,7 @@
                 },
                 {
                     "en": "Do you understand?",
-                    "ja": ""
+                    "ja": "わかりましたか。"
                 }
             ]
         },
@@ -1588,19 +1572,19 @@
                 },
                 {
                     "en": "Understand",
-                    "ja": ""
+                    "ja": "理解"
                 },
                 {
                     "en": "Understand",
-                    "ja": ""
+                    "ja": "理解"
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "You",
@@ -1618,19 +1602,19 @@
                 },
                 {
                     "en": "I understand.",
-                    "ja": ""
+                    "ja": "ああ わかるよ"
                 },
                 {
                     "en": "Do you understand?",
-                    "ja": ""
+                    "ja": "わかりましたか。"
                 },
                 {
                     "en": "Do you understand?",
-                    "ja": ""
+                    "ja": "わかりましたか。"
                 },
                 {
                     "en": "Got it?",
-                    "ja": ""
+                    "ja": "いいか？"
                 }
             ]
         }
@@ -1640,11 +1624,11 @@
             "words": [
                 {
                     "en": "Means",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "So it means",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "This",
@@ -1656,15 +1640,15 @@
                 },
                 {
                     "en": "Meaning",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "Intention",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "The meaning",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "What",
@@ -1672,33 +1656,33 @@
                 },
                 {
                     "en": "Like that",
-                    "ja": ""
+                    "ja": "こうだ"
                 },
                 {
                     "en": "So",
-                    "ja": "とても"
+                    "ja": "こうだ"
                 }
             ],
             "sentences": [
                 {
                     "en": "So this means?",
-                    "ja": ""
+                    "ja": "ということは？"
                 },
                 {
                     "en": "So that means?",
-                    "ja": ""
+                    "ja": "だからつまり"
                 },
                 {
                     "en": "What does it mean?",
-                    "ja": ""
+                    "ja": "これは何ですか？"
                 },
                 {
                     "en": "What do you mean?",
-                    "ja": ""
+                    "ja": "どういう意味だ？"
                 },
                 {
                     "en": "Does this mean that?",
-                    "ja": ""
+                    "ja": "これはそういう意味ですか？"
                 }
             ]
         },
@@ -1706,7 +1690,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ja": ""
+                    "ja": "かどうか"
                 },
                 {
                     "en": "You",
@@ -1720,11 +1704,11 @@
             "sentences": [
                 {
                     "en": "Does this mean that?",
-                    "ja": ""
+                    "ja": "これはそういう意味ですか？"
                 },
                 {
                     "en": "What do you mean?",
-                    "ja": ""
+                    "ja": "どういう意味だ？"
                 }
             ]
         },
@@ -1733,7 +1717,7 @@
             "sentences": [
                 {
                     "en": "What do you mean?",
-                    "ja": ""
+                    "ja": "どういう意味だ？"
                 }
             ]
         }
@@ -1747,7 +1731,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "This",
@@ -1759,7 +1743,7 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Not yet",
@@ -1769,19 +1753,19 @@
             "sentences": [
                 {
                     "en": "Can this?",
-                    "ja": ""
+                    "ja": "これはできますか？"
                 },
                 {
                     "en": "Can that?",
-                    "ja": ""
+                    "ja": "それはできますか？"
                 },
                 {
                     "en": "Can you already?",
-                    "ja": ""
+                    "ja": "もうできますか？"
                 },
                 {
                     "en": "Can't yet?",
-                    "ja": ""
+                    "ja": "まだできませんか？"
                 }
             ]
         },
@@ -1789,7 +1773,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ja": ""
+                    "ja": "かどうか"
                 },
                 {
                     "en": "You",
@@ -1803,11 +1787,11 @@
             "sentences": [
                 {
                     "en": "Can this?",
-                    "ja": ""
+                    "ja": "これはできますか？"
                 },
                 {
                     "en": "Can you already?",
-                    "ja": ""
+                    "ja": "もうできますか？"
                 }
             ]
         },
@@ -1819,13 +1803,13 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "いいえ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Can't?",
-                    "ja": ""
+                    "ja": "できませんか？"
                 }
             ]
         }
@@ -1851,17 +1835,17 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 }
             ],
             "sentences": [
                 {
                     "en": "Busy right now.",
-                    "ja": ""
+                    "ja": "取り込み中"
                 },
                 {
                     "en": "Can do it later.",
-                    "ja": ""
+                    "ja": "後でやって。"
                 }
             ]
         },
@@ -1877,7 +1861,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "Work",
@@ -1885,21 +1869,21 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 }
             ],
             "sentences": [
                 {
                     "en": "I am working.",
-                    "ja": ""
+                    "ja": "仕事中です。"
                 },
                 {
                     "en": "I can’t right now.",
-                    "ja": ""
+                    "ja": "今はできません。"
                 }
             ]
         },
@@ -1915,7 +1899,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "Work",
@@ -1923,49 +1907,49 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
                     "en": "Working.",
-                    "ja": ""
+                    "ja": "- 仕事さ"
                 },
                 {
                     "en": "Working.",
-                    "ja": ""
+                    "ja": "- 仕事さ"
                 },
                 {
                     "en": "Can’t right now.",
-                    "ja": ""
+                    "ja": "今は無理だ。"
                 },
                 {
                     "en": "Can’t right now.",
-                    "ja": ""
+                    "ja": "今は無理だ。"
                 },
                 {
                     "en": "I am working.",
-                    "ja": ""
+                    "ja": "仕事中です。"
                 },
                 {
                     "en": "I am working.",
-                    "ja": ""
+                    "ja": "仕事中です。"
                 },
                 {
                     "en": "Working.",
-                    "ja": ""
+                    "ja": "- 仕事さ"
                 },
                 {
                     "en": "Can’t right now.",
-                    "ja": ""
+                    "ja": "今は無理だ。"
                 }
             ]
         }
@@ -1995,7 +1979,7 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Not yet",
@@ -2013,15 +1997,15 @@
             "sentences": [
                 {
                     "en": "Later, okay.",
-                    "ja": ""
+                    "ja": "後でね、わかった。"
                 },
                 {
                     "en": "Not yet.",
-                    "ja": ""
+                    "ja": "まだだ。"
                 },
                 {
                     "en": "Already.",
-                    "ja": ""
+                    "ja": "既知"
                 }
             ]
         },
@@ -2037,7 +2021,7 @@
                 },
                 {
                     "en": "Will",
-                    "ja": ""
+                    "ja": "意思"
                 },
                 {
                     "en": "Now",
@@ -2047,15 +2031,15 @@
             "sentences": [
                 {
                     "en": "I will go now.",
-                    "ja": ""
+                    "ja": "私が行きます。"
                 },
                 {
                     "en": "I will go tomorrow.",
-                    "ja": ""
+                    "ja": "明日行きます。"
                 },
                 {
                     "en": "Going later.",
-                    "ja": ""
+                    "ja": "後ほどお送りします。"
                 }
             ]
         },
@@ -2075,37 +2059,37 @@
                 },
                 {
                     "en": "Going to",
-                    "ja": ""
+                    "ja": "欲しい"
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
                     "en": "Going later.",
-                    "ja": ""
+                    "ja": "後ほどお送りします。"
                 },
                 {
                     "en": "Going tomorrow.",
-                    "ja": ""
+                    "ja": "明日行きます。"
                 },
                 {
                     "en": "I will go now.",
-                    "ja": ""
+                    "ja": "私が行きます。"
                 },
                 {
                     "en": "I will go tomorrow.",
-                    "ja": ""
+                    "ja": "明日行きます。"
                 },
                 {
                     "en": "Later, okay.",
-                    "ja": ""
+                    "ja": "後でね、わかった。"
                 }
             ]
         }
@@ -2123,7 +2107,7 @@
                 },
                 {
                     "en": "Choose",
-                    "ja": ""
+                    "ja": "選択"
                 },
                 {
                     "en": "Which",
@@ -2149,11 +2133,11 @@
             "sentences": [
                 {
                     "en": "That one is different.",
-                    "ja": ""
+                    "ja": "あれは違う。"
                 },
                 {
                     "en": "The other one.",
-                    "ja": ""
+                    "ja": "こっち"
                 }
             ]
         },
@@ -2171,7 +2155,7 @@
             "sentences": [
                 {
                     "en": "I choose the other one.",
-                    "ja": ""
+                    "ja": "私はもう片方を選びます。"
                 }
             ]
         },
@@ -2189,15 +2173,15 @@
             "sentences": [
                 {
                     "en": "I choose the other one.",
-                    "ja": ""
+                    "ja": "私はもう片方を選びます。"
                 },
                 {
                     "en": "I choose the other one.",
-                    "ja": ""
+                    "ja": "私はもう片方を選びます。"
                 },
                 {
                     "en": "I want this one.",
-                    "ja": ""
+                    "ja": "こっちがいいな"
                 }
             ]
         }
@@ -2219,19 +2203,19 @@
                 },
                 {
                     "en": "Thirsty",
-                    "ja": ""
+                    "ja": "喉が渇いている"
                 },
                 {
                     "en": "Comfortable",
-                    "ja": ""
+                    "ja": "快適"
                 },
                 {
                     "en": "Good",
-                    "ja": "良い"
+                    "ja": "快適"
                 },
                 {
                     "en": "Tasty",
-                    "ja": ""
+                    "ja": "快適"
                 },
                 {
                     "en": "This",
@@ -2251,7 +2235,7 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 },
                 {
                     "en": "Want",
@@ -2261,27 +2245,27 @@
             "sentences": [
                 {
                     "en": "Hungry.",
-                    "ja": ""
+                    "ja": "はらへった"
                 },
                 {
                     "en": "Thirsty.",
-                    "ja": ""
+                    "ja": "飲み物が欲しい"
                 },
                 {
                     "en": "This is good.",
-                    "ja": ""
+                    "ja": "いいことだよ」"
                 },
                 {
                     "en": "This food is good.",
-                    "ja": ""
+                    "ja": "この食べ物はおいしいです。"
                 },
                 {
                     "en": "That’s really good.",
-                    "ja": ""
+                    "ja": "- ジェーン？ - ホント気持ちいいね"
                 },
                 {
                     "en": "I want to eat.",
-                    "ja": ""
+                    "ja": "それより"
                 }
             ]
         },
@@ -2305,7 +2289,7 @@
                 },
                 {
                     "en": "Beverage",
-                    "ja": ""
+                    "ja": "飲む"
                 }
             ],
             "sentences": [
@@ -2315,7 +2299,7 @@
                 },
                 {
                     "en": "I want to eat.",
-                    "ja": ""
+                    "ja": "それより"
                 }
             ]
         },
@@ -2335,7 +2319,7 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 }
             ],
             "sentences": [
@@ -2349,11 +2333,11 @@
                 },
                 {
                     "en": "I want to eat.",
-                    "ja": ""
+                    "ja": "それより"
                 },
                 {
                     "en": "That’s really good.",
-                    "ja": ""
+                    "ja": "- ジェーン？ - ホント気持ちいいね"
                 }
             ]
         }
@@ -2371,7 +2355,7 @@
                 },
                 {
                     "en": "Choose",
-                    "ja": ""
+                    "ja": "選択"
                 },
                 {
                     "en": "Same",
@@ -2387,7 +2371,7 @@
                 },
                 {
                     "en": "And",
-                    "ja": ""
+                    "ja": "および"
                 },
                 {
                     "en": "Or",
@@ -2395,37 +2379,37 @@
                 },
                 {
                     "en": "But",
-                    "ja": ""
+                    "ja": "しかし"
                 }
             ],
             "sentences": [
                 {
                     "en": "This.",
-                    "ja": ""
+                    "ja": "これだぜ。"
                 },
                 {
                     "en": "That.",
-                    "ja": ""
+                    "ja": "− あれだ"
                 },
                 {
                     "en": "The same one.",
-                    "ja": ""
+                    "ja": "同じやつだ。"
                 },
                 {
                     "en": "The different one.",
-                    "ja": ""
+                    "ja": "違うやつだ。"
                 },
                 {
                     "en": "This and that.",
-                    "ja": ""
+                    "ja": "あれやこれや"
                 },
                 {
                     "en": "This or that.",
-                    "ja": ""
+                    "ja": "あれやこれや。"
                 },
                 {
                     "en": "This but that.",
-                    "ja": ""
+                    "ja": "これだけだ。"
                 }
             ]
         },
@@ -2451,11 +2435,11 @@
             "sentences": [
                 {
                     "en": "I choose this.",
-                    "ja": ""
+                    "ja": "私はこれを選びます。"
                 },
                 {
                     "en": "That is what you choose.",
-                    "ja": ""
+                    "ja": "- それがお望みなら"
                 }
             ]
         },
@@ -2471,7 +2455,7 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "You",
@@ -2485,31 +2469,31 @@
             "sentences": [
                 {
                     "en": "Just the other one.",
-                    "ja": ""
+                    "ja": "こっち"
                 },
                 {
                     "en": "Just the other one.",
-                    "ja": ""
+                    "ja": "こっち"
                 },
                 {
                     "en": "I choose this.",
-                    "ja": ""
+                    "ja": "私はこれを選びます。"
                 },
                 {
                     "en": "I choose this.",
-                    "ja": ""
+                    "ja": "私はこれを選びます。"
                 },
                 {
                     "en": "Just this one.",
-                    "ja": ""
+                    "ja": "ここだけ"
                 },
                 {
                     "en": "Just this one.",
-                    "ja": ""
+                    "ja": "ここだけ"
                 },
                 {
                     "en": "That is what you choose.",
-                    "ja": ""
+                    "ja": "- それがお望みなら"
                 }
             ]
         }
@@ -2527,7 +2511,7 @@
                 },
                 {
                     "en": "Arrive",
-                    "ja": "着く"
+                    "ja": "来る"
                 },
                 {
                     "en": "Arrive",
@@ -2535,7 +2519,7 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Here",
@@ -2549,11 +2533,11 @@
             "sentences": [
                 {
                     "en": "Already arrived.",
-                    "ja": ""
+                    "ja": "すでに到着しています。"
                 },
                 {
                     "en": "Here.",
-                    "ja": ""
+                    "ja": "今すぐにだ。"
                 }
             ]
         },
@@ -2569,17 +2553,17 @@
                 },
                 {
                     "en": "Will",
-                    "ja": ""
+                    "ja": "意思"
                 }
             ],
             "sentences": [
                 {
                     "en": "I will go.",
-                    "ja": ""
+                    "ja": "私が行きます。"
                 },
                 {
                     "en": "I have arrived.",
-                    "ja": ""
+                    "ja": "tsukimashita"
                 }
             ]
         },
@@ -2595,7 +2579,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "Want",
@@ -2603,41 +2587,41 @@
                 },
                 {
                     "en": "Going to",
-                    "ja": ""
+                    "ja": "欲しい"
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Pointing",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "here",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "this",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 }
             ],
             "sentences": [
                 {
                     "en": "Heading out.",
-                    "ja": ""
+                    "ja": "- もう行く？"
                 },
                 {
                     "en": "I will go.",
-                    "ja": ""
+                    "ja": "私が行きます。"
                 },
                 {
                     "en": "I have arrived.",
-                    "ja": ""
+                    "ja": "tsukimashita"
                 },
                 {
                     "en": "Arrived.",
-                    "ja": ""
+                    "ja": "もう着いた"
                 }
             ]
         }
@@ -2667,7 +2651,7 @@
                 },
                 {
                     "en": "Bedroom",
-                    "ja": ""
+                    "ja": "部屋"
                 },
                 {
                     "en": "Kitchen",
@@ -2679,11 +2663,11 @@
                 },
                 {
                     "en": "Shop",
-                    "ja": ""
+                    "ja": "ショップ"
                 },
                 {
                     "en": "Store",
-                    "ja": ""
+                    "ja": "ショップ"
                 },
                 {
                     "en": "School",
@@ -2695,15 +2679,15 @@
                 },
                 {
                     "en": "At",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "In",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "To",
-                    "ja": ""
+                    "ja": "宛先"
                 },
                 {
                     "en": "Here",
@@ -2717,31 +2701,31 @@
             "sentences": [
                 {
                     "en": "At home.",
-                    "ja": ""
+                    "ja": "家で。"
                 },
                 {
                     "en": "To the toilet.",
-                    "ja": ""
+                    "ja": "トイレでも"
                 },
                 {
                     "en": "In the kitchen.",
-                    "ja": ""
+                    "ja": "- 帰ったよ、ハニー。"
                 },
                 {
                     "en": "In the room.",
-                    "ja": ""
+                    "ja": "Heya no naka ni."
                 },
                 {
                     "en": "At the shop.",
-                    "ja": ""
+                    "ja": "（＃店で）"
                 },
                 {
                     "en": "At school.",
-                    "ja": ""
+                    "ja": "学校で"
                 },
                 {
                     "en": "At the university.",
-                    "ja": ""
+                    "ja": "- ええ 大学の"
                 }
             ]
         },
@@ -2771,7 +2755,7 @@
                 },
                 {
                     "en": "Own",
-                    "ja": ""
+                    "ja": "持っている"
                 },
                 {
                     "en": "Who",
@@ -2779,17 +2763,17 @@
                 },
                 {
                     "en": "Whose",
-                    "ja": ""
+                    "ja": "誰"
                 }
             ],
             "sentences": [
                 {
                     "en": "That is yours.",
-                    "ja": ""
+                    "ja": "パトリック　どうぞ"
                 },
                 {
                     "en": "Whose is this?",
-                    "ja": ""
+                    "ja": "これは誰のものですか。"
                 }
             ]
         },
@@ -2813,21 +2797,21 @@
                 },
                 {
                     "en": "Belong to",
-                    "ja": ""
+                    "ja": "あなたが所属するチーム"
                 }
             ],
             "sentences": [
                 {
                     "en": "This is mine.",
-                    "ja": ""
+                    "ja": "これは 私のものだ"
                 },
                 {
                     "en": "This belongs to me.",
-                    "ja": ""
+                    "ja": "この本は私のものだ。"
                 },
                 {
                     "en": "That belongs to you.",
-                    "ja": ""
+                    "ja": "それはあなたのものです。"
                 }
             ]
         },
@@ -2853,23 +2837,23 @@
             "sentences": [
                 {
                     "en": "This is mine.",
-                    "ja": ""
+                    "ja": "これは 私のものだ"
                 },
                 {
                     "en": "This is mine.",
-                    "ja": ""
+                    "ja": "これは 私のものだ"
                 },
                 {
                     "en": "That’s yours.",
-                    "ja": ""
+                    "ja": "- お前のだ"
                 },
                 {
                     "en": "This belongs to me.",
-                    "ja": ""
+                    "ja": "この本は私のものだ。"
                 },
                 {
                     "en": "That belongs to you.",
-                    "ja": ""
+                    "ja": "それはあなたのものです。"
                 }
             ]
         }
@@ -2879,7 +2863,7 @@
             "words": [
                 {
                     "en": "Zero",
-                    "ja": ""
+                    "ja": "0"
                 },
                 {
                     "en": "One",
@@ -2938,7 +2922,7 @@
             "words": [
                 {
                     "en": "tens",
-                    "ja": ""
+                    "ja": "電気刺激-経皮的"
                 },
                 {
                     "en": "Eleven",
@@ -2994,7 +2978,7 @@
                 },
                 {
                     "en": "One hundred",
-                    "ja": ""
+                    "ja": "100"
                 }
             ],
             "sentences": []
@@ -3033,25 +3017,25 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "Only",
-                    "ja": ""
+                    "ja": "これ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Today.",
-                    "ja": ""
+                    "ja": "今日"
                 },
                 {
                     "en": "Now.",
-                    "ja": ""
+                    "ja": "ここを去れ。"
                 },
                 {
                     "en": "Tomorrow is fine.",
-                    "ja": ""
+                    "ja": "明日は晴れです。"
                 }
             ]
         },
@@ -3069,11 +3053,11 @@
             "words": [
                 {
                     "en": "At",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "In",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "Here",
@@ -3089,7 +3073,7 @@
                 },
                 {
                     "en": "Where",
-                    "ja": "どこ"
+                    "ja": "どれ"
                 },
                 {
                     "en": "Place",
@@ -3099,15 +3083,15 @@
             "sentences": [
                 {
                     "en": "Here.",
-                    "ja": ""
+                    "ja": "今すぐにだ。"
                 },
                 {
                     "en": "There.",
-                    "ja": ""
+                    "ja": "ほうら。"
                 },
                 {
                     "en": "Which place?",
-                    "ja": ""
+                    "ja": "どの場所ですか？"
                 }
             ]
         },
@@ -3125,23 +3109,23 @@
             "words": [
                 {
                     "en": "Time",
-                    "ja": ""
+                    "ja": "時刻"
                 },
                 {
                     "en": "Exist",
-                    "ja": ""
+                    "ja": "存在します"
                 },
                 {
                     "en": "There is",
-                    "ja": ""
+                    "ja": "存在します"
                 },
                 {
                     "en": "There is not",
-                    "ja": ""
+                    "ja": "しかし、現実的に見てその利点はありません。"
                 },
                 {
                     "en": "None",
-                    "ja": ""
+                    "ja": "しかし、現実的に見てその利点はありません。"
                 },
                 {
                     "en": "Now",
@@ -3159,19 +3143,19 @@
             "sentences": [
                 {
                     "en": "It's here.",
-                    "ja": ""
+                    "ja": "え　それで　わざわざ？"
                 },
                 {
                     "en": "There is none.",
-                    "ja": ""
+                    "ja": "そんなものは無い"
                 },
                 {
                     "en": "There is time.",
-                    "ja": ""
+                    "ja": "And there is time."
                 },
                 {
                     "en": "Not right now.",
-                    "ja": ""
+                    "ja": "後で設定します"
                 }
             ]
         },
@@ -3183,17 +3167,17 @@
             "words": [
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 }
             ],
             "sentences": [
                 {
                     "en": "There isn’t any.",
-                    "ja": ""
+                    "ja": "何もありません。"
                 }
             ]
         }
@@ -3207,7 +3191,7 @@
                 },
                 {
                     "en": "Then",
-                    "ja": ""
+                    "ja": "とても"
                 },
                 {
                     "en": "Later",
@@ -3223,37 +3207,37 @@
                 },
                 {
                     "en": "Oh",
-                    "ja": ""
+                    "ja": "あら"
                 },
                 {
                     "en": "Like that",
-                    "ja": ""
+                    "ja": "こうだ"
                 },
                 {
                     "en": "So",
-                    "ja": "とても"
+                    "ja": "こうだ"
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "Only",
-                    "ja": ""
+                    "ja": "これ"
                 }
             ],
             "sentences": [
                 {
                     "en": "So, later.",
-                    "ja": ""
+                    "ja": "じゃあ、後で。"
                 },
                 {
                     "en": "So tomorrow, okay.",
-                    "ja": ""
+                    "ja": "明日、いいですね。"
                 },
                 {
                     "en": "Oh, so that’s how it is.",
-                    "ja": ""
+                    "ja": "その手に乗るか！"
                 }
             ]
         },
@@ -3261,7 +3245,7 @@
             "words": [
                 {
                     "en": "That’s why",
-                    "ja": ""
+                    "ja": "だからやだって！"
                 },
                 {
                     "en": "I",
@@ -3273,41 +3257,41 @@
                 },
                 {
                     "en": "Tell",
-                    "ja": ""
+                    "ja": "遺丘"
                 },
                 {
                     "en": "Say",
-                    "ja": ""
+                    "ja": "遺丘"
                 },
                 {
                     "en": "Since earlier",
-                    "ja": ""
+                    "ja": "以前から"
                 },
                 {
                     "en": "Don’t",
-                    "ja": ""
+                    "ja": "しないでください"
                 },
                 {
                     "en": "Like that",
-                    "ja": ""
+                    "ja": "こうだ"
                 }
             ],
             "sentences": [
                 {
                     "en": "That’s why I told you earlier.",
-                    "ja": ""
+                    "ja": "だからさっき言ったでしょ。"
                 },
                 {
                     "en": "That’s why I told you earlier.",
-                    "ja": ""
+                    "ja": "だからさっき言ったでしょ。"
                 },
                 {
                     "en": "That’s why don’t do that.",
-                    "ja": ""
+                    "ja": "だから、それをしないでください。"
                 },
                 {
                     "en": "That’s why.",
-                    "ja": ""
+                    "ja": "そういうわけ"
                 }
             ]
         },
@@ -3331,7 +3315,7 @@
                 },
                 {
                     "en": "Earlier",
-                    "ja": ""
+                    "ja": "最初"
                 },
                 {
                     "en": "Wait",
@@ -3345,11 +3329,11 @@
             "sentences": [
                 {
                     "en": "So, I’ll go first.",
-                    "ja": ""
+                    "ja": "私が最初に行きます。"
                 },
                 {
                     "en": "So, I’ll wait here.",
-                    "ja": ""
+                    "ja": "待ってるぞ"
                 }
             ]
         }
@@ -3367,11 +3351,11 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "But",
-                    "ja": ""
+                    "ja": "しかし"
                 },
                 {
                     "en": "Later",
@@ -3379,11 +3363,11 @@
                 },
                 {
                     "en": "Even though",
-                    "ja": ""
+                    "ja": "「嫌なの…"
                 },
                 {
                     "en": "But actually",
-                    "ja": ""
+                    "ja": "「嫌なの…"
                 },
                 {
                     "en": "Close",
@@ -3391,29 +3375,29 @@
                 },
                 {
                     "en": "Near",
-                    "ja": "近い"
+                    "ja": "閉める"
                 },
                 {
                     "en": "Tell",
-                    "ja": ""
+                    "ja": "遺丘"
                 },
                 {
                     "en": "Say",
-                    "ja": "言う"
+                    "ja": "遺丘"
                 }
             ],
             "sentences": [
                 {
                     "en": "I want to, but later.",
-                    "ja": ""
+                    "ja": "そうしたいけど、後でね。"
                 },
                 {
                     "en": "I can, but later.",
-                    "ja": ""
+                    "ja": "できますが、後ほど。"
                 },
                 {
                     "en": "Even though it’s close.",
-                    "ja": ""
+                    "ja": "近くにいても。"
                 }
             ]
         },
@@ -3433,25 +3417,25 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
                     "en": "I want to, but I’m tired.",
-                    "ja": ""
+                    "ja": "そうしたいのですが、疲れています。"
                 },
                 {
                     "en": "I want to, but I’m tired.",
-                    "ja": ""
+                    "ja": "そうしたいのですが、疲れています。"
                 },
                 {
                     "en": "But I already told you.",
-                    "ja": ""
+                    "ja": "すでにお話ししました。"
                 }
             ]
         },
@@ -3467,11 +3451,11 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Now",
@@ -3479,17 +3463,17 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 }
             ],
             "sentences": [
                 {
                     "en": "I want to, but I can’t right now.",
-                    "ja": ""
+                    "ja": "そうしたいのですが、今はできません。"
                 },
                 {
                     "en": "But I already told you.",
-                    "ja": ""
+                    "ja": "すでにお話ししました。"
                 }
             ]
         }
@@ -3499,33 +3483,33 @@
             "words": [
                 {
                     "en": "Then",
-                    "ja": ""
+                    "ja": "対応"
                 },
                 {
                     "en": "And then",
-                    "ja": ""
+                    "ja": "対応"
                 },
                 {
                     "en": "After that",
-                    "ja": ""
+                    "ja": "そのあとよ"
                 },
                 {
                     "en": "And then",
-                    "ja": ""
+                    "ja": "そのあとよ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then?",
-                    "ja": ""
+                    "ja": "そして？"
                 },
                 {
                     "en": "And then?",
-                    "ja": ""
+                    "ja": "そのアトは？"
                 },
                 {
                     "en": "Then what?",
-                    "ja": ""
+                    "ja": "そしてどうするの?"
                 }
             ]
         },
@@ -3533,21 +3517,21 @@
             "words": [
                 {
                     "en": "Then",
-                    "ja": ""
+                    "ja": "対応"
                 },
                 {
                     "en": "How",
-                    "ja": ""
+                    "ja": "方法"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then what?",
-                    "ja": ""
+                    "ja": "そしてどうするの?"
                 },
                 {
                     "en": "Then?",
-                    "ja": ""
+                    "ja": "そして？"
                 }
             ]
         },
@@ -3555,7 +3539,7 @@
             "words": [
                 {
                     "en": "Then",
-                    "ja": ""
+                    "ja": "対応"
                 },
                 {
                     "en": "How",
@@ -3563,17 +3547,17 @@
                 },
                 {
                     "en": "After that",
-                    "ja": ""
+                    "ja": "そのあとよ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Then what?",
-                    "ja": ""
+                    "ja": "そしてどうするの?"
                 },
                 {
                     "en": "And then?",
-                    "ja": ""
+                    "ja": "そのアトは？"
                 }
             ]
         }
@@ -3595,7 +3579,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Yes",
@@ -3603,11 +3587,11 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Now",
@@ -3617,19 +3601,19 @@
             "sentences": [
                 {
                     "en": "Maybe later.",
-                    "ja": ""
+                    "ja": "- 後でね"
                 },
                 {
                     "en": "Maybe.",
-                    "ja": ""
+                    "ja": "かもしれない。"
                 },
                 {
                     "en": "Maybe.",
-                    "ja": ""
+                    "ja": "かもしれない。"
                 },
                 {
                     "en": "Maybe not right now.",
-                    "ja": ""
+                    "ja": "今はね"
                 }
             ]
         },
@@ -3637,7 +3621,7 @@
             "words": [
                 {
                     "en": "Probably",
-                    "ja": ""
+                    "ja": "多分"
                 },
                 {
                     "en": "I",
@@ -3649,33 +3633,33 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
                     "en": "I probably can’t.",
-                    "ja": ""
+                    "ja": "できないかもしれない。"
                 },
                 {
                     "en": "I probably can’t.",
-                    "ja": ""
+                    "ja": "できないかもしれない。"
                 },
                 {
                     "en": "Probably already.",
-                    "ja": ""
+                    "ja": "たぶんもう済んでいる。"
                 }
             ]
         },
@@ -3693,7 +3677,7 @@
             "sentences": [
                 {
                     "en": "Maybe I can.",
-                    "ja": ""
+                    "ja": "コーヒーかい？"
                 }
             ]
         }
@@ -3703,15 +3687,15 @@
             "words": [
                 {
                     "en": "Agree",
-                    "ja": ""
+                    "ja": "同意する"
                 },
                 {
                     "en": "Disagree",
-                    "ja": ""
+                    "ja": "そう思わない"
                 },
                 {
                     "en": "But",
-                    "ja": ""
+                    "ja": "しかし"
                 },
                 {
                     "en": "Later",
@@ -3721,15 +3705,15 @@
             "sentences": [
                 {
                     "en": "Agree.",
-                    "ja": ""
+                    "ja": "同意する"
                 },
                 {
                     "en": "Disagree.",
-                    "ja": ""
+                    "ja": "そう思わない"
                 },
                 {
                     "en": "I agree, but later.",
-                    "ja": ""
+                    "ja": "同感ですが、後ほど。"
                 }
             ]
         },
@@ -3745,19 +3729,19 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Disagree",
-                    "ja": ""
+                    "ja": "そう思わない"
                 },
                 {
                     "en": "Yeah.",
-                    "ja": ""
+                    "ja": "間違いない。"
                 }
             ],
             "sentences": [
@@ -3771,7 +3755,7 @@
                 },
                 {
                     "en": "Yeah.",
-                    "ja": ""
+                    "ja": "間違いない。"
                 }
             ]
         },
@@ -3803,11 +3787,11 @@
             "words": [
                 {
                     "en": "According to",
-                    "ja": ""
+                    "ja": "によれば足り"
                 },
                 {
                     "en": "In your opinion",
-                    "ja": ""
+                    "ja": "によれば足り"
                 },
                 {
                     "en": "You",
@@ -3823,17 +3807,17 @@
                 },
                 {
                     "en": "If",
-                    "ja": ""
+                    "ja": "状況"
                 }
             ],
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "ja": ""
+                    "ja": "あなたはどう思いますか？"
                 },
                 {
                     "en": "What do you think?",
-                    "ja": ""
+                    "ja": "あなたはどう思いますか？"
                 }
             ]
         },
@@ -3841,17 +3825,17 @@
             "words": [
                 {
                     "en": "How",
-                    "ja": ""
+                    "ja": "方法"
                 }
             ],
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "ja": ""
+                    "ja": "あなたはどう思いますか？"
                 },
                 {
                     "en": "What do you think?",
-                    "ja": ""
+                    "ja": "あなたはどう思いますか？"
                 }
             ]
         },
@@ -3869,11 +3853,11 @@
             "sentences": [
                 {
                     "en": "What do you think?",
-                    "ja": ""
+                    "ja": "あなたはどう思いますか？"
                 },
                 {
                     "en": "What do you think?",
-                    "ja": ""
+                    "ja": "あなたはどう思いますか？"
                 }
             ]
         }
@@ -3883,11 +3867,11 @@
             "words": [
                 {
                     "en": "A bit",
-                    "ja": ""
+                    "ja": "ああ"
                 },
                 {
                     "en": "Not bad",
-                    "ja": ""
+                    "ja": "ミチコ"
                 },
                 {
                     "en": "Tired",
@@ -3901,15 +3885,15 @@
             "sentences": [
                 {
                     "en": "A bit tired.",
-                    "ja": ""
+                    "ja": "少し疲れました。"
                 },
                 {
                     "en": "Not bad.",
-                    "ja": ""
+                    "ja": "まあまあです。"
                 },
                 {
                     "en": "A bit expensive.",
-                    "ja": ""
+                    "ja": "ちょっと高いですね。"
                 }
             ]
         },
@@ -3917,29 +3901,29 @@
             "words": [
                 {
                     "en": "Like",
-                    "ja": ""
+                    "ja": "いいね"
                 },
                 {
                     "en": "Like that",
-                    "ja": ""
+                    "ja": "こうだ"
                 },
                 {
                     "en": "(softener)",
-                    "ja": ""
+                    "ja": "（柔軟剤）"
                 }
             ],
             "sentences": [
                 {
                     "en": "Like that.",
-                    "ja": ""
+                    "ja": "こうだ"
                 },
                 {
                     "en": "A bit tired.",
-                    "ja": ""
+                    "ja": "少し疲れました。"
                 },
                 {
                     "en": "Not bad.",
-                    "ja": ""
+                    "ja": "まあまあです。"
                 }
             ]
         },
@@ -3955,7 +3939,7 @@
                 },
                 {
                     "en": "Fine",
-                    "ja": "元気"
+                    "ja": "良い"
                 },
                 {
                     "en": "I",
@@ -3973,11 +3957,11 @@
             "sentences": [
                 {
                     "en": "Pretty good.",
-                    "ja": ""
+                    "ja": "(ゆべし)　いいねえ"
                 },
                 {
                     "en": "I’m quite tired.",
-                    "ja": ""
+                    "ja": "私はかなり疲れています。"
                 }
             ]
         }
@@ -3991,7 +3975,7 @@
                 },
                 {
                     "en": "A moment",
-                    "ja": ""
+                    "ja": "お待ちを"
                 },
                 {
                     "en": "Yes",
@@ -4001,11 +3985,11 @@
             "sentences": [
                 {
                     "en": "Wait a moment.",
-                    "ja": ""
+                    "ja": "ちょっと待って。"
                 },
                 {
                     "en": "One sec, okay.",
-                    "ja": ""
+                    "ja": "ちょっと待ってください、わかりました。"
                 }
             ]
         },
@@ -4021,17 +4005,17 @@
                 },
                 {
                     "en": "Earlier",
-                    "ja": ""
+                    "ja": "最初"
                 }
             ],
             "sentences": [
                 {
                     "en": "One sec, okay.",
-                    "ja": ""
+                    "ja": "ちょっと待ってください、わかりました。"
                 },
                 {
                     "en": "Wait a sec.",
-                    "ja": ""
+                    "ja": "ちょっと待て。"
                 },
                 {
                     "en": "Hold on.",
@@ -4051,7 +4035,7 @@
                 },
                 {
                     "en": "Kindly",
-                    "ja": ""
+                    "ja": "お願いします"
                 },
                 {
                     "en": "Excuse me",
@@ -4061,11 +4045,11 @@
             "sentences": [
                 {
                     "en": "Please wait a moment.",
-                    "ja": ""
+                    "ja": "しばらくお待ちください。"
                 },
                 {
                     "en": "Excuse me, wait a moment.",
-                    "ja": ""
+                    "ja": "ちょっと失礼します。"
                 }
             ]
         }
@@ -4075,19 +4059,19 @@
             "words": [
                 {
                     "en": "The meaning",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "I mean",
-                    "ja": ""
+                    "ja": "意味"
                 },
                 {
                     "en": "Like this",
-                    "ja": ""
+                    "ja": "こういう風に"
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "That",
@@ -4097,11 +4081,11 @@
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "ja": ""
+                    "ja": "これは..."
                 },
                 {
                     "en": "I mean, not that.",
-                    "ja": ""
+                    "ja": "あんな大きいのはな"
                 }
             ]
         },
@@ -4109,21 +4093,21 @@
             "words": [
                 {
                     "en": "I mean",
-                    "ja": ""
+                    "ja": "つまり"
                 },
                 {
                     "en": "Like this",
-                    "ja": ""
+                    "ja": "こういう風に"
                 }
             ],
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "ja": ""
+                    "ja": "これは..."
                 },
                 {
                     "en": "I mean, not that.",
-                    "ja": ""
+                    "ja": "あんな大きいのはな"
                 }
             ]
         },
@@ -4145,11 +4129,11 @@
             "sentences": [
                 {
                     "en": "I mean this.",
-                    "ja": ""
+                    "ja": "これは..."
                 },
                 {
                     "en": "I mean, not that.",
-                    "ja": ""
+                    "ja": "あんな大きいのはな"
                 }
             ]
         }
@@ -4163,19 +4147,19 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Repeat",
-                    "ja": ""
+                    "ja": "繰り返し"
                 },
                 {
                     "en": "One more time",
-                    "ja": ""
+                    "ja": "もう一回。"
                 },
                 {
                     "en": "Slowly",
-                    "ja": ""
+                    "ja": "遅く"
                 },
                 {
                     "en": "Yes",
@@ -4185,15 +4169,15 @@
             "sentences": [
                 {
                     "en": "Can you say it again?",
-                    "ja": ""
+                    "ja": "もう一度言ってもらえますか？"
                 },
                 {
                     "en": "One more time.",
-                    "ja": ""
+                    "ja": "もう一回。"
                 },
                 {
                     "en": "Slower, please.",
-                    "ja": ""
+                    "ja": "もっとゆっくりお願いします。"
                 }
             ]
         },
@@ -4207,7 +4191,7 @@
             "sentences": [
                 {
                     "en": "Say it again.",
-                    "ja": ""
+                    "ja": "もう一度言って。"
                 }
             ]
         },
@@ -4227,17 +4211,17 @@
                 },
                 {
                     "en": "Kindly",
-                    "ja": ""
+                    "ja": "お願いします"
                 }
             ],
             "sentences": [
                 {
                     "en": "Can you say it again?",
-                    "ja": ""
+                    "ja": "もう一度言ってもらえますか？"
                 },
                 {
                     "en": "Slower, please.",
-                    "ja": ""
+                    "ja": "もっとゆっくりお願いします。"
                 }
             ]
         }
@@ -4251,7 +4235,7 @@
                 },
                 {
                     "en": "Allowed",
-                    "ja": ""
+                    "ja": "もちろん"
                 },
                 {
                     "en": "Later",
@@ -4259,15 +4243,15 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "Only",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "Another time",
-                    "ja": ""
+                    "ja": "はあ... また今度"
                 },
                 {
                     "en": "Yes",
@@ -4281,19 +4265,19 @@
             "sentences": [
                 {
                     "en": "Sure.",
-                    "ja": ""
+                    "ja": "もちろんできるだろう。"
                 },
                 {
                     "en": "Later.",
-                    "ja": ""
+                    "ja": "元気でな。"
                 },
                 {
                     "en": "Another time, okay.",
-                    "ja": ""
+                    "ja": "ええ　今度ね　いい？"
                 },
                 {
                     "en": "Maybe another time.",
-                    "ja": ""
+                    "ja": "また今度ね"
                 }
             ]
         },
@@ -4301,29 +4285,29 @@
             "words": [
                 {
                     "en": "Not right now",
-                    "ja": ""
+                    "ja": "後で設定します"
                 },
                 {
                     "en": "Later",
-                    "ja": ""
+                    "ja": "後で"
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not right now.",
-                    "ja": ""
+                    "ja": "後で設定します"
                 },
                 {
                     "en": "Later.",
-                    "ja": ""
+                    "ja": "元気でな。"
                 },
                 {
                     "en": "Another time.",
-                    "ja": ""
+                    "ja": "- また今度"
                 }
             ]
         },
@@ -4347,11 +4331,11 @@
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Can",
@@ -4359,7 +4343,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Now",
@@ -4369,7 +4353,7 @@
             "sentences": [
                 {
                     "en": "Sorry, I can’t right now.",
-                    "ja": ""
+                    "ja": "申し訳ありませんが、今はできません。"
                 }
             ]
         }
@@ -4395,21 +4379,21 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 }
             ],
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "ja": ""
+                    "ja": "どこにいる？"
                 },
                 {
                     "en": "Where are you now?",
-                    "ja": ""
+                    "ja": "今どこにいるの？"
                 },
                 {
                     "en": "Where are you?",
-                    "ja": ""
+                    "ja": "どこにいる？"
                 }
             ]
         },
@@ -4417,7 +4401,7 @@
             "words": [
                 {
                     "en": "On my way",
-                    "ja": ""
+                    "ja": "今向かっている"
                 },
                 {
                     "en": "I",
@@ -4429,7 +4413,7 @@
                 },
                 {
                     "en": "At home",
-                    "ja": ""
+                    "ja": "自宅"
                 },
                 {
                     "en": "Yes",
@@ -4439,23 +4423,23 @@
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "ja": ""
+                    "ja": "どこにいる？"
                 },
                 {
                     "en": "On my way.",
-                    "ja": ""
+                    "ja": "- すぐに行きます"
                 },
                 {
                     "en": "On my way.",
-                    "ja": ""
+                    "ja": "- すぐに行きます"
                 },
                 {
                     "en": "I’m at home.",
-                    "ja": ""
+                    "ja": "私は家にいます。"
                 },
                 {
                     "en": "I’m at home.",
-                    "ja": ""
+                    "ja": "私は家にいます。"
                 }
             ]
         },
@@ -4479,21 +4463,21 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "On the way",
-                    "ja": ""
+                    "ja": "途中で"
                 }
             ],
             "sentences": [
                 {
                     "en": "Where are you?",
-                    "ja": ""
+                    "ja": "どこにいる？"
                 },
                 {
                     "en": "I’m on my way.",
-                    "ja": ""
+                    "ja": "すぐに向かう。"
                 }
             ]
         }
@@ -4520,69 +4504,69 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Hurry up",
-                    "ja": ""
+                    "ja": "- よし　急げ"
                 },
                 {
                     "en": "Like this",
-                    "ja": ""
+                    "ja": "こういう風に"
                 },
                 {
                     "en": "Pointing",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "here",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "this",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "Surprise",
-                    "ja": ""
+                    "ja": "サプライズ"
                 },
                 {
                     "en": "how come? tone",
-                    "ja": ""
+                    "ja": "サプライズ"
                 },
                 {
                     "en": "Urging",
-                    "ja": ""
+                    "ja": "促す"
                 },
                 {
                     "en": "come on",
-                    "ja": ""
+                    "ja": "促す"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 },
                 {
                     "en": "Pointing",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "there",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 },
                 {
                     "en": "see?",
-                    "ja": ""
+                    "ja": "指さしてる？"
                 }
             ],
             "sentences": [
                 {
                     "en": "Like this.",
-                    "ja": ""
+                    "ja": "- こうするの。"
                 },
                 {
                     "en": "How come?",
-                    "ja": ""
+                    "ja": "どう し て ?"
                 },
                 {
                     "en": "Hurry up.",
@@ -4608,7 +4592,7 @@
                 },
                 {
                     "en": "Me (Jakarta slang)",
-                    "ja": ""
+                    "ja": "私（ジャカルタのスラング）"
                 },
                 {
                     "en": "It’s okay",
@@ -4624,11 +4608,11 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Not yet",
@@ -4636,19 +4620,19 @@
                 },
                 {
                     "en": "On my way",
-                    "ja": ""
+                    "ja": "今向かっている"
                 },
                 {
                     "en": "Laughing",
-                    "ja": ""
+                    "ja": "笑い"
                 },
                 {
                     "en": "Surprise",
-                    "ja": ""
+                    "ja": "サプライズ"
                 },
                 {
                     "en": "how come? tone",
-                    "ja": ""
+                    "ja": "サプライズ"
                 }
             ],
             "sentences": [
@@ -4658,15 +4642,15 @@
                 },
                 {
                     "en": "Haha.",
-                    "ja": ""
+                    "ja": "あはは。"
                 },
                 {
                     "en": "I’m on my way.",
-                    "ja": ""
+                    "ja": "すぐに向かう。"
                 },
                 {
                     "en": "I’m on my way.",
-                    "ja": ""
+                    "ja": "すぐに向かう。"
                 }
             ]
         },
@@ -4680,7 +4664,7 @@
             "words": [
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "What",
@@ -4688,7 +4672,7 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Not yet",
@@ -4702,11 +4686,11 @@
             "sentences": [
                 {
                     "en": "What are you doing?",
-                    "ja": ""
+                    "ja": "何をしているの？"
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "ja": ""
+                    "ja": "ごはん食べたの？"
                 }
             ]
         },
@@ -4714,21 +4698,21 @@
             "words": [
                 {
                     "en": "You (Jakarta slang)",
-                    "ja": ""
+                    "ja": "あなた（ジャカルタのスラング）"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "ja": ""
+                    "ja": "あなた（ジャカルタのスラング）"
                 },
                 {
                     "en": "Not yet",
-                    "ja": ""
+                    "ja": "まだ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Have you eaten yet?",
-                    "ja": ""
+                    "ja": "ごはん食べたの？"
                 }
             ]
         },
@@ -4736,7 +4720,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ja": ""
+                    "ja": "かどうか"
                 },
                 {
                     "en": "You",
@@ -4748,13 +4732,13 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 }
             ],
             "sentences": [
                 {
                     "en": "Have you eaten yet?",
-                    "ja": ""
+                    "ja": "ごはん食べたの？"
                 }
             ]
         }
@@ -4763,12 +4747,12 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
                 },
                 {
                     "en": "Hang out",
-                    "ja": ""
+                    "ja": "座らない？"
                 },
                 {
                     "en": "What time",
@@ -4780,21 +4764,21 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
-                    "ja": ""
+                    "en": "Let us hang out.",
+                    "ja": "ぶらぶらしましょう。"
                 },
                 {
                     "en": "What time?",
-                    "ja": ""
+                    "ja": "何時にきましょうか。"
                 },
                 {
                     "en": "Later.",
-                    "ja": ""
+                    "ja": "元気でな。"
                 }
             ]
         },
@@ -4802,21 +4786,21 @@
             "words": [
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out.",
-                    "ja": ""
+                    "en": "Let us hang out.",
+                    "ja": "ぶらぶらしましょう。"
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
                 },
                 {
                     "en": "We",
@@ -4833,8 +4817,8 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s meet.",
-                    "ja": ""
+                    "en": "Let us meet.",
+                    "ja": "お会いしましょう"
                 }
             ]
         }
@@ -4844,65 +4828,65 @@
             "words": [
                 {
                     "en": "Fun",
-                    "ja": ""
+                    "ja": "楽しい"
                 },
                 {
                     "en": "Exciting",
-                    "ja": ""
+                    "ja": "楽しい"
                 },
                 {
                     "en": "Bored",
-                    "ja": ""
+                    "ja": "退屈な感じ"
                 },
                 {
                     "en": "Pitiful",
-                    "ja": ""
+                    "ja": "かわいそうに..."
                 },
                 {
                     "en": "Poor thing",
-                    "ja": ""
+                    "ja": "かわいそうに..."
                 },
                 {
                     "en": "Oh no",
-                    "ja": ""
+                    "ja": "あぁ、いや…"
                 },
                 {
                     "en": "Wow",
-                    "ja": ""
+                    "ja": "あぁ、いや…"
                 },
                 {
                     "en": "Oh dear",
-                    "ja": ""
+                    "ja": "「あらあら」"
                 },
                 {
                     "en": "Oh my",
-                    "ja": ""
+                    "ja": "あぁ君からそんな..."
                 }
             ],
             "sentences": [
                 {
                     "en": "So fun.",
-                    "ja": ""
+                    "ja": "楽しかったですね。"
                 },
                 {
                     "en": "So bored.",
-                    "ja": ""
+                    "ja": "ああ　退屈..."
                 },
                 {
                     "en": "Poor thing.",
-                    "ja": ""
+                    "ja": "- かわいそうに"
                 },
                 {
                     "en": "Oh no!",
-                    "ja": ""
+                    "ja": "やめて！"
                 },
                 {
                     "en": "Oh dear.",
-                    "ja": ""
+                    "ja": "そんな！"
                 },
                 {
                     "en": "Oh my.",
-                    "ja": ""
+                    "ja": "なんてこった。"
                 }
             ]
         },
@@ -4918,7 +4902,7 @@
                 },
                 {
                     "en": "Nervous",
-                    "ja": ""
+                    "ja": "神経質"
                 },
                 {
                     "en": "Miss",
@@ -4926,7 +4910,7 @@
                 },
                 {
                     "en": "Annoyed",
-                    "ja": ""
+                    "ja": "腹が立つ"
                 },
                 {
                     "en": "Very",
@@ -4934,49 +4918,49 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 },
                 {
                     "en": "How",
-                    "ja": ""
+                    "ja": "方法"
                 }
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
-                    "ja": ""
+                    "en": "I am bored.",
+                    "ja": "退屈しちゃったよ。"
                 },
                 {
-                    "en": "I'm nervous.",
-                    "ja": ""
+                    "en": "I am nervous.",
+                    "ja": "緊張する"
                 },
                 {
-                    "en": "I'm nervous.",
-                    "ja": ""
-                },
-                {
-                    "en": "I miss you.",
-                    "ja": ""
+                    "en": "I am nervous.",
+                    "ja": "緊張する"
                 },
                 {
                     "en": "I miss you.",
-                    "ja": ""
+                    "ja": "日本のみんなに早く会いたい。"
                 },
                 {
-                    "en": "I'm annoyed.",
-                    "ja": ""
+                    "en": "I miss you.",
+                    "ja": "日本のみんなに早く会いたい。"
                 },
                 {
-                    "en": "I'm annoyed.",
-                    "ja": ""
+                    "en": "I am annoyed.",
+                    "ja": "イライラしています。"
+                },
+                {
+                    "en": "I am annoyed.",
+                    "ja": "イライラしています。"
                 },
                 {
                     "en": "How about it?",
-                    "ja": ""
+                    "ja": "どう？"
                 }
             ]
         },
@@ -4992,7 +4976,7 @@
                 },
                 {
                     "en": "Nervous",
-                    "ja": ""
+                    "ja": "神経質"
                 },
                 {
                     "en": "Miss",
@@ -5001,16 +4985,16 @@
             ],
             "sentences": [
                 {
-                    "en": "I'm bored.",
-                    "ja": ""
+                    "en": "I am bored.",
+                    "ja": "退屈しちゃったよ。"
                 },
                 {
-                    "en": "I'm nervous.",
-                    "ja": ""
+                    "en": "I am nervous.",
+                    "ja": "緊張する"
                 },
                 {
                     "en": "I miss you.",
-                    "ja": ""
+                    "ja": "日本のみんなに早く会いたい。"
                 }
             ]
         }
@@ -5020,29 +5004,29 @@
             "words": [
                 {
                     "en": "Know",
-                    "ja": ""
+                    "ja": "知っている"
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Hear",
-                    "ja": ""
+                    "ja": "聞く"
                 }
             ],
             "sentences": [
                 {
                     "en": "You know what?",
-                    "ja": ""
+                    "ja": "聞いてよ。"
                 },
                 {
                     "en": "Did you hear?",
-                    "ja": ""
+                    "ja": "- ええ　聞いてる？"
                 },
                 {
                     "en": "Hey, you know what?",
-                    "ja": ""
+                    "ja": "ねえねえ、知ってる。"
                 }
             ]
         },
@@ -5050,29 +5034,29 @@
             "words": [
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Hey",
-                    "ja": ""
+                    "ja": "kitakasa mikono"
                 }
             ],
             "sentences": [
                 {
                     "en": "You know what?",
-                    "ja": ""
+                    "ja": "聞いてよ。"
                 },
                 {
                     "en": "You know what?",
-                    "ja": ""
+                    "ja": "聞いてよ。"
                 },
                 {
                     "en": "Did you hear?",
-                    "ja": ""
+                    "ja": "- ええ　聞いてる？"
                 },
                 {
                     "en": "Hey, you know what?",
-                    "ja": ""
+                    "ja": "ねえねえ、知ってる。"
                 }
             ]
         },
@@ -5086,15 +5070,15 @@
             "words": [
                 {
                     "en": "Cool",
-                    "ja": ""
+                    "ja": "かっこいい"
                 },
                 {
                     "en": "Awesome",
-                    "ja": ""
+                    "ja": "かっこいい"
                 },
                 {
                     "en": "Awesome",
-                    "ja": ""
+                    "ja": "素晴らしい"
                 },
                 {
                     "en": "Good",
@@ -5102,7 +5086,7 @@
                 },
                 {
                     "en": "Nice",
-                    "ja": ""
+                    "ja": "良い"
                 },
                 {
                     "en": "Very",
@@ -5110,15 +5094,15 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 },
                 {
                     "en": "Fun",
-                    "ja": ""
+                    "ja": "楽しい"
                 },
                 {
                     "en": "Cool",
-                    "ja": ""
+                    "ja": "楽しい"
                 },
                 {
                     "en": "Very",
@@ -5126,25 +5110,25 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 }
             ],
             "sentences": [
                 {
                     "en": "So cool.",
-                    "ja": ""
+                    "ja": "完璧よ"
                 },
                 {
                     "en": "Awesome!",
-                    "ja": ""
+                    "ja": "とても元気だよ！"
                 },
                 {
                     "en": "Really good.",
-                    "ja": ""
+                    "ja": "とっても良いわ"
                 },
                 {
                     "en": "So fun.",
-                    "ja": ""
+                    "ja": "楽しかったですね。"
                 }
             ]
         },
@@ -5153,15 +5137,15 @@
             "sentences": [
                 {
                     "en": "So cool.",
-                    "ja": ""
+                    "ja": "完璧よ"
                 },
                 {
                     "en": "Really awesome.",
-                    "ja": ""
+                    "ja": "やった"
                 },
                 {
                     "en": "Really awesome.",
-                    "ja": ""
+                    "ja": "やった"
                 }
             ]
         },
@@ -5170,7 +5154,7 @@
             "sentences": [
                 {
                     "en": "Very good.",
-                    "ja": ""
+                    "ja": "- いいぞ"
                 }
             ]
         }
@@ -5184,7 +5168,7 @@
                 },
                 {
                     "en": "Rarely",
-                    "ja": ""
+                    "ja": "稀に"
                 },
                 {
                     "en": "Sometimes",
@@ -5200,25 +5184,25 @@
                 },
                 {
                     "en": "Like that",
-                    "ja": ""
+                    "ja": "こうだ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Often.",
-                    "ja": ""
+                    "ja": "［君が私を捕まえるまで・・・］"
                 },
                 {
                     "en": "Rarely.",
-                    "ja": ""
+                    "ja": "稀に"
                 },
                 {
                     "en": "Sometimes.",
-                    "ja": ""
+                    "ja": "免除される場合もあります。"
                 },
                 {
                     "en": "Usually like that.",
-                    "ja": ""
+                    "ja": "通常はそうです。"
                 }
             ]
         },
@@ -5234,7 +5218,7 @@
                 },
                 {
                     "en": "To",
-                    "ja": ""
+                    "ja": "宛先"
                 },
                 {
                     "en": "Here",
@@ -5246,17 +5230,17 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 }
             ],
             "sentences": [
                 {
                     "en": "I often come here.",
-                    "ja": ""
+                    "ja": "よくここに来ます。"
                 },
                 {
                     "en": "Really rarely.",
-                    "ja": ""
+                    "ja": "めったにありません。"
                 }
             ]
         },
@@ -5272,7 +5256,7 @@
                 },
                 {
                     "en": "To",
-                    "ja": ""
+                    "ja": "宛先"
                 },
                 {
                     "en": "Here",
@@ -5282,7 +5266,7 @@
             "sentences": [
                 {
                     "en": "I often come here.",
-                    "ja": ""
+                    "ja": "よくここに来ます。"
                 }
             ]
         }
@@ -5292,7 +5276,7 @@
             "words": [
                 {
                     "en": "Traffic jam",
-                    "ja": ""
+                    "ja": "渋滞"
                 },
                 {
                     "en": "Hot",
@@ -5304,7 +5288,7 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 },
                 {
                     "en": "Very",
@@ -5312,17 +5296,17 @@
                 },
                 {
                     "en": "Really",
-                    "ja": "本当に"
+                    "ja": "とても"
                 }
             ],
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "ja": ""
+                    "ja": "渋滞がひどい。"
                 },
                 {
                     "en": "So hot.",
-                    "ja": ""
+                    "ja": "とてもホットだった"
                 }
             ]
         },
@@ -5340,19 +5324,19 @@
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "ja": ""
+                    "ja": "渋滞がひどい。"
                 },
                 {
                     "en": "So hot.",
-                    "ja": ""
+                    "ja": "とてもホットだった"
                 },
                 {
                     "en": "Tired from work.",
-                    "ja": ""
+                    "ja": "仕事に疲れている。"
                 },
                 {
                     "en": "Tired from work.",
-                    "ja": ""
+                    "ja": "仕事に疲れている。"
                 }
             ]
         },
@@ -5370,11 +5354,11 @@
             "sentences": [
                 {
                     "en": "Traffic is terrible.",
-                    "ja": ""
+                    "ja": "渋滞がひどい。"
                 },
                 {
                     "en": "Tired from work.",
-                    "ja": ""
+                    "ja": "仕事に疲れている。"
                 }
             ]
         }
@@ -5384,25 +5368,25 @@
             "words": [
                 {
                     "en": "Oh right",
-                    "ja": ""
+                    "ja": "オッケー。"
                 },
                 {
                     "en": "By the way",
-                    "ja": ""
+                    "ja": "オッケー。"
                 },
                 {
                     "en": "By the way",
-                    "ja": ""
+                    "ja": "あのさ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Oh right.",
-                    "ja": ""
+                    "ja": "オッケー。"
                 },
                 {
                     "en": "By the way.",
-                    "ja": ""
+                    "ja": "ところで"
                 }
             ]
         },
@@ -5410,17 +5394,17 @@
             "words": [
                 {
                     "en": "Hey",
-                    "ja": ""
+                    "ja": "kitakasa mikono"
                 }
             ],
             "sentences": [
                 {
                     "en": "Hey by the way.",
-                    "ja": ""
+                    "ja": "ところで"
                 },
                 {
                     "en": "Hey by the way.",
-                    "ja": ""
+                    "ja": "ところで"
                 }
             ]
         },
@@ -5434,11 +5418,11 @@
             "words": [
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Also",
@@ -5446,11 +5430,11 @@
                 },
                 {
                     "en": "Either",
-                    "ja": "も"
+                    "ja": "また"
                 },
                 {
                     "en": "How come",
-                    "ja": ""
+                    "ja": "どうしてだろう？"
                 },
                 {
                     "en": "Can",
@@ -5458,7 +5442,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Really",
@@ -5468,15 +5452,15 @@
             "sentences": [
                 {
                     "en": "Oh not really.",
-                    "ja": ""
+                    "ja": "そうは思えない。"
                 },
                 {
                     "en": "How come?",
-                    "ja": ""
+                    "ja": "どう し て ?"
                 },
                 {
                     "en": "Really?",
-                    "ja": ""
+                    "ja": "そうなの？"
                 }
             ]
         },
@@ -5484,11 +5468,11 @@
             "words": [
                 {
                     "en": "Hey",
-                    "ja": ""
+                    "ja": "kitakasa mikono"
                 },
                 {
                     "en": "Oh",
-                    "ja": ""
+                    "ja": "あら"
                 }
             ],
             "sentences": []
@@ -5497,17 +5481,17 @@
             "words": [
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 }
             ],
             "sentences": [
                 {
                     "en": "Not really.",
-                    "ja": ""
+                    "ja": "そうでもない。"
                 }
             ]
         }
@@ -5521,15 +5505,15 @@
                 },
                 {
                     "en": "As",
-                    "ja": ""
+                    "ja": "好き"
                 },
                 {
                     "en": "Earlier",
-                    "ja": ""
+                    "ja": "先の"
                 },
                 {
                     "en": "Before",
-                    "ja": "前"
+                    "ja": "先の"
                 },
                 {
                     "en": "Like",
@@ -5537,7 +5521,7 @@
                 },
                 {
                     "en": "As",
-                    "ja": ""
+                    "ja": "好き"
                 },
                 {
                     "en": "I mean",
@@ -5545,11 +5529,11 @@
                 },
                 {
                     "en": "As in",
-                    "ja": ""
+                    "ja": "つまり"
                 },
                 {
                     "en": "As (a)",
-                    "ja": ""
+                    "ja": "製品イノベーターとして、"
                 },
                 {
                     "en": "Friend",
@@ -5557,25 +5541,25 @@
                 },
                 {
                     "en": "How",
-                    "ja": ""
+                    "ja": "方法"
                 }
             ],
             "sentences": [
                 {
                     "en": "As before.",
-                    "ja": ""
+                    "ja": "前と同じだ"
                 },
                 {
                     "en": "Like before.",
-                    "ja": ""
+                    "ja": "前みたいに。"
                 },
                 {
                     "en": "What do you mean?",
-                    "ja": ""
+                    "ja": "どういう意味だ？"
                 },
                 {
                     "en": "As a friend.",
-                    "ja": ""
+                    "ja": "友達として"
                 }
             ]
         },
@@ -5583,7 +5567,7 @@
             "words": [
                 {
                     "en": "Seems like",
-                    "ja": ""
+                    "ja": "のように思える"
                 },
                 {
                     "en": "That",
@@ -5591,7 +5575,7 @@
                 },
                 {
                     "en": "Which",
-                    "ja": "どれ"
+                    "ja": "あれ"
                 },
                 {
                     "en": "You",
@@ -5607,25 +5591,25 @@
                 },
                 {
                     "en": "Like that",
-                    "ja": ""
+                    "ja": "こうだ"
                 }
             ],
             "sentences": [
                 {
                     "en": "As you said.",
-                    "ja": ""
+                    "ja": "おっしゃるとおりです。"
                 },
                 {
                     "en": "As you said.",
-                    "ja": ""
+                    "ja": "おっしゃるとおりです。"
                 },
                 {
                     "en": "Seems like that.",
-                    "ja": ""
+                    "ja": "そうみたいですね。"
                 },
                 {
                     "en": "Seems like that.",
-                    "ja": ""
+                    "ja": "そうみたいですね。"
                 }
             ]
         },
@@ -5637,7 +5621,7 @@
                 },
                 {
                     "en": "Which",
-                    "ja": "どれ"
+                    "ja": "あれ"
                 },
                 {
                     "en": "You",
@@ -5659,11 +5643,11 @@
             "sentences": [
                 {
                     "en": "As you said.",
-                    "ja": ""
+                    "ja": "おっしゃるとおりです。"
                 },
                 {
                     "en": "What do you mean?",
-                    "ja": ""
+                    "ja": "どういう意味だ？"
                 }
             ]
         }
@@ -5689,31 +5673,31 @@
                 },
                 {
                     "en": "Older sibling",
-                    "ja": ""
+                    "ja": "年上の兄弟姉妹"
                 },
                 {
                     "en": "Older sibling",
-                    "ja": ""
+                    "ja": "年上の兄弟姉妹"
                 },
                 {
                     "en": "Younger sibling",
-                    "ja": ""
+                    "ja": "弟"
                 },
                 {
                     "en": "Younger sibling",
-                    "ja": ""
+                    "ja": "弟"
                 },
                 {
                     "en": "Sibling",
-                    "ja": ""
+                    "ja": "兄妹"
                 },
                 {
                     "en": "Relative",
-                    "ja": ""
+                    "ja": "兄妹"
                 },
                 {
                     "en": "Know (someone)",
-                    "ja": ""
+                    "ja": "（誰か）を知る"
                 },
                 {
                     "en": "Close",
@@ -5729,33 +5713,33 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "新しい"
                 },
                 {
                     "en": "Long time",
-                    "ja": ""
+                    "ja": "- おひさ"
                 }
             ],
             "sentences": [
                 {
                     "en": "Family.",
-                    "ja": ""
+                    "ja": "家族"
                 },
                 {
                     "en": "Parents.",
-                    "ja": ""
+                    "ja": "保護者"
                 },
                 {
                     "en": "Close friend.",
-                    "ja": ""
+                    "ja": "親友だ"
                 },
                 {
                     "en": "Just met.",
-                    "ja": ""
+                    "ja": "会ったばかりだ。"
                 },
                 {
                     "en": "Known each other a long time.",
-                    "ja": ""
+                    "ja": "昔からお互いをよく知ってる"
                 }
             ]
         },
@@ -5775,7 +5759,7 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "We",
@@ -5787,37 +5771,37 @@
                 },
                 {
                     "en": "She",
-                    "ja": "彼女"
+                    "ja": "彼"
                 }
             ],
             "sentences": [
                 {
                     "en": "My family.",
-                    "ja": ""
+                    "ja": "「家族です」"
                 },
                 {
                     "en": "My parents.",
-                    "ja": ""
+                    "ja": "僕の両親"
                 },
                 {
                     "en": "They're my friend.",
-                    "ja": ""
+                    "ja": "彼らは私の友達です。"
                 },
                 {
                     "en": "We just met.",
-                    "ja": ""
+                    "ja": "今、会ったばかりよ。"
                 },
                 {
                     "en": "We've known each other a long time.",
-                    "ja": ""
+                    "ja": "昔からお互いをよく知ってる"
                 },
                 {
                     "en": "I have an older sibling.",
-                    "ja": ""
+                    "ja": "私には兄がいます。"
                 },
                 {
                     "en": "I have an older sibling.",
-                    "ja": ""
+                    "ja": "私には兄がいます。"
                 }
             ]
         },
@@ -5833,31 +5817,31 @@
                 },
                 {
                     "en": "I",
-                    "ja": ""
+                    "ja": "x"
                 },
                 {
                     "en": "Mum",
-                    "ja": ""
+                    "ja": "母親"
                 },
                 {
                     "en": "Close",
-                    "ja": ""
+                    "ja": "閉じる"
                 },
                 {
                     "en": "Friend",
-                    "ja": ""
+                    "ja": "友達"
                 },
                 {
                     "en": "Be friends",
-                    "ja": ""
+                    "ja": "友達になる"
                 },
                 {
                     "en": "Get to know each other",
-                    "ja": ""
+                    "ja": "お互いを知る事"
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Love",
@@ -5865,11 +5849,11 @@
                 },
                 {
                     "en": "Care for",
-                    "ja": ""
+                    "ja": "愛する"
                 },
                 {
                     "en": "Miss (someone)",
-                    "ja": ""
+                    "ja": "ミス（誰か）"
                 },
                 {
                     "en": "You",
@@ -5887,35 +5871,35 @@
             "sentences": [
                 {
                     "en": "My family.",
-                    "ja": ""
+                    "ja": "「家族です」"
                 },
                 {
                     "en": "My parents.",
-                    "ja": ""
+                    "ja": "僕の両親"
                 },
                 {
                     "en": "They're a close friend of mine.",
-                    "ja": ""
+                    "ja": "彼らは私の親友です。"
                 },
                 {
                     "en": "We're just friends.",
-                    "ja": ""
+                    "ja": "-- ただの友達だからな"
                 },
                 {
                     "en": "Just met.",
-                    "ja": ""
+                    "ja": "会ったばかりだ。"
                 },
                 {
                     "en": "Known each other for ages.",
-                    "ja": ""
+                    "ja": "マリさんとは 古い付き合いなんだ"
                 },
                 {
                     "en": "I care about you.",
-                    "ja": ""
+                    "ja": "そんなの関係ない"
                 },
                 {
                     "en": "Miss you.",
-                    "ja": ""
+                    "ja": "さみしいよ"
                 }
             ]
         }
@@ -5929,7 +5913,7 @@
                 },
                 {
                     "en": "Dear",
-                    "ja": ""
+                    "ja": "愛する"
                 },
                 {
                     "en": "Beautiful",
@@ -5937,11 +5921,11 @@
                 },
                 {
                     "en": "Handsome",
-                    "ja": ""
+                    "ja": "ハンサム"
                 },
                 {
                     "en": "Miss (someone)",
-                    "ja": ""
+                    "ja": "ミス（誰か）"
                 },
                 {
                     "en": "Good",
@@ -5969,15 +5953,15 @@
                 },
                 {
                     "en": "Road",
-                    "ja": ""
+                    "ja": "道路"
                 },
                 {
                     "en": "Way",
-                    "ja": ""
+                    "ja": "道路"
                 },
                 {
                     "en": "Don't",
-                    "ja": ""
+                    "ja": "使わない"
                 },
                 {
                     "en": "Forget",
@@ -5985,15 +5969,15 @@
                 },
                 {
                     "en": "At",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "In",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "On",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "Rest",
@@ -6017,7 +6001,7 @@
                 },
                 {
                     "en": "Where to",
-                    "ja": ""
+                    "ja": "どこへ？"
                 },
                 {
                     "en": "Can",
@@ -6027,59 +6011,59 @@
             "sentences": [
                 {
                     "en": "Beautiful.",
-                    "ja": ""
+                    "ja": "美しいわ。"
                 },
                 {
                     "en": "Handsome.",
-                    "ja": ""
+                    "ja": "凛々しいわね"
                 },
                 {
                     "en": "Miss you.",
-                    "ja": ""
+                    "ja": "さみしいよ"
                 },
                 {
                     "en": "Good morning.",
-                    "ja": ""
+                    "ja": "おはようございます。"
                 },
                 {
                     "en": "Good evening.",
-                    "ja": ""
+                    "ja": "いらっしゃいませ。"
                 },
                 {
                     "en": "Good night.",
-                    "ja": ""
+                    "ja": "おやすみなさい。"
                 },
                 {
                     "en": "Don't forget to eat.",
-                    "ja": ""
+                    "ja": "食べることを忘れないでください。"
                 },
                 {
                     "en": "Be careful on the road.",
-                    "ja": ""
+                    "ja": "運転中は気をつけてください。"
                 },
                 {
                     "en": "Rest, okay?",
-                    "ja": ""
+                    "ja": "休んでくれ、いいか？"
                 },
                 {
                     "en": "Sleep first, okay?",
-                    "ja": ""
+                    "ja": "まずは寝るんだ、いいか？"
                 },
                 {
                     "en": "See you later?",
-                    "ja": ""
+                    "ja": "また後で。"
                 },
                 {
                     "en": "See you tomorrow.",
-                    "ja": ""
+                    "ja": "それじゃまた明日。"
                 },
                 {
                     "en": "Where are you going?",
-                    "ja": ""
+                    "ja": "どちらへ行きますか？"
                 },
                 {
                     "en": "Can you tomorrow?",
-                    "ja": ""
+                    "ja": "明日できますか？"
                 }
             ]
         },
@@ -6125,7 +6109,7 @@
             "sentences": [
                 {
                     "en": "I care about you.",
-                    "ja": ""
+                    "ja": "そんなの関係ない"
                 },
                 {
                     "en": "I love you.",
@@ -6133,19 +6117,19 @@
                 },
                 {
                     "en": "You're beautiful.",
-                    "ja": ""
+                    "ja": "- あげるわ"
                 },
                 {
                     "en": "You're handsome.",
-                    "ja": ""
+                    "ja": "-ハンサム野朗だ!"
                 },
                 {
                     "en": "I miss you.",
-                    "ja": ""
+                    "ja": "日本のみんなに早く会いたい。"
                 },
                 {
                     "en": "I miss you.",
-                    "ja": ""
+                    "ja": "日本のみんなに早く会いたい。"
                 },
                 {
                     "en": "Nice to meet you.",
@@ -6153,11 +6137,11 @@
                 },
                 {
                     "en": "Don't forget to eat, okay?",
-                    "ja": ""
+                    "ja": "食べるのを忘れないでね？"
                 },
                 {
-                    "en": "Let's meet tomorrow, okay?",
-                    "ja": ""
+                    "en": "Let us meet tomorrow, okay?",
+                    "ja": "明日会いましょう、いいですか？"
                 }
             ]
         },
@@ -6173,7 +6157,7 @@
                 },
                 {
                     "en": "I",
-                    "ja": ""
+                    "ja": "x"
                 },
                 {
                     "en": "You",
@@ -6185,15 +6169,15 @@
                 },
                 {
                     "en": "You",
-                    "ja": ""
+                    "ja": "あなたは"
                 },
                 {
                     "en": "My love",
-                    "ja": ""
+                    "ja": "マイ・ラヴ"
                 },
                 {
                     "en": "My dear",
-                    "ja": ""
+                    "ja": "マイ・ラヴ"
                 },
                 {
                     "en": "Love",
@@ -6201,7 +6185,7 @@
                 },
                 {
                     "en": "Babe",
-                    "ja": ""
+                    "ja": "ベイブ"
                 },
                 {
                     "en": "Long for",
@@ -6213,15 +6197,15 @@
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Doing",
-                    "ja": ""
+                    "ja": "進行中"
                 },
                 {
                     "en": "Right now",
-                    "ja": "今すぐ"
+                    "ja": "進行中"
                 },
                 {
                     "en": "What",
@@ -6229,11 +6213,11 @@
                 },
                 {
                     "en": "Want",
-                    "ja": ""
+                    "ja": "ワント"
                 },
                 {
                     "en": "Happy",
-                    "ja": ""
+                    "ja": "幸せ"
                 },
                 {
                     "en": "Very",
@@ -6245,15 +6229,15 @@
                 },
                 {
                     "en": "With",
-                    "ja": ""
+                    "ja": "あり"
                 },
                 {
                     "en": "Pick up",
-                    "ja": ""
+                    "ja": "納車日"
                 },
                 {
                     "en": "Chat",
-                    "ja": ""
+                    "ja": "チャット"
                 },
                 {
                     "en": "Call",
@@ -6261,7 +6245,7 @@
                 },
                 {
                     "en": "Waiting for",
-                    "ja": ""
+                    "ja": "Wi-Fi に再接続しています"
                 },
                 {
                     "en": "Okay",
@@ -6269,7 +6253,7 @@
                 },
                 {
                     "en": "Yeah",
-                    "ja": ""
+                    "ja": "わかりました"
                 },
                 {
                     "en": "First",
@@ -6279,11 +6263,11 @@
             "sentences": [
                 {
                     "en": "I care about you.",
-                    "ja": ""
+                    "ja": "そんなの関係ない"
                 },
                 {
                     "en": "I care about you.",
-                    "ja": ""
+                    "ja": "そんなの関係ない"
                 },
                 {
                     "en": "I love you.",
@@ -6291,91 +6275,91 @@
                 },
                 {
                     "en": "Love you.",
-                    "ja": ""
+                    "ja": "- 大好き"
                 },
                 {
                     "en": "My love.",
-                    "ja": ""
+                    "ja": "よろしく"
                 },
                 {
                     "en": "So beautiful.",
-                    "ja": ""
+                    "ja": "すごく綺麗"
                 },
                 {
                     "en": "So handsome.",
-                    "ja": ""
+                    "ja": "とてもハンサム。"
                 },
                 {
                     "en": "Miss you so much.",
-                    "ja": ""
+                    "ja": "あなたがとても恋しい。"
                 },
                 {
                     "en": "I miss you.",
-                    "ja": ""
+                    "ja": "日本のみんなに早く会いたい。"
                 },
                 {
                     "en": "I miss you.",
-                    "ja": ""
+                    "ja": "日本のみんなに早く会いたい。"
                 },
                 {
                     "en": "Have you eaten?",
-                    "ja": ""
+                    "ja": "食べたことあるの？"
                 },
                 {
                     "en": "What are you doing?",
-                    "ja": ""
+                    "ja": "何をしているの？"
                 },
                 {
                     "en": "Have you slept?",
-                    "ja": ""
+                    "ja": "ぼろぼろだぞ"
                 },
                 {
                     "en": "Good morning love.",
-                    "ja": ""
+                    "ja": "おはよう愛"
                 },
                 {
                     "en": "Good evening love.",
-                    "ja": ""
+                    "ja": "いらっしゃいませ。"
                 },
                 {
                     "en": "Good night love.",
-                    "ja": ""
+                    "ja": "お別れよ"
                 },
                 {
                     "en": "Don't forget to eat, okay?",
-                    "ja": ""
+                    "ja": "食べるのを忘れないでね？"
                 },
                 {
                     "en": "Be careful on the road, okay?",
-                    "ja": ""
+                    "ja": "道路には気をつけてね？"
                 },
                 {
                     "en": "Pick me up, okay?",
-                    "ja": ""
+                    "ja": "迎えに来てくれないか？"
                 },
                 {
                     "en": "Want to see you.",
-                    "ja": ""
+                    "ja": "私はあなたにお会いしたい。"
                 },
                 {
                     "en": "So happy with you.",
-                    "ja": ""
+                    "ja": "あなたにとても満足しています。"
                 },
                 {
-                    "en": "I'll chat you later, okay?",
-                    "ja": ""
+                    "en": "I will chat you later, okay?",
+                    "ja": "多分　後で電話する　いい？"
                 },
                 {
-                    "en": "I'll call you later, okay?",
-                    "ja": ""
+                    "en": "I will call you later, okay?",
+                    "ja": "多分　後で電話する　いい？"
                 },
                 {
                     "en": "Waiting for you, okay?",
-                    "ja": ""
+                    "ja": "待っています"
                 },
                 {
                     "en": "Bye love.",
-                    "ja": ""
+                    "ja": "さようなら。"
                 }
             ]
         }
@@ -6385,7 +6369,7 @@
             "words": [
                 {
                     "en": "If",
-                    "ja": ""
+                    "ja": "状況"
                 },
                 {
                     "en": "Hungry",
@@ -6397,15 +6381,15 @@
                 },
                 {
                     "en": "Exist",
-                    "ja": ""
+                    "ja": "存在します"
                 },
                 {
                     "en": "There is",
-                    "ja": ""
+                    "ja": "存在します"
                 },
                 {
                     "en": "Time",
-                    "ja": ""
+                    "ja": "時刻"
                 },
                 {
                     "en": "Can",
@@ -6413,7 +6397,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Later",
@@ -6425,41 +6409,41 @@
                 },
                 {
                     "en": "Possible",
-                    "ja": ""
+                    "ja": "可能な"
                 }
             ],
             "sentences": [
                 {
                     "en": "If hungry.",
-                    "ja": ""
+                    "ja": "お腹が空いたら。"
                 },
                 {
                     "en": "If tired.",
-                    "ja": ""
+                    "ja": "疲れている場合。"
                 },
                 {
                     "en": "If there is time.",
-                    "ja": ""
+                    "ja": "生きていられたら"
                 },
                 {
                     "en": "If able.",
-                    "ja": ""
+                    "ja": "可能であれば。"
                 },
                 {
                     "en": "If able, later.",
-                    "ja": ""
+                    "ja": "可能であれば、後ほど。"
                 },
                 {
                     "en": "If hungry, eat.",
-                    "ja": ""
+                    "ja": "お腹が空いたら、食べましょう。"
                 },
                 {
                     "en": "If tired, later.",
-                    "ja": ""
+                    "ja": "疲れたら後で。"
                 },
                 {
                     "en": "If possible.",
-                    "ja": ""
+                    "ja": "可能であればの話だ"
                 }
             ]
         },
@@ -6471,11 +6455,11 @@
                 },
                 {
                     "en": "Yeah",
-                    "ja": ""
+                    "ja": "わかりました"
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 }
             ],
             "sentences": []
@@ -6484,7 +6468,7 @@
             "words": [
                 {
                     "en": "If",
-                    "ja": ""
+                    "ja": "状況"
                 },
                 {
                     "en": "Can",
@@ -6492,21 +6476,21 @@
                 },
                 {
                     "en": "Be able to",
-                    "ja": ""
+                    "ja": "できる"
                 }
             ],
             "sentences": [
                 {
                     "en": "If there is time.",
-                    "ja": ""
+                    "ja": "生きていられたら"
                 },
                 {
                     "en": "If possible.",
-                    "ja": ""
+                    "ja": "可能であればの話だ"
                 },
                 {
                     "en": "If able.",
-                    "ja": ""
+                    "ja": "可能であれば。"
                 }
             ]
         }
@@ -6516,11 +6500,11 @@
             "words": [
                 {
                     "en": "when",
-                    "ja": ""
+                    "ja": "いつ"
                 },
                 {
                     "en": "At the moment",
-                    "ja": ""
+                    "ja": "いつ"
                 },
                 {
                     "en": "Arrive",
@@ -6540,7 +6524,7 @@
                 },
                 {
                     "en": "Yes",
-                    "ja": "はい"
+                    "ja": "わかりました"
                 },
                 {
                     "en": "Eat",
@@ -6550,7 +6534,7 @@
             "sentences": [
                 {
                     "en": "Eat when you’re hungry.",
-                    "ja": ""
+                    "ja": "お腹が空いたら食べましょう。"
                 }
             ]
         },
@@ -6558,25 +6542,25 @@
             "words": [
                 {
                     "en": "Let me know",
-                    "ja": ""
+                    "ja": "ご一報ください。"
                 },
                 {
                     "en": "Tell",
-                    "ja": ""
+                    "ja": "遺丘"
                 },
                 {
                     "en": "Say",
-                    "ja": ""
+                    "ja": "遺丘"
                 }
             ],
             "sentences": [
                 {
                     "en": "Let me know when you arrive.",
-                    "ja": ""
+                    "ja": "到着したらお知らせください。"
                 },
                 {
                     "en": "Tell me when it starts.",
-                    "ja": ""
+                    "ja": "いつ始まるか教えてくれ。"
                 }
             ]
         },
@@ -6590,7 +6574,7 @@
             "words": [
                 {
                     "en": "With",
-                    "ja": ""
+                    "ja": "あり"
                 },
                 {
                     "en": "You",
@@ -6606,7 +6590,7 @@
                 },
                 {
                     "en": "She",
-                    "ja": "彼女"
+                    "ja": "彼"
                 },
                 {
                     "en": "Friend",
@@ -6622,17 +6606,17 @@
                 },
                 {
                     "en": "Arrive",
-                    "ja": "着く"
+                    "ja": "来る"
                 }
             ],
             "sentences": [
                 {
                     "en": "With you.",
-                    "ja": ""
+                    "ja": "- 一緒に"
                 },
                 {
                     "en": "Come with a friend.",
-                    "ja": ""
+                    "ja": "友達と一緒に来てください。"
                 }
             ]
         },
@@ -6648,25 +6632,25 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
                     "en": "With me.",
-                    "ja": ""
+                    "ja": "一緒に来い"
                 },
                 {
                     "en": "Go with me.",
-                    "ja": ""
+                    "ja": "ついてきて"
                 },
                 {
                     "en": "With me.",
-                    "ja": ""
+                    "ja": "一緒に来い"
                 }
             ]
         },
@@ -6674,7 +6658,7 @@
             "words": [
                 {
                     "en": "With",
-                    "ja": ""
+                    "ja": "あり"
                 },
                 {
                     "en": "I",
@@ -6688,11 +6672,11 @@
             "sentences": [
                 {
                     "en": "With me.",
-                    "ja": ""
+                    "ja": "一緒に来い"
                 },
                 {
                     "en": "Go with me.",
-                    "ja": ""
+                    "ja": "ついてきて"
                 }
             ]
         }
@@ -6702,7 +6686,7 @@
             "words": [
                 {
                     "en": "For",
-                    "ja": ""
+                    "ja": "のために"
                 },
                 {
                     "en": "You",
@@ -6724,15 +6708,15 @@
             "sentences": [
                 {
                     "en": "This is for you.",
-                    "ja": ""
+                    "ja": "これは君のためなんだ。"
                 },
                 {
                     "en": "For you.",
-                    "ja": ""
+                    "ja": "- さあ"
                 },
                 {
                     "en": "For that.",
-                    "ja": ""
+                    "ja": "ライセンスは必要ありません。"
                 }
             ]
         },
@@ -6748,21 +6732,21 @@
                 },
                 {
                     "en": "Just",
-                    "ja": ""
+                    "ja": "これ"
                 },
                 {
                     "en": "casual closure",
-                    "ja": ""
+                    "ja": "カジュアルクロージャー"
                 }
             ],
             "sentences": [
                 {
                     "en": "For me.",
-                    "ja": ""
+                    "ja": "「ボクのために」"
                 },
                 {
                     "en": "For me.",
-                    "ja": ""
+                    "ja": "「ボクのために」"
                 }
             ]
         },
@@ -6770,7 +6754,7 @@
             "words": [
                 {
                     "en": "For",
-                    "ja": ""
+                    "ja": "のために"
                 },
                 {
                     "en": "I",
@@ -6792,11 +6776,11 @@
             "sentences": [
                 {
                     "en": "This is for you.",
-                    "ja": ""
+                    "ja": "これは君のためなんだ。"
                 },
                 {
                     "en": "For me.",
-                    "ja": ""
+                    "ja": "「ボクのために」"
                 }
             ]
         }
@@ -6806,15 +6790,15 @@
             "words": [
                 {
                     "en": "Because",
-                    "ja": ""
+                    "ja": "それは、"
                 },
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Can",
@@ -6822,7 +6806,7 @@
                 },
                 {
                     "en": "Able",
-                    "ja": ""
+                    "ja": "できる"
                 },
                 {
                     "en": "Busy",
@@ -6830,21 +6814,21 @@
                 },
                 {
                     "en": "Traffic jam",
-                    "ja": ""
+                    "ja": "渋滞"
                 }
             ],
             "sentences": [
                 {
                     "en": "Because I’m busy.",
-                    "ja": ""
+                    "ja": "忙しいから。"
                 },
                 {
                     "en": "I can’t because I’m busy.",
-                    "ja": ""
+                    "ja": "忙しいのでできません。"
                 },
                 {
                     "en": "Because of traffic.",
-                    "ja": ""
+                    "ja": "渋滞のため。"
                 }
             ]
         },
@@ -6852,15 +6836,15 @@
             "words": [
                 {
                     "en": "Not",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "No",
-                    "ja": ""
+                    "ja": "NOT"
                 },
                 {
                     "en": "Because",
-                    "ja": ""
+                    "ja": "それは、"
                 },
                 {
                     "en": "I",
@@ -6872,7 +6856,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "Work",
@@ -6884,29 +6868,29 @@
                 },
                 {
                     "en": "Because of",
-                    "ja": ""
+                    "ja": "何故なら"
                 }
             ],
             "sentences": [
                 {
                     "en": "I can’t because I’m working.",
-                    "ja": ""
+                    "ja": "私は働いているのでできません。"
                 },
                 {
                     "en": "I can’t because I’m working.",
-                    "ja": ""
+                    "ja": "私は働いているのでできません。"
                 },
                 {
                     "en": "Because I’m tired.",
-                    "ja": ""
+                    "ja": "疲れたから。"
                 },
                 {
                     "en": "Because I’m tired.",
-                    "ja": ""
+                    "ja": "疲れたから。"
                 },
                 {
                     "en": "Because of traffic.",
-                    "ja": ""
+                    "ja": "渋滞のため。"
                 }
             ]
         },
@@ -6922,7 +6906,7 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "Work",
@@ -6930,21 +6914,21 @@
                 },
                 {
                     "en": "Because",
-                    "ja": ""
+                    "ja": "それは、"
                 }
             ],
             "sentences": [
                 {
                     "en": "I can’t because I’m working.",
-                    "ja": ""
+                    "ja": "私は働いているのでできません。"
                 },
                 {
                     "en": "I can’t because I’m busy.",
-                    "ja": ""
+                    "ja": "忙しいのでできません。"
                 },
                 {
                     "en": "Because of traffic.",
-                    "ja": ""
+                    "ja": "渋滞のため。"
                 }
             ]
         }
@@ -6953,8 +6937,8 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
                 },
                 {
                     "en": "Eat",
@@ -6967,11 +6951,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "ja": ""
+                    "en": "Let us eat.",
+                    "ja": "- 食べよう"
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "ja": "行きましょう。"
                 }
             ]
@@ -6979,30 +6963,30 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
                 },
                 {
                     "en": "Together",
-                    "ja": ""
+                    "ja": "一緒"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "ja": ""
+                    "en": "Let us eat.",
+                    "ja": "- 食べよう"
                 },
                 {
-                    "en": "Let’s go together.",
-                    "ja": ""
+                    "en": "Let us go together.",
+                    "ja": "一緒に来てくれ。"
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "さあ始めましょう"
                 },
                 {
                     "en": "We",
@@ -7015,11 +6999,11 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat.",
-                    "ja": ""
+                    "en": "Let us eat.",
+                    "ja": "- 食べよう"
                 },
                 {
-                    "en": "Let’s go.",
+                    "en": "Let us go.",
                     "ja": "行きましょう。"
                 }
             ]
@@ -7034,15 +7018,15 @@
                 },
                 {
                     "en": "At",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "In",
-                    "ja": ""
+                    "ja": "この段階で、支柱１３０と第２の部材１０４のハウジング１０５を第１の部材／取り付けプレート１０２に保持する保持力は、約１６０Ｎである。"
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "Eat",
@@ -7064,11 +7048,11 @@
             "sentences": [
                 {
                     "en": "What are you doing?",
-                    "ja": ""
+                    "ja": "何をしているの？"
                 },
                 {
                     "en": "Not yet.",
-                    "ja": ""
+                    "ja": "まだだ。"
                 }
             ]
         },
@@ -7080,49 +7064,49 @@
                 },
                 {
                     "en": "Me (Jakarta slang)",
-                    "ja": ""
+                    "ja": "私（ジャカルタのスラング）"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "ja": ""
+                    "ja": "あなた（ジャカルタのスラング）"
                 },
                 {
                     "en": "You (Jakarta slang)",
-                    "ja": ""
+                    "ja": "あなた（ジャカルタのスラング）"
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 },
                 {
                     "en": "Not yet",
-                    "ja": ""
+                    "ja": "まだ"
                 },
                 {
                     "en": "Friend",
-                    "ja": ""
+                    "ja": "友達"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’m at home.",
-                    "ja": ""
+                    "ja": "私は家にいます。"
                 },
                 {
                     "en": "I’m at home.",
-                    "ja": ""
+                    "ja": "私は家にいます。"
                 },
                 {
                     "en": "What are you doing?",
-                    "ja": ""
+                    "ja": "何をしているの？"
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "ja": ""
+                    "ja": "ごはん食べたの？"
                 },
                 {
                     "en": "Already or not yet?",
-                    "ja": ""
+                    "ja": "もうお済みですか？それともまだですか？"
                 }
             ]
         },
@@ -7130,7 +7114,7 @@
             "words": [
                 {
                     "en": "Whether",
-                    "ja": ""
+                    "ja": "かどうか"
                 },
                 {
                     "en": "I",
@@ -7150,25 +7134,25 @@
                 },
                 {
                     "en": "Currently",
-                    "ja": ""
+                    "ja": "現在"
                 },
                 {
                     "en": "Already",
-                    "ja": ""
+                    "ja": "既知"
                 }
             ],
             "sentences": [
                 {
                     "en": "I’m at home.",
-                    "ja": ""
+                    "ja": "私は家にいます。"
                 },
                 {
                     "en": "What are you doing?",
-                    "ja": ""
+                    "ja": "何をしているの？"
                 },
                 {
                     "en": "Have you eaten yet?",
-                    "ja": ""
+                    "ja": "ごはん食べたの？"
                 }
             ]
         }
@@ -7178,15 +7162,15 @@
             "words": [
                 {
                     "en": "About",
-                    "ja": ""
+                    "ja": "情報"
                 },
                 {
                     "en": "About",
-                    "ja": ""
+                    "ja": "情報"
                 },
                 {
                     "en": "Talk",
-                    "ja": ""
+                    "ja": "話す"
                 },
                 {
                     "en": "That",
@@ -7206,37 +7190,37 @@
                 },
                 {
                     "en": "What about",
-                    "ja": "はどうですか"
+                    "ja": "どう"
                 },
                 {
                     "en": "With",
-                    "ja": ""
+                    "ja": "あり"
                 }
             ],
             "sentences": [
                 {
                     "en": "About what?",
-                    "ja": ""
+                    "ja": "何について？"
                 },
                 {
                     "en": "About what?",
-                    "ja": ""
+                    "ja": "何について？"
                 },
                 {
                     "en": "Talk about that.",
-                    "ja": ""
+                    "ja": "それについて話してください。"
                 },
                 {
                     "en": "What about that?",
-                    "ja": ""
+                    "ja": "- あれはどう?"
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let's",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "やろやろ"
                 },
                 {
                     "en": "We",
@@ -7244,23 +7228,23 @@
                 },
                 {
                     "en": "About",
-                    "ja": ""
+                    "ja": "情報"
                 },
                 {
                     "en": "Regarding",
-                    "ja": ""
+                    "ja": "「2．"
                 },
                 {
                     "en": "About",
-                    "ja": ""
+                    "ja": "「2．"
                 },
                 {
                     "en": "Discuss",
-                    "ja": ""
+                    "ja": "掲示板"
                 },
                 {
                     "en": "Talk about",
-                    "ja": ""
+                    "ja": "掲示板"
                 },
                 {
                     "en": "How",
@@ -7268,7 +7252,7 @@
                 },
                 {
                     "en": "With",
-                    "ja": ""
+                    "ja": "あり"
                 },
                 {
                     "en": "That",
@@ -7284,61 +7268,61 @@
                 },
                 {
                     "en": "Want to",
-                    "ja": ""
+                    "ja": "欲"
                 }
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
-                    "ja": ""
+                    "en": "Let us talk about that.",
+                    "ja": "ぜひその話を聞きたい"
                 },
                 {
                     "en": "What about that?",
-                    "ja": ""
+                    "ja": "- あれはどう?"
                 },
                 {
                     "en": "I want to talk about that.",
-                    "ja": ""
+                    "ja": "その事で話があるの"
                 }
             ]
         },
         "informal": {
             "words": [
                 {
-                    "en": "Let's",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "やろやろ"
                 },
                 {
                     "en": "Come on",
-                    "ja": ""
+                    "ja": "来て"
                 },
                 {
-                    "en": "Let's",
-                    "ja": ""
+                    "en": "Let us",
+                    "ja": "来て"
                 },
                 {
                     "en": "Talk",
-                    "ja": ""
+                    "ja": "話す"
                 },
                 {
                     "en": "Chat",
-                    "ja": ""
+                    "ja": "チャット"
                 },
                 {
                     "en": "Chat about",
-                    "ja": ""
+                    "ja": "チャットについて"
                 },
                 {
                     "en": "Talking about",
-                    "ja": ""
+                    "ja": "話すこと..."
                 },
                 {
                     "en": "About",
-                    "ja": ""
+                    "ja": "情報"
                 },
                 {
                     "en": "About",
-                    "ja": ""
+                    "ja": "情報"
                 },
                 {
                     "en": "That",
@@ -7350,15 +7334,15 @@
                 },
                 {
                     "en": "What about",
-                    "ja": "はどうですか"
+                    "ja": "どう"
                 },
                 {
                     "en": "Doing",
-                    "ja": ""
+                    "ja": "進行中"
                 },
                 {
                     "en": "Right now",
-                    "ja": "今すぐ"
+                    "ja": "進行中"
                 },
                 {
                     "en": "What",
@@ -7367,20 +7351,20 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that.",
-                    "ja": ""
+                    "en": "Let us talk about that.",
+                    "ja": "ぜひその話を聞きたい"
                 },
                 {
-                    "en": "Let's talk about that.",
-                    "ja": ""
+                    "en": "Let us talk about that.",
+                    "ja": "ぜひその話を聞きたい"
                 },
                 {
                     "en": "What about that?",
-                    "ja": ""
+                    "ja": "- あれはどう?"
                 },
                 {
                     "en": "What are you talking about?",
-                    "ja": ""
+                    "ja": "何だって？"
                 }
             ]
         }

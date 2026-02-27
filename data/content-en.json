@@ -12,12 +12,6 @@
                     "en": "Good"
                 },
                 {
-                    "en": "Well"
-                },
-                {
-                    "en": "Safe"
-                },
-                {
                     "en": "Come"
                 },
                 {
@@ -72,12 +66,6 @@
             "words": [
                 {
                     "en": "Good"
-                },
-                {
-                    "en": "Well"
-                },
-                {
-                    "en": "Safe"
                 },
                 {
                     "en": "Morning"
@@ -3782,7 +3770,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s"
+                    "en": "Let us"
                 },
                 {
                     "en": "Hang out"
@@ -3799,7 +3787,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out."
+                    "en": "Let us hang out."
                 },
                 {
                     "en": "What time?"
@@ -3817,14 +3805,14 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s hang out."
+                    "en": "Let us hang out."
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s"
+                    "en": "Let us"
                 },
                 {
                     "en": "We"
@@ -3838,7 +3826,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s meet."
+                    "en": "Let us meet."
                 }
             ]
         }
@@ -3927,25 +3915,25 @@
             ],
             "sentences": [
                 {
-                    "en": "I'm bored."
+                    "en": "I am bored."
                 },
                 {
-                    "en": "I'm nervous."
+                    "en": "I am nervous."
                 },
                 {
-                    "en": "I'm nervous."
-                },
-                {
-                    "en": "I miss you."
+                    "en": "I am nervous."
                 },
                 {
                     "en": "I miss you."
                 },
                 {
-                    "en": "I'm annoyed."
+                    "en": "I miss you."
                 },
                 {
-                    "en": "I'm annoyed."
+                    "en": "I am annoyed."
+                },
+                {
+                    "en": "I am annoyed."
                 },
                 {
                     "en": "How about it?"
@@ -3969,10 +3957,10 @@
             ],
             "sentences": [
                 {
-                    "en": "I'm bored."
+                    "en": "I am bored."
                 },
                 {
-                    "en": "I'm nervous."
+                    "en": "I am nervous."
                 },
                 {
                     "en": "I miss you."
@@ -4877,7 +4865,7 @@
                     "en": "Don't forget to eat, okay?"
                 },
                 {
-                    "en": "Let's meet tomorrow, okay?"
+                    "en": "Let us meet tomorrow, okay?"
                 }
             ]
         },
@@ -5033,10 +5021,10 @@
                     "en": "So happy with you."
                 },
                 {
-                    "en": "I'll chat you later, okay?"
+                    "en": "I will chat you later, okay?"
                 },
                 {
-                    "en": "I'll call you later, okay?"
+                    "en": "I will call you later, okay?"
                 },
                 {
                     "en": "Waiting for you, okay?"
@@ -5502,7 +5490,7 @@
         "neutral": {
             "words": [
                 {
-                    "en": "Let’s"
+                    "en": "Let us"
                 },
                 {
                     "en": "Eat"
@@ -5513,17 +5501,17 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat."
+                    "en": "Let us eat."
                 },
                 {
-                    "en": "Let’s go."
+                    "en": "Let us go."
                 }
             ]
         },
         "informal": {
             "words": [
                 {
-                    "en": "Let’s"
+                    "en": "Let us"
                 },
                 {
                     "en": "Together"
@@ -5531,17 +5519,17 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat."
+                    "en": "Let us eat."
                 },
                 {
-                    "en": "Let’s go together."
+                    "en": "Let us go together."
                 }
             ]
         },
         "formal": {
             "words": [
                 {
-                    "en": "Let’s"
+                    "en": "Let us"
                 },
                 {
                     "en": "We"
@@ -5552,10 +5540,10 @@
             ],
             "sentences": [
                 {
-                    "en": "Let’s eat."
+                    "en": "Let us eat."
                 },
                 {
-                    "en": "Let’s go."
+                    "en": "Let us go."
                 }
             ]
         }
@@ -5725,7 +5713,7 @@
         "formal": {
             "words": [
                 {
-                    "en": "Let's"
+                    "en": "Let us"
                 },
                 {
                     "en": "We"
@@ -5766,7 +5754,7 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that."
+                    "en": "Let us talk about that."
                 },
                 {
                     "en": "What about that?"
@@ -5779,13 +5767,13 @@
         "informal": {
             "words": [
                 {
-                    "en": "Let's"
+                    "en": "Let us"
                 },
                 {
                     "en": "Come on"
                 },
                 {
-                    "en": "Let's"
+                    "en": "Let us"
                 },
                 {
                     "en": "Talk"
@@ -5826,10 +5814,10 @@
             ],
             "sentences": [
                 {
-                    "en": "Let's talk about that."
+                    "en": "Let us talk about that."
                 },
                 {
-                    "en": "Let's talk about that."
+                    "en": "Let us talk about that."
                 },
                 {
                     "en": "What about that?"
