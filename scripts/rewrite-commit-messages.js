@@ -15,6 +15,7 @@ const { execSync } = require("child_process");
 const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
+const msgFilterPath = path.join(__dirname, "msg-filter.js").replace(/\\/g, "/");
 
 // Ensure working tree is clean.
 const status = execSync("git status --porcelain", {
@@ -29,14 +30,12 @@ if (status.trim()) {
 const env = { ...process.env, FILTER_BRANCH_SQUELCH_WARNING: "1" };
 
 try {
-  execSync(
-    'git filter-branch -f --msg-filter "node scripts/msg-filter.js" HEAD',
-    {
-      cwd: repoRoot,
-      stdio: "inherit",
-      env,
-    }
-  );
+  const cmd = `git filter-branch -f --msg-filter "node \\"${msgFilterPath}\\"" HEAD`;
+  execSync(cmd, {
+    cwd: repoRoot,
+    stdio: "inherit",
+    env,
+  });
   console.log(
     "\nDone rewriting commit messages. If this branch is pushed, run: git push --force-with-lease"
   );
