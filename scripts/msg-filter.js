@@ -17,18 +17,18 @@ const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
 
-// Synthetic issue IDs per area so commits can reference issues like "Refs #3".
+// Synthetic issue IDs per area so commits can reference issues like "Refs #4".
 // Create matching GitHub issues with these numbers if you want UI links.
 const ISSUE_FOR_SCOPE = {
-  server: 1,
-  chat: 2,
-  selection: 3,
-  translate: 4,
-  content: 5,
-  ui: 6,
-  casual: 7,
-  modes: 8,
-  app: 9,
+  server: 4,
+  chat: 5,
+  selection: 6,
+  translate: 7,
+  content: 8,
+  ui: 9,
+  casual: 10,
+  modes: 11,
+  app: 12,
 };
 
 function inferScopeFromCommit(sha) {
@@ -149,7 +149,6 @@ function transformSubject(subject) {
     "Mobile Version": { subject: "feat(ui): mobile version" },
     "Selection Bug Fix": {
       subject: "fix(selection): selection bug fix",
-      extraBody: "Refs #1",
     },
     "New Words And Modules": {
       subject: "feat(content): new words and modules",
