@@ -225,6 +225,8 @@
             containerEl: chatOverlay,
             getVocabForChat: () => casualEngine.getVocabForChat(),
             getSelectedModuleNames: () => casualEngine.getSelectedModuleNames(),
+            getShowKanjiForJapanese: () => casualEngine.getShowKanjiForJapanese(),
+            getShowKatakanaForJapanese: () => casualEngine.getShowKatakanaForJapanese(),
             onClose: () => {
                 const navChat = document.getElementById("nav-chat");
                 if (navChat) navChat.focus();

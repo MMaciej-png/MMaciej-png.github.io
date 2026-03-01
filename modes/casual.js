@@ -1056,5 +1056,12 @@ export const casualEngine = (() => {
     }));
   }
 
-  return { start, getSelectedModuleNames, getVocabForChat, setOnLanguageChange };
+  return {
+    start,
+    getSelectedModuleNames,
+    getVocabForChat,
+    setOnLanguageChange,
+    getShowKanjiForJapanese: () => showKanjiForJapanese,
+    getShowKatakanaForJapanese: () => showKatakanaForJapanese
+  };
 })();

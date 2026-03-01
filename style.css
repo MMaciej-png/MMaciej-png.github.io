@@ -1718,6 +1718,37 @@ body.light input {
   line-height: 1.4;
 }
 
+.chat-bubble-text-ruby ruby {
+  ruby-position: over;
+  ruby-align: center;
+}
+
+.chat-bubble-text-ruby rt {
+  font-size: 0.65em;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+.chat-suggestion-chip-ruby ruby {
+  ruby-position: over;
+  ruby-align: center;
+}
+
+.chat-suggestion-chip-ruby rt {
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.chat-fix-chip .chat-fix-chip-text ruby {
+  ruby-position: over;
+  ruby-align: center;
+}
+
+.chat-fix-chip .chat-fix-chip-text rt {
+  font-size: 0.65em;
+  font-weight: normal;
+}
+
 .chat-tts-btn {
   appearance: none;
   border: none;

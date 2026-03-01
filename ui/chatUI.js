@@ -5,11 +5,73 @@
 import { formatVocabForPrompt } from "../engine/chatVocab.js";
 import { sendChatMessage } from "../engine/chatLLM.js";
 import { speak } from "../core/tts.js";
-import { getJaTextForTts } from "../engine/jaCharReadings.js";
+import {
+  getJaTextForTts,
+  getPhraseReading as getJaPhraseReading,
+  getReadingsForText as getJaReadings,
+  katakanaToHiragana
+} from "../engine/jaCharReadings.js";
+import { getReadingsForText as getKoReadings } from "../engine/koCharReadings.js";
 import { isSpeechRecognitionSupported, createSpeechRecognition } from "../core/speechRecognition.js";
 import { getLanguagePair, parsePair, getTtsLocale, getLanguageName } from "../data/languageConfig.js";
 
 const MODEL = "gpt-4o-mini";
+
+function escapeHtml(s) {
+  const div = document.createElement("div");
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+/**
+ * Build HTML for chat message content: when lang is ja/ko, apply Kanji/Katakana settings (ja only)
+ * and show readings (romaji/romanization) above the text via ruby.
+ */
+function chatContentToHtml(text, lang, getShowKanji, getShowKatakana) {
+  if (!text || typeof text !== "string") return escapeHtml(text || "");
+  if (!text.trim()) return "";
+
+  let displayText = text;
+  if (lang === "ja") {
+    const showKanji = typeof getShowKanji === "function" ? getShowKanji() : true;
+    const showKatakana = typeof getShowKatakana === "function" ? getShowKatakana() : true;
+    if (!showKanji) displayText = getJaTextForTts(displayText) || displayText;
+    if (!showKatakana) displayText = katakanaToHiragana(displayText) || displayText;
+  }
+
+  if (lang === "ja") {
+    const phraseReading = getJaPhraseReading(displayText);
+    if (phraseReading) {
+      return `<ruby>${escapeHtml(displayText)}<rt>${escapeHtml(phraseReading)}</rt></ruby>`;
+    }
+    const readings = getJaReadings(displayText);
+    const displayChars = [...displayText];
+    const hasAny = readings.some((r) => r !== "");
+    if (hasAny) {
+      return displayChars
+        .map((c, i) => {
+          const r = readings[i];
+          return r ? `<ruby>${escapeHtml(c)}<rt>${escapeHtml(r)}</rt></ruby>` : escapeHtml(c);
+        })
+        .join("");
+    }
+  }
+
+  if (lang === "ko") {
+    const readings = getKoReadings(displayText);
+    const hasAny = readings.some((r) => r !== "");
+    if (hasAny) {
+      return [...displayText]
+        .map((c, i) => {
+          const r = readings[i];
+          return r ? `<ruby>${escapeHtml(c)}<rt>${escapeHtml(r)}</rt></ruby>` : escapeHtml(c);
+        })
+        .join("");
+    }
+  }
+
+  return escapeHtml(displayText);
+}
 
 function getOpeningUserPrompt() {
   const replyLangName = getLanguageName(parsePair(getLanguagePair())[1]);
@@ -109,10 +171,19 @@ function parseStructuredResponse(text) {
  *   getVocabForChat: () => Array<{ indo: string, english: string, module: string, register?: string }>;
  *   getSelectedModuleNames: () => string[];
  *   onClose: () => void;
+ *   getShowKanjiForJapanese?: () => boolean;
+ *   getShowKatakanaForJapanese?: () => boolean;
  * }} opts
  */
 export function createChatPanel(opts) {
-  const { containerEl, getVocabForChat, getSelectedModuleNames, onClose } = opts;
+  const {
+    containerEl,
+    getVocabForChat,
+    getSelectedModuleNames,
+    onClose,
+    getShowKanjiForJapanese = () => true,
+    getShowKatakanaForJapanese = () => true
+  } = opts;
 
   let messages = [];
   let loading = false;
@@ -258,9 +329,23 @@ export function createChatPanel(opts) {
     const bubble = document.createElement("div");
     bubble.className = "chat-bubble " + (isUser ? "chat-bubble-user" : "chat-bubble-bot");
 
+    const replyLang = getReplyLang();
+    const contentLang = isUser
+      ? (msg.language || replyLang)
+      : (msg.isHelp ? null : replyLang);
+    const showReadings = contentLang === "ja" || contentLang === "ko";
     const textEl = document.createElement("div");
-    textEl.className = "chat-bubble-text";
-    textEl.textContent = msg.content || "";
+    textEl.className = "chat-bubble-text" + (showReadings ? " chat-bubble-text-ruby" : "");
+    if (showReadings) {
+      textEl.innerHTML = chatContentToHtml(
+        msg.content || "",
+        contentLang,
+        getShowKanjiForJapanese,
+        getShowKatakanaForJapanese
+      );
+    } else {
+      textEl.textContent = msg.content || "";
+    }
 
     const showTranslate = isUser
       ? !msg.hideTranslation &&
@@ -286,7 +371,6 @@ export function createChatPanel(opts) {
       }
     };
 
-    const replyLang = getReplyLang();
     const botRepliedInTargetLang = !isUser && msg.content && !msg.isHelp;
     const userWroteInTargetLang = isUser && msg.content && msg.language === replyLang;
 
@@ -337,11 +421,17 @@ export function createChatPanel(opts) {
     if (showChips) {
       const chipsWrap = document.createElement("div");
       chipsWrap.className = "chat-suggestions";
+      const chipLang = replyLang;
+      const chipShowReadings = chipLang === "ja" || chipLang === "ko";
       for (const phrase of msg.suggestedReplies) {
         const chip = document.createElement("button");
         chip.type = "button";
-        chip.className = "chat-suggestion-chip";
-        chip.textContent = phrase;
+        chip.className = "chat-suggestion-chip" + (chipShowReadings ? " chat-suggestion-chip-ruby" : "");
+        if (chipShowReadings) {
+          chip.innerHTML = chatContentToHtml(phrase, chipLang, getShowKanjiForJapanese, getShowKatakanaForJapanese);
+        } else {
+          chip.textContent = phrase;
+        }
         chip.onkeydown = (e) => {
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
@@ -364,7 +454,16 @@ export function createChatPanel(opts) {
       const fixBtn = document.createElement("button");
       fixBtn.type = "button";
       fixBtn.className = "chat-fix-chip";
-      fixBtn.textContent = "Use: " + msg.suggestedFix;
+      const fixShowReadings = replyLang === "ja" || replyLang === "ko";
+      if (fixShowReadings) {
+        fixBtn.appendChild(document.createTextNode("Use: "));
+        const fixSpan = document.createElement("span");
+        fixSpan.className = "chat-fix-chip-text";
+        fixSpan.innerHTML = chatContentToHtml(msg.suggestedFix, replyLang, getShowKanjiForJapanese, getShowKatakanaForJapanese);
+        fixBtn.appendChild(fixSpan);
+      } else {
+        fixBtn.textContent = "Use: " + msg.suggestedFix;
+      }
       fixBtn.setAttribute("aria-label", "Use corrected phrase: " + msg.suggestedFix);
       fixBtn.onkeydown = (e) => {
         if (e.key === "Enter" || e.key === " ") {
