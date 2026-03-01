@@ -1,5 +1,5 @@
 import { getModuleStats } from "./moduleStats.js";
-import { getModuleId, getModuleDisplayName, getCategoryForModuleKey } from "./moduleIds.js";
+import { getModuleId, getModuleDisplayName, getCategoryForModuleKey, generaliseModuleDisplayName } from "./moduleIds.js";
 import { shouldExcludeWordFromPool, isJakartaFocusedModule } from "../core/textTags.js";
 import { getLanguagePair, parsePair, LANGUAGES } from "./languageConfig.js";
 import { canConvertToHiragana } from "../engine/jaCharReadings.js";
@@ -154,7 +154,7 @@ export async function loadModulesMeta(options = {}) {
         const total = wordCount + sentenceCount;
 
         const stats = getModuleStats(moduleId, languagePair);
-        const displayName = getModuleDisplayName(moduleId, langACode) || moduleName;
+        const displayName = getModuleDisplayName(moduleId, langACode) || generaliseModuleDisplayName(moduleName) || moduleName;
 
         const accuracy =
             stats.attempted > 0

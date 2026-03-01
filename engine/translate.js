@@ -3,6 +3,8 @@
 =============================== */
 
 import { getJaTextToRomaji } from "./jaCharReadings.js";
+import { getReadingForChar as getRuReadingForChar } from "./ruCharReadings.js";
+import { getReadingsForText as getKoReadingsForText } from "./koCharReadings.js";
 
 const EN_EQUIVALENTS = [
 
@@ -576,11 +578,14 @@ function expandEncliticsID(text) {
 const KR_SCRIPT = /[\uAC00-\uD7A3\u1100-\u11FF]/;
 /** Hiragana, Katakana, or CJK (Kanji) */
 const JA_SCRIPT = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]/;
+/** Cyrillic (Russian, common Slavic) */
+const RU_SCRIPT = /[\u0400-\u04FF]/;
 
 export function inferLangFromExpected(expected) {
   if (typeof expected !== "string") return "EN";
   if (KR_SCRIPT.test(expected)) return "KR";
   if (JA_SCRIPT.test(expected)) return "JA";
+  if (RU_SCRIPT.test(expected)) return "RU";
 
   const t = expected.toLowerCase();
 
@@ -762,6 +767,8 @@ export function normalise(text, lang, expand = false) {
         .replace(/"[^"]*"/g, "")
         .replace(/'[^']*'/g, "");
       for (const [from, to] of RU_NORMALISE) t = t.split(from).join(to);
+      // Accept English/Latin input: convert only Cyrillic to Latin so "привет" and "privet" match
+      t = [...t].map((c) => getRuReadingForChar(c) || c).join("");
       for (const [p, r] of RU_EQUIVALENTS) t = t.replace(p, r);
       return t
         .replace(/[-–—]/g, " ")
@@ -776,10 +783,12 @@ export function normalise(text, lang, expand = false) {
       let t = input
         .replace(/"[^"]*"/g, "")
         .replace(/'[^']*'/g, "");
-      if (!JA_SCRIPT.test(t)) {
-        t = t.toLowerCase();
-        for (const [p, r] of JA_EQUIVALENTS) t = t.replace(p, r);
+      if (JA_SCRIPT.test(t)) {
+        const romaji = getJaTextToRomaji(t);
+        if (romaji) t = romaji;
       }
+      t = t.toLowerCase();
+      for (const [p, r] of JA_EQUIVALENTS) t = t.replace(p, r);
       return t
         .replace(/[-–—]/g, " ")
         .replace(/[?.!,;:]/g, " ")
@@ -793,10 +802,12 @@ export function normalise(text, lang, expand = false) {
       let t = input
         .replace(/"[^"]*"/g, "")
         .replace(/'[^']*'/g, "");
-      if (!KR_SCRIPT.test(t)) {
+      if (KR_SCRIPT.test(t)) {
+        t = getKoReadingsForText(t).join("").toLowerCase();
+      } else {
         t = t.toLowerCase();
-        for (const [p, r] of KR_EQUIVALENTS) t = t.replace(p, r);
       }
+      for (const [p, r] of KR_EQUIVALENTS) t = t.replace(p, r);
       return t
         .replace(/[-–—]/g, " ")
         .replace(/[?.!,;:]/g, " ")

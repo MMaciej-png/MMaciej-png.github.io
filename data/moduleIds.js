@@ -118,12 +118,24 @@ export const MODULE_CATEGORY_MAP = {
   "Chat Softeners": { category: "Chat & texting", subcategory: "Shorteners" },
 };
 
-/** All known module display names by id. en = default; add other lang codes for localization. */
+/**
+ * Strip Indonesian-style parenthetical from module title so all languages get a general name.
+ * Removes trailing " (Jadi / Makanya)", " (Maksudku…)", etc. Keeps structural parentheses like "Greetings (Basic)".
+ */
+export function generaliseModuleDisplayName(title) {
+  if (!title || typeof title !== "string") return title;
+  // Trailing parenthetical containing " / " (Indo alternatives) or known single-token hints
+  const withoutIndoHint = title.replace(/\s*\([^)]*\/[^)]*\)\s*$/, "").trim();
+  const withoutMaksudku = withoutIndoHint.replace(/\s*\(Maksudku…?\)\s*$/i, "").trim();
+  return withoutMaksudku || title;
+}
+
+/** All known module display names by id. en = general (no Indo hint); add other lang codes for localization. */
 const MODULE_DISPLAY_NAMES = (function () {
   const byId = {};
   for (const enName of Object.keys(MODULE_CATEGORY_MAP)) {
     const id = slugifyModuleKey(enName);
-    if (!byId[id]) byId[id] = { en: enName };
+    if (!byId[id]) byId[id] = { en: generaliseModuleDisplayName(enName) };
   }
   return byId;
 })();
