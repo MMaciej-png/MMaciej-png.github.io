@@ -754,8 +754,14 @@ export const casualEngine = (() => {
     inputController.setOnSubmit(checkAnswer);
     inputController.setOnAdvance(() => flip.beginAdvance());
     inputController.setOnGiveUp(() => {
-      attemptsLeft = 0;
-      fail();
+      const val = input.value.trim();
+      const expected = currentRender.answerVariants?.length ? currentRender.answerVariants.join(" / ") : currentRender.answer;
+      if (val && isCorrect(val, expected, current.type)) {
+        success();
+      } else {
+        attemptsLeft = 0;
+        fail();
+      }
     });
 
     inputController.setOnUnlockAttempt(value => {
